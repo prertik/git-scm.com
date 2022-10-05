@@ -5,9 +5,9 @@
   {% for doc in category.commands %}
   <li>
     {% if doc.doc == "credential-helpers" %}
-    <a href="/doc/credential-helpers">
+    <a href="{{ 'doc/credential-helpers' | relative_url }}">
     {% else %}
-    <a href="/docs/{{ doc.doc }}{% if page.lang != null and doc.no_append_lang != true %}/{{ page.lang }}{% endif %}">
+    <a href="{{ 'docs' | relative_url }}/{{ doc.doc }}{% if page.lang != null and doc.no_append_lang != true %}/{{ page.lang }}{% endif %}">
     {% endif %}
       {% if doc.title == null %}
         {{ doc.doc | replace_first: "git-", "" }}

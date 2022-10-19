@@ -4,28 +4,13 @@
     <ul>
       <li>
         <a href="/about"{% if page.section == "about" %} class="active"{% endif %}>About</a>
-        <ul{% if page.section == "about" %} class="expanded"{% endif %}>
-          <li>
-            <a href="/about/branching-and-merging"{% if page.subsection == "branching-and-merging" %} class="active"{% endif %}>Branching and Merging</a>
-          </li>
-          <li>
-            <a href="/about/small-and-fast"{% if page.subsection == "small-and-fast" %} class="active"{% endif %}>Small and Fast</a>
-          </li>
-          <li>
-            <a href="/about/distributed"{% if page.subsection == "distributed" %} class="active"{% endif %}>Distributed</a>
-          </li>
-          <li>
-            <a href="/about/data-assurance"{% if page.subsection == "data-assurance" %} class="active"{% endif %}>Data Assurance</a>
-          </li>
-          <li>
-            <a href="/about/staging-area"{% if page.subsection == "staging-area" %} class="active"{% endif %}>Staging Area</a>
-          </li>
-          <li>
-            <a href="/about/free-and-open-source"{% if page.subsection == "free-and-open-source" %} class="active"{% endif %}>Free and Open Source</a>
-          </li>
-          <li>
-            <a href="/about/trademark"{% if page.subsection == "trademark" %} class="active"{% endif %}>Trademark</a>
-          </li>
+        <ul {% if page.section == "about" %}class="expanded"{% endif %}>
+          {% assign abouts = site.about | sort: 'order'  %}
+          {% for about in abouts %}
+            <li>
+              <a href="/{{ about.url }}" {% if page.subsection == about.subsection %} class="active"{% endif %}>{{about.subtitle}}</a>
+            </li>
+          {% endfor %}
         </ul>
       </li>
       <li>

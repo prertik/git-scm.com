@@ -4,6 +4,29 @@
     <ul>
       <li>
         <a href="/about"{% if page.section == "about" %} class="active"{% endif %}>About</a>
+        <ul{% if page.section == "about" %} class="expanded"{% endif %}>
+          <li>
+            <a href="/about/branching-and-merging">Branching and Merging</a>
+          </li>
+          <li>
+            <a href="/about/small-and-fast">Small and Fast</a>
+          </li>
+          <li>
+            <a href="/about/distributed">Distributed</a>
+          </li>
+          <li>
+            <a href="/about/data-assurance">Data Assurance</a>
+          </li>
+          <li>
+            <a href="/about/staging-area">Staging Area</a>
+          </li>
+          <li>
+            <a href="/about/free-and-open-source">Free and Open Source</a>
+          </li>
+          <li>
+            <a href="/about/trademark">Trademark</a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="/doc"{% if page.section == "documentation" %} class="active"{% endif %}>Documentation</a>

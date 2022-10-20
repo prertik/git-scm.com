@@ -15,18 +15,18 @@
       </li>
       <li>
         <a href="/doc"{% if page.section == "documentation" %} class="active"{% endif %}>Documentation</a>
-        <ul class="">
+        <ul {% if page.section == "documentation" %}class="expanded"{% endif %}>
           <li>
-            <a href="/docs"{% if page.section == "reference" %} class="active"{% endif %}>Reference</a>
+            <a href="/docs"{% if page.subsection == "reference" %} class="active"{% endif %}>Reference</a>
           </li>
           <li>
-            <a href="/book"{% if page.section == "book" %} class="active"{% endif %}>Book</a>
+            <a href="/book"{% if page.subsection == "book" %} class="active"{% endif %}>Book</a>
           </li>
           <li>
-            <a href="/videos"{% if page.section == "videos" %} class="active"{% endif %}>Videos</a>
+            <a href="/videos"{% if page.subsection == "videos" %} class="active"{% endif %}>Videos</a>
           </li>
           <li>
-            <a href="/doc/ext"{% if page.section == "external-links" %} class="active"{% endif %}>External Links</a>
+            <a href="/doc/ext"{% if page.subsection == "external-links" %} class="active"{% endif %}>External Links</a>
           </li>
         </ul>
       </li>

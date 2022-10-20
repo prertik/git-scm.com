@@ -69,5 +69,6 @@ collections:
   videos:
     output: true
     permalink: "/video/:name"
+  doc_categories:
 exclude:
 - "*.rb"

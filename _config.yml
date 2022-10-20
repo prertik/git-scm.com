@@ -52,11 +52,21 @@ defaults:
     title: About - Git
     layout: about
     sidebar: book
+- scope:
+    path: ''
+    type: videos
+  values:
+    layout: video
+    section: documentation
+    subsection: videos
+    sidebar: book
 collections:
   about:
     output: true
     permalink: "/:collection/:name"
   guis:
   videos:
+    output: true
+    permalink: "/video/:name"
 exclude:
 - "*.rb"

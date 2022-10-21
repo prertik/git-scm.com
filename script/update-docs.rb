@@ -5,6 +5,7 @@ require "octokit"
 require "time"
 require "digest/sha1"
 require "set"
+require_relative "version"
 
 def make_asciidoc(content)
   Asciidoctor::Document.new(content,
@@ -169,15 +170,15 @@ def index_doc(filter_tags, doc_list, get_content)
     name, commit_sha, tree_sha, ts = tag
     puts "#{name}: #{ts}, #{commit_sha[0, 8]}, #{tree_sha[0, 8]}"
 
-    stag = Version.where(name: name.delete("v")).first
-    next if stag && !rerun
+    # stag = Version.where(name: name.delete("v")).first
+    # next if stag && !rerun
 
-    stag = Version.where(name: name.delete("v")).first_or_create
+    # stag = Version.where(name: name.delete("v")).first_or_create
 
-    stag.commit_sha = commit_sha
-    stag.tree_sha = tree_sha
-    stag.committed = ts
-    stag.save
+    # stag.commit_sha = commit_sha
+    # stag.tree_sha = tree_sha
+    # stag.committed = ts
+    # stag.save
 
     tag_files = doc_list.call(tree_sha)
     doc_files = tag_files.select do |ent|
@@ -211,7 +212,7 @@ def index_doc(filter_tags, doc_list, get_content)
     if cmd
       cmd_list =
         get_content
-        .call(cmd.second)
+        .call(cmd[1])
         .match(/(### command list.*|# command name.*)/m)[0]
         .split("\n")
         .grep_v(/^#/)
@@ -225,7 +226,7 @@ def index_doc(filter_tags, doc_list, get_content)
           cmd_file = tag_files.detect { |ent| ent.first == "Documentation/#{cmd}.txt" }
           next unless cmd_file
 
-          content = get_content.call(cmd_file.second)
+          content = get_content.call(cmd_file[1])
           section = content.match(/^[a-z0-9-]+\(([1-9])\)/)[1]
           match = content.match(/NAME\n----\n\S+ - (.*)$/)
           if match
@@ -251,7 +252,7 @@ def index_doc(filter_tags, doc_list, get_content)
       get_content_f = proc do |name|
         content_file = tag_files.detect { |ent| ent.first == name }
         if content_file
-          new_content = get_content.call(content_file.second)
+          new_content = get_content.call(content_file[1])
         end
         new_content
       end
@@ -264,7 +265,7 @@ def index_doc(filter_tags, doc_list, get_content)
         next if path == "Documentation/technical/scalar.txt"
         next if doc_limit && path !~ /#{doc_limit}/
 
-        file = DocFile.where(name: docname).first_or_create
+        # file = DocFile.where(name: docname).first_or_create
 
         puts "   build: #{docname}"
 
@@ -272,8 +273,8 @@ def index_doc(filter_tags, doc_list, get_content)
         content.gsub!(/link:(?:technical\/)?(\S*?)\.html(\#\S*?)?\[(.*?)\]/m, "link:/docs/\\1\\2[\\3]")
         asciidoc = make_asciidoc(content)
         asciidoc_sha = Digest::SHA1.hexdigest(asciidoc.source)
-        doc = Doc.where(blob_sha: asciidoc_sha).first_or_create
-        if rerun || !doc.plain || !doc.html
+        # doc = Doc.where(blob_sha: asciidoc_sha).first_or_create
+        if rerun || true #!doc.plain || !doc.html
           html = asciidoc.render
           html.gsub!(/linkgit:(\S+)\[(\d+)\]/) do |line|
             x = /^linkgit:(\S+)\[(\d+)\]/.match(line)
@@ -288,18 +289,23 @@ def index_doc(filter_tags, doc_list, get_content)
             ids.add(anchor)
             "<dt class=\"hdlist1\" id=\"#{anchor}\"> <a class=\"anchor\" href=\"##{anchor}\"></a>#{$1} </dt>"
           end
-          doc.plain = asciidoc.source
-          doc.html  = html
-          doc.save
+
+          # TODO: write to disk!
+          html = "---\n---\n" + html
+          File.write('/Users/vdye/projects/git-scm.com/_docs/' + docname + '.html', html)
+
+          # doc.plain = asciidoc.source
+          # doc.html  = html
+          # doc.save
         end
-        dv = DocVersion.where(version_id: stag.id, doc_file_id: file.id, language: "en").first_or_create
-        dv.doc_id = doc.id
-        dv.language = "en"
-        dv.save
+        # dv = DocVersion.where(version_id: stag.id, doc_file_id: file.id, language: "en").first_or_create
+        # dv.doc_id = doc.id
+        # dv.language = "en"
+        # dv.save
       end
 
     end
-    Rails.cache.write("latest-version", Version.latest_version.name)
+    # Rails.cache.write("latest-version", Version.latest_version.name)
   end
 end
 
@@ -352,7 +358,7 @@ def local_index_doc(index_fun)
       if gettags
         # find all tags
         tags = `git tag | egrep 'v1|v2'`.strip.split("\n")
-        tags = tags.grep(/v\d([.\d])+$/) # just get release tags
+        tags = tags.grep(/v2.38.1$/) # just get release tags
         if tagname
           tags = tags.select { |t| t == tagname }
         end
@@ -385,18 +391,7 @@ def local_index_doc(index_fun)
   end
 end
 
-task local_index: :environment do
-  local_index_doc(:index_doc)
-end
-
-task local_index_l10n: :environment do
-  local_index_doc(:index_l10n_doc)
-end
-
-task preindex: :environment do
-  github_index_doc(:index_doc, "gitster/git")
-end
-
-task preindex_l10n: :environment do
-  github_index_doc(:index_l10n_doc, "jnavila/git-html-l10n")
-end
+local_index_doc(:index_doc)
+# local_index_doc(:index_l10n_doc)
+# github_index_doc(:index_doc, "gitster/git")
+# github_index_doc(:index_l10n_doc, "jnavila/git-html-l10n")

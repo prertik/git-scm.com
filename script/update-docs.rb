@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+#!/usr/bin/env ruby
 
 require "asciidoctor"
 require "octokit"
@@ -34,7 +34,6 @@ def expand_l10n(path, content, get_f_content, categories)
 end
 
 def index_l10n_doc(filter_tags, doc_list, get_content)
-  ActiveRecord::Base.logger.level = Logger::WARN
   rebuild = ENV.fetch("REBUILD_DOC", nil)
   rerun = ENV["RERUN"] || rebuild || false
 
@@ -162,7 +161,6 @@ def expand_content(content, path, get_f_content, generated)
 end
 
 def index_doc(filter_tags, doc_list, get_content)
-  ActiveRecord::Base.logger.level = Logger::WARN
   rebuild = ENV.fetch("REBUILD_DOC", nil)
   rerun = ENV["RERUN"] || rebuild || false
 

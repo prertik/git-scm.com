@@ -61,6 +61,13 @@ defaults:
     section: documentation
     subsection: videos
     sidebar: book
+- scope:
+    path: ''
+    type: docs
+  values:
+    layout: man
+    section: documentation
+    subsection: reference
 collections:
   about:
     output: true
@@ -70,6 +77,8 @@ collections:
     output: true
     permalink: "/video/:name"
   doc_categories:
+  docs:
+    output: true
 exclude:
 - "*.rb"
 - script/*.js

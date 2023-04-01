@@ -5,18 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - name: ruby setup
-      uses: ruby/setup-ruby@v1
-      with:
-        bundler-cache: true
-
-    - name: rails setup
-      run: bundle exec rake db:create db:schema:load
-
-    - name: rubocop
-      run: bundle exec rubocop -P
-
-    - name: rspec
-      run: bundle exec rspec
+    - name: Run Jekyll to build the pages
+      uses: actions/jekyll-build-pages@v1

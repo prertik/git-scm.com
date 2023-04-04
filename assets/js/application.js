@@ -20,6 +20,13 @@
 popped = 'state' in window.history;
 initialURL = location.href;
 
+const baseURLPrefix = (() => {
+  const scripts = document.getElementsByTagName('script');
+  const index = scripts.length - 1;
+  const thisScript = scripts[index];
+  return thisScript.src.replace(/^.*:\/\/[^/]*(.*\/)assets\/js\/[^/]+.js$/, '$1');
+})();
+
 $(document).ready(function() {
   BrowserFallbacks.init();
   Search.init();
@@ -49,27 +56,27 @@ var DownloadBox = {
     var os = window.session.browser.os; // Mac, Win, Linux
     if(os == "Mac") {
       $(".monitor").addClass("mac");
-      $("#download-link").text("Download for Mac").attr("href", "/download/mac");
+      $("#download-link").text("Download for Mac").attr("href", `${baseURLPrefix}download/mac`);
       $("#gui-link").removeClass('mac').addClass('gui');
-      $("#gui-link").text("Mac GUIs").attr("href", "/download/gui/mac");
+      $("#gui-link").text("Mac GUIs").attr("href", `${baseURLPrefix}download/gui/mac`);
       $("#gui-os-filter").attr('data-os', 'mac');
       $("#gui-os-filter").text("Only show GUIs for my OS (Mac)")
     } else if (os == "Windows") {
       $(".monitor").addClass("windows");
-      $("#download-link").text("Download for Windows").attr("href", "/download/win");
+      $("#download-link").text("Download for Windows").attr("href", `${baseURLPrefix}download/win`);
       $("#gui-link").removeClass('mac').addClass('gui');
-      $("#gui-link").text("Windows GUIs").attr("href", "/download/gui/windows");
+      $("#gui-link").text("Windows GUIs").attr("href", `${baseURLPrefix}download/gui/windows`);
       $("#alt-link").removeClass("windows").addClass("mac");
-      $("#alt-link").text("Mac Build").attr("href", "/download/mac");
+      $("#alt-link").text("Mac Build").attr("href", `${baseURLPrefix}download/mac`);
       $("#gui-os-filter").attr('data-os', 'windows');
       $("#gui-os-filter").text("Only show GUIs for my OS (Windows)")
     } else if (os == "Linux") {
       $(".monitor").addClass("linux");
-      $("#download-link").text("Download for Linux").attr("href", "/download/linux");
+      $("#download-link").text("Download for Linux").attr("href", `${baseURLPrefix}download/linux`);
       $("#gui-link").removeClass('mac').addClass('gui');
-      $("#gui-link").text("Linux GUIs").attr("href", "/download/gui/linux");
+      $("#gui-link").text("Linux GUIs").attr("href", `${baseURLPrefix}download/gui/linux`);
       $("#alt-link").removeClass("windows").addClass("mac");
-      $("#alt-link").text("Mac Build").attr("href", "/download/mac");
+      $("#alt-link").text("Mac Build").attr("href", `${baseURLPrefix}download/mac`);
       $("#gui-os-filter").attr('data-os', 'linux');
       $("#gui-os-filter").text("Only show GUIs for my OS (Linux)")
     } else {
@@ -181,7 +188,7 @@ var Search = {
                     ${results.map(e => {
                       const item = Search.store[e.ref];
                       return `
-                        <li><a href="${item.url}">${item.title}</a></li>
+                        <li><a href="${baseURLPrefix.replace(/\/$/, '')}${item.url}">${item.title}</a></li>
                       `
                     }).join('')}
                     </ul>
@@ -208,7 +215,7 @@ var Search = {
     var url = $(link).attr('href');
     if(!url) {
       var term = $('#search-text').val();
-      url = "/search/results?search=" + term;
+      url = `${baseURLPrefix}search/results?search=${term}`;
     }
     window.location.href = url;
     selectedIndex = 0;
@@ -245,7 +252,7 @@ var Search = {
       callback();
       return;
     }
-    $.getJSON('/search/search-index.json', data => {
+    $.getJSON(`${baseURLPrefix}search/search-index.json`, data => {
       Search.store = data;
       Search.searchIndex = lunr.Index.load(data.index);
       callback();
@@ -272,8 +279,8 @@ var Search = {
       const list = results.map(e => {
         const item = Search.store[e.ref];
         return `
-          <li><h3><a href="${item.url}">${item.title}</a></h3>
-          <a class="url" href="${item.url}">${item.url}</a>
+          <li><h3><a href="${baseURLPrefix.replace(/\/$/, '')}${item.url}">${item.title}</a></h3>
+          <a class="url" href="${baseURLPrefix.replace(/\/$/, '')}${item.url}">${item.url}</a>
           <p>${item.content.substring(0, 150)}...</p></li>`;
       }).join('');
 
@@ -359,8 +366,8 @@ var Downloads = {
 
       if (window.history && window.history.pushState) {
         var url = os === ''
-          ? '/downloads/guis/'
-          : '/download/gui/'+os;
+          ? `${baseURLPrefix}downloads/guis/`
+          : `${baseURLPrefix}download/gui/${os}`;
         history.pushState(null, $(this).html(), url);
       }
 

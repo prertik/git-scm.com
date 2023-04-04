@@ -98,6 +98,7 @@ var Search = {
   selectedIndex: 0,
 
   init: function() {
+    Search.displayFullSearchResults();
     Search.observeFocus();
     Search.observeTextEntry();
     Search.observeResultsClicks();
@@ -197,6 +198,74 @@ var Search = {
     $('form#search').switchClass("focus", "", 200);
     $('#search-results').fadeOut(0.2);
     Search.selectedIndex = 0;
+  },
+
+  getSearchTerm: function(variable) {
+    const query = window.location.search.substring(1);
+    const needle = `search=`;
+    return query
+      .split('&')
+      .filter(e => e.startsWith(needle))
+      .map(e => decodeURIComponent(e.substring(needle.length).replace(/\+/g, '%20')))
+      .pop();
+  },
+
+  initializeSearchIndex: function(callback) {
+    if (Search.searchIndex) {
+      callback();
+      return;
+    }
+    $.getJSON('/search/search-data.json', data => {
+      Search.store = data;
+
+      // Initialize lunr with the fields it will be searching on. Titles get
+      // a boost of 10 to indicate matches on this field are more important.
+      Search.searchIndex = lunr(function () {
+        this.ref('id');
+        this.field('title', { boost: 10 });
+        this.field('category');
+        this.field('content');
+
+        for (var key in Search.store) {
+          this.add({
+            'id': key,
+            'title': Search.store[key].title,
+            'category': Search.store[key].category,
+            'content': Search.store[key].content
+          });
+        }
+      })
+      callback();
+    })
+  },
+
+  displayFullSearchResults: function() {
+    const searchResultsElements = document.getElementsByClassName('full-search-results');
+    if (!searchResultsElements || searchResultsElements.length !== 1) return;
+
+    const searchTerm = this.getSearchTerm();
+    if (!searchTerm) return;
+
+    const searchTermElement = document.getElementById('search-term');
+    if (searchTermElement) searchTermElement.innerHTML = searchTerm;
+
+    const searchTextElement = document.getElementById('search-text');
+    if (searchTextElement) searchTextElement.value = searchTerm;
+
+    this.initializeSearchIndex(() => {
+      const results = Search.searchIndex.search(searchTerm);
+      if (!results.length) return;
+
+      const list = results.map(e => {
+        const item = Search.store[e.ref];
+        return `
+          <li><h3><a href="${item.url}">${item.title}</a></h3>
+          <a class="url" href="${item.url}">${item.url}</a>
+          <p>${item.content.substring(0, 150)}...</p></li>`;
+      }).join('');
+
+      searchResultsElements[0].innerHTML = list || '<li>No results found</li>';
+    })
   }
 }
 

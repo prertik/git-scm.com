@@ -1,0 +1,23 @@
+---
+layout: "none"
+---
+
+{% assign filtered = '' | split: '' %}
+{% for page in site.pages %}
+  {% assign file_extension = page.path | split: "." | last %}
+  {% if page.path != "redirect.html" and file_extension != "scss" and file_extension != "json" and file_extension != "map" %}
+    {% assign filtered = filtered | push: page %}
+  {% endif %}
+{% endfor %}
+[
+  {% for page in filtered %}
+    {
+      "url": "{{ page.url }}",
+      "title": {{ page.title | jsonify }},
+      "category": {{ page.category | jsonify }},
+      "content": {{ page.content | strip_html | replace: '
+', ' ' | jsonify }}
+    }
+    {% if forloop.last %}{% else %}, {% endif %}
+  {% endfor %}
+]

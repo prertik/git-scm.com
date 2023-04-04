@@ -14,7 +14,7 @@ document.writeln('--' + TAGLINES[Math.floor(Math.random()*TAGLINES.length)]);
     </script>
   </span>
 
-  <form id="search" action="/search/results">
+  <form id="search" action="{{ 'search/results' | relative_url }}">
     <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
   </form>
   <div id="search-results"></div>

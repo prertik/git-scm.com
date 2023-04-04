@@ -8,7 +8,19 @@ This site is built with [Jekyll](https://jekyllrb.com/) and served via GitHub Pa
 
 ## Setup
 
-You'll need [Jekyll](https://jekyllrb.com/). On Windows, we recommend using the Windows Subsystem for Linux (WSL). You can serve the site locally via
+You'll need [Jekyll](https://jekyllrb.com/) and [the `jekyll-redirect-from` plugin](https://github.com/jekyll/jekyll-redirect-from). On Windows, we recommend using the Windows Subsystem for Linux (WSL).
+
+You can install the `jekyll-redirect-from` plugin via
+
+    $ gem install --user-install jekyll-redirect-from
+
+or by running
+
+    $ bundler install
+
+Note: The `bundler install` command will install other Ruby gems, too, that are only required e.g. to update the Git version.
+
+You can serve the site locally via
 
     $ jekyll serve -w --incremental
 

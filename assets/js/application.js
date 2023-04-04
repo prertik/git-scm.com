@@ -158,10 +158,40 @@ var Search = {
 
       if(term != Search.currentSearch) {
         Search.currentSearch = term;
-        $.get("/search", {search: term}, function(results) {
-          $("#search-results").html(results);
+        this.initializeSearchIndex(() => {
+          const results = Search.searchIndex.search(term);
+          $("#search-results").html(`
+            <header> Search Results </header>
+            <table>
+              <tbody>
+                <tr class="show-all">
+                 <td class="category"> &nbsp; </td>
+                  <td class="matches">
+                    <ul>
+                      <li>
+                        <a class="highlight">Show all results...</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="category"> &nbsp; </td>
+                  <td class="matches">
+                    <ul>
+                    ${results.map(e => {
+                      const item = Search.store[e.ref];
+                      return `
+                        <li><a href="${item.url}">${item.title}</a></li>
+                      `
+                    }).join('')}
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          `);
           Search.searching = false;
-        }, 'html');
+        });
       };
     }
     else {

@@ -63,22 +63,25 @@ Now you need to get the latest downloads for the downloads pages:
 
 ## Update the ProGit book
 
-(TODO!)
+First, you will have to get the necessary prerequisites:
+
+    $ bundler install --with=scripts
+
 Now you'll probably want some book data. You'll have
 to have access to the [Pro Git project on GitHub](https://github.com/progit/progit2) through the API.
 
     $ export GITHUB_API_TOKEN=github_personal_auth_token
-    $ rake remote_genbook2
+    $ script/update-book2.rb en
 
 If you have 2FA enabled, you'll need to create a [Personal Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).    
 
-That will generate the book content from the Asciidoc files fetched from the online repository and post it to the Rails server database. You can select a specific language by indicating it in the `GENLANG` environment variable:
+That will generate the book content from the Asciidoc files fetched from the online repository and write the files to the local tree, ready to be committed and served via Jekyll. If you want to build the book for all available languages, just skip the language code:
 
-    $ GENLANG=zh rake remote_genbook2
+    $ script/update-book2.rb
 
-Alternatively, you can get the book content from a repository on your computer by specifying the path in the `GENPATH` environment variable to the `local_genbook2` target:
+Alternatively, you can get the book content from a repository on your computer by specifying the path:
 
-    $ GENLANG=fr GENPATH=../progit2-fr rake local_genbook2
+    $ script/update-book2.rb fr ../progit2-fr
 
 ## Contributing
 

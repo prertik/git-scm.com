@@ -37,6 +37,9 @@
       <div id="content-wrapper">
         {% include shared/sidebar.html %}
         <div id="content">
+          {% if page.book.front_page %}
+            {% include shared/book-front-page.html %}
+          {% else %}
           <div id="book-chapters">
             <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
             <div class="dropdown-panel" id="chapters-dropdown">
@@ -55,6 +58,7 @@
               {{ content }}
             </div>
           </div>
+          {% endif %}
         </div>
       </div>
       {% include shared/footer.html %}

@@ -204,4 +204,12 @@ class Section
       file.write(self.html.strip)
     end
   end
+
+  def saveImage(path, content)
+    path = self.absolute_path(path)
+    FileUtils.mkdir_p(File.dirname(path))
+    File.open(path, 'w') do |file|
+      file.write(content)
+    end
+  end
 end

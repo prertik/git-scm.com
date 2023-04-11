@@ -1,24 +1,17 @@
 <ol class='book-toc'>
-  <% per_column = (@book.chapters.count / 3.0).ceil -%>
-  <% start      = per_column * (column - 1)       -%>
-  <% stop       = start + (per_column - 1)        -%>
-  <% @book.chapters.includes(:sections)[start..stop].each do |chapter| %>
-  <% if chapter %>
-  <% if chapter.sections.size > 0 %>
+  {% for chapter in book.chapters %}
+  {% if forloop.index >= include.first_chapter && forloop.index <= include.last_chapter %}
   <li class='chapter'>
-  <h2><%= chapter.cs_number %>. <a href="/book/<%= @book.code %>/v<%= @book.edition %>/<%=u chapter.sections.first.slug %>"><%=raw chapter.title %></a></h2>
+  <h2>{{ chapter.cs_number }}. <a href="{{ chapter.sections[0].url | relative_url }}">{{ chapter.title }}</a></h2>
     <ol>
-      <% chapter.sections.each do |section| %>
-        <% unless section.title.empty? %>
+      {% for section in chapter.sections %}
         <li>
-          <%=  chapter.cs_number  %>.<%= section.number %>
-          <a href="/book/<%=  @book.code  %>/v<%=  @book.edition  %>/<%= u(section.slug) %>" <%= 'class=active' if same_section(@content, section) %>><%= raw section.title  %> </a>
+          {{ section.cs_number }}
+          <a href="{{ section.url | relative_url }}"{% if section.cs_number == page.book.section.cs_number %} class=active{% endif %}>{{ section.title }}</a>
         </li>
-      <%  end %>
-      <% end %>
+      {% endfor %}
     </ol>
   </li>
-  <% end %>
-  <% end %>
-  <% end %>
+  {% endif %}
+  {% endfor %}
 </ol>

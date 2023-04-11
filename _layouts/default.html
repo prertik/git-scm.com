@@ -33,6 +33,7 @@
       </div> <!-- .inner -->
     </div> <!-- #content-wrapper -->
   {% elsif page.book %}
+    {% assign book = site.data | where:"language_code", page.book.language_code | first %}
     <div class="inner">
       <div id="content-wrapper">
         {% include shared/sidebar.html %}
@@ -41,12 +42,7 @@
             {% include shared/book-front-page.html %}
           {% else %}
           <div id="book-chapters">
-            <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
-            <div class="dropdown-panel" id="chapters-dropdown">
-              <div class="three-column">
-                TODO!
-              </div>
-            </div>
+            {% include shared/chapters.html %}
 
             <span class="light" id="edition">
               2nd Edition

@@ -30,7 +30,7 @@
   </p>
 
   <ol class='book-toc'>
-    {% for chapter in page.book.chapters %}
+    {% for chapter in book.chapters %}
     {% assign section_count = chapter.sections | size %}
     {% unless sections_count == 0 %}
     <li class='chapter'>

@@ -1,0 +1,22 @@
+search:
+- sort results into "Reference" and "Book" categories
+- avoid `null` titles (figure out what went wrong and fix it)
+- auto-append `*` to incremental search (unless the user hit `Delete`)
+- update pre-computed index as part of all GitHub workflows
+
+book:
+- build all the non-English versions
+- record SHA and avoid re-building
+- implement scheduled GitHub workflow to update automatically
+
+manual pages:
+- record mapping of version <-> SHA of contents
+- implement scheduled GitHub workflow to update automatically
+
+downloads:
+- add a scheduled GitHub workflow to update automatically
+- sidebar should not show "This book is available in ..."
+
+general QA:
+- compare sidebars between Rails App and Jekyll page
+- ensure that current URLs would work after migration

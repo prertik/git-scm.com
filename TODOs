@@ -1,0 +1,26 @@
+search:
+- sort results into "Reference" and "Book" categories
+- avoid `null` titles (figure out what went wrong and fix it)
+- auto-append `*` to incremental search (unless the user hit `Delete`), showing a hint about it
+- update pre-computed index as part of all GitHub workflows
+
+manual pages:
+- record mapping of version <-> SHA of contents
+- implement scheduled GitHub workflow to update automatically
+
+downloads:
+- add a scheduled GitHub workflow to update automatically
+- sidebar should not show "This book is available in ..."
+
+general QA:
+- compare sidebars between Rails App and Jekyll page
+- ensure that current URLs would work after migration
+- add `test -z "$(git grep "\\(href\|src\) *= *[\"']/")"` to CI
+
+move to Hugo:
+- a single GitHub Pages build with Jekyll [takes about 20 minutes](https://github.com/dscho/git-scm.com/actions/runs/5993303204)!!!
+- other people also complained, went to Hugo, and never looked back. See [here](https://www.sarasoueidan.com/blog/jekyll-ghpages-to-hugo-netlify/) or [here](https://chenhuijing.com/blog/migrating-from-jekyll-to-hugo/), for example.
+- OMG Liquid. So limited!!!
+- by [using Hugo on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/) the workflow can be modified, e.g. making that pre-computed search index during that run.
+- considered Eleventy because we need Javascript for client-side search anyway, but... [this article](https://www.brycewray.com/posts/2020/12/eleventy-hugo-comparing-contrasting/) points out that Hugo's faster, and the ease of using a single binary in a CI is just unbeatable (certainly not rivaled by `npm install`...)
+- https://gohugo.io/commands/hugo_import_jekyll/ might help?

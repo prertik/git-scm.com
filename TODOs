@@ -1,0 +1,4 @@
+general QA:
+- compare sidebars between Rails App and Hugo page
+- ensure that current URLs would work after migration
+- add `test -z "$(git grep "\\(href\|src\) *= *[\"']/")"` to CI

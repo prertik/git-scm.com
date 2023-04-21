@@ -62,8 +62,7 @@ defaults:
     subsection: videos
     sidebar: book
 - scope:
-    path: ''
-    type: docs
+    path: docs
   values:
     layout: man
     section: documentation

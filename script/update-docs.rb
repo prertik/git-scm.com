@@ -392,7 +392,6 @@ def index_doc(filter_tags, doc_list, get_content)
 
           FileUtils.mkdir_p(doc_path)
           front_matter_with_redirects = front_matter.clone
-          front_matter_with_redirects["permalink"] = "/docs/#{docname}/#{doc["versions"][0]}"
           front_matter_with_redirects["redirect_from"] =
             doc_versions[changed_in..unchanged_until].map{|v| "/docs/#{docname}/#{v}/"}
           File.open("#{doc_path}/#{doc_versions[changed_in]}.html", "w") do |out|

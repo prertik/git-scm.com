@@ -425,7 +425,7 @@ def local_index_doc(index_fun)
     tag_filter = lambda do |tagname, gettags = true|
       if gettags
         # find all tags
-        # tags = `git tag | egrep 'v1|v2'`.strip.split("\n")
+        # tags = `git tag -l --sort=version:refname 'v[12]*'`.strip.split("\n")
         # tags = tags.grep(/v\d([.\d])+$/) # just get release tags
         tags = ["v2.39.2", "v2.40.0"]
         if tagname

@@ -11,16 +11,16 @@
     <% @doc_file.version_changes.each do |v| %>
       <% if v[:changed] %>
         <li>
-        <a href="/docs/<%= @doc_file.name %>/<%= v[:name] %>"><span class="version"><%= v[:name] %></span>
+        <a href="{{ "/docs/<%= @doc_file.name %>/<%= v[:name] %>" | relative_url }}"><span class="version"><%= v[:name] %></span>
           <span class="diff">
             <% v[:diff][0].times do %>
-              <img src="/images/icons/green-dot.png" />
+              <img src="{{ "/images/icons/green-dot.png" | relative_url }}" />
             <% end %>
             <% v[:diff][1].times do %>
-              <img src="/images/icons/red-dot.png" />
+              <img src="{{ "/images/icons/red-dot.png" | relative_url }}" />
             <% end %>
             <% v[:diff][2].times do %>
-              <img src="/images/icons/grey-dot.png" />
+              <img src="{{ "/images/icons/grey-dot.png" | relative_url }}" />
             <% end %>
           </span>
           <em class="date"><%= v[:time].strftime("%m/%d/%y") %></em>

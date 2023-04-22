@@ -348,8 +348,14 @@ def index_doc(filter_tags, doc_list, get_content)
         # fails with a 401 anyway, so maybe nobody cares?
         if !docname.match(/\./)
           FileUtils.mkdir_p(doc_path)
-          File.open("#{doc_path}/#{tagname}.html", "w") do |out|
-            out.write("#{front_matter.to_yaml}\n---\n")
+          front_matter_with_redirects = front_matter.clone
+          front_matter_with_redirects["permalink"] = "/docs/#{docname}/#{doc["versions"][0]}"
+          if doc["versions"].length > 1
+            front_matter_with_redirects["redirect_from"] =
+              doc["versions"].drop(1).map{|v| "/docs/#{docname}/#{v}"}
+          end
+          File.open("#{doc_path}/#{doc["versions"][0]}.html", "w") do |out|
+            out.write("#{front_matter_with_redirects.to_yaml}\n---\n")
             out.write(html)
           end
         end

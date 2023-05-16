@@ -245,26 +245,9 @@ var Search = {
       callback();
       return;
     }
-    $.getJSON('/search/search-data.json', data => {
+    $.getJSON('/search/search-index.json', data => {
       Search.store = data;
-
-      // Initialize lunr with the fields it will be searching on. Titles get
-      // a boost of 10 to indicate matches on this field are more important.
-      Search.searchIndex = lunr(function () {
-        this.ref('id');
-        this.field('title', { boost: 10 });
-        this.field('category');
-        this.field('content');
-
-        for (var key in Search.store) {
-          this.add({
-            'id': key,
-            'title': Search.store[key].title,
-            'category': Search.store[key].category,
-            'content': Search.store[key].content
-          });
-        }
-      })
+      Search.searchIndex = lunr.Index.load(data.index);
       callback();
     })
   },

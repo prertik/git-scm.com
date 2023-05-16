@@ -107,6 +107,7 @@ The [list of GUI clients](https://git-scm.com/downloads/guis) has been construct
 * https://shopify.github.io/liquid/
 * https://github.com/jekyll/jekyll-redirect-from
 * https://github.com/jekyll/github-metadata/blob/main/docs/site.github.md
+* https://lunrjs.com/guides/index_prebuilding.html
 
 ## License
 

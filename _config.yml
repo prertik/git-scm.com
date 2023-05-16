@@ -72,3 +72,4 @@ collections:
   doc_categories:
 exclude:
 - "*.rb"
+- script/*.js

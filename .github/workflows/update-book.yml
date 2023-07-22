@@ -1,0 +1,131 @@
+name: Update Progit Book
+
+on:
+  workflow_dispatch:
+  schedule:
+    # check daily for updates
+    - cron: '29 4 * * *'
+
+permissions:
+  contents: write # need to be able to push
+
+env:
+  # Install also the gems needed to run the `update-book2.rb` script
+  BUNDLE_WITH: scripts
+
+jobs:
+  check-for-updates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          sparse-checkout: |
+            _sync_state
+            script
+      - uses: actions/github-script@v6
+        id: get-pending
+        with:
+          script: |
+            const { getPendingBookUpdates } = require('./script/ci-helper.js')
+
+            const pending = await getPendingBookUpdates(github)
+            // an empty matrix is invalid and makes the workflow run fail, unfortunately
+            return pending.length ? pending : ['']
+      - name: ruby setup
+        # Technically, we do not need Ruby in this job. But we do want to cache
+        # Ruby & The Gems for use in the matrix in the next job.
+        if: steps.get-pending.outputs.result != '[""]'
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+    outputs:
+      matrix: ${{ steps.get-pending.outputs.result }}
+  update-book:
+    needs: check-for-updates
+    if: needs.check-for-updates.outputs.matrix != '[""]'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ${{ fromJson(needs.check-for-updates.outputs.matrix) }}
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          sparse-checkout: |
+            _sync_state
+            script
+            _data
+            book/${{ matrix.language.lang }}
+      - name: ruby setup
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: update book/${{ matrix.language.lang }}
+        shell: bash
+        run: |
+          # Clone the book's sources
+          git clone --depth 1 --single-branch \
+            https://github.com/${{ matrix.language.repository }} progit-clone &&
+
+          # this seems to be needed to let `bundle exec` see `vendor/bundle/`
+          { bundle check || bundle install --frozen; } &&
+
+          # generate the HTML
+          bundle exec ruby ./script/update-book2.rb ${{ matrix.language.lang }} progit-clone &&
+
+          # record the commit hash
+          mkdir -p _sync_state &&
+          git -C progit-clone rev-parse HEAD >_sync_state/book-${{ matrix.language.lang }}.sha &&
+
+          # commit it all
+          printf '%s\n' /progit-clone/ /vendor >>.git/info/exclude &&
+          git add \
+            _sync_state \
+            _data/book-${{ matrix.language.lang }}.yml \
+            book/${{ matrix.language.lang }} &&
+          git -c user.name=${{ github.actor }} \
+            -c user.email=${{ github.actor }}@noreply.github.com \
+            commit -m 'book: update ${{ matrix.language.lang }}' \
+              -m 'Updated via the `update-book.yml` GitHub workflow.' &&
+
+          # verify that there are no uncommitted changes
+          git update-index --refresh &&
+          if test -n "$(git diff HEAD)$(git ls-files --exclude-standard --other)"
+          then
+            echo '::error::there are uncommitted changes!' >&2
+            git status >&2
+            exit 1
+          fi &&
+
+          # generate the bundle
+          git branch -m book-${{ matrix.language.lang }}
+          git bundle create ${{ matrix.language.lang }}.bundle HEAD^..book-${{ matrix.language.lang }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: bundle-${{ matrix.language.lang }}
+          path: ${{ matrix.language.lang }}.bundle
+  push-updates:
+    needs: [check-for-updates, update-book]
+    if: needs.check-for-updates.outputs.matrix != '[""]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          sparse-checkout: .
+      - uses: actions/download-artifact@v3
+      - name: push updates
+        shell: bash
+        run: |
+          for bundle in bundle-*/*.bundle
+          do
+            lang=${bundle##*/}
+            lang=${lang%.bundle}
+
+            git -c core.editor=: \
+              -c user.name=${{ github.actor }} \
+              -c user.email=${{ github.actor }}@noreply.github.com \
+              pull --no-rebase $bundle book-$lang ||
+            exit 1
+          done
+
+          git push origin HEAD

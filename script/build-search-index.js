@@ -27,6 +27,7 @@ input.on('end', function () {
       const item = documents[key]
 
       if (item.url.match(/docs\/.*\//) || item.url.match(/\.(css|json)$/)) continue
+      if (item.url.startsWith('/book/') && !item.url.startsWith('/book/en/')) continue
 
       result[key] = {
 	url: item.url,

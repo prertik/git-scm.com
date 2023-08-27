@@ -28,10 +28,13 @@ The site should be running on http://127.0.0.1:4000
 
 ## Update manual pages
 
-(TODO!)
-You can do so using a local Git source clone like this:
+First, install the prerequisites:
 
-    $ GIT_REPO=../git/.git rake local_index
+	$ bundler install --with=scripts
+
+Then, you can build the manual pages using a local Git source clone like this:
+
+    $ GIT_REPO=../git/.git ./scripts/update-docs.rb
 
 This will populate the man pages for all Git versions. You can also populate them only for a specific Git version (faster):
 

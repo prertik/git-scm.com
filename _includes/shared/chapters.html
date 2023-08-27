@@ -1,14 +1,21 @@
 <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+{% assign chapter_count = book.chapters | size %}
+{% assign first_chapter_left_column = 1 %}
+{% assign last_chapter_left_column = chapter_count | divided_by: 3.0 | ceil %}
+{% assign first_chapter_middle_column = last_chapter_left_column | plus: 1 %}
+{% assign last_chapter_middle_column = last_chapter_left_column | times: 2 %}
+{% assign first_chapter_right_column = last_chapter_middle_column | plus: 1 %}
+{% assign last_chapter_right_column = chapter_count %}
 <div class='dropdown-panel' id='chapters-dropdown'>
-  <div class="three-column">
-    <div class='column-left'>
-      <%= render :partial => 'chapter_listings', :locals => {:column => 1} %>
+  <div class='three-column'>
+    <div class="column-left">
+      {% include shared/chapter_listings.html first_chapter=first_chapter_left_column last_chapter=last_chapter_left_column %}
     </div>
     <div class='column-middle'>
-      <%= render :partial => 'chapter_listings', :locals => {:column => 2} %>
+      {% include shared/chapter_listings.html first_chapter=first_chapter_middle_column last_chapter=last_chapter_middle_column %}
     </div>
     <div class='column-right'>
-      <%= render :partial => 'chapter_listings', :locals => {:column => 3} %>
+      {% include shared/chapter_listings.html first_chapter=first_chapter_right_column last_chapter=last_chapter_right_column %}
     </div>
   </div>
- </div>
+</div>

@@ -310,6 +310,8 @@ def index_doc(filter_tags, doc_list, get_content)
             ids.add(anchor)
             "<dt class=\"hdlist1\" id=\"#{anchor}\"> <a class=\"anchor\" href=\"##{anchor}\"></a>#{$1} </dt>"
           end
+          # Make links relative
+          html.gsub!(/(<a href=['"])(\/[^'"]*)/, '\1{{ "\2" | relative_url }}')
         end
         # Make links relative
         html.gsub!(/(<a href=['"])(\/[^'"]*)/, '\1{{ "\2" | relative_url }}')
@@ -328,24 +330,36 @@ def index_doc(filter_tags, doc_list, get_content)
         end
 
         front_matter = {
-          "category" => "manual",
-          "section" => "documentation",
-          "subsection" => "manual",
           "title" => "Git - #{docname} Documentation"
         }
 
-        FileUtils.mkdir_p(doc_path)
-        File.open("#{doc_path}/#{tagname}.html", "w") do |out|
-          out.write("#{front_matter.to_yaml}\n---\n", out)
-          out.write(html, out)
+        # Jekyll does not like `gitweb.conf/` _and_ `gitweb.conf.html`,
+        # complaining that the directory already exists when it wants to
+        # create it.
+        #
+        # The problem is that `.` in the file name. All other pages are
+        # handled gracefully by Jekyll in this regard. For example, it is
+        # no problem to have `git-config/` and `git-config.html`.
+        #
+        # Therefore, we cannot provide any version other than the latest
+        # for the `gitweb.conf` manual page.
+        #
+        # But then, https://github.com/docs/gitweb.conf/v2.32.0 currently
+        # fails with a 401 anyway, so maybe nobody cares?
+        if !docname.match(/\./)
+          FileUtils.mkdir_p(doc_path)
+          File.open("#{doc_path}/#{tagname}.html", "w") do |out|
+            out.write("#{front_matter.to_yaml}\n---\n")
+            out.write(html)
+          end
         end
 
         if data["pages"][docname]['latest-changes'] == tagname
           FileUtils.mkdir_p(File.dirname(doc_path))
           File.open("#{doc_path}.html", "w") do |out|
             front_matter["permalink"] = "/docs/#{docname}"
-            out.write("#{front_matter.to_yaml}\n---\n", out)
-            out.write(html, out)
+            out.write("#{front_matter.to_yaml}\n---\n")
+            out.write(html)
           end
         end
       end

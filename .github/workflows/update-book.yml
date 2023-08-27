@@ -5,6 +5,7 @@ on:
   schedule:
     # check daily for updates
     - cron: '29 4 * * *'
+  push:
 
 permissions:
   contents: write # need to be able to push

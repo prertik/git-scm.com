@@ -283,6 +283,14 @@ pages:
       - 4
       - 0
     latest-changes: 2.40.0
+    languages:
+      de: 19a60935f5e6d4d9784a40a5ee99db8ff0ce2326
+      fr: 7aac7de198f56b2db1aa63721885cc9ecbd1bd64
+      is: 9f654b0b92614e3857162466c6786229aa13caff
+      ja: bdec37e853738df308b72b243e15ac1a76ca9eef
+      pt_BR: b03c29b573f0f9c5ba76ed6b49628dc1e57e370e
+      ro: 8a9b8e5bbf41a51a8bbeb8179dbac91ef4915061
+      zh_HANS-CN: 69fc049504814860d7effe4e536b7bdffdf7a7d2
   SubmittingPatches:
     version-map:
       2.0.5: f6e648ab07f96cdd4f29fe3eab1f147646b3d2da
@@ -2313,6 +2321,9 @@ pages:
       - 1
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: 7deecf4cfb6fe895d1b181af621f4ae62e30db02
+      pt_BR: 57c314533f2f2f0965caf150bc9dcb4d88e41d2b
   git-annotate:
     version-map:
       2.0.5: 8aa83c9ba6b9bc5f962b1fe622a491cfe3900f66
@@ -2594,6 +2605,10 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.0
+    languages:
+      fr: 1cba2c3d45eb0b5d7c38d0a47b13d493c6782a1c
+      pt_BR: 986993b34fea9520d9203892919249332cacfc67
+      ru: 27d2d31ae3fba5e6e8380492f9c846e8628cb0aa
   git-apply:
     version-map:
       2.0.5: ba0c21a0c0c24d0e3ab9bc20f884f0f4c2d728cb
@@ -2861,6 +2876,9 @@ pages:
       - 1
       - 6
     latest-changes: 2.40.0
+    languages:
+      fr: 968a3d3e3b9d4d20c4bf719d2fc17a3fb58be002
+      pt_BR: 78371165ac236cd33b74220d0f966f58041fea78
   git-archimport:
     version-map:
       2.0.5: 9d1566436f011f09639cb9c355d0c9dd6f3b9c5c
@@ -3057,6 +3075,9 @@ pages:
       - 4
       - 0
     latest-changes: 2.35.0
+    languages:
+      fr: c14b8f34853bf45624eec57038cb061a864a43ec
+      pt_BR: becd840856ef98ee1cb1155292387aafa77b1ec9
   git-archive:
     version-map:
       2.0.5: 973b63aec51daa3230e7475d5750bcced9ee850b
@@ -3269,6 +3290,9 @@ pages:
       - 5
       - 0
       - 3
+    languages:
+      fr: 35d93a64815462f84805e28378a3018bb069ece0
+      pt_BR: 10a69f3ce70d003a5a377194527cbfa9394a8cc8
   git-bisect-lk2009:
     version-map:
       2.0.5: 0d583895a7b4d142884024c6ae55a27aad4deffa
@@ -3513,6 +3537,8 @@ pages:
       - 2
       - 4
     latest-changes: 2.40.0
+    languages:
+      pt_BR: 888ba9668d18358fcd6a091b835054f3ea6a1294
   git-bisect:
     version-map:
       2.0.5: 0b6c024beb2f7d8313d3efd2c79d407d019361e2
@@ -3763,6 +3789,9 @@ pages:
       - 1
       - 0
     latest-changes: 2.29.0
+    languages:
+      fr: 46e96884e8c14f099596b1ac831f7c5c0672e64a
+      pt_BR: ead020ef1cb092d2d4d596fe64cce64cfa962f5c
   git-blame:
     version-map:
       2.0.5: 657fcb04cc8543be9f4a24b2557ee35ecb10a21c
@@ -4043,6 +4072,9 @@ pages:
       - 0
       - 0
     latest-changes: 2.38.0
+    languages:
+      fr: 400ff62c985422e35f78ddb09261086cddef8ea2
+      pt_BR: bedc32d9c82ff36743e75c0a40af4e898f311cec
   git-branch:
     version-map:
       2.0.5: 3a8d919ba4a38f05d349a3e6de87d3cc36102974
@@ -4436,6 +4468,10 @@ pages:
       - 1
       - 6
     latest-changes: 2.40.0
+    languages:
+      fr: 46a46b9dd349af6b7831d3b76b7e391e5125e521
+      pt_BR: 64aef28d65fe906f3b93f65b669483632d2843a0
+      zh_HANS-CN: 24b656fd91905f8bdaddb63e309d2d94cfd6bdfc
   git-bundle:
     version-map:
       2.0.5: 7350463ed48aae165eb18dd2fba90edc0f2c07da
@@ -4672,6 +4708,9 @@ pages:
       - 3
       - 0
     latest-changes: 2.38.0
+    languages:
+      fr: 16cfeff2c8225e3b9b9ab56b71eef323f7094593
+      pt_BR: 61757edac37bfc95063dc8fb8135aadaba3a1883
   git-cat-file:
     version-map:
       2.0.5: ac2de97308193195c178115dfe33182fdc651efa
@@ -4955,6 +4994,9 @@ pages:
       - 2
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: c7a2192fc629c35cb0b2acb12f0801bcf8f920c3
+      pt_BR: cd965b4f0c03332416ae6645e1a195322bea85a4
   git-check-attr:
     version-map:
       2.0.5: 51e1c4267280c154b1def60f54e41e94387e516d
@@ -5159,6 +5201,9 @@ pages:
       - 2
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: c53365cf48f8b68154346406ffd98d37150ce782
+      pt_BR: c9c6f7155f2663951e87c0d72c1f94a71bea33a7
   git-check-ignore:
     version-map:
       2.0.5: 9ade63dfee3ff43ce2cf7df683622cd0d0370e64
@@ -5394,6 +5439,9 @@ pages:
       - 2
       - 4
     latest-changes: 2.36.0
+    languages:
+      fr: fe2c2a36a0ea6d7a9bf6727493881d8706603b40
+      pt_BR: 17768933c0737b4fd9420d73ff8e8b16225ac69e
   git-check-mailmap:
     version-map:
       2.0.5: 5d69f63780a99ad9a77d15fc06f5a347ea8552b2
@@ -5582,6 +5630,9 @@ pages:
       - 7
       - 0
     latest-changes: 2.31.0
+    languages:
+      fr: '0842eef3bd61ced33fada40013385c9e2ea6d811'
+      pt_BR: 9dd079847e7bb494fe79874c53d9ccdbf8d54ef4
   git-check-ref-format:
     version-map:
       2.0.5: 494e8d16ac124e24517b86433ed98591132dc766
@@ -5801,6 +5852,9 @@ pages:
       - 1
       - 5
     latest-changes: 2.23.0
+    languages:
+      fr: 6747f96ffef07bf9dea7cf01c6ad65d85ae09bd4
+      pt_BR: be229b75e8a692b6e367ead18042cc1710a956a4
   git-checkout-index:
     version-map:
       2.0.5: d2203eca20696e15a59b60c71037a02bdb9cda67
@@ -5981,6 +6035,9 @@ pages:
       - 6
       - 2
       - 0
+    languages:
+      fr: a5f656be813a3fb07644804df40a07e8c1abb542
+      pt_BR: 721d120be9955cc193ccdf7cb34081b6925c8697
   git-checkout:
     version-map:
       2.0.5: b781f76137f03ad4214bdd3303ea5ef4d1cee59b
@@ -6329,6 +6386,9 @@ pages:
       - 3
       - 2
     latest-changes: 2.40.0
+    languages:
+      fr: 89af9524d182c96a24e004c9ef1a591ee7a5e709
+      pt_BR: cd614072a25fd442d817945b17a316aae9984511
   git-cherry-pick:
     version-map:
       2.0.5: 5b82405987613b78dcb39b85d5b32c765aaa12a6
@@ -6596,6 +6656,9 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.3
+    languages:
+      fr: 00ee8cb429237bade92f07efdcf08653c1be0709
+      pt_BR: 1b913762e2c36eccdcb5bcf4b1f13412408d0c08
   git-cherry:
     version-map:
       2.0.5: fca5b29775cc02c100f35be6819e2d1742c37129
@@ -6767,6 +6830,9 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      fr: 2cd0fbfd973a292a4ffe6b04ca834b8c0ecc2a39
+      pt_BR: 540b94d567a9e938895c630cc99189f5c3311da8
   git-citool:
     version-map:
       2.0.5: e3c67bd3820e6646fd79f04bd04a766740e94ca8
@@ -6938,6 +7004,10 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      de: b95ba25b2393e2dc0ae802c9d976d00a3a2b604a
+      fr: 1f46019d4fb10e0cb68b6713e1464e6d0e1a42e5
+      pt_BR: e8c3fb29587bf4c5a3a174ff397fb891fed6e9b6
   git-clean:
     version-map:
       2.0.5: fec0ffa3e047052787779abbb14872594d5565dc
@@ -7181,6 +7251,9 @@ pages:
       - 4
       - 0
     latest-changes: 2.39.0
+    languages:
+      fr: 504b401ce1879bcc94baf73f5c7ce6decd2179ef
+      pt_BR: 602d0c0ecd4d330dadbf9373e2c4df7113d4b7a4
   git-clone:
     version-map:
       2.0.5: f2252dc01f61ec36513a6c5097a10b15f82c9756
@@ -7532,6 +7605,14 @@ pages:
       - 0
       - 0
     latest-changes: 2.38.0
+    languages:
+      de: 24d4fd786e6aa28a81461bb30ff8206e9ef348ad
+      fr: 192d07d75c35da723b9e3927de7c189eda90f105
+      is: 3030bea500282fc02acca3d22ddbea694d9ccc73
+      ja: 72abae2e6ffac5b484a340fe11767789d5903695
+      pt_BR: fd7619843d7a4da06b9a27d92d94399c162a9fc8
+      ro: '0006839767a4b51e815bb6ed6e480dd447c605b2'
+      zh_HANS-CN: de49c28e9f0a2556e6d9847aa51e8e14f2758a85
   git-column:
     version-map:
       2.0.5: ba1de8b8d51a2402e9229d59be33bc28e1882474
@@ -7736,6 +7817,10 @@ pages:
       - 0
       - 0
     latest-changes: 2.38.0
+    languages:
+      fr: 6f7a59b1db1119385790cbaa186ad1cd0fca575d
+      pt_BR: 420f11cd3da42daa42da006d55f335117ac51610
+      zh_HANS-CN: fa8e84e9412244788b44669e7436ac9bad47ae35
   git-commit-tree:
     version-map:
       2.0.5: b473f7b22807ada3a6600d264f18b6d131097532
@@ -7988,6 +8073,9 @@ pages:
       - 3
       - 2
     latest-changes: 2.35.0
+    languages:
+      fr: b028b524be02291c48f0ee4f2fef62f4a496af2b
+      pt_BR: 0c8e214409b15a7d3d30baa3356c2dc315d66429
   git-commit:
     version-map:
       2.0.5: 494232127a0ca3c627d5872afd21db9cf6ecf5f7
@@ -8338,6 +8426,10 @@ pages:
       - 0
       - 0
     latest-changes: 2.38.0
+    languages:
+      fr: 33d369e68103f8bf57bb43c0ee6a8aab4847901b
+      pt_BR: 56b438cf3cd054f22a2f7d393631c6e6c158155b
+      zh_HANS-CN: c1ec434be839076b47ede7e54a3e88b6b6731bee
   git-config:
     version-map:
       2.0.5: 49a84c3d8643880219cb14be501054538f2fd330
@@ -9079,6 +9171,10 @@ pages:
       - 0
       - 0
     latest-changes: 2.40.0
+    languages:
+      de: cfc4dde585cd604b17807e748698ba0e59d518ae
+      fr: efaf4570a1b19294176e605455e2450a2bd27c01
+      pt_BR: b1bbc8699e4be861d959801a7d097b44ae1a4c42
   git-count-objects:
     version-map:
       2.0.5: 3f2d9a9fc764eb5e2dedd3f7e8371ae0333724ec
@@ -9259,6 +9355,9 @@ pages:
       - 0
       - 3
     latest-changes: 2.11.4
+    languages:
+      fr: f86d12a6dfc476cb78db7029c8a4dc9b6409c87f
+      pt_BR: 52dde97da1a687b4d0e74ab76e4142587145b420
   git-credential-cache--daemon:
     version-map:
       2.0.5: 2141d7a17ab97fe4083d1b9d4a19c7bfc1c1babb
@@ -9455,6 +9554,9 @@ pages:
       - 2
       - 4
     latest-changes: 2.39.0
+    languages:
+      fr: 158ca3e6003a1b98c230bce1b5c5b06769c2e24a
+      pt_BR: 2d6edf01aeda0a6ceadc88aadbfb4d1c2a0d9d43
   git-credential-cache:
     version-map:
       2.0.5: 2c9fe49f076b6322c478a973eb463f185f178f5c
@@ -9667,6 +9769,9 @@ pages:
       - 3
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: b9d55c91b2fede6c3a6cf323d4d50c34d103db71
+      pt_BR: f586853245e8e115807b485f4285ed35527deaf3
   git-credential-store:
     version-map:
       2.0.5: f308de8b3524cd64fcd6de9cf1389f775b93f387
@@ -9878,6 +9983,9 @@ pages:
       - 0
       - 4
     latest-changes: 2.27.0
+    languages:
+      fr: 3cd74afb272f164443fc45e0f586c7618c8aca71
+      pt_BR: ba4be7c511ffa1dba1442ba1bc6fa9a0215067f1
   git-credential:
     version-map:
       2.0.5: fac472740d545454e564aac3342a3072455add8d
@@ -10098,6 +10206,10 @@ pages:
       - 6
       - 0
       - 2
+    languages:
+      de: e28bc4b4e23dbe06fecc1fb4c43ab8d42f46b897
+      fr: 597ab6a05451954dfd0b22002316ebcd3da3cec7
+      pt_BR: c175cac8a96ae5700d2d7dfb7cac943073c767b9
   git-cvsexportcommit:
     version-map:
       2.0.5: cd142dbabbd231b6c517665565f35957da521b5f
@@ -10278,6 +10390,9 @@ pages:
       - 2
       - 2
       - 4
+    languages:
+      fr: a87ecbc18b0fbab21552ac0e0a8425d29257b94c
+      pt_BR: ace746339e52850cfbcbf000ce8559df67808be0
   git-cvsimport:
     version-map:
       2.0.5: d656684e0e1c3afb663c6f23679ce59830b75061
@@ -10481,6 +10596,9 @@ pages:
       - 4
       - 0
     latest-changes: 2.35.0
+    languages:
+      fr: 0ca86a1b792f320db36446692caaece30276ce09
+      pt_BR: 25cc90987efe41fd8f581f253f3dcb17c7aa5043
   git-cvsserver:
     version-map:
       2.0.5: 61ba49a1b9134b922ca72924d02a6ed5b326738e
@@ -10733,6 +10851,9 @@ pages:
       - 4
       - 0
     latest-changes: 2.37.2
+    languages:
+      fr: 643df180b81371d1abdc4194f432ee3046b58398
+      pt_BR: a51957ffe6e8a97bff7bf3f9bda19b516305b428
   git-daemon:
     version-map:
       2.0.5: 2d2216814105e4d9f66a4d890469ebb8f245a912
@@ -10944,6 +11065,9 @@ pages:
       - 4
       - 0
     latest-changes: 2.37.2
+    languages:
+      fr: c82534e17dfd09585227d519518ae5111ec93d18
+      pt_BR: 850c3b08e497ea9407386312e73ab35d67410312
   git-describe:
     version-map:
       2.0.5: fe67dd09b5c242a0d758a035cde932cf6e14f335
@@ -11187,6 +11311,10 @@ pages:
       - 3
       - 0
     latest-changes: 2.33.0
+    languages:
+      fr: a6e7000cfb8664fb2803ccfd1f50e5107729e04b
+      pt_BR: 1f234e0fcdc7b54dee6d367e2414ac91ee92bbb7
+      zh_HANS-CN: 0b254087d072af7def6917462af4678340d01267
   git-diff-files:
     version-map:
       2.0.5: 596bad196814f2078a43a7dea88d1e410ff3536e
@@ -11612,6 +11740,9 @@ pages:
       - 1
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: c5926fdc471b7b1840bbd0ebebd1acc4061422b3
+      pt_BR: a6bfb85daecbfe7e710d2f24a7986c874df86674
   git-diff-index:
     version-map:
       2.0.5: f764923b82c207a1f2f066d4edf77bdd4dc09a33
@@ -12029,6 +12160,8 @@ pages:
       - 1
       - 0
     latest-changes: 2.40.0
+    languages:
+      pt_BR: 98e59e73aac7cef1e769aa5bfdc365d77d092d4c
   git-diff-tree:
     version-map:
       2.0.5: e84b4176322ec592236fdd185543407edef0e5e4
@@ -12495,6 +12628,9 @@ pages:
       - 2
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: 8a55f0c6d63dc5e54e19cb5439b4605bb3d25df2
+      pt_BR: 9780f1aee499b50ed314e099d00c66647631edb9
   git-diff:
     version-map:
       2.0.5: 463303afa15bb42b5f4bf0a373e4d2be2ddc923f
@@ -12928,6 +13064,10 @@ pages:
       - 1
       - 0
     latest-changes: 2.40.0
+    languages:
+      de: 2b5d38791050f6f04dc47bfaa2672c407e4ca5a0
+      fr: 706ec875c24f90e44a88e741335a11d3fa92ac87
+      pt_BR: fb11c61d18042fec8317c400210b3600f6d7c391
   git-difftool:
     version-map:
       2.0.5: 8fa55a94be9047cacb35ea83f28a9450d6cc9d74
@@ -13148,6 +13288,9 @@ pages:
       - 2
       - 0
     latest-changes: 2.38.0
+    languages:
+      fr: d7c9877b8b9a53d1c10212c58dd82b0dadc9edee
+      pt_BR: cf081153155927306b1afa4510c45d4bd37dd9ba
   git-fast-export:
     version-map:
       2.0.5: 4d26aa545fc2ac16652aafd01312c1393703a9a1
@@ -13398,6 +13541,9 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.0
+    languages:
+      fr: df3710becf04512fcd9b4ce617a5244b57e08b1c
+      pt_BR: 0235345d46ffe378119541fdc4640f56cfc16ee8
   git-fast-import:
     version-map:
       2.0.5: bc2f682c2d1407a134d7c3571a331cacf6668e2d
@@ -13774,6 +13920,9 @@ pages:
       - 0
       - 0
     latest-changes: 2.38.0
+    languages:
+      fr: 90c865b591d207a9de99d18490465273ad27a3c6
+      pt_BR: 29ce50144caa9ca6956729d22d6157094738db88
   git-fetch-pack:
     version-map:
       2.0.5: e14e27758ecdf4239f02101fdeac2916aa08a83e
@@ -13993,6 +14142,8 @@ pages:
       - 0
       - 4
     latest-changes: 2.36.0
+    languages:
+      pt_BR: f02608faf1e1771eef30827a3f1de283493a0657
   git-fetch:
     version-map:
       2.0.5: af1ecfe32fef8bd4722d084a48d09d88ba0b6dd7
@@ -14390,6 +14541,9 @@ pages:
       - 1
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: 0c79f88b38f46638991f2620fe910386004dca50
+      pt_BR: 543a16200ac27affead568ecfd2704fa0ceecd7a
   git-filter-branch:
     version-map:
       2.0.5: 8451115c0dfbcdd405550880e16fd7441c5322ec
@@ -14661,6 +14815,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.29.2
+    languages:
+      pt_BR: 8393f284540836e865d181e721cfc8fd3f74a85e
   git-fmt-merge-msg:
     version-map:
       2.0.5: 6ec2329250f0c59377423a30fad26ddf873e1dbd
@@ -14881,6 +15037,9 @@ pages:
       - 1
       - 2
     latest-changes: 2.35.0
+    languages:
+      fr: 4b2a891f87e9f09cf1d8c2c7d98b3bcb43347578
+      pt_BR: 196461e3276367503ef2a6ab9a7e57a2b320cadd
   git-for-each-ref:
     version-map:
       2.0.5: 5ec84ba527b22d3f2dc9daa04350d61f1bbf426d
@@ -15175,6 +15334,8 @@ pages:
       - 0
       - 0
     latest-changes: 2.34.0
+    languages:
+      pt_BR: 922f0070e61b121e2881ac12fb0851bdc41e0a72
   git-format-patch:
     version-map:
       2.0.5: 01bf00127cc9649e648f2e4ab8d678751c5e47b3
@@ -15614,6 +15775,9 @@ pages:
       - 1
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: f36292e411e3b2461563044d86fbd9dfd7c4a242
+      pt_BR: 075fd7f2d62c8b68cfd41a7aa69381d3b29b349c
   git-fsck-objects:
     version-map:
       2.0.5: 2f75bacdf9c0336458ce7b44afd983ca0b5f956d
@@ -15785,6 +15949,11 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      de: 5e5be53834f3a4d9991102e3c9d5b02bd794e839
+      fr: 0b6a30aafdf0a7fcb050a77deb291e60e5af9bc0
+      pt_BR: 90e09ff211d2a8eb6307ea83b12d26575920400f
+      ru: 757c61ebb7e863bb2e83822c5b3d85cb4d52516a
   git-fsck:
     version-map:
       2.0.5: b3b2a116205d159788e2d6400d239bb23246d17c
@@ -16051,6 +16220,9 @@ pages:
       - 0
       - 0
     latest-changes: 2.39.2
+    languages:
+      fr: 8875078bf3ff88991aad85a26aca3c1727d745cb
+      pt_BR: a8cccbdda60e20d709db86f941a7ab3394ddea0c
   git-gc:
     version-map:
       2.0.5: aa46d834846c3489f6c2a1e6501f6ef2a034f05c
@@ -16342,6 +16514,9 @@ pages:
       - 2
       - 2
     latest-changes: 2.38.0
+    languages:
+      fr: ecfa8772664edda39b4e5b345eeb201ef84f3686
+      pt_BR: bf3e7db043687ddb027780ba055048dc808be440
   git-get-tar-commit-id:
     version-map:
       2.0.5: fb7d1672dcf26321f75ea3d5635ef40fb17e25d5
@@ -16522,6 +16697,9 @@ pages:
       - 3
       - 0
     latest-changes: 2.6.7
+    languages:
+      fr: ebfe8ac5320c42aa56433c6870e22fc9d6c030f7
+      pt_BR: 12a5bc9908cf6355f829a93adfe656dbccd1a308
   git-grep:
     version-map:
       2.0.5: b088fcf10e6c473e08364be55c4248117d519b26
@@ -16843,6 +17021,9 @@ pages:
       - 0
       - 0
     latest-changes: 2.38.0
+    languages:
+      fr: a663ba396dbe232b22c624bd71ac489a9676c46f
+      pt_BR: c0e62a3c9dab1363a154daca3d348f90971aa45b
   git-gui:
     version-map:
       2.0.5: 8654db420ad417e42ffc5f9e7bbf1abc02e2aec7
@@ -17047,6 +17228,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.35.0
+    languages:
+      pt_BR: 6b89531c8e011e13e759aabc7e46e9bee00b8d96
   git-hash-object:
     version-map:
       2.0.5: 4b0257fd480b2ec187f84ca27f127a1e0428c17d
@@ -17251,6 +17434,8 @@ pages:
       - 1
       - 5
     latest-changes: 2.39.0
+    languages:
+      pt_BR: 0c73bdf75645a5138a4f93b9f3b5b922add8f25d
   git-help:
     version-map:
       2.0.5: 14a9bfdceb8a5afe5d642137c8e1dd48aadcf217
@@ -17518,6 +17703,8 @@ pages:
       - 1
       - 0
     latest-changes: 2.38.0
+    languages:
+      pt_BR: b366aa4fd1881a6f0343cba2c07063fa2a8201dd
   git-http-backend:
     version-map:
       2.0.5: 0ea5634d3112e3bd7562d24a9a67c1543e386b70
@@ -17722,6 +17909,8 @@ pages:
       - 0
       - 0
     latest-changes: 2.34.0
+    languages:
+      pt_BR: '038e2c7d8d762a14a53b21097ca046a47aba4aa8'
   git-http-fetch:
     version-map:
       2.0.5: 71f8649ede904bf0526bb17e72ae38452128151e
@@ -17926,6 +18115,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.35.0
+    languages:
+      pt_BR: 811d64b8781e7c0465da581efca801883358520d
   git-http-push:
     version-map:
       2.0.5: 52d16d2838c21e4622b807d3ccebf2e7a1514e2c
@@ -18122,6 +18313,8 @@ pages:
       - 4
       - 0
     latest-changes: 2.35.0
+    languages:
+      pt_BR: a1c998e2dc18d5899335ef12391c5b37d31fdb0f
   git-imap-send:
     version-map:
       2.0.5: bd257119ebafa62f431945735480d8a3dda62f99
@@ -18349,6 +18542,8 @@ pages:
       - 0
       - 3
     latest-changes: 2.38.0
+    languages:
+      pt_BR: 4444cba7c91cb4518c410f04fd435ed3ea330167
   git-index-pack:
     version-map:
       2.0.5: 308d01d47a37e4ec1d951c141ffad5251a4d8c63
@@ -18585,6 +18780,8 @@ pages:
       - 0
       - 0
     latest-changes: 2.36.0
+    languages:
+      pt_BR: 87cce03c91a69cb1b13bb4e6fa31d7e215e90c2d
   git-init-db:
     version-map:
       2.0.5: 744bc61172ece93e945d9e17e6e15bee3d91212d
@@ -18765,6 +18962,12 @@ pages:
       - 1
       - 1
       - 6
+    languages:
+      de: 0ba9813f1b6fb3b442cad4e89110d329de8ee7e5
+      fr: 74a1538672cc9ca1a0d0ab52b2edc8d75527ee28
+      ja: 91640ed90c0c9c5c4e16ba86e720996c4f342b6c
+      pt_BR: 80179830d14ece4fce903da4c37a8e92596625f3
+      ru: ee1e1ed94fa1518dda801f2f7cf536236093a014
   git-init:
     version-map:
       2.0.5: 9c844c1453d50ce30889374edeb9de0c15afb35c
@@ -19025,6 +19228,15 @@ pages:
       - 0
       - 0
     latest-changes: 2.38.0
+    languages:
+      de: 873833711dcd4fb1392e085eff41c261081f321a
+      fr: d2e3c2d35cc6e0e9ce9902ab48b00c2b4179a6b0
+      is: 2a4aa3aa0bd711227d60fb643a0a358870bf2e16
+      ja: 8fedc2d10fe7953daba294be49ee015634597f0f
+      pt_BR: ae39868c488255cbc6a32e46da80b10d3a6d5563
+      ro: 424e10102aee330adb90ad68646b7c11355859b2
+      zh_HANS-CN: 043c23a948b1e610aa6263a82ba11dac405a580a
+      zh_HANT: ed7307eb73b82f96bc789435beff0ced34edfa9c
   git-instaweb:
     version-map:
       2.0.5: af495ea56c682a34a4d0f1b6fa05f6291f566775
@@ -19221,6 +19433,8 @@ pages:
       - 1
       - 5
     latest-changes: 2.21.0
+    languages:
+      pt_BR: c385860a8ab55e4eaf19998243d5f219400603d5
   git-log:
     version-map:
       2.0.5: 2ec3c32048fd6cf515ed2487f4b8649e597ec22d
@@ -19725,6 +19939,10 @@ pages:
       - 3
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: 39553d425a80c93d3c4e6b66cb65ececcb91a075
+      pt_BR: 305bc4766129afb0389c4b64d946e9db41794730
+      zh_HANS-CN: 6cabfb05fd7a204f8e2757bf9554df9ca730d3d2
   git-ls-files:
     version-map:
       2.0.5: f5a29451e18109e8bd480ae33ab1b30c7b10efe5
@@ -20036,6 +20254,8 @@ pages:
       - 3
       - 0
     latest-changes: 2.40.0
+    languages:
+      pt_BR: 93fa216da8e931ad532f4b6c3b49168f0c09f7fa
   git-ls-remote:
     version-map:
       2.0.5: bb32c8ede46fbeff1f98b0f73777cb9038a82df3
@@ -20272,6 +20492,8 @@ pages:
       - 3
       - 0
     latest-changes: 2.40.0
+    languages:
+      pt_BR: e70209011b4b605a9e1ff83e4e87f142f9a3d4b4
   git-ls-tree:
     version-map:
       2.0.5: f4a12cb5d59d12ec35759616d07e982d94573fed
@@ -20484,6 +20706,8 @@ pages:
       - 0
       - 0
     latest-changes: 2.36.0
+    languages:
+      pt_BR: 48f64184fa8a09431cd2f5355ec9d62feeb8de76
   git-mailinfo:
     version-map:
       2.0.5: 38776d0aea2479881fdc6a3ff87ded29abd1da81
@@ -20704,6 +20928,8 @@ pages:
       - 0
       - 0
     latest-changes: 2.38.0
+    languages:
+      pt_BR: 1e33c809339578b579fe6f349ca8fc6f5e0eeee0
   git-mailsplit:
     version-map:
       2.0.5: 4988083669c65563a8382af69fd48ff4cd7ccb83
@@ -20884,6 +21110,8 @@ pages:
       - 1
       - 1
     latest-changes: 2.10.5
+    languages:
+      pt_BR: 333591b809c35e061d09f86ad4c45339b5d54dee
   git-merge-base:
     version-map:
       2.0.5: 22f0a2f33e0950c73502a0cfe2145560d733edb4
@@ -21104,6 +21332,8 @@ pages:
       - 2
       - 4
     latest-changes: 2.39.0
+    languages:
+      pt_BR: 4fc67dd6a48459644ad8e036a6ae0c34f7b8918f
   git-merge-file:
     version-map:
       2.0.5: b7e9d4c3a5b98dd5a06168c6b6fa4a272d9c6115
@@ -21292,6 +21522,8 @@ pages:
       - 0
       - 5
     latest-changes: 2.35.0
+    languages:
+      pt_BR: 6cb1dba834865b5b7cd1c55c27b43503955dc4e3
   git-merge-index:
     version-map:
       2.0.5: 5bb1ae5672bf6bbcd9dff9b16dcb92ad01d943cf
@@ -21480,6 +21712,8 @@ pages:
       - 1
       - 1
       - 6
+    languages:
+      pt_BR: b1db96dfc18b033b2deb5cd580a647657796fd3f
   git-merge-one-file:
     version-map:
       2.0.5: b4afbaa801709f37927ad5525967847da103e8d1
@@ -21651,6 +21885,10 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      de: 658f8f845337b9dfebc29c196ba3c9654f9f4bfa
+      pt_BR: 4e71da01306e09f22a0a5f084e40b6e2c40d45a5
+      ru: 5ece33eebde17eac0b12cb47e2583bc9bb8bc2ee
   git-merge-tree:
     version-map:
       2.0.5: a046857521b8706b5ed3e8df024b1f82b92e86e5
@@ -21847,6 +22085,8 @@ pages:
       - 8
       - 0
       - 0
+    languages:
+      pt_BR: 9008e9dfaff9126d9e273f62d5c72b9b350e6008
   git-merge:
     version-map:
       2.0.5: b27eaefe63c3068c2711b5d099bd885d83c433cc
@@ -22247,6 +22487,9 @@ pages:
       - 1
       - 5
     latest-changes: 2.39.3
+    languages:
+      fr: cc332ca732d6dde42485c14935c3c2e4652e7d79
+      pt_BR: a60a00aa9e98d8c15058a43f4675cec3a97c793e
   git-mergetool--lib:
     version-map:
       2.0.5: c674fede3a8af805b0a0fe61a9cb3f2cfc355f5d
@@ -22435,6 +22678,8 @@ pages:
       - 0
       - 4
     latest-changes: 2.31.0
+    languages:
+      pt_BR: b690ab31b76b33518f98f825f53ab521eb566a72
   git-mergetool:
     version-map:
       2.0.5: 9cda7d1760a2948e9ac28c2f8b56ec5fbcb6a0e6
@@ -22670,6 +22915,9 @@ pages:
       - 1
       - 6
     latest-changes: 2.38.2
+    languages:
+      fr: f9d8cbdc0dd0ae2d72daea379de610cde53bc4f0
+      pt_BR: 5cfae4df306498b74485a750325af30101c0bc57
   git-mktag:
     version-map:
       2.0.5: 7ec8e69a560fa189314771db9b1260d33f482c1b
@@ -22866,6 +23114,8 @@ pages:
       - 4
       - 0
     latest-changes: 2.32.0
+    languages:
+      pt_BR: 484b35ee80b67b5e820682512c4eeb1a37069aa1
   git-mktree:
     version-map:
       2.0.5: 37b723a9a71adcd05f6273f9c11ec05db00a74fb
@@ -23062,6 +23312,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.36.0
+    languages:
+      pt_BR: 81a0d85539b3dcd3eb9b8ccadd1a87fb5b00b1c4
   git-mv:
     version-map:
       2.0.5: 79511654e00ad6844262e8e88ebf59735158114c
@@ -23250,6 +23502,11 @@ pages:
       - 2
       - 4
     latest-changes: 2.39.0
+    languages:
+      de: 318a4e849d44b9923f218742311181f3a1966d28
+      fr: 998dd3da0349c84ead45d55add4331e17ba25b95
+      pt_BR: ec92bb577b322f0e5277eb30ce856f23b48da281
+      zh_HANS-CN: 5809fafb00e62c7c095c87d03db74ae7ba4efcdc
   git-name-rev:
     version-map:
       2.0.5: d0eb6ac4598c43e66bd5e532961387cfaaba32fe
@@ -23446,6 +23703,8 @@ pages:
       - 1
       - 0
     latest-changes: 2.36.0
+    languages:
+      pt_BR: 4040475bf77649b16bc38863eef4ae54662c198a
   git-notes:
     version-map:
       2.0.5: d8012362ef5f19cda41828edfcb129b822bd38c2
@@ -23705,6 +23964,10 @@ pages:
       - 2
       - 0
     latest-changes: 2.38.0
+    languages:
+      fr: 6e8d82ede36c5183b4e1eac1fd10f7c5c3e2bb71
+      pt_BR: 7f794a9c00046dac9e9a15849a9834b669cb046a
+      zh_HANS-CN: 2c42cde819bb042f13791389e1dd1cbb37af78e9
   git-p4:
     version-map:
       2.0.5: ca8ec872bc57c827eef1e842adcffc0387f9312a
@@ -24015,6 +24278,8 @@ pages:
       - 0
       - 0
     latest-changes: 2.37.0
+    languages:
+      pt_BR: 50e08b729f8dd6d6cc1ceca3ada38cd0901c4a23
   git-pack-objects:
     version-map:
       2.0.5: 5dfb933f96fdf05027d231a300a44d70330e87ac
@@ -24328,6 +24593,8 @@ pages:
       - 0
       - 0
     latest-changes: 2.37.0
+    languages:
+      pt_BR: 765ac5a9e0c7c044bb29d5aa130b5037795c676b
   git-pack-redundant:
     version-map:
       2.0.5: ce5ddc7e29c1617e71f064d2bde8937828a723e6
@@ -24516,6 +24783,8 @@ pages:
       - 2
       - 2
       - 4
+    languages:
+      pt_BR: f7ccf48042d913c48bfb75e74ef56cfd968daa67
   git-pack-refs:
     version-map:
       2.0.5: 93617e731632f88bc70df0af7ac00ef26b917dad
@@ -24687,6 +24956,8 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      pt_BR: 075a876a338c5e0d335f86459e62da28c23df40e
   git-parse-remote:
     version-map:
       2.0.5: 9e80bcc80cae6431199bd679b182cfe7b6329ec7
@@ -24777,6 +25048,9 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      pt_BR: 9af1a6e931b07b815ba6ead1d96f1a875d0804c8
+      ru: 2df8d9f84e1aec088eadfbf572a4be1aff433d0f
   git-patch-id:
     version-map:
       2.0.5: 0f2cfaae7d1e4dff7feb67b88a458c7bc5347958
@@ -24980,6 +25254,8 @@ pages:
       - 3
       - 0
     latest-changes: 2.39.0
+    languages:
+      pt_BR: e76a9be06ca7527458fb0e2905d6cb3be207f747
   git-prune-packed:
     version-map:
       2.0.5: c1a344499e800a88e0a0c83077218a85d6f7d352
@@ -25168,6 +25444,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.0
+    languages:
+      pt_BR: d68e297520afc3328685a31e8061267f14e59276
   git-prune:
     version-map:
       2.0.5: a1277e01af9fe90dffa722d2e4496006ef5318f2
@@ -25356,6 +25634,8 @@ pages:
       - 3
       - 2
     latest-changes: 2.18.0
+    languages:
+      pt_BR: 391d3e328314aa76744a6142b9a62e046cc1276a
   git-pull:
     version-map:
       2.0.5: 35421c85f42a594c42da9f8adca607b9a44231e2
@@ -25786,6 +26066,9 @@ pages:
       - 1
       - 4
     latest-changes: 2.40.0
+    languages:
+      fr: d927030626926584b264dd74975f6c7da714df7d
+      pt_BR: 817e9bc5fba822375bd6fe5a8bc03547cf546370
   git-push:
     version-map:
       2.0.5: 392a5e4d698f18474b903c88830315b3c2c151c1
@@ -26162,6 +26445,9 @@ pages:
       - 1
       - 4
     latest-changes: 2.40.0
+    languages:
+      fr: a9e47ed13bbffe2f5a8e1aedb363adcb8304eeb2
+      pt_BR: 56d184309d2ae9eba00b25b1ae8d8474ee54d94f
   git-quiltimport:
     version-map:
       2.0.5: 3c2c20eb874ad3bbf87b5a9b84479345069d58bc
@@ -26366,6 +26652,8 @@ pages:
       - 1
       - 3
     latest-changes: 2.21.0
+    languages:
+      pt_BR: daae44ecefd34c04991dd92b92c1906790d3df01
   git-read-tree:
     version-map:
       2.0.5: 520b366105cedc1fdc4bf7013e91f02516de34d5
@@ -26640,6 +26928,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.40.0
+    languages:
+      pt_BR: 306506339e82e0954137a2fa178e1a1b96d9ad58
   git-rebase:
     version-map:
       2.0.5: 56eb6ec600131703b0e7c141680fa1dec9fa73e7
@@ -27109,6 +27399,8 @@ pages:
       - 4
       - 0
     latest-changes: 2.40.0
+    languages:
+      pt_BR: 7a4adcdfd4b2a09169ce706c1f905312932833a5
   git-receive-pack:
     version-map:
       2.0.5: 2d14293e7194c688ba3da8bd44266088a0e93654
@@ -27345,6 +27637,8 @@ pages:
       - 2
       - 4
     latest-changes: 2.39.0
+    languages:
+      pt_BR: c630b3e11cea5b2ef97dffeff0fd7ece72073a85
   git-reflog:
     version-map:
       2.0.5: 944c2d270bec4247162d7a4e31c7954a1590b0d6
@@ -27573,6 +27867,8 @@ pages:
       - 5
       - 0
     latest-changes: 2.39.0
+    languages:
+      pt_BR: 472120dca96a892c68f4b55d44cf4dd43c2e623d
   git-relink:
     version-map:
       2.0.5: b3e93233afa8050707b359e4d3c831c0036f3eba
@@ -27789,6 +28085,8 @@ pages:
       - 2
       - 4
     latest-changes: 2.22.0
+    languages:
+      pt_BR: c02a4064083f19ef3dd121f6e12ad3091e938e0a
   git-remote-fd:
     version-map:
       2.0.5: 94b9f73284832b98789f322c6547dd140a3f3080
@@ -27985,6 +28283,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.22.0
+    languages:
+      pt_BR: 8ca97999b2af7fd65632f25eafafb641a429b483
   git-remote-testgit:
     version-map:
       2.0.5: 436af5786140481b7b7a1855a8f498dd68fc8bb5
@@ -28308,6 +28608,9 @@ pages:
       - 0
       - 6
     latest-changes: 2.37.0
+    languages:
+      fr: 59c8c16864b8d789733b4f4aea7bf2712b148ba7
+      pt_BR: 6df5cc5ac203bfd253f1921aa9c03aea49031c95
   git-repack:
     version-map:
       2.0.5: 421e91cd1854c88a075aeadc5ad297147295be52
@@ -28606,6 +28909,8 @@ pages:
       - 0
       - 2
     latest-changes: 2.39.0
+    languages:
+      pt_BR: ea4371d2d6ec9fb9957e5385cf7adaa48d354c28
   git-replace:
     version-map:
       2.0.5: 1a58a2e69325d27c1bd968c980b4c6170ec8d199
@@ -28809,6 +29114,8 @@ pages:
       - 4
       - 0
     latest-changes: 2.24.0
+    languages:
+      pt_BR: 66901fbc54e02f4185b4e620e75ca3ff3c562b59
   git-request-pull:
     version-map:
       2.0.5: afd834b82e8f63f0511fb8e8c51edbe0b3184e67
@@ -29005,6 +29312,8 @@ pages:
       - 4
       - 0
     latest-changes: 2.35.0
+    languages:
+      pt_BR: a174e3f161a75872757f5efc2cd78ae6117fe6dc
   git-rerere:
     version-map:
       2.0.5: f323d566b963d7b1e00fae002fcb476cd8e541d3
@@ -29225,6 +29534,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.0
+    languages:
+      pt_BR: a0d962bc55a1362c53a35c079a2e49b7a0c57f70
   git-reset:
     version-map:
       2.0.5: f2fd2c17c187971efff0d4c3e73f48cc4b105497
@@ -29491,6 +29802,10 @@ pages:
       - 1
       - 5
     latest-changes: 2.39.3
+    languages:
+      fr: '0830cf745ef96ce81b53a0a9fabd7c6e3ba4bd81'
+      pt_BR: 44f0387d8857a815be50c7573f1857935978f834
+      zh_HANS-CN: 6b7b0975778934ffeafac4940c6377dea674d5a5
   git-rev-list:
     version-map:
       2.0.5: 16a6ae3c2ccb7eeafef3b7a92ecb2a9be7f41d5b
@@ -29964,6 +30279,10 @@ pages:
       - 3
       - 0
     latest-changes: 2.40.0
+    languages:
+      de: 23d28fda43bda6f361975696650e03af50216ad1
+      fr: bfd48aba4a1157ff14745a8f3897f2ecb83df32c
+      pt_BR: b3f24b0efd5bc31549d3bf87683df462edae236a
   git-rev-parse:
     version-map:
       2.0.5: a74c0e80e33c8edf6968015bbcba15d52de99f0c
@@ -30327,6 +30646,8 @@ pages:
       - 1
       - 5
     latest-changes: 2.39.3
+    languages:
+      pt_BR: 264fba25c68deccda85fb9d127c6b28e88c831e4
   git-revert:
     version-map:
       2.0.5: dd3d82d424ef5401e3795d798187d6e90908b6c5
@@ -30578,6 +30899,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.0
+    languages:
+      pt_BR: 2521dac80c315f78bf44337ae0d26ec5a5e54cac
   git-rm:
     version-map:
       2.0.5: 356204e63daa3c882d8f0f306d8e051ef8630134
@@ -30796,6 +31119,9 @@ pages:
       - 0
       - 2
     latest-changes: 2.34.0
+    languages:
+      fr: f6607adbd9b2e94fc07b5f003af16f086ccb3a4b
+      pt_BR: f0df1ea41cedd46771e3a5051e605b6c81d9f807
   git-send-email:
     version-map:
       2.0.5: c91e689d4d6653a9aacd88a2a51a840f59df71c6
@@ -31153,6 +31479,8 @@ pages:
       - 2
       - 0
     latest-changes: 2.39.0
+    languages:
+      pt_BR: ad107badd86970b8fd7bbaf24813c0139a4d94d1
   git-send-pack:
     version-map:
       2.0.5: 9caa3c964104c0f02421ed5dff2bd0e84fd8d816
@@ -31396,6 +31724,8 @@ pages:
       - 2
       - 3
     latest-changes: 2.39.0
+    languages:
+      pt_BR: c6034b8aad7d9f48234a2fbb8bb58fd9f5c9f1d1
   git-sh-i18n--envsubst:
     version-map:
       2.0.5: 95d86d71a3967fdf0cdb94ca56c1ed443ee7ab1d
@@ -31567,6 +31897,8 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      pt_BR: d56d54ef440757ccaa93229792d13d21ac0ec0ce
   git-sh-i18n:
     version-map:
       2.0.5: faf2fae41df4692d3a4ec0c0a7d15a3def078481
@@ -31738,6 +32070,8 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      pt_BR: 000d9ce8dd0b6ea43b47e22ffd648dff5aa1805f
   git-sh-setup:
     version-map:
       2.0.5: 393716ac1c1c32b4257b9bce59f0279af5bc5d3c
@@ -31918,6 +32252,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.9.5
+    languages:
+      pt_BR: 23ab234c2cd0ee00ad291bc11995968ac7e3466c
   git-shell:
     version-map:
       2.0.5: cad4bdb3add81b6b86644199f3acfd4e1df8ae3d
@@ -32113,6 +32449,8 @@ pages:
       - 2
       - 4
     latest-changes: 2.18.0
+    languages:
+      pt_BR: a1fba53624c15184f2d5c85c995df36983b2e9ec
   git-shortlog:
     version-map:
       2.0.5: 3cedb3112f327fb9620cc15eba3fe11f89be4f7d
@@ -32419,6 +32757,10 @@ pages:
       - 4
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: e399a94f14f30387e7774b1355642f82199e2eb2
+      pt_BR: 58502e25b674e0573adab4b86564de25ff4ca261
+      zh_HANS-CN: 5ebac1e711e29d19fc1cb4732afb2824aeeb3e33
   git-show-branch:
     version-map:
       2.0.5: 3bcd1b3059f186cf7bb7593b732e2d8b3ac57db8
@@ -32639,6 +32981,8 @@ pages:
       - 2
       - 4
     latest-changes: 2.39.0
+    languages:
+      pt_BR: 0a02eeba3a29b4a1bcab80082a1dcfe6253351e5
   git-show-index:
     version-map:
       2.0.5: 4cc40281acda8f8b938a45db33aa6700ff87ffb4
@@ -32843,6 +33187,8 @@ pages:
       - 0
       - 0
     latest-changes: 2.29.0
+    languages:
+      pt_BR: 0a4a576a93a0e9bc0c137826e9f157e8cb8ff395
   git-show-ref:
     version-map:
       2.0.5: ccdeb76f1373edb4dc327b22dbbac0b1b4c6b569
@@ -33055,6 +33401,8 @@ pages:
       - 2
       - 4
     latest-changes: 2.39.0
+    languages:
+      pt_BR: ff32cb0f1bcb3b4137b6dab43255453a8e84233b
   git-show:
     version-map:
       2.0.5: c970dff97e5845a75826b9331814514e29063259
@@ -33499,6 +33847,9 @@ pages:
       - 2
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: d0d751c506eecfa1562b088c8b8eed97eaab74aa
+      pt_BR: bbaa59154235642b179a11b848621eab9df5a372
   git-stage:
     version-map:
       2.0.5: 73007f76108c4b3d152a10bc8a57ec60e9b54c04
@@ -33687,6 +34038,11 @@ pages:
       - 1
       - 6
     latest-changes: 2.35.0
+    languages:
+      de: 29dce2f01792dbc04c711344f978dcc31970f04c
+      fr: b0f721cfc4eb4d521f8e6f17e1a24deec665d710
+      pt_BR: be019c38e7cf6f87032b695aa5ee9a241e255974
+      ru: '07834332fdfa1803cd62ec853771d3949d04287f'
   git-stash:
     version-map:
       2.0.5: 8851d86225cb55c1de8b094b414bbd82128cb5fd
@@ -33983,6 +34339,9 @@ pages:
       - 3
       - 0
     latest-changes: 2.39.0
+    languages:
+      fr: 45d4238f3321dcef1765dabf8a08c8218afd3ff5
+      pt_BR: 3e384eabc4adcb26633529587c48bc4ed9f203ff
   git-status:
     version-map:
       2.0.5: 9b734cf5fbfb9015e7001bf85eaf83acde51babb
@@ -34311,6 +34670,10 @@ pages:
       - 0
       - 0
     latest-changes: 2.40.0
+    languages:
+      fr: '08b36e2f15d410758bdf41b0071d152d024c53c8'
+      pt_BR: 2413ef0b053971f3cf4641137ac4cd6ba2780b00
+      zh_HANS-CN: e23a9264e517b6b7bfc2239c1bedc9b8d55be9b7
   git-stripspace:
     version-map:
       2.0.5: b1e5898c81b6ab776e8b69745b51c374b1bf94a2
@@ -34506,6 +34869,8 @@ pages:
       - 4
       - 0
     latest-changes: 2.6.7
+    languages:
+      pt_BR: 43b8ae284c4a16b3e223820cb4d952ca80ff9415
   git-submodule:
     version-map:
       2.0.5: cdd16ef2cfab22271f2fe3e39be2b2e62ecd203b
@@ -34824,6 +35189,9 @@ pages:
       - 1
       - 2
     latest-changes: 2.36.0
+    languages:
+      fr: 8e4f67e26256800535d41e52b3741025ada22c7a
+      pt_BR: ea35471c75c87f3dd7f83fce1e6557d47de9ff75
   git-svn:
     version-map:
       2.0.5: 105a812a7093e2a9225d6e00aaf3150fea9f815d
@@ -35141,6 +35509,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.35.0
+    languages:
+      pt_BR: '009c357650512d7a175c9958d3debe1ccb2f4f40'
   git-symbolic-ref:
     version-map:
       2.0.5: 9750afff5b6e2ae587387dfc9e3f7e8c56acc363
@@ -35321,6 +35691,8 @@ pages:
       - 7
       - 1
       - 0
+    languages:
+      pt_BR: '09c63075f088d8b2cf9e0231e7acdb7fb852fc89'
   git-tag:
     version-map:
       2.0.5: d80d6639803a64ef8afb3b824f2414210ad6fa93
@@ -35668,6 +36040,9 @@ pages:
       - 4
       - 0
     latest-changes: 2.39.0
+    languages:
+      fr: 7ca28dede6f9f3c2a07cbbcf0b5eb9d3b0219227
+      pt_BR: 00ae47118576b303e53af1d45b13d6e5cd98be0c
   git-tools:
     version-map:
       2.0.5: ca4086f39831c4c88ac0ed86a1db954e91a8a9b4
@@ -36027,6 +36402,8 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      pt_BR: 87d3e90fb9d250d15edd0ad903494636e7a05ac2
   git-unpack-objects:
     version-map:
       2.0.5: b349411dbb6677280f0cfef5f38594d125a553ae
@@ -36223,6 +36600,8 @@ pages:
       - 0
       - 5
     latest-changes: 2.11.4
+    languages:
+      pt_BR: d300d422b0c0157928ce1fb5577f392cf816632e
   git-update-index:
     version-map:
       2.0.5: eee8a44d8f136411415b56297500f18645504516
@@ -36537,6 +36916,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.38.0
+    languages:
+      pt_BR: ddb1f3f068f6c55ee739862f44d92b700bbc26df
   git-update-ref:
     version-map:
       2.0.5: 9bf3451d0c99c841015b9e31c4a69cfba762c977
@@ -36764,6 +37145,8 @@ pages:
       - 1
       - 5
     latest-changes: 2.30.0
+    languages:
+      pt_BR: 358b169fc35286feda0750289a3adaa644c02e5e
   git-update-server-info:
     version-map:
       2.0.5: ac6a26490b3c44b2221245ce21124e35ca3dbc17
@@ -36952,6 +37335,8 @@ pages:
       - 7
       - 1
       - 0
+    languages:
+      pt_BR: 0a359082c07115fab754b671a80a9f6b4ea8a2b6
   git-upload-archive:
     version-map:
       2.0.5: 052bdb753e5833367e4452159a01a1102c6d9391
@@ -37140,6 +37525,8 @@ pages:
       - 2
       - 4
     latest-changes: 2.39.0
+    languages:
+      pt_BR: 23f56e831fc10aa5020040fdeb705b8f1a5db117
   git-upload-pack:
     version-map:
       2.0.5: 011a3e73d9b7ae1c617c7211358c0a0f3bd5d38f
@@ -37352,6 +37739,8 @@ pages:
       - 4
       - 1
     latest-changes: 2.38.0
+    languages:
+      pt_BR: 9129825f15b3637bcd58e0fc05d55f589ef140e3
   git-var:
     version-map:
       2.0.5: 988d642ecaa69d14281e7da14d1183025a7eef3f
@@ -37556,6 +37945,8 @@ pages:
       - 1
       - 0
     latest-changes: 2.40.0
+    languages:
+      pt_BR: 3741f21bf0d92bf7438403e25d29311ff928223b
   git-verify-pack:
     version-map:
       2.0.5: 2ca186d88ed6b73cc179a3e625116f54a4640ea9
@@ -37744,6 +38135,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.0
+    languages:
+      pt_BR: 38c53d99039187227b14386d9ede8918b16bc815
   git-verify-tag:
     version-map:
       2.0.5: 9905953260a69ced39a7733110c8822ea2c0a831
@@ -37940,6 +38333,9 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.0
+    languages:
+      de: 8694e673bcec7cd79336f9f480a6062c3173f82b
+      pt_BR: ae2bb23bc108f8e1f0635fb88f228923f7143bdf
   git-web--browse:
     version-map:
       2.0.5: 14547175e2bb28fe879568cabd9ea4b083beed35
@@ -38151,6 +38547,8 @@ pages:
       - 1
       - 6
     latest-changes: 2.35.0
+    languages:
+      pt_BR: ee7ae0e1b9245acb4bb68989663cf647034222c9
   git-whatchanged:
     version-map:
       2.0.5: 24820364bb2ea248503d552f330a75c5428fdaad
@@ -38322,6 +38720,8 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      pt_BR: 522bbaffb34496fa15883e34880ce471feeaca5b
   git-write-tree:
     version-map:
       2.0.5: b95d548e6017616485810c7a35d9dabd258b5956
@@ -38493,6 +38893,9 @@ pages:
       added: 8
       removed: 0
     latest-changes: 2.0.5
+    languages:
+      de: a83dacf8ca344eb4701bb9c34e6bba773760869b
+      pt_BR: 9e2d79941fd25fa112fb049c8a0c9b13887eaf19
   git:
     version-map:
       2.0.5: 0d05574bc40423496fa93b0af40d83844074565c
@@ -38997,6 +39400,9 @@ pages:
       - 6
       - 0
     latest-changes: 2.40.0
+    languages:
+      de: a70d7d153eff5f760a642c9f32e22bebf6efcfc1
+      pt_BR: 770f46b1d3ebc2de0c4bcb218243d892f6807a8d
   gitattributes:
     version-map:
       2.0.5: 16d1fb485246d21f3cefd4c2f4d211aea7369492
@@ -40819,6 +41225,16 @@ pages:
       - 1
       - 0
     latest-changes: 2.39.0
+    languages:
+      de: 1b2b3d2bcb5aab6d4aafd9607cdc9e44c9cea635
+      fr: caeda77c83d9604f885ee2cae452770b7fd437dc
+      it: 92879f4ea91773f2e9fa2b2ca5b622552b92ea93
+      ja: 29dfe5bb6a33ee6f4dd95f453b3a5fcc5bd456db
+      ko: 6d4430d4e4b75bb20e4da6753f5d4f61dde195c8
+      pt_BR: 7210f9d15635c8079421bc1084c9d732ab6cb03b
+      ru: c14fd7db942044081d2c1918cd53bf907d17cc38
+      uk: aaf91c0480ca43aed20c9cb7da5594d6be00a393
+      zh_HANS-CN: 83d88475b486cdcd06c3ab181035d7c98c9ef679
   githooks:
     version-map:
       2.0.5: c3eb2ca87ecd8fbda5edc08801e20b2dc35ca954
@@ -52001,6 +52417,9 @@ pages:
       - 1
       - 6
     latest-changes: 2.39.0
+    languages:
+      de: 00f86ccfba98d1fd7dde4fd3a1ee45aa9f60a8dc
+      pt_BR: be19aab924e1c55b5f945b885c8b3eb80d2ee23b
   api-trace:
     version-map:
       2.1.4: 3bc117961116914af2e8a5d7e47cac5a5888891c
@@ -52361,6 +52780,8 @@ pages:
       - 2
       - 3
     latest-changes: 2.39.0
+    languages:
+      pt_BR: 79f27ca882d598a6b8598fd0e4c726aba3541456
   giteveryday:
     version-map:
       2.2.3: 622c1d61e5eba790aa31e84cc9f8b93625a40b2b
@@ -53093,6 +53514,9 @@ pages:
       - 1
       - 5
     latest-changes: 2.39.0
+    languages:
+      fr: 7535a4c9761fb766399c8c528fe4610530499943
+      pt_BR: af7eba23557001023431f1efca90f08202db49e9
   api-submodule-config:
     version-map:
       2.6.7: ec638aff2b2dacfed3de5236a75129af0a38dd61
@@ -55525,6 +55949,8 @@ pages:
       - 0
       - 4
     latest-changes: 2.38.0
+    languages:
+      pt_BR: 75651fc5c1ca0aafa199868c1b0f4bebf231bb3a
   directory-rename-detection:
     version-map:
       2.19.0: 9256f59c51a2309c62e3cb31b937f082b77dcecd
@@ -56823,6 +57249,11 @@ pages:
       - 1
       - 2
       - 5
+    languages:
+      de: 370c234aede02bdaef6cdce44fcf98ac288afb93
+      fr: 87d549f5ee9fde70b235471f88a24793a8981be5
+      pt_BR: d2874ae84c438f811ff8b0b2b9188bc72b58213a
+      zh_HANS-CN: 75132df9383ad96a537d4d39a3109046745b4803
   git-switch:
     version-map:
       2.23.0: 491e1d09c7884bf7e5d1cdf90b5bbe98f598e29e
@@ -56973,6 +57404,8 @@ pages:
       - 8
       - 0
       - 0
+    languages:
+      pt_BR: 4311be47e036369049e312e2d192767931e3bd4a
   MyFirstObjectWalk:
     version-map:
       2.25.0: da0f33163c4af4c9cb893cf8330f6a57382ef1ec
@@ -57542,6 +57975,9 @@ pages:
       - 8
       - 0
       - 0
+    languages:
+      fr: e59823976d3ac51459bdc15c78edac648410676f
+      pt_BR: 85117cebcb2cbadbdc925e53beedd2c314afebe4
   gitfaq:
     version-map:
       2.27.0: 812329394f7c31c3c0399d0189be8228ba11fbc3
@@ -60054,3 +60490,7 @@ versions:
     tree_sha: 7e6e8f435b01989a8c1c9f1b569ced6d1a5d067f
     committed: 2023-04-17 21:16:10.000000000 +02:00
     date: 04/17/23
+l10n:
+  commit_sha: 144fd2fa90bac6b456e350fcf437a627ccf0d89f
+  tree_sha: 5139059c44a6a88608095950801624d540967072
+  committed: 2023-04-04 20:41:35.000000000 +02:00

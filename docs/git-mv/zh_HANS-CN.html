@@ -1,0 +1,96 @@
+---
+title: Git - git-mv Documentation
+docname: git-mv
+lang: zh_HANS-CN
+redirect_from:
+- "/docs/git-mv/zh_HANS-CN/"
+
+---
+<div class="sect1">
+<h2 id="_名称"><a class="anchor" href="#_名称"></a>名称</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>git-mv - 移动或重命名一个文件、一个目录或一个符号链接</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_概述"><a class="anchor" href="#_概述"></a>概述</h2>
+<div class="sectionbody">
+<div class="verseblock">
+<pre class="content"><em>git mv</em> [&lt;options&gt;] &lt;source&gt;&#8230;&#8203; &lt;destination&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_描述"><a class="anchor" href="#_描述"></a>描述</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>移动或重命名一个文件、目录或符号链接。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>git mv [-v] [-f] [-n] [-k] &lt;来源&gt; &lt;目的地&gt;。
+git mv [-v] [-f] [-n] [-k] &lt;source&gt; ...&lt;目的地&gt;目录</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在第一种形式中，它将&lt;source&gt;重命名为&lt;destination&gt;，它必须存在并且是一个文件、符号链接或目录。 在第二种形式中，最后一个参数必须是一个现有的目录；给定的源将被移到这个目录中。</p>
+</div>
+<div class="paragraph">
+<p>索引在成功完成后被更新，但变化仍必须被提交。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_选项"><a class="anchor" href="#_选项"></a>选项</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1" id="git-mv--f"> <a class="anchor" href="#git-mv--f"></a>-f </dt>
+<dt class="hdlist1" id="git-mv---force"> <a class="anchor" href="#git-mv---force"></a>--force </dt>
+<dd>
+<p>Force renaming or moving of a file even if the &lt;destination&gt; exists.</p>
+</dd>
+<dt class="hdlist1" id="git-mv--k"> <a class="anchor" href="#git-mv--k"></a>-k </dt>
+<dd>
+<p>跳过会导致错误情况的移动或重命名操作。当一个源文件既不存在也不被Git控制，或者它将覆盖一个现有的文件时，就会发生错误，除非给出`-f`。</p>
+</dd>
+<dt class="hdlist1" id="git-mv--n"> <a class="anchor" href="#git-mv--n"></a>-n </dt>
+<dt class="hdlist1" id="git-mv---dry-run"> <a class="anchor" href="#git-mv---dry-run"></a>--dry-run </dt>
+<dd>
+<p>什么都不做；只显示会发生什么</p>
+</dd>
+<dt class="hdlist1" id="git-mv--v"> <a class="anchor" href="#git-mv--v"></a>-v </dt>
+<dt class="hdlist1" id="git-mv---verbose"> <a class="anchor" href="#git-mv---verbose"></a>--verbose </dt>
+<dd>
+<p>当文件被移动时，报告它们的名称。</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_子模块"><a class="anchor" href="#_子模块"></a>子模块</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>使用 gitfile 移动一个子模块（这意味着它们是用 1.7.8 或更新的 Git 版本克隆的）将更新 gitfile 和 core.worktree 设置以使子模块在新的位置工作。 它也会尝试更新<a href='/docs/gitmodules/zh_HANS-CN'>gitmodules[5]</a>文件中的submodule.&lt;name&gt;.path设置，并将该文件放入舞台（除非使用-n）。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_漏洞"><a class="anchor" href="#_漏洞"></a>漏洞</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>每次超级项目更新移动一个已填充的子模块（例如，当在移动前后的提交之间切换时），一个陈旧的子模块检出将保留在旧的位置，一个空目录将出现在新的位置。要在新的位置再次填充子模块，用户将不得不在之后运行 "git submodule update"。移除舊目錄只有在使用 gitfile 時才是安全的，否則子模塊的歷史也會被刪除。当递归子模块更新被实施后，这两个步骤将被淘汰。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_git"><a class="anchor" href="#_git"></a>GIT</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>属于 <a href='/docs/git/zh_HANS-CN'>git[1]</a> 文档</p>
+</div>
+</div>
+</div>

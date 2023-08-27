@@ -1,14 +1,22 @@
-<a class="dropdown-trigger" id="reference-languages-trigger" data-panel-id="l10n-versions-dropdown" href="#"><%if @language%>
-  <%= @doc_file.true_lang[@language]||@language %> <% else %> Language <% end %>▾</a>
+{% assign page_data = site.data.docs.pages[page.docname] %}
+<a class="dropdown-trigger" id="reference-languages-trigger" data-panel-id="l10n-versions-dropdown" href="#">{% if page["lang"] %}
+  {{ site.data.lang_names[page.lang] || page.lang }} {% else %} {{ site.data.lang_names.en }} {% endif %}▾</a>
 <div class='dropdown-panel right' id='l10n-versions-dropdown'>
-  <header>Localized versions of <strong><%= @doc_file.name %></strong> manual</header>
+  <header>Localized versions of <strong>{{ page.docname }}</strong> manual</header>
   <ol class='reference-previous-versions'>
-    <% @doc_file.languages.each do |code, language| %>
-      <li>
-        <a href="/docs/<%= @doc_file.name %>/<%= code %>"><span class="version"><%= language %></span>
+    {% if page_data["latest-changes"] %}
+    <li>
+      <a href="{{ "/docs/" | append: page.docname | relative_url }}"><span class="version">{{ site.data.lang_names.en }}</span>
+      </a>
+      </li>
+    {% endif %}
+    {% for lang in page_data.languages %}
+    {% assign code = lang[0] %}
+    <li>
+        <a href="{{ "/docs/" | append: page.docname  | append: "/"  | append: code | relative_url }}"><span class="version">{{ site.data.lang_names[code] }}</span>
         </a>
         </li>
-    <% end %>
+    {% endfor %}
   </ol>
   <footer>
     Want to read in your language or fix typos?<br/> <a href="https://github.com/jnavila/git-manpages-l10n">You can help translate this page</a>.

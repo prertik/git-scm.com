@@ -30,5 +30,6 @@ collections:
   about:
     output: true
     permalink: "/:collection/:name"
+  guis:
 exclude:
 - "*.rb"

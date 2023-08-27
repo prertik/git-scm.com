@@ -98,6 +98,7 @@ var Search = {
   selectedIndex: 0,
 
   init: function() {
+    Search.displayFullSearchResults();
     Search.observeFocus();
     Search.observeTextEntry();
     Search.observeResultsClicks();
@@ -157,10 +158,40 @@ var Search = {
 
       if(term != Search.currentSearch) {
         Search.currentSearch = term;
-        $.get("/search", {search: term}, function(results) {
-          $("#search-results").html(results);
+        this.initializeSearchIndex(() => {
+          const results = Search.searchIndex.search(term);
+          $("#search-results").html(`
+            <header> Search Results </header>
+            <table>
+              <tbody>
+                <tr class="show-all">
+                 <td class="category"> &nbsp; </td>
+                  <td class="matches">
+                    <ul>
+                      <li>
+                        <a class="highlight">Show all results...</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="category"> &nbsp; </td>
+                  <td class="matches">
+                    <ul>
+                    ${results.map(e => {
+                      const item = Search.store[e.ref];
+                      return `
+                        <li><a href="${item.url}">${item.title}</a></li>
+                      `
+                    }).join('')}
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          `);
           Search.searching = false;
-        }, 'html');
+        });
       };
     }
     else {
@@ -197,6 +228,57 @@ var Search = {
     $('form#search').switchClass("focus", "", 200);
     $('#search-results').fadeOut(0.2);
     Search.selectedIndex = 0;
+  },
+
+  getSearchTerm: function(variable) {
+    const query = window.location.search.substring(1);
+    const needle = `search=`;
+    return query
+      .split('&')
+      .filter(e => e.startsWith(needle))
+      .map(e => decodeURIComponent(e.substring(needle.length).replace(/\+/g, '%20')))
+      .pop();
+  },
+
+  initializeSearchIndex: function(callback) {
+    if (Search.searchIndex) {
+      callback();
+      return;
+    }
+    $.getJSON('/search/search-index.json', data => {
+      Search.store = data;
+      Search.searchIndex = lunr.Index.load(data.index);
+      callback();
+    })
+  },
+
+  displayFullSearchResults: function() {
+    const searchResultsElements = document.getElementsByClassName('full-search-results');
+    if (!searchResultsElements || searchResultsElements.length !== 1) return;
+
+    const searchTerm = this.getSearchTerm();
+    if (!searchTerm) return;
+
+    const searchTermElement = document.getElementById('search-term');
+    if (searchTermElement) searchTermElement.innerHTML = searchTerm;
+
+    const searchTextElement = document.getElementById('search-text');
+    if (searchTextElement) searchTextElement.value = searchTerm;
+
+    this.initializeSearchIndex(() => {
+      const results = Search.searchIndex.search(searchTerm);
+      if (!results.length) return;
+
+      const list = results.map(e => {
+        const item = Search.store[e.ref];
+        return `
+          <li><h3><a href="${item.url}">${item.title}</a></h3>
+          <a class="url" href="${item.url}">${item.url}</a>
+          <p>${item.content.substring(0, 150)}...</p></li>`;
+      }).join('');
+
+      searchResultsElements[0].innerHTML = list || '<li>No results found</li>';
+    })
   }
 }
 

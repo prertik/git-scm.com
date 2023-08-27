@@ -8,7 +8,7 @@ sidebar: "book"
 <div id="main">
   <h1>GUI Clients</h1>
   <p>
-    Git comes with built-in GUI tools for committing (<a href=/docs/git-gui">git-gui</a>) and browsing (<a href=/docs/gitk">gitk</a>), but there are several third-party tools for users looking for platform-specific experience.
+    Git comes with built-in GUI tools for committing (<a href="{{ 'docs/git-gui' | relative_url }}">git-gui</a>) and browsing (<a href="{{ 'docs/gitk' | relative_url }}">gitk</a>), but there are several third-party tools for users looking for platform-specific experience.
   </p>
   <p>
     <small>If you want to add another GUI tool to this list, just <a href="https://github.com/git/git-scm.com/blob/main/README.md#adding-new-gui">follow the instructions</a>.</small>
@@ -34,7 +34,7 @@ sidebar: "book"
       {% for gui in guis %}
         <li class="{{ gui.platforms | join: ' ' | downcase }}">
           <a href="{{ gui.project_url }}">
-            <img src="/{{ gui.image_tag }}" width="294" height="166">
+            <img src="{{ gui.image_tag | relative_url }}" width="294" height="166">
           </a>
           <h4>
             <a href="{{ gui.project_url }}">{{ gui.name }}</a>

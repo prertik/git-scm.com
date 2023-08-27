@@ -9,7 +9,7 @@ layout: default
     {% assign abouts = site.about | sort: 'order'  %}
     {% for about in abouts %}
       <li>
-        <a href="/{{ about.url }}" class="{{ about.display_class }}{% if page.subsection == about.subsection %} current{% endif %}"">{{about.subtitle}}</a>
+        <a href="{{ about.url | relative_url }}" class="{{ about.display_class }}{% if page.subsection == about.subsection %} current{% endif %}"">{{about.subtitle}}</a>
       </li>
     {% endfor %}
   </ol>

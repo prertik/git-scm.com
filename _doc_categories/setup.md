@@ -6,4 +6,6 @@ commands:
   - doc: "git-config"
   - doc: "git-help"
   - doc: "git-bugreport"
+  - doc: "credential-helpers"
+    title: "Credential helpers"
 ---

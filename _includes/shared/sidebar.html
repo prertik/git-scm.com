@@ -4,6 +4,14 @@
     <ul>
       <li>
         <a href="/about"{% if page.section == "about" %} class="active"{% endif %}>About</a>
+        <ul {% if page.section == "about" %}class="expanded"{% endif %}>
+          {% assign abouts = site.about | sort: 'order'  %}
+          {% for about in abouts %}
+            <li>
+              <a href="/{{ about.url }}" {% if page.subsection == about.subsection %} class="active"{% endif %}>{{about.subtitle}}</a>
+            </li>
+          {% endfor %}
+        </ul>
       </li>
       <li>
         <a href="/doc"{% if page.section == "documentation" %} class="active"{% endif %}>Documentation</a>

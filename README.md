@@ -89,9 +89,10 @@ The [list of GUI clients](https://git-scm.com/downloads/guis) has been construct
 
 2. Add the image to `static/images/guis/<GUI_CLIENT_NAME>@2x.png` and `static/images/guis/<GUI_CLIENT_NAME>.png` making sure the aspect ratio matches a 588:332 image.
 
-## Useful link regarding working with Hugo
+## Useful links regarding working with Hugo and Pagefind
 
 * https://gohugo.io/
+* https://pagefind.app/
 
 ## License
 

@@ -65,8 +65,9 @@ end</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/rerere1.png" | relative_url }}" alt="rerere1">
+<img src="{{ "book/en/v2/images/rerere1.png" | relative_url }}" alt="Two branches changing the same part of the same file differently">
 </div>
+<div class="title">Figure 160. Two branches changing the same part of the same file differently</div>
 </div>
 <div class="paragraph">
 <p>When we merge the two branches together, we’ll get a merge conflict:</p>
@@ -182,8 +183,9 @@ Recorded resolution for 'hello.rb'.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/rerere2.png" | relative_url }}" alt="rerere2">
+<img src="{{ "book/en/v2/images/rerere2.png" | relative_url }}" alt="Recorded resolution for FILE">
 </div>
+<div class="title">Figure 161. Recorded resolution for FILE</div>
 </div>
 <div class="paragraph">
 <p>Now, let’s undo that merge and then rebase it on top of our <code>master</code> branch instead.
@@ -251,8 +253,9 @@ index a440db6,54336ba..0000000
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/rerere3.png" | relative_url }}" alt="rerere3">
+<img src="{{ "book/en/v2/images/rerere3.png" | relative_url }}" alt="Automatically resolved merge conflict using previous resolution">
 </div>
+<div class="title">Figure 162. Automatically resolved merge conflict using previous resolution</div>
 </div>
 <div class="paragraph">
 <p>You can also recreate the conflicted file state with <code>git checkout</code>:</p>

@@ -673,7 +673,7 @@ That’s because git-remote-hg is working at a fairly low level, using a similar
 Since Git and Mercurial are both designed for every client to have a full copy of the repository history, this command makes a full clone, including all the project’s history, and does it fairly quickly.</p>
 </div>
 <div class="paragraph">
-<p>The log command shows two commits, the latest of which is pointed to by a whole slew of refs.
+<p>The <code>log</code> command shows two commits, the latest of which is pointed to by a whole slew of refs.
 It turns out some of these aren’t actually there.
 Let’s take a look at what’s actually in the <code>.git</code> directory:</p>
 </div>
@@ -1045,7 +1045,7 @@ Nevertheless, it is possible to work on a Bazaar repository from a Git one.</p>
 <div class="paragraph">
 <p>There are many projects that allow you to use Git as a Bazaar client.
 Here we’ll use Felipe Contreras' project that you may find at <a href="https://github.com/felipec/git-remote-bzr" class="bare" target="_blank" rel="noopener">https://github.com/felipec/git-remote-bzr</a>.
-To install it, you just have to download the file git-remote-bzr in a folder contained in your <code>$PATH</code>:</p>
+To install it, you just have to download the file <code>git-remote-bzr</code> in a folder contained in your <code>$PATH</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1201,13 +1201,13 @@ In particular, these commands don’t work:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>git push origin :branch-to-delete (Bazaar can’t accept ref deletions in this way)</p>
+<p><code>git push origin :branch-to-delete</code> (Bazaar can’t accept ref deletions in this way)</p>
 </li>
 <li>
-<p>git push origin old:new (it will push <code>old</code>)</p>
+<p><code>git push origin old:new</code> (it will push <code>old</code>)</p>
 </li>
 <li>
-<p>git push --dry-run origin branch (it will push)</p>
+<p><code>git push --dry-run origin branch</code> (it will push)</p>
 </li>
 </ul>
 </div>
@@ -1239,13 +1239,13 @@ The second is git-p4, a client-side bridge that lets you use Git as a Perforce c
 <h4 id="_p4_git_fusion">Git Fusion</h4>
 <div class="paragraph">
 <p>
-Perforce provides a product called Git Fusion (available at <a href="https://www.perforce.com/git-fusion" class="bare" target="_blank" rel="noopener">https://www.perforce.com/git-fusion</a>), which synchronizes a Perforce server with Git repositories on the server side.</p>
+Perforce provides a product called Git Fusion (available at <a href="https://www.perforce.com/manuals/git-fusion/" class="bare" target="_blank" rel="noopener">https://www.perforce.com/manuals/git-fusion/</a>), which synchronizes a Perforce server with Git repositories on the server side.</p>
 </div>
 <div class="sect5">
 <h6 id="_setting_up_2">Setting Up</h6>
 <div class="paragraph">
 <p>For our examples, we’ll be using the easiest installation method for Git Fusion, which is downloading a virtual machine that runs the Perforce daemon and Git Fusion.
-You can get the virtual machine image from <a href="https://www.perforce.com/downloads/Perforce/20-User" class="bare" target="_blank" rel="noopener">https://www.perforce.com/downloads/Perforce/20-User</a>, and once it’s finished downloading, import it into your favorite virtualization software (we’ll use VirtualBox).</p>
+You can get the virtual machine image from <a href="https://www.perforce.com/downloads" class="bare" target="_blank" rel="noopener">https://www.perforce.com/downloads</a>, and once it’s finished downloading, import it into your favorite virtualization software (we’ll use VirtualBox).</p>
 </div>
 <div class="paragraph">
 <p>Upon first starting the machine, it asks you to customize the password for three Linux users (<code>root</code>, <code>perforce</code>, and <code>git</code>), and provide an instance name, which can be used to distinguish this installation from others on the same network.
@@ -1255,7 +1255,7 @@ When that has all completed, you’ll see this:</p>
 <div class="content">
 <img src="{{ "book/en/v2/images/git-fusion-boot.png" | relative_url }}" alt="The Git Fusion virtual machine boot screen">
 </div>
-<div class="title">Figure 145. The Git Fusion virtual machine boot screen</div>
+<div class="title">Figure 171. The Git Fusion virtual machine boot screen</div>
 </div>
 <div class="paragraph">
 <p>You should take note of the IP address that’s shown here, we’ll be using it later on.
@@ -1542,7 +1542,7 @@ Let’s take a look at the history of the <code>README</code> file from Perforce
 <div class="content">
 <img src="{{ "book/en/v2/images/git-fusion-perforce-graph.png" | relative_url }}" alt="Perforce revision graph resulting from Git push">
 </div>
-<div class="title">Figure 146. Perforce revision graph resulting from Git push</div>
+<div class="title">Figure 172. Perforce revision graph resulting from Git push</div>
 </div>
 <div class="paragraph">
 <p>If you’ve never seen this view before, it may seem confusing, but it shows the same concepts as a graphical viewer for Git history.
@@ -1590,7 +1590,7 @@ Git-p4 isn’t as flexible or complete a solution as Git Fusion, but it does all
 <td class="content">
 <div class="paragraph">
 <p>You’ll need the <code>p4</code> tool somewhere in your <code>PATH</code> to work with git-p4.
-As of this writing, it is freely available at <a href="http://www.perforce.com/downloads/Perforce/20-User" class="bare" target="_blank" rel="noopener">http://www.perforce.com/downloads/Perforce/20-User</a>.</p>
+As of this writing, it is freely available at <a href="https://www.perforce.com/downloads/helix-command-line-client-p4" class="bare" target="_blank" rel="noopener">https://www.perforce.com/downloads/helix-command-line-client-p4</a>.</p>
 </div>
 </td>
 </tr>
@@ -1847,7 +1847,7 @@ Here’s the situation we’ve gotten ourselves into:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>The Git and Perforce history diverge after 775a46f.
+<p>The Git and Perforce history diverge after <code>775a46f</code>.
 The Git side has two commits, then a merge commit with the Perforce head, then another commit.
 We’re going to try to submit these on top of a single changeset on the Perforce side.
 Let’s see what would happen if we tried to submit now:</p>

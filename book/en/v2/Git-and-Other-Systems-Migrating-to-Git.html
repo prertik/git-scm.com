@@ -164,7 +164,7 @@ First you’ll move the tags so they’re actual tags rather than strange remote
 <div class="paragraph">
 <p>It may happen that you’ll see some extra branches which are suffixed by <code>@xxx</code> (where xxx is a number), while in Subversion you only see one branch.
 This is actually a Subversion feature called “peg-revisions”, which is something that Git simply has no syntactical counterpart for.
-Hence, <code>git svn</code> simply adds the svn version number to the branch name just in the same way as you would have written it in svn to address the peg-revision of that branch.
+Hence, <code>git svn</code> simply adds the SVN version number to the branch name just in the same way as you would have written it in SVN to address the peg-revision of that branch.
 If you do not care anymore about the peg-revisions, simply remove them:</p>
 </div>
 <div class="listingblock">
@@ -253,7 +253,7 @@ Joe Smith &lt;joe@company.com&gt;</code></pre>
 <div class="paragraph">
 <p>In this example, the same person (Bob) has created changesets under four different names, one of which actually looks correct, and one of which would be completely invalid for a Git commit.
 Hg-fast-export lets us fix this by turning each line into a rule: <code>"&lt;input&gt;"="&lt;output&gt;"</code>, mapping an <code>&lt;input&gt;</code> to an <code>&lt;output&gt;</code>.
-Inside the <code>&lt;input&gt;</code> and <code>&lt;output&gt;</code> strings, all escape sequences understood by the python <code>string_escape</code> encoding are supported.
+Inside the <code>&lt;input&gt;</code> and <code>&lt;output&gt;</code> strings, all escape sequences understood by the Python <code>string_escape</code> encoding are supported.
 If the author mapping file does not contain a matching <code>&lt;input&gt;</code>, that author will be sent on to Git unmodified.
 If all the usernames look fine, we won’t need this file at all.
 In this example, we want our file to look like this:</p>
@@ -345,10 +345,8 @@ $ git push origin --all</code></pre>
 <div class="sect3">
 <h3 id="_bazaar">Bazaar</h3>
 <div class="paragraph">
-<p></p>
-</div>
-<div class="paragraph">
-<p>Bazaar is a DVCS tool much like Git, and as a result it’s pretty straightforward to convert a Bazaar repository into a Git one.
+<p>
+Bazaar is a DVCS tool much like Git, and as a result it’s pretty straightforward to convert a Bazaar repository into a Git one.
 To accomplish this, you’ll need to import the <code>bzr-fastimport</code> plugin.</p>
 </div>
 <div class="sect4">
@@ -462,7 +460,7 @@ $ cd git-repo</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Pull the <code>master</code> branch into git:</p>
+<p>Pull the <code>master</code> branch into Git:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -825,7 +823,7 @@ end</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Note:  Because many systems think of their revisions as changes from one commit to another, fast-import can also take commands with each commit to specify which files have been added, removed, or modified and what the new contents are.
+<p>Note: Because many systems think of their revisions as changes from one commit to another, fast-import can also take commands with each commit to specify which files have been added, removed, or modified and what the new contents are.
 You could calculate the differences between snapshots and provide only this data, but doing so is more complex – you may as well give Git all the data and let it figure it out.
 If this is better suited to your data, check the <code>fast-import</code> man page for details about how to provide your data in this manner.</p>
 </div>

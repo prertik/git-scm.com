@@ -218,12 +218,16 @@ class Section
       "previous" => self.previous_section_url,
       "next" => self.next_section_url
     }
+    unless @redirect_from.nil?
+      front_matter["redirect_from"] = @redirect_from
+    end
     return front_matter
   end
 
   attr_accessor :title
   attr_accessor :html
   attr_accessor :slug
+  attr_accessor :redirect_from
 
   def next_section=(section)
     @next_section = section
@@ -237,6 +241,11 @@ class Section
       title = (@chapter.title + "-" + self.title)
     end
     @slug = title.gsub(/\(|\)|\./, "").gsub(/\s+/, "-").gsub("&#39;", "-")
+    if @slug =~ /[^-A-Za-z0-9].*:/
+      @redirect_from = "/#{self.relative_url(@slug)}"
+      @slug = @slug.gsub(/:/, "")
+    end
+    @slug
   end
 
   def absolute_path(path)

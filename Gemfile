@@ -12,4 +12,5 @@ group :scripts, optional: true do
 
   gem "asciidoctor", "~> 2.0.0"
   gem "nokogiri"
+  gem "diffy"
 end

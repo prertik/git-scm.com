@@ -32,6 +32,33 @@
         {% include shared/footer.html %}
       </div> <!-- .inner -->
     </div> <!-- #content-wrapper -->
+  {% elsif page.book %}
+    {% assign book = site.data | where:"language_code", page.book.language_code | first %}
+    <div class="inner">
+      <div id="content-wrapper">
+        {% include shared/sidebar.html %}
+        <div id="content">
+          {% if page.book.front_page %}
+            {% include shared/book-front-page.html %}
+          {% else %}
+          <div id="book-chapters">
+            {% include shared/chapters.html %}
+
+            <span class="light" id="edition">
+              2nd Edition
+            </span>
+          </div>
+          <div id="main" class="book edition2">
+            <h1>{{ page.book.section.cs_number }} {{ page.book.chapter.title }} - {{ page.book.section.title }}</h1>
+            <div>
+              {{ content }}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% include shared/footer.html %}
+    </div>
   {% else %}
     <div class="inner">
       <div id="content-wrapper">

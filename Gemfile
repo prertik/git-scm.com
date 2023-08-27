@@ -9,4 +9,7 @@ gem "jekyll-redirect-from"
 
 group :scripts, optional: true do
   gem "octokit"
+
+  gem "asciidoctor", "~> 2.0.0"
+  gem "nokogiri"
 end

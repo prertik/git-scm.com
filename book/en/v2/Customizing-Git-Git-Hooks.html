@@ -35,7 +35,7 @@ All the examples are written as shell scripts, with some Perl thrown in, but any
 If you want to use the bundled hook scripts, you’ll have to rename them; their file names all end with <code>.sample</code>.</p>
 </div>
 <div class="paragraph">
-<p>To enable a hook script, put a file in the <code>hooks</code> subdirectory of your .git directory that is named appropriately (without any extension) and is executable.
+<p>To enable a hook script, put a file in the <code>hooks</code> subdirectory of your <code>.git</code> directory that is named appropriately (without any extension) and is executable.
 From that point forward, it should be called.
 We’ll cover most of the major hook filenames here.</p>
 </div>
@@ -166,9 +166,9 @@ You can use this hook to do things like make sure none of the updated references
 <h4 id="_update"><code>update</code></h4>
 <div class="paragraph">
 <p>The <code>update</code> script is very similar to the <code>pre-receive</code> script, except that it’s run once for each branch the pusher is trying to update.
-If the pusher is trying to push to multiple branches, <code>pre-receive</code> runs only once, whereas update runs once per branch they’re pushing to.
+If the pusher is trying to push to multiple branches, <code>pre-receive</code> runs only once, whereas <code>update</code> runs once per branch they’re pushing to.
 Instead of reading from stdin, this script takes three arguments: the name of the reference (branch), the SHA-1 that reference pointed to before the push, and the SHA-1 the user is trying to push.
-If the update script exits non-zero, only that reference is rejected; other references can still be updated.</p>
+If the <code>update</code> script exits non-zero, only that reference is rejected; other references can still be updated.</p>
 </div>
 </div>
 <div class="sect4">

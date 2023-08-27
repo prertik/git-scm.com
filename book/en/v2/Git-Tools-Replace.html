@@ -54,8 +54,9 @@ The second line will just be commits four and five - that will be the recent his
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/replace1.png" | relative_url }}" alt="replace1">
+<img src="{{ "book/en/v2/images/replace1.png" | relative_url }}" alt="Example Git history">
 </div>
+<div class="title">Figure 163. Example Git history</div>
 </div>
 <div class="paragraph">
 <p>Well, creating the historical history is easy, we can just put a branch in the history and then push that branch to the <code>master</code> branch of a new remote repository.</p>
@@ -73,8 +74,9 @@ c1822cf First commit</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/replace2.png" | relative_url }}" alt="replace2">
+<img src="{{ "book/en/v2/images/replace2.png" | relative_url }}" alt="Creating a new `history` branch">
 </div>
+<div class="title">Figure 164. Creating a new <code>history</code> branch</div>
 </div>
 <div class="paragraph">
 <p>Now we can push the new <code>history</code> branch to the <code>master</code> branch of our new repository:</p>
@@ -142,7 +144,9 @@ You can read more about plumbing commands in <a href="ch00/_plumbing_porcelain">
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/replace3.png" | relative_url }}" alt="replace3">
+<img src="{{ "book/en/v2/images/replace3.png" | relative_url }}" alt="Creating a base commit using `commit-tree`">
+</div>
+<div class="title">Figure 165. Creating a base commit using <code>commit-tree</code>
 </div>
 </div>
 <div class="paragraph">
@@ -159,8 +163,9 @@ Applying: fifth commit</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/replace4.png" | relative_url }}" alt="replace4">
+<img src="{{ "book/en/v2/images/replace4.png" | relative_url }}" alt="Rebasing the history on top of the base commit">
 </div>
+<div class="title">Figure 166. Rebasing the history on top of the base commit</div>
 </div>
 <div class="paragraph">
 <p>OK, so now we’ve re-written our recent history on top of a throw away base commit that now has instructions in it on how to reconstitute the entire history if we wanted to.
@@ -230,7 +235,9 @@ c1822cf First commit</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/replace5.png" | relative_url }}" alt="replace5">
+<img src="{{ "book/en/v2/images/replace5.png" | relative_url }}" alt="Combining the commits with `git replace`">
+</div>
+<div class="title">Figure 167. Combining the commits with <code>git replace</code>
 </div>
 </div>
 <div class="paragraph">

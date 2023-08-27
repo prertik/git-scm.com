@@ -81,3 +81,4 @@ collections:
 exclude:
 - "*.rb"
 - script/*.js
+- progit*

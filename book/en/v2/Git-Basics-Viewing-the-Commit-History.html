@@ -233,7 +233,7 @@ a11bef0 - Scott Chacon, 6 years ago : Initial commit</code></pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>%ad</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Author date (format respects the --date=option)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Author date (format respects the <code>--date=option</code>)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>%ar</code></p></td>
@@ -291,7 +291,7 @@ This option adds a nice little ASCII graph showing your branch and merge history
 </div>
 <div class="paragraph">
 <p>Those are only some simple output-formatting options to <code>git log</code> — there are many more.
-<a href="ch00/log_options">Common options to <code>git log</code></a> lists the options we’ve covered so far, as well as some other common formatting options that may be useful, along with how they change the output of the log command.</p>
+<a href="ch00/log_options">Common options to <code>git log</code></a> lists the options we’ve covered so far, as well as some other common formatting options that may be useful, along with how they change the output of the <code>log</code> command.</p>
 </div>
 <table id="log_options" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 2. Common options to <code>git log</code>
@@ -317,7 +317,7 @@ This option adds a nice little ASCII graph showing your branch and merge history
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--shortstat</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Display only the changed/insertions/deletions line from the --stat command.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display only the changed/insertions/deletions line from the <code>--stat</code> command.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--name-only</code></p></td>
@@ -341,7 +341,7 @@ This option adds a nice little ASCII graph showing your branch and merge history
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--pretty</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Show commits in an alternate format. Option values include oneline, short, full, fuller, and format (where you specify your own format).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show commits in an alternate format. Option values include <code>oneline</code>, <code>short</code>, <code>full</code>, <code>fuller</code>, and <code>format</code> (where you specify your own format).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--oneline</code></p></td>
@@ -381,10 +381,7 @@ The <code>--author</code> option allows you to filter on a specific author, and 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>You can specify more than one instance of both the <code>--author</code> and <code>--grep</code> search criteria, which
-will limit the commit output to commits that match <em>any</em> of the <code>--author</code> patterns and <em>any</em>
-of the <code>--grep</code> patterns; however, adding the <code>--all-match</code> option further limits the output to
-just those commits that match <em>all</em> <code>--grep</code> patterns.</p>
+<p>You can specify more than one instance of both the <code>--author</code> and <code>--grep</code> search criteria, which will limit the commit output to commits that match <em>any</em> of the <code>--author</code> patterns and <em>any</em> of the <code>--grep</code> patterns; however, adding the <code>--all-match</code> option further limits the output to just those commits that match <em>all</em> <code>--grep</code> patterns.</p>
 </div>
 </td>
 </tr>
@@ -484,7 +481,7 @@ b0ad11e - pull: allow "git pull origin $something:$current_branch" into an unbor
 <div class="title">Preventing the display of merge commits</div>
 <div class="paragraph">
 <p>Depending on the workflow used in your repository, it’s possible that a sizable percentage of the commits in your log history are just merge commits, which typically aren’t very informative.
-To prevent the display of merge commits cluttering up your log history, simply add the log option <code>--no-merges</code>.</p>
+To prevent the display of merge commits cluttering up your log history, simply add the <code>log</code> option <code>--no-merges</code>.</p>
 </div>
 </td>
 </tr>

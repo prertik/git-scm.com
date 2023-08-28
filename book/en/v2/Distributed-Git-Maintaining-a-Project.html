@@ -59,7 +59,8 @@ If you receive a patch over email that you need to integrate into your project, 
 There are two ways to apply an emailed patch: with <code>git apply</code> or with <code>git am</code>.</p>
 </div>
 <div class="sect4">
-<h4 id="_applying_a_patch_with_apply">Applying a Patch with apply</h4>
+<h4 id="_applying_a_patch_with_apply">Applying a Patch with <code>apply</code>
+</h4>
 <div class="paragraph">
 <p>
 If you received the patch from someone who generated it with <code>git diff</code> or some variation of the Unix <code>diff</code> command (which is not recommended; see the next section), you can apply it with the <code>git apply</code> command.
@@ -649,7 +650,7 @@ You can also create a zip archive in much the same way, but by passing the <code
 <p>
 It’s time to email your mailing list of people who want to know what’s happening in your project.
 A nice way of quickly getting a sort of changelog of what has been added to your project since your last release or email is to use the <code>git shortlog</code> command.
-It summarizes all the commits in the range you give it; for example, the following gives you a summary of all the commits since your last release, if your last release was named v1.0.1:</p>
+It summarizes all the commits in the range you give it; for example, the following gives you a summary of all the commits since your last release, if your last release was named <code>v1.0.1</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -670,7 +671,7 @@ Tom Preston-Werner (4):
 </div>
 </div>
 <div class="paragraph">
-<p>You get a clean summary of all the commits since v1.0.1, grouped by author, that you can email to your list.</p>
+<p>You get a clean summary of all the commits since <code>v1.0.1</code>, grouped by author, that you can email to your list.</p>
 </div>
 </div>
 <div id="nav"><a href="{{ page.book.section.previous | relative_url }}">prev</a> | <a href="{{ page.book.section.next | relative_url }}">next</a></div>

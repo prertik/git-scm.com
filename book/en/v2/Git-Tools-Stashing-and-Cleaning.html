@@ -152,7 +152,7 @@ Changes not staged for commit:
 </div>
 </div>
 <div class="paragraph">
-<p>The apply option only tries to apply the stashed work — you continue to have it on your stack.
+<p>The <code>apply</code> option only tries to apply the stashed work — you continue to have it on your stack.
 To remove it, you can run <code>git stash drop</code> with the name of the stash to remove:</p>
 </div>
 <div class="listingblock">
@@ -301,7 +301,7 @@ Would remove tmp/</code></pre>
 <div class="paragraph">
 <p>By default, the <code>git clean</code> command will only remove untracked files that are not ignored.
 Any file that matches a pattern in your <code>.gitignore</code> or other ignore files will not be removed.
-If you want to remove those files too, such as to remove all <code>.o</code> files generated from a build so you can do a fully clean build, you can add a <code>-x</code> to the clean command.</p>
+If you want to remove those files too, such as to remove all <code>.o</code> files generated from a build so you can do a fully clean build, you can add a <code>-x</code> to the <code>clean</code> command.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -325,7 +325,7 @@ Would remove tmp/</code></pre>
 The other way you can be careful about the process is to run it with the <code>-i</code> or “interactive” flag.</p>
 </div>
 <div class="paragraph">
-<p>This will run the clean command in an interactive mode.</p>
+<p>This will run the <code>clean</code> command in an interactive mode.</p>
 </div>
 <div class="listingblock">
 <div class="content">

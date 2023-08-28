@@ -189,7 +189,7 @@ Notice that the <code>lib</code> subdirectory isn’t a blob but a pointer to an
 </div>
 <div class="paragraph">
 <p>In CMD on Windows, the <code>^</code> character is used for escaping, so you have to double it to avoid this: <code>git cat-file -p master^^{tree}</code>.
-When using PowerShell, parameters using {} characters have to be quoted to avoid the parameter being parsed incorrectly: <code>git cat-file -p 'master^{tree}'</code>.</p>
+When using PowerShell, parameters using <code>{}</code> characters have to be quoted to avoid the parameter being parsed incorrectly: <code>git cat-file -p 'master^{tree}'</code>.</p>
 </div>
 <div class="paragraph">
 <p>If you’re using ZSH, the <code>^</code> character is used for globbing, so you have to enclose the whole expression in quotes: <code>git cat-file -p "master^{tree}"</code>.</p>
@@ -205,7 +205,7 @@ When using PowerShell, parameters using {} characters have to be quoted to avoid
 <div class="content">
 <img src="{{ "book/en/v2/images/data-model-1.png" | relative_url }}" alt="Simple version of the Git data model">
 </div>
-<div class="title">Figure 147. Simple version of the Git data model</div>
+<div class="title">Figure 173. Simple version of the Git data model</div>
 </div>
 <div class="paragraph">
 <p>You can fairly easily create your own tree.
@@ -297,7 +297,7 @@ You can think of the data that Git contains for these structures as being like t
 <div class="content">
 <img src="{{ "book/en/v2/images/data-model-2.png" | relative_url }}" alt="The content structure of your current Git data">
 </div>
-<div class="title">Figure 148. The content structure of your current Git data</div>
+<div class="title">Figure 174. The content structure of your current Git data</div>
 </div>
 </div>
 <div class="sect3">
@@ -425,7 +425,7 @@ Here are all the objects in the example directory now, commented with what they 
 <div class="content">
 <img src="{{ "book/en/v2/images/data-model-3.png" | relative_url }}" alt="All the reachable objects in your Git directory">
 </div>
-<div class="title">Figure 149. All the reachable objects in your Git directory</div>
+<div class="title">Figure 175. All the reachable objects in your Git directory</div>
 </div>
 </div>
 <div class="sect3">

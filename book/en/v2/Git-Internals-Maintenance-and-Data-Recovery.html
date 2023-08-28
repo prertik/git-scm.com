@@ -31,7 +31,7 @@ However, if there are too many loose objects (objects not in a packfile) or too 
 The “gc” stands for garbage collect, and the command does a number of things: it gathers up all the loose objects and places them in packfiles, it consolidates packfiles into one big packfile, and it removes objects that aren’t reachable from any commit and are a few months old.</p>
 </div>
 <div class="paragraph">
-<p>You can run auto gc manually as follows:</p>
+<p>You can run <code>auto gc</code> manually as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -40,7 +40,7 @@ The “gc” stands for garbage collect, and the command does a number of things
 </div>
 <div class="paragraph">
 <p>Again, this generally does nothing.
-You must have around 7,000 loose objects or more than 50 packfiles for Git to fire up a real gc command.
+You must have around 7,000 loose objects or more than 50 packfiles for Git to fire up a real <code>gc</code> command.
 You can modify these limits with the <code>gc.auto</code> and <code>gc.autopacklimit</code> config settings, respectively.</p>
 </div>
 <div class="paragraph">

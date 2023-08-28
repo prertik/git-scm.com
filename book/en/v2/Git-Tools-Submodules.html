@@ -317,7 +317,7 @@ Submodule path 'DbConnector': checked out 'd0354fc054692d3906c85c3af05ddce39a1c0
 <div class="paragraph">
 <p>This command will by default assume that you want to update the checkout to the default branch of the remote submodule repository (the one pointed to by <code>HEAD</code> on the remote).
 You can, however, set this to something different if you want.
-For example, if you want to have the DbConnector submodule track that repository’s “stable” branch, you can set it in either your <code>.gitmodules</code> file (so everyone else also tracks it), or just in your local <code>.git/config</code> file.
+For example, if you want to have the <code>DbConnector</code> submodule track that repository’s “stable” branch, you can set it in either your <code>.gitmodules</code> file (so everyone else also tracks it), or just in your local <code>.git/config</code> file.
 Let’s set it in the <code>.gitmodules</code> file:</p>
 </div>
 <div class="listingblock">
@@ -480,7 +480,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 <p>By default, the <code>git pull</code> command recursively fetches submodules changes, as we can see in the output of the first command above.
 However, it does not <strong>update</strong> the submodules.
 This is shown by the output of the <code>git status</code> command, which shows the submodule is “modified”, and has “new commits”.
-What’s more, the brackets showing the new commits point left (&lt;), indicating that these commits are recorded in MainProject but are not present in the local DbConnector checkout.
+What’s more, the brackets showing the new commits point left (&lt;), indicating that these commits are recorded in MainProject but are not present in the local <code>DbConnector</code> checkout.
 To finalize the update, you need to run <code>git submodule update</code>:</p>
 </div>
 <div class="listingblock">
@@ -500,7 +500,7 @@ nothing to commit, working tree clean</code></pre>
 <div class="paragraph">
 <p>If you want to automate this process, you can add the <code>--recurse-submodules</code> flag to the <code>git pull</code> command (since Git 2.14).
 This will make Git run <code>git submodule update</code> right after the pull, putting the submodules in the correct state.
-Moreover, if you want to make Git always pull with <code>--recurse-submodules</code>, you can set the configuration option <code>submodule.recurse</code> to true (this works for <code>git pull</code> since Git 2.15).
+Moreover, if you want to make Git always pull with <code>--recurse-submodules</code>, you can set the configuration option <code>submodule.recurse</code> to <code>true</code> (this works for <code>git pull</code> since Git 2.15).
 This option will make Git use the <code>--recurse-submodules</code> flag for all commands that support it (except <code>clone</code>).</p>
 </div>
 <div class="paragraph">
@@ -572,7 +572,7 @@ Submodule path 'DbConnector': merged in '92c7337b30ef9e0893e758dac2459d07362ab5e
 </div>
 </div>
 <div class="paragraph">
-<p>If we go into the DbConnector directory, we have the new changes already merged into our local <code>stable</code> branch.
+<p>If we go into the <code>DbConnector</code> directory, we have the new changes already merged into our local <code>stable</code> branch.
 Now let’s see what happens when we make our own local change to the library and someone else pushes another change to the upstream at the same time.</p>
 </div>
 <div class="listingblock">
@@ -609,7 +609,7 @@ Submodule path 'DbConnector': checked out '5d60ef9bbebf5a0c1c1050f242ceeb54ad58d
 <p>If this happens, don’t worry, you can simply go back into the directory and check out your branch again (which will still contain your work) and merge or rebase <code>origin/stable</code> (or whatever remote branch you want) manually.</p>
 </div>
 <div class="paragraph">
-<p>If you haven’t committed your changes in your submodule and you run a submodule update that would cause issues, Git will fetch the changes but not overwrite unsaved work in your submodule directory.</p>
+<p>If you haven’t committed your changes in your submodule and you run a <code>submodule update</code> that would cause issues, Git will fetch the changes but not overwrite unsaved work in your submodule directory.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -717,7 +717,7 @@ To https://github.com/chaconinc/MainProject
 </div>
 </div>
 <div class="paragraph">
-<p>As you can see there, Git went into the DbConnector module and pushed it before pushing the main project.
+<p>As you can see there, Git went into the <code>DbConnector</code> module and pushed it before pushing the main project.
 If that submodule push fails for some reason, the main project push will also fail.
 You can make this behavior the default by doing <code>git config push.recurseSubmodules on-demand</code>.</p>
 </div>

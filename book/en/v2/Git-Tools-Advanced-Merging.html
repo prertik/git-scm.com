@@ -200,7 +200,7 @@ So how would we do that?</p>
 </div>
 <div class="paragraph">
 <p>First, we get into the merge conflict state.
-Then we want to get copies of my version of the file, their version (from the branch we’re merging in) and the common version (from where both sides branched off).
+Then we want to get copies of our version of the file, their version (from the branch we’re merging in) and the common version (from where both sides branched off).
 Then we want to fix up either their side or our side and re-try the merge again for just this single file.</p>
 </div>
 <div class="paragraph">
@@ -614,7 +614,7 @@ Let’s say you started work on a topic branch, accidentally merged it into <cod
 <div class="content">
 <img src="{{ "book/en/v2/images/undomerge-start.png" | relative_url }}" alt="Accidental merge commit">
 </div>
-<div class="title">Figure 137. Accidental merge commit</div>
+<div class="title">Figure 155. Accidental merge commit</div>
 </div>
 <div class="paragraph">
 <p>There are two ways to approach this problem, depending on what your desired outcome is.</p>
@@ -629,7 +629,7 @@ In most cases, if you follow the errant <code>git merge</code> with <code>git re
 <div class="content">
 <img src="{{ "book/en/v2/images/undomerge-reset.png" | relative_url }}" alt="History after `git reset --hard HEAD~`">
 </div>
-<div class="title">Figure 138. History after <code>git reset --hard HEAD~</code>
+<div class="title">Figure 156. History after <code>git reset --hard HEAD~</code>
 </div>
 </div>
 <div class="paragraph">
@@ -680,7 +680,7 @@ In this case, we want to undo all the changes introduced by merging in parent #2
 <div class="content">
 <img src="{{ "book/en/v2/images/undomerge-revert.png" | relative_url }}" alt="History after `git revert -m 1`">
 </div>
-<div class="title">Figure 139. History after <code>git revert -m 1</code>
+<div class="title">Figure 157. History after <code>git revert -m 1</code>
 </div>
 </div>
 <div class="paragraph">
@@ -701,7 +701,7 @@ What’s worse, if you add work to <code>topic</code> and merge again, Git will 
 <div class="content">
 <img src="{{ "book/en/v2/images/undomerge-revert2.png" | relative_url }}" alt="History with a bad merge">
 </div>
-<div class="title">Figure 140. History with a bad merge</div>
+<div class="title">Figure 158. History with a bad merge</div>
 </div>
 <div class="paragraph">
 <p>The best way around this is to un-revert the original merge, since now you want to bring in the changes that were reverted out, <strong>then</strong> create a new merge commit:</p>
@@ -717,7 +717,7 @@ $ git merge topic</code></pre>
 <div class="content">
 <img src="{{ "book/en/v2/images/undomerge-revert3.png" | relative_url }}" alt="History after re-merging a reverted merge">
 </div>
-<div class="title">Figure 141. History after re-merging a reverted merge</div>
+<div class="title">Figure 159. History after re-merging a reverted merge</div>
 </div>
 <div class="paragraph">
 <p>In this example, <code>M</code> and <code>^M</code> cancel out.

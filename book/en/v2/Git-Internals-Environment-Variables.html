@@ -30,19 +30,19 @@ This isn’t an exhaustive list of all the environment variables Git pays attent
 </div>
 <div class="paragraph">
 <p><strong><code>GIT_EXEC_PATH</code></strong> determines where Git looks for its sub-programs (like <code>git-commit</code>, <code>git-diff</code>, and others).
-  You can check the current setting by running <code>git --exec-path</code>.</p>
+You can check the current setting by running <code>git --exec-path</code>.</p>
 </div>
 <div class="paragraph">
 <p><strong><code>HOME</code></strong> isn’t usually considered customizable (too many other things depend on it), but it’s where Git looks for the global configuration file.
-  If you want a truly portable Git installation, complete with global configuration, you can override <code>HOME</code> in the portable Git’s shell profile.</p>
+If you want a truly portable Git installation, complete with global configuration, you can override <code>HOME</code> in the portable Git’s shell profile.</p>
 </div>
 <div class="paragraph">
 <p><strong><code>PREFIX</code></strong> is similar, but for the system-wide configuration.
-  Git looks for this file at <code>$PREFIX/etc/gitconfig</code>.</p>
+Git looks for this file at <code>$PREFIX/etc/gitconfig</code>.</p>
 </div>
 <div class="paragraph">
 <p><strong><code>GIT_CONFIG_NOSYSTEM</code></strong>, if set, disables the use of the system-wide configuration file.
-  This is useful if your system config is interfering with your commands, but you don’t have access to change or remove it.</p>
+This is useful if your system config is interfering with your commands, but you don’t have access to change or remove it.</p>
 </div>
 <div class="paragraph">
 <p><strong><code>GIT_PAGER</code></strong> controls the program used to display multi-page output on the command line.
@@ -299,8 +299,12 @@ nothing to commit, working directory clean</code></pre>
 <div class="paragraph">
 <p><strong><code>GIT_SSH</code></strong>, if specified, is a program that is invoked instead of <code>ssh</code> when Git tries to connect to an SSH host.
 It is invoked like <code>$GIT_SSH [username@]host [-p &lt;port&gt;] &lt;command&gt;</code>.
-Note that this isn’t the easiest way to customize how <code>ssh</code> is invoked; it won’t support extra command-line parameters, so you’d have to write a wrapper script and set <code>GIT_SSH</code> to point to it.
-It’s probably easier just to use the <code>~/.ssh/config</code> file for that.</p>
+Note that this isn’t the easiest way to customize how <code>ssh</code> is invoked; it won’t support extra command-line parameters.
+To support extra command-line parameters, you can use <strong><code>GIT_SSH_COMMAND</code></strong>, write a wrapper script and set <code>GIT_SSH</code> to point to it or use the <code>~/.ssh/config</code> file.</p>
+</div>
+<div class="paragraph">
+<p><strong><code>GIT_SSH_COMMAND</code></strong> sets the SSH command used when Git tries to connect to an SSH host.
+The command is interpreted by the shell, and extra command-line arguments can be used with <code>ssh</code>, such as <code>GIT_SSH_COMMAND="ssh -i ~/.ssh/my_key" git clone <a href="mailto:git@example.com">git@example.com</a>:my/repo</code>.</p>
 </div>
 <div class="paragraph">
 <p><strong><code>GIT_ASKPASS</code></strong> is an override for the <code>core.askpass</code> configuration value.

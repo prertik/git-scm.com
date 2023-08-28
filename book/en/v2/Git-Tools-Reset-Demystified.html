@@ -144,8 +144,9 @@ Think of the working directory as a <strong>sandbox</strong>, where you can try 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-workflow.png" | relative_url }}" alt="reset workflow">
+<img src="{{ "book/en/v2/images/reset-workflow.png" | relative_url }}" alt="Git’s typical workflow">
 </div>
+<div class="title">Figure 137. Git’s typical workflow</div>
 </div>
 <div class="paragraph">
 <p>Let’s visualize this process: say you go into a new directory with a single file in it.
@@ -154,8 +155,9 @@ Now we run <code>git init</code>, which will create a Git repository with a HEAD
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-ex1.png" | relative_url }}" alt="reset ex1">
+<img src="{{ "book/en/v2/images/reset-ex1.png" | relative_url }}" alt="Newly-initialized Git repository with unstaged file in the working directory">
 </div>
+<div class="title">Figure 138. Newly-initialized Git repository with unstaged file in the working directory</div>
 </div>
 <div class="paragraph">
 <p>At this point, only the working directory tree has any content.</p>
@@ -165,7 +167,9 @@ Now we run <code>git init</code>, which will create a Git repository with a HEAD
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-ex2.png" | relative_url }}" alt="reset ex2">
+<img src="{{ "book/en/v2/images/reset-ex2.png" | relative_url }}" alt="File is copied to index on `git add`">
+</div>
+<div class="title">Figure 139. File is copied to index on <code>git add</code>
 </div>
 </div>
 <div class="paragraph">
@@ -173,8 +177,9 @@ Now we run <code>git init</code>, which will create a Git repository with a HEAD
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-ex3.png" | relative_url }}" alt="reset ex3">
+<img src="{{ "book/en/v2/images/reset-ex3.png" | relative_url }}" alt="The `git commit` step">
 </div>
+<div class="title">Figure 140. The <code>git commit</code> step</div>
 </div>
 <div class="paragraph">
 <p>If we run <code>git status</code>, we’ll see no changes, because all three trees are the same.</p>
@@ -186,8 +191,9 @@ Let’s call this <strong>v2</strong> of the file, and indicate it in red.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-ex4.png" | relative_url }}" alt="reset ex4">
+<img src="{{ "book/en/v2/images/reset-ex4.png" | relative_url }}" alt="Git repository with changed file in the working directory">
 </div>
+<div class="title">Figure 141. Git repository with changed file in the working directory</div>
 </div>
 <div class="paragraph">
 <p>If we run <code>git status</code> right now, we’ll see the file in red as “Changes not staged for commit”, because that entry differs between the index and the working directory.
@@ -195,8 +201,9 @@ Next we run <code>git add</code> on it to stage it into our index.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-ex5.png" | relative_url }}" alt="reset ex5">
+<img src="{{ "book/en/v2/images/reset-ex5.png" | relative_url }}" alt="Staging change to index">
 </div>
+<div class="title">Figure 142. Staging change to index</div>
 </div>
 <div class="paragraph">
 <p>At this point, if we run <code>git status</code>, we will see the file in green under “Changes to be committed” because the index and HEAD differ — that is, our proposed next commit is now different from our last commit.
@@ -204,8 +211,9 @@ Finally, we run <code>git commit</code> to finalize the commit.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-ex6.png" | relative_url }}" alt="reset ex6">
+<img src="{{ "book/en/v2/images/reset-ex6.png" | relative_url }}" alt="The `git commit` step with changed file">
 </div>
+<div class="title">Figure 143. The <code>git commit</code> step with changed file</div>
 </div>
 <div class="paragraph">
 <p>Now <code>git status</code> will give us no output, because all three trees are the same again.</p>
@@ -226,8 +234,9 @@ So now our history looks like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-start.png" | relative_url }}" alt="reset start">
+<img src="{{ "book/en/v2/images/reset-start.png" | relative_url }}" alt="Git repository with three commits">
 </div>
+<div class="title">Figure 144. Git repository with three commits</div>
 </div>
 <div class="paragraph">
 <p>Let’s now walk through exactly what <code>reset</code> does when you call it.
@@ -243,8 +252,9 @@ This means if HEAD is set to the <code>master</code> branch (i.e. you’re curre
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-soft.png" | relative_url }}" alt="reset soft">
+<img src="{{ "book/en/v2/images/reset-soft.png" | relative_url }}" alt="Soft reset">
 </div>
+<div class="title">Figure 145. Soft reset</div>
 </div>
 <div class="paragraph">
 <p>No matter what form of <code>reset</code> with a commit you invoke, this is the first thing it will always try to do.
@@ -258,7 +268,7 @@ You could now update the index and run <code>git commit</code> again to accompli
 </div>
 </div>
 <div class="sect4">
-<h4 id="_step_2_updating_the_index_mixed">Step 2: Updating the Index (--mixed)</h4>
+<h4 id="_step_2_updating_the_index_mixed">Step 2: Updating the Index (<code>--mixed</code>)</h4>
 <div class="paragraph">
 <p>Note that if you run <code>git status</code> now you’ll see in green the difference between the index and what the new HEAD is.</p>
 </div>
@@ -267,8 +277,9 @@ You could now update the index and run <code>git commit</code> again to accompli
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-mixed.png" | relative_url }}" alt="reset mixed">
+<img src="{{ "book/en/v2/images/reset-mixed.png" | relative_url }}" alt="Mixed reset">
 </div>
+<div class="title">Figure 146. Mixed reset</div>
 </div>
 <div class="paragraph">
 <p>If you specify the <code>--mixed</code> option, <code>reset</code> will stop at this point.
@@ -280,15 +291,16 @@ You rolled back to before you ran all your <code>git add</code> and <code>git co
 </div>
 </div>
 <div class="sect4">
-<h4 id="_step_3_updating_the_working_directory_hard">Step 3: Updating the Working Directory (--hard)</h4>
+<h4 id="_step_3_updating_the_working_directory_hard">Step 3: Updating the Working Directory (<code>--hard</code>)</h4>
 <div class="paragraph">
 <p>The third thing that <code>reset</code> will do is to make the working directory look like the index.
 If you use the <code>--hard</code> option, it will continue to this stage.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-hard.png" | relative_url }}" alt="reset hard">
+<img src="{{ "book/en/v2/images/reset-hard.png" | relative_url }}" alt="Hard reset">
 </div>
+<div class="title">Figure 147. Hard reset</div>
 </div>
 <div class="paragraph">
 <p>So let’s think about what just happened.
@@ -347,8 +359,9 @@ This form (since you did not specify a commit SHA-1 or branch, and you didn’t 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-path1.png" | relative_url }}" alt="reset path1">
+<img src="{{ "book/en/v2/images/reset-path1.png" | relative_url }}" alt="Mixed reset with a path">
 </div>
+<div class="title">Figure 148. Mixed reset with a path</div>
 </div>
 <div class="paragraph">
 <p>This has the practical effect of <em>unstaging</em> the file.
@@ -356,8 +369,9 @@ If we look at the diagram for that command and think about what <code>git add</c
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-path2.png" | relative_url }}" alt="reset path2">
+<img src="{{ "book/en/v2/images/reset-path2.png" | relative_url }}" alt="Staging file to index">
 </div>
+<div class="title">Figure 149. Staging file to index</div>
 </div>
 <div class="paragraph">
 <p>This is why the output of the <code>git status</code> command suggests that you run this to unstage a file (see <a href="ch00/_unstaging">Unstaging a Staged File</a> for more on this).</p>
@@ -368,8 +382,9 @@ We would just run something like <code>git reset eb43bf file.txt</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-path3.png" | relative_url }}" alt="reset path3">
+<img src="{{ "book/en/v2/images/reset-path3.png" | relative_url }}" alt="Soft reset with a path to a specific commit">
 </div>
+<div class="title">Figure 150. Soft reset with a path to a specific commit</div>
 </div>
 <div class="paragraph">
 <p>This effectively does the same thing as if we had reverted the content of the file to <strong>v1</strong> in the working directory, ran <code>git add</code> on it, then reverted it back to <strong>v3</strong> again (without actually going through all those steps).
@@ -396,28 +411,31 @@ The second commit was a work in progress and you want to squash it down.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-squash-r1.png" | relative_url }}" alt="reset squash r1">
+<img src="{{ "book/en/v2/images/reset-squash-r1.png" | relative_url }}" alt="Git repository">
 </div>
+<div class="title">Figure 151. Git repository</div>
 </div>
 <div class="paragraph">
 <p>You can run <code>git reset --soft HEAD~2</code> to move the HEAD branch back to an older commit (the most recent commit you want to keep):</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-squash-r2.png" | relative_url }}" alt="reset squash r2">
+<img src="{{ "book/en/v2/images/reset-squash-r2.png" | relative_url }}" alt="Moving HEAD with soft reset">
 </div>
+<div class="title">Figure 152. Moving HEAD with soft reset</div>
 </div>
 <div class="paragraph">
 <p>And then simply run <code>git commit</code> again:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-squash-r3.png" | relative_url }}" alt="reset squash r3">
+<img src="{{ "book/en/v2/images/reset-squash-r3.png" | relative_url }}" alt="Git repository with squashed commit">
 </div>
+<div class="title">Figure 153. Git repository with squashed commit</div>
 </div>
 <div class="paragraph">
-<p>Now you can see that your reachable history, the history you would push, now looks like you had one commit with <code>file-a.txt</code> v1, then a second that both modified <code>file-a.txt</code> to v3 and added <code>file-b.txt</code>.
-The commit with the v2 version of the file is no longer in the history.</p>
+<p>Now you can see that your reachable history, the history you would push, now looks like you had one commit with <code>file-a.txt</code> <strong>v1</strong>, then a second that both modified <code>file-a.txt</code> to <strong>v3</strong> and added <code>file-b.txt</code>.
+The commit with the <strong>v2</strong> version of the file is no longer in the history.</p>
 </div>
 </div>
 <div class="sect3">
@@ -452,7 +470,9 @@ HEAD will now point to <code>master</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/reset-checkout.png" | relative_url }}" alt="reset checkout">
+<img src="{{ "book/en/v2/images/reset-checkout.png" | relative_url }}" alt="`git checkout` and `git reset`">
+</div>
+<div class="title">Figure 154. <code>git checkout</code> and <code>git reset</code>
 </div>
 </div>
 </div>

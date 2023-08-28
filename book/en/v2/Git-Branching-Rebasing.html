@@ -107,7 +107,7 @@ Rebasing replays changes from one line of work onto another in the order they we
 Take a history like <a href="ch00/rbdiag_e">A history with a topic branch off another topic branch</a>, for example.
 You branched a topic branch (<code>server</code>) to add some server-side functionality to your project, and made a commit.
 Then, you branched off that to make the client-side changes (<code>client</code>) and committed a few times.
-Finally, you went back to your server branch and did a few more commits.</p>
+Finally, you went back to your <code>server</code> branch and did a few more commits.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
@@ -135,7 +135,7 @@ It’s a bit complex, but the result is pretty cool.</p>
 <div class="title">Figure 40. Rebasing a topic branch off another topic branch</div>
 </div>
 <div class="paragraph">
-<p>Now you can fast-forward your <code>master</code> branch (see <a href="ch00/rbdiag_g">Fast-forwarding your <code>master</code> branch to include the client branch changes</a>):</p>
+<p>Now you can fast-forward your <code>master</code> branch (see <a href="ch00/rbdiag_g">Fast-forwarding your <code>master</code> branch to include the <code>client</code> branch changes</a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -145,12 +145,12 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/interesting-rebase-3.png" | relative_url }}" alt="Fast-forwarding your `master` branch to include the client branch changes">
+<img src="{{ "book/en/v2/images/interesting-rebase-3.png" | relative_url }}" alt="Fast-forwarding your `master` branch to include the `client` branch changes">
 </div>
-<div class="title">Figure 41. Fast-forwarding your <code>master</code> branch to include the client branch changes</div>
+<div class="title">Figure 41. Fast-forwarding your <code>master</code> branch to include the <code>client</code> branch changes</div>
 </div>
 <div class="paragraph">
-<p>Let’s say you decide to pull in your server branch as well.
+<p>Let’s say you decide to pull in your <code>server</code> branch as well.
 You can rebase the <code>server</code> branch onto the <code>master</code> branch without having to check it out first by running <code>git rebase &lt;basebranch&gt; &lt;topicbranch&gt;</code> — which checks out the topic branch (in this case, <code>server</code>) for you and replays it onto the base branch (<code>master</code>):</p>
 </div>
 <div class="listingblock">
@@ -159,13 +159,13 @@ You can rebase the <code>server</code> branch onto the <code>master</code> branc
 </div>
 </div>
 <div class="paragraph">
-<p>This replays your <code>server</code> work on top of your <code>master</code> work, as shown in <a href="ch00/rbdiag_h">Rebasing your server branch on top of your <code>master</code> branch</a>.</p>
+<p>This replays your <code>server</code> work on top of your <code>master</code> work, as shown in <a href="ch00/rbdiag_h">Rebasing your <code>server</code> branch on top of your <code>master</code> branch</a>.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{ "book/en/v2/images/interesting-rebase-4.png" | relative_url }}" alt="Rebasing your server branch on top of your `master` branch">
+<img src="{{ "book/en/v2/images/interesting-rebase-4.png" | relative_url }}" alt="Rebasing your `server` branch on top of your `master` branch">
 </div>
-<div class="title">Figure 42. Rebasing your server branch on top of your <code>master</code> branch</div>
+<div class="title">Figure 42. Rebasing your <code>server</code> branch on top of your <code>master</code> branch</div>
 </div>
 <div class="paragraph">
 <p>Then, you can fast-forward the base branch (<code>master</code>):</p>
@@ -275,13 +275,13 @@ This is called a “patch-id”.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Determine what work is unique to our branch (C2, C3, C4, C6, C7)</p>
+<p>Determine what work is unique to our branch (<code>C2</code>, <code>C3</code>, <code>C4</code>, <code>C6</code>, <code>C7</code>)</p>
 </li>
 <li>
-<p>Determine which are not merge commits (C2, C3, C4)</p>
+<p>Determine which are not merge commits (<code>C2</code>, <code>C3</code>, <code>C4</code>)</p>
 </li>
 <li>
-<p>Determine which have not been rewritten into the target branch (just C2 and C3, since C4 is the same patch as C4')</p>
+<p>Determine which have not been rewritten into the target branch (just <code>C2</code> and <code>C3</code>, since <code>C4</code> is the same patch as <code>C4'</code>)</p>
 </li>
 <li>
 <p>Apply those commits to the top of <code>teamone/master</code></p>
@@ -299,7 +299,7 @@ This is called a “patch-id”.</p>
 </div>
 <div class="paragraph">
 <p>This only works if <code>C4</code> and <code>C4'</code> that your partner made are almost exactly the same patch.
-Otherwise the rebase won’t be able to tell that it’s a duplicate and will add another C4-like patch (which will probably fail to apply cleanly, since the changes would already be at least somewhat there).</p>
+Otherwise the rebase won’t be able to tell that it’s a duplicate and will add another <code>C4</code>-like patch (which will probably fail to apply cleanly, since the changes would already be at least somewhat there).</p>
 </div>
 <div class="paragraph">
 <p>You can also simplify this by running a <code>git pull --rebase</code> instead of a normal <code>git pull</code>.
@@ -335,7 +335,7 @@ That’s how it happened, and the repository should preserve that for posterity.
 <p>The opposing point of view is that the commit history is the <strong>story of how your project was made.</strong>
 You wouldn’t publish the first draft of a book, so why show your messy work?
 When you’re working on a project, you may need a record of all your missteps and dead-end paths, but when it’s time to show your work to the world, you may want to tell a more coherent story of how to get from A to B.
-People in this camp use tools like rebase and filter-branch to rewrite their commits before they’re merged into the mainline branch.
+People in this camp use tools like <code>rebase</code> and <code>filter-branch</code> to rewrite their commits before they’re merged into the mainline branch.
 They use tools like <code>rebase</code> and <code>filter-branch</code>, to tell the story in the way that’s best for future readers.</p>
 </div>
 <div class="paragraph">

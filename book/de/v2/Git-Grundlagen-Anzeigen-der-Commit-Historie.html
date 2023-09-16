@@ -61,12 +61,12 @@ Date:   Sat Mar 15 10:31:28 2008 -0700
 Wie Sie sehen können, listet dieser Befehl jeden Commit mit seiner SHA-1-Prüfsumme, dem Namen und der E-Mail-Adresse des Autors, dem Erstellungs-Datum und der Commit-Beschreibung auf.</p>
 </div>
 <div class="paragraph">
-<p>Eine Vielzahl und Vielfalt von Optionen für den Befehl <code>git log</code> stehen zur Verfügung, um Ihnen exakt das anzuzeigen, wonach Sie suchen.
+<p>Eine Vielzahl von Optionen stehen für den Befehl <code>git log</code> zur Verfügung, um Ihnen exakt das anzuzeigen, wonach Sie suchen.
 Hier zeigen wir Ihnen einige der gängigsten.</p>
 </div>
 <div class="paragraph">
-<p>Eine der hilfreichsten Optionen ist <code>-p</code> oder <code>--patch</code>. Sie zeigt den Unterschied (die <em>patch</em>-Ausgabe) an, der bei jedem Commit eingefügt wird.
-Sie können auch die Anzahl der anzuzeigenden Protokolleinträge begrenzen, z.B. mit <code>-2</code> nur die letzten beiden Einträge darstellen.</p>
+<p>Eine der hilfreichsten Optionen ist <code>-p</code> oder <code>--patch</code>. Sie zeigt die Änderungen (die <em>patch</em>-Ausgabe) an, die bei jedem Commit durchgeführt wurden.
+Sie können auch die Anzahl der anzuzeigenden Protokolleinträge begrenzen, z.B. mit <code>-2</code> werden nur die letzten beiden Einträge dargestellt.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -113,10 +113,10 @@ index a0a60ae..47c6340 100644
 </div>
 </div>
 <div class="paragraph">
-<p>Diese Option zeigt die gleichen Informationen an, jedoch mit dem Unterschied, dass sie direkt hinter jedem Eintrag stehen.
-Diese Funktion ist sehr hilfreich für die Code-Überprüfung oder zum schnellen Durchsuchen der Vorgänge während einer Reihe von Commits, die ein Teammitglied hinzugefügt hat.
-Sie können auch eine Reihe von Optionen zur Verdichtung mit <code>git log</code> verwenden.
-Wenn Sie beispielsweise einige gekürzte Statistiken für jede Übertragung sehen möchten, können Sie die Option <code>--stat</code> verwenden:</p>
+<p>Diese Option zeigt die gleichen Informationen an, jedoch mit der diff Ausgabe direkt nach jedem Eintrag.
+Dies ist sehr hilfreich für die Codeüberprüfung oder um schnell zu durchsuchen, was während einer Reihe von Commits passiert ist, die ein Teammitglied hinzugefügt hat.
+Sie können auch mehrere Optionen zur Verdichtung der Ausgabe von <code>git log</code> verwenden.
+Wenn Sie beispielsweise einige gekürzte Statistiken für jeden Commit sehen möchten, können Sie die Option <code>--stat</code> verwenden:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -257,7 +257,7 @@ a11bef0 - Scott Chacon, 6 years ago : Initial commit</code></pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>%s</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Thema</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thema (engl. Subject)</p></td>
 </tr>
 </tbody>
 </table>
@@ -309,7 +309,7 @@ Diese Option fügt ein schönes kleines ASCII-Diagramm hinzu, das Ihren Branch u
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>-p</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zeigt den Patch an, der mit den jeweiligen Commits eingefügt wurde.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zeigt den Patch (bzw. Änderung) an, der mit den jeweiligen Commits eingefügt wurde.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--stat</code></p></td>
@@ -317,15 +317,15 @@ Diese Option fügt ein schönes kleines ASCII-Diagramm hinzu, das Ihren Branch u
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--shortstat</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anzeige nur der geänderten/eingefügten/gelöschten Zeile des Befehls --stat.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anzeige der geänderten/eingefügten/gelöschten Zeilen des Befehls --stat.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--name-only</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Listet die Dateien auf, die nach den Commit-Informationen geändert wurden.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Listet nach den Commit-Informationen die geänderten Dateien auf</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--name-status</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Listet die Dateien auf, die von hinzugefügten, geänderten oder gelöschten Informationen betroffen sind.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Listet die Dateien mit hinzugefügten/geänderten/gelöschten Informationen auf.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--abbrev-commit</code></p></td>
@@ -337,7 +337,7 @@ Diese Option fügt ein schönes kleines ASCII-Diagramm hinzu, das Ihren Branch u
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--graph</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zeigt ein ASCII-Diagramm des Branches an und verbindet die Historie mit der Log-Ausgabe.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zeigt Sie neben der Historie ein ASCII-Diagramm des Branch- und Zusammenführungsverlaufs an.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--pretty</code></p></td>
@@ -354,11 +354,11 @@ Diese Option fügt ein schönes kleines ASCII-Diagramm hinzu, das Ihren Branch u
 <div class="paragraph">
 <p>Zusätzlich zu den Optionen für die Ausgabe-Formatierung bietet <code>git log</code> eine Reihe nützlicher einschränkender Optionen, d.h. Optionen, mit denen Sie nur eine Teilmenge von Commits anzeigen können.
 Sie haben eine solche Option bereits gesehen – die Option <code>-2</code>, die nur die letzten beiden Commits anzeigt.
-In Wahrheit können Sie <code>-&lt;n&gt;</code> verwenden, wobei <code>n</code> eine beliebige ganze Zahl ist, um die letzten <code>n</code> Commits anzuzeigen.
-In der Praxis werden Sie das kaum verwenden, da Git standardmäßig alle Ausgaben über einen Pager leitet, so dass Sie jeweils nur eine Seite der Log-Ausgabe sehen.</p>
+Sie können die Option <code>-&lt;n&gt;</code> verwenden, wobei <code>n</code> eine beliebige ganze Zahl ist, um die letzten <code>n</code> Commits anzuzeigen.
+In der Praxis werden Sie das selten verwenden, da Git standardmäßig alle Ausgaben über einen Pager leitet, so dass Sie jeweils nur eine Seite der Log-Ausgabe sehen.</p>
 </div>
 <div class="paragraph">
-<p>Die zeitbeschränkenden Optionen wie <code>--since</code> und <code>--until</code> sind sehr nützlich.
+<p>Im Gegensatz dazu sind zeitbeschränkenden Optionen wie <code>--since</code> und <code>--until</code> sehr nützlich.
 Dieser Befehl ruft z.B. die Liste der in den letzten beiden Wochen durchgeführten Commits ab:</p>
 </div>
 <div class="listingblock">
@@ -392,7 +392,7 @@ die <em>allen</em> <code>--grep</code> Mustern entsprechen.</p>
 </div>
 <div class="paragraph">
 <p>Ein weiterer wirklich hilfreicher Filter ist die Option <code>-S</code> (umgangssprachlich als Git’s „Pickel“-Option bezeichnet), die eine Zeichenkette übernimmt und nur die Commits anzeigt, die die Anzahl der Vorkommen dieses Strings geändert haben.
-Wenn Sie beispielsweise das letzte Commit suchen möchten, das einen Verweis auf eine bestimmte Funktion hinzugefügt oder entfernt hat, können Sie Folgendes aufrufen:</p>
+Wenn Sie beispielsweise den letzten Commit suchen möchten, der einen Verweis auf eine bestimmte Funktion hinzugefügt oder entfernt hat, können Sie Folgendes aufrufen:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -400,9 +400,9 @@ Wenn Sie beispielsweise das letzte Commit suchen möchten, das einen Verweis auf
 </div>
 </div>
 <div class="paragraph">
-<p>Zuletzt eine wirklich nützliche Option, die Sie als Filter an <code>git log</code> übergeben können, den Pfad.
+<p>Die letzte hier angesprochene nützliche Option, die als Filter an <code>git log`übergeben werden kann, ist ein Pfad.
 Wenn Sie ein Verzeichnis oder einen Dateinamen angeben, können Sie die Log-Ausgabe auf Commits beschränken, die eine Änderung an diesen Dateien vorgenommen haben.
-Das ist immer die letzte Option und wird in der Regel durch Doppelstriche (<code>--</code>) eingeleitet, um Pfade von den Optionen zu trennen.</p>
+Das ist immer die letzte Option und wird in der Regel durch Doppelstriche (</code>--`) eingeleitet, um Pfade von den Optionen zu trennen.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -410,7 +410,7 @@ Das ist immer die letzte Option und wird in der Regel durch Doppelstriche (<code
 </div>
 </div>
 <div class="paragraph">
-<p>In <a href="ch00/limit_options">Optionen zum Anpassen der Ausgabe von <code>git log</code></a> werden wir Ihnen diese und einige andere gängige Optionen als Referenz auflisten.</p>
+<p>In <a href="ch00/limit_options">Optionen zum Anpassen der Ausgabe von <code>git log</code></a> sind diese und einige andere gängige Optionen als Referenz aufgelistet.</p>
 </div>
 <table id="limit_options" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabelle 3. Optionen zum Anpassen der Ausgabe von <code>git log</code>

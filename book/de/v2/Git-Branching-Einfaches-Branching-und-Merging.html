@@ -20,38 +20,38 @@ title: Git - Einfaches Branching und Merging
 <h2 id="_einfaches_branching_und_merging">Einfaches Branching und Merging</h2>
 <div class="paragraph">
 <p>Lassen Sie uns ein einfaches Beispiel für das Verzweigen und Zusammenführen (engl. branching and merging) anschauen, wie es Ihnen in einem praxisnahen Workflow begegnen könnte.
-Führen Sie diese Schritte aus:</p>
+Stellen sie sich vor, sie führen folgende Schritte aus:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Arbeiten Sie an einer Website</p>
+<p>Sie arbeiten an einer Website</p>
 </li>
 <li>
-<p>Erstellen Sie einen Branch für eine neue Anwendergeschichte, an der Sie gerade arbeiten</p>
+<p>Sie erstellen einen Branch für eine neue Anwendergeschichte (engl. User Story), an der Sie gerade arbeiten</p>
 </li>
 <li>
-<p>Erledigen Sie einige Arbeiten in diesem Branch</p>
+<p>Sie erledigen Sie einige Arbeiten in diesem Branch</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
 <p>In diesem Moment erhalten Sie einen Anruf, dass ein anderes Problem kritisch ist und Sie einen Hotfix benötigen.
-Dazu werden Sie folgendes machen:</p>
+Dazu werden Sie folgendes tun:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Wechseln Sie zu Ihrem Produktions-Branch</p>
+<p>Sie wechseln zu Ihrem Produktions-Branch</p>
 </li>
 <li>
-<p>Erstellen Sie einen Branch, um den Hotfix einzufügen</p>
+<p>Sie erstellen einen Branch, um den Hotfix einzufügen</p>
 </li>
 <li>
 <p>Nachdem der Test abgeschlossen ist, mergen Sie den Hotfix-Branch und schieben ihn in den Produktions-Branch</p>
 </li>
 <li>
-<p>Wechseln Sie zurück zu Ihrer ursprünglichen Anwenderstory und arbeiten Sie daran weiter</p>
+<p>Sie wechseln zurück zu Ihrer ursprünglichen Anwenderstory und arbeiten daran weiter</p>
 </li>
 </ol>
 </div>
@@ -110,13 +110,13 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 </div>
 <div class="paragraph">
 <p>Jetzt bekommen Sie einen Anruf, dass es ein Problem mit der Website gibt und Sie es umgehend beheben müssen.
-Bei Git müssen Sie Ihren Fix nicht zusammen mit den Änderungen bereitstellen, die Sie bereits an <code>iss53</code> vorgenommen haben, und Sie müssen auch keinen großen Aufwand damit betreiben, diese Änderungen rückgängig zu machen, bevor Sie daran arbeiten können, Ihren Fix auf das anzuwenden, was sich in der Produktionsumgebung befindet.
+Bei Git müssen Sie Ihren Fix nicht zusammen mit den Änderungen bereitstellen, die Sie bereits an <code>iss53</code> vorgenommen haben. Sie müssen auch keinen großen Aufwand betreiben, diese Änderungen rückgängig zu machen, bevor Sie an den neuen Hotfix arbeiten können, um die Produktionsumgebung zu fixen.
 Alles, was Sie machen müssen, ist, zu Ihrem vorherigen <code>master</code> Branch zu wechseln.</p>
 </div>
 <div class="paragraph">
 <p>Beachten Sie dabei, dass Git das Wechseln zu einem anderen Branch blockiert, falls Ihr Arbeitsverzeichnis oder Ihr Staging-Bereich nicht committete Modifikationen enthält, die Konflikte verursachen.
-Es ist am besten, einen sauberen Zustand des Arbeitsbereichs anzustreben, bevor Sie die Branches wechseln.
-Es gibt Möglichkeiten, das zu umgehen (nämlich das Verstecken/Stashen und Revidieren/Amending von Änderungen), die wir später in Kapitel 7 <a href="ch00/_git_stashing">Git Stashing</a> behandeln werden.
+Generell ist es am besten, einen sauberen Zustand des Arbeitsbereichs anzustreben, bevor Sie Branches wechseln.
+Es gibt Möglichkeiten, das zu umgehen (nämlich das Verstecken (engl. Stashen) und Revidieren (engl. Amending) von Änderungen), die wir später in Kapitel 7 <a href="ch00/_git_stashing">Git Stashing</a> behandeln werden.
 Lassen Sie uns vorerst annehmen, Sie haben für alle Ihre Änderungen Commits durchgeführt, sodass Sie zu Ihrem vorherigen <code>master</code> Branch wechseln können.</p>
 </div>
 <div class="listingblock">
@@ -209,8 +209,8 @@ $ git commit -a -m 'Finish the new footer [issue 53]'
 <div class="title">Abbildung 23. Arbeiten an <code>iss53</code> fortsetzen</div>
 </div>
 <div class="paragraph">
-<p>Es ist erwähnenswert, dass die Arbeit, die Sie in Ihrem <code>hotfix</code> Branch durchgeführt haben, nicht in den Dateien in Ihrem <code>iss53</code> Branch enthalten ist.
-Wenn Sie diese Änderungen übernehmen müssen, können Sie Ihrem <code>master</code> Branch in den <code>iss53</code> Branch einbinden, indem Sie <code>git merge master</code> ausführen oder Sie können warten, bis Sie sich später entscheiden, den <code>iss53</code> Branch wieder zurück nach <code>master</code> zu übernehmen (engl. pullen).</p>
+<p>Erwähnenswert ist, dass die Änderungen, die Sie in Ihrem <code>hotfix</code> Branch durchgeführt haben, nicht in den Dateien ihres <code>iss53</code> Branch enthalten sind.
+Wenn Sie diese Änderungen übernehmen wollen, können Sie Ihrem <code>master</code> Branch in den <code>iss53</code> Branch übernehmen, indem Sie <code>git merge master</code> ausführen. Sie können aber auch warten und sich später dazu entscheiden, den <code>iss53</code> Branch in <code>master</code> zu übernehmen (engl. pullen).</p>
 </div>
 </div>
 <div class="sect3">
@@ -235,7 +235,7 @@ index.html |    1 +
 <p>Das sieht ein bisschen anders aus, als das Merging mit dem <code>hotfix</code> Branch, welches Sie zuvor gemacht haben.
 Hier hat sich der Entwicklungsverlauf an einem früheren Zustand geteilt.
 Da der Commit auf dem Branch, auf dem Sie sich gerade befinden, kein unmittelbarer Vorgänger des Branches ist, in den Sie mergen, muss Git einige Arbeiten erledigen.
-In diesem Fall führt Git einen einfachen Drei-Wege-Merge durch, indem er die beiden Schnappschüsse verwendet, auf die die Branch-Spitzen und der gemeinsame Vorfahr der beiden zeigen.</p>
+In diesem Fall führt Git einen einfachen Drei-Wege-Merge durch, indem er die beiden Schnappschüsse verwendet, auf die die Branch-Spitzen und der gemeinsame Vorgänger der beiden zeigen.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -316,7 +316,7 @@ Ihre Datei enthält einen Bereich, der in etwa so aussieht:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Das bedeutet, die Version in <code>HEAD</code> (Ihres <code>master</code> Branches, denn der wurde per <code>checkout</code> aktiviert, als Sie den <code>Merge</code> gestartet haben) ist der obere Teil des Blocks (alles oberhalb von <code>=======</code>) und die Version aus dem <code>iss53</code> Branch sieht wie der darunter befindliche Teil aus.
+<p>Das bedeutet, die Version in <code>HEAD</code> (das ist der aktuelle commit <code>master</code> Branches, denn der wurde per <code>checkout</code> aktiviert, als Sie den <code>Merge</code> gestartet haben) ist der obere Teil des Blocks (alles oberhalb von <code>=======</code>) und die Version aus dem <code>iss53</code> Branch ist in dem darunter befindliche Teil.
 Um den Konflikt zu lösen, müssen Sie sich entweder für einen der beiden Teile entscheiden oder Sie führen die Inhalte selbst zusammen.
 Sie können diesen Konflikt beispielsweise lösen, indem Sie den gesamten Block durch diesen ersetzen:</p>
 </div>

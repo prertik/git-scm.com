@@ -19,15 +19,15 @@ title: Git - Branches auf einen Blick
 ---
 <p>
 Nahezu jedes VCS unterstützt eine Form von Branching.
-Branching bedeutet, dass Sie von der Hauptlinie der Entwicklung abzweigen und Ihre Arbeit fortsetzen, ohne an der Hauptlinie herumzubasteln.
+Branching bedeutet, dass Sie von der Hauptlinie der Entwicklung abzweigen und Ihre Arbeit fortsetzen, ohne die Hauptlinie durcheinanderzubringen.
 In vielen VCS-Tools ist das ein etwas aufwändiger Prozess, bei dem Sie oft eine neue Kopie Ihres Quellcode-Verzeichnisses erstellen müssen, was bei großen Projekten viel Zeit in Anspruch nehmen kann.</p><p>Manche Leute bezeichnen Gits Branching-Modell als dessen „Killer-Feature“, was Git zweifellos vom Rest der VCS-Community abhebt.
 Was ist das Besondere daran?
-Die Art und Weise, wie Git Branches anlegt, ist unglaublich leichtgewichtig, wodurch Branch-Operationen nahezu verzögerungsfrei ausgeführt werden und auch das Hin- und Herschalten zwischen einzelnen Entwicklungszweigen meistens genauso schnell abläuft.
+Die Art und Weise, wie Git Branches anlegt ist unglaublich leichtgewichtig. Branch-Operationen werden nahezu verzögerungsfrei ausgeführt und auch das Hin- und Herschalten zwischen einzelnen Entwicklungszweigen läuft meist genauso schnell ab.
 Im Gegensatz zu anderen VCS ermutigt Git zu einer Arbeitsweise mit häufigem Branching und Merging, sogar mehrmals am Tag.
-Wenn Sie diese Funktion verstehen und beherrschen, besitzen Sie ein mächtiges und einmaliges Werkzeug, welches Ihre Art zu entwickeln vollständig verändern kann.</p>
+Wenn Sie diese Funktion verstehen und beherrschen, besitzen Sie ein mächtiges und besonderes Werkzeug, welches Ihre Art zu entwickeln vollständig verändern kann.</p>
 <h2 id="_git_branches_overview">Branches auf einen Blick</h2>
 <div class="paragraph">
-<p>Um richtig zu verstehen, wie Git das Verzweigen realisiert, müssen wir einen Schritt zurücktreten und untersuchen, wie Git seine Daten speichert.</p>
+<p>Um richtig zu verstehen, wie Git das Verzweigen (engl. Branching) realisiert, müssen wir einen Schritt zurück gehen und untersuchen, wie Git seine Daten speichert.</p>
 </div>
 <div class="paragraph">
 <p>Wie Sie vielleicht aus Kapitel 1 <a href="ch00/what_is_git_section">Was ist Git?</a> in Erinnerung haben, speichert Git seine Daten nicht als Serie von Änderungen oder Unterschieden, sondern statt dessen als eine Reihe von <em>Snapshots</em>.</p>
@@ -162,7 +162,7 @@ Lassen Sie uns zu dem neuen <code>testing</code> Branch wechseln.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Dadurch wird <code>HEAD</code> verschoben, um auf den Zweig <code>testing</code> zu zeigen.</p>
+<p>Dadurch wird <code>HEAD</code> verschoben, um auf den Branch <code>testing</code> zu zeigen.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -209,10 +209,10 @@ Lassen Sie uns zum Branch <code>master</code> zurückwechseln.</p>
 </div>
 <div class="paragraph">
 <p>Der Branch ist nicht spurlos verschwunden. Git weiß nur nicht, dass Sie sich für diesen Branch interessieren, und es versucht, Ihnen das zu zeigen, woran Sie seiner Meinung nach interessiert sind.
-Anders gesagt, standardmäßig zeigt <code>git log</code> nur den Commit-Verlauf innerhalb des Branches an, den Sie ausgecheckt haben.</p>
+Anders gesagt, standardmäßig zeigt <code>git log</code> nur den Commit-Verlauf des Branches an, den Sie ausgecheckt haben.</p>
 </div>
 <div class="paragraph">
-<p>Um die Commit-Historie für den gewünschten Zweig anzuzeigen, müssen Sie ihn explizit angeben: <code>git log testing</code>.
+<p>Um die Commit-Historie für den gewünschten Branch anzuzeigen, müssen Sie ihn explizit angeben: <code>git log testing</code>.
 Um alle Branches zu sehen, fügen Sie <code>--all</code> zu Ihrem Kommando <code>git log</code> hinzu.</p>
 </div>
 </td>
@@ -270,7 +270,7 @@ Und das alles mit den einfachen Befehlen <code>branch</code>, <code>checkout</co
 <div class="title">Abbildung 17. Verzweigter Verlauf</div>
 </div>
 <div class="paragraph">
-<p>Sie können sich dies auch mühelos ansehen, wenn Sie die Anweisung <code>git log</code> ausführen.
+<p>Sie können sich dies ansehen, wenn Sie die Anweisung <code>git log</code> ausführen.
 Wenn Sie die Anweisung <code>git log --oneline --decorate --graph --all</code> ausführen, wird Ihnen der Verlauf Ihrer Commits so angezeigt, dass erkennbar ist, wo Ihre Branch-Zeiger sich befinden und wie Ihr Verlauf sich verzweigt hat.</p>
 </div>
 <div class="listingblock">

@@ -7,6 +7,7 @@ search:
 manual pages:
 - record mapping of version <-> SHA of contents
 - implement scheduled GitHub workflow to update automatically
+- ensure that dropped manual pages are handled correctly (might be that leaving the pages in place is the correct thing to do?)
 
 downloads:
 - add a scheduled GitHub workflow to update automatically

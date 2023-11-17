@@ -28,7 +28,7 @@
         </a>
         </li>
       {{ else }}
-        <li class="no-change"><span>{{ $v.name }} no changes</span></li>
+        <li class="no-change"><span>{{ safeHTML $v.name }} no changes</span></li>
       {{ end }}
     {{ end }}
     <li>&nbsp;</li>

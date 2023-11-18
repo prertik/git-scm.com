@@ -59,7 +59,7 @@ Als je <code>git clone -o booyah</code> gebruikt, krijg je <code>booyah/master</
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Server en lokale repositories na klonen.">
+<img src="{{< relurl "book/nl/v2/images/remote-branches-1.png" >}}" alt="Server en lokale repositories na klonen.">
 </div>
 <div class="title">Figuur 30. Server en lokale repositories na klonen</div>
 </div>
@@ -69,7 +69,7 @@ En zolang je geen contact hebt met de origin server, zal jouw <code>origin/maste
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Lokaal en remote werk kan gaan afwijken.">
+<img src="{{< relurl "book/nl/v2/images/remote-branches-2.png" >}}" alt="Lokaal en remote werk kan gaan afwijken.">
 </div>
 <div class="title">Figuur 31. Lokaal en remote werk kan gaan afwijken</div>
 </div>
@@ -79,19 +79,19 @@ Dit commando bekijkt welke server “origin” is (in dit geval is het <code>git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` vernieuwt je remote referenties.">
+<img src="{{< relurl "book/nl/v2/images/remote-branches-3.png" >}}" alt="`git fetch` vernieuwt je remote referenties.">
 </div>
 <div class="title">Figuur 32. <code>git fetch</code> vernieuwt je remote referenties</div>
 </div>
 <div class="paragraph">
 <p>Om het hebben van meerdere remote servers te demonstreren en hoe remote branches voor die remote projecten er uitzien, zullen we aannemen dat je nog een interne Git-server hebt die alleen wordt gebruikt voor ontwikkelingen gedaan door een van je sprint teams.
 Deze server bevindt zich op <code>git.team1.ourcompany.com</code>.
-Je kunt het als een nieuwe remote referentie toevoegen aan het project waar je nu aan werkt door het <code>git remote add</code> commando uit te voeren, zoals we behandeld hebben in <a href="ch00/ch02-git-basics-chapter">Git Basics</a>.
+Je kunt het als een nieuwe remote referentie toevoegen aan het project waar je nu aan werkt door het <code>git remote add</code> commando uit te voeren, zoals we behandeld hebben in <a href="{{< relurl "book/nl/v2/ch00/ch02-git-basics-chapter" >}}">Git Basics</a>.
 Noem deze remote <code>teamone</code>, wat jouw afkorting voor die hele URL wordt.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Een andere server toevoegen als remote.">
+<img src="{{< relurl "book/nl/v2/images/remote-branches-4.png" >}}" alt="Een andere server toevoegen als remote.">
 </div>
 <div class="title">Figuur 33. Een andere server toevoegen als remote</div>
 </div>
@@ -101,7 +101,7 @@ Omdat die server een subset heeft van de gegevens die jouw <code>origin</code> s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch voor `teamone/master`.">
+<img src="{{< relurl "book/nl/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch voor `teamone/master`.">
 </div>
 <div class="title">Figuur 34. Remote tracking branch voor <code>teamone/master</code>
 </div>
@@ -133,7 +133,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Dit is wel een beetje de bocht afsnijden.
 Git zal de <code>serverfix</code>-branchnaam automatisch expanderen naar <code>refs/heads/serverfix:refs/heads/serverfix</code>, wat staat voor “Neem mijn lokale serverfix branch en push die om de serverfix branch van de remote te vernieuwen.”.
-We zullen het <code>refs/heads</code> gedeelte gedetaileerd behandelen in <a href="ch00/ch10-git-internals">Git Binnenwerk</a>, maar je kunt het normaalgesproken weglaten.
+We zullen het <code>refs/heads</code> gedeelte gedetaileerd behandelen in <a href="{{< relurl "book/nl/v2/ch00/ch10-git-internals" >}}">Git Binnenwerk</a>, maar je kunt het normaalgesproken weglaten.
 Je kun ook <code>git push origin serverfix:serverfix</code> doen, wat hetzelfde doet.
 Dit staat voor “Neem mijn serverfix en maak het de serverfix van de remote.”
 Je kunt dit formaat gebruiken om een lokale branch te pushen naar een remote branch die anders heet.
@@ -157,7 +157,7 @@ Het eenvoudigste is om het gewoon in het geheugen te houden voor een aantal minu
 Dit kan je simpel opzetten door <code>git config --global credential.helper cache</code> aan te roepen.</p>
 </div>
 <div class="paragraph">
-<p>Voor meer informatie over de verschillende beschikbare credential caching opties, zie <a href="ch00/_credential_caching">Het opslaan van inloggegevens</a>.</p>
+<p>Voor meer informatie over de verschillende beschikbare credential caching opties, zie <a href="{{< relurl "book/nl/v2/ch00/_credential_caching" >}}">Het opslaan van inloggegevens</a>.</p>
 </div>
 </td>
 </tr>

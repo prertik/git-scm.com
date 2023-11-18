@@ -67,7 +67,7 @@ Git geeft je een eenvoudige manier om hierop te controleren — voordat je c
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="Uitvoer van `git diff --check`.">
+<img src="{{< relurl "book/nl/v2/images/git-diff-check.png" >}}" alt="Uitvoer van `git diff --check`.">
 </div>
 <div class="title">Figuur 57. Uitvoer van <code>git diff --check</code>.</div>
 </div>
@@ -78,12 +78,12 @@ Git geeft je een eenvoudige manier om hierop te controleren — voordat je c
 <p>Probeer vervolgens om van elke commit een logische set wijzigingen te maken.
 Probeer, als het je lukt, om je wijzigingen verteerbaar te houden — ga niet het hele weekend zitten coderen op vijf verschillende problemen om dat vervolgens op maandag als één gigantische commit in te dienen.
 Zelfs als je gedurende het weekend niet commit, gebruik dan het staging gebied op maandag om je werk in ten minste één commit per probleem op te splitsen, met een bruikbaar bericht per commit.
-Als een paar van de wijzigingen hetzelfde bestand betreffen, probeer dan <code>git add --patch</code> te gebruiken om bestanden gedeeltelijk te stagen (in detail behandeld in <a href="ch00/_interactive_staging">Interactief stagen</a>).
+Als een paar van de wijzigingen hetzelfde bestand betreffen, probeer dan <code>git add --patch</code> te gebruiken om bestanden gedeeltelijk te stagen (in detail behandeld in <a href="{{< relurl "book/nl/v2/ch00/_interactive_staging" >}}">Interactief stagen</a>).
 De snapshot aan de kop van het project is gelijk of je nu één commit doet of vijf, zolang alle wijzigingen op een gegeven moment maar toegevoegd zijn, probeer dus om het je mede-ontwikkelaars makkelijk te maken als ze je wijzigingen moeten beoordelen.</p>
 </div>
 <div class="paragraph">
 <p>Deze aanpak maakt het ook makkelijker om één wijziging eruit te selecteren of terug te draaien, mocht dat later nodig zijn.
-<a href="ch00/_rewriting_history">Geschiedenis herschrijven</a> beschrijft een aantal handige Git trucs om geschiedenis te herschrijven en bestanden interactief te stagen — gebruik deze instrumenten als hulp om een schone en begrijpelijke historie op te bouwen voordat deze naar iemand anders wordt gestuurd.</p>
+<a href="{{< relurl "book/nl/v2/ch00/_rewriting_history" >}}">Geschiedenis herschrijven</a> beschrijft een aantal handige Git trucs om geschiedenis te herschrijven en bestanden interactief te stagen — gebruik deze instrumenten als hulp om een schone en begrijpelijke historie op te bouwen voordat deze naar iemand anders wordt gestuurd.</p>
 </div>
 <div class="paragraph">
 <p>Het laatste om in gedachten te houden is het commit bericht.
@@ -238,7 +238,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="De afwijkende historie van John.">
+<img src="{{< relurl "book/nl/v2/images/small-team-1.png" >}}" alt="De afwijkende historie van John.">
 </div>
 <div class="title">Figuur 58. De afwijkende historie van John.</div>
 </div>
@@ -258,7 +258,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="De repository van John na `origin/master` te hebben gemerged.">
+<img src="{{< relurl "book/nl/v2/images/small-team-2.png" >}}" alt="De repository van John na `origin/master` te hebben gemerged.">
 </div>
 <div class="title">Figuur 59. De repository van John na <code>origin/master</code> te hebben gemerged.</div>
 </div>
@@ -278,7 +278,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="De historie van John na te hebben gepusht naar de `origin` server.">
+<img src="{{< relurl "book/nl/v2/images/small-team-3.png" >}}" alt="De historie van John na te hebben gepusht naar de `origin` server.">
 </div>
 <div class="title">Figuur 60. De historie van John na te hebben gepusht naar de <code>origin</code> server.</div>
 </div>
@@ -288,7 +288,7 @@ Ze heeft John’s wijzigingen nog niet opgehaald, dus haar commit historie ziet 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Topic branch van Jessica.">
+<img src="{{< relurl "book/nl/v2/images/small-team-4.png" >}}" alt="Topic branch van Jessica.">
 </div>
 <div class="title">Figuur 61. Topic branch van Jessica.</div>
 </div>
@@ -310,7 +310,7 @@ De historie van Jessica ziet er nu zo uit:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="Historie van Jessica na het fetchen van de wijzigingen van John.">
+<img src="{{< relurl "book/nl/v2/images/small-team-5.png" >}}" alt="Historie van Jessica na het fetchen van de wijzigingen van John.">
 </div>
 <div class="title">Figuur 62. Historie van Jessica na het fetchen van de wijzigingen van John.</div>
 </div>
@@ -330,7 +330,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 <div class="paragraph">
 <p>De <code>issue54..origin/master</code> syntax is een log filter dat Git vraagt om alleen de lijst van commits te tonen die op de laatstgenoemde branch (in dit geval <code>origin/master</code>) staan die niet in de eerstegenoemde (in dit geval <code>issue54</code>) staan.
-We zullen deze syntax in detail bespreken in <a href="ch00/_commit_ranges">Commit reeksen</a>.</p>
+We zullen deze syntax in detail bespreken in <a href="{{< relurl "book/nl/v2/ch00/_commit_ranges" >}}">Commit reeksen</a>.</p>
 </div>
 <div class="paragraph">
 <p>Nu zien we in de uitvoer dat er een commit is die John gemaakt heeft die Jessica nog niet gemerged heeft.
@@ -382,7 +382,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="Historie van Jessica na het mergen van de wijzigingen van John.">
+<img src="{{< relurl "book/nl/v2/images/small-team-6.png" >}}" alt="Historie van Jessica na het mergen van de wijzigingen van John.">
 </div>
 <div class="title">Figuur 63. Historie van Jessica na het mergen van de wijzigingen van John.</div>
 </div>
@@ -402,7 +402,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="Historie van Jessica na al haar wijzigingen naar de server te hebben gepusht.">
+<img src="{{< relurl "book/nl/v2/images/small-team-7.png" >}}" alt="Historie van Jessica na al haar wijzigingen naar de server te hebben gepusht.">
 </div>
 <div class="title">Figuur 64. Historie van Jessica na al haar wijzigingen naar de server te hebben gepusht.</div>
 </div>
@@ -414,7 +414,7 @@ De algemene volgorde is als volgt:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="Algemene volgorde van gebeurtenissen voor een eenvoudige multi-ontwikkelaar Git workflow.">
+<img src="{{< relurl "book/nl/v2/images/small-team-flow.png" >}}" alt="Algemene volgorde van gebeurtenissen voor een eenvoudige multi-ontwikkelaar Git workflow.">
 </div>
 <div class="title">Figuur 65. Algemene volgorde van gebeurtenissen voor een eenvoudige multi-ontwikkelaar Git workflow.</div>
 </div>
@@ -492,7 +492,7 @@ $ git commit -am 'add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Initiële commit historie van Jessica.">
+<img src="{{< relurl "book/nl/v2/images/managed-team-1.png" >}}" alt="Initiële commit historie van Jessica.">
 </div>
 <div class="title">Figuur 66. Initiële commit historie van Jessica.</div>
 </div>
@@ -535,7 +535,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>Dit wordt een <em>refspec</em> genoemd.
-Zie <a href="ch00/_refspec">De Refspec</a> voor een meer gedetailleerde behandeling van Git refspecs en de verschillende dingen die je daarmee kan doen.
+Zie <a href="{{< relurl "book/nl/v2/ch00/_refspec" >}}">De Refspec</a> voor een meer gedetailleerde behandeling van Git refspecs en de verschillende dingen die je daarmee kan doen.
 Merk ook de <code>-u</code> vlag op; dit is een verkorte notatie voor <code>-set-upstream</code>, wat de branches voor eenvoudigere pushen en pullen op een later moment inricht.</p>
 </div>
 <div class="paragraph">
@@ -596,7 +596,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="De historie van Jessica na het committen op een feature branch.">
+<img src="{{< relurl "book/nl/v2/images/managed-team-2.png" >}}" alt="De historie van Jessica na het committen op een feature branch.">
 </div>
 <div class="title">Figuur 67. De historie van Jessica na het committen op een feature branch.</div>
 </div>
@@ -606,7 +606,7 @@ Nadat zij die branches in de hoofdlijn geïntegreerd hebben, zal een fetch de ni
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="De historie van Jessica na het mergen van haar beide topic branches.">
+<img src="{{< relurl "book/nl/v2/images/managed-team-3.png" >}}" alt="De historie van Jessica na het mergen van haar beide topic branches.">
 </div>
 <div class="title">Figuur 68. De historie van Jessica na het mergen van haar beide topic branches.</div>
 </div>
@@ -617,7 +617,7 @@ De volgorde van de workflow die je hier zag is ongeveer dit:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="Eenvoudige volgorde in de workflow van dit aangestuurde team.">
+<img src="{{< relurl "book/nl/v2/images/managed-team-flow.png" >}}" alt="Eenvoudige volgorde in de workflow van dit aangestuurde team.">
 </div>
 <div class="title">Figuur 69. Eenvoudige volgorde in de workflow van dit aangestuurde team.</div>
 </div>
@@ -655,7 +655,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Je kunt eventueel besluiten <code>rebase -i</code> te gebruiken om je werk in één enkele commit samen te persen (squash), of het werk in de commits te herschikken om de patch eenvoudiger te kunnen laten reviewen door de beheerders — zie <a href="ch00/_rewriting_history">Geschiedenis herschrijven</a> voor meer informatie over het interactief rebasen.</p>
+<p>Je kunt eventueel besluiten <code>rebase -i</code> te gebruiken om je werk in één enkele commit samen te persen (squash), of het werk in de commits te herschikken om de patch eenvoudiger te kunnen laten reviewen door de beheerders — zie <a href="{{< relurl "book/nl/v2/ch00/_rewriting_history" >}}">Geschiedenis herschrijven</a> voor meer informatie over het interactief rebasen.</p>
 </div>
 </td>
 </tr>
@@ -674,7 +674,7 @@ Je moet de URL van deze nieuwe repository URL toevoegen als een tweede remote, e
 <div class="paragraph">
 <p>Dan moet je je werk daar naartoe pushen.
 Het is het makkelijkst om de topic branch waar je op zit te werken te pushen naar je repository, in plaats van het te mergen in je master branch en die te pushen.
-De reden hiervan is, dat als het werk niet wordt geaccepteerd of alleen ge-cherry picked (deels overgenomen), je jouw master branch niet hoeft terug te draaien (de Git <code>cherry-pick</code> operatie wordt meer gedetailleerd behandeld in <a href="ch00/_rebase_cherry_pick">Rebasende en cherry pick workflows</a>).
+De reden hiervan is, dat als het werk niet wordt geaccepteerd of alleen ge-cherry picked (deels overgenomen), je jouw master branch niet hoeft terug te draaien (de Git <code>cherry-pick</code> operatie wordt meer gedetailleerd behandeld in <a href="{{< relurl "book/nl/v2/ch00/_rebase_cherry_pick" >}}">Rebasende en cherry pick workflows</a>).
 Als de beheerders je werk mergen, rebasen of cherry picken, dan krijg je het uiteindelijk toch binnen door hun repository te pullen.</p>
 </div>
 <div class="paragraph">
@@ -688,7 +688,7 @@ Als de beheerders je werk mergen, rebasen of cherry picken, dan krijg je het uit
 <div class="paragraph">
 <p>
 Als jouw werk gepusht is naar jouw fork van de repository, dan moet je de beheerder van het oorspronkelijke project inlichten dat je werk hebt dat je ze wil laten mergen.
-Dit wordt een <em>pull request</em> (haal-binnen-verzoek) genoemd, en je kunt deze via de website genereren - GitHub heeft een eigen “Pull Request” mechanisme die we verder zullen behandelen in  <a href="ch00/ch06-github">GitHub</a> of je roept het <code>git request-pull</code> commando aan en stuurt een mail met de uitvoer handmatig naar de projectbeheerder.</p>
+Dit wordt een <em>pull request</em> (haal-binnen-verzoek) genoemd, en je kunt deze via de website genereren - GitHub heeft een eigen “Pull Request” mechanisme die we verder zullen behandelen in  <a href="{{< relurl "book/nl/v2/ch00/ch06-github" >}}">GitHub</a> of je roept het <code>git request-pull</code> commando aan en stuurt een mail met de uitvoer handmatig naar de projectbeheerder.</p>
 </div>
 <div class="paragraph">
 <p>Het <code>request-pull</code> commando neemt de basis branch waarin je de topic branch gepulld wil krijgen, en de URL van de Git repository waar je ze uit wil laten pullen, en maakt een samenvatting van alle wijzigingen die je gepulld wenst te hebben.
@@ -738,7 +738,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="Initiële commit historie met werk van `featureB`.">
+<img src="{{< relurl "book/nl/v2/images/public-small-1.png" >}}" alt="Initiële commit historie met werk van `featureB`.">
 </div>
 <div class="title">Figuur 70. Initiële commit historie met werk van <code>featureB</code>.</div>
 </div>
@@ -754,11 +754,11 @@ $ git push -f myfork featureA</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Dit herschrijft je historie zodat die eruit ziet als in <a href="ch00/psp_b">Commit historie na werk van <code>featureA</code>.</a>.</p>
+<p>Dit herschrijft je historie zodat die eruit ziet als in <a href="{{< relurl "book/nl/v2/ch00/psp_b" >}}">Commit historie na werk van <code>featureA</code>.</a>.</p>
 </div>
 <div id="psp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="Commit historie na werk van `featureA`.">
+<img src="{{< relurl "book/nl/v2/images/public-small-2.png" >}}" alt="Commit historie na werk van `featureA`.">
 </div>
 <div class="title">Figuur 71. Commit historie na werk van <code>featureA</code>.</div>
 </div>
@@ -793,7 +793,7 @@ Daarnaast kan de <code>--no-commit</code> handig zijn door de merge commit uit t
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="Commit historie na het `featureBv2` werk.">
+<img src="{{< relurl "book/nl/v2/images/public-small-3.png" >}}" alt="Commit historie na het `featureBv2` werk.">
 </div>
 <div class="title">Figuur 72. Commit historie na het <code>featureBv2</code> werk.</div>
 </div>

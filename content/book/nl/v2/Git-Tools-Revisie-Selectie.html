@@ -137,7 +137,7 @@ $ git show topic1</code></pre>
 </div>
 <div class="paragraph">
 <p>Als je wilt zien naar welke specifieke SHA-1 een branch wijst, of als je wilt zien waar elk van deze voorbeelden op neerkomt in termen van SHA-1s, kan je het Git binnenwerk instrument (plumbing tool) geheten <code>rev-parse</code> gebruiken.
-Je kunt <a href="ch00/ch10-git-internals">Git Binnenwerk</a> bekijken voor meer informatie over plumbing tools; het komt erop neer dat <code>rev-parse</code> er is voor onder-water operaties en dat het niet bedoeld is voor het dagelijks gebruik.
+Je kunt <a href="{{< relurl "book/nl/v2/ch00/ch10-git-internals" >}}">Git Binnenwerk</a> bekijken voor meer informatie over plumbing tools; het komt erop neer dat <code>rev-parse</code> er is voor onder-water operaties en dat het niet bedoeld is voor het dagelijks gebruik.
 Dit gezegd hebbende, het kan soms handig zijn als het nodig is om te zien wat er echt gebeurt.
 Hier kan je <code>rev-parse</code> op je branch laten lopen.</p>
 </div>
@@ -359,11 +359,11 @@ Dit is in het bijzonder nuttig voor het beheren van je branches — als je v
 <div class="paragraph">
 <p>De meest gebruikte reeks specificatie is de tweevoudige punt (double-dot) syntax.
 Dit vraagt Git gewoon om een reeks commits op te halen die bereikbaar zijn van de ene commit maar niet vanaf een andere.
-Bijvoorbeeld, stel dat je een commit historie hebt die eruit ziet als <a href="ch00/double_dot">Voorbeeld historie voor reeks selectie.</a>.</p>
+Bijvoorbeeld, stel dat je een commit historie hebt die eruit ziet als <a href="{{< relurl "book/nl/v2/ch00/double_dot" >}}">Voorbeeld historie voor reeks selectie.</a>.</p>
 </div>
 <div id="double_dot" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/double-dot.png" >}}" alt="Voorbeeld historie voor reeks selectie.">
+<img src="{{< relurl "book/nl/v2/images/double-dot.png" >}}" alt="Voorbeeld historie voor reeks selectie.">
 </div>
 <div class="title">Figuur 137. Voorbeeld historie voor reeks selectie.</div>
 </div>
@@ -439,7 +439,7 @@ $ git log refA refB --not refC</code></pre>
 <div class="paragraph">
 <p>De laatste belangrijke reeks-selectie syntax is de drievoudige punt (triple dot) syntax, welke alle commits aanduidt
  die door <em>een van beide</em> referenties bereikbaar is maar niet door beide.
-Kijk even terug naar het voorbeeld van commit historie in <a href="ch00/double_dot">Voorbeeld historie voor reeks selectie.</a>.
+Kijk even terug naar het voorbeeld van commit historie in <a href="{{< relurl "book/nl/v2/ch00/double_dot" >}}">Voorbeeld historie voor reeks selectie.</a>.
 Als je wilt zien wat in <code>master</code> of <code>experiment</code> zit maar geen gedeelde referenties kan je dit laten lopen</p>
 </div>
 <div class="listingblock">

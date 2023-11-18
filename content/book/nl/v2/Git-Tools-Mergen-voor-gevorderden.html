@@ -35,7 +35,7 @@ We zullen ook een aantal van de afwijkende, niet standaard type merges behandele
 <div class="sect3">
 <h3 id="_merge_conflicten">Merge conflicten</h3>
 <div class="paragraph">
-<p>We hebben een aantal beginselen van het oplossen van merge conflicten in <a href="ch00/_basic_merge_conflicts">Eenvoudige merge conflicten</a> behandeld, voor meer complexe conflicten geeft Git je een aantal instrumenten om uit te vinden wat er aan de hand is en hoe beter met het conflict om te gaan.</p>
+<p>We hebben een aantal beginselen van het oplossen van merge conflicten in <a href="{{< relurl "book/nl/v2/ch00/_basic_merge_conflicts" >}}">Eenvoudige merge conflicten</a> behandeld, voor meer complexe conflicten geeft Git je een aantal instrumenten om uit te vinden wat er aan de hand is en hoe beter met het conflict om te gaan.</p>
 </div>
 <div class="paragraph">
 <p>Als eerste, als het enigszins mogelijk is, probeer je werk directory op te schonen voor je een merge uitvoert die conflicten zou kunnen bevatten.
@@ -468,7 +468,7 @@ Dit kan je helpen bij het verkrijgen van inzicht in wat kan hebben bijgedragen t
 Een stukje historie nakijken om boven water te krijgen waarom twee ontwikkelingen dezelfde gebieden raakten kan soms erg behulpzaam zijn.</p>
 </div>
 <div class="paragraph">
-<p>Om een complete lijst te krijgen van alle unieke commits die in elk van beide branches zitten en die betrokken zijn bij deze merge, kunnen we de “drievoudige punt” syntax gebruiken die we geleerd hebben in <a href="ch00/_triple_dot">Drievoudige punt</a>.</p>
+<p>Om een complete lijst te krijgen van alle unieke commits die in elk van beide branches zitten en die betrokken zijn bij deze merge, kunnen we de “drievoudige punt” syntax gebruiken die we geleerd hebben in <a href="{{< relurl "book/nl/v2/ch00/_triple_dot" >}}">Drievoudige punt</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -612,7 +612,7 @@ Stel dat je bent begonnen met werken op een topic branch, deze abusiefelijk in <
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="Abusievelijke merge commit.">
+<img src="{{< relurl "book/nl/v2/images/undomerge-start.png" >}}" alt="Abusievelijke merge commit.">
 </div>
 <div class="title">Figuur 138. Abusievelijke merge commit</div>
 </div>
@@ -627,13 +627,13 @@ In de meeste gevallen, als je de foutieve <code>git merge</code> opvolgt met <co
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="Historie na `git reset --hard HEAD~`.">
+<img src="{{< relurl "book/nl/v2/images/undomerge-reset.png" >}}" alt="Historie na `git reset --hard HEAD~`.">
 </div>
 <div class="title">Figuur 139. Historie na <code>git reset --hard HEAD~</code>
 </div>
 </div>
 <div class="paragraph">
-<p>We hebben <code>reset</code> in <a href="ch00/_git_reset">Reset ontrafeld</a> behandeld, dus het zou niet al te moeilijk uit te vinden wat hier gebeurt.
+<p>We hebben <code>reset</code> in <a href="{{< relurl "book/nl/v2/ch00/_git_reset" >}}">Reset ontrafeld</a> behandeld, dus het zou niet al te moeilijk uit te vinden wat hier gebeurt.
 Hier is een snelle opfrisser: <code>reset --hard</code> volgt normaalgesproken de volgende drie stappen:</p>
 </div>
 <div class="olist arabic">
@@ -652,7 +652,7 @@ In dit geval willen we <code>master</code> verplaatsen naar waar het was voor de
 </div>
 <div class="paragraph">
 <p>Het nadeel van deze aanpak is dat het de historie herschrijft, wat problematisch kan zijn met een gedeelde repository.
-Bestudeer <a href="ch00/_rebase_peril">De gevaren van rebasen</a>&gt; om te zien wat er dan gebeuren kan; in het kort houdt het in dat als andere mensen de commits hebben die jij aan het herschrijven bent, je <code>reset</code> eigenlijk wilt vermijden.
+Bestudeer <a href="{{< relurl "book/nl/v2/ch00/_rebase_peril" >}}">De gevaren van rebasen</a>&gt; om te zien wat er dan gebeuren kan; in het kort houdt het in dat als andere mensen de commits hebben die jij aan het herschrijven bent, je <code>reset</code> eigenlijk wilt vermijden.
 Deze aanpak zal ook niet werken als er andere commits gemaakt zijn sinds de merge; het verplaatsen van de referenties doet deze wijzigingen ook teniet.</p>
 </div>
 </div>
@@ -678,7 +678,7 @@ In dit geval, willen we alle wijzigingen die zijn geïntroduceerd door het merge
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="Historie na `git revert -m 1`.">
+<img src="{{< relurl "book/nl/v2/images/undomerge-revert.png" >}}" alt="Historie na `git revert -m 1`.">
 </div>
 <div class="title">Figuur 140. Historie na <code>git revert -m 1</code>
 </div>
@@ -699,7 +699,7 @@ Wat erger is, als je werk toevoegt aan <code>topic</code> en weer merged, zal Gi
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="Historie met een slechte merge.">
+<img src="{{< relurl "book/nl/v2/images/undomerge-revert2.png" >}}" alt="Historie met een slechte merge.">
 </div>
 <div class="title">Figuur 141. Historie met een slechte merge</div>
 </div>
@@ -715,7 +715,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="Historie na het opnieuw mergen van een teruggedraaide merge.">
+<img src="{{< relurl "book/nl/v2/images/undomerge-revert3.png" >}}" alt="Historie na het opnieuw mergen van een teruggedraaide merge.">
 </div>
 <div class="title">Figuur 142. Historie na het opnieuw mergen van een teruggedraaide merge</div>
 </div>
@@ -863,7 +863,7 @@ Het is niet iets wat vaak voorkomt, omdat het zelden behulpzaam is, maar het is 
 <div class="paragraph">
 <p>In dit geval willen we het Rack project in onze <code>master</code>-project binnenhalen (pull) als een subdirectory.
 We kunnen dat in Git doen met <code>git read-tree</code>.
-Je zult meer over <code>read-tree</code> en zijn vriendjes leren in <a href="ch00/ch10-git-internals">Git Binnenwerk</a>, maar neem voor nu aan dat het de root tree van een branch naar je huidige staging area en werk dirctory inleest.
+Je zult meer over <code>read-tree</code> en zijn vriendjes leren in <a href="{{< relurl "book/nl/v2/ch00/ch10-git-internals" >}}">Git Binnenwerk</a>, maar neem voor nu aan dat het de root tree van een branch naar je huidige staging area en werk dirctory inleest.
 We zijn zojuist teruggeschakeld naar de <code>master</code>-branch, en we pullen de <code>rack_branch</code>-branch in de <code>rack</code> subdirectory van de <code>master</code>-branch van ons hoofdproject:</p>
 </div>
 <div class="listingblock">
@@ -900,7 +900,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 Je kunt ook het tegenovergestelde doen - de wijzigingen in de <code>rack</code> subdirectory van je master branch maken en ze dan later naar je <code>rack_branch</code>-branch mergen om ze dan in te dienen bij de beheerders of ze stroomopwaarts te pushen.</p>
 </div>
 <div class="paragraph">
-<p>Dit is een manier om een workflow te krijgen die lijkt op de submodule workflow zonder submodules te gebruiken (wat we in <a href="ch00/_git_submodules">Submodules</a> zullen behandelen).
+<p>Dit is een manier om een workflow te krijgen die lijkt op de submodule workflow zonder submodules te gebruiken (wat we in <a href="{{< relurl "book/nl/v2/ch00/_git_submodules" >}}">Submodules</a> zullen behandelen).
 We kunnen in onze repository branches aanmaken met andere gerelateerde projecten en ze bij tijd en wijle subtree mergen in ons project.
 Dit is in sommige opzichten handig, bijvoorbeeld omdat alle code op een enkele plaats wordt gecommit.
 Het heeft echter ook nadelen in de zin dat het iets complexer is en gevoeliger voor fouten in het herintegreren van wijzigingen of abusievelijk een branch te pushen naar een niet gerelateerde repository.</p>

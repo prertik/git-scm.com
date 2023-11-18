@@ -58,7 +58,7 @@ Dit is de eenvoudigste manier, voor als je het exacte pad naar de werk directory
 Er is ook <code>git_repository_open_ext</code> die opties voor zoeken in zich heeft, <code>git_clone</code> en z’n vriendjes voor het maken van een lokale kloon van een remote repository, en <code>git_repository_init</code> voor het maken van een hele nieuwe repository.</p>
 </div>
 <div class="paragraph">
-<p>Het tweede stuk code gebruikt rev-parse syntax (zie <a href="ch00/_branch_references">Branch referenties</a> voor meer details) om de commit te krijgen waar HEAD uiteindelijk naar wijst.
+<p>Het tweede stuk code gebruikt rev-parse syntax (zie <a href="{{< relurl "book/nl/v2/ch00/_branch_references" >}}">Branch referenties</a> voor meer details) om de commit te krijgen waar HEAD uiteindelijk naar wijst.
 Het type dat je terugkrijgt is een <code>git_object</code> pointer, wat staat voor iets dat bestaat in de Git object database voor een repository.
 <code>git_object</code> is eigenlijk en “parent” type voor een aantal verschillende soorten objecten; de geheugenindeling voor elk van de “child” typen is hetzelfde als voor <code>git_object</code>, dus je kunt het veilig naar de juiste omzetten (casten).
 In dit geval, zou <code>git_object_type(commit)</code> <code>GIT_OBJ_COMMIT</code> teruggeven, dus het is veilig te casten naar een <code>git_commit</code> pointer.</p>
@@ -164,7 +164,7 @@ Dit gebruikt de punt van HEAD voor de enige ouder.</p>
 </div>
 <div class="paragraph">
 <p>De code in Ruby is mooi en schoon, maar omdat Libgit2 het zware werk doet, zal deze code ook redelijk snel draaien.
-Als je niet zo’n rubyist bent, we behandelen nog een aantal andere bindings in <a href="ch00/_libgit2_bindings">Andere bindings</a>.</p>
+Als je niet zo’n rubyist bent, we behandelen nog een aantal andere bindings in <a href="{{< relurl "book/nl/v2/ch00/_libgit2_bindings" >}}">Andere bindings</a>.</p>
 </div>
 <div class="sect3">
 <h3 id="_functionaliteit_voor_gevorderden">Functionaliteit voor gevorderden</h3>

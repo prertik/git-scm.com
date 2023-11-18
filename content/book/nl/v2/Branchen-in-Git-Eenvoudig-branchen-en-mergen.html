@@ -63,7 +63,7 @@ Als eerste, laten we zeggen dat je aan je project werkt en al een paar commits h
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Een eenvoudige commit historie.">
+<img src="{{< relurl "book/nl/v2/images/basic-branching-1.png" >}}" alt="Een eenvoudige commit historie.">
 </div>
 <div class="title">Figuur 18. Een eenvoudige commit historie</div>
 </div>
@@ -88,7 +88,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Een nieuwe branch pointer maken.">
+<img src="{{< relurl "book/nl/v2/images/basic-branching-2.png" >}}" alt="Een nieuwe branch pointer maken.">
 </div>
 <div class="title">Figuur 19. Een nieuwe branch pointer maken</div>
 </div>
@@ -104,7 +104,7 @@ $ git commit -a -m 'added a new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="De `iss53`-branch is naar voren verplaatst met je werk.">
+<img src="{{< relurl "book/nl/v2/images/basic-branching-3.png" >}}" alt="De `iss53`-branch is naar voren verplaatst met je werk.">
 </div>
 <div class="title">Figuur 20. De <code>iss53</code>-branch is naar voren verplaatst met je werk</div>
 </div>
@@ -116,7 +116,7 @@ Het enige wat je moet doen is terugschakelen naar je <code>master</code>-branch.
 <div class="paragraph">
 <p>Maar voordat je dat doet, weet dat als je werk-directory of staging area wijzigingen bevatten die nog niet gecommit zijn en conflicteren met de branch die je gaat uitchecken, Git je niet laat omschakelen.
 Het beste is om een schone werkstatus te hebben als je tussen branches gaat schakelen.
-Er zijn manieren om hier mee om te gaan (te weten, stashen en commit ammending) die we later gaan behandelen in <a href="ch00/_git_stashing">Stashen en opschonen</a>.
+Er zijn manieren om hier mee om te gaan (te weten, stashen en commit ammending) die we later gaan behandelen in <a href="{{< relurl "book/nl/v2/ch00/_git_stashing" >}}">Stashen en opschonen</a>.
 Voor nu laten we aannemen dat je alle wijzigingen gecommit hebt, zodat je kunt switchen naar je <code>master</code>-branch:</p>
 </div>
 <div class="listingblock">
@@ -146,7 +146,7 @@ $ git commit -a -m 'fixed the broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="Hotfix branch gebaseerd op `master`.">
+<img src="{{< relurl "book/nl/v2/images/basic-branching-4.png" >}}" alt="Hotfix branch gebaseerd op `master`.">
 </div>
 <div class="title">Figuur 21. Hotfix branch gebaseerd op <code>master</code>
 </div>
@@ -175,7 +175,7 @@ Om het op een andere manier te zeggen: als je een commit probeert te mergen met 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="`master` is fast-forwarded naar `hotfix`.">
+<img src="{{< relurl "book/nl/v2/images/basic-branching-5.png" >}}" alt="`master` is fast-forwarded naar `hotfix`.">
 </div>
 <div class="title">Figuur 22. <code>master</code> is fast-forwarded naar <code>hotfix</code>
 </div>
@@ -206,7 +206,7 @@ $ git commit -a -m 'finished the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="Werk gaat door op `iss53`.">
+<img src="{{< relurl "book/nl/v2/images/basic-branching-6.png" >}}" alt="Werk gaat door op `iss53`.">
 </div>
 <div class="title">Figuur 23. Werk gaat door op <code>iss53</code>
 </div>
@@ -242,7 +242,7 @@ In dit geval doet Git een eenvoudige drieweg-merge, gebruikmakend van de twee sn
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Drie snapshots gebruikt in een typische merge.">
+<img src="{{< relurl "book/nl/v2/images/basic-merging-1.png" >}}" alt="Drie snapshots gebruikt in een typische merge.">
 </div>
 <div class="title">Figuur 24. Drie snapshots gebruikt in een typische merge</div>
 </div>
@@ -252,7 +252,7 @@ Dit wordt een merge-commit genoemd, en is bijzonder in die zin dat het meer dan 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Een merge commit.">
+<img src="{{< relurl "book/nl/v2/images/basic-merging-2.png" >}}" alt="Een merge commit.">
 </div>
 <div class="title">Figuur 25. Een merge commit</div>
 </div>
@@ -367,7 +367,7 @@ Type de naam van de applicatie die je liever gebruikt.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Als je een meer geavanceerde applicatie wilt gebruiken om ingewikkelde merge conflicten op te lossen: we behandelen merging uitgebreider in <a href="ch00/_advanced_merging">Mergen voor gevorderden</a>.</p>
+<p>Als je een meer geavanceerde applicatie wilt gebruiken om ingewikkelde merge conflicten op te lossen: we behandelen merging uitgebreider in <a href="{{< relurl "book/nl/v2/ch00/_advanced_merging" >}}">Mergen voor gevorderden</a>.</p>
 </div>
 </td>
 </tr>

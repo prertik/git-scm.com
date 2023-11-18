@@ -64,7 +64,7 @@ Bijvoorbeeld, om een lokaal repository te clonen, kun je zoiets als het volgende
 <p>Git werkt iets anders als je expliciet <code>file://</code> aan het begin van de URL zet.
 Als je alleen het pad specificeert, probeert Git hardlinks te gebruiken naar de bestanden die het nodig heeft of direct de bestanden te kopieren.
 Als je <code>file://</code> specificeert, dan start Git de processen die het normaal gesproken gebruikt om data uit te wisselen over een netwerk, wat over het algemeen een veel minder efficiënte methode is om gegevens over te dragen.
-De belangrijkste reden om <code>file://</code> wel te specificeren is als je een schone kopie van de repository wilt met de systeemvreemde referenties of objecten eruit gelaten — over het algemeen na een import uit een ander versiebeheer systeem  of iets dergelijks (zie <a href="ch00/ch10-git-internals">Git Binnenwerk</a> voor onderhoudstaken).
+De belangrijkste reden om <code>file://</code> wel te specificeren is als je een schone kopie van de repository wilt met de systeemvreemde referenties of objecten eruit gelaten — over het algemeen na een import uit een ander versiebeheer systeem  of iets dergelijks (zie <a href="{{< relurl "book/nl/v2/ch00/ch10-git-internals" >}}">Git Binnenwerk</a> voor onderhoudstaken).
 We zullen het normale pad hier gebruiken, omdat het bijna altijd sneller is om het zo te doen.</p>
 </div>
 <div class="paragraph">
@@ -84,7 +84,7 @@ We zullen het normale pad hier gebruiken, omdat het bijna altijd sneller is om h
 <p>De voordelen van bestands-gebaseerde repositories zijn dat ze eenvoudig zijn en ze maken gebruik van bestaande bestandspermissies en netwerk toegang.
 Als je al een gedeeld bestandssysteem hebt waar het hele team al toegang toe heeft, dan is een repository opzetten heel gemakkelijk.
 Je stopt de kale repository ergens waar iedereen gedeelde toegang tot heeft, en stelt de lees- en schrijfrechten in zoals je dat bij iedere andere gedeelde directory zou doen.
-We zullen de manier om een kopie van een kale repositiory te exporteren voor dit doel bespreken in <a href="ch00/_getting_git_on_a_server">Git op een server krijgen</a>.</p>
+We zullen de manier om een kopie van een kale repositiory te exporteren voor dit doel bespreken in <a href="{{< relurl "book/nl/v2/ch00/_getting_git_on_a_server" >}}">Git op een server krijgen</a>.</p>
 </div>
 <div class="paragraph">
 <p>Dit is ook een prettige optie om snel werk uit een repository van iemand anders te pakken.
@@ -137,7 +137,7 @@ Hetzelfde geldt voor lees-toegang.</p>
 Als de server niet werkt met een Git HTTP slimme service, zal de Git client terug proberen te vallen op het simpelere <em>domme</em> HTTP protocol.
 Het domme protocol verwacht dat de kale Git repository moet worden verspreid als gewone bestanden van de web server.
 Het mooie van het domme HTTP protocol is de eenvoud van het inrichten.
-Alles wat je hoeft te doen is een kale Git repository onder je HTTP document-root neer te zetten en een speciale <code>post-update</code> hook in te richten, en je bent klaar (Zie <a href="ch00/_git_hooks">Git Hooks</a>).
+Alles wat je hoeft te doen is een kale Git repository onder je HTTP document-root neer te zetten en een speciale <code>post-update</code> hook in te richten, en je bent klaar (Zie <a href="{{< relurl "book/nl/v2/ch00/_git_hooks" >}}">Git Hooks</a>).
 Vanaf dat moment, kan iedereen die de webserver waarop je de repository hebt gezet kan bereiken ook je repository klonen.
 Om lees-toegang tot je repository toe te staan over HTTP, kan je iets als dit doen:</p>
 </div>
@@ -162,7 +162,7 @@ Dit commando wordt gedraaid als je naar deze repository pusht (misschien met SSH
 </div>
 <div class="paragraph">
 <p>In dit specifieke geval gebruiken we het <code>/var/www/htdocs</code> pad dat gebruikelijk is voor Apache setups, maar je kunt elke statische web server gebruiken — zet gewoon de kale repository in het pad.
-De Git data wordt verspreid als gewone statische bestanden (zie <a href="ch00/ch10-git-internals">Git Binnenwerk</a> voor details hoe precies het wordt verspreid).</p>
+De Git data wordt verspreid als gewone statische bestanden (zie <a href="{{< relurl "book/nl/v2/ch00/ch10-git-internals" >}}">Git Binnenwerk</a> voor details hoe precies het wordt verspreid).</p>
 </div>
 <div class="paragraph">
 <p>Over het algemeen zou je kunnen kiezen om een lees/schrijf slimme HTTP server te draaien of om de bestanden beschikbaar te stellen als alleen lezen op de domme manier.
@@ -196,7 +196,7 @@ Anders dan dat, is er weinig dat andere protocollen in het voordeel laat zijn al
 <div class="paragraph">
 <p>Als je HTTP gebruikt voor geauthenticeerde pushen, is het invullen van credentials (gebruikersnaam en wachtwoord) soms ingewikkelder dan het gebruik sleutels via SSH.
 Er zijn echter een aantal credential caching tools die je kunt gebruiken, waaronder Keychain toegang op macOS en Credential Manager op Windows om dit redelijk gladjes te laten verlopen.
-Lees <a href="ch00/_credential_caching">Het opslaan van inloggegevens</a> om te zien hoe veilige HTTP wachtwoord caching op jouw systeem op te zetten.</p>
+Lees <a href="{{< relurl "book/nl/v2/ch00/_credential_caching" >}}">Het opslaan van inloggegevens</a> om te zien hoe veilige HTTP wachtwoord caching op jouw systeem op te zetten.</p>
 </div>
 </div>
 </div>

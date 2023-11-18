@@ -238,7 +238,7 @@ class Section
       "previous" => self.previous_section_url,
       "next" => self.next_section_url
     }
-    if @slug =~ /:/
+    if @slug =~ /:|[^-A-Za-z0-9_]/
       front_matter["url"] = self.relative_url(@slug)
     end
     return front_matter

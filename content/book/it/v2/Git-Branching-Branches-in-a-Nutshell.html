@@ -30,7 +30,7 @@ Understanding and mastering this feature gives you a powerful and unique tool an
 <p>To really understand the way Git does branching, we need to take a step back and examine how Git stores its data.</p>
 </div>
 <div class="paragraph">
-<p>As you may remember from <a href="ch00/ch01-getting-started">Per Iniziare</a>, Git doesn’t store data as a series of changesets or differences, but instead as a series of snapshots.</p>
+<p>As you may remember from <a href="{{< relurl "book/it/v2/ch00/ch01-getting-started" >}}">Per Iniziare</a>, Git doesn’t store data as a series of changesets or differences, but instead as a series of snapshots.</p>
 </div>
 <div class="paragraph">
 <p>When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged.
@@ -39,7 +39,7 @@ This object also contains the author’s name and email, the message that you ty
 <div class="paragraph">
 <p>To visualize this, let’s assume that you have a directory containing three files, and you stage them all and commit.
 Staging the files checksums each one (the SHA-1 hash we mentioned in
-<a href="ch00/ch01-getting-started">Per Iniziare</a>), stores that version of the file in the Git repository (Git refers to them as blobs), and adds that checksum to the staging area:</p>
+<a href="{{< relurl "book/it/v2/ch00/ch01-getting-started" >}}">Per Iniziare</a>), stores that version of the file in the Git repository (Git refers to them as blobs), and adds that checksum to the staging area:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -56,7 +56,7 @@ Git then creates a commit object that has the metadata and a pointer to the root
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
+<img src="{{< relurl "book/it/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
 </div>
 <div class="title">Figura 9. A commit and its tree</div>
 </div>
@@ -65,7 +65,7 @@ Git then creates a commit object that has the metadata and a pointer to the root
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
+<img src="{{< relurl "book/it/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
 </div>
 <div class="title">Figura 10. Commits and their parents</div>
 </div>
@@ -93,7 +93,7 @@ The only reason nearly every repository has one is that the <code>git init</code
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
+<img src="{{< relurl "book/it/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
 </div>
 <div class="title">Figura 11. A branch and its commit history</div>
 </div>
@@ -116,7 +116,7 @@ You do this with the <code>git branch</code> command:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
+<img src="{{< relurl "book/it/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
 </div>
 <div class="title">Figura 12. Two branches pointing into the same series of commits</div>
 </div>
@@ -130,7 +130,7 @@ The <code>git branch</code> command only <em>created</em> a new branch – it di
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
+<img src="{{< relurl "book/it/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
 </div>
 <div class="title">Figura 13. HEAD pointing to a branch</div>
 </div>
@@ -166,7 +166,7 @@ Let’s switch to the new testing branch:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
+<img src="{{< relurl "book/it/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
 </div>
 <div class="title">Figura 14. HEAD points to the current branch</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
+<img src="{{< relurl "book/it/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
 </div>
 <div class="title">Figura 15. The HEAD branch moves forward when a commit is made</div>
 </div>
@@ -197,7 +197,7 @@ Let’s switch back to the master branch:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
+<img src="{{< relurl "book/it/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
 </div>
 <div class="title">Figura 16. HEAD moves when you checkout</div>
 </div>
@@ -234,14 +234,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Now your project history has diverged (see <a href="ch00/rdivergent_history">Divergent history</a>).
+<p>Now your project history has diverged (see <a href="{{< relurl "book/it/v2/ch00/rdivergent_history" >}}">Divergent history</a>).
 You created and switched to a branch, did some work on it, and then switched back to your main branch and did other work.
 Both of those changes are isolated in separate branches: you can switch back and forth between the branches and merge them together when you’re ready.
 And you did all that with simple <code>branch</code>, <code>checkout</code>, and <code>commit</code> commands.</p>
 </div>
 <div id="rdivergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Divergent history.">
+<img src="{{< relurl "book/it/v2/images/advance-master.png" >}}" alt="Divergent history.">
 </div>
 <div class="title">Figura 17. Divergent history</div>
 </div>

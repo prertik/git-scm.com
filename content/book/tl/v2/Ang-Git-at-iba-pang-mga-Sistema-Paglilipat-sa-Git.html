@@ -504,7 +504,7 @@ Tulad ng ating natalakay sa itaas, mayroong dalawang mga paraan upang hayaan ang
 <h4 id="_perforce_na_git_fusion">Perforce na Git Fusion</h4>
 <div class="paragraph">
 <p>Ang Git Fusion ay ginagawang patas na hindi masakit ang prosesong ito.
-I-kompigura lamang ang mga setting ng iyong proyekto, mga user na mapping, at mga branch gamit ang isang kompigurasyon na file (bilang natalakay sa <a href="ch00/_p4_git_fusion">Pagsasanib ng Git</a>), at i-clone ang repositoryo.
+I-kompigura lamang ang mga setting ng iyong proyekto, mga user na mapping, at mga branch gamit ang isang kompigurasyon na file (bilang natalakay sa <a href="{{< relurl "book/tl/v2/ch00/_p4_git_fusion" >}}">Pagsasanib ng Git</a>), at i-clone ang repositoryo.
 Ang Git Fusion ay iiwanan ka ng isang nagmumukhang katulad ng isang katutubong repositoryo ng Git, na handa nang i-push sa isang katutubong Git na host kung gugustuhin mo.
 Maaari mo ring gamitin ang Perforce bilang iyong Git na host kung gusto mo.</p>
 </div>
@@ -544,7 +544,7 @@ Importing revision 9957 (100%)</code></pre>
 </div>
 <div class="paragraph">
 <p>Ang partikular na proyektong ito ay mayroon lamang isang branch, ngunit kung ikaw ay mayroong mga branch na nakompigura gamit ang mga view ng branch (o isang hanay ng mga direktoryo lamang), maaari mong gamitin ang <code>--detect-branches</code> na flag sa <code>git p4 clone</code> upang ii-import din ang lahat na mga branch ng proyekto.
-Tingnan ang <a href="ch00/_git_p4_branches">Pag-branch</a> para sa kaunting karagdagang detalye para rito.</p>
+Tingnan ang <a href="{{< relurl "book/tl/v2/ch00/_git_p4_branches" >}}">Pag-branch</a> para sa kaunting karagdagang detalye para rito.</p>
 </div>
 <div class="paragraph">
 <p>Sa puntong ito ikaw ay malapit nang matapos.
@@ -688,7 +688,7 @@ Ang sumusunod na utos ay gagawa sa iyon:</p>
 Kung ang iyong sistema ay hindi isa sa nasa itaas, kailangan mong maghanap ng isang importer sa online - ang kalidad na mga importer ay maaaring magamit para sa maraming ibang mga sistema, kalakip na ang CVS, Clear Case, Visual Source Safe, kahit isang direktoryo ng mga archive.
 Kung wala sa mga kasangkapan ang gumagana para sa iyo, mayroon kang isang mas nakakubling kasangkapan, o kung hindi man ay kailangan mo ng isang mas pasadyang pag-import na proseso, kailangan mong gamitin ang <code>git fast-import</code>.
 Ang utos na ito ay nagbabasa ng simpleng mga tagubilin mula sa stdin upang magsulat ng nakatukoy na Git na datos.
-Mas madaling gumawa ng mga object ng Git sa ganitong paraan kaysa sa pagpapatakbo ng hilaw na mga utos ng Git o subukang sumulat ng hilaw na mga object (tingnan ang <a href="ch00/_git_internals">Mga Panloob ng GIT</a> para sa karagdang impormasyon).
+Mas madaling gumawa ng mga object ng Git sa ganitong paraan kaysa sa pagpapatakbo ng hilaw na mga utos ng Git o subukang sumulat ng hilaw na mga object (tingnan ang <a href="{{< relurl "book/tl/v2/ch00/_git_internals" >}}">Mga Panloob ng GIT</a> para sa karagdang impormasyon).
 Sa paraang ito, maaari kang magsulat ng isang import na iskrip na nagbabasa ng nararapat na impormasyon sa labas ng sistema na iyong ini-import at tuluyang ipi-print ang mga tagubilin sa stdout.
 Maaari mo na ring patakbuhin ang programang ito at i-pipe ang mga output nito sa pamamagitan ng <code>git fast-import</code>.</p>
 </div>
@@ -714,7 +714,7 @@ Ang kailangan mo lang gawin ay sabihan ng <code>fast-import</code> kung ano ang 
 Ang iyong estratehiya ay ang pagpunta sa mga snapshot nang iisa sa bawat pagkakataon at gumawa ng mga commit gamit ang mga nilalaman sa bawat direktoryo, pag-ugnayin ang bawat commit pabalik sa isang nakaraan.</p>
 </div>
 <div class="paragraph">
-<p>Katulad ng ginawa natin sa <a href="ch00/_an_example_git_enforced_policy">An Example Git-Enforced Policy</a>, susulatin natin ito sa Ruby, dahil ito ay kadalasang ating trabaho at malamang ito ay madaling basahin.
+<p>Katulad ng ginawa natin sa <a href="{{< relurl "book/tl/v2/ch00/_an_example_git_enforced_policy" >}}">An Example Git-Enforced Policy</a>, susulatin natin ito sa Ruby, dahil ito ay kadalasang ating trabaho at malamang ito ay madaling basahin.
 Maaari mong isulat ang halimbawang ito ng sobrang madali sa anumang pamilyar sa iyo – kailangan nitong i-print ang nararapat na impormasyon sa <code>stdout</code>
 At, kung nagpapatakbo ka sa Windows, nangangahulugan itong kailangan mo ng isang espesyal na pag-iingat upang hindi magpakilala ng carriage na mga return sa hulihan ng iyong mga linya – ang <code>git fast-import</code> ay sobrang partikular tungkol sa kagustuhan ng mga line feed (LF) hindi ang carriage return line feeds (CRLF) na ginagamit ng Windows.</p>
 </div>

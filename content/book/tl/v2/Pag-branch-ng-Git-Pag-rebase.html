@@ -25,11 +25,11 @@ Sa Git, mayroong dalawang pangunahing mga paraan upang pagsamahin ang mga pagbab
 <div class="sect3">
 <h3 id="_ang_pangunahing_rebase">Ang Pangunahing Rebase</h3>
 <div class="paragraph">
-<p>Kung ikaw ay pupunta pabalik sa kamakailang halimbawa mula sa <a href="ch00/_basic_merging">Batayan ng Pag-merge</a>, maaari mong tingnan na nahiwalay mo ang iyong trabaho at gumawa ng mga commit sa dalawang magkaibang mga branch.</p>
+<p>Kung ikaw ay pupunta pabalik sa kamakailang halimbawa mula sa <a href="{{< relurl "book/tl/v2/ch00/_basic_merging" >}}">Batayan ng Pag-merge</a>, maaari mong tingnan na nahiwalay mo ang iyong trabaho at gumawa ng mga commit sa dalawang magkaibang mga branch.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Simpleng divergent na kasaysayan.">
+<img src="{{< relurl "book/tl/v2/images/basic-rebase-1.png" >}}" alt="Simpleng divergent na kasaysayan.">
 </div>
 <div class="title">Figure 35. Simpleng divergent na kasaysayan</div>
 </div>
@@ -38,7 +38,7 @@ Sa Git, mayroong dalawang pangunahing mga paraan upang pagsamahin ang mga pagbab
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Pag-merge upang mapagsama ang nahiwalay na kasaysayan ng trabaho.">
+<img src="{{< relurl "book/tl/v2/images/basic-rebase-2.png" >}}" alt="Pag-merge upang mapagsama ang nahiwalay na kasaysayan ng trabaho.">
 </div>
 <div class="title">Figure 36. Pag-merge upang mapagsama ang nahiwalay na kasaysayan ng trabaho</div>
 </div>
@@ -61,7 +61,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="Pag-rebase ng pagbabago na napakilala sa `C4` patungo sa `C3`.">
+<img src="{{< relurl "book/tl/v2/images/basic-rebase-3.png" >}}" alt="Pag-rebase ng pagbabago na napakilala sa `C4` patungo sa `C3`.">
 </div>
 <div class="title">Figure 37. Pag-rebase ng pagbabago na napakilala sa <code>C4</code> patungo sa <code>C3</code>
 </div>
@@ -77,7 +77,7 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Pag-fast-forward ng master na branch.">
+<img src="{{< relurl "book/tl/v2/images/basic-rebase-4.png" >}}" alt="Pag-fast-forward ng master na branch.">
 </div>
 <div class="title">Figure 38. Pag-fast-forward ng master na branch</div>
 </div>
@@ -94,11 +94,11 @@ $ git merge experiment</code></pre>
 <div class="sect3">
 <h3 id="_maraming_kagiliw_giliw_na_mga_rebase">Maraming Kagiliw-giliw na mga Rebase</h3>
 <div class="paragraph">
-<p>Maaari ka ring magkaroon ng iyong rebase na replay sa anuman maliban sa rebase na target na branch. Gamitin ang isang kasaysayan katulad ng <a href="ch00/rbdiag_e">Isang kasaysayan na may isang paksa na naka-branch off sa ibang paksa na branch</a>, bilang halimbawa. Ikaw ay nag-branch ng isang paksa na branch (<code>server</code>) upang magdagdag ng ilang server-side na functionality sa iyong proyekto, at gumawa ng isang commit. Pagkatapos, ikaw ay nag-branch off nito upang gawin ang mga pagbabago sa client-side (<code>client</code>) at nag-commit ng ilang beses. Sa wakas, ikaw ay bumalik sa iyong server na branch at gumawa ng ilang mga commit.</p>
+<p>Maaari ka ring magkaroon ng iyong rebase na replay sa anuman maliban sa rebase na target na branch. Gamitin ang isang kasaysayan katulad ng <a href="{{< relurl "book/tl/v2/ch00/rbdiag_e" >}}">Isang kasaysayan na may isang paksa na naka-branch off sa ibang paksa na branch</a>, bilang halimbawa. Ikaw ay nag-branch ng isang paksa na branch (<code>server</code>) upang magdagdag ng ilang server-side na functionality sa iyong proyekto, at gumawa ng isang commit. Pagkatapos, ikaw ay nag-branch off nito upang gawin ang mga pagbabago sa client-side (<code>client</code>) at nag-commit ng ilang beses. Sa wakas, ikaw ay bumalik sa iyong server na branch at gumawa ng ilang mga commit.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="Isang kasaysayan na may isang paksa na naka-branch off sa ibang paksa na branch.">
+<img src="{{< relurl "book/tl/v2/images/interesting-rebase-1.png" >}}" alt="Isang kasaysayan na may isang paksa na naka-branch off sa ibang paksa na branch.">
 </div>
 <div class="title">Figure 39. Isang kasaysayan na may isang paksa na naka-branch off sa ibang paksa na branch</div>
 </div>
@@ -115,12 +115,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Pag-rebase ng isang paksa na naka-branch off sa ibang paksa na branch.">
+<img src="{{< relurl "book/tl/v2/images/interesting-rebase-2.png" >}}" alt="Pag-rebase ng isang paksa na naka-branch off sa ibang paksa na branch.">
 </div>
 <div class="title">Figure 40. Pag-rebase ng isang paksa na naka-branch off sa ibang paksa na branch</div>
 </div>
 <div class="paragraph">
-<p>Ngayon maaari ka nang mag-fast-forward sa iyong <code>master</code> na branch (tingnan ang <a href="ch00/rbdiag_g">Pag-fast-forward ng iyong master na branch upang isama ang mga pagbabago sa kliyente na branch</a>):</p>
+<p>Ngayon maaari ka nang mag-fast-forward sa iyong <code>master</code> na branch (tingnan ang <a href="{{< relurl "book/tl/v2/ch00/rbdiag_g" >}}">Pag-fast-forward ng iyong master na branch upang isama ang mga pagbabago sa kliyente na branch</a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -130,7 +130,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Pag-fast-forward ng iyong master na branch upang isama ang mga pagbabago sa kliyente na branch.">
+<img src="{{< relurl "book/tl/v2/images/interesting-rebase-3.png" >}}" alt="Pag-fast-forward ng iyong master na branch upang isama ang mga pagbabago sa kliyente na branch.">
 </div>
 <div class="title">Figure 41. Pag-fast-forward ng iyong master na branch upang isama ang mga pagbabago sa kliyente na branch</div>
 </div>
@@ -143,11 +143,11 @@ $ git merge client</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Ito ay iri-replay ang iyong <code>server</code> na trabaho sa itaas ng iyong <code>master</code> na trabaho, na ipinapakita sa <a href="ch00/rbdiag_h">Pag-rebase ng iyong server na branch sa itaas ng iyong master na branch</a>.</p>
+<p>Ito ay iri-replay ang iyong <code>server</code> na trabaho sa itaas ng iyong <code>master</code> na trabaho, na ipinapakita sa <a href="{{< relurl "book/tl/v2/ch00/rbdiag_h" >}}">Pag-rebase ng iyong server na branch sa itaas ng iyong master na branch</a>.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Pag-rebase ng iyong server na branch sa itaas ng iyong master na branch.">
+<img src="{{< relurl "book/tl/v2/images/interesting-rebase-4.png" >}}" alt="Pag-rebase ng iyong server na branch sa itaas ng iyong master na branch.">
 </div>
 <div class="title">Figure 42. Pag-rebase ng iyong server na branch sa itaas ng iyong master na branch</div>
 </div>
@@ -162,7 +162,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Maaari mong tanggalin ang <code>client</code> at <code>server</code> na mga branch dahil lahat ang trabaho ay napagsama-sama na at hindi mo na kailangan ang mga ito, iniiwan ang iyong kasaysayan para sa buong proseso na nagmumukhang katulad ng <a href="ch00/rbdiag_i">Huling kasaysayan ng commit</a>:</p>
+<p>Maaari mong tanggalin ang <code>client</code> at <code>server</code> na mga branch dahil lahat ang trabaho ay napagsama-sama na at hindi mo na kailangan ang mga ito, iniiwan ang iyong kasaysayan para sa buong proseso na nagmumukhang katulad ng <a href="{{< relurl "book/tl/v2/ch00/rbdiag_i" >}}">Huling kasaysayan ng commit</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -172,7 +172,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Huling kasaysayan ng commit.">
+<img src="{{< relurl "book/tl/v2/images/interesting-rebase-5.png" >}}" alt="Huling kasaysayan ng commit.">
 </div>
 <div class="title">Figure 43. Huling kasaysayan ng commit</div>
 </div>
@@ -200,7 +200,7 @@ Ang iyong kasaysayan ng commit ay magmumukhang katulad nito:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Mag-clone ng isang repositoryo, at magbase ng ilang trabaho nito.">
+<img src="{{< relurl "book/tl/v2/images/perils-of-rebasing-1.png" >}}" alt="Mag-clone ng isang repositoryo, at magbase ng ilang trabaho nito.">
 </div>
 <div class="title">Figure 44. Mag-clone ng isang repositoryo, at magbase ng ilang trabaho nito</div>
 </div>
@@ -209,7 +209,7 @@ Ang iyong kasaysayan ng commit ay magmumukhang katulad nito:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Kumuha ng maraming mga commit, at i-merge ang mga ito sa iyong trabaho.">
+<img src="{{< relurl "book/tl/v2/images/perils-of-rebasing-2.png" >}}" alt="Kumuha ng maraming mga commit, at i-merge ang mga ito sa iyong trabaho.">
 </div>
 <div class="title">Figure 45. Kumuha ng maraming mga commit, at i-merge ang mga ito sa iyong trabaho</div>
 </div>
@@ -218,7 +218,7 @@ Ang iyong kasaysayan ng commit ay magmumukhang katulad nito:</p>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="May isang tao na nagpu-push ng na-rebase na mga commit, iniiwanan ang mga commit kung saan mo binase ang iyong trabaho.">
+<img src="{{< relurl "book/tl/v2/images/perils-of-rebasing-3.png" >}}" alt="May isang tao na nagpu-push ng na-rebase na mga commit, iniiwanan ang mga commit kung saan mo binase ang iyong trabaho.">
 </div>
 <div class="title">Figure 46. May isang tao na nagpu-push ng na-rebase na mga commit, iniiwanan ang mga commit kung saan mo binase ang iyong trabaho</div>
 </div>
@@ -227,7 +227,7 @@ Ang iyong kasaysayan ng commit ay magmumukhang katulad nito:</p>
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="Ikaw ay muling nag-merge sa parehong trabaho patungo sa isang panibagong merge na commmit.">
+<img src="{{< relurl "book/tl/v2/images/perils-of-rebasing-4.png" >}}" alt="Ikaw ay muling nag-merge sa parehong trabaho patungo sa isang panibagong merge na commmit.">
 </div>
 <div class="title">Figure 47. Ikaw ay muling nag-merge sa parehong trabaho patungo sa isang panibagong merge na commmit</div>
 </div>
@@ -249,7 +249,7 @@ Medyo ligtas magpalagay na ang ibang developer ay hindi gusto ang <code>C4</code
 <p>Kung ikaw ay magpu-pull down ng trabaho na muling isinulat at iri-rebase ito sa itaas ng bagong mga commit mula sa iyong kasosyo, ang Git ay kadalasang matagumpay na nalalaman kung ano ang katangi-tanging sa iyo at ilalapat ang mga ito pabalik sa itaas ng bagong branch.</p>
 </div>
 <div class="paragraph">
-<p>Halimbawa, sa nakaraang sitwasyon, kung sa halip na gumawa ng isang merge kapag tayo ay nasa <a href="ch00/_pre_merge_rebase_work">May isang tao na nagpu-push ng na-rebase na mga commit, iniiwanan ang mga commit kung saan mo binase ang iyong trabaho</a> papatakbuhin natin ang <code>git rebase teamone/master</code>, ang Git ay:</p>
+<p>Halimbawa, sa nakaraang sitwasyon, kung sa halip na gumawa ng isang merge kapag tayo ay nasa <a href="{{< relurl "book/tl/v2/ch00/_pre_merge_rebase_work" >}}">May isang tao na nagpu-push ng na-rebase na mga commit, iniiwanan ang mga commit kung saan mo binase ang iyong trabaho</a> papatakbuhin natin ang <code>git rebase teamone/master</code>, ang Git ay:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -268,11 +268,11 @@ Medyo ligtas magpalagay na ang ibang developer ay hindi gusto ang <code>C4</code
 </ul>
 </div>
 <div class="paragraph">
-<p>Kaya sa halip sa resulta na nakikita natin sa <a href="ch00/_merge_rebase_work">Ikaw ay muling nag-merge sa parehong trabaho patungo sa isang panibagong merge na commmit</a>, tayo ay magtatapos na may bagay na mas katulad sa <a href="ch00/_rebase_rebase_work">Pag-rebase sa itaas ng na-force-push na rebase ng trabaho</a>.</p>
+<p>Kaya sa halip sa resulta na nakikita natin sa <a href="{{< relurl "book/tl/v2/ch00/_merge_rebase_work" >}}">Ikaw ay muling nag-merge sa parehong trabaho patungo sa isang panibagong merge na commmit</a>, tayo ay magtatapos na may bagay na mas katulad sa <a href="{{< relurl "book/tl/v2/ch00/_rebase_rebase_work" >}}">Pag-rebase sa itaas ng na-force-push na rebase ng trabaho</a>.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Pag-rebase sa itaas ng na-force-push na rebase ng trabaho.">
+<img src="{{< relurl "book/tl/v2/images/perils-of-rebasing-5.png" >}}" alt="Pag-rebase sa itaas ng na-force-push na rebase ng trabaho.">
 </div>
 <div class="title">Figure 48. Pag-rebase sa itaas ng na-force-push na rebase ng trabaho</div>
 </div>

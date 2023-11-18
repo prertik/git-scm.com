@@ -63,7 +63,7 @@ title: Git - Основе гранања и спајања
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Једноставна историја комитова">
+<img src="{{< relurl "book/sr/v2/images/basic-branching-1.png" >}}" alt="Једноставна историја комитова">
 </div>
 <div class="title">Слика 18. Једноставна историја комитова</div>
 </div>
@@ -88,7 +88,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Креирање новог показивача на грану">
+<img src="{{< relurl "book/sr/v2/images/basic-branching-2.png" >}}" alt="Креирање новог показивача на грану">
 </div>
 <div class="title">Слика 19. Креирање новог показивача на грану</div>
 </div>
@@ -104,7 +104,7 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="Грана `iss53` се померила напред у складу с послом који сте обавили">
+<img src="{{< relurl "book/sr/v2/images/basic-branching-3.png" >}}" alt="Грана `iss53` се померила напред у складу с послом који сте обавили">
 </div>
 <div class="title">Слика 20. Грана <code>iss53</code> се померила унапред у складу с послом који сте обавили</div>
 </div>
@@ -116,7 +116,7 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 <div class="paragraph">
 <p>Ипак, пре него што то урадите, обратите пажњу на то да ако ваш радни директоријум или стејџ има некомитоване промене које су у конфликту са граном коју одјављујете, програм Гит вам неће дозволити да промените грану.
 Најбоље да радно стање буде чисто вршите скок између грана.
-Постоје начини да се ово заобиђе (наиме, скривање и исправљање комита) које ћемо обрадити касније, у <a href="ch00/_git_stashing">Скривање и чишћење</a>.
+Постоје начини да се ово заобиђе (наиме, скривање и исправљање комита) које ћемо обрадити касније, у <a href="{{< relurl "book/sr/v2/ch00/_git_stashing" >}}">Скривање и чишћење</a>.
 Засад, претпоставимо да сте комитовали све промене, тако да се безбедно можете вратити на <code>master</code> грану:</p>
 </div>
 <div class="listingblock">
@@ -146,7 +146,7 @@ $ git commit -a -m 'Fix broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="`Hotfix` грана базирана на `master` грани">
+<img src="{{< relurl "book/sr/v2/images/basic-branching-4.png" >}}" alt="`Hotfix` грана базирана на `master` грани">
 </div>
 <div class="title">Слика 21. <code>Hotfix</code> грана базирана на <code>master</code> грани</div>
 </div>
@@ -174,7 +174,7 @@ Fast-forward
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="`master` се премотала унапред до `hotfix`">
+<img src="{{< relurl "book/sr/v2/images/basic-branching-5.png" >}}" alt="`master` се премотала унапред до `hotfix`">
 </div>
 <div class="title">Слика 22. <code>master</code> се премотала унапред до <code>hotfix</code>
 </div>
@@ -205,7 +205,7 @@ $ git commit -a -m 'Finish the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="Рад се наставља на `iss53`">
+<img src="{{< relurl "book/sr/v2/images/basic-branching-6.png" >}}" alt="Рад се наставља на `iss53`">
 </div>
 <div class="title">Слика 23. Рад се наставља на <code>iss53</code>
 </div>
@@ -240,7 +240,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Три снимка који се користе у типичном спајању">
+<img src="{{< relurl "book/sr/v2/images/basic-merging-1.png" >}}" alt="Три снимка који се користе у типичном спајању">
 </div>
 <div class="title">Слика 24. Три снимка који се користе у типичном спајању</div>
 </div>
@@ -250,7 +250,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Комит спајања">
+<img src="{{< relurl "book/sr/v2/images/basic-merging-2.png" >}}" alt="Комит спајања">
 </div>
 <div class="title">Слика 25. Комит спајања</div>
 </div>
@@ -365,7 +365,7 @@ Hit return to start merge resolution tool (opendiff):</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Ако су вам потребни напреднији алати за решавање компликованих конфликта при спајању, погледаћемо неке од њих у <a href="ch00/_advanced_merging">Напредно спајање</a>.</p>
+<p>Ако су вам потребни напреднији алати за решавање компликованих конфликта при спајању, погледаћемо неке од њих у <a href="{{< relurl "book/sr/v2/ch00/_advanced_merging" >}}">Напредно спајање</a>.</p>
 </div>
 </td>
 </tr>

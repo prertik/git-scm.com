@@ -66,7 +66,7 @@ title: Git - Како се даје допринос пројекту
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="Излаз команде `git diff --check`">
+<img src="{{< relurl "book/sr/v2/images/git-diff-check.png" >}}" alt="Излаз команде `git diff --check`">
 </div>
 <div class="title">Слика 56. Излаз команде <code>git diff --check</code>.</div>
 </div>
@@ -77,12 +77,12 @@ title: Git - Како се даје допринос пројекту
 <p>Затим, потрудите се да сваки комит буде логички издвојен скуп промена.
 Ако можете, пробајте да промене учините лако сварљивим — немојте да кодирате цео викенд радећи на пет различитих проблема, па да их онда у понедељак све стрпате у један огроман комит.
 Чак и ако не комитујете током викенда, употребите стејџ у понедељак тако да поделите свој рад на барем један комит по проблему који сте решавали, са корисним комит порукама.
-Ако неке промене модификују исти фајл, пробајте да употребите <code>git add --patch</code> да парцијално стејџујете фајлове (детаљније је обрађено у <a href="ch00/_interactive_staging">Интерактивно стејџовање</a>).
+Ако неке промене модификују исти фајл, пробајте да употребите <code>git add --patch</code> да парцијално стејџујете фајлове (детаљније је обрађено у <a href="{{< relurl "book/sr/v2/ch00/_interactive_staging" >}}">Интерактивно стејџовање</a>).
 Снимак пројекта на врху гране је исти било да комитујете једном или пет пута, само је потребно да у неком тренутку све промене буду додате, зато се трудите да олакшате посао својим колегама програмерима када буду морали да прегледају ваше промене.</p>
 </div>
 <div class="paragraph">
 <p>Овај приступ такође олакшава да се касније неки скуп измена издвоји или да се врати на неко од пређашњих стања.
-<a href="ch00/_rewriting_history">Поновно исписивање историје</a> описује бројне корисне Гит трикове за преписивање историје и интерактивно стејџовање фајлова — употребите ове алате за изградњу чисте и јасне историје пре него што свој рад пошаљете другима.</p>
+<a href="{{< relurl "book/sr/v2/ch00/_rewriting_history" >}}">Поновно исписивање историје</a> описује бројне корисне Гит трикове за преписивање историје и интерактивно стејџовање фајлова — употребите ове алате за изградњу чисте и јасне историје пре него што свој рад пошаљете другима.</p>
 </div>
 <div class="paragraph">
 <p>Последња ствар коју треба да имате на уму је комит порука.
@@ -236,7 +236,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="Џонова разграната историја">
+<img src="{{< relurl "book/sr/v2/images/small-team-1.png" >}}" alt="Џонова разграната историја">
 </div>
 <div class="title">Слика 57. Џонова разграната историја</div>
 </div>
@@ -256,7 +256,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="Џонов репозиторијум после спајања `origin/master`">
+<img src="{{< relurl "book/sr/v2/images/small-team-2.png" >}}" alt="Џонов репозиторијум после спајања `origin/master`">
 </div>
 <div class="title">Слика 58. Џонов репозиторијум после спајања <code>origin/master</code>
 </div>
@@ -277,7 +277,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="Џонова историја комитова после гурања на `origin` сервер">
+<img src="{{< relurl "book/sr/v2/images/small-team-3.png" >}}" alt="Џонова историја комитова после гурања на `origin` сервер">
 </div>
 <div class="title">Слика 59. Џонова историја комитова после гурања на <code>origin</code> сервер</div>
 </div>
@@ -287,7 +287,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Џесикина тематска грана">
+<img src="{{< relurl "book/sr/v2/images/small-team-4.png" >}}" alt="Џесикина тематска грана">
 </div>
 <div class="title">Слика 60. Џесикина тематска грана</div>
 </div>
@@ -309,7 +309,7 @@ From jessica@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="Џесикина историја после преузимања Џонових промена">
+<img src="{{< relurl "book/sr/v2/images/small-team-5.png" >}}" alt="Џесикина историја после преузимања Џонових промена">
 </div>
 <div class="title">Слика 61. Џесикина историја после преузимања Џонових промена</div>
 </div>
@@ -329,7 +329,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 <div class="paragraph">
 <p>Синтакса <code>issue54..origin/master</code> је филтер за лог који од програма Гит тражи да покаже само листу комитова који су на другој грани (у овом случају <code>origin/master</code>) а нису на првој грани (у овом случају <code>issue54</code>).
-Детаљније ћемо обрадити ову синтаксу у <a href="ch00/_commit_ranges">Опсези комитова</a>.</p>
+Детаљније ћемо обрадити ову синтаксу у <a href="{{< relurl "book/sr/v2/ch00/_commit_ranges" >}}">Опсези комитова</a>.</p>
 </div>
 <div class="paragraph">
 <p>У горњем излазу видимо да постоји само један комит који је Џон направио, а који Џесика није спојила у свој локални рад.
@@ -381,7 +381,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="Џесикина историја након спајања Џонових промена">
+<img src="{{< relurl "book/sr/v2/images/small-team-6.png" >}}" alt="Џесикина историја након спајања Џонових промена">
 </div>
 <div class="title">Слика 62. Џесикина историја након спајања Џонових промена</div>
 </div>
@@ -401,7 +401,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="Џесикина историја након гурања свих промена назад на сервер">
+<img src="{{< relurl "book/sr/v2/images/small-team-7.png" >}}" alt="Џесикина историја након гурања свих промена назад на сервер">
 </div>
 <div class="title">Слика 63. Џесикина историја након гурања свих промена назад на сервер</div>
 </div>
@@ -413,7 +413,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="Уопштени низ догађаја за једноставан процес рада са више програмера">
+<img src="{{< relurl "book/sr/v2/images/small-team-flow.png" >}}" alt="Уопштени низ догађаја за једноставан процес рада са више програмера">
 </div>
 <div class="title">Слика 64. Уопштени низ догађаја за једноставан процес рада са више програмера</div>
 </div>
@@ -491,7 +491,7 @@ $ git commit -am 'Add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Џесикина иницијална историја комитова">
+<img src="{{< relurl "book/sr/v2/images/managed-team-1.png" >}}" alt="Џесикина иницијална историја комитова">
 </div>
 <div class="title">Слика 65. Џесикина иницијална историја комитова</div>
 </div>
@@ -534,7 +534,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>Ово се зове <em>рефспек (refspec)</em>.
-За детаљнију дискусију о Гит рефспековима и разним стварима које можете да урадите помоћу њих, погледајте <a href="ch00/_refspec">Рефспек</a>.
+За детаљнију дискусију о Гит рефспековима и разним стварима које можете да урадите помоћу њих, погледајте <a href="{{< relurl "book/sr/v2/ch00/_refspec" >}}">Рефспек</a>.
 Приметите и <code>-u</code> заставицу; ово је скраћено од <code>--set-upstream</code>, што конфигурише гране за касније лакше гурање и повлачење.</p>
 </div>
 <div class="paragraph">
@@ -595,7 +595,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="Џесикина историја након комитовања на грану могућности">
+<img src="{{< relurl "book/sr/v2/images/managed-team-2.png" >}}" alt="Џесикина историја након комитовања на грану могућности">
 </div>
 <div class="title">Слика 66. Џесикина историја након комитовања на грану могућности</div>
 </div>
@@ -605,7 +605,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="Џесикина историја након спајања њених двеју тематских грана">
+<img src="{{< relurl "book/sr/v2/images/managed-team-3.png" >}}" alt="Џесикина историја након спајања њених двеју тематских грана">
 </div>
 <div class="title">Слика 67. Џесикина историја након спајања њених двеју тематских грана</div>
 </div>
@@ -616,7 +616,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="Основни процес рада оваквог приватног тима са руководством">
+<img src="{{< relurl "book/sr/v2/images/managed-team-flow.png" >}}" alt="Основни процес рада оваквог приватног тима са руководством">
 </div>
 <div class="title">Слика 68. Основни процес рада оваквог приватног тима са руководством</div>
 </div>
@@ -654,7 +654,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Можда ћете хтети да искористите <code>rebase -i</code> и тако згњечите сав свој рад у један једини комит, или да преуредите рад у комитовима тако да одржавалац једноставније може прегледати закрпу — погледајте <a href="ch00/_rewriting_history">Поновно исписивање историје</a> за више информација о интерактивном ребазирању.</p>
+<p>Можда ћете хтети да искористите <code>rebase -i</code> и тако згњечите сав свој рад у један једини комит, или да преуредите рад у комитовима тако да одржавалац једноставније може прегледати закрпу — погледајте <a href="{{< relurl "book/sr/v2/ch00/_rewriting_history" >}}">Поновно исписивање историје</a> за више информација о интерактивном ребазирању.</p>
 </div>
 </td>
 </tr>
@@ -672,7 +672,7 @@ $ git commit</code></pre>
 <div class="paragraph">
 <p>Онда треба да гурнете свој рад на тај репозиторијум.
 Најлакше је да тематску грану на којој радите гурнете на свој рачвани репозиторијум, а не да тај рад спајате са својом <code>master</code> граном, па да онда то гурнете.
-Разлог за то је што у случају да се ваш рад не прихвати или се из њега нешто селективно узме <em>(cherry-picked),</em> не морате да премотавате уназад своју <code>master</code> грану (о Гит операцији <code>cherry-pick</code> се детаљније говори у <a href="ch00/_rebase_cherry_pick">Процеси рада са ребазирањем и одабиром <em>(cherry-picking)</em></a>).
+Разлог за то је што у случају да се ваш рад не прихвати или се из њега нешто селективно узме <em>(cherry-picked),</em> не морате да премотавате уназад своју <code>master</code> грану (о Гит операцији <code>cherry-pick</code> се детаљније говори у <a href="{{< relurl "book/sr/v2/ch00/_rebase_cherry_pick" >}}">Процеси рада са ребазирањем и одабиром <em>(cherry-picking)</em></a>).
 Ако одржаваоци изврше <code>merge</code>, <code>rebase</code> или <code>cherry-pick</code> вашег рада, у сваком случају ћете вратити назад тако што ћете повући са њиховог репозиторијума.</p>
 </div>
 <div class="paragraph">
@@ -686,7 +686,7 @@ $ git commit</code></pre>
 <div class="paragraph">
 <p>
 Када ваш рад гурнете на свој рачвани репозиторијум, треба да обавестите одржаваоце оригиналног пројекта да имате рад који бисте желели да споје.
-Ово се често назива захтевом за повлачење <em>(pull request)</em> и обично га генеришете или преко веб сајта — GitHub има свој сопствени <em>„Pull Request”</em> механизам захтева за повлачење који ћемо обрадити у <a href="ch00/ch06-github">GitHub</a> — или можете да покренете команду <code>git request-pull</code> и ручно пошаљете њен излаз на имејл одржаваоца пројекта.</p>
+Ово се често назива захтевом за повлачење <em>(pull request)</em> и обично га генеришете или преко веб сајта — GitHub има свој сопствени <em>„Pull Request”</em> механизам захтева за повлачење који ћемо обрадити у <a href="{{< relurl "book/sr/v2/ch00/ch06-github" >}}">GitHub</a> — или можете да покренете команду <code>git request-pull</code> и ручно пошаљете њен излаз на имејл одржаваоца пројекта.</p>
 </div>
 <div class="paragraph">
 <p>Команда <code>git request-pull</code> узима основну грану у коју желите да повучете своју тематску грану и URL Гит репозиторијума са ког желите да се повуче, па штампа сажетак свих промена које тражите да се повуку.
@@ -735,7 +735,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="Инцијална историја комитова са радом `featureB`">
+<img src="{{< relurl "book/sr/v2/images/public-small-1.png" >}}" alt="Инцијална историја комитова са радом `featureB`">
 </div>
 <div class="title">Слика 69. Инцијална историја комитова са радом <code>featureB</code>
 </div>
@@ -752,11 +752,11 @@ $ git push -f myfork featureA</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Ово поново исписује вашу историје тако да сада изгледа као <a href="ch00/psp_b">Историја комитова после рада <code>featureA</code></a>.</p>
+<p>Ово поново исписује вашу историје тако да сада изгледа као <a href="{{< relurl "book/sr/v2/ch00/psp_b" >}}">Историја комитова после рада <code>featureA</code></a>.</p>
 </div>
 <div id="psp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="Историја комитова после рада `featureA`">
+<img src="{{< relurl "book/sr/v2/images/public-small-2.png" >}}" alt="Историја комитова после рада `featureA`">
 </div>
 <div class="title">Слика 70. Историја комитова после рада <code>featureA</code>
 </div>
@@ -792,7 +792,7 @@ $ git push myfork featureBv2</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="Историја комитова након рада на `featureBv2`">
+<img src="{{< relurl "book/sr/v2/images/public-small-3.png" >}}" alt="Историја комитова након рада на `featureBv2`">
 </div>
 <div class="title">Слика 71. Историја комитова након рада на <code>featureBv2</code>
 </div>

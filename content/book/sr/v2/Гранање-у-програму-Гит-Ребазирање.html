@@ -26,11 +26,11 @@ title: Git - Ребазирање
 <div class="sect3">
 <h3 id="_основно_ребазирање">Основно ребазирање</h3>
 <div class="paragraph">
-<p>Ако погледате ранији пример из <a href="ch00/_basic_merging">Основе спајања</a>, видећете да сте разгранали свој рад и направили комитове на две различите гране.</p>
+<p>Ако погледате ранији пример из <a href="{{< relurl "book/sr/v2/ch00/_basic_merging" >}}">Основе спајања</a>, видећете да сте разгранали свој рад и направили комитове на две различите гране.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Једноставна разграната историја">
+<img src="{{< relurl "book/sr/v2/images/basic-rebase-1.png" >}}" alt="Једноставна разграната историја">
 </div>
 <div class="title">Слика 35. Једноставна разграната историја</div>
 </div>
@@ -40,7 +40,7 @@ title: Git - Ребазирање
 </div>
 <div id="rebasing-merging-example" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Спајање ради интеграције разгранате историје рада">
+<img src="{{< relurl "book/sr/v2/images/basic-rebase-2.png" >}}" alt="Спајање ради интеграције разгранате историје рада">
 </div>
 <div class="title">Слика 36. Спајање ради интеграције разгранате историје рада</div>
 </div>
@@ -65,7 +65,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="Ребазирање промена које су уведене у `C4` преко `C3`">
+<img src="{{< relurl "book/sr/v2/images/basic-rebase-3.png" >}}" alt="Ребазирање промена које су уведене у `C4` преко `C3`">
 </div>
 <div class="title">Слика 37. Ребазирање промена које су уведене у <code>C4</code> преко <code>C3</code>
 </div>
@@ -81,12 +81,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Премотавање `master` гране унапред">
+<img src="{{< relurl "book/sr/v2/images/basic-rebase-4.png" >}}" alt="Премотавање `master` гране унапред">
 </div>
 <div class="title">Слика 38. Премотавање <code>master</code> гране унапред</div>
 </div>
 <div class="paragraph">
-<p>Сада је снимак на који показује <code>C4'</code> потпуно исти као и онај на који је показивао <code>C5</code> у <a href="ch00/rebasing-merging-example">примеру спајања</a>.
+<p>Сада је снимак на који показује <code>C4'</code> потпуно исти као и онај на који је показивао <code>C5</code> у <a href="{{< relurl "book/sr/v2/ch00/rebasing-merging-example" >}}">примеру спајања</a>.
 Нема разлике у крајњем производу интеграције, али ребазирањем се постиже чистија историја.
 Ако истражите лог ребазиране гране, изгледа као линеарна историја: изгледа као да се сав рад одвијао серијски, иако су се ствари заправо одвијале паралелно.</p>
 </div>
@@ -104,14 +104,14 @@ $ git merge experiment</code></pre>
 <h3 id="_интересантнији_случајеви_ребазирања">Интересантнији случајеви ребазирања</h3>
 <div class="paragraph">
 <p>Ребазирање може да понови измене и над нечему другом, што није циљна грана ребазирања.
-На пример, узмите историју као што је приказана на <a href="ch00/rbdiag_e">Историја са тематском граном разгранатом од друге тематске гране</a>.
+На пример, узмите историју као што је приказана на <a href="{{< relurl "book/sr/v2/ch00/rbdiag_e" >}}">Историја са тематском граном разгранатом од друге тематске гране</a>.
 Разгранали сте тематску грану (<code>server</code>) да бисте у свој пројекат додали неку функционалност са серверске стране, па направили комит.
 Онда сте разгранали и од ње да бисте направили неке промене на клијентској страни (<code>client</code>), па комитовали неколико пута.
 Коначно, вратили сте се на <code>server</code> грану и направили још неколико комитова.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="Историја са тематском граном разгранатом од друге тематске гране">
+<img src="{{< relurl "book/sr/v2/images/interesting-rebase-1.png" >}}" alt="Историја са тематском граном разгранатом од друге тематске гране">
 </div>
 <div class="title">Слика 39. Историја са тематском граном разгранатом од друге тематске гране</div>
 </div>
@@ -130,12 +130,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Ребазирање тематске гране разгранате из друге тематске гране">
+<img src="{{< relurl "book/sr/v2/images/interesting-rebase-2.png" >}}" alt="Ребазирање тематске гране разгранате из друге тематске гране">
 </div>
 <div class="title">Слика 40. Ребазирање тематске гране разгранате из друге тематске гране</div>
 </div>
 <div class="paragraph">
-<p>Сада можете да премотате унапред грану <code>master</code> (погледајте <a href="ch00/rbdiag_g">Премотавање <code>master</code> гране унапред тако да обухвати промене са гране <code>client</code></a>):</p>
+<p>Сада можете да премотате унапред грану <code>master</code> (погледајте <a href="{{< relurl "book/sr/v2/ch00/rbdiag_g" >}}">Премотавање <code>master</code> гране унапред тако да обухвати промене са гране <code>client</code></a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -145,7 +145,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Премотавање `master` гране унапред тако да обухвати промене са гране">
+<img src="{{< relurl "book/sr/v2/images/interesting-rebase-3.png" >}}" alt="Премотавање `master` гране унапред тако да обухвати промене са гране">
 </div>
 <div class="title">Слика 41. Премотавање <code>master</code> гране унапред тако да обухвати промене са гране <code>client</code>
 </div>
@@ -160,11 +160,11 @@ $ git merge client</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Ово понавља рад са <code>server</code> гране преко <code>master</code> гране, као што се види на <a href="ch00/rbdiag_h">Ребазирање <code>server</code> гране преко <code>master</code> гране</a>.</p>
+<p>Ово понавља рад са <code>server</code> гране преко <code>master</code> гране, као што се види на <a href="{{< relurl "book/sr/v2/ch00/rbdiag_h" >}}">Ребазирање <code>server</code> гране преко <code>master</code> гране</a>.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Ребазирање `server` гране преко `master` гране">
+<img src="{{< relurl "book/sr/v2/images/interesting-rebase-4.png" >}}" alt="Ребазирање `server` гране преко `master` гране">
 </div>
 <div class="title">Слика 42. Ребазирање <code>server</code> гране преко <code>master</code> гране</div>
 </div>
@@ -178,7 +178,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Сада можете да обришете гране <code>client</code> и <code>server</code> јер је сав рад обављен на њима интегрисан и више вам неће бити потребне, а историја рада након овог процеса ће изгледати као на <a href="ch00/rbdiag_i">Коначна историја комитова</a>:</p>
+<p>Сада можете да обришете гране <code>client</code> и <code>server</code> јер је сав рад обављен на њима интегрисан и више вам неће бити потребне, а историја рада након овог процеса ће изгледати као на <a href="{{< relurl "book/sr/v2/ch00/rbdiag_i" >}}">Коначна историја комитова</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -188,7 +188,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Коначна историја комитова">
+<img src="{{< relurl "book/sr/v2/images/interesting-rebase-5.png" >}}" alt="Коначна историја комитова">
 </div>
 <div class="title">Слика 43. Коначна историја комитова</div>
 </div>
@@ -217,7 +217,7 @@ $ git branch -d server</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Клонирани репозиторијум над којим сте обавили неки посао.">
+<img src="{{< relurl "book/sr/v2/images/perils-of-rebasing-1.png" >}}" alt="Клонирани репозиторијум над којим сте обавили неки посао.">
 </div>
 <div class="title">Слика 44. Клонирани репозиторијум над којим сте обавили неки посао</div>
 </div>
@@ -227,7 +227,7 @@ $ git branch -d server</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Преузимање још комитова и спајање са личним радом.">
+<img src="{{< relurl "book/sr/v2/images/perils-of-rebasing-2.png" >}}" alt="Преузимање још комитова и спајање са личним радом.">
 </div>
 <div class="title">Слика 45. Преузимање још комитова и спајање са личним радом</div>
 </div>
@@ -237,7 +237,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Неко гурне ребазиране комитове, напуштајући комитове над којима сте базирали ваш рад.">
+<img src="{{< relurl "book/sr/v2/images/perils-of-rebasing-3.png" >}}" alt="Неко гурне ребазиране комитове, напуштајући комитове над којима сте базирали ваш рад.">
 </div>
 <div class="title">Слика 46. Неко гурне ребазиране комитове, напуштајући комитове над којима сте базирали ваш рад</div>
 </div>
@@ -247,7 +247,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="Поновно спајање истог рада у нови комит спајања">
+<img src="{{< relurl "book/sr/v2/images/perils-of-rebasing-4.png" >}}" alt="Поновно спајање истог рада у нови комит спајања">
 </div>
 <div class="title">Слика 47. Поновно спајање истог рада у нови комит спајања</div>
 </div>
@@ -271,7 +271,7 @@ $ git branch -d server</code></pre>
 <p>Ако повучете рад који је преписан и ребазирате га преко нових комитова вашег партнера, програм Гит често сам може успешно да одреди шта је јединствено ваше и да примени то назад на врх нове гране.</p>
 </div>
 <div class="paragraph">
-<p>На пример, ако у претходном сценарију када смо били код <a href="ch00/_pre_merge_rebase_work">Неко гурне ребазиране комитове, напуштајући комитове над којима сте базирали ваш рад</a> уместо спајања извршимо <code>git rebase teamone/master</code>, програм Гит ће:</p>
+<p>На пример, ако у претходном сценарију када смо били код <a href="{{< relurl "book/sr/v2/ch00/_pre_merge_rebase_work" >}}">Неко гурне ребазиране комитове, напуштајући комитове над којима сте базирали ваш рад</a> уместо спајања извршимо <code>git rebase teamone/master</code>, програм Гит ће:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -290,11 +290,11 @@ $ git branch -d server</code></pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>Тако да ћемо, уместо резултата који видимо на <a href="ch00/_merge_rebase_work">Поновно спајање истог рада у нови комит спајања</a>, добити нешто што више подсећа на <a href="ch00/_rebase_rebase_work">Ребазирање преко насилно гурнутог ребазираног рада</a>.</p>
+<p>Тако да ћемо, уместо резултата који видимо на <a href="{{< relurl "book/sr/v2/ch00/_merge_rebase_work" >}}">Поновно спајање истог рада у нови комит спајања</a>, добити нешто што више подсећа на <a href="{{< relurl "book/sr/v2/ch00/_rebase_rebase_work" >}}">Ребазирање преко насилно гурнутог ребазираног рада</a>.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Ребазирање преко насилно гурнутог ребазираног рада">
+<img src="{{< relurl "book/sr/v2/images/perils-of-rebasing-5.png" >}}" alt="Ребазирање преко насилно гурнутог ребазираног рада">
 </div>
 <div class="title">Слика 48. Ребазирање преко насилно гурнутог ребазираног рада</div>
 </div>

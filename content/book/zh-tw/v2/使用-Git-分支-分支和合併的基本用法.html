@@ -63,7 +63,7 @@ title: Git - 分支和合併的基本用法
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="一個簡單的提交歷史。">
+<img src="{{< relurl "book/zh-tw/v2/images/basic-branching-1.png" >}}" alt="一個簡單的提交歷史。">
 </div>
 <div class="title">圖表 18. 一個簡單的提交歷史</div>
 </div>
@@ -88,7 +88,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="建立一個新分支指標。">
+<img src="{{< relurl "book/zh-tw/v2/images/basic-branching-2.png" >}}" alt="建立一個新分支指標。">
 </div>
 <div class="title">圖表 19. 建立一個新分支指標</div>
 </div>
@@ -104,7 +104,7 @@ $ git commit -a -m 'added a new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="分支 `iss53` 會隨工作進展向前推進。">
+<img src="{{< relurl "book/zh-tw/v2/images/basic-branching-3.png" >}}" alt="分支 `iss53` 會隨工作進展向前推進。">
 </div>
 <div class="title">圖表 20. 分支 <code>iss53</code> 會隨工作進展向前推進</div>
 </div>
@@ -116,7 +116,7 @@ $ git commit -a -m 'added a new footer [issue 53]'</code></pre>
 <div class="paragraph">
 <p>然而，在切換分支之前，留意一下你的工作目錄或預存區（staging area）裡是否有還沒提交的內容，它可能會和你即要檢出的分支產生衝突（conflict），Git 會因此而不讓你切換分支；
 所以切換分支的時候最好先保持一個乾淨的工作區域。
-稍後會在 <a href="ch00/r_git_stashing">Stashing and Cleaning</a> 中介紹幾個繞過這種問題的辦法（分別叫做「使用收藏（stashing）」和「提交的修訂方法（commit amending）」）。
+稍後會在 <a href="{{< relurl "book/zh-tw/v2/ch00/r_git_stashing" >}}">Stashing and Cleaning</a> 中介紹幾個繞過這種問題的辦法（分別叫做「使用收藏（stashing）」和「提交的修訂方法（commit amending）」）。
 目前先讓我們假設你已經提交了所有的變更，因此你可以切回 <code>master</code> 分支了：</p>
 </div>
 <div class="listingblock">
@@ -146,7 +146,7 @@ $ git commit -a -m 'fixed the broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="基於 `master` 的緊急修正分支。">
+<img src="{{< relurl "book/zh-tw/v2/images/basic-branching-4.png" >}}" alt="基於 `master` 的緊急修正分支。">
 </div>
 <div class="title">圖表 21. 基於 <code>master</code> 的緊急修正分支</div>
 </div>
@@ -174,7 +174,7 @@ Fast-forward
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="`master` 被快進到 `hotfix`。">
+<img src="{{< relurl "book/zh-tw/v2/images/basic-branching-5.png" >}}" alt="`master` 被快進到 `hotfix`。">
 </div>
 <div class="title">圖表 22. <code>master</code> 被快進到 <code>hotfix</code>
 </div>
@@ -205,7 +205,7 @@ $ git commit -a -m 'finished the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="繼續在分支 `iss53` 上工作。">
+<img src="{{< relurl "book/zh-tw/v2/images/basic-branching-6.png" >}}" alt="繼續在分支 `iss53` 上工作。">
 </div>
 <div class="title">圖表 23. 繼續在分支 <code>iss53</code> 上工作</div>
 </div>
@@ -240,7 +240,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="典型的合併會用到的三個快照。">
+<img src="{{< relurl "book/zh-tw/v2/images/basic-merging-1.png" >}}" alt="典型的合併會用到的三個快照。">
 </div>
 <div class="title">圖表 24. 典型的合併會用到的三個快照</div>
 </div>
@@ -250,7 +250,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="一個合併提交">
+<img src="{{< relurl "book/zh-tw/v2/images/basic-merging-2.png" >}}" alt="一個合併提交">
 </div>
 <div class="title">圖表 25. 一個合併提交</div>
 </div>
@@ -369,7 +369,7 @@ Hit return to start merge resolution tool (opendiff):</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>如果你需要更多進階的工具用來解決刁鑽的合併衝突，我們將在 <a href="ch00/r_advanced_merging">Advanced Merging</a> 介紹更多合併操作方法。</p>
+<p>如果你需要更多進階的工具用來解決刁鑽的合併衝突，我們將在 <a href="{{< relurl "book/zh-tw/v2/ch00/r_advanced_merging" >}}">Advanced Merging</a> 介紹更多合併操作方法。</p>
 </div>
 </td>
 </tr>

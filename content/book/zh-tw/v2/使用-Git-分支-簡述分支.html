@@ -30,7 +30,7 @@ Git 的分支簡直是難以置信的羽量級，新建分支的操作幾乎可�
 <p>為了理解 Git 分支（branch）的使用方式，我們需要回顧一下 Git 是如何保存資料的。</p>
 </div>
 <div class="paragraph">
-<p>或許你還記得 <a href="ch00/ch01-introduction">[ch01-introduction]</a> 的內容，Git 保存的不是變更集或者差異內容，而是一系列快照。</p>
+<p>或許你還記得 <a href="{{< relurl "book/zh-tw/v2/ch00/ch01-introduction" >}}">[ch01-introduction]</a> 的內容，Git 保存的不是變更集或者差異內容，而是一系列快照。</p>
 </div>
 <div class="paragraph">
 <p>當你製造一個提交（commit）時，Git 會儲存一個提交物件，該物件內容包含一個指標，用來代表已預存的快照內容；
@@ -38,7 +38,7 @@ Git 的分支簡直是難以置信的羽量級，新建分支的操作幾乎可�
 </div>
 <div class="paragraph">
 <p>為了具體說明，讓我們假設你有一個目錄包含了三個檔案，你預存（stage）並提交了它們；
-檔案預存操作會對每一個檔案內容（譯註：請注意，只有檔案「內容」）計算雜湊值（即 <a href="ch00/ch01-introduction">[ch01-introduction]</a> 中提到的 SHA-1 雜湊值），然後把那個檔案內容版本保存到 Git 版本庫中（Git 把它們視為 blob 類型的物件），再將這個雜湊值寫入預存區（staging area）：</p>
+檔案預存操作會對每一個檔案內容（譯註：請注意，只有檔案「內容」）計算雜湊值（即 <a href="{{< relurl "book/zh-tw/v2/ch00/ch01-introduction" >}}">[ch01-introduction]</a> 中提到的 SHA-1 雜湊值），然後把那個檔案內容版本保存到 Git 版本庫中（Git 把它們視為 blob 類型的物件），再將這個雜湊值寫入預存區（staging area）：</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="單個提交在版本庫中的資料結構。">
+<img src="{{< relurl "book/zh-tw/v2/images/commit-and-tree.png" >}}" alt="單個提交在版本庫中的資料結構。">
 </div>
 <div class="title">圖表 9. 單個提交在版本庫中的資料結構</div>
 </div>
@@ -64,7 +64,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="提交和它們的親代提交。">
+<img src="{{< relurl "book/zh-tw/v2/images/commits-and-parents.png" >}}" alt="提交和它們的親代提交。">
 </div>
 <div class="title">圖表 10. 提交和它們的親代提交</div>
 </div>
@@ -92,7 +92,7 @@ Git 預設分支名稱是 <code>master</code>，
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="分支及其提交歷史。">
+<img src="{{< relurl "book/zh-tw/v2/images/branch-and-history.png" >}}" alt="分支及其提交歷史。">
 </div>
 <div class="title">圖表 11. 分支及其提交歷史</div>
 </div>
@@ -115,7 +115,7 @@ Git 預設分支名稱是 <code>master</code>，
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="二個分支都指向同一系列的提交歷史。">
+<img src="{{< relurl "book/zh-tw/v2/images/two-branches.png" >}}" alt="二個分支都指向同一系列的提交歷史。">
 </div>
 <div class="title">圖表 12. 二個分支都指向同一系列的提交歷史</div>
 </div>
@@ -129,7 +129,7 @@ Git 預設分支名稱是 <code>master</code>，
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD 指向一個分支。">
+<img src="{{< relurl "book/zh-tw/v2/images/head-to-master.png" >}}" alt="HEAD 指向一個分支。">
 </div>
 <div class="title">圖表 13. HEAD 指向一個分支</div>
 </div>
@@ -166,7 +166,7 @@ f30ab (HEAD -&gt; master, testing) add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="被 HEAD 指向的分支是目前分支。">
+<img src="{{< relurl "book/zh-tw/v2/images/head-to-testing.png" >}}" alt="被 HEAD 指向的分支是目前分支。">
 </div>
 <div class="title">圖表 14. 被 HEAD 指向的分支是目前分支</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="當再次提交時，被 HEAD 指向的分支會往前走。">
+<img src="{{< relurl "book/zh-tw/v2/images/advance-testing.png" >}}" alt="當再次提交時，被 HEAD 指向的分支會往前走。">
 </div>
 <div class="title">圖表 15. 當再次提交時，被 HEAD 指向的分支會往前走</div>
 </div>
@@ -197,7 +197,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="當你檢出時，HEAD 會移動。">
+<img src="{{< relurl "book/zh-tw/v2/images/checkout-master.png" >}}" alt="當你檢出時，HEAD 會移動。">
 </div>
 <div class="title">圖表 16. 當你檢出時，HEAD 會移動</div>
 </div>
@@ -234,14 +234,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>現在你的專案歷史開始分離了（詳見 <a href="ch00/rdivergent_history">分離的歷史</a>）；
+<p>現在你的專案歷史開始分離了（詳見 <a href="{{< relurl "book/zh-tw/v2/ch00/rdivergent_history" >}}">分離的歷史</a>）；
 你建立並切換到新分支，在上面進行了一些工作，然後切換回到主分支進行了另外一些工作，
 雙方的改變分別隔離在不同的分支裡：你可以在不同分支裡反覆切換，並在時機成熟時把它們合併到一起；
 而所有這些工作只需要簡單的 <code>branch</code>、<code>checkout</code>、<code>commit</code> 命令。</p>
 </div>
 <div id="rdivergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="分離的歷史。">
+<img src="{{< relurl "book/zh-tw/v2/images/advance-master.png" >}}" alt="分離的歷史。">
 </div>
 <div class="title">圖表 17. 分離的歷史</div>
 </div>

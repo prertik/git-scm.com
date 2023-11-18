@@ -59,7 +59,7 @@ git_repository_free(repo);</code></pre>
 저장소 경로를 정확히 모를 때는 <code>git_repository_open_ext</code> 메소드로 찾는다. <code>git_clone</code> 메소드와 관련된 메소드는 원격에 있는 저장소를 로컬에 Clone 할 때 사용한다. 그리고 <code>git_repository_init</code> 은 저장소를 새로 만들 때 사용한다.</p>
 </div>
 <div class="paragraph">
-<p>rev-parse 문법을 사용하는 두 번째 코드는 HEAD가 가리키는 커밋을 가져온다. (자세한 내용은 <a href="ch00/_branch_references">브랜치로 가리키기</a> 참고)
+<p>rev-parse 문법을 사용하는 두 번째 코드는 HEAD가 가리키는 커밋을 가져온다. (자세한 내용은 <a href="{{< relurl "book/ko/v2/ch00/_branch_references" >}}">브랜치로 가리키기</a> 참고)
 <code>git_object</code> 포인터는 Git 개체 데이터베이스에 있는 개체를 가리킨다.
 <code>git_object</code> 는 몇 가지 “자식” 타입의 “부모” 타입이다. 이 “자식” 타입들은 <code>git_object</code> 에 해당하는 부분에 대해서는 메모리 구조가 같다. 그래서 맞는 자식이라면 이렇게 캐스팅해도 안전하다.
 <code>git_object_type(commit)</code> 처럼 호출하면 <code>GIT_OBJ_COMMIT</code> 을 리턴한다. 그래서 <code>git_commit</code> 포인터로 캐스팅해도 된다.</p>
@@ -166,7 +166,7 @@ commit = repo.lookup(commit_id) # <b class="conum">(8)</b></code></pre>
 </div>
 <div class="paragraph">
 <p>Ruby 코드는 간결하고 깔끔하다. Libgit2을 사용하는 것이기 때문에 여전히 빠르다.
-루비스트가 아니라면 <a href="ch00/_libgit2_bindings">다른 바인딩</a>에 있는 다른 바인딩을 사용할 수 있다.</p>
+루비스트가 아니라면 <a href="{{< relurl "book/ko/v2/ch00/_libgit2_bindings" >}}">다른 바인딩</a>에 있는 다른 바인딩을 사용할 수 있다.</p>
 </div>
 <div class="sect3">
 <h3 id="_고급_기능">고급 기능</h3>

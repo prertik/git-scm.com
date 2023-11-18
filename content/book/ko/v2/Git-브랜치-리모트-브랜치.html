@@ -61,7 +61,7 @@ title: Git - 리모트 브랜치
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Clone 이후 서버와 로컬의 master 브랜치">
+<img src="{{< relurl "book/ko/v2/images/remote-branches-1.png" >}}" alt="Clone 이후 서버와 로컬의 master 브랜치">
 </div>
 <div class="title">그림 30. Clone 이후 서버와 로컬의 master 브랜치</div>
 </div>
@@ -71,7 +71,7 @@ title: Git - 리모트 브랜치
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="로컬과 서버의 커밋 히스토리는 독립적임">
+<img src="{{< relurl "book/ko/v2/images/remote-branches-2.png" >}}" alt="로컬과 서버의 커밋 히스토리는 독립적임">
 </div>
 <div class="title">그림 31. 로컬과 서버의 커밋 히스토리는 독립적임</div>
 </div>
@@ -81,19 +81,19 @@ title: Git - 리모트 브랜치
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` 명령은 리모트 브랜치 정보를 업데이트">
+<img src="{{< relurl "book/ko/v2/images/remote-branches-3.png" >}}" alt="`git fetch` 명령은 리모트 브랜치 정보를 업데이트">
 </div>
 <div class="title">그림 32. <code>git fetch</code> 명령은 리모트 브랜치 정보를 업데이트</div>
 </div>
 <div class="paragraph">
 <p>리모트 저장소를 여러 개 운영하는 상황을 이해할 수 있도록 개발용으로 사용할 Git 저장소를 팀 내부에 하나 추가해 보자.
 이 저장소의 주소가 <code>git.team1.ourcompany.com</code> 이며
-<a href="ch00/ch02-git-basics-chapter">Git의 기초</a>에서 살펴본 <code>git remote add</code> 명령으로 현재 작업 중인 프로젝트에 팀의 저장소를 추가한다.
+<a href="{{< relurl "book/ko/v2/ch00/ch02-git-basics-chapter" >}}">Git의 기초</a>에서 살펴본 <code>git remote add</code> 명령으로 현재 작업 중인 프로젝트에 팀의 저장소를 추가한다.
 이름을 <code>teamone</code> 으로 짓고 긴 서버 주소 대신 사용한다.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="서버를 리모트 저장소로 추가">
+<img src="{{< relurl "book/ko/v2/images/remote-branches-4.png" >}}" alt="서버를 리모트 저장소로 추가">
 </div>
 <div class="title">그림 33. 서버를 리모트 저장소로 추가</div>
 </div>
@@ -103,7 +103,7 @@ title: Git - 리모트 브랜치
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="`teamone/master` 의 리모트 트래킹 브랜치">
+<img src="{{< relurl "book/ko/v2/images/remote-branches-5.png" >}}" alt="`teamone/master` 의 리모트 트래킹 브랜치">
 </div>
 <div class="title">그림 34. <code>teamone/master</code> 의 리모트 트래킹 브랜치</div>
 </div>
@@ -136,7 +136,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Git은 serverfix라는 브랜치 이름을 <code>refs/heads/serverfix:refs/heads/serverfix</code> 로 확장한다.
 이것은 <code>serverfix</code> 라는 로컬 브랜치를 서버로 Push 하는데 리모트의 <code>serverfix</code> 브랜치로 업데이트한다는 것을 의미한다.
-나중에 <a href="ch00/ch10-git-internals">Git의 내부</a>에서 <code>refs/heads/</code> 의 뜻을 자세히 알아볼 것이기 때문에 일단 넘어가도록 한다.
+나중에 <a href="{{< relurl "book/ko/v2/ch00/ch10-git-internals" >}}">Git의 내부</a>에서 <code>refs/heads/</code> 의 뜻을 자세히 알아볼 것이기 때문에 일단 넘어가도록 한다.
 <code>git push origin serverfix:serverfix</code> 라고 Push 하는 것도 같은 의미인데 이것은 “로컬의 serverfix 브랜치를 리모트 저장소의 serverfix 브랜치로 Push 하라” 라는 뜻이다.
 로컬 브랜치의 이름과 리모트 서버의 브랜치 이름이 다를 때 필요하다.
 리모트 저장소에 <code>serverfix</code> 라는 이름 대신 다른 이름을 사용하려면 <code>git push origin serverfix:awesomebranch</code> 처럼 사용한다.</p>
@@ -158,7 +158,7 @@ To https://github.com/schacon/simplegit
 이 기능을 활성화하면 Git은 몇 분 동안 입력한 사용자이름이나 암호를 저장해둔다. 이 기능을 활성화하려면 <code>git config --global credential.helper cache</code> 명령을 실행하여 환경설정을 추가한다.</p>
 </div>
 <div class="paragraph">
-<p>이 기능이 제공하는 다른 옵션에 대한 자세한 설명은 <a href="ch00/_credential_caching">Credential 저장소</a>를 참고한다.</p>
+<p>이 기능이 제공하는 다른 옵션에 대한 자세한 설명은 <a href="{{< relurl "book/ko/v2/ch00/_credential_caching" >}}">Credential 저장소</a>를 참고한다.</p>
 </div>
 </td>
 </tr>

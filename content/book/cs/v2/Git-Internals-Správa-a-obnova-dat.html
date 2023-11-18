@@ -124,7 +124,7 @@ The trick is finding that latest commit SHA-1 – it’s not like you’ve memor
 <p>Nejrychlejší cestou často bývá použít nástroj <code>git reflog</code>.
 As you’re working, Git silently records what your HEAD is every time you change it.
 Vždy když zapíšete revizi nebo změníte větve, je reflog aktualizován.
-The reflog is also updated by the <code>git update-ref</code> command, which is another reason to use it instead of just writing the SHA-1 value to your ref files, as we covered in <a href="ch00/_git_refs">Git References</a>.
+The reflog is also updated by the <code>git update-ref</code> command, which is another reason to use it instead of just writing the SHA-1 value to your ref files, as we covered in <a href="{{< relurl "book/cs/v2/ch00/_git_refs" >}}">Git References</a>.
 You can see where you’ve been at any time by running <code>git reflog</code>:</p>
 </div>
 <div class="listingblock">
@@ -307,7 +307,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>The big object is at the bottom: 5MB.
-To find out what file it is, you’ll use the <code>rev-list</code> command, which you used briefly in <a href="ch00/_enforcing_commit_message_format">Enforcing a Specific Commit-Message Format</a>.
+To find out what file it is, you’ll use the <code>rev-list</code> command, which you used briefly in <a href="{{< relurl "book/cs/v2/ch00/_enforcing_commit_message_format" >}}">Enforcing a Specific Commit-Message Format</a>.
 If you pass <code>--objects</code> to <code>rev-list</code>, it lists all the commit SHA-1s and also the blob SHA-1s with the file paths associated with them.
 You can use this to find your blob’s name:</p>
 </div>
@@ -330,7 +330,7 @@ dadf725 oops - removed large tarball
 </div>
 <div class="paragraph">
 <p>You must rewrite all the commits downstream from <code>7b30847</code> to fully remove this file from your Git history.
-To do so, you use <code>filter-branch</code>, which you used in <a href="ch00/_rewriting_history">Rewriting History</a>:</p>
+To do so, you use <code>filter-branch</code>, which you used in <a href="{{< relurl "book/cs/v2/ch00/_rewriting_history" >}}">Rewriting History</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -342,7 +342,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>The <code>--index-filter</code> option is similar to the <code>--tree-filter</code> option used in <a href="ch00/_rewriting_history">Rewriting History</a>, except that instead of passing a command that modifies files checked out on disk, you’re modifying your staging area or index each time.</p>
+<p>The <code>--index-filter</code> option is similar to the <code>--tree-filter</code> option used in <a href="{{< relurl "book/cs/v2/ch00/_rewriting_history" >}}">Rewriting History</a>, except that instead of passing a command that modifies files checked out on disk, you’re modifying your staging area or index each time.</p>
 </div>
 <div class="paragraph">
 <p>Rather than remove a specific file with something like <code>rm file</code>, you have to remove it with <code>git rm --cached</code> – you must remove it from the index, not from disk.

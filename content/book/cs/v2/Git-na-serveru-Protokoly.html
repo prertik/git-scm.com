@@ -63,7 +63,7 @@ Naklonování lokálního repozitáře můžete provést například spuštění
 <p>Pokud na začátek URL explicitně uvedete <code>file://</code>, pracuje Git trochu jinak.
 Pokud uvedete pouze cestu, pokouší se Git použít pevné odkazy (hardlink), nebo přímo kopíruje potřebné soubory.
 Pokud zadáte výraz <code>file://</code>, Git spustí procesy, které běžně používá k přenosu dat po síti, což je obecně mnohem méně efektivní metoda přenosu dat.
-Hlavním důvodem, proč zadat předponu <code>file://</code> je to, že tak získáte čistou kopii repozitáře bez nepotřebných referencí a objektů, například po importu z jiného verzovacího systému a podobně (viz popis úkonů správy v kapitole <a href="ch00/_git_internals">Git Internals</a>).
+Hlavním důvodem, proč zadat předponu <code>file://</code> je to, že tak získáte čistou kopii repozitáře bez nepotřebných referencí a objektů, například po importu z jiného verzovacího systému a podobně (viz popis úkonů správy v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_internals" >}}">Git Internals</a>).
 My zde budeme používat normální cestu, protože je to téměř vždy rychlejší.</p>
 </div>
 <div class="paragraph">
@@ -83,7 +83,7 @@ My zde budeme používat normální cestu, protože je to téměř vždy rychlej
 <p>Výhoda souborových repozitářů spočívá v tom, že jsou jednoduché a používají existující oprávnění k souborům a pro přístup k síti.
 Pokud už máte k dispozici sdílený systém souborů, k němuž má přístup celý váš tým, je nastavení repozitáře velice jednoduché.
 Kopii holého repozitáře umístíte někam, kam mají všichni sdílený přístup, a nastavíte oprávnění ke čtení/zápisu stejně jako u jakéhokoli jiného sdíleného adresáře.
-O exportu kopie holého repozitáře pro tento účel se více dočtete v části <a href="ch00/_git_on_the_server">Zprovoznění Gitu na serveru</a>.</p>
+O exportu kopie holého repozitáře pro tento účel se více dočtete v části <a href="{{< relurl "book/cs/v2/ch00/_git_on_the_server" >}}">Zprovoznění Gitu na serveru</a>.</p>
 </div>
 <div class="paragraph">
 <p>Je to taky šikovná možnost rychlého získání práce z pracovního repozitáře někoho jiného.
@@ -97,7 +97,7 @@ Pokud vy a váš kolega pracujete na společném projektu a máte z něj něco p
 Pokud budete chtít odeslat data z notebooku doma, budete muset připojit vzdálený disk, což může být ve srovnání s přístupem přes lokální síť složité a pomalé.</p>
 </div>
 <div class="paragraph">
-<p>Upozorněme na to, že v případě použití sdíleného přístupu určitého druhu<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="ch00/_footnotedef_13" title="View footnote.">13</a>]</sup>, nemusí být tato možnost vždy nutně nejrychlejší.
+<p>Upozorněme na to, že v případě použití sdíleného přístupu určitého druhu<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_13" >}}" title="View footnote.">13</a>]</sup>, nemusí být tato možnost vždy nutně nejrychlejší.
 Lokální repozitář je rychlý pouze v případě, že máte rychlý přístup k datům.
 Repozitář na NFS je často pomalejší než stejný repozitář nad SSH na tomtéž serveru, který ve všech systémech umožňuje spustit Git z lokálních disků.</p>
 </div>
@@ -140,7 +140,7 @@ Totéž platí pro přístup pro čtení.</p>
 Pokud server nepodporuje chytrou gitovou službu nad HTTP, pokusí se gitový klient vrátit k jednoduššímu „hloupému“ HTTP protokolu.
 Hloupý protokol předpokládá, že se bude holý gitový repozitář obsluhovat ze strany webového serveru stejně, jako běžné soubory.
 Krása hloupého HTTP protokolu spočívá v jednoduchosti jeho nastavení.
-V podstatě jediné, co musíte udělat, je umístit holý gitový repozitář pod kořenový adresář s HTTP dokumenty a nastavit příslušný zásuvný modul <code>post-update</code> (viz kapitola <a href="ch00/_git_hooks">Git Hooks</a>).
+V podstatě jediné, co musíte udělat, je umístit holý gitový repozitář pod kořenový adresář s HTTP dokumenty a nastavit příslušný zásuvný modul <code>post-update</code> (viz kapitola <a href="{{< relurl "book/cs/v2/ch00/_git_hooks" >}}">Git Hooks</a>).
 Od tohoto okamžiku může každý, kdo má přístup k webovému serveru, kam jste repozitář uložili, tento repozitář naklonovat.
 Chcete-li u svého repozitáře nastavit oprávnění pro čtení pomocí protokolu HTTP, proveďte následující:</p>
 </div>
@@ -165,7 +165,7 @@ Tento příkaz se spustí, když do tohoto repozitáře odesíláte data (možn�
 </div>
 <div class="paragraph">
 <p>V tomto konkrétním případě používáme cestu <code>/var/www/htdocs</code>, která se obvykle nastavuje pro Apache, ale použít lze v podstatě jakýkoliv statický webový server — stačí uložit holý repozitář do dané cesty.
-Data repozitáře Git jsou obsluhována jako obyčejné statické soubory (podrobnosti o přesném způsobu obsluhy naleznete v kapitole <a href="ch00/_git_internals">Git Internals</a>).</p>
+Data repozitáře Git jsou obsluhována jako obyčejné statické soubory (podrobnosti o přesném způsobu obsluhy naleznete v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_internals" >}}">Git Internals</a>).</p>
 </div>
 <div class="paragraph">
 <p>Obecně se dá říct, že si buď vyberete „chytrý“ HTTP server umožňující čtení i zápis, nebo soubory zpřístupníte jen pro čtení „hloupým“ protokolem.
@@ -199,7 +199,7 @@ Ale jinak mají ostatní protokoly pro obsluhu Gitu vůči „chytrému“ HTTP 
 <div class="paragraph">
 <p>Pokud používáte HTTP pro autentizované odesílání, pak může být nastavení osobních údajů někdy komplikovanější než používání klíčů přes SSH.
 Ale můžete využít několika nástrojů pro uložení osobních údajů (credential caching tools), včetně „Keychain Access“ pro OSX a „Správce pověření“ pod Windows, čímž se to velmi usnadní.
-O tom, jak na vašem systému nastavit bezpečné uložení hesla pro HTTP, se dočtete v podkapitole <a href="ch00/_credential_caching">Credential Storage</a>.</p>
+O tom, jak na vašem systému nastavit bezpečné uložení hesla pro HTTP, se dočtete v podkapitole <a href="{{< relurl "book/cs/v2/ch00/_credential_caching" >}}">Credential Storage</a>.</p>
 </div>
 </div>
 </div>

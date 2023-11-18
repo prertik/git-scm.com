@@ -21,7 +21,7 @@ title: Git - Vzdálené větve
 <div class="paragraph">
 <p>
 Vzdálené reference jsou odkazy (ukazatelé) ve vašich vzdálených repozitářích a zahrnují větve, značky (tag) a další.
-Seznam vzdálených referencí pro vzdálené větve a také další informace můžete získat explicitním příkazem <code>git ls-remote [vzdálený]</code> nebo <code>git remote show [vzdálený]</code> <sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="ch00/_footnotedef_11" title="View footnote.">11</a>]</sup>.
+Seznam vzdálených referencí pro vzdálené větve a také další informace můžete získat explicitním příkazem <code>git ls-remote [vzdálený]</code> nebo <code>git remote show [vzdálený]</code> <sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_11" >}}" title="View footnote.">11</a>]</sup>.
 Nicméně, běžnější bývá využití vzdáleně sledovaných větví.</p>
 </div>
 <div class="paragraph">
@@ -59,7 +59,7 @@ Pokud místo toho spustíte <code>git clone -o booyah</code>, dostanete jako vý
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Repozitář na serveru a lokální repozitář po klonování.">
+<img src="{{< relurl "book/cs/v2/images/remote-branches-1.png" >}}" alt="Repozitář na serveru a lokální repozitář po klonování.">
 </div>
 <div class="title">Figure 30. Repozitář na serveru a lokální repozitář po klonování</div>
 </div>
@@ -69,7 +69,7 @@ A dokud nenavážete se serverem <code>origin</code> kontakt, nebude se váš uk
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Lokální a vzdálená historie práce se může rozcházet.">
+<img src="{{< relurl "book/cs/v2/images/remote-branches-2.png" >}}" alt="Lokální a vzdálená historie práce se může rozcházet.">
 </div>
 <div class="title">Figure 31. Lokální a vzdálená historie práce se může rozcházet</div>
 </div>
@@ -79,19 +79,19 @@ Tento příkaz zjistí, který server je <code>origin</code> (v tomto případě
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` aktualizuje reference do vzdáleného repozitáře.">
+<img src="{{< relurl "book/cs/v2/images/remote-branches-3.png" >}}" alt="`git fetch` aktualizuje reference do vzdáleného repozitáře.">
 </div>
 <div class="title">Figure 32. <code>git fetch</code> aktualizuje reference do vzdáleného repozitáře</div>
 </div>
 <div class="paragraph">
-<p>Abychom si mohli ukázat, jak se pracuje s několika vzdálenými servery a jak vypadají vzdálené větve takových vzdálených projektů, předpokládejme, že máte ještě další interní server Git, který při vývoji používá pouze jeden z vašich sprint týmů<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="ch00/_footnotedef_12" title="View footnote.">12</a>]</sup>.
+<p>Abychom si mohli ukázat, jak se pracuje s několika vzdálenými servery a jak vypadají vzdálené větve takových vzdálených projektů, předpokládejme, že máte ještě další interní server Git, který při vývoji používá pouze jeden z vašich sprint týmů<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_12" >}}" title="View footnote.">12</a>]</sup>.
 Tento server se nachází na <code>git.team1.ourcompany.com</code>.
-Můžete ho přidat jako novou vzdálenou referenci k projektu, na němž právě pracujete, spuštěním příkazu <code>git remote add</code> — jak jsme si ukázali v kapitole <a href="ch00/_git_basics_chapter">Základy práce se systémem Git</a>.
+Můžete ho přidat jako novou vzdálenou referenci k projektu, na němž právě pracujete, spuštěním příkazu <code>git remote add</code> — jak jsme si ukázali v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_basics_chapter" >}}">Základy práce se systémem Git</a>.
 Pojmenujte tento vzdálený repozitář jako <code>teamone</code>, což bude zkrácený název pro celou URL adresu.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Přidání dalšího serveru v roli vzdáleného repozitáře.">
+<img src="{{< relurl "book/cs/v2/images/remote-branches-4.png" >}}" alt="Přidání dalšího serveru v roli vzdáleného repozitáře.">
 </div>
 <div class="title">Figure 33. Přidání dalšího serveru v roli vzdáleného repozitáře</div>
 </div>
@@ -101,7 +101,7 @@ Protože je tento server podmnožinou dat, která jsou právě na serveru <code>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Vzdáleně sledovaná větev pro `teamone/master`.">
+<img src="{{< relurl "book/cs/v2/images/remote-branches-5.png" >}}" alt="Vzdáleně sledovaná větev pro `teamone/master`.">
 </div>
 <div class="title">Figure 34. Vzdáleně sledovaná větev pro <code>teamone/master</code>
 </div>
@@ -132,7 +132,7 @@ To https://github.com/schacon/simplegit
 </div>
 <div class="paragraph">
 <p>Toto je zkrácená verze příkazu.
-Git automaticky rozšíří název větve <code>serverfix</code> na <code>refs/heads/serverfix:refs/heads/serverfix</code>, což znamená: „Vezmi mou lokální větev <code>serverfix</code> a odešli ji do vzdáleného repozitáře, kde aktualizuje tamní větev <code>serverfix</code>.“ Částí <code>refs/heads/</code> se budeme podrobněji věnovat v kapitole <a href="ch00/_git_internals">Git Internals</a>, ale nemusí být pro vás zajímavá.
+Git automaticky rozšíří název větve <code>serverfix</code> na <code>refs/heads/serverfix:refs/heads/serverfix</code>, což znamená: „Vezmi mou lokální větev <code>serverfix</code> a odešli ji do vzdáleného repozitáře, kde aktualizuje tamní větev <code>serverfix</code>.“ Částí <code>refs/heads/</code> se budeme podrobněji věnovat v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_internals" >}}">Git Internals</a>, ale nemusí být pro vás zajímavá.
 Můžete zadat také příkaz <code>git push origin serverfix:serverfix</code>, který provede totéž. Vyjadřuje: „Vezmi mou větev <code>serverfix</code> a udělej z ní <code>serverfix</code> ve vzdáleném repozitáři.“ Tento formát můžete použít k odeslání lokální větve do vzdálené větve, která se jmenuje jinak.
 Pokud jste nechtěli, aby se větev ve vzdáleném repozitáři jmenovala <code>serverfix</code>, mohli jste místo toho spustit <code>git push origin serverfix:awesomebranch</code>. Pak by lokální větev <code>serverfix</code> byla odeslána do větve <code>awesomebranch</code> vzdáleného projektu.</p>
 </div>
@@ -153,7 +153,7 @@ Aby byl schopen zjistit, zda máte právo k odesílání (push), vypíše výzvu
 Nejjednodušší je podržet tyto informace pár minut v paměti, čehož snadno dosáhnete spuštěním <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>Více informací o různých volbách pro uchovávání pověřovacích dat naleznete v podkapitole <a href="ch00/_credential_caching">Credential Storage</a>.</p>
+<p>Více informací o různých volbách pro uchovávání pověřovacích dat naleznete v podkapitole <a href="{{< relurl "book/cs/v2/ch00/_credential_caching" >}}">Credential Storage</a>.</p>
 </div>
 </td>
 </tr>

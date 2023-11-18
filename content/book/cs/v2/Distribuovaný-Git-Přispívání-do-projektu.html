@@ -66,7 +66,7 @@ Git nabízí snadný způsob, jak tyto chyby zkontrolovat. Před zapsáním revi
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="Výstup příkazu `git diff --check`.">
+<img src="{{< relurl "book/cs/v2/images/git-diff-check.png" >}}" alt="Výstup příkazu `git diff --check`.">
 </div>
 <div class="title">Figure 57. Výstup příkazu <code>git diff --check</code>.</div>
 </div>
@@ -77,10 +77,10 @@ Git nabízí snadný způsob, jak tyto chyby zkontrolovat. Před zapsáním revi
 <p>Dále se snažte zapisovat každou revizi (commit) jako logicky oddělený soubor změn.
 Pokud je to možné, snažte se, aby byly vaše změny stravitelné. Není právě ideální pracovat celý víkend na pěti různých problémech a v pondělí je všechny najednou odeslat formou jedné velké revize.
 Když už během víkendu nebudete zapisovat revize, využijte v pondělí oblasti připravených změn pro rozdělení práce alespoň do stejného počtu revizí, kolik je řešených problémů, a přidejte k nim vysvětlující zprávy.
-Pokud některé změny upravují stejný soubor, zkuste použít příkaz <code>git add --patch</code> a připravit soubory k zapsání po částech (podrobnosti jsou popsány v kapitole <a href="ch00/_interactive_staging">Interactive Staging</a>).
+Pokud některé změny upravují stejný soubor, zkuste použít příkaz <code>git add --patch</code> a připravit soubory k zapsání po částech (podrobnosti jsou popsány v kapitole <a href="{{< relurl "book/cs/v2/ch00/_interactive_staging" >}}">Interactive Staging</a>).
 Snímek projektu na vrcholu větve bude stejný, ať zapíšete jednu revizi, nebo pět (za předpokladu, že vložíte všechny změny). Snažte se proto usnadnit práci svým kolegům, kteří možná někdy budou vaše změny revidovat.
 Takový přístup současně usnadňuje stahování změn (pull) nebo vracení jedné sady změn do původního stavu — bude-li to později třeba.
-Podkapitola <a href="ch00/_rewriting_history">Rewriting History</a> popisuje několik užitečných triků, jak v systému Git přepsat historii a jak interaktivně připravovat soubory k zapsání. Než svou práci odešlete ostatním, použijte tyto nástroje k udržení čisté a srozumitelné historie.</p>
+Podkapitola <a href="{{< relurl "book/cs/v2/ch00/_rewriting_history" >}}">Rewriting History</a> popisuje několik užitečných triků, jak v systému Git přepsat historii a jak interaktivně připravovat soubory k zapsání. Než svou práci odešlete ostatním, použijte tyto nástroje k udržení čisté a srozumitelné historie.</p>
 </div>
 <div class="paragraph">
 <p>Poslední věcí, na kterou byste měli myslet, jsou zprávy k revizím.
@@ -208,7 +208,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="Johnova odchylující se historie.">
+<img src="{{< relurl "book/cs/v2/images/small-team-1.png" >}}" alt="Johnova odchylující se historie.">
 </div>
 <div class="title">Figure 58. Johnova odchylující se historie.</div>
 </div>
@@ -228,7 +228,7 @@ Merge made by recursive.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="Johnův repozitář po začlenění `origin/master`.">
+<img src="{{< relurl "book/cs/v2/images/small-team-2.png" >}}" alt="Johnův repozitář po začlenění `origin/master`.">
 </div>
 <div class="title">Figure 59. Johnův repozitář po začlenění <code>origin/master</code>.</div>
 </div>
@@ -248,7 +248,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="Johnova historie po odeslání revize na server `origin`.">
+<img src="{{< relurl "book/cs/v2/images/small-team-3.png" >}}" alt="Johnova historie po odeslání revize na server `origin`.">
 </div>
 <div class="title">Figure 60. Johnova historie po odeslání revize na server <code>origin</code>.</div>
 </div>
@@ -259,7 +259,7 @@ Zatím ještě nevyzvedla Johnovy změny, takže její historie revizí vypadá 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Jessičina tématická větev.">
+<img src="{{< relurl "book/cs/v2/images/small-team-4.png" >}}" alt="Jessičina tématická větev.">
 </div>
 <div class="title">Figure 61. Jessičina tématická větev.</div>
 </div>
@@ -281,7 +281,7 @@ Historie revizí Jessicy teď vypadá takto:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="Historie Jessicy po vyzvednutí Johnových změn.">
+<img src="{{< relurl "book/cs/v2/images/small-team-5.png" >}}" alt="Historie Jessicy po vyzvednutí Johnových změn.">
 </div>
 <div class="title">Figure 62. Historie Jessicy po vyzvednutí Johnových změn.</div>
 </div>
@@ -301,7 +301,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 <div class="paragraph">
 <p>Zápis <code>issue54..origin/master</code> představuje filtr příkazu, kterým se Gitu říká, aby zobrazil seznam jen těch objektů revize, které se nacházejí v druhé z větví (zde <code>origin/master</code>), ale které se nenacházejí v první větvi (zde <code>issue54</code>).
-Podrobně se budeme touto syntaxí zabývat v části <a href="ch00/_commit_ranges">Commit Ranges</a>.</p>
+Podrobně se budeme touto syntaxí zabývat v části <a href="{{< relurl "book/cs/v2/ch00/_commit_ranges" >}}">Commit Ranges</a>.</p>
 </div>
 <div class="paragraph">
 <p>Z výstupu vidíme, že existuje jediná revize, kterou zapsal John a kterou Jessica nesloučila se svou prací.
@@ -351,7 +351,7 @@ Merge made by recursive.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="Jessičina historie po začlenění Johnových změn.">
+<img src="{{< relurl "book/cs/v2/images/small-team-6.png" >}}" alt="Jessičina historie po začlenění Johnových změn.">
 </div>
 <div class="title">Figure 63. Jessičina historie po začlenění Johnových změn.</div>
 </div>
@@ -371,7 +371,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="Jessičina historie po odeslání všech změn zpět na server.">
+<img src="{{< relurl "book/cs/v2/images/small-team-7.png" >}}" alt="Jessičina historie po odeslání všech změn zpět na server.">
 </div>
 <div class="title">Figure 64. Jessičina historie po odeslání všech změn zpět na server.</div>
 </div>
@@ -383,7 +383,7 @@ Obvyklá posloupnost událostí vypadá takto:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="Obecná posloupnost událostí pro jednoduchý pracovní postup s více vývojáři.">
+<img src="{{< relurl "book/cs/v2/images/small-team-flow.png" >}}" alt="Obecná posloupnost událostí pro jednoduchý pracovní postup s více vývojáři.">
 </div>
 <div class="title">Figure 65. Obecná posloupnost událostí pro jednoduchý pracovní postup s více vývojáři.</div>
 </div>
@@ -461,7 +461,7 @@ $ git commit -am 'add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Jessičina výchozí historie revizí.">
+<img src="{{< relurl "book/cs/v2/images/managed-team-1.png" >}}" alt="Jessičina výchozí historie revizí.">
 </div>
 <div class="title">Figure 66. Jessičina výchozí historie revizí.</div>
 </div>
@@ -504,7 +504,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>Říká se tomu <em>refspec</em>.
-Podrobnější diskusi o specifikaci gitových referencí a o různých možnostech práce s nimi najdete v kapitole <a href="ch00/_refspec">The Refspec</a>.
+Podrobnější diskusi o specifikaci gitových referencí a o různých možnostech práce s nimi najdete v kapitole <a href="{{< relurl "book/cs/v2/ch00/_refspec" >}}">The Refspec</a>.
 Všimněte si též příznaku <code>-u</code>. Jde o zkratku pro volbu <code>--set-upstream</code>, která se používá k nastavení větví pro pozdější zjednodušené odesílání (push) a stahování (pull).</p>
 </div>
 <div class="paragraph">
@@ -565,7 +565,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="Jessičina historie po zapsání revizí do větve s úkolem.">
+<img src="{{< relurl "book/cs/v2/images/managed-team-2.png" >}}" alt="Jessičina historie po zapsání revizí do větve s úkolem.">
 </div>
 <div class="title">Figure 67. Jessičina historie po zapsání revizí do větve s úkolem.</div>
 </div>
@@ -575,7 +575,7 @@ Poté, co integrátoři uvedené větve začlení do hlavní linie, bude možné
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="Historie Jessicy po začlenění obou jejích tématických větví.">
+<img src="{{< relurl "book/cs/v2/images/managed-team-3.png" >}}" alt="Historie Jessicy po začlenění obou jejích tématických větví.">
 </div>
 <div class="title">Figure 68. Historie Jessicy po začlenění obou jejích tématických větví.</div>
 </div>
@@ -586,7 +586,7 @@ Posloupnost událostí ve zde popsaném pracovním postupu vypadá takto:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="Základní posloupnost událostí pracovního postupu řízeného týmu.">
+<img src="{{< relurl "book/cs/v2/images/managed-team-flow.png" >}}" alt="Základní posloupnost událostí pracovního postupu řízeného týmu.">
 </div>
 <div class="title">Figure 69. Základní posloupnost událostí pracovního postupu řízeného týmu.</div>
 </div>
@@ -624,7 +624,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Možná budete chtít použít <code>rebase -i</code>, abyste svou práci stlačili do jediného zápisu revize, nebo budete chtít práci přeuspořádat do posloupnosti revizí, která správci usnadní zkoumání záplat. Další informace o interaktivním přeskládání najdete v části <a href="ch00/_rewriting_history">Rewriting History</a>.</p>
+<p>Možná budete chtít použít <code>rebase -i</code>, abyste svou práci stlačili do jediného zápisu revize, nebo budete chtít práci přeuspořádat do posloupnosti revizí, která správci usnadní zkoumání záplat. Další informace o interaktivním přeskládání najdete v části <a href="{{< relurl "book/cs/v2/ch00/_rewriting_history" >}}">Rewriting History</a>.</p>
 </div>
 </td>
 </tr>
@@ -653,7 +653,7 @@ Pokud správci provedou sloučení (merge), přeskládání (rebase) nebo část
 <div class="paragraph">
 <p>
 Pokud jste práci odeslali do odštěpeného repozitáře, musíte to správci oznámit.
-Často se tomu říká „pull request“, čili požadavek na stažení. Můžete ho vytvořit prostřednictvím webové stránky — GitHub má svůj vlastní mechanismus Pull Request, kterým se budeme zabývat v kapitole <a href="ch00/_github">GitHub</a> — nebo můžete spustit příkaz <code>git request-pull</code> a správci projektu ručně zaslat výstup příkazu e-mailem.</p>
+Často se tomu říká „pull request“, čili požadavek na stažení. Můžete ho vytvořit prostřednictvím webové stránky — GitHub má svůj vlastní mechanismus Pull Request, kterým se budeme zabývat v kapitole <a href="{{< relurl "book/cs/v2/ch00/_github" >}}">GitHub</a> — nebo můžete spustit příkaz <code>git request-pull</code> a správci projektu ručně zaslat výstup příkazu e-mailem.</p>
 </div>
 <div class="paragraph">
 <p>Příkazu <code>request-pull</code> se zadává základní větev, do které chcete nechat vaši tématickou větev vtáhnout, a URL adresa gitového repozitáře, z kterého se má změna stahovat. Příkaz vypíše shrnutí všech změn, které by měly být vtaženy.
@@ -701,7 +701,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="Počáteční historie revizí s prací na `featureB`.">
+<img src="{{< relurl "book/cs/v2/images/public-small-1.png" >}}" alt="Počáteční historie revizí s prací na `featureB`.">
 </div>
 <div class="title">Figure 70. Počáteční historie revizí s prací na <code>featureB</code>.</div>
 </div>
@@ -717,11 +717,11 @@ $ git push -f myfork featureA</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Tím se vaše historie přepíše a bude vypadat jako na obrázku <a href="ch00/psp_b">Historie revizí po přeskládání práce z <code>featureA</code>.</a>.</p>
+<p>Tím se vaše historie přepíše a bude vypadat jako na obrázku <a href="{{< relurl "book/cs/v2/ch00/psp_b" >}}">Historie revizí po přeskládání práce z <code>featureA</code>.</a>.</p>
 </div>
 <div id="psp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="Historie revizí po přeskládání práce z `featureA`.">
+<img src="{{< relurl "book/cs/v2/images/public-small-2.png" >}}" alt="Historie revizí po přeskládání práce z `featureA`.">
 </div>
 <div class="title">Figure 71. Historie revizí po přeskládání práce z <code>featureA</code>.</div>
 </div>
@@ -747,7 +747,7 @@ $ git push myfork featureBv2</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Volba <code>--squash</code> (stlačit) zajistí převzetí všech změn ze začleňované větve a stlačí je do podoby jedné sady změn, která vede ke stejnému stavu repozitáře, jako kdyby se provedlo opravdové sloučení (merge), ale nevytvoří se při tom bod sloučení<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="ch00/_footnotedef_16" title="View footnote.">16</a>]</sup> (merge commit).
+<p>Volba <code>--squash</code> (stlačit) zajistí převzetí všech změn ze začleňované větve a stlačí je do podoby jedné sady změn, která vede ke stejnému stavu repozitáře, jako kdyby se provedlo opravdové sloučení (merge), ale nevytvoří se při tom bod sloučení<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_16" >}}" title="View footnote.">16</a>]</sup> (merge commit).
 To znamená, že váš budoucí objekt revize bude mít jen jednoho rodiče a přitom vám umožní vnést všechny změny z jiné větve a poté provést další úpravy ještě před tím, než se nová revize zapíše.
 V případě základního procesu slučování (merge) může být užitečná i volba <code>--no-commit</code>, která oddálí vytvoření bodu sloučení.</p>
 </div>
@@ -756,7 +756,7 @@ V případě základního procesu slučování (merge) může být užitečná i
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="Historie revizí po práci ve větvi `featureBv2`.">
+<img src="{{< relurl "book/cs/v2/images/public-small-3.png" >}}" alt="Historie revizí po práci ve větvi `featureBv2`.">
 </div>
 <div class="title">Figure 72. Historie revizí po práci ve větvi <code>featureBv2</code>.</div>
 </div>
@@ -765,7 +765,7 @@ V případě základního procesu slučování (merge) může být užitečná i
 <h3 id="_project_over_email">Veřejný projekt využívající elektronickou poštu</h3>
 <div class="paragraph">
 <p>Mnoho projektů si vytvořilo vlastní procedury pro přijímání záplat. Konkrétní pravidla si u každého projektu budete muset zjistit, protože budou odlišná.
-Protože existuje několik starších, větších projektů, kde se záplaty přijímají prostřednictvím vývojářské poštovní konference<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="ch00/_footnotedef_17" title="View footnote.">17</a>]</sup>, projdeme si teď podobný příklad.</p>
+Protože existuje několik starších, větších projektů, kde se záplaty přijímají prostřednictvím vývojářské poštovní konference<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_17" >}}" title="View footnote.">17</a>]</sup>, projdeme si teď podobný příklad.</p>
 </div>
 <div class="paragraph">
 <p>Pracovní postup je podobný jako v předchozím případě. Pro každou sérii záplat, na níž pracujete, vytvoříte samostatnou tématickou větev.

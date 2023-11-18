@@ -40,7 +40,7 @@ Druhý způsob spočívá v naklonování již existujícího gitového repozit�
 <div class="paragraph">
 <p>Příkaz vytvoří nový podadresář s názvem <code>.git</code>, který bude obsahovat všechny soubory nezbytné pro repozitář, tzv. kostru repozitáře Git.
 V tomto okamžiku se z vašeho projektu ještě nic nesleduje.
-(Více informací o tom, jaké soubory obsahuje právě vytvořený adresář <code>.git</code>, naleznete v kapitole <a href="ch00/_git_internals">Git Internals</a>.)</p>
+(Více informací o tom, jaké soubory obsahuje právě vytvořený adresář <code>.git</code>, naleznete v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_internals" >}}">Git Internals</a>.)</p>
 </div>
 <div class="paragraph">
 <p>Chcete-li zahájit správu verzí existujících souborů (a ne jen prázdného adresáře), měli byste pravděpodobně zahájit sledování (tracking) těchto souborů a zapsat první revizi (provést počáteční commit).
@@ -65,7 +65,7 @@ V této chvíli máte vytvořen gitový repozitář se sledovanými soubory a ú
 Pokud jste zvyklí pracovat s jinými systémy pro správu verzí, jako je například Subversion, jistě jste si všimli, že příkaz zní <code>clone</code>, a nikoli <code>checkout</code>.
 Tento rozdíl je podstatný. Místo pouhého získání pracovní kopie souborů projektu, získá Git plnou kopii téměř všech dat na serveru.
 Po provedení příkazu <code>git clone</code> budou k historii projektu staženy všechny verze všech souborů.
-Pokud by někdy poté došlo k poruše disku serveru, lze použít libovolný z těchto klonů na kterémkoli klientovi a obnovit pomocí něj server zpět do stavu, v němž byl v okamžiku klonování (může dojít ke ztrátě některých zásuvných modulů na straně serveru a podobných věcí, ale všechna verzovaná data budou obnovena. Další podrobnosti naleznete v kapitole <a href="ch00/_git_on_the_server">Zprovoznění Gitu na serveru</a>).</p>
+Pokud by někdy poté došlo k poruše disku serveru, lze použít libovolný z těchto klonů na kterémkoli klientovi a obnovit pomocí něj server zpět do stavu, v němž byl v okamžiku klonování (může dojít ke ztrátě některých zásuvných modulů na straně serveru a podobných věcí, ale všechna verzovaná data budou obnovena. Další podrobnosti naleznete v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_on_the_server" >}}">Zprovoznění Gitu na serveru</a>).</p>
 </div>
 <div class="paragraph">
 <p>Repozitář naklonujete příkazem <code>git clone [url]</code>.
@@ -92,7 +92,7 @@ Pokud chcete naklonovat repozitář do adresáře pojmenovaného jinak než <cod
 <div class="paragraph">
 <p>Git nabízí celou řadu různých přenosových protokolů.
 Předchozí příklad využívá protokol <code>https://</code>, můžete se ale setkat také s protokolem <code>git://</code> nebo <code>user@server:/path/to/repo.git</code>, který používá přenosový protokol SSH.
-V kapitole <a href="ch00/_git_on_the_server">Zprovoznění Gitu na serveru</a> budou uvedeny všechny dostupné možnosti, které mohou být na serveru pro přístup do gitového repozitáře nastaveny, včetně jejich předností a nevýhod.</p>
+V kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_on_the_server" >}}">Zprovoznění Gitu na serveru</a> budou uvedeny všechny dostupné možnosti, které mohou být na serveru pro přístup do gitového repozitáře nastaveny, včetně jejich předností a nevýhod.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

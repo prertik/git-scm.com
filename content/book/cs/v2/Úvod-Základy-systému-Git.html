@@ -33,20 +33,20 @@ Tyto systémy (CVS, Subversion, Perforce, Bazaar atd.) chápou uložené informa
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/deltas.png" >}}" alt="Ukládání dat jako změn vůči základní verzi každého souboru.">
+<img src="{{< relurl "book/cs/v2/images/deltas.png" >}}" alt="Ukládání dat jako změn vůči základní verzi každého souboru.">
 </div>
 <div class="title">Figure 4. Ukládání dat jako změn vůči základní verzi každého souboru.</div>
 </div>
 <div class="paragraph">
 <p>Git o ukládání dat tímto způsobem neuvažuje.
 Místo toho Git o datech uvažuje jako o sadě snímků miniaturního systému souborů.
-Pokaždé, když v systému Git zapíšete (commit<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="ch00/_footnotedef_1" title="View footnote.">1</a>]</sup>) stav projektu, v podstatě „vyfotí“, jak vypadají všechny vaše soubory v daném okamžiku, a uloží odkaz na tento snímek.
+Pokaždé, když v systému Git zapíšete (commit<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_1" >}}" title="View footnote.">1</a>]</sup>) stav projektu, v podstatě „vyfotí“, jak vypadají všechny vaše soubory v daném okamžiku, a uloží odkaz na tento snímek.
 Pokud se soubor nezměnil, pak ho Git v zájmu efektivnosti znovu neukládá, ale jen se odkáže na předchozí identický soubor, který už byl uložen.
 Git o svých datech uvažuje spíše jako o <strong>sérii snímků</strong>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/snapshots.png" >}}" alt="Git ukládá data jako snímky projektu v daném čase.">
+<img src="{{< relurl "book/cs/v2/images/snapshots.png" >}}" alt="Git ukládá data jako snímky projektu v daném čase.">
 </div>
 <div class="title">Figure 5. Ukládání dat v podobě snímků projektu v daném čase.</div>
 </div>
@@ -54,7 +54,7 @@ Git o svých datech uvažuje spíše jako o <strong>sérii snímků</strong>.</p
 <p>Jde o důležitý rozdíl mezi systémem Git a téměř všemi ostatními systémy pro správu verzí.
 Git díky tomu znovu zkoumá skoro každý aspekt správy verzí, který většina ostatních systémů okopírovala z předchozí generace.
 Díky tomu Git vypadá (spíše než jiné systémy pro správu verzí) jako malý souborový systém, nad kterým pracuje sada neuvěřitelně výkonných nástrojů.
-Některými výhodami, které získáme při tomto uvažování o datech, se budeme zabývat při výkladu větvení v kapitole <a href="ch00/_git_branching">Větve v systému Git</a>.</p>
+Některými výhodami, které získáme při tomto uvažování o datech, se budeme zabývat při výkladu větvení v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_branching" >}}">Větve v systému Git</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -110,7 +110,7 @@ Stejně jako v jiných systémech pro správu verzí můžete ztratit nebo poni�
 </div>
 <div class="paragraph">
 <p>Díky tomu je práce s Gitem radostí, protože víme, že můžeme experimentovat bez nebezpečí závažného poškození hotových věcí.
-Podrobnější informace o tom, jak Git ukládá data a jak lze obnovit zdánlivě ztracenou práci, najdete v podkapitole <a href="ch00/_undoing">Návrat do předchozího stavu</a>.</p>
+Podrobnější informace o tom, jak Git ukládá data a jak lze obnovit zdánlivě ztracenou práci, najdete v podkapitole <a href="{{< relurl "book/cs/v2/ch00/_undoing" >}}">Návrat do předchozího stavu</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -128,7 +128,7 @@ Připraveno k zapsání znamená, že jste změněný soubor v jeho aktuální v
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/areas.png" >}}" alt="Pracovní adresář, oblast připravených změn a adresář Git.">
+<img src="{{< relurl "book/cs/v2/images/areas.png" >}}" alt="Pracovní adresář, oblast připravených změn a adresář Git.">
 </div>
 <div class="title">Figure 6. Pracovní adresář, oblast připravených změn a adresář Git.</div>
 </div>
@@ -141,7 +141,7 @@ Je to nejdůležitější část systému Git a zároveň je to adresář, kter�
 Tyto soubory jsou vytaženy ze zkomprimované databáze v adresáři Git a umístěny na disk, kde je můžete používat nebo upravovat.</p>
 </div>
 <div class="paragraph">
-<p>Oblast připravených změn je soubor, většinou uložený v adresáři Git, který obsahuje informace o tom, co bude obsahovat příští objekt revize (commit<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="ch00/_footnotedef_2" title="View footnote.">2</a>]</sup>).
+<p>Oblast připravených změn je soubor, většinou uložený v adresáři Git, který obsahuje informace o tom, co bude obsahovat příští objekt revize (commit<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_2" >}}" title="View footnote.">2</a>]</sup>).
 Někdy se setkáme s označením „index“, ale běžně se používá i pojem oblast připravených změn (staging area).</p>
 </div>
 <div class="paragraph">
@@ -164,7 +164,7 @@ Někdy se setkáme s označením „index“, ale běžně se používá i pojem
 <p>Nachází-li se konkrétní verze souboru v adresáři Gitu, je soubor ve stavu „zapsaný“.
 Pokud byl soubor upraven a přidán do oblasti připravených změn, je ve stavu „připraven k zapsání“.
 A pokud byl vůči stavu v databázi upraven, ale nebyl připraven k zapsání, je ve stavu „změněný“.
-V kapitole <a href="ch00/_git_basics_chapter">Základy práce se systémem Git</a> se o stavech souborů dozvíte více. Naučíte se, jak jich můžete využívat, nebo jak můžete stav „připraven k zapsání“ úplně přeskočit.</p>
+V kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_basics_chapter" >}}">Základy práce se systémem Git</a> se o stavech souborů dozvíte více. Naučíte se, jak jich můžete využívat, nebo jak můžete stav „připraven k zapsání“ úplně přeskočit.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

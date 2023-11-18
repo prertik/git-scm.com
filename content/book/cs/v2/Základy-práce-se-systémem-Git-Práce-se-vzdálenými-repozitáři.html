@@ -82,7 +82,7 @@ origin    git@github.com:mojombo/grit.git (push)</code></pre>
 Na jeden nebo několik z nich můžeme mít navíc přiděleno právo pro odesílání změn (push), ale z tohoto výpisu to nelze poznat.</p>
 </div>
 <div class="paragraph">
-<p>Všimněte si, že tyto vzdálené repozitáře používají různé protokoly. Více se o tom zmíníme v kapitole <a href="ch00/_git_on_the_server">Zprovoznění Gitu na serveru</a>.</p>
+<p>Všimněte si, že tyto vzdálené repozitáře používají různé protokoly. Více se o tom zmíníme v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_on_the_server" >}}">Zprovoznění Gitu na serveru</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -122,7 +122,7 @@ From https://github.com/paulboone/ticgit
 </div>
 <div class="paragraph">
 <p>Paulova hlavní větev je teď lokálně dostupná jako <code>pb/master</code>. Můžete ji začlenit (merge) do některé ze svých větví, nebo ji můžete zpřístupnit jako lokální větev (check out), jestliže si ji chcete prohlédnout.
-(Podrobněji se budeme větvím a jejich použití věnovat v kapitole <a href="ch00/_git_branching">Větve v systému Git</a>.)</p>
+(Podrobněji se budeme větvím a jejich použití věnovat v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_branching" >}}">Větve v systému Git</a>.)</p>
 </div>
 </div>
 <div class="sect3">
@@ -146,7 +146,7 @@ Měli bychom zmínit, že příkaz <code>git fetch</code> jen stáhne data do va
 Sloučení s vaší prací musíte udělat ručně, až to uznáte za vhodné.</p>
 </div>
 <div class="paragraph">
-<p>Pokud má vaše aktuální větev nastaveno sledování vzdálené větve (více informací naleznete v následující podkapitole a v kapitole <a href="ch00/_git_branching">Větve v systému Git</a>), můžete použít příkaz <code>git pull</code>, který automaticky vyzvedne (fetch) a poté začlení (merge) vzdálenou větev do vaší aktuální větve.
+<p>Pokud má vaše aktuální větev nastaveno sledování vzdálené větve (více informací naleznete v následující podkapitole a v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_branching" >}}">Větve v systému Git</a>), můžete použít příkaz <code>git pull</code>, který automaticky vyzvedne (fetch) a poté začlení (merge) vzdálenou větev do vaší aktuální větve.
 Tento postup pro vás může být snazší a pohodlnější. Standardně přitom příkaz <code>git clone</code> automaticky nastaví vaši lokální větev <code>master</code> tak, aby sledovala vzdálenou větev <code>master</code> (výchozí větev může být i jiná) na serveru, z kterého jste klonovali.
 Příkaz <code>git pull</code> většinou vyzvedne (fetch) data ze serveru, z něhož jste původně klonovali, a automaticky se pokusí začlenit je (merge) do kódu, na němž právě pracujete.</p>
 </div>
@@ -154,7 +154,7 @@ Příkaz <code>git pull</code> většinou vyzvedne (fetch) data ze serveru, z n�
 <div class="sect3">
 <h3 id="_pushing_remotes">Odesílání do vzdálených repozitářů</h3>
 <div class="paragraph">
-<p>Pokud se váš projekt nachází ve stavu, kdy ho chcete sdílet s ostatními, můžete ho odeslat (push) na referenční server (upstream<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="ch00/_footnotedef_9" title="View footnote.">9</a>]</sup>).
+<p>Pokud se váš projekt nachází ve stavu, kdy ho chcete sdílet s ostatními, můžete ho odeslat (push) na referenční server (upstream<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_9" >}}" title="View footnote.">9</a>]</sup>).
 Příslušný příkaz je jednoduchý: <code>git push [jméno-vzdáleného-serveru] [jméno-větve]</code>.
 Pokud chcete na server <code>origin</code> odeslat svou větev <code>master</code> (znovu připomeňme, že při klonování se vám obě tato jména nastaví automaticky), pak následující příkaz odešle na server všechny vaše revize (commits):</p>
 </div>
@@ -167,7 +167,7 @@ Pokud chcete na server <code>origin</code> odeslat svou větev <code>master</cod
 <p>Tento příkaz bude funkční, pouze pokud jste klonovali ze serveru, k němuž máte oprávnění pro zápis, a pokud tam mezi tím nikdo nic neodeslal.
 Pokud ve stejnou dobu obsah naklonuje ještě někdo jiný a svou práci odešle na společný server (upstream), vaše později odesílaná práce bude oprávněně odmítnuta.
 Nejdříve musíte jeho práci vyzvednout (fetch), zahrnout ji do vaší a teprve potom budete moci vše odeslat.
-Více informací o odesílání na vzdálené servery najdete v kapitole <a href="ch00/_git_branching">Větve v systému Git</a>.</p>
+Více informací o odesílání na vzdálené servery najdete v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_branching" >}}">Větve v systému Git</a>.</p>
 </div>
 </div>
 <div class="sect3">

@@ -26,11 +26,11 @@ W tym rozdziale dowiesz się, czym jest zmiana bazy, jak ją przeprowadzić, dla
 <div class="sect3">
 <h3 id="_typowa_zmiana_bazy">Typowa zmiana bazy</h3>
 <div class="paragraph">
-<p>Jeśli cofniesz się do poprzedniego przykładu z sekcji <a href="ch00/_basic_merging">Podstawy scalania</a>, zobaczysz, że rozszczepiłeś swoją pracę i wykonywałeś zmiany w dwóch różnych gałęziach.</p>
+<p>Jeśli cofniesz się do poprzedniego przykładu z sekcji <a href="{{< relurl "book/pl/v2/ch00/_basic_merging" >}}">Podstawy scalania</a>, zobaczysz, że rozszczepiłeś swoją pracę i wykonywałeś zmiany w dwóch różnych gałęziach.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Początkowa historia po rozszczepieniu.">
+<img src="{{< relurl "book/pl/v2/images/basic-rebase-1.png" >}}" alt="Początkowa historia po rozszczepieniu.">
 </div>
 <div class="title">Figure 35. Początkowa historia po rozszczepieniu</div>
 </div>
@@ -39,7 +39,7 @@ W tym rozdziale dowiesz się, czym jest zmiana bazy, jak ją przeprowadzić, dla
 </div>
 <div id="rebasing-merging-example" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Scalanie gałęzi integrujące rozszczepioną historię zmian.">
+<img src="{{< relurl "book/pl/v2/images/basic-rebase-2.png" >}}" alt="Scalanie gałęzi integrujące rozszczepioną historię zmian.">
 </div>
 <div class="title">Figure 36. Scalanie gałęzi integrujące rozszczepioną historię zmian</div>
 </div>
@@ -62,7 +62,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="Zmiana bazy dla zmian wprowadzonych w `C4` do `C3`..">
+<img src="{{< relurl "book/pl/v2/images/basic-rebase-3.png" >}}" alt="Zmiana bazy dla zmian wprowadzonych w `C4` do `C3`..">
 </div>
 <div class="title">Figure 37. Zmiana bazy dla zmian wprowadzonych w <code>C4</code> do <code>C3</code>.</div>
 </div>
@@ -77,12 +77,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Przesunięcie gałęzi master po operacji zmiany bazy.">
+<img src="{{< relurl "book/pl/v2/images/basic-rebase-4.png" >}}" alt="Przesunięcie gałęzi master po operacji zmiany bazy.">
 </div>
 <div class="title">Figure 38. Przesunięcie gałęzi master po operacji zmiany bazy</div>
 </div>
 <div class="paragraph">
-<p>Teraz migawka wskazywana przez <code>C4'</code> jest dokładnie taka sama jak ta, na którą wskazuje <code>C5</code> w <a href="ch00/rebasing-merging-example">przykładzie ze scalaniem</a>.
+<p>Teraz migawka wskazywana przez <code>C4'</code> jest dokładnie taka sama jak ta, na którą wskazuje <code>C5</code> w <a href="{{< relurl "book/pl/v2/ch00/rebasing-merging-example" >}}">przykładzie ze scalaniem</a>.
 Nie ma różnicy w produkcie końcowym integracji. Zmiana bazy tworzy jednak czystszą historię.
 Jeśli przejrzysz historię gałęzi po operacji <code>rebase</code>, wygląda ona na liniową: wygląda jakby cała praca była wykonywana stopniowo, nawet jeśli oryginalnie odbywała się równolegle.</p>
 </div>
@@ -100,14 +100,14 @@ Zmiana bazy nanosi zmiany z jednej linii pracy do innej w kolejności, w jakiej 
 <h3 id="_ciekawsze_operacje_zmiany_bazy">Ciekawsze operacje zmiany bazy</h3>
 <div class="paragraph">
 <p>Poleceniem <code>rebase</code> możesz także zastosować zmiany na innej gałęzi niż ta, której zmieniasz bazę
-Dla przykładu – weź historię taką jak w przykładzie <a href="ch00/rbdiag_e">Historia z gałęzią tematyczną utworzoną na podstawie innej gałęzi tematycznej.</a>.
+Dla przykładu – weź historię taką jak w przykładzie <a href="{{< relurl "book/pl/v2/ch00/rbdiag_e" >}}">Historia z gałęzią tematyczną utworzoną na podstawie innej gałęzi tematycznej.</a>.
 Utworzyłeś gałąź tematyczną (<code>server</code>), żeby dodać nowe funkcje do kodu serwerowego, po czym utworzyłeś rewizję.
 Następnie utworzyłeś gałąź, żeby wykonać zmiany w kliencie (<code>client</code>) i kilkukrotnie zatwierdziłeś zmiany.
 Ostatecznie wróciłeś do gałęzi <code>server</code> i wykonałeś kilka kolejnych rewizji.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="Historia z gałęzią tematyczną utworzoną na podstawie innej gałęzi tematycznej.">
+<img src="{{< relurl "book/pl/v2/images/interesting-rebase-1.png" >}}" alt="Historia z gałęzią tematyczną utworzoną na podstawie innej gałęzi tematycznej.">
 </div>
 <div class="title">Figure 39. Historia z gałęzią tematyczną utworzoną na podstawie innej gałęzi tematycznej.</div>
 </div>
@@ -126,12 +126,12 @@ Jest to nieco skomplikowane, ale wynik jest całkiem niezły.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Zmiana bazy gałęzi tematycznej odbitej z innej gałęzi tematycznej.">
+<img src="{{< relurl "book/pl/v2/images/interesting-rebase-2.png" >}}" alt="Zmiana bazy gałęzi tematycznej odbitej z innej gałęzi tematycznej.">
 </div>
 <div class="title">Figure 40. Zmiana bazy gałęzi tematycznej odbitej z innej gałęzi tematycznej</div>
 </div>
 <div class="paragraph">
-<p>Teraz możesz zwyczajnie przesunąć wskaźnik gałęzi głównej do przodu (por. <a href="ch00/rbdiag_g">Przesunięcie do przodu gałęzi master w celu uwzględnienia zmian z gałęzi client</a>):</p>
+<p>Teraz możesz zwyczajnie przesunąć wskaźnik gałęzi głównej do przodu (por. <a href="{{< relurl "book/pl/v2/ch00/rbdiag_g" >}}">Przesunięcie do przodu gałęzi master w celu uwzględnienia zmian z gałęzi client</a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -141,7 +141,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Przesunięcie do przodu gałęzi master w celu uwzględnienia zmian z gałęzi client.">
+<img src="{{< relurl "book/pl/v2/images/interesting-rebase-3.png" >}}" alt="Przesunięcie do przodu gałęzi master w celu uwzględnienia zmian z gałęzi client.">
 </div>
 <div class="title">Figure 41. Przesunięcie do przodu gałęzi master w celu uwzględnienia zmian z gałęzi client</div>
 </div>
@@ -155,11 +155,11 @@ Możesz zmienić bazę gałęzi <code>server</code> na wskazywaną przez <code>m
 </div>
 </div>
 <div class="paragraph">
-<p>Polecenie odtwarza zmiany z gałęzi <code>server</code> na gałęzi <code>master</code> tak, jak pokazuje to <a href="ch00/rbdiag_h">Zmiana bazy gałęzi <code>server</code> na koniec gałęzi <code>master</code></a>.</p>
+<p>Polecenie odtwarza zmiany z gałęzi <code>server</code> na gałęzi <code>master</code> tak, jak pokazuje to <a href="{{< relurl "book/pl/v2/ch00/rbdiag_h" >}}">Zmiana bazy gałęzi <code>server</code> na koniec gałęzi <code>master</code></a>.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Zmiana bazy gałęzi `server` na koniec gałęzi `master`.">
+<img src="{{< relurl "book/pl/v2/images/interesting-rebase-4.png" >}}" alt="Zmiana bazy gałęzi `server` na koniec gałęzi `master`.">
 </div>
 <div class="title">Figure 42. Zmiana bazy gałęzi <code>server</code> na koniec gałęzi <code>master</code>
 </div>
@@ -174,7 +174,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Możesz teraz usunąć gałęzie <code>client</code> i <code>server</code>, ponieważ cała praca jest już zintegrowana i więcej ich nie potrzebujesz, pozostawiając historię w stanie takim, jaki obrazuje <a href="ch00/rbdiag_i">Ostateczna historia rewizji</a>:</p>
+<p>Możesz teraz usunąć gałęzie <code>client</code> i <code>server</code>, ponieważ cała praca jest już zintegrowana i więcej ich nie potrzebujesz, pozostawiając historię w stanie takim, jaki obrazuje <a href="{{< relurl "book/pl/v2/ch00/rbdiag_i" >}}">Ostateczna historia rewizji</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -184,7 +184,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Ostateczna historia rewizji.">
+<img src="{{< relurl "book/pl/v2/images/interesting-rebase-5.png" >}}" alt="Ostateczna historia rewizji.">
 </div>
 <div class="title">Figure 43. Ostateczna historia rewizji</div>
 </div>
@@ -213,7 +213,7 @@ Twoja historia rewizji wygląda następująco:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Sklonowane repozytorium i dokonane zmiany.">
+<img src="{{< relurl "book/pl/v2/images/perils-of-rebasing-1.png" >}}" alt="Sklonowane repozytorium i dokonane zmiany.">
 </div>
 <div class="title">Figure 44. Sklonowane repozytorium i dokonane zmiany</div>
 </div>
@@ -223,7 +223,7 @@ Pobierasz zmiany, scalasz nową, zdalną gałąź z własną pracą, w wyniku cz
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Pobranie kolejnych rewizji i scalenie ich z własnymi zmianami.">
+<img src="{{< relurl "book/pl/v2/images/perils-of-rebasing-2.png" >}}" alt="Pobranie kolejnych rewizji i scalenie ich z własnymi zmianami.">
 </div>
 <div class="title">Figure 45. Pobranie kolejnych rewizji i scalenie ich z własnymi zmianami</div>
 </div>
@@ -233,7 +233,7 @@ Następnie ty pobierasz dane z serwera ściągając nowe rewizje.</p>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Ktoś wypycha rewizje po operacji zmiany bazy" width="porzucając rewizje" height="na których ty oparłeś swoje zmiany.">
+<img src="{{< relurl "book/pl/v2/images/perils-of-rebasing-3.png" >}}" alt="Ktoś wypycha rewizje po operacji zmiany bazy" width="porzucając rewizje" height="na których ty oparłeś swoje zmiany.">
 </div>
 <div class="title">Figure 46. Ktoś wypycha rewizje po operacji zmiany bazy, porzucając rewizje, na których ty oparłeś swoje zmiany</div>
 </div>
@@ -243,7 +243,7 @@ Jeśli wykonasz <code>git pull</code>, utworzysz rewizję scalającą, która b�
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="Scalasz tą samą pracę raz jeszcze tworząc nową rewizję scalającą.">
+<img src="{{< relurl "book/pl/v2/images/perils-of-rebasing-4.png" >}}" alt="Scalasz tą samą pracę raz jeszcze tworząc nową rewizję scalającą.">
 </div>
 <div class="title">Figure 47. Scalasz tą samą pracę raz jeszcze tworząc nową rewizję scalającą</div>
 </div>
@@ -265,7 +265,7 @@ Można bezpiecznie przyjąć, że drugi deweloper nie chce, aby <code>C4</code> 
 <p>If you pull down work that was rewritten and rebase it on top of the new commits from your partner, Git can often successfully figure out what is uniquely yours and apply them back on top of the new branch.</p>
 </div>
 <div class="paragraph">
-<p>For instance, in the previous scenario, if instead of doing a merge when we’re at <a href="ch00/_pre_merge_rebase_work">Ktoś wypycha rewizje po operacji zmiany bazy, porzucając rewizje, na których ty oparłeś swoje zmiany</a> we run <code>git rebase teamone/master</code>, Git will:</p>
+<p>For instance, in the previous scenario, if instead of doing a merge when we’re at <a href="{{< relurl "book/pl/v2/ch00/_pre_merge_rebase_work" >}}">Ktoś wypycha rewizje po operacji zmiany bazy, porzucając rewizje, na których ty oparłeś swoje zmiany</a> we run <code>git rebase teamone/master</code>, Git will:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -284,11 +284,11 @@ Można bezpiecznie przyjąć, że drugi deweloper nie chce, aby <code>C4</code> 
 </ul>
 </div>
 <div class="paragraph">
-<p>So instead of the result we see in <a href="ch00/_merge_rebase_work">Scalasz tą samą pracę raz jeszcze tworząc nową rewizję scalającą</a>, we would end up with something more like <a href="ch00/_rebase_rebase_work">Rebase on top of force-pushed rebase work.</a>.</p>
+<p>So instead of the result we see in <a href="{{< relurl "book/pl/v2/ch00/_merge_rebase_work" >}}">Scalasz tą samą pracę raz jeszcze tworząc nową rewizję scalającą</a>, we would end up with something more like <a href="{{< relurl "book/pl/v2/ch00/_rebase_rebase_work" >}}">Rebase on top of force-pushed rebase work.</a>.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Rebase on top of force-pushed rebase work.">
+<img src="{{< relurl "book/pl/v2/images/perils-of-rebasing-5.png" >}}" alt="Rebase on top of force-pushed rebase work.">
 </div>
 <div class="title">Figure 48. Rebase on top of force-pushed rebase work.</div>
 </div>

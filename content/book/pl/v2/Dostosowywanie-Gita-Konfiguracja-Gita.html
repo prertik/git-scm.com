@@ -23,7 +23,7 @@ Przy pomocy tych narzędzi, łatwo można spowodować, aby Git działał w dokł
 <h2 id="_git_config">Konfiguracja Gita</h2>
 <div class="paragraph">
 <p>
-Jak w skrócie zobaczyłeś w rozdziale <a href="ch00/_getting_started">Pierwsze kroki</a>, możesz zmieniać ustawienia konfiguracyjne za pomocą komendy <code>git config</code>
+Jak w skrócie zobaczyłeś w rozdziale <a href="{{< relurl "book/pl/v2/ch00/_getting_started" >}}">Pierwsze kroki</a>, możesz zmieniać ustawienia konfiguracyjne za pomocą komendy <code>git config</code>
  Jedną z pierwszych rzeczy którą zrobiłeś, było ustawienie imienia i adresu e-mail:</p>
 </div>
 <div class="listingblock">
@@ -172,7 +172,7 @@ Możesz ustawić tutaj <code>more</code> lub swój inny ulubiony program (domyś
 <h4 id="_user_signingkey"><code>user.signingkey</code></h4>
 <div class="paragraph">
 <p>
-Jeżeli tworzysz opisane etykiety (jak opisano w sekcji <a href="ch00/_signing">Signing Your Work</a>), ustawienie Twojego klucza GPG jako zmiennej konfiguracyjnej ułatwi trochę sprawę.
+Jeżeli tworzysz opisane etykiety (jak opisano w sekcji <a href="{{< relurl "book/pl/v2/ch00/_signing" >}}">Signing Your Work</a>), ustawienie Twojego klucza GPG jako zmiennej konfiguracyjnej ułatwi trochę sprawę.
 Ustaw swój identyfikator klucza w ten sposób:</p>
 </div>
 <div class="listingblock">
@@ -193,7 +193,7 @@ Ustaw swój identyfikator klucza w ten sposób:</p>
 <h4 id="_core_excludesfile"><code>core.excludesfile</code></h4>
 <div class="paragraph">
 <p>
-Możesz umieścić wzorce w pliku <code>.gitignore</code> w swoim projekcie, aby Git nie śledził ich i nie próbował dodawać do przechowalni po wykonaniu komendy <code>git add</code>, jak wspomnieliśmy już w sekcji <a href="ch00/_ignoring">Ignorowanie plików</a>.</p>
+Możesz umieścić wzorce w pliku <code>.gitignore</code> w swoim projekcie, aby Git nie śledził ich i nie próbował dodawać do przechowalni po wykonaniu komendy <code>git add</code>, jak wspomnieliśmy już w sekcji <a href="{{< relurl "book/pl/v2/ch00/_ignoring" >}}">Ignorowanie plików</a>.</p>
 </div>
 <div class="paragraph">
 <p>Czasami jednak chcesz zignorować pewne pliki dla wszystkich repozytoriów, z którymi pracujesz.
@@ -398,7 +398,7 @@ $ git config --global diff.external extDiff</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/p4merge.png" >}}" alt="P4Merge.">
+<img src="{{< relurl "book/pl/v2/images/p4merge.png" >}}" alt="P4Merge.">
 </div>
 <div class="title">Figure 143. P4Merge.</div>
 </div>
@@ -613,7 +613,7 @@ To avoid this, set <code>receive.denyDeletes</code> to true:</p>
 <div class="paragraph">
 <p>This denies any deletion of branches or tags – no user can do it.
 To remove remote branches, you must remove the ref files from the server manually.
-There are also more interesting ways to do this on a per-user basis via ACLs, as you’ll learn in <a href="ch00/_an_example_git_enforced_policy">An Example Git-Enforced Policy</a>.</p>
+There are also more interesting ways to do this on a per-user basis via ACLs, as you’ll learn in <a href="{{< relurl "book/pl/v2/ch00/_an_example_git_enforced_policy" >}}">An Example Git-Enforced Policy</a>.</p>
 </div>
 </div>
 </div>

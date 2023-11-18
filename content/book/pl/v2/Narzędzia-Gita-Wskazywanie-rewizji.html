@@ -137,7 +137,7 @@ $ git show topic1</code></pre>
 </div>
 <div class="paragraph">
 <p>Jeżeli chciałbyś zobaczyć, na jaką sumę SHA-1 wskazuje dana gałąź, lub jeżeli chcesz zobaczyć na jaką sumę SHA-1 każdy z tych przykładów się rozwiązuje, możesz użyć komendy <code>rev-parse</code>.
-Możesz zobaczyć również rozdział <a href="ch00/_git_internals">Mechanizmy wewnętrzne w Git</a>, aby dowiedzieć się o tym narzędziu więcej; zasadniczo <code>rev-parse</code> wykonuje operacje niskopoziomowo i nie jest stworzony do codziennej pracy.
+Możesz zobaczyć również rozdział <a href="{{< relurl "book/pl/v2/ch00/_git_internals" >}}">Mechanizmy wewnętrzne w Git</a>, aby dowiedzieć się o tym narzędziu więcej; zasadniczo <code>rev-parse</code> wykonuje operacje niskopoziomowo i nie jest stworzony do codziennej pracy.
 Jednakże potrafi być czasami przydatny, jeżeli musisz zobaczyć co tak naprawdę się dzieje.
 Możesz teraz wywołać <code>rev-parse</code> na swojej gałęzi.</p>
 </div>
@@ -320,11 +320,11 @@ Jest to szczególnie przydatne podczas zarządzania gałęziami – w sytuacji, 
 <div class="paragraph">
 <p>Najczęściej używaną składnią wskazywania zakresu zmian jest podwójna kropka.
 Mówi ona Gitowi, aby rozwinął zakres zmian które są osiągalne z pierwszego commitu, ale nie są z drugiego.
-Na przykład, załóżmy że masz historię zmian która wygląda tak jak na <a href="ch00/double_dot">Przykładowa historia dla wskazania zakresu zmian.</a>.</p>
+Na przykład, załóżmy że masz historię zmian która wygląda tak jak na <a href="{{< relurl "book/pl/v2/ch00/double_dot" >}}">Przykładowa historia dla wskazania zakresu zmian.</a>.</p>
 </div>
 <div id="double_dot" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/double-dot.png" >}}" alt="Przykładowa historia dla wskazania zakresu zmian.">
+<img src="{{< relurl "book/pl/v2/images/double-dot.png" >}}" alt="Przykładowa historia dla wskazania zakresu zmian.">
 </div>
 <div class="title">Figure 137. Przykładowa historia dla wskazania zakresu zmian.</div>
 </div>
@@ -399,7 +399,7 @@ $ git log refA refB --not refC</code></pre>
 <h4 id="_triple_dot">Potrójna kropka</h4>
 <div class="paragraph">
 <p>Ostatnią z głównych składni zakresu jest składnia z trzema kropkami, która wskazuje na wszystkie zmiany które są dostępne z jednej z dwóch referencji, ale nie z obu.
-Spójrz ponownie na przykład z historią zmian na <a href="ch00/double_dot">Przykładowa historia dla wskazania zakresu zmian.</a>.
+Spójrz ponownie na przykład z historią zmian na <a href="{{< relurl "book/pl/v2/ch00/double_dot" >}}">Przykładowa historia dla wskazania zakresu zmian.</a>.
 Jeżeli chcesz zobaczyć co jest zmienione w <code>master</code> lub <code>experiment</code>, poza wspólnymi, możesz uruchomić:</p>
 </div>
 <div class="listingblock">

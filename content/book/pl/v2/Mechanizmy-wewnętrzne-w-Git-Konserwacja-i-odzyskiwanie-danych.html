@@ -124,7 +124,7 @@ Najtrudniejsze jest znalezienie ostatniej sumy SHA-1 – przecież nie zapamięt
 <p>Często, najszybszym sposobem jest użycie narzędzia <code>git reflog</code>.
 W czasie pracy, Git w tle zapisuje na co wskazuje HEAD po każdej zmianie.
 Za każdym razem gdy wykonujesz commit lub zmieniasz gałęzie, reflog jest aktualizowany.
-Reflog jest również aktualizowany przez komendę <code>git update-ref</code>, co jest kolejnym argumentem za tym, aby jej używać zamiast zapisywać bezpośrednio wartości SHA-1 do plików ref, tak jak zostało to opisane wcześniej w sekcji <a href="ch00/_git_refs">Referencje w Git</a>.
+Reflog jest również aktualizowany przez komendę <code>git update-ref</code>, co jest kolejnym argumentem za tym, aby jej używać zamiast zapisywać bezpośrednio wartości SHA-1 do plików ref, tak jak zostało to opisane wcześniej w sekcji <a href="{{< relurl "book/pl/v2/ch00/_git_refs" >}}">Referencje w Git</a>.
 Możesz zobaczyć na jakim etapie był projekt w każdym momencie za pomocą komendy <code>git reflog</code>:</p>
 </div>
 <div class="listingblock">
@@ -306,7 +306,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>Duży obiekt jest na samym dole: 5MB.
-Aby dowiedzieć się jaki to jest plik, użyjesz komendy <code>rev-list</code>, której miałeś okazję już poznać w sekcji <a href="ch00/_enforcing_commit_message_format">Enforcing a Specific Commit-Message Format</a>.
+Aby dowiedzieć się jaki to jest plik, użyjesz komendy <code>rev-list</code>, której miałeś okazję już poznać w sekcji <a href="{{< relurl "book/pl/v2/ch00/_enforcing_commit_message_format" >}}">Enforcing a Specific Commit-Message Format</a>.
 Jeżeli przekażesz opcję <code>--objects</code> do <code>rev-list</code>, w wyniku pokazane zostaną sumy SHA-1 commitów oraz obiektów blob z przyporządkowanymi do nich nazwami plików.
 Możesz użyć tej komendy, aby odnaleźć nazwę obiektu blob:</p>
 </div>
@@ -329,7 +329,7 @@ dadf725 oops - removed large tarball
 </div>
 <div class="paragraph">
 <p>Musisz nadpisać wszystkie commity starsze niż <code>7b30847</code>, aby w pełni usunąć ten plik z historii projektu w Git.
-Aby to zrobić, użyjesz komendy <code>filter-branch</code>, poznanej w sekcji <a href="ch00/_rewriting_history">Przepisywanie historii</a>:</p>
+Aby to zrobić, użyjesz komendy <code>filter-branch</code>, poznanej w sekcji <a href="{{< relurl "book/pl/v2/ch00/_rewriting_history" >}}">Przepisywanie historii</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -341,7 +341,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Opcja <code>--index-filter</code> jest podobna do opcji <code>--tree-filter</code> opisanej w sekcji <a href="ch00/_rewriting_history">Przepisywanie historii</a>, z tą różnicą, że zamiast przekazywać komendę, która modyfikuje pobrane pliki na dysku, modyfikuje przechowalnię lub indeks za każdym razem.</p>
+<p>Opcja <code>--index-filter</code> jest podobna do opcji <code>--tree-filter</code> opisanej w sekcji <a href="{{< relurl "book/pl/v2/ch00/_rewriting_history" >}}">Przepisywanie historii</a>, z tą różnicą, że zamiast przekazywać komendę, która modyfikuje pobrane pliki na dysku, modyfikuje przechowalnię lub indeks za każdym razem.</p>
 </div>
 <div class="paragraph">
 <p>Zamiast usuwać konkretny plik za pomocą <code>rm file</code>, musisz usunąć go za pomocą <code>git rm --cached</code> – musisz usunąć go z indeksu, nie z dysku.

@@ -64,7 +64,7 @@ Np. aby sklonować lokalne repozytorium możesz wywołać polecenie podobne do p
 <p>Git działa odrobinę inaczej, gdy jawnie użyjesz przedrostka <code>file://</code> w adresie URL.
 Jeśli podasz samą ścieżkę, Git spróbuje użyć twardych linków albo po prostu skopiować potrzebne pliki.
 Jeśli podasz <code>file://</code>, Git uruchomi procesy normalnie wykorzystane do transferu sieciowego, co zwykle jest znacznie mniej efektywną metodą przesyłania danych.
-Głównym powodem podawania przedrostka <code>file://</code> jest chęć posiadania czystej kopii repozytorium bez niepotrzebnych referencji, czy obiektów, które zwykle powstają po zaimportowaniu repozytorium z innego systemu kontroli wersji (rozdział <a href="ch00/_git_internals">Mechanizmy wewnętrzne w Git</a> zawiera informacje na temat zadań administracyjnych).
+Głównym powodem podawania przedrostka <code>file://</code> jest chęć posiadania czystej kopii repozytorium bez niepotrzebnych referencji, czy obiektów, które zwykle powstają po zaimportowaniu repozytorium z innego systemu kontroli wersji (rozdział <a href="{{< relurl "book/pl/v2/ch00/_git_internals" >}}">Mechanizmy wewnętrzne w Git</a> zawiera informacje na temat zadań administracyjnych).
 Tutaj skorzystamy ze zwykłej ścieżki do katalogu, ponieważ prawie zawsze tak będzie szybciej.</p>
 </div>
 <div class="paragraph">
@@ -84,7 +84,7 @@ Tutaj skorzystamy ze zwykłej ścieżki do katalogu, ponieważ prawie zawsze tak
 <p>Zaletą plikowego repozytorium jest prostota i możliwość skorzystania z istniejących uprawnień plikowych i sieciowych.
 Jeśli już posiadasz współdzielony sieciowy system plików, do którego Twój zespół posiada dostęp, konfiguracja takiego repozytorium jest bardzo prosta.
 Umieszczasz kopię czystego repozytorium w miejscu, do którego każdy zainteresowany ma dostęp i ustawiasz prawa odczytu/zapisu tak samo jak do każdego innego współdzielonego zasobu.
-Informacja o tym jak w tym celu wyeksportować czyste repozytorium znajduje się w następnej części <a href="ch00/_git_on_the_server">Uruchomienie Git na serwerze</a>.</p>
+Informacja o tym jak w tym celu wyeksportować czyste repozytorium znajduje się w następnej części <a href="{{< relurl "book/pl/v2/ch00/_git_on_the_server" >}}">Uruchomienie Git na serwerze</a>.</p>
 </div>
 <div class="paragraph">
 <p>Opcja ta jest interesująca także w przypadku, gdy chcemy szybko pobrać zmiany z czyjegoś repozytorium.
@@ -135,7 +135,7 @@ The “smart” HTTP protocol operates very similarly to the SSH or Git protocol
 Jeśli serwer nie odpowie usługą Git HTTP <em>smart</em>, to klient Git będzie próbował powrócić do prostszego protokołu HTTP <em>dumb</em> (z ang. głupi).
 Protokół <em>dumb</em> oczekuje, że czyste repozytorium Git będzie obsługiwane jak normalne pliki z serwera WWW.
 Piękno tego protokołu polega na prostocie jego konfiguracji.
-Zwykle wystarczy umieścić czyste repozytorium Git poniżej katalogu głównego WWW oraz skonfigurować specjalny hook <code>post-update</code> i…​ to tyle (por. rozdział <a href="ch00/_git_hooks">Git Hooks</a>).
+Zwykle wystarczy umieścić czyste repozytorium Git poniżej katalogu głównego WWW oraz skonfigurować specjalny hook <code>post-update</code> i…​ to tyle (por. rozdział <a href="{{< relurl "book/pl/v2/ch00/_git_hooks" >}}">Git Hooks</a>).
 Od tej chwili każdy, kto posiada dostęp do serwera WWW, w którym umieściłeś repozytorium może je sklonować.
 Aby umożliwić dostęp tylko do odczytu przez HTTP, wykonaj coś takiego:</p>
 </div>
@@ -160,7 +160,7 @@ To polecenie wykonywane jest, gdy do repozytorium pchasz dane (prawdopodobnie po
 </div>
 <div class="paragraph">
 <p>W tym konkretnym przypadku korzystamy ze ścieżki <code>/var/www/htdocs</code>, która jest standardowa dla serwera Apache, ale można skorzystać z dowolnego statycznego serwera WWW – wystarczy umieścić w nim czyste repozytorium.
-Dane Git udostępniane są jako proste pliki statyczne (rozdział <a href="ch00/_git_internals">Mechanizmy wewnętrzne w Git</a> zawiera więcej szczegółów na temat udostępniania danych w ten sposób).</p>
+Dane Git udostępniane są jako proste pliki statyczne (rozdział <a href="{{< relurl "book/pl/v2/ch00/_git_internals" >}}">Mechanizmy wewnętrzne w Git</a> zawiera więcej szczegółów na temat udostępniania danych w ten sposób).</p>
 </div>
 <div class="paragraph">
 <p>Ogólnie rzecz biorąc, można albo uruchomić serwer HTTP w trybie <em>smart</em> z możliwością odczytu/zapisu, albo po prostu udostępnić pliki tylko do odczytu w trybie <em>dumb</em>. Rzadko się zdarza, aby trzeba było uruchomić dwie takie usługi jednocześnie.</p>
@@ -191,7 +191,7 @@ It is also a very fast and efficient protocol, similar to the SSH one.</p>
 Other than that, there is very little advantage that other protocols have over the “Smart” HTTP protocol for serving Git.</p>
 </div>
 <div class="paragraph">
-<p>If you’re using HTTP for authenticated pushing, providing your credentials is sometimes more complicated than using keys over SSH. There are however several credential caching tools you can use, including Keychain access on OSX and Credential Manager on Windows, to make this pretty painless. Read <a href="ch00/_credential_caching">Credential Storage</a> to see how to set up secure HTTP password caching on your system.</p>
+<p>If you’re using HTTP for authenticated pushing, providing your credentials is sometimes more complicated than using keys over SSH. There are however several credential caching tools you can use, including Keychain access on OSX and Credential Manager on Windows, to make this pretty painless. Read <a href="{{< relurl "book/pl/v2/ch00/_credential_caching" >}}">Credential Storage</a> to see how to set up secure HTTP password caching on your system.</p>
 </div>
 </div>
 </div>

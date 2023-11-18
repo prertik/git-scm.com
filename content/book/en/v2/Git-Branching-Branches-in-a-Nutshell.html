@@ -30,7 +30,7 @@ Understanding and mastering this feature gives you a powerful and unique tool an
 <p>To really understand the way Git does branching, we need to take a step back and examine how Git stores its data.</p>
 </div>
 <div class="paragraph">
-<p>As you may remember from <a href="ch00/what_is_git_section">What is Git?</a>, Git doesn’t store data as a series of changesets or differences, but instead as a series of <em>snapshots</em>.</p>
+<p>As you may remember from <a href="{{< relurl "book/en/v2/ch00/what_is_git_section" >}}">What is Git?</a>, Git doesn’t store data as a series of changesets or differences, but instead as a series of <em>snapshots</em>.</p>
 </div>
 <div class="paragraph">
 <p>When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged.
@@ -38,7 +38,7 @@ This object also contains the author’s name and email address, the message tha
 </div>
 <div class="paragraph">
 <p>To visualize this, let’s assume that you have a directory containing three files, and you stage them all and commit.
-Staging the files computes a checksum for each one (the SHA-1 hash we mentioned in <a href="ch00/what_is_git_section">What is Git?</a>), stores that version of the file in the Git repository (Git refers to them as <em>blobs</em>), and adds that checksum to the staging area:</p>
+Staging the files computes a checksum for each one (the SHA-1 hash we mentioned in <a href="{{< relurl "book/en/v2/ch00/what_is_git_section" >}}">What is Git?</a>), stores that version of the file in the Git repository (Git refers to them as <em>blobs</em>), and adds that checksum to the staging area:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -258,7 +258,7 @@ $ git commit -a -m 'Make other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Now your project history has diverged (see <a href="ch00/divergent_history">Divergent history</a>).
+<p>Now your project history has diverged (see <a href="{{< relurl "book/en/v2/ch00/divergent_history" >}}">Divergent history</a>).
 You created and switched to a branch, did some work on it, and then switched back to your main branch and did other work.
 Both of those changes are isolated in separate branches: you can switch back and forth between the branches and merge them together when you’re ready.
 And you did all that with simple <code>branch</code>, <code>checkout</code>, and <code>commit</code> commands.</p>

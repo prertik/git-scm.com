@@ -64,7 +64,7 @@ For example, to clone a local repository, you can run something like this:</p>
 <p>Git operates slightly differently if you explicitly specify <code>file://</code> at the beginning of the URL.
 If you just specify the path, Git tries to use hardlinks or directly copy the files it needs.
 If you specify <code>file://</code>, Git fires up the processes that it normally uses to transfer data over a network, which is generally much less efficient.
-The main reason to specify the <code>file://</code> prefix is if you want a clean copy of the repository with extraneous references or objects left out — generally after an import from another VCS or something similar (see <a href="ch00/ch10-git-internals">Git Internals</a> for maintenance tasks).
+The main reason to specify the <code>file://</code> prefix is if you want a clean copy of the repository with extraneous references or objects left out — generally after an import from another VCS or something similar (see <a href="{{< relurl "book/en/v2/ch00/ch10-git-internals" >}}">Git Internals</a> for maintenance tasks).
 We’ll use the normal path here because doing so is almost always faster.</p>
 </div>
 <div class="paragraph">
@@ -84,7 +84,7 @@ We’ll use the normal path here because doing so is almost always faster.</p>
 <p>The pros of file-based repositories are that they’re simple and they use existing file permissions and network access.
 If you already have a shared filesystem to which your whole team has access, setting up a repository is very easy.
 You stick the bare repository copy somewhere everyone has shared access to and set the read/write permissions as you would for any other shared directory.
-We’ll discuss how to export a bare repository copy for this purpose in <a href="ch00/_getting_git_on_a_server">Getting Git on a Server</a>.</p>
+We’ll discuss how to export a bare repository copy for this purpose in <a href="{{< relurl "book/en/v2/ch00/_getting_git_on_a_server" >}}">Getting Git on a Server</a>.</p>
 </div>
 <div class="paragraph">
 <p>This is also a nice option for quickly grabbing work from someone else’s working repository.
@@ -141,7 +141,7 @@ The same goes for read access.</p>
 If the server does not respond with a Git HTTP smart service, the Git client will try to fall back to the simpler <em>Dumb</em> HTTP protocol.
 The Dumb protocol expects the bare Git repository to be served like normal files from the web server.
 The beauty of Dumb HTTP is the simplicity of setting it up.
-Basically, all you have to do is put a bare Git repository under your HTTP document root and set up a specific <code>post-update</code> hook, and you’re done (see <a href="ch00/_git_hooks">Git Hooks</a>).
+Basically, all you have to do is put a bare Git repository under your HTTP document root and set up a specific <code>post-update</code> hook, and you’re done (see <a href="{{< relurl "book/en/v2/ch00/_git_hooks" >}}">Git Hooks</a>).
 At that point, anyone who can access the web server under which you put the repository can also clone your repository.
 To allow read access to your repository over HTTP, do something like this:</p>
 </div>
@@ -166,7 +166,7 @@ This command is run when you push to this repository (over SSH perhaps); then, o
 </div>
 <div class="paragraph">
 <p>In this particular case, we’re using the <code>/var/www/htdocs</code> path that is common for Apache setups, but you can use any static web server — just put the bare repository in its path.
-The Git data is served as basic static files (see the <a href="ch00/ch10-git-internals">Git Internals</a> chapter for details about exactly how it’s served).</p>
+The Git data is served as basic static files (see the <a href="{{< relurl "book/en/v2/ch00/ch10-git-internals" >}}">Git Internals</a> chapter for details about exactly how it’s served).</p>
 </div>
 <div class="paragraph">
 <p>Generally you would either choose to run a read/write Smart HTTP server or simply have the files accessible as read-only in the Dumb manner.
@@ -200,7 +200,7 @@ Other than that, there is very little advantage that other protocols have over S
 <div class="paragraph">
 <p>If you’re using HTTP for authenticated pushing, providing your credentials is sometimes more complicated than using keys over SSH.
 There are, however, several credential caching tools you can use, including Keychain access on macOS and Credential Manager on Windows, to make this pretty painless.
-Read <a href="ch00/_credential_caching">Credential Storage</a> to see how to set up secure HTTP password caching on your system.</p>
+Read <a href="{{< relurl "book/en/v2/ch00/_credential_caching" >}}">Credential Storage</a> to see how to set up secure HTTP password caching on your system.</p>
 </div>
 </div>
 </div>

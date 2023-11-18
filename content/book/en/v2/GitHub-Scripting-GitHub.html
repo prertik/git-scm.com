@@ -35,7 +35,7 @@ In this section we’ll cover how to use the GitHub hooks system and its API to 
 <div class="paragraph">
 <p>First we’ll take a look at Services.
 Both the Hooks and Services integrations can be found in the Settings section of your repository, where we previously looked at adding Collaborators and changing the default branch of your project.
-Under the “Webhooks and Services” tab you will see something like <a href="ch00/_services_hooks">Services and Hooks configuration section</a>.</p>
+Under the “Webhooks and Services” tab you will see something like <a href="{{< relurl "book/en/v2/ch00/_services_hooks" >}}">Services and Hooks configuration section</a>.</p>
 </div>
 <div id="_services_hooks" class="imageblock">
 <div class="content">
@@ -47,7 +47,7 @@ Under the “Webhooks and Services” tab you will see something like <a href="c
 <p>There are dozens of services you can choose from, most of them integrations into other commercial and open source systems.
 Most of them are for Continuous Integration services, bug and issue trackers, chat room systems and documentation systems.
 We’ll walk through setting up a very simple one, the Email hook.
-If you choose “email” from the “Add Service” dropdown, you’ll get a configuration screen like <a href="ch00/_service_config">Email service configuration</a>.</p>
+If you choose “email” from the “Add Service” dropdown, you’ll get a configuration screen like <a href="{{< relurl "book/en/v2/ch00/_service_config" >}}">Email service configuration</a>.</p>
 </div>
 <div id="_service_config" class="imageblock">
 <div class="content">
@@ -75,8 +75,8 @@ You specify a URL and GitHub will post an HTTP payload to that URL on any event 
 <p>Generally the way this works is you can setup a small web service to listen for a GitHub hook payload and then do something with the data when it is received.</p>
 </div>
 <div class="paragraph">
-<p>To enable a hook, you click the “Add webhook” button in <a href="ch00/_services_hooks">Services and Hooks configuration section</a>.
-This will bring you to a page that looks like <a href="ch00/_web_hook">Web hook configuration</a>.</p>
+<p>To enable a hook, you click the “Add webhook” button in <a href="{{< relurl "book/en/v2/ch00/_services_hooks" >}}">Services and Hooks configuration section</a>.
+This will bring you to a page that looks like <a href="{{< relurl "book/en/v2/ch00/_web_hook" >}}">Web hook configuration</a>.</p>
 </div>
 <div id="_web_hook" class="imageblock">
 <div class="content">
@@ -275,7 +275,7 @@ To do so we have to do an HTTP POST request to <code>repos/&lt;user&gt;/&lt;repo
 </div>
 </div>
 <div class="paragraph">
-<p>Now if you go to that issue, you can see the comment that we just successfully posted as in <a href="ch00/_api_comment">A comment posted from the GitHub API</a>.</p>
+<p>Now if you go to that issue, you can see the comment that we just successfully posted as in <a href="{{< relurl "book/en/v2/ch00/_api_comment" >}}">A comment posted from the GitHub API</a>.</p>
 </div>
 <div id="_api_comment" class="imageblock">
 <div class="content">
@@ -352,7 +352,7 @@ In this web hook handler we look through each commit that was just pushed, we lo
 For example, a testing service may provide a status and a validation service like this may also provide a status — the “context” field is how they’re differentiated.</p>
 </div>
 <div class="paragraph">
-<p>If someone opens a new Pull Request on GitHub and this hook is set up, you may see something like <a href="ch00/_commit_status">Commit status via the API</a>.</p>
+<p>If someone opens a new Pull Request on GitHub and this hook is set up, you may see something like <a href="{{< relurl "book/en/v2/ch00/_commit_status" >}}">Commit status via the API</a>.</p>
 </div>
 <div id="_commit_status" class="imageblock">
 <div class="content">

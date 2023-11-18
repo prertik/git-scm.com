@@ -59,7 +59,7 @@ Bunun əvəzinə <code>git clone -o booyah</code> işlədirsinizsə, standart uz
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Klonlamadan sonra server və local depo.">
+<img src="{{< relurl "book/az/v2/images/remote-branches-1.png" >}}" alt="Klonlamadan sonra server və local depo.">
 </div>
 <div class="title">Figure 30. Klonlamadan sonra server və local depo</div>
 </div>
@@ -69,7 +69,7 @@ Ayrıca, <code>origin</code> serverinizlə əlaqədən kənarda qaldığınız m
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Local və uzaqdan iş bir-birindən ayrıla bilər">
+<img src="{{< relurl "book/az/v2/images/remote-branches-2.png" >}}" alt="Local və uzaqdan iş bir-birindən ayrıla bilər">
 </div>
 <div class="title">Figure 31. Local və uzaqdan iş bir-birindən ayrıla bilər</div>
 </div>
@@ -79,19 +79,19 @@ Bu əmr “origin” hansı server olduğunu (bu vəziyyətdə bu  <code>git.our
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` uzaqdan izləyən branch-ları yeniləyir">
+<img src="{{< relurl "book/az/v2/images/remote-branches-3.png" >}}" alt="`git fetch` uzaqdan izləyən branch-ları yeniləyir">
 </div>
 <div class="title">Figure 32. <code>git fetch</code> uzaqdan izləyən branch-ları yeniləyir</div>
 </div>
 <div class="paragraph">
 <p>Fərz edək ki, çoxsaylı uzaq serverlərin olduğunu və bu uzaq layihələr üçün hansı uzaq filialların göründüyünü göstərmək üçün yalnız sprint komandalarınızdan birinin inkişafı üçün istifadə olunan başqa bir daxili Git serveriniz var.
 Bu server <code>git.team1.ourcompany.com</code>-dadır.
-Bunu <a href="ch00/ch02-git-basics-chapter">Git’in Əsasları</a> bəhs etdiyimiz kimi <code>git remote add</code> əmrini işlədərək hazırladığınız layihəyə yeni bir uzaq istinad kimi əlavə edə bilərsiniz.
+Bunu <a href="{{< relurl "book/az/v2/ch00/ch02-git-basics-chapter" >}}">Git’in Əsasları</a> bəhs etdiyimiz kimi <code>git remote add</code> əmrini işlədərək hazırladığınız layihəyə yeni bir uzaq istinad kimi əlavə edə bilərsiniz.
 Bütün bu URL üçün qısa ad olacaq bu uzaq "teamone" adlandırın.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Uzaqdan başqa serverin əlavə edilməsi">
+<img src="{{< relurl "book/az/v2/images/remote-branches-4.png" >}}" alt="Uzaqdan başqa serverin əlavə edilməsi">
 </div>
 <div class="title">Figure 33. Uzaqdan başqa serverin əlavə edilməsi</div>
 </div>
@@ -101,7 +101,7 @@ Bütün bu URL üçün qısa ad olacaq bu uzaq "teamone" adlandırın.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="`teamone/master` üçün uzaqdan izləmə filialı">
+<img src="{{< relurl "book/az/v2/images/remote-branches-5.png" >}}" alt="`teamone/master` üçün uzaqdan izləmə filialı">
 </div>
 <div class="title">Figure 34. <code>teamone/master</code> üçün uzaqdan izləmə filialı</div>
 </div>
@@ -132,7 +132,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Bu bir az qısa yoldur.
 Git avtomatik olaraq <code>serverfix</code> branch adını <code>refs/heads/serverfix:refs/heads/serverfix</code> olaraq genişləndirir. Bu o deməkdir ki, “Take my <code>serverfix</code> local branch and push it to update the remote’s <code>serverfix</code> branch.”
-<code>refs/heads/</code> hissəsini detallı <a href="ch00/ch10-git-internals">Git’in Daxili İşləri</a> üzərində keçəcəyik, ümumiyyətlə onu bağlıya da bilərsiniz.
+<code>refs/heads/</code> hissəsini detallı <a href="{{< relurl "book/az/v2/ch00/ch10-git-internals" >}}">Git’in Daxili İşləri</a> üzərində keçəcəyik, ümumiyyətlə onu bağlıya da bilərsiniz.
 Eyni şeyi <code>git push origin serverfix:serverfix</code>-də edə bilərsiniz — “Take my serverfix and make it the remote’s serverfix.”
 Local bir branch-ı fərqli adlandırılan uzaq bir brancha-a push etmək üçün bu formatdan istifadə edə bilərsiniz.
 Uzaqdan <code>serverfix</code> adlandırılmasını istəməsəniz, local <code>serverfix</code> branch-nı uzaq layihədəki <code>awesomebranch</code> branch-a push etmək üçün <code>git push origin serverfix:awesomebranch</code> işlətmək olar.</p>
@@ -154,7 +154,7 @@ Varsayılan olaraq, bu məlumat üçün terminalda ad və şifrənizi soruşacaq
 Ən sadə, onu <code>git config --global credential.helper cache</code> ilə asanlıqla qurub bir neçə dəqiqə ərzində yaddaşda saxlamaqdır.</p>
 </div>
 <div class="paragraph">
-<p>Daha çox məlumat üçün <a href="ch00/_credential_caching">Etibarlı Yaddaş</a>-ə bax.</p>
+<p>Daha çox məlumat üçün <a href="{{< relurl "book/az/v2/ch00/_credential_caching" >}}">Etibarlı Yaddaş</a>-ə bax.</p>
 </div>
 </td>
 </tr>

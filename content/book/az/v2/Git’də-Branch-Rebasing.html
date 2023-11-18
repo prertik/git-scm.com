@@ -26,11 +26,11 @@ Bu bölmədə rebase-in nə olduğunu, bunu necə edəcəyinizi, niyə olduqca g
 <div class="sect3">
 <h3 id="_sadə_rebase">Sadə Rebase</h3>
 <div class="paragraph">
-<p>Əvvəlki bir nümunəyə qayıtsanız <a href="ch00/_basic_merging">Sadə Birləşdirmə</a>, işinizi bölüşdürdüyünüzü və iki fərqli branch-da qərar verdiyinizi görə bilərsiniz.</p>
+<p>Əvvəlki bir nümunəyə qayıtsanız <a href="{{< relurl "book/az/v2/ch00/_basic_merging" >}}">Sadə Birləşdirmə</a>, işinizi bölüşdürdüyünüzü və iki fərqli branch-da qərar verdiyinizi görə bilərsiniz.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Sadə fikri ayrılığı">
+<img src="{{< relurl "book/az/v2/images/basic-rebase-1.png" >}}" alt="Sadə fikri ayrılığı">
 </div>
 <div class="title">Figure 35. Sadə fikri ayrılığı</div>
 </div>
@@ -40,7 +40,7 @@ Bu bölmədə rebase-in nə olduğunu, bunu necə edəcəyinizi, niyə olduqca g
 </div>
 <div id="rebasing-merging-example" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Ayrılmış iş tarixini inteqrasiya etmək üçün birləştirmək">
+<img src="{{< relurl "book/az/v2/images/basic-rebase-2.png" >}}" alt="Ayrılmış iş tarixini inteqrasiya etmək üçün birləştirmək">
 </div>
 <div class="title">Figure 36. Ayrılmış iş tarixini inteqrasiya etmək üçün birləştirmək</div>
 </div>
@@ -65,7 +65,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="`C4`də `C3`-ə edilən dəyişikliyin rebasing edilməsi">
+<img src="{{< relurl "book/az/v2/images/basic-rebase-3.png" >}}" alt="`C4`də `C3`-ə edilən dəyişikliyin rebasing edilməsi">
 </div>
 <div class="title">Figure 37. <code>C4`də `C3</code>-ə edilən dəyişikliyin rebasing edilməsi</div>
 </div>
@@ -80,12 +80,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Sürətli irəliləyən `master` branch-ı">
+<img src="{{< relurl "book/az/v2/images/basic-rebase-4.png" >}}" alt="Sürətli irəliləyən `master` branch-ı">
 </div>
 <div class="title">Figure 38. Sürətli irəliləyən <code>master</code> branch-ı</div>
 </div>
 <div class="paragraph">
-<p>İndi <code>C4</code>-ün işarələdiyi snapshot &lt;<a href="ch00/rebasing-merging-example">the merge example</a>-də <code>C5</code> ilə işarələnmiş snapshotla eynidir.
+<p>İndi <code>C4</code>-ün işarələdiyi snapshot &lt;<a href="{{< relurl "book/az/v2/ch00/rebasing-merging-example" >}}">the merge example</a>-də <code>C5</code> ilə işarələnmiş snapshotla eynidir.
 İnteqrasiyanın son məhsulu arasında heç bir fərq yoxdur, lakin rebasing daha təmiz bir tarix yaradır.
 Rebase edilmiş bir branch-ın log-larını araşdırsanız, xətti bir tarixə bənzəyir: görünür ki, bütün işlər əvvəlcə paralel olaraq baş versə də, bütün işlərin ardıcıllıqla baş verdiyi anlaşılır.</p>
 </div>
@@ -102,14 +102,14 @@ Bu yolla, qoruyucu heç bir inteqrasiya işi görməməlidir - sadəcə irəli v
 <h3 id="_daha_maraqlı_rebase_lər">Daha Maraqlı Rebase-lər</h3>
 <div class="paragraph">
 <p>Ayrıca, rebase hədəf branch-ında başqa bir şeydə yenidən istifadə edə bilərsiniz.
-Məsələn, <a href="ch00/rbdiag_e">Başqa bir mövzu branch-ından bir mövzu branch-a olan bir tarix</a> kimi bir tarix çəkin.
+Məsələn, <a href="{{< relurl "book/az/v2/ch00/rbdiag_e" >}}">Başqa bir mövzu branch-ından bir mövzu branch-a olan bir tarix</a> kimi bir tarix çəkin.
 Layihəinizə bəzi server tərəfi funksionallıq əlavə etmək üçün bir mövzu branch-nı (<code>server</code>) əlavə etdiniz və commit yaratdınız.
 Sonra müştəri tərəfində dəyişiklik etmək üçün (<code>client</code>) branch-ı düzəldin və bir neçə dəfə commit edin.
 Nəhayət, yenidən server branch-ınıza qayıtdınız və daha bir neçə commit etdiniz.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="Başqa bir mövzu branch-ından bir mövzu branch-a olan bir tarix">
+<img src="{{< relurl "book/az/v2/images/interesting-rebase-1.png" >}}" alt="Başqa bir mövzu branch-ından bir mövzu branch-a olan bir tarix">
 </div>
 <div class="title">Figure 39. Başqa bir mövzu branch-ından bir mövzu branch-a olan bir tarix</div>
 </div>
@@ -128,12 +128,12 @@ Biraz mürəkkəb olsa da, amma nəticə olduqca gözəldir.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Bir mövzu branch-nı başqa bir mövzu branch-ından rebasing etmək">
+<img src="{{< relurl "book/az/v2/images/interesting-rebase-2.png" >}}" alt="Bir mövzu branch-nı başqa bir mövzu branch-ından rebasing etmək">
 </div>
 <div class="title">Figure 40. Bir mövzu branch-nı başqa bir mövzu branch-ından rebasing etmək</div>
 </div>
 <div class="paragraph">
-<p>İndi <code>master</code> branch-ınızı sürətlə irəliləyə apara bilərsiniz ( <a href="ch00/rbdiag_g">Client branch-ındakı dəyişiklikləri daxil etmək üçün <code>master</code> branch-ınızı sürətli yönləndirin</a>-ə bax):</p>
+<p>İndi <code>master</code> branch-ınızı sürətlə irəliləyə apara bilərsiniz ( <a href="{{< relurl "book/az/v2/ch00/rbdiag_g" >}}">Client branch-ındakı dəyişiklikləri daxil etmək üçün <code>master</code> branch-ınızı sürətli yönləndirin</a>-ə bax):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -143,7 +143,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Client branch-ındakı dəyişiklikləri daxil etmək üçün `master` branch-ınızı sürətli yönləndirin">
+<img src="{{< relurl "book/az/v2/images/interesting-rebase-3.png" >}}" alt="Client branch-ındakı dəyişiklikləri daxil etmək üçün `master` branch-ınızı sürətli yönləndirin">
 </div>
 <div class="title">Figure 41. Client branch-ındakı dəyişiklikləri daxil etmək üçün <code>master</code> branch-ınızı sürətli yönləndirin</div>
 </div>
@@ -156,11 +156,11 @@ $ git merge client</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Bu, <code>server</code> işinizi <code>master</code> işinizin üstündə, <a href="ch00/rbdiag_h">Server branch-nızı <code>master</code> branch-nızın üstünə rebasing etmək</a>-da göstərildiyi kimi təkrarlayır.</p>
+<p>Bu, <code>server</code> işinizi <code>master</code> işinizin üstündə, <a href="{{< relurl "book/az/v2/ch00/rbdiag_h" >}}">Server branch-nızı <code>master</code> branch-nızın üstünə rebasing etmək</a>-da göstərildiyi kimi təkrarlayır.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Server branch-nızı `master` branch-nızın üstünə rebasing etmək">
+<img src="{{< relurl "book/az/v2/images/interesting-rebase-4.png" >}}" alt="Server branch-nızı `master` branch-nızın üstünə rebasing etmək">
 </div>
 <div class="title">Figure 42. Server branch-nızı <code>master</code> branch-nızın üstünə rebasing etmək</div>
 </div>
@@ -174,7 +174,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Bütün işlər inteqrasiya olunduğuna görə, <code>client</code> və <code>server</code> branch-larını silə bilərsiniz, bu da bütün bu proses üçün tarixinizi <a href="ch00/rbdiag_i">Son commit tarixi</a> kimi qoyur:</p>
+<p>Bütün işlər inteqrasiya olunduğuna görə, <code>client</code> və <code>server</code> branch-larını silə bilərsiniz, bu da bütün bu proses üçün tarixinizi <a href="{{< relurl "book/az/v2/ch00/rbdiag_i" >}}">Son commit tarixi</a> kimi qoyur:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -184,7 +184,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Son commit tarixi">
+<img src="{{< relurl "book/az/v2/images/interesting-rebase-5.png" >}}" alt="Son commit tarixi">
 </div>
 <div class="title">Figure 43. Son commit tarixi</div>
 </div>
@@ -215,7 +215,7 @@ Tutaq ki, mərkəzi bir serverdən klonlaşdırırsınız və daha sonra bir az 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Deponu klonlaşdırın və üzərində bir az iş aparın.">
+<img src="{{< relurl "book/az/v2/images/perils-of-rebasing-1.png" >}}" alt="Deponu klonlaşdırın və üzərində bir az iş aparın.">
 </div>
 <div class="title">Figure 44. Deponu klonlaşdırın və üzərində bir az iş aparın</div>
 </div>
@@ -225,7 +225,7 @@ Siz götürün və yeni uzaq branch-ı işinizə birləşdirərək tarixinizi bu
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Daha çox commit fetch edin və onları işinizə birləşdirin">
+<img src="{{< relurl "book/az/v2/images/perils-of-rebasing-2.png" >}}" alt="Daha çox commit fetch edin və onları işinizə birləşdirin">
 </div>
 <div class="title">Figure 45. Daha çox commit fetch edin və onları işinizə birləşdirin</div>
 </div>
@@ -235,7 +235,7 @@ Daha sonra yeni commit-ləri gətirərək həmin serverdən alırsınız.</p>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Kimsə işinizə əsaslanaraq verdiyiniz commit-ləri tərk edərək, rebase edilmiş commit-ləri push edir.">
+<img src="{{< relurl "book/az/v2/images/perils-of-rebasing-3.png" >}}" alt="Kimsə işinizə əsaslanaraq verdiyiniz commit-ləri tərk edərək, rebase edilmiş commit-ləri push edir.">
 </div>
 <div class="title">Figure 46. Kimsə işinizə əsaslanaraq verdiyiniz commit-ləri tərk edərək, rebase edilmiş commit-ləri push edir</div>
 </div>
@@ -245,7 +245,7 @@ Bir <code>git pull</code> etsəniz, tarixin hər iki xəttini özündə birləş
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="Eyni işdə yenidən yeni birləşmə commit-nə qoşulursunuz">
+<img src="{{< relurl "book/az/v2/images/perils-of-rebasing-4.png" >}}" alt="Eyni işdə yenidən yeni birləşmə commit-nə qoşulursunuz">
 </div>
 <div class="title">Figure 47. Eyni işdə yenidən yeni birləşmə commit-nə qoşulursunuz</div>
 </div>
@@ -269,7 +269,7 @@ Buna “patch-id” deyilir.</p>
 <p>Yenidən yazılmış işi pull doün etsəniz və tərəfdaşınızdan aldığınız yeni işin üstünə yazsanız, Git tez-tez misilsiz sizin nəyi başa düşdüyünüzü yeni branch-ın üstünə tətbiq edə bilər.</p>
 </div>
 <div class="paragraph">
-<p>Məsələn, əvvəlki ssenaridə, əgər <a href="ch00/_pre_merge_rebase_work">Kimsə işinizə əsaslanaraq verdiyiniz commit-ləri tərk edərək, rebase edilmiş commit-ləri push edir</a> olduğumuz zaman birləşmə yerinə <code>git rebase teamone/master</code> işlədiriksə, Git:</p>
+<p>Məsələn, əvvəlki ssenaridə, əgər <a href="{{< relurl "book/az/v2/ch00/_pre_merge_rebase_work" >}}">Kimsə işinizə əsaslanaraq verdiyiniz commit-ləri tərk edərək, rebase edilmiş commit-ləri push edir</a> olduğumuz zaman birləşmə yerinə <code>git rebase teamone/master</code> işlədiriksə, Git:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -288,11 +288,11 @@ Buna “patch-id” deyilir.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Beləliklə, <a href="ch00/_merge_rebase_work">Eyni işdə yenidən yeni birləşmə commit-nə qoşulursunuz</a>-də gördüyümüz nəticənin əvəzinə daha çox <a href="ch00/_rebase_rebase_work">Force-pushed rebase işə yenidən başlayın</a> kimi bir şeylə nəticələnərdik.</p>
+<p>Beləliklə, <a href="{{< relurl "book/az/v2/ch00/_merge_rebase_work" >}}">Eyni işdə yenidən yeni birləşmə commit-nə qoşulursunuz</a>-də gördüyümüz nəticənin əvəzinə daha çox <a href="{{< relurl "book/az/v2/ch00/_rebase_rebase_work" >}}">Force-pushed rebase işə yenidən başlayın</a> kimi bir şeylə nəticələnərdik.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Force-pushed rebase işə yenidən başlayın">
+<img src="{{< relurl "book/az/v2/images/perils-of-rebasing-5.png" >}}" alt="Force-pushed rebase işə yenidən başlayın">
 </div>
 <div class="title">Figure 48. Force-pushed rebase işə yenidən başlayın</div>
 </div>

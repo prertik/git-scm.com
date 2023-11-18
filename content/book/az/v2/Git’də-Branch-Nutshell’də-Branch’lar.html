@@ -30,7 +30,7 @@ Bu xüsusiyyəti anlamaq və mənimsəmək sizə güclü və bənzərsiz bir vas
 <p>Git-in branching yolunu həqiqətən başa düşmək üçün geri addım atmalı və Git-in məlumatlarını necə saxladığını araşdırmalıyıq.</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/ch01-getting-started">Başlanğıc</a> fəsildən xatırladığınız kimi, Git məlumatları bir sıra dəyişikliklər və ya fərqlər kimi saxlamır, əksinə <em>snapshotlar</em> kimi saxlayır.</p>
+<p><a href="{{< relurl "book/az/v2/ch00/ch01-getting-started" >}}">Başlanğıc</a> fəsildən xatırladığınız kimi, Git məlumatları bir sıra dəyişikliklər və ya fərqlər kimi saxlamır, əksinə <em>snapshotlar</em> kimi saxlayır.</p>
 </div>
 <div class="paragraph">
 <p>Commit etdiyiniz zaman Git, səhnələşdirdiyiniz məzmunun snapshotu olan bir commit obyekti saxlayır.
@@ -38,7 +38,7 @@ Bu obyekt eyni zamanda müəllifin adını və e-poçt adresini, yazdığınız 
 </div>
 <div class="paragraph">
 <p>Bunu görüntüləmək üçün üç fayldan ibarət bir qovluğunun olduğunu fərz edək və hamısını səhnələşdirib commit götürdünüz.
-Faylların qurulması hər biri üçün bir yoxlama cədvəlini tərtib edir (<a href="ch00/ch01-getting-started">Başlanğıc</a>bəhs etdiyimiz SHA-1 hash), faylın həmin versiyasını Git depolarında saxlayır (Git  kimi <em>blobs</em> onlara aiddir) istifadə edərək sahəsinə nəzarət hissəsini əlavə edir:</p>
+Faylların qurulması hər biri üçün bir yoxlama cədvəlini tərtib edir (<a href="{{< relurl "book/az/v2/ch00/ch01-getting-started" >}}">Başlanğıc</a>bəhs etdiyimiz SHA-1 hash), faylın həmin versiyasını Git depolarında saxlayır (Git  kimi <em>blobs</em> onlara aiddir) istifadə edərək sahəsinə nəzarət hissəsini əlavə edir:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ Git sonra metadata və root layihə ağacına göstərici olan bir obyekt yarad�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Commit və onun ağacı">
+<img src="{{< relurl "book/az/v2/images/commit-and-tree.png" >}}" alt="Commit və onun ağacı">
 </div>
 <div class="title">Figure 9. Commit və Onun Ağacı</div>
 </div>
@@ -64,7 +64,7 @@ Git sonra metadata və root layihə ağacına göstərici olan bir obyekt yarad�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Commitlər və onun valideynləri">
+<img src="{{< relurl "book/az/v2/images/commits-and-parents.png" >}}" alt="Commitlər və onun valideynləri">
 </div>
 <div class="title">Figure 10. Commit-lər və Onun Valideynləri</div>
 </div>
@@ -92,7 +92,7 @@ Təxminən hər bir deponun bir səbəbi, <code>git init</code> əmrinin onu sta
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="Branch və onun commit tarixi">
+<img src="{{< relurl "book/az/v2/images/branch-and-history.png" >}}" alt="Branch və onun commit tarixi">
 </div>
 <div class="title">Figure 11. Branch və Onun Commit Tarixi</div>
 </div>
@@ -115,7 +115,7 @@ Bunu <code>git branch</code> əmri ilə edirsiniz:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Eyni seriyaya commit edən iki branch">
+<img src="{{< relurl "book/az/v2/images/two-branches.png" >}}" alt="Eyni seriyaya commit edən iki branch">
 </div>
 <div class="title">Figure 12. Eyni seriyaya commit edən iki branch</div>
 </div>
@@ -129,7 +129,7 @@ Bu vəziyyətdə yenə də <code>master</code>-in üstündəsiniz.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="Branch-a HEAD göstəricisi">
+<img src="{{< relurl "book/az/v2/images/head-to-master.png" >}}" alt="Branch-a HEAD göstəricisi">
 </div>
 <div class="title">Figure 13. Branch-a HEAD göstəricisi</div>
 </div>
@@ -166,7 +166,7 @@ Yeni <code>testing</code> branch-a keçək:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD mövcud filiala işarə edir">
+<img src="{{< relurl "book/az/v2/images/head-to-testing.png" >}}" alt="HEAD mövcud filiala işarə edir">
 </div>
 <div class="title">Figure 14. HEAD mövcud branch-ı işarə edir</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="HEAD branch-ı bir commit götürüldükdə irəliləyir">
+<img src="{{< relurl "book/az/v2/images/advance-testing.png" >}}" alt="HEAD branch-ı bir commit götürüldükdə irəliləyir">
 </div>
 <div class="title">Figure 15. HEAD branch-ı bir commit götürüldükdə irəliləyir</div>
 </div>
@@ -221,7 +221,7 @@ Bütün branch-ları göstərmək üçün <code>git log</code> əmrinizə <code>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="Siz çıxış edəndə HEAD hərəkət edir">
+<img src="{{< relurl "book/az/v2/images/checkout-master.png" >}}" alt="Siz çıxış edəndə HEAD hərəkət edir">
 </div>
 <div class="title">Figure 16. Siz çıxış edəndə HEAD hərəkət edir</div>
 </div>
@@ -258,14 +258,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>İndi layihənizin tarixi fərqləndi (bax <a href="ch00/divergent_history">Fərqli tarix</a>).
+<p>İndi layihənizin tarixi fərqləndi (bax <a href="{{< relurl "book/az/v2/ch00/divergent_history" >}}">Fərqli tarix</a>).
 Bir branch yaratdınız və işə keçdiniz, bir az iş gördünüz, sonra yenidən əsas branch-a keçdiniz və başqa işlər gördünüz.
 Bu dəyişikliklərin hər ikisi ayrı-ayrı branch-da ayrılır: hazır olduqda filiallar arasında geri və irəli keçə bilərsiniz.
 Və siz bunların hamısını sadə <code>branch</code>, <code>checkout`və `commit</code> əmrləri ilə etdiniz.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Fərqli tarix">
+<img src="{{< relurl "book/az/v2/images/advance-master.png" >}}" alt="Fərqli tarix">
 </div>
 <div class="title">Figure 17. Fərqli tarix</div>
 </div>

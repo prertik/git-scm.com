@@ -64,7 +64,7 @@ Məsələn, local bir depo klonlaşdırmaq üçün belə bir şey işlədə bil�
 <p>URL’in əvvəlində <code>file://</code>-nı dəqiq göstərsəniz, Git bir qədər fərqli işləyər.
 Yalnız path-ı göstərsəniz, Git sərt keçidlərdən istifadə etməyə və ya lazım olan sənədləri birbaşa kopyalamağa çalışar.
 <code>file://</code> yazsanız, Git ümumiyyətlə çox az səmərəli olan bir şəbəkə üzərindən məlumat ötürmək üçün istifadə etdiyi prosesləri başladar.
-<code>file://</code> prefiksinin göstərilməsinin əsas səbəbi, başqa bir VNS və ya buna bənzər bir şeyin idxalından sonra deponun lazımsız istinadlar və ya obyektlər xaric təmiz kopyasını istəməyinizdir.(Baxım işləri üçün <a href="ch00/ch10-git-internals">Git’in Daxili İşləri</a>-a baxın).</p>
+<code>file://</code> prefiksinin göstərilməsinin əsas səbəbi, başqa bir VNS və ya buna bənzər bir şeyin idxalından sonra deponun lazımsız istinadlar və ya obyektlər xaric təmiz kopyasını istəməyinizdir.(Baxım işləri üçün <a href="{{< relurl "book/az/v2/ch00/ch10-git-internals" >}}">Git’in Daxili İşləri</a>-a baxın).</p>
 </div>
 <div class="paragraph">
 <p>Burada normal yoldan istifadə edəcəyik, çünki bunu etmək demək olar ki, həmişə daha sürətli olur.</p>
@@ -86,7 +86,7 @@ Yalnız path-ı göstərsəniz, Git sərt keçidlərdən istifadə etməyə və 
 <p>Fayl əsaslı depoların üstünlükləri sadə olduqları və mövcud fayl icazələrindən və şəbəkə girişlərindən istifadə etmələridir.
 Bütün qrupunuzun daxil olduğu ortaq bir fayl sisteminiz varsa, depo qurmaq çox asandır.
 Çılpaq depo nüsxəsini hər kəsin paylaşdığı bir yerə yapışdırırsınız və hər hansı digər paylaşılan qovluq üçün olduğu kimi oxumaq/yazma icazələrini təyin edirsiniz.
-Bunun üçün <a href="ch00/_getting_git_on_a_server">Serverdə Git Əldə Etmək</a>-də çılpaq bir depo kopyasını necə ixrac edəcəyimizi müzakirə edəcəyik.</p>
+Bunun üçün <a href="{{< relurl "book/az/v2/ch00/_getting_git_on_a_server" >}}">Serverdə Git Əldə Etmək</a>-də çılpaq bir depo kopyasını necə ixrac edəcəyimizi müzakirə edəcəyik.</p>
 </div>
 <div class="paragraph">
 <p>Başqasının işlədiyi depo-dan tez bir zamanda iş aparmaq üçün bu da əlverişli bir seçimdir.
@@ -143,7 +143,7 @@ Oxuma girişi üçün də eyni şey keçərlidir.</p>
 Server Git HTTP ağıllı xidməti ilə cavab vermirsə, Git müştəri daha sadə <em>Dumb</em> HTTP protokoluna geri dönməyə çalışacaq.
 Dumb protokolu çılpaq Git depolarının veb serverdən normal fayllar kimi təqdim olunmasını gözləyir.
 Dumb HTTP-nin gözəlliyi onu qurmağın sadəliyidir.
-Əsasən, HTTP sənəd root-nuzun altına çılpaq Git depoziti qoymalı və konkret bir <code>post-update</code> hook qurmağınız kifayətdir(<a href="ch00/_git_hooks">Git Hook’ları</a>-a baxın).
+Əsasən, HTTP sənəd root-nuzun altına çılpaq Git depoziti qoymalı və konkret bir <code>post-update</code> hook qurmağınız kifayətdir(<a href="{{< relurl "book/az/v2/ch00/_git_hooks" >}}">Git Hook’ları</a>-a baxın).
 Bu zaman depo qoyduğunuz veb serverə daxil ola bilən hər kəs deponuzu klonlaya bilər.
 HTTP üzərindəki depo yerinə oxunuşa icazə vermək üçün belə bir şey edin:</p>
 </div>
@@ -168,7 +168,7 @@ Bu əmr bu deponu (SSH-dən çox) push etdikdə yerinə yetirilir; sonra digər 
 </div>
 <div class="paragraph">
 <p>Bu vəziyyətdə, Apache tənzimləmələri üçün ümumi olan <code>/var/www/htdocs</code> yolunu istifadə edirik, ancaq hər hansı bir statik veb serverdən istifadə edə bilərsiniz - bu path-a sadəcə çılpaq depoları qoyun.
-Git məlumatları əsas statik sənədlər kimi təqdim olunur (xidmətin necə aparıldığı barədə ətraflı məlumat üçün <a href="ch00/ch10-git-internals">Git’in Daxili İşləri</a>-a baxın).</p>
+Git məlumatları əsas statik sənədlər kimi təqdim olunur (xidmətin necə aparıldığı barədə ətraflı məlumat üçün <a href="{{< relurl "book/az/v2/ch00/ch10-git-internals" >}}">Git’in Daxili İşləri</a>-a baxın).</p>
 </div>
 <div class="paragraph">
 <p>Ümumiyyətlə, Smart HTTP serverini oxumaq/yazmaq və ya sadəcə Dumb şəkildə sadəcə oxunan kimi əlçatan faylları seçməyi seçərdiniz.
@@ -202,7 +202,7 @@ Bundan başqa, digər protokolların Git məzmununa xidmət üçün Smart HTTP-�
 <div class="paragraph">
 <p>Kimliği təsdiq edilmiş pushing üçün HTTP istifadə edirsinizsə, kimlik məlumatlarınızı təmin etmək bəzən SSH üzərindəki key-lərədən istifadə etməkdən daha mürəkkəbdir.
 Bununla birlikdə, bu, MacOS-da Keychain access-i və Windows-da Credential Manager kimi olduqca ağrısız hala gətirmək üçün istifadə edə biləcəyiniz bir neçə credential caching vasitəsi var.
-Sisteminizdə təhlükəsiz HTTP şifrələməsini necə qurulacağını görmək üçün <a href="ch00/_credential_caching">Etibarlı Yaddaş</a> oxuyun.</p>
+Sisteminizdə təhlükəsiz HTTP şifrələməsini necə qurulacağını görmək üçün <a href="{{< relurl "book/az/v2/ch00/_credential_caching" >}}">Etibarlı Yaddaş</a> oxuyun.</p>
 </div>
 </div>
 </div>

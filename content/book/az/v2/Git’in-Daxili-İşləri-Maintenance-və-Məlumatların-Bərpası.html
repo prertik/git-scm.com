@@ -124,7 +124,7 @@ Hiylə budur: son SHA-1 commit-ni tapmaq - bu yadınızda qalan kimi deyil, düz
 <p>Çox vaxt, ən sürətli yol <code>git reflog</code> adlı bir vasitə istifadə etməkdir.
 İşləyərkən, Git hər dəfə dəyişdirdiyiniz zaman HEAD-in nə olduğunu səssizcə qeyd edir.
 Branch-ları hər dəfə işlətdiyiniz və ya dəyişdirdiyiniz zaman reflog yenilənir.
-Reflog ayrıca, <a href="ch00/_git_refs">Git Referansları</a>-də qeyd etdiyimiz kimi, yalnız ref fayllarınıza SHA-1 dəyərini yazmaq əvəzinə istifadə etmək üçün başqa bir səbəb olan <code>git update-ref</code> əmri ilə də yenilənir.
+Reflog ayrıca, <a href="{{< relurl "book/az/v2/ch00/_git_refs" >}}">Git Referansları</a>-də qeyd etdiyimiz kimi, yalnız ref fayllarınıza SHA-1 dəyərini yazmaq əvəzinə istifadə etmək üçün başqa bir səbəb olan <code>git update-ref</code> əmri ilə də yenilənir.
 İstədiyiniz zaman harada olduğunuzu <code>git reflog</code> çalıştırarak görə bilərsiniz:</p>
 </div>
 <div class="listingblock">
@@ -307,7 +307,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>Aşağıdakı böyük obyekt: 5 MB.
-Hansı fayl olduğunu tapmaq üçün qısa müddətdə <a href="ch00/_enforcing_commit_message_format">Xüsusi bir Commit-Mesaj Formatının Tətbiq Edilməsi</a>-da istifadə etdiyiniz <code>rev-list</code> əmrini istifadə edəcəksiniz.
+Hansı fayl olduğunu tapmaq üçün qısa müddətdə <a href="{{< relurl "book/az/v2/ch00/_enforcing_commit_message_format" >}}">Xüsusi bir Commit-Mesaj Formatının Tətbiq Edilməsi</a>-da istifadə etdiyiniz <code>rev-list</code> əmrini istifadə edəcəksiniz.
 <code>--objects</code>-i <code>rev-list</code>-ə keçirsəniz, bütün SHA-1’ləri və bunlarla əlaqəli fayl yolları ilə blob SHA-1’ləri siyahıya alır.
 Blob adınızı tapmaq üçün bundan istifadə edə bilərsiniz:</p>
 </div>
@@ -330,7 +330,7 @@ dadf725 Oops - remove large tarball
 </div>
 <div class="paragraph">
 <p>Bu faylı Git tarixinizdən tamamilə silmək üçün <code>7b30847</code>-dən aşağıda olan bütün commit-ləri yenidən yazmalısınız.
-Bunu etmək üçün <a href="ch00/_rewriting_history">Tarixi Yenidən Yazmaq</a>-də istifadə etdiyiniz <code>filter-branch</code>-dan istifadə edirsiniz:</p>
+Bunu etmək üçün <a href="{{< relurl "book/az/v2/ch00/_rewriting_history" >}}">Tarixi Yenidən Yazmaq</a>-də istifadə etdiyiniz <code>filter-branch</code>-dan istifadə edirsiniz:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -342,7 +342,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><code>--index-filter</code> seçimi, <a href="ch00/_rewriting_history">Tarixi Yenidən Yazmaq</a>-də istifadə olunan <code>--tree-filter</code> seçiminə bənzəyir, yalnız diskdə qeyd edilmiş sənədləri dəyişdirən bir əmr ötürmək əvəzinə, hər dəfə quruluş sahənizi və ya indeksinizi dəyişdirirsiniz.</p>
+<p><code>--index-filter</code> seçimi, <a href="{{< relurl "book/az/v2/ch00/_rewriting_history" >}}">Tarixi Yenidən Yazmaq</a>-də istifadə olunan <code>--tree-filter</code> seçiminə bənzəyir, yalnız diskdə qeyd edilmiş sənədləri dəyişdirən bir əmr ötürmək əvəzinə, hər dəfə quruluş sahənizi və ya indeksinizi dəyişdirirsiniz.</p>
 </div>
 <div class="paragraph">
 <p>Müəyyən bir faylı <code>rm file</code> kimi bir şeylə silmək əvəzinə, <code>git rm --cached</code> ilə silməlisiniz - diskdən yox, indeksdən çıxarmalısınız.

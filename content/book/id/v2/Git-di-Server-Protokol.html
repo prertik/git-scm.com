@@ -63,7 +63,7 @@ Sebagai contoh, untuk mengkloning sebuah repositori lokal, Anda dapat melakukann
 <p>Git bekerja dengan cara yang sedikit berbeda jika Anda menentukan <code>file://</code> di awal URL secara eksplisit.
 Jika Anda hanya menentukan jalurnya, Git akan mencoba menggunakan <em>hardlink</em> atau menyalin berkas-berkas yang diperlukan secara langsung.
 Jika Anda menentukan <code>file://</code>, Git akan mengaktifkan proses-proses yang biasanya digunakan untuk memindahkan data melalui jaringan yang umumnya merupakan metode yang kurang efisien dalam memindahkan data.
-Alasan utama untuk menentukan awalan <code>file://</code> adalah jika Anda menginginkan sebuah salinan repositori yang bersih dengan meninggalkan referensi dan objek asing - biasanya setelah diimpor dari sistem kontrol versi lain atau yang serupa dengannya (lihat <a href="ch00/_git_internals">Git Internals</a> untuk tugas-tugas perawatan).
+Alasan utama untuk menentukan awalan <code>file://</code> adalah jika Anda menginginkan sebuah salinan repositori yang bersih dengan meninggalkan referensi dan objek asing - biasanya setelah diimpor dari sistem kontrol versi lain atau yang serupa dengannya (lihat <a href="{{< relurl "book/id/v2/ch00/_git_internals" >}}">Git Internals</a> untuk tugas-tugas perawatan).
 Kita akan menggunakan jalur normal di sini karena hal ini akan menjadikannya lebih cepat.</p>
 </div>
 <div class="paragraph">
@@ -83,7 +83,7 @@ Kita akan menggunakan jalur normal di sini karena hal ini akan menjadikannya leb
 <p>Repositori berbasis <em>file</em> ini didukung karena terlihat lebih sederhana dan menggunakan hak akses berkas dan akses jaringan yang ada.
 Jika Anda sudah memiliki sebuah sistem file bersama di mana seluruh tim Anda memiliki akses, mudah sekali membuat sebuah repositori.
 Simpan salinan repositori kosong di suatu tempat yang dapat diakses secara bersama dan atur hak akses baca/tulis seperti yang Anda inginkan untuk direktori bersama lainya.
-Kita akan membahas bagaimana mengekspor salinan repositori kosong untuk tujuan ini pada <a href="ch00/_git_on_the_server">Getting Git on a Server</a>.</p>
+Kita akan membahas bagaimana mengekspor salinan repositori kosong untuk tujuan ini pada <a href="{{< relurl "book/id/v2/ch00/_git_on_the_server" >}}">Getting Git on a Server</a>.</p>
 </div>
 <div class="paragraph">
 <p>Ini juga merupakan pilihan yang bagus untuk mengambil pekerjaan dari repositori kerja orang lain dengan cepat. Jika Anda dan rekan kerja sedang mengerjakan proyek yang sama dan mereka ingin Anda memeriksa sesuatu, menjalankan perintah seperti <code>git pull /home/john/project</code> seringkali lebih mudah dari pada harus melakukan <em>pushing</em>  ke <em>server remote</em> dan mengharuskan Anda untuk melakukan <em>pulling</em> ke komputer lokal.</p>
@@ -132,7 +132,7 @@ Protokol “Smart” HTTP beroperasi dengan cara yang sama seperti protokol SSH 
 Jika server tidak menanggapi layanan <em>smart</em> HTTP Git, maka klien akan mencoba untuk kembali menggunakan protokol “dumb” HTTP yang lebih sederhana.
 Protokol <em>Dumb</em> mengharapkan repositori Git yang kosong disajikan seperti berkas yang normal dari <em>server</em> web.
 Yang menarik dari protokol HTTP <em>Dumb</em> adalah kesederhanaan pengaturannya.
-Pada dasarnya, yang harus Anda lakukan adalah meletakkan sebuah repositori Git kosong di bawah <em>root</em> dokumen HTTP Anda dan mengaitkannya dengan <code>post-update</code> tertentu, dan selesai (Lihat <a href="ch00/_git_hooks">Git Hooks</a>).
+Pada dasarnya, yang harus Anda lakukan adalah meletakkan sebuah repositori Git kosong di bawah <em>root</em> dokumen HTTP Anda dan mengaitkannya dengan <code>post-update</code> tertentu, dan selesai (Lihat <a href="{{< relurl "book/id/v2/ch00/_git_hooks" >}}">Git Hooks</a>).
 Pada tahap itu, siapa saja yang dapat mengakses <em>server</em> web tempat Anda meletakkan repositori juga dapat mengkloning repositori Anda.
 Untuk mengizinkan akses baca ke repositori Anda mealui HTTP, lakukanlah seperti ini:</p>
 </div>
@@ -157,7 +157,7 @@ Perintah ini dijalankan saat Anda melakukan <em>push</em> ke repositori ini (mun
 </div>
 <div class="paragraph">
 <p>Pada kasus ini, kami menggunakan jalur <code>/var/www/htdocs</code> yang umum digunakan untuk pengaturan Apache, namun Anda dapat menggunakan <em>server</em> web statis - cukup dengan meletakkan repositori kosong di jalurnya.
-Data Git berfungsi sebagai <em>file</em> statis dasar (lihat <a href="ch00/_git_internals">Git Internals</a> untuk rincian tentang bagaimana cara kerjanya).</p>
+Data Git berfungsi sebagai <em>file</em> statis dasar (lihat <a href="{{< relurl "book/id/v2/ch00/_git_internals" >}}">Git Internals</a> untuk rincian tentang bagaimana cara kerjanya).</p>
 </div>
 <div class="paragraph">
 <p>Umumnya Anda akan memilih untuk menjalankan <em>server</em> <em>Smart</em> HTTP dengan akses baca/tulis atau hanya memiliki <em>file</em> yang dapat diakses sebagai baca-saja pada kondisi <em>Dumb</em> HTTP. Jarang sekali menjalankan perpaduan dari dua layanan ini.</p>
@@ -188,7 +188,7 @@ Juga merupakan protokol yang sangat cepat dan efisien, mirip dengan SSH.</p>
 Selain itu, protokol-protokol yang lain memiliki sedikit sekali keuntungan jika dibandingkan dengan protokol “Smart” HTTP dalam menjalankan Git.</p>
 </div>
 <div class="paragraph">
-<p>Jika Anda menggunakan HTTP untuk melakukan <em>pushing</em> yang terotentikasi, memberikan kredensial Anda terkadang menjadi lebih rumit jika dibandingkan dengan menggunakan kunci melalui SSH. Namun ada beberapa perkakas <em>caching</em> kredensial yang dapat Anda gunakan, termasuk akses <em>Keychain</em> pada OSX dan <em>Credential Manager</em> di Windows, untuk menjadikannya lebih mudah. Baca <a href="ch00/_credential_caching">Credential Storage</a> untuk melihat bagaimana menyiapkan <em>caching</em> kata sandi HTTP yang aman di sistem Anda.</p>
+<p>Jika Anda menggunakan HTTP untuk melakukan <em>pushing</em> yang terotentikasi, memberikan kredensial Anda terkadang menjadi lebih rumit jika dibandingkan dengan menggunakan kunci melalui SSH. Namun ada beberapa perkakas <em>caching</em> kredensial yang dapat Anda gunakan, termasuk akses <em>Keychain</em> pada OSX dan <em>Credential Manager</em> di Windows, untuk menjadikannya lebih mudah. Baca <a href="{{< relurl "book/id/v2/ch00/_credential_caching" >}}">Credential Storage</a> untuk melihat bagaimana menyiapkan <em>caching</em> kata sandi HTTP yang aman di sistem Anda.</p>
 </div>
 </div>
 </div>

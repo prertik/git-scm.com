@@ -98,7 +98,7 @@ b1ec324 first commit</code></pre>
 <p>First we need to determine the range of commits we want to include in the bundle. Unlike the network protocols which figure out the minimum set of data to transfer over the network for us, we’ll have to figure this out manually.  Now, you could just do the same thing and bundle the entire repository, which will work, but it’s better to just bundle up the difference - just the three commits we just made locally.</p>
 </div>
 <div class="paragraph">
-<p>In order to do that, you’ll have to calculate the difference. As we described in <a href="ch00/_commit_ranges">Commit Ranges</a>, you can specify a range of commits in a number of ways. To get the three commits that we have in our master branch that weren’t in the branch we originally cloned, we can use something like <code>origin/master..master</code> or <code>master ^origin/master</code>. You can test that with the <code>log</code> command.</p>
+<p>In order to do that, you’ll have to calculate the difference. As we described in <a href="{{< relurl "book/id/v2/ch00/_commit_ranges" >}}">Commit Ranges</a>, you can specify a range of commits in a number of ways. To get the three commits that we have in our master branch that weren’t in the branch we originally cloned, we can use something like <code>origin/master..master</code> or <code>master ^origin/master</code>. You can test that with the <code>log</code> command.</p>
 </div>
 <div class="listingblock">
 <div class="content">

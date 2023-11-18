@@ -361,17 +361,17 @@ You have a number of choices, so we’ll cover a few of them.</p>
 One simple workflow merges your work into your <code>master</code> branch.
 In this scenario, you have a <code>master</code> branch that contains basically stable code.
 When you have work in a topic branch that you’ve done or that someone has contributed and you’ve verified, you merge it into your master branch, delete the topic branch, and then continue the process.
-If we have a repository with work in two branches named <code>ruby_client</code> and <code>php_client</code> that looks like <a href="ch00/merwf_a">History with several topic branches.</a> and merge <code>ruby_client</code> first and then <code>php_client</code> next, then your history will end up looking like <a href="ch00/merwf_b">After a topic branch merge.</a>.</p>
+If we have a repository with work in two branches named <code>ruby_client</code> and <code>php_client</code> that looks like <a href="{{< relurl "book/id/v2/ch00/merwf_a" >}}">History with several topic branches.</a> and merge <code>ruby_client</code> first and then <code>php_client</code> next, then your history will end up looking like <a href="{{< relurl "book/id/v2/ch00/merwf_b" >}}">After a topic branch merge.</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="History with several topic branches.">
+<img src="{{< relurl "book/id/v2/images/merging-workflows-1.png" >}}" alt="History with several topic branches.">
 </div>
 <div class="title">Figure 73. History with several topic branches.</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="After a topic branch merge.">
+<img src="{{< relurl "book/id/v2/images/merging-workflows-2.png" >}}" alt="After a topic branch merge.">
 </div>
 <div class="title">Figure 74. After a topic branch merge.</div>
 </div>
@@ -382,23 +382,23 @@ If we have a repository with work in two branches named <code>ruby_client</code>
 <p>If you have a more important project, you might want to use a two-phase merge cycle.
 In this scenario, you have two long-running branches, <code>master</code> and <code>develop</code>, in which you determine that <code>master</code> is updated only when a very stable release is cut and all new code is integrated into the <code>develop</code> branch.
 You regularly push both of these branches to the public repository.
-Each time you have a new topic branch to merge in (<a href="ch00/merwf_c">Before a topic branch merge.</a>), you merge it into <code>develop</code> (<a href="ch00/merwf_d">After a topic branch merge.</a>); then, when you tag a release, you fast-forward <code>master</code> to wherever the now-stable <code>develop</code> branch is (<a href="ch00/merwf_e">After a project release.</a>).</p>
+Each time you have a new topic branch to merge in (<a href="{{< relurl "book/id/v2/ch00/merwf_c" >}}">Before a topic branch merge.</a>), you merge it into <code>develop</code> (<a href="{{< relurl "book/id/v2/ch00/merwf_d" >}}">After a topic branch merge.</a>); then, when you tag a release, you fast-forward <code>master</code> to wherever the now-stable <code>develop</code> branch is (<a href="{{< relurl "book/id/v2/ch00/merwf_e" >}}">After a project release.</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Before a topic branch merge.">
+<img src="{{< relurl "book/id/v2/images/merging-workflows-3.png" >}}" alt="Before a topic branch merge.">
 </div>
 <div class="title">Figure 75. Before a topic branch merge.</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="After a topic branch merge.">
+<img src="{{< relurl "book/id/v2/images/merging-workflows-4.png" >}}" alt="After a topic branch merge.">
 </div>
 <div class="title">Figure 76. After a topic branch merge.</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="After a topic branch release.">
+<img src="{{< relurl "book/id/v2/images/merging-workflows-5.png" >}}" alt="After a topic branch release.">
 </div>
 <div class="title">Figure 77. After a project release.</div>
 </div>
@@ -413,13 +413,13 @@ Then, when the codebase on that branch is stable and passes tests, you merge it 
 <div class="paragraph">
 <p>
 The Git project has four long-running branches: <code>master</code>, <code>next</code>, and <code>pu</code> (proposed updates) for new work, and <code>maint</code> for maintenance backports.
-When new work is introduced by contributors, it’s collected into topic branches in the maintainer’s repository in a manner similar to what we’ve described (see <a href="ch00/merwf_f">Managing a complex series of parallel contributed topic branches.</a>).
+When new work is introduced by contributors, it’s collected into topic branches in the maintainer’s repository in a manner similar to what we’ve described (see <a href="{{< relurl "book/id/v2/ch00/merwf_f" >}}">Managing a complex series of parallel contributed topic branches.</a>).
 At this point, the topics are evaluated to determine whether they’re safe and ready for consumption or whether they need more work.
 If they’re safe, they’re merged into <code>next</code>, and that branch is pushed up so everyone can try the topics integrated together.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Managing a complex series of parallel contributed topic branches.">
+<img src="{{< relurl "book/id/v2/images/large-merges-1.png" >}}" alt="Managing a complex series of parallel contributed topic branches.">
 </div>
 <div class="title">Figure 78. Managing a complex series of parallel contributed topic branches.</div>
 </div>
@@ -430,7 +430,7 @@ This means <code>master</code> almost always moves forward, <code>next</code> is
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Merging contributed topic branches into long-term integration branches.">
+<img src="{{< relurl "book/id/v2/images/large-merges-2.png" >}}" alt="Merging contributed topic branches into long-term integration branches.">
 </div>
 <div class="title">Figure 79. Merging contributed topic branches into long-term integration branches.</div>
 </div>
@@ -458,7 +458,7 @@ For example, suppose you have a project that looks like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Example history before a cherry-pick.">
+<img src="{{< relurl "book/id/v2/images/rebasing-1.png" >}}" alt="Example history before a cherry-pick.">
 </div>
 <div class="title">Figure 80. Example history before a cherry-pick.</div>
 </div>
@@ -479,7 +479,7 @@ Now your history looks like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="History after cherry-picking a commit on a topic branch.">
+<img src="{{< relurl "book/id/v2/images/rebasing-2.png" >}}" alt="History after cherry-picking a commit on a topic branch.">
 </div>
 <div class="title">Figure 81. History after cherry-picking a commit on a topic branch.</div>
 </div>
@@ -512,7 +512,7 @@ The configuration setting is <code>rerere.enabled</code>, and it’s handy enoug
 <div class="paragraph">
 <p>If you need to, you can interact with the rerere cache using the <code>git rerere</code> command.
 When it’s invoked alone, Git checks its database of resolutions and tries to find a match with any current merge conflicts and resolve them (although this is done automatically if <code>rerere.enabled</code> is set to <code>true</code>).
-There are also subcommands to see what will be recorded, to erase specific resolution from the cache, and to clear the entire cache. We will cover rerere in more detail in <a href="ch00/_rerere">Rerere</a>.</p>
+There are also subcommands to see what will be recorded, to erase specific resolution from the cache, and to clear the entire cache. We will cover rerere in more detail in <a href="{{< relurl "book/id/v2/ch00/_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -521,7 +521,7 @@ There are also subcommands to see what will be recorded, to erase specific resol
 <div class="paragraph">
 <p>
 When you’ve decided to cut a release, you’ll probably want to drop a tag so you can re-create that release at any point going forward.
-You can create a new tag as discussed in <a href="ch00/_git_basics_chapter">Git Basics</a>.
+You can create a new tag as discussed in <a href="{{< relurl "book/id/v2/ch00/_git_basics_chapter" >}}">Git Basics</a>.
 If you decide to sign the tag as the maintainer, the tagging may look something like this:</p>
 </div>
 <div class="listingblock">

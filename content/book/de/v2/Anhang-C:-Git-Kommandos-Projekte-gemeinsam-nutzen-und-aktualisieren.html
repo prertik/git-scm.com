@@ -29,16 +29,16 @@ Wenn Sie Ihre Arbeit freigeben oder Änderungen von anderswo beziehen wollen, gi
 <p>Der Befehl <code>git fetch</code> kommuniziert mit einem entfernten Repository und holt alle Informationen, die sich in diesem Repository befinden, aber nicht in Ihrem aktuellen Repository und speichert sie in Ihrer lokalen Datenbank.</p>
 </div>
 <div class="paragraph">
-<p>Wir sehen uns diesen Befehl zunächst in <a href="ch00/_fetching_and_pulling">Fetchen und Pullen von Ihren Remotes</a> an und betrachten anschließend weitere Beispiele für seine Verwendung in <a href="ch00/_remote_branches">Remote-Branches</a>.</p>
+<p>Wir sehen uns diesen Befehl zunächst in <a href="{{< relurl "book/de/v2/ch00/_fetching_and_pulling" >}}">Fetchen und Pullen von Ihren Remotes</a> an und betrachten anschließend weitere Beispiele für seine Verwendung in <a href="{{< relurl "book/de/v2/ch00/_remote_branches" >}}">Remote-Branches</a>.</p>
 </div>
 <div class="paragraph">
-<p>Wir benutzen ihn auch bei einigen Beispielen in <a href="ch00/_contributing_project">An einem Projekt mitwirken</a>.</p>
+<p>Wir benutzen ihn auch bei einigen Beispielen in <a href="{{< relurl "book/de/v2/ch00/_contributing_project" >}}">An einem Projekt mitwirken</a>.</p>
 </div>
 <div class="paragraph">
-<p>Wir verwenden ihn in <a href="ch00/_pr_refs">Pull Request Refs (Referenzen)</a>, um eine einzelne konkrete Referenz zu beziehen, die außerhalb des standardmäßigen Bereichs liegt und wir sehen, in <a href="ch00/_bundling">Bundling</a>, wie man sie aus einem Packet herausholen kann.</p>
+<p>Wir verwenden ihn in <a href="{{< relurl "book/de/v2/ch00/_pr_refs" >}}">Pull Request Refs (Referenzen)</a>, um eine einzelne konkrete Referenz zu beziehen, die außerhalb des standardmäßigen Bereichs liegt und wir sehen, in <a href="{{< relurl "book/de/v2/ch00/_bundling" >}}">Bundling</a>, wie man sie aus einem Packet herausholen kann.</p>
 </div>
 <div class="paragraph">
-<p>Wir richten in <a href="ch00/_refspec">Die Referenzspezifikation (engl. Refspec)</a> eigene Referenzspezifikationen ein, damit <code>git fetch</code> etwas anderes als die Standardeinstellung macht.</p>
+<p>Wir richten in <a href="{{< relurl "book/de/v2/ch00/_refspec" >}}">Die Referenzspezifikation (engl. Refspec)</a> eigene Referenzspezifikationen ein, damit <code>git fetch</code> etwas anderes als die Standardeinstellung macht.</p>
 </div>
 </div>
 <div class="sect3">
@@ -47,16 +47,16 @@ Wenn Sie Ihre Arbeit freigeben oder Änderungen von anderswo beziehen wollen, gi
 <p>Der <code>git pull</code> Befehl ist im Grunde eine Kombination aus den <code>git fetch</code> und <code>git merge</code> Befehlen, wobei Git von dem angegebenen Remote holt und dann sofort versucht, es in den Branch, auf dem Sie gerade sind, zu integrieren.</p>
 </div>
 <div class="paragraph">
-<p>Wir führen ihn in <a href="ch00/_fetching_and_pulling">Fetchen und Pullen von Ihren Remotes</a> ein und zeigen in <a href="ch00/_inspecting_remote">Inspizieren eines Remotes</a> auf, was alles gemergt wird, wenn Sie ihn benutzen.</p>
+<p>Wir führen ihn in <a href="{{< relurl "book/de/v2/ch00/_fetching_and_pulling" >}}">Fetchen und Pullen von Ihren Remotes</a> ein und zeigen in <a href="{{< relurl "book/de/v2/ch00/_inspecting_remote" >}}">Inspizieren eines Remotes</a> auf, was alles gemergt wird, wenn Sie ihn benutzen.</p>
 </div>
 <div class="paragraph">
-<p>Wir erfahren in <a href="ch00/_rebase_rebase">Rebasen, wenn Sie Rebase durchführen</a> auch, wie Sie damit bei Schwierigkeiten während des Rebasings umgehen können.</p>
+<p>Wir erfahren in <a href="{{< relurl "book/de/v2/ch00/_rebase_rebase" >}}">Rebasen, wenn Sie Rebase durchführen</a> auch, wie Sie damit bei Schwierigkeiten während des Rebasings umgehen können.</p>
 </div>
 <div class="paragraph">
-<p>Wir zeigen in <a href="ch00/_checking_out_remotes">Remote Branches auschecken</a>, wie man ihn mit einer URL verwendet, um Änderungen einmalig einzupflegen.</p>
+<p>Wir zeigen in <a href="{{< relurl "book/de/v2/ch00/_checking_out_remotes" >}}">Remote Branches auschecken</a>, wie man ihn mit einer URL verwendet, um Änderungen einmalig einzupflegen.</p>
 </div>
 <div class="paragraph">
-<p>Schließlich erwähnen wir in <a href="ch00/_signing_commits">Commits signieren</a> noch kurz, wie Sie die Option <code>--verify-signatures</code> verwenden können, um beim Abrufen/Pullen von Commits überprüfen können, ob diese mit GPG signiert wurden.</p>
+<p>Schließlich erwähnen wir in <a href="{{< relurl "book/de/v2/ch00/_signing_commits" >}}">Commits signieren</a> noch kurz, wie Sie die Option <code>--verify-signatures</code> verwenden können, um beim Abrufen/Pullen von Commits überprüfen können, ob diese mit GPG signiert wurden.</p>
 </div>
 </div>
 <div class="sect3">
@@ -66,25 +66,25 @@ Wenn Sie Ihre Arbeit freigeben oder Änderungen von anderswo beziehen wollen, gi
 Es erfordert Schreibzugriff auf das entfernte Repository und wird daher in der Regel auf irgend eine Weise authentifiziert.</p>
 </div>
 <div class="paragraph">
-<p>Wir sehen uns zuerst den <code>git push</code> Befehl in <a href="ch00/_pushing_remotes">Zu Ihren Remotes Pushen</a> an.
+<p>Wir sehen uns zuerst den <code>git push</code> Befehl in <a href="{{< relurl "book/de/v2/ch00/_pushing_remotes" >}}">Zu Ihren Remotes Pushen</a> an.
 Hier beschreiben wir die grundlegenden Aspekte des Pushens einer Branch zu einem Remote-Repository.
-In <a href="ch00/_pushing_branches">Pushing/Hochladen</a> gehen wir ein wenig detaillierter auf das Pushen bestimmter Branches ein und in <a href="ch00/_tracking_branches">Tracking-Branches</a> sehen wir, wie man Tracking-Branches einrichtet, um dorthin automatisch zu pushen.
-In <a href="ch00/_delete_branches">Remote-Branches entfernen</a> benutzen wir die Option <code>--delete</code>, um einen Branch auf dem Server mit <code>git push</code> zu löschen.</p>
+In <a href="{{< relurl "book/de/v2/ch00/_pushing_branches" >}}">Pushing/Hochladen</a> gehen wir ein wenig detaillierter auf das Pushen bestimmter Branches ein und in <a href="{{< relurl "book/de/v2/ch00/_tracking_branches" >}}">Tracking-Branches</a> sehen wir, wie man Tracking-Branches einrichtet, um dorthin automatisch zu pushen.
+In <a href="{{< relurl "book/de/v2/ch00/_delete_branches" >}}">Remote-Branches entfernen</a> benutzen wir die Option <code>--delete</code>, um einen Branch auf dem Server mit <code>git push</code> zu löschen.</p>
 </div>
 <div class="paragraph">
-<p>Im Kapitel 5 <a href="ch00/_contributing_project">An einem Projekt mitwirken</a> können Sie einige Beispiele für die Verwendung von <code>git push</code> finden,wie Sie Ihre Arbeit an Branches mit mehreren Remotes teilen können.</p>
+<p>Im Kapitel 5 <a href="{{< relurl "book/de/v2/ch00/_contributing_project" >}}">An einem Projekt mitwirken</a> können Sie einige Beispiele für die Verwendung von <code>git push</code> finden,wie Sie Ihre Arbeit an Branches mit mehreren Remotes teilen können.</p>
 </div>
 <div class="paragraph">
-<p>Wir sehen in <a href="ch00/_sharing_tags">Tags teilen</a>, wie Sie diesen Befehl benutzen können, um Tags, die Sie mit der <code>--tags</code> Option erstellt haben, gemeinsam zu nutzen.</p>
+<p>Wir sehen in <a href="{{< relurl "book/de/v2/ch00/_sharing_tags" >}}">Tags teilen</a>, wie Sie diesen Befehl benutzen können, um Tags, die Sie mit der <code>--tags</code> Option erstellt haben, gemeinsam zu nutzen.</p>
 </div>
 <div class="paragraph">
-<p>In <a href="ch00/_publishing_submodules">Änderungen am Submodul veröffentlichen</a> verwenden wir die Option <code>--recurse-submodules</code>, um zu überprüfen, ob alle unsere Submodule funktionieren, bevor wir zum Hauptprojekt pushen, was bei der Verwendung von Submodulen sehr hilfreich sein kann.</p>
+<p>In <a href="{{< relurl "book/de/v2/ch00/_publishing_submodules" >}}">Änderungen am Submodul veröffentlichen</a> verwenden wir die Option <code>--recurse-submodules</code>, um zu überprüfen, ob alle unsere Submodule funktionieren, bevor wir zum Hauptprojekt pushen, was bei der Verwendung von Submodulen sehr hilfreich sein kann.</p>
 </div>
 <div class="paragraph">
-<p>In <a href="ch00/_other_client_hooks">Andere Client-Hooks</a> sprechen wir kurz über den <code>pre-push</code> Hook, ein Skript, das wir so einrichten können, dass es vor dem Abschluss eines Pushs ausgeführt wird, um zu prüfen, ob es zulässig sein sollte, zu pushen.</p>
+<p>In <a href="{{< relurl "book/de/v2/ch00/_other_client_hooks" >}}">Andere Client-Hooks</a> sprechen wir kurz über den <code>pre-push</code> Hook, ein Skript, das wir so einrichten können, dass es vor dem Abschluss eines Pushs ausgeführt wird, um zu prüfen, ob es zulässig sein sollte, zu pushen.</p>
 </div>
 <div class="paragraph">
-<p>Schließlich betrachten wir in <a href="ch00/_pushing_refspecs">Pushende Refspecs</a> das Pushen mit einer vollständigen Referenzspezifikation (engl. refspec) anstelle der allgemeinen Abkürzungen, die normalerweise verwendet werden.
+<p>Schließlich betrachten wir in <a href="{{< relurl "book/de/v2/ch00/_pushing_refspecs" >}}">Pushende Refspecs</a> das Pushen mit einer vollständigen Referenzspezifikation (engl. refspec) anstelle der allgemeinen Abkürzungen, die normalerweise verwendet werden.
 Das kann Ihnen helfen, sehr spezifisch zu entscheiden, welche Arbeit Sie teilen möchten.</p>
 </div>
 </div>
@@ -96,7 +96,7 @@ Er erlaubt Ihnen, lange URLs als kurze Handles zu speichern, wie z.B. „origin�
 Sie können auch mehrere solcher Adressen einrichten und der Befehl <code>git remote</code> wird verwendet, um sie hinzuzufügen, zu ändern oder zu löschen.</p>
 </div>
 <div class="paragraph">
-<p>Dieser Befehl wird ausführlich in <a href="ch00/_remote_repos">Mit Remotes arbeiten</a> behandelt, einschließlich des Auflistens, Hinzufügens, Entfernens und Umbenennens.</p>
+<p>Dieser Befehl wird ausführlich in <a href="{{< relurl "book/de/v2/ch00/_remote_repos" >}}">Mit Remotes arbeiten</a> behandelt, einschließlich des Auflistens, Hinzufügens, Entfernens und Umbenennens.</p>
 </div>
 <div class="paragraph">
 <p>Er wird auch in fast jedem der nachfolgenden Kapitel des Buchs verwendet, aber immer im Standardformat <code>git remote add &lt;name&gt; &lt;url&gt;</code>.</p>
@@ -108,7 +108,7 @@ Sie können auch mehrere solcher Adressen einrichten und der Befehl <code>git re
 <p>Der Befehl <code>git archive</code> wird verwendet, um eine Archivdatei von einem bestimmten Snapshot des Projekts zu erstellen.</p>
 </div>
 <div class="paragraph">
-<p>Wir benutzen <code>git archive</code> in <a href="ch00/_preparing_release">Ein Release vorbereiten</a>, um einen Tarball eines Projektes für die gemeinsame Nutzung zu erstellen.</p>
+<p>Wir benutzen <code>git archive</code> in <a href="{{< relurl "book/de/v2/ch00/_preparing_release" >}}">Ein Release vorbereiten</a>, um einen Tarball eines Projektes für die gemeinsame Nutzung zu erstellen.</p>
 </div>
 </div>
 <div class="sect3">
@@ -119,7 +119,7 @@ Das kann für Bibliotheken oder andere Arten von gemeinsam genutzten Ressourcen 
 Das <code>submodule</code> Kommando hat mehrere Unterbefehle (<code>add</code>, <code>update</code>, <code>sync</code>, usw.) für die Verwaltung dieser Ressourcen.</p>
 </div>
 <div class="paragraph">
-<p>Dieser Befehl wird nur in <a href="ch00/_git_submodules">Submodule</a> erwähnt und dort ausführlich beschrieben.</p>
+<p>Dieser Befehl wird nur in <a href="{{< relurl "book/de/v2/ch00/_git_submodules" >}}">Submodule</a> erwähnt und dort ausführlich beschrieben.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

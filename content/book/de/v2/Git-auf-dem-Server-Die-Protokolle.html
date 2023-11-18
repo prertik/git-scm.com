@@ -64,7 +64,7 @@ Um beispielsweise ein lokales Repository zu klonen, können Sie Folgendes ausfü
 <p>Git funktioniert etwas anders, wenn Sie <code>file://</code> explizit am Anfang der URL angeben.
 Wenn Sie nur den Pfad angeben, versucht Git, Hardlinks zu verwenden oder die benötigten Dateien direkt zu kopieren.
 Wenn Sie <code>file://</code> angeben, löst Git Prozesse aus, die normalerweise zum Übertragen von Daten über ein Netzwerk verwendet werden, was im Allgemeinen viel weniger effizient ist.
-Der Hauptgrund für die Angabe des Präfix <code>file://</code> ist, wenn Sie eine saubere Kopie des Repositorys mit fremden Referenzen oder weggelassenen Objekten wünschen – in der Regel nach einem Import aus einem anderen VCS oder ähnlichem (siehe <a href="ch00/ch10-git-internals">Git Interna</a> für Wartungsaufgaben).
+Der Hauptgrund für die Angabe des Präfix <code>file://</code> ist, wenn Sie eine saubere Kopie des Repositorys mit fremden Referenzen oder weggelassenen Objekten wünschen – in der Regel nach einem Import aus einem anderen VCS oder ähnlichem (siehe <a href="{{< relurl "book/de/v2/ch00/ch10-git-internals" >}}">Git Interna</a> für Wartungsaufgaben).
 Wir werden hier den normalen Pfad verwenden, denn das ist fast immer schneller.</p>
 </div>
 <div class="paragraph">
@@ -84,7 +84,7 @@ Wir werden hier den normalen Pfad verwenden, denn das ist fast immer schneller.<
 <p>Die Vorteile dateibasierter Repositorys liegen darin, dass sie einfach sind und vorhandene Datei- und Netzwerk-Berechtigungen verwenden.
 Wenn Sie bereits über ein freigegebenes Dateisystem verfügen, auf das Ihr gesamtes Team Zugriff hat, ist das Einrichten eines Repositorys sehr einfach.
 Sie speichern die leere Repository-Kopie an einer Stelle, auf die jeder Zugriff hat, und legen die Lese- und Schreibberechtigungen wie bei jedem anderen freigegebenen Verzeichnis fest.
-Informationen zum Exportieren einer Bare-Repository-Kopie für diesen Zweck finden Sie unter <a href="ch00/_getting_git_on_a_server">Git auf einem Server installieren</a>.</p>
+Informationen zum Exportieren einer Bare-Repository-Kopie für diesen Zweck finden Sie unter <a href="{{< relurl "book/de/v2/ch00/_getting_git_on_a_server" >}}">Git auf einem Server installieren</a>.</p>
 </div>
 <div class="paragraph">
 <p>Das ist auch eine elegante Möglichkeit, um schnell Arbeiten aus dem Arbeits-Repository eines anderen zu holen.
@@ -141,7 +141,7 @@ Gleiches gilt für den Lesezugriff.</p>
 Wenn der Server nicht mit einem Git HTTP Smart Service antwortet, versucht der Git Client, auf das einfachere <em>Dumb</em> HTTP Protokoll zurückzugreifen.
 Das Dumb-Protokoll erwartet von dem Bare-Git-Repository, dass es vom Webserver wie normale Dateien behandelt wird.
 Das Schöne an Dumb HTTP ist die Einfachheit der Einrichtung.
-Im Grunde genommen müssen Sie nur ein leeres Git-Repository unter Ihre HTTP-Dokument-Root legen und einen bestimmten <code>post-update</code> Hook einrichten, und schon sind Sie fertig (siehe <a href="ch00/_git_hooks">Git Hooks</a>).
+Im Grunde genommen müssen Sie nur ein leeres Git-Repository unter Ihre HTTP-Dokument-Root legen und einen bestimmten <code>post-update</code> Hook einrichten, und schon sind Sie fertig (siehe <a href="{{< relurl "book/de/v2/ch00/_git_hooks" >}}">Git Hooks</a>).
 Ab diesem Zeitpunkt kann jeder, der auf den Webserver zugreifen kann, unter dem Sie das Repository ablegen, auch Ihr Repository klonen.
 Um Lesezugriff auf Ihr Repository über HTTP zu ermöglichen, gehen Sie wie folgt vor:</p>
 </div>
@@ -166,7 +166,7 @@ Dieser Befehl wird ausgeführt, wenn Sie in dieses Repository pushen (vielleicht
 </div>
 <div class="paragraph">
 <p>In diesem speziellen Fall verwenden wir den Pfad <code>/var/www/htdocs</code>, der für Apache-Installationen üblich ist, Sie können aber jeden statischen Webserver verwenden – legen Sie einfach das leere Repository in seinen Pfad.
-Die Git-Daten werden als einfache statische Dateien bereitgestellt (siehe Kapitel <a href="ch00/ch10-git-internals">Git Interna</a> für Bedienungsdetails).</p>
+Die Git-Daten werden als einfache statische Dateien bereitgestellt (siehe Kapitel <a href="{{< relurl "book/de/v2/ch00/ch10-git-internals" >}}">Git Interna</a> für Bedienungsdetails).</p>
 </div>
 <div class="paragraph">
 <p>Im Allgemeinen würden Sie sich entweder einen Smart HTTP-Server zum Lesen und Schreiben betreiben oder die Dateien einfach als schreibgeschützt im Dumb-Modus zur Verfügung stellen.
@@ -200,7 +200,7 @@ Abgesehen davon gibt es sehr wenig Vorteile, die andere Protokolle gegenüber Sm
 <div class="paragraph">
 <p>Wenn Sie HTTP für authentifiziertes Pushen verwenden, ist die Bereitstellung Ihrer Anmeldeinformationen manchmal komplizierter als die Verwendung von Schlüsseln über SSH.
 Es gibt jedoch mehrere Tools zum Zwischenspeichern von Berechtigungen, die Sie verwenden könnten, darunter Keychain-Zugriff auf macOS und Credential Manager unter Windows, um das ziemlich zu Vereinfachen.
-Lesen Sie den Abschnitt <a href="ch00/_credential_caching">Credential Storage</a>, um zu erfahren, wie Sie ein sicheres HTTP-Passwort-Caching auf Ihrem System einrichten können.</p>
+Lesen Sie den Abschnitt <a href="{{< relurl "book/de/v2/ch00/_credential_caching" >}}">Credential Storage</a>, um zu erfahren, wie Sie ein sicheres HTTP-Passwort-Caching auf Ihrem System einrichten können.</p>
 </div>
 </div>
 </div>

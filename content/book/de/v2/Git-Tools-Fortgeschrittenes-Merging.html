@@ -35,7 +35,7 @@ Wir werden auch einige der verschiedenen, atypischen Merges vorstellen, die Ihne
 <div class="sect3">
 <h3 id="_merge_konflikte">Merge-Konflikte</h3>
 <div class="paragraph">
-<p>Während wir einige Grundlagen zur Lösung von Merge-Konflikten in Kapitel 3, <a href="ch00/_basic_merge_conflicts">Einfache Merge-Konflikte</a>, behandelt haben, bietet Git für komplexere Konflikte einige Werkzeuge, die Ihnen helfen, herauszufinden, was passiert ist und wie Sie den Konflikt am besten lösen können.</p>
+<p>Während wir einige Grundlagen zur Lösung von Merge-Konflikten in Kapitel 3, <a href="{{< relurl "book/de/v2/ch00/_basic_merge_conflicts" >}}">Einfache Merge-Konflikte</a>, behandelt haben, bietet Git für komplexere Konflikte einige Werkzeuge, die Ihnen helfen, herauszufinden, was passiert ist und wie Sie den Konflikt am besten lösen können.</p>
 </div>
 <div class="paragraph">
 <p>Versuchen Sie, wenn möglich, zunächst einmal zu vergewissern, dass Ihr Arbeitsverzeichnis sauber ist, bevor Sie einen Merge starten, bei dem Konflikte auftreten können.
@@ -468,7 +468,7 @@ So können Sie den Bezug zu dem herstellen, was zu den Konflikten beigetragen ha
 Es ist manchmal sehr nützlich, die Historie ein wenig Revue passieren zu lassen, um sich zu erinnern, warum zwei Entwicklungslinien den gleichen Bereich des Quellcodes tangieren.</p>
 </div>
 <div class="paragraph">
-<p>Um eine vollständige Liste aller eindeutigen Commits zu erhalten, die in den beiden an dieser Zusammenführung beteiligten Branches enthalten waren, können wir die „triple dot“-Syntax verwenden, die wir in <a href="ch00/_triple_dot">Dreifacher  Punkt</a> kennengelernt haben.</p>
+<p>Um eine vollständige Liste aller eindeutigen Commits zu erhalten, die in den beiden an dieser Zusammenführung beteiligten Branches enthalten waren, können wir die „triple dot“-Syntax verwenden, die wir in <a href="{{< relurl "book/de/v2/ch00/_triple_dot" >}}">Dreifacher  Punkt</a> kennengelernt haben.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -612,7 +612,7 @@ Angenommen, Sie haben mit der Arbeit an einem Topic-Branch begonnen, ihn versehe
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="Versehentlicher Merge-Commit">
+<img src="{{< relurl "book/de/v2/images/undomerge-start.png" >}}" alt="Versehentlicher Merge-Commit">
 </div>
 <div class="title">Abbildung 137. Versehentlicher Merge-Commit</div>
 </div>
@@ -627,13 +627,13 @@ Meistens, wenn dem irrtümlichen <code>git merge</code> ein <code>git reset --ha
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="Verlauf nach `git reset --hard HEAD~`">
+<img src="{{< relurl "book/de/v2/images/undomerge-reset.png" >}}" alt="Verlauf nach `git reset --hard HEAD~`">
 </div>
 <div class="title">Abbildung 138. Verlauf nach <code>git reset --hard HEAD~</code>
 </div>
 </div>
 <div class="paragraph">
-<p>Wir haben bereits in <a href="ch00/_git_reset">Reset entzaubert</a> über <code>reset</code> geschrieben, also sollte es nicht allzu schwer sein, zu verstehen, was hier passiert.
+<p>Wir haben bereits in <a href="{{< relurl "book/de/v2/ch00/_git_reset" >}}">Reset entzaubert</a> über <code>reset</code> geschrieben, also sollte es nicht allzu schwer sein, zu verstehen, was hier passiert.
 Hier nur zur Erinnerung: <code>reset --hard</code> durchläuft normalerweise drei Phasen:</p>
 </div>
 <div class="olist arabic">
@@ -652,7 +652,7 @@ Hier wollen wir <code>master</code> dorthin verschieben, wo er vor dem Merge-Com
 </div>
 <div class="paragraph">
 <p>Der Nachteil dieser Vorgehensweise ist, dass der Verlauf umgeschrieben wird, was mit einem gemeinsam genutzten Repository problematisch sein kann.
-Sehen Sie sich <a href="ch00/_rebase_peril">Die Gefahren des Rebasing</a> an, um Näheres zu erfahren, was passieren kann. Die Kurzfassung ist, dass, wenn andere Benutzer Commits vorliegen haben, die Sie gerade umschreiben wollen, dann sollten Sie besser ein <code>reset</code> vermeiden.
+Sehen Sie sich <a href="{{< relurl "book/de/v2/ch00/_rebase_peril" >}}">Die Gefahren des Rebasing</a> an, um Näheres zu erfahren, was passieren kann. Die Kurzfassung ist, dass, wenn andere Benutzer Commits vorliegen haben, die Sie gerade umschreiben wollen, dann sollten Sie besser ein <code>reset</code> vermeiden.
 Dieser Vorgang wird auch dann nicht funktionieren, wenn seit dem Merge weitere Commits erstellt wurden. Ein Verschieben der Refs würde diese Änderungen faktisch verlieren.</p>
 </div>
 </div>
@@ -678,7 +678,7 @@ Hier wollen wir alle Änderungen rückgängig machen, die durch das Mergen im ü
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="Verlauf nach `git revert -m 1`">
+<img src="{{< relurl "book/de/v2/images/undomerge-revert.png" >}}" alt="Verlauf nach `git revert -m 1`">
 </div>
 <div class="title">Abbildung 139. Verlauf nach <code>git revert -m 1</code>
 </div>
@@ -699,7 +699,7 @@ Was viel schlimmer wäre, wenn Sie Arbeiten zu <code>topic</code> beitragen und 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="Verlauf mit einem fehlerhaften Merge">
+<img src="{{< relurl "book/de/v2/images/undomerge-revert2.png" >}}" alt="Verlauf mit einem fehlerhaften Merge">
 </div>
 <div class="title">Abbildung 140. Verlauf mit einem fehlerhaften Merge</div>
 </div>
@@ -715,7 +715,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="Verlauf nach erneutem Merge eines rückgängig gemachten merges">
+<img src="{{< relurl "book/de/v2/images/undomerge-revert3.png" >}}" alt="Verlauf nach erneutem Merge eines rückgängig gemachten merges">
 </div>
 <div class="title">Abbildung 141. Verlauf nach erneutem Merge einer rückgängig gemachten Verschmelzung</div>
 </div>
@@ -863,7 +863,7 @@ Es ist nicht allgemein üblich, weil es selten hilfreich ist. Allerdings ist es 
 <div class="paragraph">
 <p>In unserem Fall wollen wir das Rack-Projekt als Unterverzeichnis in unser Projekt <code>master</code> einbringen.
 Das können wir in Git mit <code>git read-tree</code> tun.
-Mehr über den Befehl <code>read-tree</code> und seiner Verwandten erfahren Sie in <a href="ch00/ch10-git-internals">Git Interna</a>. Vorab sollen Sie erfahren, dass er den Root-Tree eines Branchs in Ihre aktuelle Staging-Area und Ihr aktuelles Arbeitsverzeichnis einliest.
+Mehr über den Befehl <code>read-tree</code> und seiner Verwandten erfahren Sie in <a href="{{< relurl "book/de/v2/ch00/ch10-git-internals" >}}">Git Interna</a>. Vorab sollen Sie erfahren, dass er den Root-Tree eines Branchs in Ihre aktuelle Staging-Area und Ihr aktuelles Arbeitsverzeichnis einliest.
 Wir sind gerade zu Ihrem Branch <code>master</code> zurückgewechselt und ziehen den Zweig <code>rack_branch</code> in das Unterverzeichnis <code>rack</code> unseres <code>master</code> Branchs des Hauptprojektes:</p>
 </div>
 <div class="listingblock">
@@ -900,7 +900,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 Sie können auch das Gegenteil tun — Änderungen im Unterverzeichnis <code>rack</code> Ihres <code>master</code> Branchs vornehmen und sie dann später in Ihren Branch <code>rack_branch</code> mergen, um sie den Autoren zu übermitteln oder sie zum Upstream zu pushen.</p>
 </div>
 <div class="paragraph">
-<p>Dadurch haben wir einen Workflow, der dem Submodul-Workflow ähnelt, ohne Submodule zu verwenden (das wir in <a href="ch00/_git_submodules">Submodule</a> behandeln werden).
+<p>Dadurch haben wir einen Workflow, der dem Submodul-Workflow ähnelt, ohne Submodule zu verwenden (das wir in <a href="{{< relurl "book/de/v2/ch00/_git_submodules" >}}">Submodule</a> behandeln werden).
 Wir können Branches mit anderen verwandten Projekten in unserem Repository vorhalten und sie gelegentlich in unserem Projekt verschmelzen.
 In gewisser Weise ist das nützlich. Beispielsweise kann der gesamte Code an einen einzigen Ort übermittelt werden.
 Allerdings gibt es auch Nachteile. Es ist etwas komplizierter und somit leichter, Fehler bei der Re-Integration von Änderungen zu machen oder versehentlich einen Branch in ein nicht relevantes Repository zu pushen.</p>

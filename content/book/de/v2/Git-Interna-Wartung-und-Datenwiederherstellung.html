@@ -124,7 +124,7 @@ Der Trick ist, das letzte Commit SHA-1 zu finden. Leider ist es nicht so, als h�
 <p>Oft ist der schnellste Weg die Nutzung eines Tools namens <code>git reflog</code>.
 Während sie arbeiten, zeichnet Git lautlos im Hintergrund auf, was ihr HEAD ist und worauf es zeigt.
 Jedes Mal, wenn Sie Branches commiten oder ändern, wird das Reflog aktualisiert.
-Das reflog wird auch durch den Befehl <code>git update-ref</code> aktualisiert. Dies ist ein weiterer Grund, warum Sie diesen Befehl verwenden sollten, anstatt nur den SHA-1-Wert in Ihre ref-Dateien zu schreiben, wie in <a href="ch00/_git_refs">Git Referenzen</a> beschrieben.
+Das reflog wird auch durch den Befehl <code>git update-ref</code> aktualisiert. Dies ist ein weiterer Grund, warum Sie diesen Befehl verwenden sollten, anstatt nur den SHA-1-Wert in Ihre ref-Dateien zu schreiben, wie in <a href="{{< relurl "book/de/v2/ch00/_git_refs" >}}">Git Referenzen</a> beschrieben.
 Sie können jederzeit sehen, wo Sie waren, indem Sie <code>git reflog</code> ausführen:</p>
 </div>
 <div class="listingblock">
@@ -307,7 +307,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>Das große Objekt befindet sich unten: 5 MB.
-Um herauszufinden, um welche Datei es sich handelt, verwenden Sie den Befehl <code>rev-list</code>, den Sie kurz in <a href="ch00/_enforcing_commit_message_format">Ein bestimmtes Commit-Message-Format erzwingen</a> verwendet haben.
+Um herauszufinden, um welche Datei es sich handelt, verwenden Sie den Befehl <code>rev-list</code>, den Sie kurz in <a href="{{< relurl "book/de/v2/ch00/_enforcing_commit_message_format" >}}">Ein bestimmtes Commit-Message-Format erzwingen</a> verwendet haben.
 Wenn Sie <code>--objects</code> an <code>rev-list</code> übergeben, werden alle festgeschriebenen SHA-1s und auch die BLOB-SHA-1s mit den ihnen zugeordneten Dateipfaden aufgelistet.
 Sie können dies verwenden, um den Namen Ihres Blobs zu finden:</p>
 </div>
@@ -330,7 +330,7 @@ dadf725 Oops - remove large tarball
 </div>
 <div class="paragraph">
 <p>Sie müssen alle Commits hinter <code>7b30847</code> neu schreiben, um diese Datei vollständig aus Ihrem Git-Verlauf zu entfernen.
-Verwenden Sie dazu <code>filter-branch</code>, den Sie in <a href="ch00/_rewriting_history">Den Verlauf umschreiben</a> verwendet haben:</p>
+Verwenden Sie dazu <code>filter-branch</code>, den Sie in <a href="{{< relurl "book/de/v2/ch00/_rewriting_history" >}}">Den Verlauf umschreiben</a> verwendet haben:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -342,7 +342,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Die Option <code>--index-filter</code> ähnelt der Option <code>--tree-filter</code>, die in <a href="ch00/_rewriting_history">Den Verlauf umschreiben</a> verwendet wurde. Jedoch ändern sie jedes Mal Ihren Staging-Bereich oder Index anstatt daß sie einen Befehl zum Modifizieren von ausgecheckten Dateien auf ihrer Platte übergeben.</p>
+<p>Die Option <code>--index-filter</code> ähnelt der Option <code>--tree-filter</code>, die in <a href="{{< relurl "book/de/v2/ch00/_rewriting_history" >}}">Den Verlauf umschreiben</a> verwendet wurde. Jedoch ändern sie jedes Mal Ihren Staging-Bereich oder Index anstatt daß sie einen Befehl zum Modifizieren von ausgecheckten Dateien auf ihrer Platte übergeben.</p>
 </div>
 <div class="paragraph">
 <p>Anstatt eine bestimmte Datei mit etwas wie <code>rm file</code> zu entfernen, müssen Sie sie mit <code>git rm --cached</code> entfernen - Sie müssen sie aus dem Index entfernen, nicht von der Festplatte.
@@ -694,7 +694,7 @@ Es ist wahrscheinlich einfacher, dafür einfach die Datei <code>~/.ssh/config</c
 </div>
 <div class="paragraph">
 <p><strong><code>GIT_ASKPASS</code></strong> dient zur Überschreibung des Konfigurationswertes <code>core.askpass</code>.
-Dies ist das Programm, das immer dann aufgerufen wird, wenn Git den Benutzer nach Anmeldeinformationen fragen muss, wobei eine Eingabeaufforderung als Befehlszeilenargument erwartet wird und die eine Antwort auf <code>stdout</code> zurückgeben soll. Weitere Informationen zu diesem Subsystem finden Sie unter <a href="ch00/_credential_caching">Anmeldeinformationen speichern</a>.</p>
+Dies ist das Programm, das immer dann aufgerufen wird, wenn Git den Benutzer nach Anmeldeinformationen fragen muss, wobei eine Eingabeaufforderung als Befehlszeilenargument erwartet wird und die eine Antwort auf <code>stdout</code> zurückgeben soll. Weitere Informationen zu diesem Subsystem finden Sie unter <a href="{{< relurl "book/de/v2/ch00/_credential_caching" >}}">Anmeldeinformationen speichern</a>.</p>
 </div>
 <div class="paragraph">
 <p><strong><code>GIT_NAMESPACE</code></strong> steuert den Zugriff auf namenspaced refs und entspricht dem Flag <code>--namespace</code>.

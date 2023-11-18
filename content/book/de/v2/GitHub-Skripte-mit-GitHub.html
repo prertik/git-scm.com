@@ -35,11 +35,11 @@ In diesem Abschnitt erfahren Sie, wie Sie das GitHub-Hook-System und seine API v
 <div class="paragraph">
 <p>Schauen wir uns zuerst die Services (Dienste) an.
 Sowohl die Hooks- als auch die Dienste-Integration finden Sie im Abschnitt Einstellungen Ihres Repositorys, wo wir uns zuvor mit dem Hinzufügen von Mitwirkenden und dem Ändern der Standard-Branch Ihres Projekts beschäftigt haben.
-Unter der Registerkarte „Webhooks und Dienste“ sehen Sie so etwas wie <a href="ch00/_services_hooks">Konfiguration von Diensten und Hooks</a>.</p>
+Unter der Registerkarte „Webhooks und Dienste“ sehen Sie so etwas wie <a href="{{< relurl "book/de/v2/ch00/_services_hooks" >}}">Konfiguration von Diensten und Hooks</a>.</p>
 </div>
 <div id="_services_hooks" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-01-services.png" >}}" alt="Dienste und Hooks">
+<img src="{{< relurl "book/de/v2/images/scripting-01-services.png" >}}" alt="Dienste und Hooks">
 </div>
 <div class="title">Abbildung 129. Konfiguration von Diensten und Hooks</div>
 </div>
@@ -47,11 +47,11 @@ Unter der Registerkarte „Webhooks und Dienste“ sehen Sie so etwas wie <a hre
 <p>Es gibt Dutzende von Diensten, aus denen Sie wählen können, die meisten davon sind Integrationen in andere kommerzielle und Open-Source-Systeme.
 Die meisten von ihnen betreffen kontinuierliche Integrationsdienste (engl. Continuous-Integration-Services), Bug- und Issue-Tracker, Chatroom-Systeme und Dokumentationssysteme.
 Wir werden uns mit der Konfiguration eines sehr einfachen Systems befassen, dem E-Mail-Hook.
-Wenn Sie „E-Mail“ aus der Auswahlliste „Add Service“ wählen, erhalten Sie einen Konfigurationsbildschirm wie <a href="ch00/_service_config">E-Mail-Service-Konfiguration</a>.</p>
+Wenn Sie „E-Mail“ aus der Auswahlliste „Add Service“ wählen, erhalten Sie einen Konfigurationsbildschirm wie <a href="{{< relurl "book/de/v2/ch00/_service_config" >}}">E-Mail-Service-Konfiguration</a>.</p>
 </div>
 <div id="_service_config" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-02-email-service.png" >}}" alt="E-Mail-Service">
+<img src="{{< relurl "book/de/v2/images/scripting-02-email-service.png" >}}" alt="E-Mail-Service">
 </div>
 <div class="title">Abbildung 130. E-Mail-Service-Konfiguration</div>
 </div>
@@ -75,12 +75,12 @@ Geben Sie eine URL an und GitHub wird bei jedem gewünschten Event über HTTP Nu
 <p>Im Regelfall können Sie einen kleinen Webservice einrichten, um nach einer GitHub-Hook-Nutzlast (engl. payload) zu suchen und dann die empfangenen Daten weiter zu verarbeiten.</p>
 </div>
 <div class="paragraph">
-<p>Um einen Hook zu aktivieren, klicken Sie in <a href="ch00/_services_hooks">Konfiguration von Diensten und Hooks</a> auf die Schaltfläche „Webhook hinzufügen“.
-Das führt Sie zu einer Seite, die wie <a href="ch00/_web_hook">Web-Hook Konfiguration</a> aussieht.</p>
+<p>Um einen Hook zu aktivieren, klicken Sie in <a href="{{< relurl "book/de/v2/ch00/_services_hooks" >}}">Konfiguration von Diensten und Hooks</a> auf die Schaltfläche „Webhook hinzufügen“.
+Das führt Sie zu einer Seite, die wie <a href="{{< relurl "book/de/v2/ch00/_web_hook" >}}">Web-Hook Konfiguration</a> aussieht.</p>
 </div>
 <div id="_web_hook" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-03-webhook.png" >}}" alt="Web-Hook">
+<img src="{{< relurl "book/de/v2/images/scripting-03-webhook.png" >}}" alt="Web-Hook">
 </div>
 <div class="title">Abbildung 131. Web-Hook Konfiguration</div>
 </div>
@@ -143,7 +143,7 @@ Das ermöglicht ein unglaublich einfaches Testen und Debuggen Ihrer Hooks.</p>
 </div>
 <div id="_web_hook_debug" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-04-webhook-debug.png" >}}" alt="Web-Hook Debugging">
+<img src="{{< relurl "book/de/v2/images/scripting-04-webhook-debug.png" >}}" alt="Web-Hook Debugging">
 </div>
 <div class="title">Abbildung 132. Web-Hook Debug Information</div>
 </div>
@@ -229,7 +229,7 @@ Sie können den über die Registerkarte „Anwendungen“ auf Ihrer Einstellungs
 </div>
 <div id="_access_token" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-05-access-token.png" >}}" alt="Access Token">
+<img src="{{< relurl "book/de/v2/images/scripting-05-access-token.png" >}}" alt="Access Token">
 </div>
 <div class="title">Abbildung 133. Generieren eines Zugriffstokens auf der Registerkarte „Anwendungen“ der Settings-Seite</div>
 </div>
@@ -275,11 +275,11 @@ Dazu müssen wir einen HTTP POST Request an <code>repos/&lt;user&gt;/&lt;repo&gt
 </div>
 </div>
 <div class="paragraph">
-<p>Wenn Sie jetzt zu diesem Issue gehen, können Sie den Kommentar sehen, den wir gerade erfolgreich gepostet haben, wie in <a href="ch00/_api_comment">Kommentar, veröffentlicht von der GitHub API</a> zu sehen ist.</p>
+<p>Wenn Sie jetzt zu diesem Issue gehen, können Sie den Kommentar sehen, den wir gerade erfolgreich gepostet haben, wie in <a href="{{< relurl "book/de/v2/ch00/_api_comment" >}}">Kommentar, veröffentlicht von der GitHub API</a> zu sehen ist.</p>
 </div>
 <div id="_api_comment" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-06-comment.png" >}}" alt="API Kommentar">
+<img src="{{< relurl "book/de/v2/images/scripting-06-comment.png" >}}" alt="API Kommentar">
 </div>
 <div class="title">Abbildung 134. Kommentar, veröffentlicht von der GitHub API</div>
 </div>
@@ -352,11 +352,11 @@ In diesem Web-Hook-Handler schauen wir uns jeden Commit an, der gerade gepusht w
 So kann beispielsweise ein Testdienst einen Status liefern und ein Validierungsdienst wie dieser ebenfalls einen Status – das Feld „Kontext“ zeigt, wie sie sich voneinander unterscheiden.</p>
 </div>
 <div class="paragraph">
-<p>Wenn jemand einen neuen Pull-Request auf GitHub öffnet und dieser Hook eingerichtet ist, sehen Sie vielleicht etwas wie <a href="ch00/_commit_status">Commit-Status via API</a>.</p>
+<p>Wenn jemand einen neuen Pull-Request auf GitHub öffnet und dieser Hook eingerichtet ist, sehen Sie vielleicht etwas wie <a href="{{< relurl "book/de/v2/ch00/_commit_status" >}}">Commit-Status via API</a>.</p>
 </div>
 <div id="_commit_status" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-07-status.png" >}}" alt="Commit-Status">
+<img src="{{< relurl "book/de/v2/images/scripting-07-status.png" >}}" alt="Commit-Status">
 </div>
 <div class="title">Abbildung 135. Commit-Status via API</div>
 </div>

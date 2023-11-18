@@ -63,7 +63,7 @@ Lassen Sie uns zunächst annehmen, Sie arbeiten an Ihrem Projekt und haben berei
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Ein einfacher Commit-Verlauf">
+<img src="{{< relurl "book/de/v2/images/basic-branching-1.png" >}}" alt="Ein einfacher Commit-Verlauf">
 </div>
 <div class="title">Abbildung 18. Ein einfacher Commit-Verlauf</div>
 </div>
@@ -88,7 +88,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Erstellen eines neuen Branch-Zeigers">
+<img src="{{< relurl "book/de/v2/images/basic-branching-2.png" >}}" alt="Erstellen eines neuen Branch-Zeigers">
 </div>
 <div class="title">Abbildung 19. Erstellen eines neuen Branch-Zeigers</div>
 </div>
@@ -104,7 +104,7 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="Der `iss53` Branch hat sich bei Ihrer Arbeit vorwärts bewegt">
+<img src="{{< relurl "book/de/v2/images/basic-branching-3.png" >}}" alt="Der `iss53` Branch hat sich bei Ihrer Arbeit vorwärts bewegt">
 </div>
 <div class="title">Abbildung 20. Der <code>iss53</code> Branch hat sich bei Ihrer Arbeit vorwärts bewegt</div>
 </div>
@@ -116,7 +116,7 @@ Alles, was Sie machen müssen, ist, zu Ihrem vorherigen <code>master</code> Bran
 <div class="paragraph">
 <p>Beachten Sie dabei, dass Git das Wechseln zu einem anderen Branch blockiert, falls Ihr Arbeitsverzeichnis oder Ihr Staging-Bereich nicht committete Modifikationen enthält, die Konflikte verursachen.
 Generell ist es am besten, einen sauberen Zustand des Arbeitsbereichs anzustreben, bevor Sie Branches wechseln.
-Es gibt Möglichkeiten, das zu umgehen (nämlich das Verstecken (engl. Stashen) und Revidieren (engl. Amending) von Änderungen), die wir später in Kapitel 7 <a href="ch00/_git_stashing">Git Stashing</a> behandeln werden.
+Es gibt Möglichkeiten, das zu umgehen (nämlich das Verstecken (engl. Stashen) und Revidieren (engl. Amending) von Änderungen), die wir später in Kapitel 7 <a href="{{< relurl "book/de/v2/ch00/_git_stashing" >}}">Git Stashing</a> behandeln werden.
 Lassen Sie uns vorerst annehmen, Sie haben für alle Ihre Änderungen Commits durchgeführt, sodass Sie zu Ihrem vorherigen <code>master</code> Branch wechseln können.</p>
 </div>
 <div class="listingblock">
@@ -146,7 +146,7 @@ $ git commit -a -m 'Fix broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="Auf dem `master` Branch basierender Hotfix-Branch">
+<img src="{{< relurl "book/de/v2/images/basic-branching-4.png" >}}" alt="Auf dem `master` Branch basierender Hotfix-Branch">
 </div>
 <div class="title">Abbildung 21. Auf dem <code>master</code> Branch basierender Hotfix-Branch</div>
 </div>
@@ -174,7 +174,7 @@ Um es anders auszudrücken: Wenn Sie versuchen, einen Commit mit einem Commit zu
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="`master` wurde zu `hotfix` „fast-forwarded“">
+<img src="{{< relurl "book/de/v2/images/basic-branching-5.png" >}}" alt="`master` wurde zu `hotfix` „fast-forwarded“">
 </div>
 <div class="title">Abbildung 22. <code>master</code> wurde zu <code>hotfix</code> „fast-forwarded“</div>
 </div>
@@ -204,7 +204,7 @@ $ git commit -a -m 'Finish the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="Arbeiten an `iss53` fortsetzen">
+<img src="{{< relurl "book/de/v2/images/basic-branching-6.png" >}}" alt="Arbeiten an `iss53` fortsetzen">
 </div>
 <div class="title">Abbildung 23. Arbeiten an <code>iss53</code> fortsetzen</div>
 </div>
@@ -239,7 +239,7 @@ In diesem Fall führt Git einen einfachen Drei-Wege-Merge durch, indem er die be
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Drei Schnappschüsse" width="die bei einem typischen `merge` benutzt werden">
+<img src="{{< relurl "book/de/v2/images/basic-merging-1.png" >}}" alt="Drei Schnappschüsse" width="die bei einem typischen `merge` benutzt werden">
 </div>
 <div class="title">Abbildung 24. Drei Schnappschüsse, die bei einem typischen <code>merge</code> benutzt werden</div>
 </div>
@@ -249,7 +249,7 @@ Das wird auch als Merge-Commit bezeichnet und ist ein Spezialfall, weil er mehr 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Ein Merge-Commit">
+<img src="{{< relurl "book/de/v2/images/basic-merging-2.png" >}}" alt="Ein Merge-Commit">
 </div>
 <div class="title">Abbildung 25. Ein Merge-Commit</div>
 </div>
@@ -364,7 +364,7 @@ Tippen Sie einfach den Namen des gewünschten Programms ein.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Wenn Sie fortgeschrittenere Werkzeuge zur Lösung kniffliger Merge-Konflikte benötigen, erfahren Sie mehr darüber in Kapitel 7 <a href="ch00/_advanced_merging">Fortgeschrittenes Merging</a>.</p>
+<p>Wenn Sie fortgeschrittenere Werkzeuge zur Lösung kniffliger Merge-Konflikte benötigen, erfahren Sie mehr darüber in Kapitel 7 <a href="{{< relurl "book/de/v2/ch00/_advanced_merging" >}}">Fortgeschrittenes Merging</a>.</p>
 </div>
 </td>
 </tr>

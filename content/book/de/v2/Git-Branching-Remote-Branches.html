@@ -59,7 +59,7 @@ Wenn Sie stattdessen die Anweisung <code>git clone -o booyah</code> ausführen, 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Entfernte und lokale Repositorys nach dem Klonen">
+<img src="{{< relurl "book/de/v2/images/remote-branches-1.png" >}}" alt="Entfernte und lokale Repositorys nach dem Klonen">
 </div>
 <div class="title">Abbildung 30. Entfernte und lokale Repositorys nach dem Klonen</div>
 </div>
@@ -69,7 +69,7 @@ Solange Sie keinen Kontakt mit Ihrem <code>origin</code> Server aufnehmen, beweg
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Lokale und entfernte Änderungen können auseinanderlaufen">
+<img src="{{< relurl "book/de/v2/images/remote-branches-2.png" >}}" alt="Lokale und entfernte Änderungen können auseinanderlaufen">
 </div>
 <div class="title">Abbildung 31. Lokale und entfernte Änderungen können Auseinanderlaufen</div>
 </div>
@@ -79,19 +79,19 @@ Der Befehl sucht, welcher Server „origin“ ist (in diesem Fall <code>git.ourc
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` aktualisiert Ihre Remote-Tracking-Branches">
+<img src="{{< relurl "book/de/v2/images/remote-branches-3.png" >}}" alt="`git fetch` aktualisiert Ihre Remote-Tracking-Branches">
 </div>
 <div class="title">Abbildung 32. <code>git fetch</code> aktualisiert Ihre Remote-Tracking-Branches</div>
 </div>
 <div class="paragraph">
 <p>Um den Umgang mit mehreren Remote-Servern zu veranschaulichen und um zu sehen, wie Remote-Branches bei diesen Remote-Projekten aussehen, nehmen wir an, dass Sie einen weiteren internen Git-Server haben, welcher von einem Ihrer Sprint-Teams nur zur Entwicklung genutzt wird.
 Diesen Server erreichen wir unter <code>git.team1.ourcompany.com</code>.
-Sie können ihn zu dem Projekt, an dem Sie gegenwärtig arbeiten, als neuen Remote-Server hinzufügen, indem Sie die Anweisung <code>git remote add</code> ausführen, wie wir bereits in Kapitel 2 <a href="ch00/ch02-git-basics-chapter">Git Grundlagen</a> behandelt haben.
+Sie können ihn zu dem Projekt, an dem Sie gegenwärtig arbeiten, als neuen Remote-Server hinzufügen, indem Sie die Anweisung <code>git remote add</code> ausführen, wie wir bereits in Kapitel 2 <a href="{{< relurl "book/de/v2/ch00/ch02-git-basics-chapter" >}}">Git Grundlagen</a> behandelt haben.
 Wir nennen diesen Remote-Server <code>teamone</code>, was die Kurzbezeichnung für die gesamte URL sein wird.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Hinzufügen eines weiteren Remote-Servers">
+<img src="{{< relurl "book/de/v2/images/remote-branches-4.png" >}}" alt="Hinzufügen eines weiteren Remote-Servers">
 </div>
 <div class="title">Abbildung 33. Hinzufügen eines weiteren Remote-Servers</div>
 </div>
@@ -101,7 +101,7 @@ Da auf diesem Server nur eine Teilmenge der Daten ist, die sich genau jetzt auf 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Remote-Tracking-Branch für `teamone/master`">
+<img src="{{< relurl "book/de/v2/images/remote-branches-5.png" >}}" alt="Remote-Tracking-Branch für `teamone/master`">
 </div>
 <div class="title">Abbildung 34. Remote-Tracking-Branch für <code>teamone/master</code>
 </div>
@@ -133,7 +133,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Das ist eine Art Abkürzung.
 Git erweitert den Branch-Namen <code>serverfix</code> automatisch zu <code>refs/heads/serverfix:refs/heads/serverfix</code>, was soviel bedeutet wie „Nimm meinen lokalen Branch <code>serverfix</code> und aktualisiere damit den <code>serverfix</code> Branch auf meinem Remote-Server“.
-Wir werden den Teil <code>refs/heads/</code> in Kapitel 10 <a href="ch00/ch10-git-internals">Git Interna</a> noch näher beleuchten, Sie können ihn aber in der Regel auslassen.
+Wir werden den Teil <code>refs/heads/</code> in Kapitel 10 <a href="{{< relurl "book/de/v2/ch00/ch10-git-internals" >}}">Git Interna</a> noch näher beleuchten, Sie können ihn aber in der Regel auslassen.
 Sie können auch die Anweisung <code>git push origin serverfix:serverfix</code> ausführen, was das Gleiche bewirkt – es bedeutet „Nimm meinen <code>serverfix</code> und mach ihn zum <code>serverfix</code> des Remote-Servers“.
 Sie können dieses Format auch benutzen, um einen lokalen Branch in einen Remote-Branch mit anderem Namen zu pushen.
 Wenn Sie nicht wollten, dass er auf dem Remote als <code>serverfix</code> bezeichnet wird, können Sie stattdessen <code>git push origin serverfix:awesomebranch</code> ausführen, um Ihren lokalen <code>serverfix</code> Branch auf den <code>awesomebranch</code> Branch im Remote-Projekt zu pushen.</p>
@@ -155,7 +155,7 @@ Standardmäßig werden Sie auf dem Terminal nach diesen Informationen gefragt, d
 Am einfachsten ist es, die Informationen nur für einige Minuten im Speicher zu behalten, was Sie einfach mit der Anweisung <code>git config --global credential.helper cache</code> bewerkstelligen können.</p>
 </div>
 <div class="paragraph">
-<p>Weitere Informationen zu den verschiedenen verfügbaren „credential cache“ Optionen finden Sie in Kapitel 7 <a href="ch00/_credential_caching">Caching von Anmeldeinformationen</a>.</p>
+<p>Weitere Informationen zu den verschiedenen verfügbaren „credential cache“ Optionen finden Sie in Kapitel 7 <a href="{{< relurl "book/de/v2/ch00/_credential_caching" >}}">Caching von Anmeldeinformationen</a>.</p>
 </div>
 </td>
 </tr>

@@ -58,7 +58,7 @@ Diese Methode ist die am einfachsten anzuwendende, wenn man den genauen Pfad zum
 Es gibt auch <code>git_repository_open_ext</code>, das Optionen für die Suche enthält, <code>git_clone</code> und seine Verwandten für das Erstellen eines lokalen Klons eines Remote-Repositorys und <code>git_repository_init</code> für das Erstellen eines völlig neuen Repositorys.</p>
 </div>
 <div class="paragraph">
-<p>Der zweite Teil des Codes verwendet die <code>rev-parse</code> Syntax (siehe auch <a href="ch00/_branch_references">Branch Referenzen</a>), um den Commit zu erhalten, auf den HEAD letztlich zeigt.
+<p>Der zweite Teil des Codes verwendet die <code>rev-parse</code> Syntax (siehe auch <a href="{{< relurl "book/de/v2/ch00/_branch_references" >}}">Branch Referenzen</a>), um den Commit zu erhalten, auf den HEAD letztlich zeigt.
 Der zurückgegebene Typ ist ein <code>git_object</code> Pointer, der ein Objekt repräsentiert, das in der Git-Objekt-Datenbank für ein Repository steht.
 Bei <code>git_object</code> handelt es sich eigentlich um einen „Parent“-Typ für mehrere verschiedene Arten von Objekten. Das Speicher-Layout für jeden der „Child“-Typen ist das Gleiche wie bei <code>git_object</code>, so dass Sie sicher auf den richtigen Typ verweisen können.
 In diesem Fall würde <code>git_object_type(commit)</code> ein <code>GIT_OBJ_COMMIT</code> zurückgeben, so dass es sicher auf einen <code>git_commit</code> Pointer zu zeigt.</p>
@@ -164,7 +164,7 @@ Dazu wird die Spitze von HEAD für den einzelnen Elternteil verwendet.</p>
 </div>
 <div class="paragraph">
 <p>Der Ruby-Code ist zwar ganz nett und klar und da Libgit2 die Ausführung übernimmt, wird dieser Code auch relativ schnell laufen.
-Falls Sie kein Ruby-Anhänger sind, dann zeigen wir Alternativen in <a href="ch00/_libgit2_bindings">Andere Anbindungen</a>.</p>
+Falls Sie kein Ruby-Anhänger sind, dann zeigen wir Alternativen in <a href="{{< relurl "book/de/v2/ch00/_libgit2_bindings" >}}">Andere Anbindungen</a>.</p>
 </div>
 <div class="sect3">
 <h3 id="_erweiterte_funktionalität">Erweiterte Funktionalität</h3>

@@ -543,7 +543,7 @@ Wie bereits erwähnt, gibt es zwei Möglichkeiten, wie Git und Perforce miteinan
 <h4 id="_perforce_git_fusion">Perforce Git Fusion</h4>
 <div class="paragraph">
 <p>Git Fusion macht diesen Prozess relativ unkompliziert.
-Konfigurieren Sie einfach Ihre Projekteinstellungen, Benutzerzuordnungen und Branches mit Hilfe einer Konfigurationsdatei (wie in <a href="ch00/_p4_git_fusion">Git Fusion</a> beschrieben) und klonen Sie das Repository.
+Konfigurieren Sie einfach Ihre Projekteinstellungen, Benutzerzuordnungen und Branches mit Hilfe einer Konfigurationsdatei (wie in <a href="{{< relurl "book/de/v2/ch00/_p4_git_fusion" >}}">Git Fusion</a> beschrieben) und klonen Sie das Repository.
 Git Fusion bietet Ihnen ein natives Git-Repository, mit dem Sie nach Belieben auf einen nativen Git-Host wechseln können.
 Sie können Perforce sogar als Ihren Git-Host verwenden, wenn Sie möchten.</p>
 </div>
@@ -590,7 +590,7 @@ Importing revision 9957 (100%)</code></pre>
 </div>
 <div class="paragraph">
 <p>Dieses spezielle Projekt hat nur einen Branch, aber wenn Sie Branches haben, die mit Branch Views (oder nur einer Gruppe von Verzeichnissen) eingerichtet sind, können Sie ergänzend zum Befehl <code>git p4 clone</code> das Flag <code>--detect-branches</code>  verwenden, um alle Branches des Projekts zu importieren.
-Siehe <a href="ch00/_git_p4_branches">Branching</a> für ein paar weitere Details.</p>
+Siehe <a href="{{< relurl "book/de/v2/ch00/_git_p4_branches" >}}">Branching</a> für ein paar weitere Details.</p>
 </div>
 <div class="paragraph">
 <p>In diesem Moment sind Sie fast fertig.
@@ -662,7 +662,7 @@ Date:   Tue Jul 7 01:35:51 2009 -0800
 Wenn Ihr System nicht zu den vorgenannten gehört, sollten Sie online nach einer Import-Schnittstelle suchen – hochwertige Importer sind für viele andere Systeme verfügbar, darunter CVS, Clear Case, Visual Source Safe, sogar für ein Verzeichnis von Archiven.
 Wenn keines dieser Tools für Sie geeignet ist, Sie ein obskures Tool haben oder anderweitig einen benutzerdefinierten Importprozess benötigen, sollten Sie <code>git fast-import</code> verwenden.
 Dieser Befehl liest die einfachen Anweisungen von „stdin“ aus, um bestimmte Git-Daten zu schreiben.
-Es ist viel einfacher, Git-Objekte auf diese Weise zu erstellen, als die Git-Befehle manuell auszuführen oder zu versuchen, Raw-Objekte zu erstellen (siehe Kapitel 10, <a href="ch00/ch10-git-internals">Git Interna</a> für weitere Informationen).
+Es ist viel einfacher, Git-Objekte auf diese Weise zu erstellen, als die Git-Befehle manuell auszuführen oder zu versuchen, Raw-Objekte zu erstellen (siehe Kapitel 10, <a href="{{< relurl "book/de/v2/ch00/ch10-git-internals" >}}">Git Interna</a> für weitere Informationen).
 Auf diese Weise können Sie ein Import-Skript schreiben, das die notwendigen Informationen aus dem System liest, aus dem Sie importieren, und Anweisungen direkt auf „stdout“ ausgibt.
 Sie können dann dieses Programm ausführen und seine Ausgaben über <code>git fast-import</code> pipen.</p>
 </div>
@@ -688,7 +688,7 @@ Alles, was Sie tun müssen, ist <code>fast-import</code> mitzuteilen, worum es s
 Ihre Strategie besteht darin, die Snapshots einzeln durchzugehen und Commits mit dem Inhalt jedes Verzeichnisses zu erstellen. Dabei wird jeder Commit mit dem vorherigen verknüpft.</p>
 </div>
 <div class="paragraph">
-<p>Wie wir es in Kapitel 8, <a href="ch00/_an_example_git_enforced_policy">Beispiel für Git-forcierte Regeln</a> getan haben, werden wir das in Ruby schreiben, denn damit arbeiten wir normalerweise und es ist eher leicht zu lesen.
+<p>Wie wir es in Kapitel 8, <a href="{{< relurl "book/de/v2/ch00/_an_example_git_enforced_policy" >}}">Beispiel für Git-forcierte Regeln</a> getan haben, werden wir das in Ruby schreiben, denn damit arbeiten wir normalerweise und es ist eher leicht zu lesen.
 Sie können dieses Beispiel sehr leicht in jedem Editor schreiben, den Sie kennen – er muss nur die entsprechenden Informationen nach <code>stdout</code> ausgeben können.
 Unter Windows müssen Sie besonders darauf achten, dass Sie am Ende Ihrer Zeilen keine Zeilenumbrüche einfügen – <code>git fast-import</code> ist da sehr empfindlich, wenn es darum geht, nur Zeilenvorschübe (LF) und nicht die von Windows verwendeten Zeilenvorschübe (CRLF) zu verwenden.</p>
 </div>

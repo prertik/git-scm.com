@@ -369,17 +369,17 @@ In diesem Szenario haben Sie einen <code>master</code> Branch, der stabilen Code
 Wenn Sie in einem Branch arbeiten, von dem Sie glauben, dass Sie ihn abgeschlossen haben, oder von jemand anderem beigesteuert und überprüft haben, führen Sie ihn in Ihrem Hauptbranch zusammen. Löschen sie anschließend diesen gerade zusammengeführten Branch und wiederholen den Vorgang bei Bedarf.</p>
 </div>
 <div class="paragraph">
-<p>Wenn wir zum Beispiel ein Repository mit zwei Branches namens <code>ruby_client</code> und <code>php_client</code> haben, die wie <a href="ch00/merwf_a">Historie mit mehreren Topic Branches</a> aussehen, und wir <code>ruby_client</code> gefolgt von <code>php_client</code> zusammenführen, sieht Ihr Verlauf so aus <a href="ch00/merwf_b">Status nach einem Themen Branch Merge</a>.</p>
+<p>Wenn wir zum Beispiel ein Repository mit zwei Branches namens <code>ruby_client</code> und <code>php_client</code> haben, die wie <a href="{{< relurl "book/de/v2/ch00/merwf_a" >}}">Historie mit mehreren Topic Branches</a> aussehen, und wir <code>ruby_client</code> gefolgt von <code>php_client</code> zusammenführen, sieht Ihr Verlauf so aus <a href="{{< relurl "book/de/v2/ch00/merwf_b" >}}">Status nach einem Themen Branch Merge</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Historie mit mehreren Topic Branches">
+<img src="{{< relurl "book/de/v2/images/merging-workflows-1.png" >}}" alt="Historie mit mehreren Topic Branches">
 </div>
 <div class="title">Abbildung 72. Historie mit mehreren Topic Branches</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Status nach einem Themen Branch Merge">
+<img src="{{< relurl "book/de/v2/images/merging-workflows-2.png" >}}" alt="Status nach einem Themen Branch Merge">
 </div>
 <div class="title">Abbildung 73. Status nach einem Themen Branch Merge</div>
 </div>
@@ -390,23 +390,23 @@ Wenn Sie in einem Branch arbeiten, von dem Sie glauben, dass Sie ihn abgeschloss
 <p>Wenn Sie ein wichtigeres Projekt haben, möchten Sie möglicherweise einen zweistufigen Merge Prozess verwenden.
 In diesem Szenario haben Sie zwei lange laufende Branches namens <code>master</code> und <code>develop</code>. Sie legen fest, dass <code>master</code> nur dann aktualisiert wird, wenn eine sehr stabile Version vorhanden ist und der gesamte neue Code in den Branch <code>develop</code> integriert wird.
 Sie pushen diese beiden Branches regelmäßig in das öffentliche Repository.
-Jedes Mal, wenn Sie einen neuen Branch zum Zusammenführen haben (<a href="ch00/merwf_c">Vor einem Themen Branch Merge</a>), führen Sie ihn in <code>develop</code> (&lt;&lt; merwf_d &gt;&gt;) zusammen. Wenn Sie nun ein Release mit einem Tag versehen, spulen Sie <code>master</code> an die Stelle weiter, an der sich der jetzt stabile <code>develop</code> Branch befindet (<a href="ch00/merwf_e">Nach einem Projekt Release</a>).</p>
+Jedes Mal, wenn Sie einen neuen Branch zum Zusammenführen haben (<a href="{{< relurl "book/de/v2/ch00/merwf_c" >}}">Vor einem Themen Branch Merge</a>), führen Sie ihn in <code>develop</code> (&lt;&lt; merwf_d &gt;&gt;) zusammen. Wenn Sie nun ein Release mit einem Tag versehen, spulen Sie <code>master</code> an die Stelle weiter, an der sich der jetzt stabile <code>develop</code> Branch befindet (<a href="{{< relurl "book/de/v2/ch00/merwf_e" >}}">Nach einem Projekt Release</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Vor einem Themen Branch Merge">
+<img src="{{< relurl "book/de/v2/images/merging-workflows-3.png" >}}" alt="Vor einem Themen Branch Merge">
 </div>
 <div class="title">Abbildung 74. Vor einem Themen Branch Merge</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Nach einem Themen Branch Merge">
+<img src="{{< relurl "book/de/v2/images/merging-workflows-4.png" >}}" alt="Nach einem Themen Branch Merge">
 </div>
 <div class="title">Abbildung 75. Nach einem Themen Branch Merge</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Nach einem Projekt Release">
+<img src="{{< relurl "book/de/v2/images/merging-workflows-5.png" >}}" alt="Nach einem Projekt Release">
 </div>
 <div class="title">Abbildung 76. Nach einem Projekt Release</div>
 </div>
@@ -421,13 +421,13 @@ Wenn die Codebasis auf diesem Branch stabil ist und die Tests erfolgreich sind, 
 <div class="paragraph">
 <p>
 Das Git-Projekt selber hat vier kontinuierlich laufende Branches: <code>master</code>, <code>next</code> und <code>seen</code> (vormals 'pu' – vorgeschlagene Updates) für neue Arbeiten und <code>maint</code> für Wartungs-Backports.
-Wenn neue Arbeiten von Mitwirkenden eingereicht werden, werden sie in ähnlicher Weise wie oben beschrieben in Themenbranches im Projektrepository des Betreuers gesammelt (siehe <a href="ch00/merwf_f">Verwaltung einer komplexen Reihe paralleler Themenbranches</a>).
+Wenn neue Arbeiten von Mitwirkenden eingereicht werden, werden sie in ähnlicher Weise wie oben beschrieben in Themenbranches im Projektrepository des Betreuers gesammelt (siehe <a href="{{< relurl "book/de/v2/ch00/merwf_f" >}}">Verwaltung einer komplexen Reihe paralleler Themenbranches</a>).
 Zu diesem Zeitpunkt werden die Themen evaluiert, um festzustellen, ob sie korrekt sind und zur Weiterverarbeitung bereit sind oder ob sie Nacharbeit benötigen.
 Wenn sie korrekt sind, werden sie zu <code>next</code> zusammengeführt, und dieser Branch wird dann gepushed, damit jeder die miteinander integrierten Themen testen kann.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Verwaltung einer komplexen Reihe paralleler Themenbranches">
+<img src="{{< relurl "book/de/v2/images/large-merges-1.png" >}}" alt="Verwaltung einer komplexen Reihe paralleler Themenbranches">
 </div>
 <div class="title">Abbildung 77. Verwaltung einer komplexen Reihe paralleler Themenbranches</div>
 </div>
@@ -439,7 +439,7 @@ Dies bedeutet, dass <code>master</code> fast immer vorwärts geht, <code>next</c
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Zusammenführen von Themen Branches in langfristige Integrationsbranches">
+<img src="{{< relurl "book/de/v2/images/large-merges-2.png" >}}" alt="Zusammenführen von Themen Branches in langfristige Integrationsbranches">
 </div>
 <div class="title">Abbildung 78. Zusammenführen von Themen Branches in langfristige Integrationsbranches</div>
 </div>
@@ -469,7 +469,7 @@ Angenommen, Sie haben ein Projekt, das folgendermaßen aussieht:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Beispiel Historie vor einem Cherry-Pick">
+<img src="{{< relurl "book/de/v2/images/rebasing-1.png" >}}" alt="Beispiel Historie vor einem Cherry-Pick">
 </div>
 <div class="title">Abbildung 79. Beispiel Historie vor einem Cherry-Pick</div>
 </div>
@@ -490,7 +490,7 @@ Nun sieht die Historie so aus:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Historie nach Cherry-Picken eines Commits auf einen Themen Branch">
+<img src="{{< relurl "book/de/v2/images/rebasing-2.png" >}}" alt="Historie nach Cherry-Picken eines Commits auf einen Themen Branch">
 </div>
 <div class="title">Abbildung 80. Historie nach Cherry-Picken eines Commits auf einen Themen Branch</div>
 </div>
@@ -524,7 +524,7 @@ Die Konfigurationseinstellung lautet <code>rerere.enabled</code>. Man kann sie i
 <p>Bei Bedarf können Sie mit dem rerere Cache interagieren mittels des Befehls <code>git rerere</code>.
 Wenn der Befehlt ausgeführt wird, überprüft Git seine Lösungsdatenbank und versucht eine Übereinstimmung mit aktuellen Mergekonflikten zu finden und diesen zu lösen (dies geschieht jedoch automatisch, wenn <code>rerere.enabled</code> auf` true` gesetzt ist).
 Es gibt auch Unterbefehle, um zu sehen, was aufgezeichnet wird, um eine bestimmte Konfliktlösung aus dem Cache zu löschen oder um den gesamten Cache zu löschen.
-Wir werden uns in <a href="ch00/ref_rerere">Rerere</a> eingehender mit rerere beschäftigen.</p>
+Wir werden uns in <a href="{{< relurl "book/de/v2/ch00/ref_rerere" >}}">Rerere</a> eingehender mit rerere beschäftigen.</p>
 </div>
 </div>
 </div>
@@ -533,7 +533,7 @@ Wir werden uns in <a href="ch00/ref_rerere">Rerere</a> eingehender mit rerere be
 <div class="paragraph">
 <p>
 Wenn Sie sich entschieden haben, ein Release zu erstellen, dann möchten Sie wahrscheinlich einen Tag zuweisen, damit Sie dieses Release in Zukunft jederzeit neu erstellen können.
-Sie können einen neuen Tag erstellen, wie in <a href="ch00/ch02-git-basics-chapter">Git Grundlagen</a> beschrieben.
+Sie können einen neuen Tag erstellen, wie in <a href="{{< relurl "book/de/v2/ch00/ch02-git-basics-chapter" >}}">Git Grundlagen</a> beschrieben.
 Wenn Sie den Tag als Betreuer signieren möchten, sieht der Tag möglicherweise folgendermaßen aus:</p>
 </div>
 <div class="listingblock">

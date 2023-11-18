@@ -31,7 +31,7 @@ title: Git - Накратко за разклоненията
 За да разберем как в действителност Git реализира разклоненията, трябва да се върнем стъпка назад и да си припомним как Git съхранява своите данни.</p>
 </div>
 <div class="paragraph">
-<p>Както може би помните от <a href="ch00/what_is_git_section">Какво е Git</a>, Git не съхранява информацията си като серии от промени или разлики, а вместо това пази серии от моментното състояние на проекта - <em>snapshots</em>.</p>
+<p>Както може би помните от <a href="{{< relurl "book/bg/v2/ch00/what_is_git_section" >}}">Какво е Git</a>, Git не съхранява информацията си като серии от промени или разлики, а вместо това пази серии от моментното състояние на проекта - <em>snapshots</em>.</p>
 </div>
 <div class="paragraph">
 <p>Когато правите къмит, Git съхранява един commit обект, който съдържа указател към snapshot-а на индексираното съдържание (това, което е в индексната област).
@@ -39,7 +39,7 @@ title: Git - Накратко за разклоненията
 </div>
 <div class="paragraph">
 <p>За да илюстрираме това, нека допуснем, че имате директория с три файла и сте ги индексирали и къмитнали.
-Процесът по индексирането на файловете (staging) изчислява чексума за всеки от файловете (това е SHA-1 хеш стрингът за който говорихме по-рано в <a href="ch00/what_is_git_section">Какво е Git</a>), записва версията на всеки файл в хранилището (Git третира файловете като blob-обекти) и добавя чексумите в индексната област (staging area):</p>
+Процесът по индексирането на файловете (staging) изчислява чексума за всеки от файловете (това е SHA-1 хеш стрингът за който говорихме по-рано в <a href="{{< relurl "book/bg/v2/ch00/what_is_git_section" >}}">Какво е Git</a>), записва версията на всеки файл в хранилището (Git третира файловете като blob-обекти) и добавя чексумите в индексната област (staging area):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -56,7 +56,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Един къмит и неговото дърво">
+<img src="{{< relurl "book/bg/v2/images/commit-and-tree.png" >}}" alt="Един къмит и неговото дърво">
 </div>
 <div class="title">Фигура 9. Един къмит и неговото дърво</div>
 </div>
@@ -65,7 +65,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Къмити и родителски къмити">
+<img src="{{< relurl "book/bg/v2/images/commits-and-parents.png" >}}" alt="Къмити и родителски къмити">
 </div>
 <div class="title">Фигура 10. Къмити и родителски къмити</div>
 </div>
@@ -93,7 +93,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="branch и неговата commit история">
+<img src="{{< relurl "book/bg/v2/images/branch-and-history.png" >}}" alt="branch и неговата commit история">
 </div>
 <div class="title">Фигура 11. branch и неговата commit история</div>
 </div>
@@ -116,7 +116,7 @@ Git просто създава нов указател за вас, който 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Два клона сочещи към една и съща серия къмити">
+<img src="{{< relurl "book/bg/v2/images/two-branches.png" >}}" alt="Два клона сочещи към една и съща серия къмити">
 </div>
 <div class="title">Фигура 12. Два клона сочещи към една и съща серия къмити</div>
 </div>
@@ -130,7 +130,7 @@ Git просто създава нов указател за вас, който 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD указател сочещ към текущия branch">
+<img src="{{< relurl "book/bg/v2/images/head-to-master.png" >}}" alt="HEAD указател сочещ към текущия branch">
 </div>
 <div class="title">Фигура 13. HEAD указател сочещ към текущия branch</div>
 </div>
@@ -166,7 +166,7 @@ f30ab (HEAD -&gt; master, testing) Add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD сочи към текущия клон">
+<img src="{{< relurl "book/bg/v2/images/head-to-testing.png" >}}" alt="HEAD сочи към текущия клон">
 </div>
 <div class="title">Фигура 14. HEAD сочи към текущия клон</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="HEAD клонът се премества напред при направен къмит">
+<img src="{{< relurl "book/bg/v2/images/advance-testing.png" >}}" alt="HEAD клонът се премества напред при направен къмит">
 </div>
 <div class="title">Фигура 15. HEAD клонът се премества напред при направен къмит</div>
 </div>
@@ -222,7 +222,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD се премества когато превключвате">
+<img src="{{< relurl "book/bg/v2/images/checkout-master.png" >}}" alt="HEAD се премества когато превключвате">
 </div>
 <div class="title">Фигура 16. HEAD се премества когато превключвате</div>
 </div>
@@ -259,14 +259,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Сега историята на проекта се отклони (виж <a href="ch00/divergent_history">Разклонена история</a>).
+<p>Сега историята на проекта се отклони (виж <a href="{{< relurl "book/bg/v2/ch00/divergent_history" >}}">Разклонена история</a>).
 Вие създадохте и превключихте към нов клон, направихте промени по кода в него, превключихте към основния клон и направихте други промени.
 И двата вида промени са изолирани в отделни разклонения: можете да превключвате между тези разклонения и да ги слеете в едно, когато сте готови.
 Направихте всичко това с прости команди като <code>branch</code>, <code>checkout</code>, и <code>commit</code>.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Разклонена история">
+<img src="{{< relurl "book/bg/v2/images/advance-master.png" >}}" alt="Разклонена история">
 </div>
 <div class="title">Фигура 17. Разклонена история</div>
 </div>

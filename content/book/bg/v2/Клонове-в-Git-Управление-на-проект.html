@@ -370,17 +370,17 @@ $ git diff 36c7db</code></pre>
 Когато получите промени в topic клон и смятате, че той е готов за интегриране или пък когато сте получили и проверили работата на колега, просто сливате нещата в <code>master</code> клона, изтривате topic клона и това се повтаря във времето.</p>
 </div>
 <div class="paragraph">
-<p>Например, ако имаме хранилище с работа в два клона, <code>ruby_client</code> и <code>php_client</code>, изглеждащи като в <a href="ch00/merwf_a">История с няколко topic клона</a> и слеем <code>ruby_client</code> последван от <code>php_client</code>, историята накрая ще изглежда като <a href="ch00/merwf_b">След сливане на topic клон</a>.</p>
+<p>Например, ако имаме хранилище с работа в два клона, <code>ruby_client</code> и <code>php_client</code>, изглеждащи като в <a href="{{< relurl "book/bg/v2/ch00/merwf_a" >}}">История с няколко topic клона</a> и слеем <code>ruby_client</code> последван от <code>php_client</code>, историята накрая ще изглежда като <a href="{{< relurl "book/bg/v2/ch00/merwf_b" >}}">След сливане на topic клон</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="История с няколко topic клона">
+<img src="{{< relurl "book/bg/v2/images/merging-workflows-1.png" >}}" alt="История с няколко topic клона">
 </div>
 <div class="title">Фигура 72. История с няколко topic клона</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="След сливане на topic клон">
+<img src="{{< relurl "book/bg/v2/images/merging-workflows-2.png" >}}" alt="След сливане на topic клон">
 </div>
 <div class="title">Фигура 73. След сливане на topic клон</div>
 </div>
@@ -391,23 +391,23 @@ $ git diff 36c7db</code></pre>
 <p>Ако проектът е особено важен, може да искате да използвате двустъпков цикъл на сливане.
 При такъв сценарий, имате два long-running клона, <code>master</code> и <code>develop</code>, при които <code>master</code> се обновява само, когато излезе много стабилна версия на проекта и промените преди това са интегрирани успешно в <code>develop</code>.
 И двата клона редовно се публикуват в публично хранилище.
-Всеки път, когато имате нов topic клон за сливане (<a href="ch00/merwf_c">Преди сливане на topic клон</a>), вие го сливате в <code>develop</code> (<a href="ch00/merwf_d">След сливане на topic клон</a>), след което тагвате нова версия и правите fast-forward на <code>master</code> към мястото, където сега е стабилния <code>develop</code> (<a href="ch00/merwf_e">След нова версия на проекта</a>).</p>
+Всеки път, когато имате нов topic клон за сливане (<a href="{{< relurl "book/bg/v2/ch00/merwf_c" >}}">Преди сливане на topic клон</a>), вие го сливате в <code>develop</code> (<a href="{{< relurl "book/bg/v2/ch00/merwf_d" >}}">След сливане на topic клон</a>), след което тагвате нова версия и правите fast-forward на <code>master</code> към мястото, където сега е стабилния <code>develop</code> (<a href="{{< relurl "book/bg/v2/ch00/merwf_e" >}}">След нова версия на проекта</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Преди сливане на topic клон">
+<img src="{{< relurl "book/bg/v2/images/merging-workflows-3.png" >}}" alt="Преди сливане на topic клон">
 </div>
 <div class="title">Фигура 74. Преди сливане на topic клон</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="След сливане на topic клон">
+<img src="{{< relurl "book/bg/v2/images/merging-workflows-4.png" >}}" alt="След сливане на topic клон">
 </div>
 <div class="title">Фигура 75. След сливане на topic клон</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="След нова версия на проекта">
+<img src="{{< relurl "book/bg/v2/images/merging-workflows-5.png" >}}" alt="След нова версия на проекта">
 </div>
 <div class="title">Фигура 76. След нова версия на проекта</div>
 </div>
@@ -422,13 +422,13 @@ $ git diff 36c7db</code></pre>
 <div class="paragraph">
 <p>
 Проектът Git има четири long-running клона: <code>master</code>, <code>next</code>, и <code>seen</code> (преди това известен като 'pu' — proposed updates) за нови промени, и <code>maint</code> за maintenance backports.
-Когато сътрудниците изпратят нова работа, тя се събира в topic клонове в хранилище на поддържащия проекта в маниер подобен на този, който описахме (вижте <a href="ch00/merwf_f">Управление на сложни серии от parallel contributed topic клонове.</a>).
+Когато сътрудниците изпратят нова работа, тя се събира в topic клонове в хранилище на поддържащия проекта в маниер подобен на този, който описахме (вижте <a href="{{< relurl "book/bg/v2/ch00/merwf_f" >}}">Управление на сложни серии от parallel contributed topic клонове.</a>).
 В този момент, topic клоновете се изпитват, за да се определи дали са безопасни и готови за използване или трябва да се поправят допълнително.
 Ако са добре, те се сливат в <code>next</code> и този клон се публикува, така че всички могат да изпробват новите промени както са интегрирани заедно.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Управление на сложни серии от parallel contributed topic клонове.">
+<img src="{{< relurl "book/bg/v2/images/large-merges-1.png" >}}" alt="Управление на сложни серии от parallel contributed topic клонове.">
 </div>
 <div class="title">Фигура 77. Управление на сложни серии от parallel contributed topic клонове.</div>
 </div>
@@ -440,7 +440,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Сливане на topic клонове в long-term integration клонове.">
+<img src="{{< relurl "book/bg/v2/images/large-merges-2.png" >}}" alt="Сливане на topic клонове в long-term integration клонове.">
 </div>
 <div class="title">Фигура 78. Сливане на topic клонове в long-term integration клонове.</div>
 </div>
@@ -470,7 +470,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Примерна история преди cherry-pick">
+<img src="{{< relurl "book/bg/v2/images/rebasing-1.png" >}}" alt="Примерна история преди cherry-pick">
 </div>
 <div class="title">Фигура 79. Примерна история преди cherry-pick</div>
 </div>
@@ -491,7 +491,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="История след cherry-picking на къмит в topic клон">
+<img src="{{< relurl "book/bg/v2/images/rebasing-2.png" >}}" alt="История след cherry-picking на къмит в topic клон">
 </div>
 <div class="title">Фигура 80. История след cherry-picking на къмит в topic клон</div>
 </div>
@@ -525,7 +525,7 @@ Finished one cherry-pick.
 <p>Ако е необходимо, може да комуникирате с rerere кеша с командата <code>git rerere</code>.
 Когато тя се използва самостоятелно, Git проверява базата си данни с решения за конфликти и се опитва да намери съответствие (въпреки, че това се прави автоматично, ако <code>rerere.enabled</code> е <code>true</code>).
 Също така има подкоманди за разглеждане на това какво ще се запише, за изтриване на конкретна резолюция от кеша и за изтриване на целия кеш.
-Ще разгледаме детайлно rerere в <a href="ch00/ref_rerere">Rerere</a>.</p>
+Ще разгледаме детайлно rerere в <a href="{{< relurl "book/bg/v2/ch00/ref_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -534,7 +534,7 @@ Finished one cherry-pick.
 <div class="paragraph">
 <p>
 Ако сте решили да обявите стабилна версия на проекта, вероятно бихте желали да присъедините таг към нея, така че ако се налага по-късно да можете да я пресъздадете отново.
-Как да създадете таг видяхме в <a href="ch00/ch02-git-basics-chapter">Основи на Git</a>.
+Как да създадете таг видяхме в <a href="{{< relurl "book/bg/v2/ch00/ch02-git-basics-chapter" >}}">Основи на Git</a>.
 Ако решите и да подпишете тага, тогава командата може да изглежда така:</p>
 </div>
 <div class="listingblock">

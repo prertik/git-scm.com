@@ -123,7 +123,7 @@ fdf4fc3344e67ab068f836878b6c4951e3b15f3d First commit</code></pre>
 <p>Често най-бързият начин за това е инструмента <code>git reflog</code>.
 Докато работите, Git задкулисно записва къде сочи HEAD при всяка промяна.
 Всеки път, когато къмитвате или сменяте клонове, reflog-ът се опреснява.
-Това става с командата <code>git update-ref</code>, което е още една причина да я използваме, вместо да пишем SHA-1 стойностите в ref файловете, както видяхме в <a href="ch00/_git_refs">Git референции</a>.
+Това става с командата <code>git update-ref</code>, което е още една причина да я използваме, вместо да пишем SHA-1 стойностите в ref файловете, както видяхме в <a href="{{< relurl "book/bg/v2/ch00/_git_refs" >}}">Git референции</a>.
 Можете да видите къде сте били по всяко време с <code>git reflog</code>:</p>
 </div>
 <div class="listingblock">
@@ -305,7 +305,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>Големият обект се показва най-отдолу: 5MB.
-За да разберете на кой файл отговаря, използвайте командата <code>rev-list</code>, която бегло видяхме в <a href="ch00/_enforcing_commit_message_format">Налагане на специфичен Commit-Message формат</a>.
+За да разберете на кой файл отговаря, използвайте командата <code>rev-list</code>, която бегло видяхме в <a href="{{< relurl "book/bg/v2/ch00/_enforcing_commit_message_format" >}}">Налагане на специфичен Commit-Message формат</a>.
 Ако ѝ подадете параметъра <code>--objects</code>, <code>rev-list</code> ще отпечата SHA-1 стойностите на blob обектите с асоциираните към тях пътища на файлове.
 Може да изпълните нещо такова за да намерите името на файла за този blob:</p>
 </div>
@@ -328,7 +328,7 @@ dadf725 Oops - remove large tarball
 </div>
 <div class="paragraph">
 <p>Сега трябва да пренапишем всички къмити от <code>7b30847</code> назад за да премахнем изцяло файла от историята.
-За целта ще ползваме командата <code>filter-branch</code>, която вече пускахме в <a href="ch00/_rewriting_history">Манипулация на историята</a>:</p>
+За целта ще ползваме командата <code>filter-branch</code>, която вече пускахме в <a href="{{< relurl "book/bg/v2/ch00/_rewriting_history" >}}">Манипулация на историята</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -340,7 +340,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Опцията <code>--index-filter</code> е подобна на <code>--tree-filter</code>, която използвахме в <a href="ch00/_rewriting_history">Манипулация на историята</a> с изключение на това, че вместо да подаваме команда модифицираща файлове от работната директория сега променяме индексната област при всяка итерация.</p>
+<p>Опцията <code>--index-filter</code> е подобна на <code>--tree-filter</code>, която използвахме в <a href="{{< relurl "book/bg/v2/ch00/_rewriting_history" >}}">Манипулация на историята</a> с изключение на това, че вместо да подаваме команда модифицираща файлове от работната директория сега променяме индексната област при всяка итерация.</p>
 </div>
 <div class="paragraph">
 <p>Вместо да премахваме специфичен файл с нещо като <code>rm file</code>, трябва да го извадим от индекса с <code>git rm --cached</code>. Трием от индексната област, не от диска.

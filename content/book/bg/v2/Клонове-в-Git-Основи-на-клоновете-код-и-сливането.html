@@ -63,7 +63,7 @@ title: Git - Основи на клоновете код и сливането
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Проста история на къмитите">
+<img src="{{< relurl "book/bg/v2/images/basic-branching-1.png" >}}" alt="Проста история на къмитите">
 </div>
 <div class="title">Фигура 18. Проста история на къмитите</div>
 </div>
@@ -88,7 +88,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Създаване на нов указател към branch">
+<img src="{{< relurl "book/bg/v2/images/basic-branching-2.png" >}}" alt="Създаване на нов указател към branch">
 </div>
 <div class="title">Фигура 19. Създаване на нов указател към branch</div>
 </div>
@@ -104,7 +104,7 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="Клонът `iss53` се е преместил напред в процеса на работа">
+<img src="{{< relurl "book/bg/v2/images/basic-branching-3.png" >}}" alt="Клонът `iss53` се е преместил напред в процеса на работа">
 </div>
 <div class="title">Фигура 20. Клонът <code>iss53</code> се е преместил напред в процеса на работа</div>
 </div>
@@ -116,7 +116,7 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 <div class="paragraph">
 <p>Обаче преди да направите това, отбележете, че ако работната ви директория или индексната област съдържат некъмитнати промени, които влизат в конфликт с клона, към който превключвате, Git няма да позволи превключването на клоновете.
 Най-добре е да имате чист работен статус преди превключването.
-Съществуват начини да заобиколите това (известно като stashing и commit amending), които ще разгледаме по-късно в <a href="ch00/_git_stashing">Stashing и Cleaning</a>.
+Съществуват начини да заобиколите това (известно като stashing и commit amending), които ще разгледаме по-късно в <a href="{{< relurl "book/bg/v2/ch00/_git_stashing" >}}">Stashing и Cleaning</a>.
 Засега, нека приемем, че сте къмитнали промените си, така че може да се върнете в <code>master</code> клона:</p>
 </div>
 <div class="listingblock">
@@ -146,7 +146,7 @@ $ git commit -a -m 'Fix broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="Hotfix клон произлизащ от `master` клона">
+<img src="{{< relurl "book/bg/v2/images/basic-branching-4.png" >}}" alt="Hotfix клон произлизащ от `master` клона">
 </div>
 <div class="title">Фигура 21. Hotfix клон произлизащ от <code>master</code> клона</div>
 </div>
@@ -174,7 +174,7 @@ Fast-forward
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="`master` е превъртян (fast-forwarded) към `hotfix`">
+<img src="{{< relurl "book/bg/v2/images/basic-branching-5.png" >}}" alt="`master` е превъртян (fast-forwarded) към `hotfix`">
 </div>
 <div class="title">Фигура 22. <code>master</code> е превъртян (fast-forwarded) към <code>hotfix</code>
 </div>
@@ -205,7 +205,7 @@ $ git commit -a -m 'Finish the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="Работата продължава в клона `iss53`">
+<img src="{{< relurl "book/bg/v2/images/basic-branching-6.png" >}}" alt="Работата продължава в клона `iss53`">
 </div>
 <div class="title">Фигура 23. Работата продължава в клона <code>iss53</code>
 </div>
@@ -241,7 +241,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Три snapshot-а използвани в типично сливане">
+<img src="{{< relurl "book/bg/v2/images/basic-merging-1.png" >}}" alt="Три snapshot-а използвани в типично сливане">
 </div>
 <div class="title">Фигура 24. Три snapshot-а използвани в типично сливане</div>
 </div>
@@ -251,7 +251,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Сливащ commit">
+<img src="{{< relurl "book/bg/v2/images/basic-merging-2.png" >}}" alt="Сливащ commit">
 </div>
 <div class="title">Фигура 25. Сливащ commit</div>
 </div>
@@ -366,7 +366,7 @@ Hit return to start merge resolution tool (opendiff):</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Ако се нуждаете от по-модерни инструменти за разрешаване на заплетени конфликти, обръщаме повече внимание на това в <a href="ch00/_advanced_merging">Сливане за напреднали</a>.</p>
+<p>Ако се нуждаете от по-модерни инструменти за разрешаване на заплетени конфликти, обръщаме повече внимание на това в <a href="{{< relurl "book/bg/v2/ch00/_advanced_merging" >}}">Сливане за напреднали</a>.</p>
 </div>
 </td>
 </tr>

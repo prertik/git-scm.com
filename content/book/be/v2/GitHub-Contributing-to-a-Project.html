@@ -53,7 +53,7 @@ This opens up a discussion thread with code review, and the owner and the contri
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/forkbutton.png" >}}" alt="The “Fork” button">
+<img src="{{< relurl "book/be/v2/images/forkbutton.png" >}}" alt="The “Fork” button">
 </div>
 <div class="title">Малюнак 88. The “Fork” button</div>
 </div>
@@ -67,7 +67,7 @@ This opens up a discussion thread with code review, and the owner and the contri
 <p>
 GitHub is designed around a particular collaboration workflow, centered on Pull Requests.
 This flow works whether you’re collaborating with a tightly-knit team in a single shared repository, or a globally-distributed company or network of strangers contributing to a project through dozens of forks.
-It is centered on the <a href="ch00/_topic_branch">Topic Branches</a> workflow covered in <a href="ch00/ch03-git-branching">Git Branching</a>.</p>
+It is centered on the <a href="{{< relurl "book/be/v2/ch00/_topic_branch" >}}">Topic Branches</a> workflow covered in <a href="{{< relurl "book/be/v2/ch00/ch03-git-branching" >}}">Git Branching</a>.</p>
 </div>
 <div class="paragraph">
 <p>Here’s how it generally works:</p>
@@ -101,7 +101,7 @@ It is centered on the <a href="ch00/_topic_branch">Topic Branches</a> workflow c
 </ol>
 </div>
 <div class="paragraph">
-<p>This is basically the Integration Manager workflow covered in <a href="ch00/_integration_manager">Integration-Manager Workflow</a>, but instead of using email to communicate and review changes, teams use GitHub’s web based tools.</p>
+<p>This is basically the Integration Manager workflow covered in <a href="{{< relurl "book/be/v2/ch00/_integration_manager" >}}">Integration-Manager Workflow</a>, but instead of using email to communicate and review changes, teams use GitHub’s web based tools.</p>
 </div>
 <div class="paragraph">
 <p>Let’s walk through an example of proposing a change to an open source project hosted on GitHub using this flow.</p>
@@ -129,7 +129,7 @@ Go to the <a href="https://cli.github.com/">GitHub CLI homepage</a> for installa
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/blink-01-start.png" >}}" alt="The project we want to contribute to">
+<img src="{{< relurl "book/be/v2/images/blink-01-start.png" >}}" alt="The project we want to contribute to">
 </div>
 <div class="title">Малюнак 89. The project we want to contribute to</div>
 </div>
@@ -216,7 +216,7 @@ To https://github.com/tonychacon/blink
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/blink-02-pr.png" >}}" alt="Pull Request button">
+<img src="{{< relurl "book/be/v2/images/blink-02-pr.png" >}}" alt="Pull Request button">
 </div>
 <div class="title">Малюнак 90. Pull Request button</div>
 </div>
@@ -230,7 +230,7 @@ It is almost always worthwhile to put some effort into this, since a good descri
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/blink-03-pull-request-open.png" >}}" alt="Pull Request creation">
+<img src="{{< relurl "book/be/v2/images/blink-03-pull-request-open.png" >}}" alt="Pull Request creation">
 </div>
 <div class="title">Малюнак 91. Pull Request creation page</div>
 </div>
@@ -260,12 +260,12 @@ Since you can keep pushing to the topic branch even <strong>after</strong> the P
 Let’s say that he likes the idea, but would prefer a slightly longer time for the light to be off than on.</p>
 </div>
 <div class="paragraph">
-<p>Where this conversation may take place over email in the workflows presented in <a href="ch00/ch05-distributed-git">Distributed Git</a>, on GitHub this happens online.
+<p>Where this conversation may take place over email in the workflows presented in <a href="{{< relurl "book/be/v2/ch00/ch05-distributed-git" >}}">Distributed Git</a>, on GitHub this happens online.
 The project owner can review the unified diff and leave a comment by clicking on any of the lines.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/blink-04-pr-comment.png" >}}" alt="PR line comment">
+<img src="{{< relurl "book/be/v2/images/blink-04-pr-comment.png" >}}" alt="PR line comment">
 </div>
 <div class="title">Малюнак 92. Comment on a specific line of code in a Pull Request</div>
 </div>
@@ -275,18 +275,18 @@ We’ll go over customizing this later, but if he had email notifications turned
 </div>
 <div id="_email_notification" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/blink-04-email.png" >}}" alt="Email notification">
+<img src="{{< relurl "book/be/v2/images/blink-04-email.png" >}}" alt="Email notification">
 </div>
 <div class="title">Малюнак 93. Comments sent as email notifications</div>
 </div>
 <div class="paragraph">
 <p>Anyone can also leave general comments on the Pull Request.
-In <a href="ch00/_pr_discussion">Pull Request discussion page</a> we can see an example of the project owner both commenting on a line of code and then leaving a general comment in the discussion section.
+In <a href="{{< relurl "book/be/v2/ch00/_pr_discussion" >}}">Pull Request discussion page</a> we can see an example of the project owner both commenting on a line of code and then leaving a general comment in the discussion section.
 You can see that the code comments are brought into the conversation as well.</p>
 </div>
 <div id="_pr_discussion" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/blink-05-general-comment.png" >}}" alt="PR discussion page">
+<img src="{{< relurl "book/be/v2/images/blink-05-general-comment.png" >}}" alt="PR discussion page">
 </div>
 <div class="title">Малюнак 94. Pull Request discussion page</div>
 </div>
@@ -294,21 +294,21 @@ You can see that the code comments are brought into the conversation as well.</p
 <p>Now the contributor can see what they need to do in order to get their change accepted.
 Luckily this is very straightforward.
 Where over email you may have to re-roll your series and resubmit it to the mailing list, with GitHub you simply commit to the topic branch again and push, which will automatically update the Pull Request.
-In <a href="ch00/_pr_final">Pull Request final</a> you can also see that the old code comment has been collapsed in the updated Pull Request, since it was made on a line that has since been changed.</p>
+In <a href="{{< relurl "book/be/v2/ch00/_pr_final" >}}">Pull Request final</a> you can also see that the old code comment has been collapsed in the updated Pull Request, since it was made on a line that has since been changed.</p>
 </div>
 <div class="paragraph">
 <p>Adding commits to an existing Pull Request doesn’t trigger a notification, so once Tony has pushed his corrections he decides to leave a comment to inform the project owner that he made the requested change.</p>
 </div>
 <div id="_pr_final" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/blink-06-final.png" >}}" alt="PR final">
+<img src="{{< relurl "book/be/v2/images/blink-06-final.png" >}}" alt="PR final">
 </div>
 <div class="title">Малюнак 95. Pull Request final</div>
 </div>
 <div class="paragraph">
 <p>An interesting thing to notice is that if you click on the “Files Changed” tab on this Pull Request, you’ll get the “unified” diff — that is, the total aggregate difference that would be introduced to your main branch if this topic branch was merged in.
 In <code>git diff</code> terms, it basically automatically shows you <code>git diff master…​&lt;branch&gt;</code> for the branch this Pull Request is based on.
-See <a href="ch00/_what_is_introduced">Determining What Is Introduced</a> for more about this type of diff.</p>
+See <a href="{{< relurl "book/be/v2/ch00/_what_is_introduced" >}}">Determining What Is Introduced</a> for more about this type of diff.</p>
 </div>
 <div class="paragraph">
 <p>The other thing you’ll notice is that GitHub checks to see if the Pull Request merges cleanly and provides a button to do the merge for you on the server.
@@ -359,7 +359,7 @@ This enables an earlier conversation with the maintainers so that arriving at th
 When code is proposed with a Pull Request and the maintainers or community suggest a change, the patch series is generally not re-rolled, but instead the difference is pushed as a new commit to the branch, moving the conversation forward with the context of the previous work intact.</p>
 </div>
 <div class="paragraph">
-<p>For instance, if you go back and look again at <a href="ch00/_pr_final">Pull Request final</a>, you’ll notice that the contributor did not rebase his commit and send another Pull Request.
+<p>For instance, if you go back and look again at <a href="{{< relurl "book/be/v2/ch00/_pr_final" >}}">Pull Request final</a>, you’ll notice that the contributor did not rebase his commit and send another Pull Request.
 Instead they added new commits and pushed them to the existing branch.
 This way if you go back and look at this Pull Request in the future, you can easily find all of the context of why decisions were made.
 Pushing the “Merge” button on the site purposefully creates a merge commit that references the Pull Request so that it’s easy to go back and research the original conversation if necessary.</p>
@@ -373,12 +373,12 @@ GitHub will test this for you and let you know at the bottom of every Pull Reque
 </div>
 <div id="_pr_fail" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/pr-01-fail.png" >}}" alt="PR merge failure">
+<img src="{{< relurl "book/be/v2/images/pr-01-fail.png" >}}" alt="PR merge failure">
 </div>
 <div class="title">Малюнак 96. Pull Request does not merge cleanly</div>
 </div>
 <div class="paragraph">
-<p>If you see something like <a href="ch00/_pr_fail">Pull Request does not merge cleanly</a>, you’ll want to fix your branch so that it turns green and the maintainer doesn’t have to do extra work.</p>
+<p>If you see something like <a href="{{< relurl "book/be/v2/ch00/_pr_fail" >}}">Pull Request does not merge cleanly</a>, you’ll want to fix your branch so that it turns green and the maintainer doesn’t have to do extra work.</p>
 </div>
 <div class="paragraph">
 <p>You have two main options in order to do this.
@@ -452,7 +452,7 @@ To https://github.com/tonychacon/blink
 </div>
 <div id="_pr_merge_fix" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/pr-02-merge-fix.png" >}}" alt="PR fixed">
+<img src="{{< relurl "book/be/v2/images/pr-02-merge-fix.png" >}}" alt="PR fixed">
 </div>
 <div class="title">Малюнак 97. Pull Request now merges cleanly</div>
 </div>
@@ -462,7 +462,7 @@ If you have a very long-running project, you can easily merge from the target br
 </div>
 <div class="paragraph">
 <p>If you absolutely wish to rebase the branch to clean it up, you can certainly do so, but it is highly encouraged to not force push over the branch that the Pull Request is already opened on.
-If other people have pulled it down and done more work on it, you run into all of the issues outlined in <a href="ch00/_rebase_peril">The Perils of Rebasing</a>.
+If other people have pulled it down and done more work on it, you run into all of the issues outlined in <a href="{{< relurl "book/be/v2/ch00/_rebase_peril" >}}">The Perils of Rebasing</a>.
 Instead, push the rebased branch to a new branch on GitHub and open a brand new Pull Request referencing the old one, then close the original.</p>
 </div>
 </div>
@@ -483,20 +483,20 @@ You can also be more specific if the Issue or Pull request lives somewhere else;
 <p>Let’s look at an example.
 Say we rebased the branch in the previous example, created a new pull request for it, and now we want to reference the old pull request from the new one.
 We also want to reference an issue in the fork of the repository and an issue in a completely different project.
-We can fill out the description just like <a href="ch00/_pr_references">Cross references in a Pull Request</a>.</p>
+We can fill out the description just like <a href="{{< relurl "book/be/v2/ch00/_pr_references" >}}">Cross references in a Pull Request</a>.</p>
 </div>
 <div id="_pr_references" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/mentions-01-syntax.png" >}}" alt="PR references">
+<img src="{{< relurl "book/be/v2/images/mentions-01-syntax.png" >}}" alt="PR references">
 </div>
 <div class="title">Малюнак 98. Cross references in a Pull Request</div>
 </div>
 <div class="paragraph">
-<p>When we submit this pull request, we’ll see all of that rendered like <a href="ch00/_pr_references_render">Cross references rendered in a Pull Request</a>.</p>
+<p>When we submit this pull request, we’ll see all of that rendered like <a href="{{< relurl "book/be/v2/ch00/_pr_references_render" >}}">Cross references rendered in a Pull Request</a>.</p>
 </div>
 <div id="_pr_references_render" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/mentions-02-render.png" >}}" alt="PR references rendered">
+<img src="{{< relurl "book/be/v2/images/mentions-02-render.png" >}}" alt="PR references rendered">
 </div>
 <div class="title">Малюнак 99. Cross references rendered in a Pull Request</div>
 </div>
@@ -506,11 +506,11 @@ We can fill out the description just like <a href="ch00/_pr_references">Cross re
 <div class="paragraph">
 <p>Now if Tony goes back and closes out the original Pull Request, we can see that by mentioning it in the new one, GitHub has automatically created a trackback event in the Pull Request timeline.
 This means that anyone who visits this Pull Request and sees that it is closed can easily link back to the one that superseded it.
-The link will look something like <a href="ch00/_pr_closed">Link back to the new Pull Request in the closed Pull Request timeline</a>.</p>
+The link will look something like <a href="{{< relurl "book/be/v2/ch00/_pr_closed" >}}">Link back to the new Pull Request in the closed Pull Request timeline</a>.</p>
 </div>
 <div id="_pr_closed" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/mentions-03-closed.png" >}}" alt="PR closed">
+<img src="{{< relurl "book/be/v2/images/mentions-03-closed.png" >}}" alt="PR closed">
 </div>
 <div class="title">Малюнак 100. Link back to the new Pull Request in the closed Pull Request timeline</div>
 </div>
@@ -529,11 +529,11 @@ In  Issue and Pull Request descriptions, comments, code comments and more, you c
 Markdown is like writing in plain text but which is rendered richly.</p>
 </div>
 <div class="paragraph">
-<p>See <a href="ch00/_example_markdown">An example of GitHub Flavored Markdown as written and as rendered</a> for an example of how comments or text can be written and then rendered using Markdown.</p>
+<p>See <a href="{{< relurl "book/be/v2/ch00/_example_markdown" >}}">An example of GitHub Flavored Markdown as written and as rendered</a> for an example of how comments or text can be written and then rendered using Markdown.</p>
 </div>
 <div id="_example_markdown" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/markdown-01-example.png" >}}" alt="Example Markdown">
+<img src="{{< relurl "book/be/v2/images/markdown-01-example.png" >}}" alt="Example Markdown">
 </div>
 <div class="title">Малюнак 101. An example of GitHub Flavored Markdown as written and as rendered</div>
 </div>
@@ -559,11 +559,11 @@ Putting them into an Issue or Pull Request normally indicates things that you wa
 </div>
 </div>
 <div class="paragraph">
-<p>If we include this in the description of our Pull Request or Issue, we’ll see it rendered like <a href="ch00/_eg_task_lists">Task lists rendered in a Markdown comment</a>.</p>
+<p>If we include this in the description of our Pull Request or Issue, we’ll see it rendered like <a href="{{< relurl "book/be/v2/ch00/_eg_task_lists" >}}">Task lists rendered in a Markdown comment</a>.</p>
 </div>
 <div id="_eg_task_lists" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/markdown-02-tasks.png" >}}" alt="Example Task List">
+<img src="{{< relurl "book/be/v2/images/markdown-02-tasks.png" >}}" alt="Example Task List">
 </div>
 <div class="title">Малюнак 102. Task lists rendered in a Markdown comment</div>
 </div>
@@ -575,11 +575,11 @@ The really cool part is that you can simply click the checkboxes to update the c
 <p>What’s more, GitHub will look for task lists in your Issues and Pull Requests and show them as metadata on the pages that list them out.
 For example, if you have a Pull Request with tasks and you look at the overview page of all Pull Requests, you can see how far done it is.
 This helps people break down Pull Requests into subtasks and helps other people track the progress of the branch.
-You can see an example of this in <a href="ch00/_task_list_progress">Task list summary in the Pull Request list</a>.</p>
+You can see an example of this in <a href="{{< relurl "book/be/v2/ch00/_task_list_progress" >}}">Task list summary in the Pull Request list</a>.</p>
 </div>
 <div id="_task_list_progress" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/markdown-03-task-summary.png" >}}" alt="Example Task List">
+<img src="{{< relurl "book/be/v2/images/markdown-03-task-summary.png" >}}" alt="Example Task List">
 </div>
 <div class="title">Малюнак 103. Task list summary in the Pull Request list</div>
 </div>
@@ -609,11 +609,11 @@ for(int i=0 ; i &lt; 5 ; i++)
 </div>
 <div class="paragraph">
 <p>If you add a language name like we did there with 'java', GitHub will also try to syntax highlight the snippet.
-In the case of the above example, it would end up rendering like <a href="ch00/_md_code">Rendered fenced code example</a>.</p>
+In the case of the above example, it would end up rendering like <a href="{{< relurl "book/be/v2/ch00/_md_code" >}}">Rendered fenced code example</a>.</p>
 </div>
 <div id="_md_code" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/markdown-04-fenced-code.png" >}}" alt="Rendered fenced code">
+<img src="{{< relurl "book/be/v2/images/markdown-04-fenced-code.png" >}}" alt="Rendered fenced code">
 </div>
 <div class="title">Малюнак 104. Rendered fenced code example</div>
 </div>
@@ -637,11 +637,11 @@ How big are these slings and in particular, these arrows?</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Once rendered, the comment will look like <a href="ch00/_md_quote">Rendered quoting example</a>.</p>
+<p>Once rendered, the comment will look like <a href="{{< relurl "book/be/v2/ch00/_md_quote" >}}">Rendered quoting example</a>.</p>
 </div>
 <div id="_md_quote" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/markdown-05-quote.png" >}}" alt="Rendered quoting">
+<img src="{{< relurl "book/be/v2/images/markdown-05-quote.png" >}}" alt="Rendered quoting">
 </div>
 <div class="title">Малюнак 105. Rendered quoting example</div>
 </div>
@@ -656,7 +656,7 @@ If you are typing a comment and you start with a <code>:</code> character, an au
 </div>
 <div id="_md_emoji_auto" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/markdown-06-emoji-complete.png" >}}" alt="Emoji autocompleter">
+<img src="{{< relurl "book/be/v2/images/markdown-06-emoji-complete.png" >}}" alt="Emoji autocompleter">
 </div>
 <div class="title">Малюнак 106. Emoji autocompleter in action</div>
 </div>
@@ -676,11 +676,11 @@ For instance, you could write something like this:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>When rendered, it would look something like <a href="ch00/_md_emoji">Heavy emoji commenting</a>.</p>
+<p>When rendered, it would look something like <a href="{{< relurl "book/be/v2/ch00/_md_emoji" >}}">Heavy emoji commenting</a>.</p>
 </div>
 <div id="_md_emoji" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/markdown-07-emoji.png" >}}" alt="Emoji">
+<img src="{{< relurl "book/be/v2/images/markdown-07-emoji.png" >}}" alt="Emoji">
 </div>
 <div class="title">Малюнак 107. Heavy emoji commenting</div>
 </div>
@@ -714,12 +714,12 @@ In addition to adding Markdown image links to comments, which can be difficult t
 </div>
 <div id="_md_drag" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/markdown-08-drag-drop.png" >}}" alt="Drag and drop images">
+<img src="{{< relurl "book/be/v2/images/markdown-08-drag-drop.png" >}}" alt="Drag and drop images">
 </div>
 <div class="title">Малюнак 108. Drag and drop images to upload them and auto-embed them</div>
 </div>
 <div class="paragraph">
-<p>If you look at <a href="ch00/_md_drag">Drag and drop images to upload them and auto-embed them</a>, you can see a small “Parsed as Markdown” hint above the text area.
+<p>If you look at <a href="{{< relurl "book/be/v2/ch00/_md_drag" >}}">Drag and drop images to upload them and auto-embed them</a>, you can see a small “Parsed as Markdown” hint above the text area.
 Clicking on that will give you a full cheat sheet of everything you can do with Markdown on GitHub.</p>
 </div>
 </div>

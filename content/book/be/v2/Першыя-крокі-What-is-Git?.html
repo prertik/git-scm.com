@@ -33,7 +33,7 @@ These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/deltas.png" >}}" alt="Storing data as changes to a base version of each file">
+<img src="{{< relurl "book/be/v2/images/deltas.png" >}}" alt="Storing data as changes to a base version of each file">
 </div>
 <div class="title">Малюнак 4. Storing data as changes to a base version of each file</div>
 </div>
@@ -46,7 +46,7 @@ Git thinks about its data more like a <strong>stream of snapshots</strong>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/snapshots.png" >}}" alt="Git stores data as snapshots of the project over time">
+<img src="{{< relurl "book/be/v2/images/snapshots.png" >}}" alt="Git stores data as snapshots of the project over time">
 </div>
 <div class="title">Малюнак 5. Storing data as snapshots of the project over time</div>
 </div>
@@ -54,7 +54,7 @@ Git thinks about its data more like a <strong>stream of snapshots</strong>.</p>
 <p>This is an important distinction between Git and nearly all other VCSs.
 It makes Git reconsider almost every aspect of version control that most other systems copied from the previous generation.
 This makes Git more like a mini filesystem with some incredibly powerful tools built on top of it, rather than simply a VCS.
-We’ll explore some of the benefits you gain by thinking of your data this way when we cover Git branching in <a href="ch00/ch03-git-branching">Git Branching</a>.</p>
+We’ll explore some of the benefits you gain by thinking of your data this way when we cover Git branching in <a href="{{< relurl "book/be/v2/ch00/ch03-git-branching" >}}">Git Branching</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -110,7 +110,7 @@ As with any VCS, you can lose or mess up changes you haven’t committed yet, bu
 </div>
 <div class="paragraph">
 <p>This makes using Git a joy because we know we can experiment without the danger of severely screwing things up.
-For a more in-depth look at how Git stores its data and how you can recover data that seems lost, see <a href="ch00/_undoing">Undoing Things</a>.</p>
+For a more in-depth look at how Git stores its data and how you can recover data that seems lost, see <a href="{{< relurl "book/be/v2/ch00/_undoing" >}}">Undoing Things</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -137,7 +137,7 @@ Git has three main states that your files can reside in: <em>modified</em>, <em>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/areas.png" >}}" alt="Working tree, staging area, and Git directory.">
+<img src="{{< relurl "book/be/v2/images/areas.png" >}}" alt="Working tree, staging area, and Git directory.">
 </div>
 <div class="title">Малюнак 6. Working tree, staging area, and Git directory</div>
 </div>
@@ -173,7 +173,7 @@ This is the most important part of Git, and it is what is copied when you <em>cl
 <p>If a particular version of a file is in the Git directory, it’s considered <em>committed</em>.
 If it has been modified and was added to the staging area, it is <em>staged</em>.
 And if it was changed since it was checked out but has not been staged, it is <em>modified</em>.
-In <a href="ch00/ch02-git-basics-chapter">Git Basics</a>, you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.</p>
+In <a href="{{< relurl "book/be/v2/ch00/ch02-git-basics-chapter" >}}">Git Basics</a>, you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

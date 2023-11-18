@@ -59,7 +59,7 @@ If you run <code>git clone -o booyah</code> instead, then you will have <code>bo
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Server and local repositories after cloning.">
+<img src="{{< relurl "book/be/v2/images/remote-branches-1.png" >}}" alt="Server and local repositories after cloning.">
 </div>
 <div class="title">Малюнак 30. Server and local repositories after cloning</div>
 </div>
@@ -69,7 +69,7 @@ Also, as long as you stay out of contact with your <code>origin</code> server, y
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Local and remote work can diverge">
+<img src="{{< relurl "book/be/v2/images/remote-branches-2.png" >}}" alt="Local and remote work can diverge">
 </div>
 <div class="title">Малюнак 31. Local and remote work can diverge</div>
 </div>
@@ -79,19 +79,19 @@ This command looks up which server “origin” is (in this case, it’s <code>g
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` updates your remote references">
+<img src="{{< relurl "book/be/v2/images/remote-branches-3.png" >}}" alt="`git fetch` updates your remote references">
 </div>
 <div class="title">Малюнак 32. <code>git fetch</code> updates your remote-tracking branches</div>
 </div>
 <div class="paragraph">
 <p>To demonstrate having multiple remote servers and what remote branches for those remote projects look like, let’s assume you have another internal Git server that is used only for development by one of your sprint teams.
 This server is at <code>git.team1.ourcompany.com</code>.
-You can add it as a new remote reference to the project you’re currently working on by running the <code>git remote add</code> command as we covered in <a href="ch00/ch02-git-basics-chapter">Git Basics</a>.
+You can add it as a new remote reference to the project you’re currently working on by running the <code>git remote add</code> command as we covered in <a href="{{< relurl "book/be/v2/ch00/ch02-git-basics-chapter" >}}">Git Basics</a>.
 Name this remote <code>teamone</code>, which will be your shortname for that whole URL.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Adding another server as a remote">
+<img src="{{< relurl "book/be/v2/images/remote-branches-4.png" >}}" alt="Adding another server as a remote">
 </div>
 <div class="title">Малюнак 33. Adding another server as a remote</div>
 </div>
@@ -101,7 +101,7 @@ Because that server has a subset of the data your <code>origin</code> server has
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch for `teamone/master`">
+<img src="{{< relurl "book/be/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch for `teamone/master`">
 </div>
 <div class="title">Малюнак 34. Remote-tracking branch for <code>teamone/master</code>
 </div>
@@ -133,7 +133,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>This is a bit of a shortcut.
 Git automatically expands the <code>serverfix</code> branchname out to <code>refs/heads/serverfix:refs/heads/serverfix</code>, which means, “Take my <code>serverfix</code> local branch and push it to update the remote’s <code>serverfix</code> branch.”
-We’ll go over the <code>refs/heads/</code> part in detail in <a href="ch00/ch10-git-internals">Git Internals</a>, but you can generally leave it off.
+We’ll go over the <code>refs/heads/</code> part in detail in <a href="{{< relurl "book/be/v2/ch00/ch10-git-internals" >}}">Git Internals</a>, but you can generally leave it off.
 You can also do <code>git push origin serverfix:serverfix</code>, which does the same thing — it says, “Take my serverfix and make it the remote’s serverfix.”
 You can use this format to push a local branch into a remote branch that is named differently.
 If you didn’t want it to be called <code>serverfix</code> on the remote, you could instead run <code>git push origin serverfix:awesomebranch</code> to push your local <code>serverfix</code> branch to the <code>awesomebranch</code> branch on the remote project.</p>
@@ -155,7 +155,7 @@ By default it will prompt you on the terminal for this information so the server
 The simplest is just to keep it in memory for a few minutes, which you can easily set up by running <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>For more information on the various credential caching options available, see <a href="ch00/_credential_caching">Credential Storage</a>.</p>
+<p>For more information on the various credential caching options available, see <a href="{{< relurl "book/be/v2/ch00/_credential_caching" >}}">Credential Storage</a>.</p>
 </div>
 </td>
 </tr>

@@ -144,7 +144,7 @@ Think of the Working Directory as a <strong>sandbox</strong>, where you can try 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-workflow.png" >}}" alt="reset workflow">
+<img src="{{< relurl "book/pt-br/v2/images/reset-workflow.png" >}}" alt="reset workflow">
 </div>
 </div>
 <div class="paragraph">
@@ -154,7 +154,7 @@ Now we run <code>git init</code>, which will create a Git repository with a HEAD
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex1.png" >}}" alt="reset ex1">
+<img src="{{< relurl "book/pt-br/v2/images/reset-ex1.png" >}}" alt="reset ex1">
 </div>
 </div>
 <div class="paragraph">
@@ -165,7 +165,7 @@ Now we run <code>git init</code>, which will create a Git repository with a HEAD
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex2.png" >}}" alt="reset ex2">
+<img src="{{< relurl "book/pt-br/v2/images/reset-ex2.png" >}}" alt="reset ex2">
 </div>
 </div>
 <div class="paragraph">
@@ -173,7 +173,7 @@ Now we run <code>git init</code>, which will create a Git repository with a HEAD
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex3.png" >}}" alt="reset ex3">
+<img src="{{< relurl "book/pt-br/v2/images/reset-ex3.png" >}}" alt="reset ex3">
 </div>
 </div>
 <div class="paragraph">
@@ -186,7 +186,7 @@ Let’s call this <strong>v2</strong> of the file, and indicate it in red.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex4.png" >}}" alt="reset ex4">
+<img src="{{< relurl "book/pt-br/v2/images/reset-ex4.png" >}}" alt="reset ex4">
 </div>
 </div>
 <div class="paragraph">
@@ -195,7 +195,7 @@ Next we run <code>git add</code> on it to stage it into our Index.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex5.png" >}}" alt="reset ex5">
+<img src="{{< relurl "book/pt-br/v2/images/reset-ex5.png" >}}" alt="reset ex5">
 </div>
 </div>
 <div class="paragraph">
@@ -205,7 +205,7 @@ Finally, we run <code>git commit</code> to finalize the commit.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex6.png" >}}" alt="reset ex6">
+<img src="{{< relurl "book/pt-br/v2/images/reset-ex6.png" >}}" alt="reset ex6">
 </div>
 </div>
 <div class="paragraph">
@@ -227,7 +227,7 @@ So now our history looks like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-start.png" >}}" alt="reset start">
+<img src="{{< relurl "book/pt-br/v2/images/reset-start.png" >}}" alt="reset start">
 </div>
 </div>
 <div class="paragraph">
@@ -244,7 +244,7 @@ This means if HEAD is set to the <code>master</code> branch (i.e. you’re curre
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-soft.png" >}}" alt="reset soft">
+<img src="{{< relurl "book/pt-br/v2/images/reset-soft.png" >}}" alt="reset soft">
 </div>
 </div>
 <div class="paragraph">
@@ -255,7 +255,7 @@ With <code>reset --soft</code>, it will simply stop there.</p>
 <p>Now take a second to look at that diagram and realize what happened: it essentially undid the last <code>git commit</code> command.
 When you run <code>git commit</code>, Git creates a new commit and moves the branch that HEAD points to up to it.
 When you <code>reset</code> back to <code>HEAD~</code> (the parent of HEAD), you are moving the branch back to where it was, without changing the Index or Working Directory.
-You could now update the Index and run <code>git commit</code> again to accomplish what <code>git commit --amend</code> would have done (see <a href="ch00/r_git_amend">Changing the Last Commit</a>).</p>
+You could now update the Index and run <code>git commit</code> again to accomplish what <code>git commit --amend</code> would have done (see <a href="{{< relurl "book/pt-br/v2/ch00/r_git_amend" >}}">Changing the Last Commit</a>).</p>
 </div>
 </div>
 <div class="sect4">
@@ -268,7 +268,7 @@ You could now update the Index and run <code>git commit</code> again to accompli
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-mixed.png" >}}" alt="reset mixed">
+<img src="{{< relurl "book/pt-br/v2/images/reset-mixed.png" >}}" alt="reset mixed">
 </div>
 </div>
 <div class="paragraph">
@@ -288,7 +288,7 @@ If you use the <code>--hard</code> option, it will continue to this stage.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-hard.png" >}}" alt="reset hard">
+<img src="{{< relurl "book/pt-br/v2/images/reset-hard.png" >}}" alt="reset hard">
 </div>
 </div>
 <div class="paragraph">
@@ -348,7 +348,7 @@ This form (since you did not specify a commit SHA-1 or branch, and you didn’t 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path1.png" >}}" alt="reset path1">
+<img src="{{< relurl "book/pt-br/v2/images/reset-path1.png" >}}" alt="reset path1">
 </div>
 </div>
 <div class="paragraph">
@@ -357,12 +357,12 @@ If we look at the diagram for that command and think about what <code>git add</c
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path2.png" >}}" alt="reset path2">
+<img src="{{< relurl "book/pt-br/v2/images/reset-path2.png" >}}" alt="reset path2">
 </div>
 </div>
 <div class="paragraph">
 <p>This is why the output of the <code>git status</code> command suggests that you run this to unstage a file.
-(See <a href="ch00/r_unstaging">Retirando um arquivo do Stage</a> for more on this.)</p>
+(See <a href="{{< relurl "book/pt-br/v2/ch00/r_unstaging" >}}">Retirando um arquivo do Stage</a> for more on this.)</p>
 </div>
 <div class="paragraph">
 <p>We could just as easily not let Git assume we meant “pull the data from HEAD” by specifying a specific commit to pull that file version from.
@@ -370,7 +370,7 @@ We would just run something like <code>git reset eb43bf file.txt</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path3.png" >}}" alt="reset path3">
+<img src="{{< relurl "book/pt-br/v2/images/reset-path3.png" >}}" alt="reset path3">
 </div>
 </div>
 <div class="paragraph">
@@ -390,7 +390,7 @@ So you can selectively unstage or revert content.</p>
 <div class="paragraph">
 <p>Say you have a series of commits with messages like “oops.”, “WIP” and “forgot this file”.
 You can use <code>reset</code> to quickly and easily squash them into a single commit that makes you look really smart.
-(<a href="ch00/r_squashing">Squashing Commits</a> shows another way to do this, but in this example it’s simpler to use <code>reset</code>.)</p>
+(<a href="{{< relurl "book/pt-br/v2/ch00/r_squashing" >}}">Squashing Commits</a> shows another way to do this, but in this example it’s simpler to use <code>reset</code>.)</p>
 </div>
 <div class="paragraph">
 <p>Let’s say you have a project where the first commit has one file, the second commit added a new file and changed the first, and the third commit changed the first file again.
@@ -398,7 +398,7 @@ The second commit was a work in progress and you want to squash it down.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r1.png" >}}" alt="reset squash r1">
+<img src="{{< relurl "book/pt-br/v2/images/reset-squash-r1.png" >}}" alt="reset squash r1">
 </div>
 </div>
 <div class="paragraph">
@@ -406,7 +406,7 @@ The second commit was a work in progress and you want to squash it down.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r2.png" >}}" alt="reset squash r2">
+<img src="{{< relurl "book/pt-br/v2/images/reset-squash-r2.png" >}}" alt="reset squash r2">
 </div>
 </div>
 <div class="paragraph">
@@ -414,7 +414,7 @@ The second commit was a work in progress and you want to squash it down.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r3.png" >}}" alt="reset squash r3">
+<img src="{{< relurl "book/pt-br/v2/images/reset-squash-r3.png" >}}" alt="reset squash r3">
 </div>
 </div>
 <div class="paragraph">
@@ -454,7 +454,7 @@ HEAD will now point to <code>master</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-checkout.png" >}}" alt="reset checkout">
+<img src="{{< relurl "book/pt-br/v2/images/reset-checkout.png" >}}" alt="reset checkout">
 </div>
 </div>
 </div>

@@ -67,7 +67,7 @@ Também mostraremos como configurar o Git para ignorar certos arquivos e padrõe
 <div class="paragraph">
 <p>Isso cria um novo subdiretório chamado <code>.git</code> que contém todos os arquivos necessários de seu repositório – um esqueleto de repositório Git.
 Neste ponto, nada em seu projeto é monitorado ainda.
-(Veja <a href="ch00/ch10-git-internals">[ch10-git-internals]</a> para mais informações sobre quais arquivos estão contidos no diretório <code>.git</code> que foi criado.)</p>
+(Veja <a href="{{< relurl "book/pt-br/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a> para mais informações sobre quais arquivos estão contidos no diretório <code>.git</code> que foi criado.)</p>
 </div>
 <div class="paragraph">
 <p>Se você quer começar a controlar o versionamento dos arquivos existentes (ao contrário de um diretório vazio), você provavelmente deve começar a monitorar esses arquivos e fazer um <em>commit</em> inicial.
@@ -92,7 +92,7 @@ Mas neste ponto você já tem um repositório Git com arquivos monitorados e um 
 Se você estiver familiarizado com outros sistemas VCS, tal como Subversion, você vai notar que o comando é <code>clone</code> e não <code>checkout</code>.
 Essa é uma diferença importante – em vez de receber apenas uma cópia para trabalho, o Git recebe uma cópia completa de praticamente todos os dados que o servidor possui.
 Cada versão de cada arquivo no histórico do projeto é obtida por padrão quando você executa <code>git clone</code>.
-De fato, se o disco do servidor ficar corrompido, em geral você pode usar qualquer uma das cópias de qualquer um dos clientes para reverter o servidor ao estado em que estava quando foi clonado (talvez você perca algumas configurações do servidor, mas todos os dados versionados estarão lá — veja <a href="ch00/r_git_on_the_server">Getting Git on a Server</a> para mais detalhes).</p>
+De fato, se o disco do servidor ficar corrompido, em geral você pode usar qualquer uma das cópias de qualquer um dos clientes para reverter o servidor ao estado em que estava quando foi clonado (talvez você perca algumas configurações do servidor, mas todos os dados versionados estarão lá — veja <a href="{{< relurl "book/pt-br/v2/ch00/r_git_on_the_server" >}}">Getting Git on a Server</a> para mais detalhes).</p>
 </div>
 <div class="paragraph">
 <p>Você clona um repositório com <code>git clone [url]</code>.
@@ -119,7 +119,7 @@ Caso você queira clonar o repositório em um diretório diferente de <code>libg
 <div class="paragraph">
 <p>O Git possui diversos protocolos de transferência que você pode utilizar.
 O exemplo anterior usa o protocolo <code>https://</code>, mas você também pode ver <code>git://</code> ou <code>user@server:path/to/repo.git</code>, que usam o protocolo de transferência SSH.
-Em <a href="ch00/r_git_on_the_server">Getting Git on a Server</a> é apresentado todas as opções disponíveis com as quais o servidor pode ser configurado para acessar o seu repositório Git, e os prós e contras de cada uma.</p>
+Em <a href="{{< relurl "book/pt-br/v2/ch00/r_git_on_the_server" >}}">Getting Git on a Server</a> é apresentado todas as opções disponíveis com as quais o servidor pode ser configurado para acessar o seu repositório Git, e os prós e contras de cada uma.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

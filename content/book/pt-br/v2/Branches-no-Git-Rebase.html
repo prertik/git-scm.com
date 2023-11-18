@@ -26,11 +26,11 @@ Nesta seção, você aprenderá o que é o rebase, como fazê-lo, por que é uma
 <div class="sect3">
 <h3 id="_o_básico_do_rebase">O básico do Rebase</h3>
 <div class="paragraph">
-<p>Se você voltar a um exemplo anterior de <a href="ch00/r_basic_merging">Mesclagem Básica</a>, você pode ver que o seu trabalho divergiu e fez commits em dois branches diferentes.</p>
+<p>Se você voltar a um exemplo anterior de <a href="{{< relurl "book/pt-br/v2/ch00/r_basic_merging" >}}">Mesclagem Básica</a>, você pode ver que o seu trabalho divergiu e fez commits em dois branches diferentes.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Simple divergent history.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-rebase-1.png" >}}" alt="Simple divergent history.">
 </div>
 <div class="title">Figure 35. Um simples histórico de divergência</div>
 </div>
@@ -40,7 +40,7 @@ Ele realiza uma fusão de três vias entre os dois últimos snapshots de branch 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Merging to integrate diverged work history.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-rebase-2.png" >}}" alt="Merging to integrate diverged work history.">
 </div>
 <div class="title">Figure 36. Fazendo um merge para integrar áreas de trabalho que divergiram</div>
 </div>
@@ -65,7 +65,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="Rebasing the change introduced in `C4` onto `C3`.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-rebase-3.png" >}}" alt="Rebasing the change introduced in `C4` onto `C3`.">
 </div>
 <div class="title">Figure 37. Fazendo o Rebase da mudança introduzida no <code>C4</code> em <code>C3</code>
 </div>
@@ -81,7 +81,7 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Fast-forwarding the master branch.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-rebase-4.png" >}}" alt="Fast-forwarding the master branch.">
 </div>
 <div class="title">Figure 38. Fazendo uma fusão rápida no branch master</div>
 </div>
@@ -104,14 +104,14 @@ O Rebase reproduz as alterações de uma linha de trabalho para outra na ordem e
 <h3 id="_rebases_mais_interessantes">Rebases mais interessantes</h3>
 <div class="paragraph">
 <p>Você também pode fazer o replay do rebase em algo diferente do branch de destino.
-Pegue um histórico como <a href="ch00/rrbdiag_e">Um histórico com um tópico de branch de outro branch</a>, por exemplo.
+Pegue um histórico como <a href="{{< relurl "book/pt-br/v2/ch00/rrbdiag_e" >}}">Um histórico com um tópico de branch de outro branch</a>, por exemplo.
 Você ramificou um branch de tópico (<code>server</code>) para adicionar alguma funcionalidade do lado do servidor ao seu projeto e fez um commit.
 Então, você ramificou isso para fazer as alterações do lado do cliente (<code>client</code>) e fez commit algumas vezes.
 Finalmente, você voltou ao seu branch de servidor e fez mais alguns commits.</p>
 </div>
 <div id="rrbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="A history with a topic branch off another topic branch.">
+<img src="{{< relurl "book/pt-br/v2/images/interesting-rebase-1.png" >}}" alt="A history with a topic branch off another topic branch.">
 </div>
 <div class="title">Figure 39. Um histórico com um tópico de branch de outro branch</div>
 </div>
@@ -130,12 +130,12 @@ Você pode pegar as mudanças no cliente que não está no servidor (<code>C8</c
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Rebasing a topic branch off another topic branch.">
+<img src="{{< relurl "book/pt-br/v2/images/interesting-rebase-2.png" >}}" alt="Rebasing a topic branch off another topic branch.">
 </div>
 <div class="title">Figure 40. Rebase o tópico de um branch de outro branch</div>
 </div>
 <div class="paragraph">
-<p>Agora, você pode fazer uma fusão rápida no branch master (veja <a href="ch00/rrbdiag_g">Avanço rápido de seu branch principal para incluir as alterações da branch do cliente</a>):</p>
+<p>Agora, você pode fazer uma fusão rápida no branch master (veja <a href="{{< relurl "book/pt-br/v2/ch00/rrbdiag_g" >}}">Avanço rápido de seu branch principal para incluir as alterações da branch do cliente</a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -145,7 +145,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rrbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Fast-forwarding your master branch to include the client branch changes.">
+<img src="{{< relurl "book/pt-br/v2/images/interesting-rebase-3.png" >}}" alt="Fast-forwarding your master branch to include the client branch changes.">
 </div>
 <div class="title">Figure 41. Avanço rápido de seu branch principal para incluir as alterações da branch do cliente</div>
 </div>
@@ -159,11 +159,11 @@ Você pode realocar o branch do servidor no branch <code>master</code> sem ter q
 </div>
 </div>
 <div class="paragraph">
-<p>Isso reproduz o trabalho do <code>server</code> em cima do trabalho do <code>master</code>, como mostrado em <a href="ch00/rrbdiag_h">Rebase o branch server por cima do branch master</a>.</p>
+<p>Isso reproduz o trabalho do <code>server</code> em cima do trabalho do <code>master</code>, como mostrado em <a href="{{< relurl "book/pt-br/v2/ch00/rrbdiag_h" >}}">Rebase o branch server por cima do branch master</a>.</p>
 </div>
 <div id="rrbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Rebasing your server branch on top of your master branch.">
+<img src="{{< relurl "book/pt-br/v2/images/interesting-rebase-4.png" >}}" alt="Rebasing your server branch on top of your master branch.">
 </div>
 <div class="title">Figure 42. Rebase o branch server por cima do branch master</div>
 </div>
@@ -177,7 +177,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Você pode remover os branches <code>client</code> e <code>server</code> porque todo o trabalho foi integrado e você não precisa mais deles, deixando seu histórico para todo o processo parecido com <a href="ch00/rrbdiag_i">Histórico final de commits</a>:</p>
+<p>Você pode remover os branches <code>client</code> e <code>server</code> porque todo o trabalho foi integrado e você não precisa mais deles, deixando seu histórico para todo o processo parecido com <a href="{{< relurl "book/pt-br/v2/ch00/rrbdiag_i" >}}">Histórico final de commits</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -187,7 +187,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rrbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Final commit history.">
+<img src="{{< relurl "book/pt-br/v2/images/interesting-rebase-5.png" >}}" alt="Final commit history.">
 </div>
 <div class="title">Figure 43. Histórico final de commits</div>
 </div>
@@ -216,7 +216,7 @@ Seu histórico de commits é parecido com este:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Clone a repository, and base some work on it.">
+<img src="{{< relurl "book/pt-br/v2/images/perils-of-rebasing-1.png" >}}" alt="Clone a repository, and base some work on it.">
 </div>
 <div class="title">Figure 44. Fazendo o clone de um repositório e trabalhando com ele</div>
 </div>
@@ -226,7 +226,7 @@ Você o busca e mescla o novo branch remoto em seu trabalho, fazendo com que seu
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Fetch more commits, and merge them into your work.">
+<img src="{{< relurl "book/pt-br/v2/images/perils-of-rebasing-2.png" >}}" alt="Fetch more commits, and merge them into your work.">
 </div>
 <div class="title">Figure 45. Buscar mais commits e fazer merge em seu trabalho</div>
 </div>
@@ -236,7 +236,7 @@ Você então busca daquele servidor, derrubando os novos commits.</p>
 </div>
 <div id="r_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Someone pushes rebased commits, abandoning commits you’ve based your work on.">
+<img src="{{< relurl "book/pt-br/v2/images/perils-of-rebasing-3.png" >}}" alt="Someone pushes rebased commits, abandoning commits you’ve based your work on.">
 </div>
 <div class="title">Figure 46. Alguém empurra commits que foram feitos rebase, abandonando commits nos quais você baseou seu trabalho</div>
 </div>
@@ -246,7 +246,7 @@ Se você fizer um <code>git pull</code>, você criará um commit de merge que in
 </div>
 <div id="r_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="You merge in the same work again into a new merge commit.">
+<img src="{{< relurl "book/pt-br/v2/images/perils-of-rebasing-4.png" >}}" alt="You merge in the same work again into a new merge commit.">
 </div>
 <div class="title">Figure 47. Você faz o merge do mesmo trabalho novamente em um novo commit de merge</div>
 </div>
@@ -270,7 +270,7 @@ Isso é chamado de “patch-id”.</p>
 <p>Se você puxar o trabalho que foi reescrito e fazer o rebase sobre os novos commits de seu parceiro, o Git pode muitas vezes descobrir o que é exclusivamente seu e aplicá-lo de volta ao novo branch.</p>
 </div>
 <div class="paragraph">
-<p>Por exemplo, no cenário anterior, se em vez de fazer uma fusão quando estamos em <a href="ch00/r_pre_merge_rebase_work">Alguém empurra commits que foram feitos rebase, abandonando commits nos quais você baseou seu trabalho</a> executarmos <code>git rebase teamone/master</code>, Git irá:</p>
+<p>Por exemplo, no cenário anterior, se em vez de fazer uma fusão quando estamos em <a href="{{< relurl "book/pt-br/v2/ch00/r_pre_merge_rebase_work" >}}">Alguém empurra commits que foram feitos rebase, abandonando commits nos quais você baseou seu trabalho</a> executarmos <code>git rebase teamone/master</code>, Git irá:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -289,11 +289,11 @@ Isso é chamado de “patch-id”.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Então, em vez do resultado que vemos em <a href="ch00/r_merge_rebase_work">Você faz o merge do mesmo trabalho novamente em um novo commit de merge</a>, acabaríamos com algo mais parecido com <a href="ch00/r_rebase_rebase_work">Rebase on top of force-pushed rebase work.</a>.</p>
+<p>Então, em vez do resultado que vemos em <a href="{{< relurl "book/pt-br/v2/ch00/r_merge_rebase_work" >}}">Você faz o merge do mesmo trabalho novamente em um novo commit de merge</a>, acabaríamos com algo mais parecido com <a href="{{< relurl "book/pt-br/v2/ch00/r_rebase_rebase_work" >}}">Rebase on top of force-pushed rebase work.</a>.</p>
 </div>
 <div id="r_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Rebase on top of force-pushed rebase work.">
+<img src="{{< relurl "book/pt-br/v2/images/perils-of-rebasing-5.png" >}}" alt="Rebase on top of force-pushed rebase work.">
 </div>
 <div class="title">Figure 48. Rebase on top of force-pushed rebase work.</div>
 </div>

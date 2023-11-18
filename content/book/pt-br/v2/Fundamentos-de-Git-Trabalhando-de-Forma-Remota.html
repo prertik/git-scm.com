@@ -76,7 +76,7 @@ origin    git@github.com:mojombo/grit.git (push)</code></pre>
 <p>Isto significa que nós podemos obter(<em>pull</em>) contribuições de qualquer um desses usuários muito facilmente. Nós podemos, adicionalmente, ter a permissão de atualizar(<em>push</em>) um ou mais destes, embora não possamos dizer isso nesse caso.</p>
 </div>
 <div class="paragraph">
-<p>Note que estes repositórios remotos usam uma variedade de protocolos e nós falaremos mais sobre isso em <a href="ch00/r_git_on_the_server">Getting Git on a Server</a>.</p>
+<p>Note que estes repositórios remotos usam uma variedade de protocolos e nós falaremos mais sobre isso em <a href="{{< relurl "book/pt-br/v2/ch00/r_git_on_the_server" >}}">Getting Git on a Server</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -112,7 +112,7 @@ From https://github.com/paulboone/ticgit
 </div>
 </div>
 <div class="paragraph">
-<p>O <em>master branch</em>(ramo mestre) do Paul agora está acessível localmente como <code>pb/master</code> – você pode fundí-lo(<em>merge</em>) dentro de uma de suas ramificações(<em>branches</em>) ou você pode checar fora da ramificação local se você quiser inspecioná-lo. (Nós abordaremos o que são ramificações(<em>branches</em>) e como usá-las mais detalhadamente em <a href="ch00/ch03-git-branching">[ch03-git-branching]</a>. )</p>
+<p>O <em>master branch</em>(ramo mestre) do Paul agora está acessível localmente como <code>pb/master</code> – você pode fundí-lo(<em>merge</em>) dentro de uma de suas ramificações(<em>branches</em>) ou você pode checar fora da ramificação local se você quiser inspecioná-lo. (Nós abordaremos o que são ramificações(<em>branches</em>) e como usá-las mais detalhadamente em <a href="{{< relurl "book/pt-br/v2/ch00/ch03-git-branching" >}}">[ch03-git-branching]</a>. )</p>
 </div>
 </div>
 <div class="sect3">
@@ -132,7 +132,7 @@ From https://github.com/paulboone/ticgit
 <p>Se você clonar um repositório, o comando automaticamente adiciona àquele repositório remoto com o nome <code>origin</code>. Então, <code>git fetch origin</code> busca qualquer novo trabalho que tenha sido enviado para aquele servidor desde que você o clonou ou fez a última busca(<em>fetch</em>). É importante notar que o comando <code>git fetch</code> só baixa os dados para o seu repositório local - ele não é automaticamente mesclado(<em>merge</em>) com nenhum trabalho seu ou modificação que você esteja trabalhando atualmente. Você deve mesclá-los manualmente dentro de seu trabalho quando você estiver pronto.</p>
 </div>
 <div class="paragraph">
-<p>Se o <code>branch</code> atual é configurando para rastrear um <code>branch</code> remoto (veja a próxima seção e <a href="ch00/ch03-git-branching">[ch03-git-branching]</a> para mais informação), você pode usar o comando <code>git pull</code> para buscar(<em>fetch</em>) e então mesclar(<em>merge</em>) automaticamente aquele <code>branch</code> remoto dentro do seu <code>branch</code> atual. Este pode ser um fluxo de trabalho mais fácil e mais confortável para você, e por padrão, o comando <code>git clone</code> automaticamente configura a sua <code>master branch</code> local para rastrear a <code>master branch</code> remota ou qualquer que seja o nome do <code>branch</code> padrão no servidor de onde você o clonou. Executar <code>git pull</code> comumente busca os dados do servidor de onde você originalmente clonou e automaticamente tenta mesclá-lo dentro do código que você está atualmente trabalhando.</p>
+<p>Se o <code>branch</code> atual é configurando para rastrear um <code>branch</code> remoto (veja a próxima seção e <a href="{{< relurl "book/pt-br/v2/ch00/ch03-git-branching" >}}">[ch03-git-branching]</a> para mais informação), você pode usar o comando <code>git pull</code> para buscar(<em>fetch</em>) e então mesclar(<em>merge</em>) automaticamente aquele <code>branch</code> remoto dentro do seu <code>branch</code> atual. Este pode ser um fluxo de trabalho mais fácil e mais confortável para você, e por padrão, o comando <code>git clone</code> automaticamente configura a sua <code>master branch</code> local para rastrear a <code>master branch</code> remota ou qualquer que seja o nome do <code>branch</code> padrão no servidor de onde você o clonou. Executar <code>git pull</code> comumente busca os dados do servidor de onde você originalmente clonou e automaticamente tenta mesclá-lo dentro do código que você está atualmente trabalhando.</p>
 </div>
 </div>
 <div class="sect3">
@@ -151,7 +151,7 @@ Se você quiser enviar sua ramificacão (branch) master para o servidor <code>or
 <p>Este comando funciona apenas se você clonou de um servidor ao qual você tem acesso de escrita (write-access) e se ninguém mais utilizou o comando push nesse meio-tempo.
 Se você e outra pessoa clonarem o repositório ao mesmo tempo e ela utilizar o comando push e, em seguida, você tentar utilizar, seu envio será rejeitado.
 Primeiro você terá que atualizar localmente, incorporando o trabalho dela ao seu, só assim você poderá utilizar o comando push.
-Veja <a href="ch00/ch03-git-branching">[ch03-git-branching]</a> para informações mais detalhadas sobre como enviar para servidores remotos.</p>
+Veja <a href="{{< relurl "book/pt-br/v2/ch00/ch03-git-branching" >}}">[ch03-git-branching]</a> para informações mais detalhadas sobre como enviar para servidores remotos.</p>
 </div>
 </div>
 <div class="sect3">

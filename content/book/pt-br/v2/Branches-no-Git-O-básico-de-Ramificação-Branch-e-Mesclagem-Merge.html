@@ -63,7 +63,7 @@ Primeiramente, digamos que você esteja trabalhando em seu projeto e já tenha a
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Um histórico de commits simples.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-branching-1.png" >}}" alt="Um histórico de commits simples.">
 </div>
 <div class="title">Figure 18. Um histórico de commits simples</div>
 </div>
@@ -90,7 +90,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Criando um novo ponteiro de branch.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-branching-2.png" >}}" alt="Criando um novo ponteiro de branch.">
 </div>
 <div class="title">Figure 19. Criando um novo ponteiro de branch</div>
 </div>
@@ -108,7 +108,7 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="O branch `iss53` moveu para a frente graças ao seu trabalho.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-branching-3.png" >}}" alt="O branch `iss53` moveu para a frente graças ao seu trabalho.">
 </div>
 <div class="title">Figure 20. O branch <code>iss53</code> moveu para a frente graças ao seu trabalho</div>
 </div>
@@ -119,7 +119,7 @@ Tudo o que você precisa fazer é voltar para o seu branch <code>master</code>.<
 <div class="paragraph">
 <p>Entretanto, antes de fazer isso, note que se seu diretório de trabalho ou stage possui alterações ainda não commitadas que conflitam com o branch que você quer usar, o Git não deixará que você troque de branch.
 O  melhor é que seu estado de trabalho atual esteja limpo antes de trocar de branches.
-Há maneiras de contornar isso (a saber, o comando stash e commit com a opção --ammend) que iremos cobrir mais tarde, em <a href="ch00/r_git_stashing">Stashing and Cleaning</a>.
+Há maneiras de contornar isso (a saber, o comando stash e commit com a opção --ammend) que iremos cobrir mais tarde, em <a href="{{< relurl "book/pt-br/v2/ch00/r_git_stashing" >}}">Stashing and Cleaning</a>.
 Por agora, vamos considerar que você fez commit de todas as suas alterações, de forma que você pode voltar para o branch <code>master</code>:</p>
 </div>
 <div class="listingblock">
@@ -149,7 +149,7 @@ $ git commit -a -m 'Fix broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="Branch de correção (hotfix) baseado em `master`.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-branching-4.png" >}}" alt="Branch de correção (hotfix) baseado em `master`.">
 </div>
 <div class="title">Figure 21. Branch de correção (hotfix) baseado em <code>master</code>
 </div>
@@ -179,7 +179,7 @@ porque não há nenhum alteração divergente para mesclar — isso é conhe
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="o branch `master` sofre um 'fast-forward' até `hotfix`.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-branching-5.png" >}}" alt="o branch `master` sofre um 'fast-forward' até `hotfix`.">
 </div>
 <div class="title">Figure 22. o branch <code>master</code> sofre um "fast-forward" até <code>hotfix</code>
 </div>
@@ -210,7 +210,7 @@ $ git commit -a -m 'Finish the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="Continuando o trabalho no branch `iss53`.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-branching-6.png" >}}" alt="Continuando o trabalho no branch `iss53`.">
 </div>
 <div class="title">Figure 23. Continuando o trabalho no branch <code>iss53</code>
 </div>
@@ -246,7 +246,7 @@ Neste caso, o Git faz uma simples mesclagem de três vias (<em>three-way merge</
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Três snapshots usados em um merge típico.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-merging-1.png" >}}" alt="Três snapshots usados em um merge típico.">
 </div>
 <div class="title">Figure 24. Três snapshots usados em um merge típico</div>
 </div>
@@ -256,7 +256,7 @@ Esse tipo de commit é chamado de commit de merge, e é especial porque tem mais
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Um commit de merge.">
+<img src="{{< relurl "book/pt-br/v2/images/basic-merging-2.png" >}}" alt="Um commit de merge.">
 </div>
 <div class="title">Figure 25. Um commit de merge</div>
 </div>
@@ -371,7 +371,7 @@ Você só tem que digitar o nome da ferramenta que você prefere usar.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Se você precisa de ferramentas mais avançadas para resolver conflitos mais complicados, nós abordamos mais sobre merge em <a href="ch00/r_advanced_merging">Advanced Merging</a>.</p>
+<p>Se você precisa de ferramentas mais avançadas para resolver conflitos mais complicados, nós abordamos mais sobre merge em <a href="{{< relurl "book/pt-br/v2/ch00/r_advanced_merging" >}}">Advanced Merging</a>.</p>
 </div>
 </td>
 </tr>

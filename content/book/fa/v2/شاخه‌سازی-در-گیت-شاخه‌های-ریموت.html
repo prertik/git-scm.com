@@ -62,7 +62,7 @@ title: Git - شاخه‌های ریموت
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Server and local repositories after cloning.">
+<img src="{{< relurl "book/fa/v2/images/remote-branches-1.png" >}}" alt="Server and local repositories after cloning.">
 </div>
 <div class="title">نمودار 30. مخازن سرور و محلی بعد از کلون کردن</div>
 </div>
@@ -72,7 +72,7 @@ title: Git - شاخه‌های ریموت
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Local and remote work can diverge.">
+<img src="{{< relurl "book/fa/v2/images/remote-branches-2.png" >}}" alt="Local and remote work can diverge.">
 </div>
 <div class="title">نمودار 31. کارهای روی مخزن محلی و ریموت می‌تواند دوشاخه شود</div>
 </div>
@@ -83,7 +83,7 @@ title: Git - شاخه‌های ریموت
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` updates your remote references.">
+<img src="{{< relurl "book/fa/v2/images/remote-branches-3.png" >}}" alt="`git fetch` updates your remote references.">
 </div>
 <div class="title">نمودار 32. دستور <code>git fetch</code> برنچ‌های درپی-ریموت‌تان را به روز می‌کند</div>
 </div>
@@ -91,12 +91,12 @@ title: Git - شاخه‌های ریموت
 <p>برای نمایش داشتن چند سرور ریموت و اینکه چه برنچ ریموتی در آن پروژه‌های ریموت در کجا قرار دارد، بیاید فرض کنیم که
 شما یک سرور گیت داخلی دیگر دارید که فقط برای توسعه با یکی از اعضای تیم «دور» (Sprint) فعلی شما پاسخگو است.
 این سرور در <code>git.team1.ourcompany.com</code> قرار دارد.
-همانگونه که در <a href="ch00/ch02-git-basics-chapter">مقدمات گیت</a> بررسی شد، می‌توانید با <code>git remote add</code> آنرا به عنوان یک مرجع ریموت جدید به پروژه‌ای که در حال حاضر روی آن کار می‌کنید اضافه کنید.
+همانگونه که در <a href="{{< relurl "book/fa/v2/ch00/ch02-git-basics-chapter" >}}">مقدمات گیت</a> بررسی شد، می‌توانید با <code>git remote add</code> آنرا به عنوان یک مرجع ریموت جدید به پروژه‌ای که در حال حاضر روی آن کار می‌کنید اضافه کنید.
 این ریموت را <code>teamone</code> بنامید که نام کوتاهی برای URL کامل ریموت است.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Adding another server as a remote.">
+<img src="{{< relurl "book/fa/v2/images/remote-branches-4.png" >}}" alt="Adding another server as a remote.">
 </div>
 <div class="title">نمودار 33. اضافه کردن سروری جدید به عنوان ریموت</div>
 </div>
@@ -107,7 +107,7 @@ title: Git - شاخه‌های ریموت
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch for `teamone/master`.">
+<img src="{{< relurl "book/fa/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch for `teamone/master`.">
 </div>
 <div class="title">نمودار 34. برنچ درپی-ریموت <code>teamone/master</code>
 </div>
@@ -140,7 +140,7 @@ To https://github.com/schacon/simplegit
 <p>این به نوعی یک میانبر است.
 گیت به طور خودکار نام برنچ <code>serverfix</code> را به <code>refs/heads/serverfix:refs/heads/serverfix</code> گسترش می‌دهد که به معنی عبارت روبرو است: «برنچ محلی <code>serverfix</code> من را بگیر و برای بروزرسانی
 برنچ <code>serverfix</code> ریموت آنرا پوش کن.»
-در <a href="ch00/ch10-git-internals">Git Internals</a> با جزئیات به بخش <code>refs/heads/</code> می‌پردازیم، اما به طور کل می‌توانید فعلاً آن را اینگونه رها کنید.
+در <a href="{{< relurl "book/fa/v2/ch00/ch10-git-internals" >}}">Git Internals</a> با جزئیات به بخش <code>refs/heads/</code> می‌پردازیم، اما به طور کل می‌توانید فعلاً آن را اینگونه رها کنید.
 همچنین می‌توانید <code>git push origin serverfix:serverfix</code> کنید که همان کار را می‌کند — می‌گوید: «serverfix مرا بگیر و آنرا serverfix ریموت کن.»
 اگر نمی‌خواهید روی ریموت <code>serverfix</code> نامیده شود می‌توانید به جای آن، <code>git push origin serverfix:awesomebranch</code> را برای پوش کردن برنچ <code>serverfix</code> محلیتان به <code>aweseomebranch</code> روی پروژه ریموت اجرا کنید.</p>
 </div>
@@ -161,7 +161,7 @@ To https://github.com/schacon/simplegit
 ساده‌ترین راه ذخیرهٔ گواهی در حافظه به مدت چند دقیقه است، که می‌توانید به سادگی با اجرای <code>git config --global credential.helper cache</code> آنرا راه‌اندازی کنید.</p>
 </div>
 <div class="paragraph">
-<p>برای اطلاعات بیشتر درباره تنظیمات کش کردن گواهی‌های مختلف موجود به <a href="ch00/_credential_caching">Credential Storage</a> مراجعه کنید.</p>
+<p>برای اطلاعات بیشتر درباره تنظیمات کش کردن گواهی‌های مختلف موجود به <a href="{{< relurl "book/fa/v2/ch00/_credential_caching" >}}">Credential Storage</a> مراجعه کنید.</p>
 </div>
 </td>
 </tr>

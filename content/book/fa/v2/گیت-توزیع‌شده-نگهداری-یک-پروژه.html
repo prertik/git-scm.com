@@ -382,17 +382,17 @@ $ git diff 36c7db</code></pre>
 آنرا با برنچ مستر مرج، آن برنچ تازه مرج شدهٔ موضوعی را پاک و این فرآیند را تکرار می‌کنید.</p>
 </div>
 <div class="paragraph">
-<p>مثلاً اگر مخزنی داریم که در آن دو برنچ کار شده با نام‌های <code>ruby_client</code> و <code>php_client</code> داریم که شبیه <a href="ch00/merwf_a">تاریخچه با تعدادی برنچ موضوعی.</a> است و <code>ruby_client</code> و سپس <code>php_client</code> را مرج کنیم، تاریخچهٔ شما شبیه <a href="ch00/merwf_b">بعد مرج یک برنچ موضوعی.</a> خواهد شد.</p>
+<p>مثلاً اگر مخزنی داریم که در آن دو برنچ کار شده با نام‌های <code>ruby_client</code> و <code>php_client</code> داریم که شبیه <a href="{{< relurl "book/fa/v2/ch00/merwf_a" >}}">تاریخچه با تعدادی برنچ موضوعی.</a> است و <code>ruby_client</code> و سپس <code>php_client</code> را مرج کنیم، تاریخچهٔ شما شبیه <a href="{{< relurl "book/fa/v2/ch00/merwf_b" >}}">بعد مرج یک برنچ موضوعی.</a> خواهد شد.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="History with several topic branches.">
+<img src="{{< relurl "book/fa/v2/images/merging-workflows-1.png" >}}" alt="History with several topic branches.">
 </div>
 <div class="title">نمودار 73. تاریخچه با تعدادی برنچ موضوعی.</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="After a topic branch merge.">
+<img src="{{< relurl "book/fa/v2/images/merging-workflows-2.png" >}}" alt="After a topic branch merge.">
 </div>
 <div class="title">نمودار 74. بعد مرج یک برنچ موضوعی.</div>
 </div>
@@ -403,24 +403,24 @@ $ git diff 36c7db</code></pre>
 <p>اگر پروژهٔ مهم‌تری دارید، ممکن است بخواهید از یک چرخهٔ مرج دوفازی استفاده کنید.
 در این سناریو شما دو برنچ با قدمت دارید، <code>master</code> و <code>develop</code> که <code>master</code> فقط موقعی بروزرسانی می‌شود که یک نسخه خیلی باثبات تهیه شده و همهٔ کدهای جدید در برنچ <code>develop</code> تعبیه می‌شوند.
 عموماً شما هردوی این برنچ‌ها را به مخزن عمومی پوش می‌کنید.
-هر بار که برنچ موضوعی جدیدی برای مرج کردن دارید (<a href="ch00/merwf_c">قبل از مرج یک برنچ موضوعی.</a>)، آنرا به <code>develop</code> مرج می‌کنید (<a href="ch00/merwf_d">بعد مرج یک برنچ موضوعی.</a>)؛
-سپس هنگامی که یک تگ انتشار داشتید، <code>master</code> را به هرجایی که برنچ موقتاً باثبات <code>develop</code> هست fast-forward می‌کنید (<a href="ch00/merwf_e">بعد از یک انتشار از پروژه.</a>).</p>
+هر بار که برنچ موضوعی جدیدی برای مرج کردن دارید (<a href="{{< relurl "book/fa/v2/ch00/merwf_c" >}}">قبل از مرج یک برنچ موضوعی.</a>)، آنرا به <code>develop</code> مرج می‌کنید (<a href="{{< relurl "book/fa/v2/ch00/merwf_d" >}}">بعد مرج یک برنچ موضوعی.</a>)؛
+سپس هنگامی که یک تگ انتشار داشتید، <code>master</code> را به هرجایی که برنچ موقتاً باثبات <code>develop</code> هست fast-forward می‌کنید (<a href="{{< relurl "book/fa/v2/ch00/merwf_e" >}}">بعد از یک انتشار از پروژه.</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Before a topic branch merge.">
+<img src="{{< relurl "book/fa/v2/images/merging-workflows-3.png" >}}" alt="Before a topic branch merge.">
 </div>
 <div class="title">نمودار 75. قبل از مرج یک برنچ موضوعی.</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="After a topic branch merge.">
+<img src="{{< relurl "book/fa/v2/images/merging-workflows-4.png" >}}" alt="After a topic branch merge.">
 </div>
 <div class="title">نمودار 76. بعد مرج یک برنچ موضوعی.</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="After a topic branch release.">
+<img src="{{< relurl "book/fa/v2/images/merging-workflows-5.png" >}}" alt="After a topic branch release.">
 </div>
 <div class="title">نمودار 77. بعد از یک انتشار از پروژه.</div>
 </div>
@@ -436,13 +436,13 @@ $ git diff 36c7db</code></pre>
 <div class="paragraph">
 <p>
 پروژهٔ گیت چهار برنچ باقدمت دارد: <code>master</code>، <code>next</code>، و <code>pu</code> (Proposed Updates، بروزرسانی پیشنهادی) برای کارهای جدید و <code>maint</code> (Maintenance Backports، بک‌پورت‌های نگهداری).
-وقتی کار جدید توسط مشارکت‌کنندگان معرفی می‌شود، درون برنچ موضوعی در مخزن نگهدارنده، مشابه چیزی که توصیف کردیم، جمع‌آوری می‌شود (<a href="ch00/merwf_f">مدیریت مجموعه‌ای پیچیده از برنچ‌های موضوعی موازی مشارکت‌شده.</a> را ببینید).
+وقتی کار جدید توسط مشارکت‌کنندگان معرفی می‌شود، درون برنچ موضوعی در مخزن نگهدارنده، مشابه چیزی که توصیف کردیم، جمع‌آوری می‌شود (<a href="{{< relurl "book/fa/v2/ch00/merwf_f" >}}">مدیریت مجموعه‌ای پیچیده از برنچ‌های موضوعی موازی مشارکت‌شده.</a> را ببینید).
 در این نقطه موضوعات در پی دریافتن اینکه آیا برای استفاده آماده و امن هستند و یا احتیاج است بیشتر روی آنها کار شود ارزیابی می‌شوند.
 اگر امن بودند به <code>next</code> مرج می‌شوند و آن برنچ پوش می‌شود تا همه بتوانند موضوعاتی که با هم یکپارچه‌سازی شده‌اند را امتحان کنند.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Managing a complex series of parallel contributed topic branches.">
+<img src="{{< relurl "book/fa/v2/images/large-merges-1.png" >}}" alt="Managing a complex series of parallel contributed topic branches.">
 </div>
 <div class="title">نمودار 78. مدیریت مجموعه‌ای پیچیده از برنچ‌های موضوعی موازی مشارکت‌شده.</div>
 </div>
@@ -454,7 +454,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Merging contributed topic branches into long-term integration branches.">
+<img src="{{< relurl "book/fa/v2/images/large-merges-2.png" >}}" alt="Merging contributed topic branches into long-term integration branches.">
 </div>
 <div class="title">نمودار 79. مرج برنچ‌های موضوعی مشارکت‌شده به برنچ‌های یکپارچه‌سازی باقدمت.</div>
 </div>
@@ -485,7 +485,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Example history before a cherry-pick.">
+<img src="{{< relurl "book/fa/v2/images/rebasing-1.png" >}}" alt="Example history before a cherry-pick.">
 </div>
 <div class="title">نمودار 80. مثال تاریخچه‌ای قبل از چری-پیک‌کردن.</div>
 </div>
@@ -506,7 +506,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="History after cherry-picking a commit on a topic branch.">
+<img src="{{< relurl "book/fa/v2/images/rebasing-2.png" >}}" alt="History after cherry-picking a commit on a topic branch.">
 </div>
 <div class="title">نمودار 81. تاریخچه پس از چری-پیک کردن یک کامیت از یک برنچ موضوعی.</div>
 </div>
@@ -542,7 +542,7 @@ Finished one cherry-pick.
 هنگامی که تنها اجرا شود، گیت پایگاه دادهٔ حلال‌هایش را چک می‌کند و سعی می‌کند تطبیقی با هر تداخل مرج فعلی پیدا کرده و آن را حل کند
 (اگرچه اگر <code>rerere.enabled</code> روی <code>true</code> تنظیم شده باشد این کار به طور خودکار انجام می‌شود).
 همچنین زیردستوراتی برای مشاهدهٔ آنچه که ذخیره خواهد شد، پاک کردن حلال‌های خاص از کش و پاک کردن کل کش وجود دارد.
-ررره را با جزئیات بیشتر در <a href="ch00/ref_rerere">Rerere</a> مورد بررسی قرار می‌دهیم.</p>
+ررره را با جزئیات بیشتر در <a href="{{< relurl "book/fa/v2/ch00/ref_rerere" >}}">Rerere</a> مورد بررسی قرار می‌دهیم.</p>
 </div>
 </div>
 </div>
@@ -551,7 +551,7 @@ Finished one cherry-pick.
 <div class="paragraph">
 <p>
 هنگامی که تصمیم گرفتید نسخهٔ انتشاری تهیه کنید، احتمالاً خواهید خواست که تگ متناسبی برای اینکه بتوانید آن انتشار را در آینده بازسازی کنید اعمال کنید.
-شما می‌توانید مطابق آنچه که در <a href="ch00/ch02-git-basics-chapter">مقدمات گیت</a> توصیف شد تگ جدیدی ایجاد کنید.
+شما می‌توانید مطابق آنچه که در <a href="{{< relurl "book/fa/v2/ch00/ch02-git-basics-chapter" >}}">مقدمات گیت</a> توصیف شد تگ جدیدی ایجاد کنید.
 اگر به عنوان نگهدارنده تصمیم گرفته‌اید که تگی را امضا کنید، تگ کردنتان ممکن است شبیه به این باشد:</p>
 </div>
 <div class="listingblock">

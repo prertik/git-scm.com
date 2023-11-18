@@ -30,7 +30,7 @@ title: Git - شاخه‌ها در یک کلمه
 <p>برای اینکه به راستی نحوهٔ شاخه‌سازی گیت را درک کنید، باید یک قدم به عقب برگردیم و نحوهٔ ثبت اطلاعات گیت را مطالعه کنیم.</p>
 </div>
 <div class="paragraph">
-<p>همانطور که از <a href="ch00/ch01-getting-started">شروع به کار</a> به یاد دارید، ‌گیت داده‌ها را به عنوان دسته‌ای از تغییرات یا تفاوت‌هایی بین فایل‌ها ذخیره نمی‌کند؛
+<p>همانطور که از <a href="{{< relurl "book/fa/v2/ch00/ch01-getting-started" >}}">شروع به کار</a> به یاد دارید، ‌گیت داده‌ها را به عنوان دسته‌ای از تغییرات یا تفاوت‌هایی بین فایل‌ها ذخیره نمی‌کند؛
 بلکه اطلاعات را به عنوان مجموعه‌ای از <em>اسنپ‌شات‌ها</em> ذخیره می‌کند.</p>
 </div>
 <div class="paragraph">
@@ -40,7 +40,7 @@ title: Git - شاخه‌ها در یک کلمه
 </div>
 <div class="paragraph">
 <p>برای ملموس کردن این موضوع، فرض را بر این بگذاریم که پوشه‌ای حاوی سه فایل داریم و شما همهٔ آنها را استیج و کامیت می‌کنید.
-استیج کردن فایل‌های برای هر کدام از آنها یک چک‌سام (هش SHA-1 که در<a href="ch00/ch01-getting-started">شروع به کار</a> ذکر کردیم) محاسبه می‌کند، آن نسخه از فایل را در مخزن گیت ذخیره می‌کند،
+استیج کردن فایل‌های برای هر کدام از آنها یک چک‌سام (هش SHA-1 که در<a href="{{< relurl "book/fa/v2/ch00/ch01-getting-started" >}}">شروع به کار</a> ذکر کردیم) محاسبه می‌کند، آن نسخه از فایل را در مخزن گیت ذخیره می‌کند،
 (گیت از این فایل‌های با نام <em>بلاب</em> یاد می‌کند) و آن چک‌سام را به استیج اضافه می‌کند:</p>
 </div>
 <div class="listingblock">
@@ -59,7 +59,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
+<img src="{{< relurl "book/fa/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
 </div>
 <div class="title">نمودار 9. یک کامیت و درختش</div>
 </div>
@@ -68,7 +68,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
+<img src="{{< relurl "book/fa/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
 </div>
 <div class="title">نمودار 10. کامیت‌ها و والدینشان</div>
 </div>
@@ -96,7 +96,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
+<img src="{{< relurl "book/fa/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
 </div>
 <div class="title">نمودار 11. یک برنچ و تاریخچهٔ کامیت‌های آن</div>
 </div>
@@ -119,7 +119,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
+<img src="{{< relurl "book/fa/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
 </div>
 <div class="title">نمودار 12. دو برنچ که به یک دسته از کامیت‌ها اشاره می‌کنند</div>
 </div>
@@ -133,7 +133,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
+<img src="{{< relurl "book/fa/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
 </div>
 <div class="title">نمودار 13. هد که به یک برنچ اشاره می‌کند</div>
 </div>
@@ -170,7 +170,7 @@ f30ab (HEAD -&gt; master, testing) Add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
+<img src="{{< relurl "book/fa/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
 </div>
 <div class="title">نمودار 14. هد به برنچ فعلی اشاره می‌کند</div>
 </div>
@@ -186,7 +186,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
+<img src="{{< relurl "book/fa/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
 </div>
 <div class="title">نمودار 15. هنگامی که کامیتی ساخته می‌شود برنچ هد به جلو می‌رود</div>
 </div>
@@ -225,7 +225,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
+<img src="{{< relurl "book/fa/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
 </div>
 <div class="title">نمودار 16. وقتی چک‌اوت می‌کنید هد جابه‌جا می‌شود</div>
 </div>
@@ -262,14 +262,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>اکنون تاریخچه پروژه شما دوشاخه شده است (به <a href="ch00/divergent_history">تاریخچه دوشاخه شده</a> مراجعه کنید).
+<p>اکنون تاریخچه پروژه شما دوشاخه شده است (به <a href="{{< relurl "book/fa/v2/ch00/divergent_history" >}}">تاریخچه دوشاخه شده</a> مراجعه کنید).
 شما یک برنچ ساختید و به آن انتقال پیدا کردید، کمی روی آن کار کردید و سپس به برنچ اصلی خود بازگشتید و آنجا کمی کار متفاوت انجام دادید.
 هر دوی آن تغییرات به صورت ایزوله در برنچ‌های خودشان موجوداند: شما می‌توانید بین برنچ‌ها جابه‌جا شوید و هرگاه آماده بودید آنها را با هم مرج کنید.
 و جالبتر اینکه همهٔ این کارها را صرفاً با دستورهای <code>branch</code>، <code>checkout</code> و <code>commit</code> انجام دادید.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Divergent history.">
+<img src="{{< relurl "book/fa/v2/images/advance-master.png" >}}" alt="Divergent history.">
 </div>
 <div class="title">نمودار 17. تاریخچه دوشاخه شده</div>
 </div>

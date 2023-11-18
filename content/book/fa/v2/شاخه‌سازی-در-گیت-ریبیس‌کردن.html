@@ -26,11 +26,11 @@ title: Git - ریبیس‌کردن
 <div class="sect3">
 <h3 id="_ریبیس_مقدماتی">ریبیس مقدماتی</h3>
 <div class="paragraph">
-<p>اگر به یک مثال قدیمی‌تر از <a href="ch00/_basic_merging">ادغام مقدماتی</a> بازگردیم، می‌بینید که کار شما و کامیت‌های که کرده‌اید دوشاخه شده است.</p>
+<p>اگر به یک مثال قدیمی‌تر از <a href="{{< relurl "book/fa/v2/ch00/_basic_merging" >}}">ادغام مقدماتی</a> بازگردیم، می‌بینید که کار شما و کامیت‌های که کرده‌اید دوشاخه شده است.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Simple divergent history.">
+<img src="{{< relurl "book/fa/v2/images/basic-rebase-1.png" >}}" alt="Simple divergent history.">
 </div>
 <div class="title">نمودار 35. تاریخچهٔ دوشاخهٔ ساده</div>
 </div>
@@ -40,7 +40,7 @@ title: Git - ریبیس‌کردن
 </div>
 <div id="rebasing-merging-example" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Merging to integrate diverged work history.">
+<img src="{{< relurl "book/fa/v2/images/basic-rebase-2.png" >}}" alt="Merging to integrate diverged work history.">
 </div>
 <div class="title">نمودار 36. مرج کردن جهت یکپارچه‌سازی تاریخچهٔ کار دوشاخه</div>
 </div>
@@ -66,7 +66,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="Rebasing the change introduced in `C4` onto `C3`.">
+<img src="{{< relurl "book/fa/v2/images/basic-rebase-3.png" >}}" alt="Rebasing the change introduced in `C4` onto `C3`.">
 </div>
 <div class="title">نمودار 37. ریبیس کردن تغییرات معرفی شده در <code>C4</code> به روی <code>C3</code>
 </div>
@@ -82,13 +82,13 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Fast-forwarding the `master` branch.">
+<img src="{{< relurl "book/fa/v2/images/basic-rebase-4.png" >}}" alt="Fast-forwarding the `master` branch.">
 </div>
 <div class="title">نمودار 38. فست-فوروارد کردن برنچ <code>master</code>
 </div>
 </div>
 <div class="paragraph">
-<p>حال اسنپ‌شاتی که <code>C4'</code> به آن اشاره می‌کند دقیقاً به مانند همانی است که که سابقاً توسط <code>C5</code> در <a href="ch00/rebasing-merging-example">مثال مرج</a> به آن اشاره می‌شد.
+<p>حال اسنپ‌شاتی که <code>C4'</code> به آن اشاره می‌کند دقیقاً به مانند همانی است که که سابقاً توسط <code>C5</code> در <a href="{{< relurl "book/fa/v2/ch00/rebasing-merging-example" >}}">مثال مرج</a> به آن اشاره می‌شد.
 تفاوتی در محصول نهایی این یکپارچه‌سازی وجود ندارد اما ریبیس‌کردن تاریخچه‌ای تمیزتر را خلق می‌کند.
 اگر لاگ یک برنچ ریبیس‌شده را مطالعه کنید، به نظر یک تاریخچهٔ خطی است: طوری نمایش داده می‌شود که انگار همه چیز در طی یک فرآیند سری اتفاق افتاده حتی اگر در حقیقت به طور موازی انجام شده است.</p>
 </div>
@@ -101,14 +101,14 @@ $ git merge experiment</code></pre>
 <h3 id="_ریبیسهای_جذابتر">ریبیس‌های جذاب‌تر</h3>
 <div class="paragraph">
 <p>شما همچنین می‌توانید تغییرات را روی چیزی به غیر از برنچ هدف اعمال کنید.
-به طور مثال یک تاریخچه مانند <a href="ch00/rbdiag_e">تاریخچه‌ای با یک برنچ موضوعی که از برنچ موضوعی دیگر شروع می‌شود</a> را در نظر بگیرید.
+به طور مثال یک تاریخچه مانند <a href="{{< relurl "book/fa/v2/ch00/rbdiag_e" >}}">تاریخچه‌ای با یک برنچ موضوعی که از برنچ موضوعی دیگر شروع می‌شود</a> را در نظر بگیرید.
 یک برنچ موضوعی (<code>server</code>) ساختید تا چند مورد سمت سرور به پروژهٔ خود اضافه کنید و کامیتی گرفتید.
 سپس یک برنچ ساختید (<code>client</code>) تا تغییرات سمت کلاینت را اعمال کنید و چند کامیت هم آنجا گرفتید.
 در نهایت به برنچ سرور بازگشتید و چند کامیت دیگر گرفته‌اید.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="A history with a topic branch off another topic branch.">
+<img src="{{< relurl "book/fa/v2/images/interesting-rebase-1.png" >}}" alt="A history with a topic branch off another topic branch.">
 </div>
 <div class="title">نمودار 39. تاریخچه‌ای با یک برنچ موضوعی که از برنچ موضوعی دیگر شروع می‌شود</div>
 </div>
@@ -128,12 +128,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Rebasing a topic branch off another topic branch.">
+<img src="{{< relurl "book/fa/v2/images/interesting-rebase-2.png" >}}" alt="Rebasing a topic branch off another topic branch.">
 </div>
 <div class="title">نمودار 40. ریبیس کردن یک برنچ موضوعی از یک برنچ موضوعی دیگر</div>
 </div>
 <div class="paragraph">
-<p>حال می‌توانید برنچ <code>master</code> خود را fast-forward کنید (به <a href="ch00/rbdiag_g">فست-فوروارد کردن برنچ <code>master</code> برای اضافه کردن تغییرات برنچ کلاینت</a> نگاهی بیاندازید):</p>
+<p>حال می‌توانید برنچ <code>master</code> خود را fast-forward کنید (به <a href="{{< relurl "book/fa/v2/ch00/rbdiag_g" >}}">فست-فوروارد کردن برنچ <code>master</code> برای اضافه کردن تغییرات برنچ کلاینت</a> نگاهی بیاندازید):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -143,7 +143,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Fast-forwarding your `master` branch to include the client branch changes.">
+<img src="{{< relurl "book/fa/v2/images/interesting-rebase-3.png" >}}" alt="Fast-forwarding your `master` branch to include the client branch changes.">
 </div>
 <div class="title">نمودار 41. فست-فوروارد کردن برنچ <code>master</code> برای اضافه کردن تغییرات برنچ کلاینت</div>
 </div>
@@ -158,11 +158,11 @@ $ git merge client</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>همانطور که در <a href="ch00/rbdiag_h">ریبیس کردن برنچ سرورتان روی برنچ <code>master</code></a> نمایش داده شد، این دستور کارهای برنچ <code>server</code> را روی کارهای <code>master</code> شما سوار می‌کند.</p>
+<p>همانطور که در <a href="{{< relurl "book/fa/v2/ch00/rbdiag_h" >}}">ریبیس کردن برنچ سرورتان روی برنچ <code>master</code></a> نمایش داده شد، این دستور کارهای برنچ <code>server</code> را روی کارهای <code>master</code> شما سوار می‌کند.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Rebasing your server branch on top of your `master` branch.">
+<img src="{{< relurl "book/fa/v2/images/interesting-rebase-4.png" >}}" alt="Rebasing your server branch on top of your `master` branch.">
 </div>
 <div class="title">نمودار 42. ریبیس کردن برنچ سرورتان روی برنچ <code>master</code>
 </div>
@@ -177,7 +177,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>شما می‌توانید برنچ‌های <code>client</code> و <code>server</code> را حذف کنید چراکه تمام کارها تعبیه شده‌اند و شما دیگر به آنها احتیاجی ندارید، در نتیجه تمام تاریخچه شما مشابه <a href="ch00/rbdiag_i">تاریخچهٔ کامیت نهایی</a> می‌شود:</p>
+<p>شما می‌توانید برنچ‌های <code>client</code> و <code>server</code> را حذف کنید چراکه تمام کارها تعبیه شده‌اند و شما دیگر به آنها احتیاجی ندارید، در نتیجه تمام تاریخچه شما مشابه <a href="{{< relurl "book/fa/v2/ch00/rbdiag_i" >}}">تاریخچهٔ کامیت نهایی</a> می‌شود:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -187,7 +187,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Final commit history.">
+<img src="{{< relurl "book/fa/v2/images/interesting-rebase-5.png" >}}" alt="Final commit history.">
 </div>
 <div class="title">نمودار 43. تاریخچهٔ کامیت نهایی</div>
 </div>
@@ -217,7 +217,7 @@ $ git branch -d server</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Clone a repository, and base some work on it.">
+<img src="{{< relurl "book/fa/v2/images/perils-of-rebasing-1.png" >}}" alt="Clone a repository, and base some work on it.">
 </div>
 <div class="title">نمودار 44. یک مخزن را کلون می‌کنید و کمی کار روی آن انجام می‌دهید</div>
 </div>
@@ -227,7 +227,7 @@ $ git branch -d server</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Fetch more commits, and merge them into your work.">
+<img src="{{< relurl "book/fa/v2/images/perils-of-rebasing-2.png" >}}" alt="Fetch more commits, and merge them into your work.">
 </div>
 <div class="title">نمودار 45. کامیت‌های بیشتری را فچ می‌کنید و آنها را با کار خود مرج می‌کنید</div>
 </div>
@@ -237,7 +237,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Someone pushes rebased commits, abandoning commits you’ve based your work on.">
+<img src="{{< relurl "book/fa/v2/images/perils-of-rebasing-3.png" >}}" alt="Someone pushes rebased commits, abandoning commits you’ve based your work on.">
 </div>
 <div class="title">نمودار 46. شخصی کامیت‌های ریبیس‌شده را پوش می‌کند، کامیت‌هایی که شما کار خود را روی آنها بنا گذاشته‌اید را پشت سر می‌گذارد</div>
 </div>
@@ -247,7 +247,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="You merge in the same work again into a new merge commit.">
+<img src="{{< relurl "book/fa/v2/images/perils-of-rebasing-4.png" >}}" alt="You merge in the same work again into a new merge commit.">
 </div>
 <div class="title">نمودار 47. شما همان کارها را دوباره مرج می‌کنید و یک مرج کامیت جدید می‌سازید</div>
 </div>
@@ -271,7 +271,7 @@ $ git branch -d server</code></pre>
 <p>اگر کاری که بازنویسی شده را پول کرده‌اید و آنرا به روی کامیت‌های جدید همکارتان ریبیس کنید، اکثر مواقع گیت متوجه می‌شود که چه کاری منحصر به شماست و آنها را دوباره به بالای برنچ جدید اعمال می‌کند.</p>
 </div>
 <div class="paragraph">
-<p>به طور مثال، در شرایط قبلی، اگر هنگامی که در <a href="ch00/_pre_merge_rebase_work">شخصی کامیت‌های ریبیس‌شده را پوش می‌کند، کامیت‌هایی که شما کار خود را روی آنها بنا گذاشته‌اید را پشت سر می‌گذارد</a> هستید به جای مرج‌کردن، <code>git rebase teamone/master</code> را اجرا کنید، گیت:</p>
+<p>به طور مثال، در شرایط قبلی، اگر هنگامی که در <a href="{{< relurl "book/fa/v2/ch00/_pre_merge_rebase_work" >}}">شخصی کامیت‌های ریبیس‌شده را پوش می‌کند، کامیت‌هایی که شما کار خود را روی آنها بنا گذاشته‌اید را پشت سر می‌گذارد</a> هستید به جای مرج‌کردن، <code>git rebase teamone/master</code> را اجرا کنید، گیت:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -290,11 +290,11 @@ $ git branch -d server</code></pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>بنابراین بجای برخوردن با <a href="ch00/_merge_rebase_work">شما همان کارها را دوباره مرج می‌کنید و یک مرج کامیت جدید می‌سازید</a> با نتیجه‌ای بیشتر شبیه <a href="ch00/_rebase_rebase_work">به روی یک کار ریبیس و فورس پوش شده ریبیس می‌کنید</a> مواجه خواهیم شد.</p>
+<p>بنابراین بجای برخوردن با <a href="{{< relurl "book/fa/v2/ch00/_merge_rebase_work" >}}">شما همان کارها را دوباره مرج می‌کنید و یک مرج کامیت جدید می‌سازید</a> با نتیجه‌ای بیشتر شبیه <a href="{{< relurl "book/fa/v2/ch00/_rebase_rebase_work" >}}">به روی یک کار ریبیس و فورس پوش شده ریبیس می‌کنید</a> مواجه خواهیم شد.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Rebase on top of force-pushed rebase work.">
+<img src="{{< relurl "book/fa/v2/images/perils-of-rebasing-5.png" >}}" alt="Rebase on top of force-pushed rebase work.">
 </div>
 <div class="title">نمودار 48. به روی یک کار ریبیس و فورس پوش شده ریبیس می‌کنید</div>
 </div>

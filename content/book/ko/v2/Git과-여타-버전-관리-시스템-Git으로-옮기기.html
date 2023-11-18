@@ -516,7 +516,7 @@ Perforce와 Git으로 변환하는 방법도 git-p4와 Perforce Git Fusion을 �
 <h4 id="_perforce_git_fusion">Perforce Git Fusion</h4>
 <div class="paragraph">
 <p>Git Fusion을 사용한다면 큰 어려울게 없다.
-그저 프로젝트 정보, 사용자 매핑, 브랜치를 설정파일에 설정하고(<a href="ch00/_p4_git_fusion">Git Fusion</a>에서 다룸) Perforce 저장소를 Clone 하기만 하면 된다.
+그저 프로젝트 정보, 사용자 매핑, 브랜치를 설정파일에 설정하고(<a href="{{< relurl "book/ko/v2/ch00/_p4_git_fusion" >}}">Git Fusion</a>에서 다룸) Perforce 저장소를 Clone 하기만 하면 된다.
 Git Fusion은 마치 Git 저장소를 Clone 한 것 처럼 느끼게 해준다. Clone 했으면 Git 서버에 Push 한다.
 심지어 다시 Perforce 서버로 Push 해도 된다.</p>
 </div>
@@ -565,7 +565,7 @@ Importing revision 9957 (100%)</code></pre>
 </div>
 <div class="paragraph">
 <p>예제로 사용하는 이 프로젝트는 브랜치가 하나뿐이다. 만약 Clone 할 프로젝트에 브랜치가 여러개 있거나 브랜치가 디렉토리로 구성돼 있다면 <code>--detect-branches</code> 옵션을 사용하여 브랜치 정보를 Git 저장소로 그대로 들고올 수 있다.
-<a href="ch00/_git_p4_branches">브랜치</a> 에서 자세한 내용을 살펴볼 수 있다.</p>
+<a href="{{< relurl "book/ko/v2/ch00/_git_p4_branches" >}}">브랜치</a> 에서 자세한 내용을 살펴볼 수 있다.</p>
 </div>
 <div class="paragraph">
 <p>여기까지만 해도 반 이상 한 것이다.
@@ -724,7 +724,7 @@ TFVC Changeset의 Author 필드는 형식이 자유롭지만 Git에는 사람이
 <p>사용하는 VCS가 앞서 살펴본 시스템이 아니면 인터넷에서 적당한 Importer를 찾아봐야 한다. CVS, Clear Case, Visual Source Safe 같은 시스템용 Importer가 좋은게 많다. 심지어 단순히 디렉토리 아카이브용 Importer에도 좋은게 있다.
 사람들이 잘 안쓰는 시스템을 사용하고 있는데 적당한 Importer를 못 찾았거나 부족해서 좀 더 고쳐야 한다면 <code>git fast-import</code> 를 사용한다.
 이 명령은 표준입력으로 데이터를 입력받는다.
-<a href="ch00/ch10-git-internals">Git의 내부</a> 에서 배우는 저수준 명령어와 내부 객체를 직접 다루는 것보다 훨씬 쉽다.
+<a href="{{< relurl "book/ko/v2/ch00/ch10-git-internals" >}}">Git의 내부</a> 에서 배우는 저수준 명령어와 내부 객체를 직접 다루는 것보다 훨씬 쉽다.
 먼저 사용하는 VCS에서 필요한 정보를 수집해서 표준출력으로 출력하는 스크립트를 만든다.
 그리고 그 결과를 <code>git fast-import</code> 의 표준입력으로 보낸다.</p>
 </div>
@@ -750,7 +750,7 @@ current</code></pre>
 그러면 디렉토리마다 스냅샷을 만들고, 그 스냅샷을 가리키는 커밋 개체를 만들고, 이전 커밋과 연결 시킨다.</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/_an_example_git_enforced_policy">정책 구현하기</a> 절에서 했던 것 처럼 Ruby로 스크립트를 작성한다. 책에서 계속 스크립트를 작성할 때 Ruby로 해왔고, 읽기도 쉽기에 Ruby를 쓴다.
+<p><a href="{{< relurl "book/ko/v2/ch00/_an_example_git_enforced_policy" >}}">정책 구현하기</a> 절에서 했던 것 처럼 Ruby로 스크립트를 작성한다. 책에서 계속 스크립트를 작성할 때 Ruby로 해왔고, 읽기도 쉽기에 Ruby를 쓴다.
 하지만 자신에게 익숙한 것을 사용해서 표준출력으로 적절한 정보만 출력할 수 있으면 된다.
 그리고 Windows에서는 라인 바꿈 문자에 CR(Carriage Return) 문자가 들어가지 않도록 주의해야 한다. <code>git fast-import</code> 명령은 Windows에서도 라인 바꿈 문자로 CRLF 문자가 아니라 LF(Line Feed) 문자만 허용한다.</p>
 </div>

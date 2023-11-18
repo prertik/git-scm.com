@@ -70,7 +70,7 @@ Git은 공백문자를 검사해볼 수 있는 간단한 명령을 제공한다.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="`git diff --check` 의 결과.">
+<img src="{{< relurl "book/ko/v2/images/git-diff-check.png" >}}" alt="`git diff --check` 의 결과.">
 </div>
 <div class="title">그림 57. <code>git diff --check</code> 의 결과.</div>
 </div>
@@ -81,12 +81,12 @@ Git은 공백문자를 검사해볼 수 있는 간단한 명령을 제공한다.
 <p>그리고 각 커밋은 논리적으로 구분되는 Changeset이다.
 최대한 수정사항을 한 주제로 요약할 수 있어야 하고 여러 가지 이슈에 대한 수정사항을 하나의 커밋에 담지 않아야 한다.
 여러 가지 이슈를 한꺼번에 수정했다고 하더라도 Staging Area를 이용하여 한 커밋에 이슈 하나만 담기도록 한다. 작업 내용을 분할하고, 각 커밋마다 적절한 메시지를 작성한다.
-같은 파일의 다른 부분을 수정하는 경우에는 <code>git add -patch</code> 명령을 써서 한 부분씩 나누어 Staging Area에 저장해야 한다(관련 내용은 <a href="ch00/_interactive_staging">대화형 명령</a> 에서 다룬다).
+같은 파일의 다른 부분을 수정하는 경우에는 <code>git add -patch</code> 명령을 써서 한 부분씩 나누어 Staging Area에 저장해야 한다(관련 내용은 <a href="{{< relurl "book/ko/v2/ch00/_interactive_staging" >}}">대화형 명령</a> 에서 다룬다).
 결과적으로 최종 프로젝트의 모습은 한 번에 커밋을 하든 다섯 번에 나누어 커밋을 하든 똑같다.</p>
 </div>
 <div class="paragraph">
 <p>하지만, 여러 번 나누어 커밋하는 것이 다른 동료가 수정한 부분을 확인할 때나 각 커밋의 시점으로 복원해서 검토할 때 이해하기 훨씬 쉽다.
-<a href="ch00/_rewriting_history">히스토리 단장하기</a> 에서 이미 저장된 커밋을 다시 수정하거나 파일을 단계적으로 Staging Area에 저장하는 방법을 살펴본다. 다양한 도구를 이용해서 간단하고 이해하기 쉬운 커밋을 쌓아가야 한다.</p>
+<a href="{{< relurl "book/ko/v2/ch00/_rewriting_history" >}}">히스토리 단장하기</a> 에서 이미 저장된 커밋을 다시 수정하거나 파일을 단계적으로 Staging Area에 저장하는 방법을 살펴본다. 다양한 도구를 이용해서 간단하고 이해하기 쉬운 커밋을 쌓아가야 한다.</p>
 </div>
 <div class="paragraph">
 <p>마지막으로 명심해야 할 점은 커밋 메시지 자체다.
@@ -239,7 +239,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="Fetch 하고 난 John의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/small-team-1.png" >}}" alt="Fetch 하고 난 John의 저장소.">
 </div>
 <div class="title">그림 58. Fetch 하고 난 John의 저장소.</div>
 </div>
@@ -259,7 +259,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="`origin/master` 브랜치를 Merge 하고 난 후 John의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/small-team-2.png" >}}" alt="`origin/master` 브랜치를 Merge 하고 난 후 John의 저장소.">
 </div>
 <div class="title">그림 59. <code>origin/master</code> 브랜치를 Merge 하고 난 후 John의 저장소.</div>
 </div>
@@ -279,7 +279,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="Push 하고 난 후 John의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/small-team-3.png" >}}" alt="Push 하고 난 후 John의 저장소.">
 </div>
 <div class="title">그림 60. Push 하고 난 후 John의 저장소.</div>
 </div>
@@ -289,7 +289,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Jessica의 토픽 브랜치.">
+<img src="{{< relurl "book/ko/v2/images/small-team-4.png" >}}" alt="Jessica의 토픽 브랜치.">
 </div>
 <div class="title">그림 61. Jessica의 토픽 브랜치.</div>
 </div>
@@ -311,7 +311,7 @@ From jessica@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="John의 커밋을 Fetch 한 후 Jessica의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/small-team-5.png" >}}" alt="John의 커밋을 Fetch 한 후 Jessica의 저장소.">
 </div>
 <div class="title">그림 62. John의 커밋을 Fetch 한 후 Jessica의 저장소.</div>
 </div>
@@ -331,7 +331,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 <div class="paragraph">
 <p><code>issue54..origin/master</code> 문법은 히스토리를 검색할 때 뒤의 브랜치(<code>origin/master</code>)에 속한 커밋 중 앞의 브랜치(<code>issue54</code>)에 속하지 않은 커밋을 검색하는 문법이다.
-자세한 내용은 <a href="ch00/_commit_ranges">범위로 커밋 가리키기</a>에서 다룬다.</p>
+자세한 내용은 <a href="{{< relurl "book/ko/v2/ch00/_commit_ranges" >}}">범위로 커밋 가리키기</a>에서 다룬다.</p>
 </div>
 <div class="paragraph">
 <p>앞의 명령에 따라 히스토리를 검색한 결과 John이 생성하고 Jessica가 Merge 하지 않은 커밋을 하나 찾았다.
@@ -383,7 +383,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="John의 커밋을 Merge 후 Jessica의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/small-team-6.png" >}}" alt="John의 커밋을 Merge 후 Jessica의 저장소.">
 </div>
 <div class="title">그림 63. John의 커밋을 Merge 후 Jessica의 저장소.</div>
 </div>
@@ -403,7 +403,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="Jessica가 서버로 Push 하고 난 후의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/small-team-7.png" >}}" alt="Jessica가 서버로 Push 하고 난 후의 저장소.">
 </div>
 <div class="title">그림 64. Jessica가 서버로 Push 하고 난 후의 저장소.</div>
 </div>
@@ -415,7 +415,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="여러 개발자가 Git을 사용하는 워크플로.">
+<img src="{{< relurl "book/ko/v2/images/small-team-flow.png" >}}" alt="여러 개발자가 Git을 사용하는 워크플로.">
 </div>
 <div class="title">그림 65. 여러 개발자가 Git을 사용하는 워크플로.</div>
 </div>
@@ -495,7 +495,7 @@ $ git commit -am 'add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Jessica의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/managed-team-1.png" >}}" alt="Jessica의 저장소.">
 </div>
 <div class="title">그림 66. Jessica의 저장소.</div>
 </div>
@@ -538,7 +538,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>이것은 <em>refspec</em> 이란 것을 사용하는 것인데
-<a href="ch00/_refspec">Refspec</a> 에서 자세하게 설명한다.
+<a href="{{< relurl "book/ko/v2/ch00/_refspec" >}}">Refspec</a> 에서 자세하게 설명한다.
 명령에서 사용한 <code>-u</code> 옵션은 <code>--set-upstream</code> 옵션의 짧은 표현인데 브랜치를 추적하도록 설정해서 이후 Push 나 Pull 할 때 좀 더 편하게 사용할 수 있다.</p>
 </div>
 <div class="paragraph">
@@ -599,7 +599,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="마지막 Push 하고 난 후의 Jessica의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/managed-team-2.png" >}}" alt="마지막 Push 하고 난 후의 Jessica의 저장소.">
 </div>
 <div class="title">그림 67. 마지막 Push 하고 난 후의 Jessica의 저장소.</div>
 </div>
@@ -609,7 +609,7 @@ Integration-Manager가 두 브랜치를 모두 Merge 하고 난 후에 메인 �
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="두 브랜치가 메인 브랜치에 Merge 된 후의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/managed-team-3.png" >}}" alt="두 브랜치가 메인 브랜치에 Merge 된 후의 저장소.">
 </div>
 <div class="title">그림 68. 두 브랜치가 메인 브랜치에 Merge 된 후의 저장소.</div>
 </div>
@@ -620,7 +620,7 @@ Integration-Manager가 두 브랜치를 모두 Merge 하고 난 후에 메인 �
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="Managed 팀의 워크플로.">
+<img src="{{< relurl "book/ko/v2/images/managed-team-flow.png" >}}" alt="Managed 팀의 워크플로.">
 </div>
 <div class="title">그림 69. Managed 팀의 워크플로.</div>
 </div>
@@ -660,7 +660,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p><code>rebase -i</code> 명령을 사용하면 여러 커밋을 하나의 커밋으로 합치거나 프로젝트의 관리자가 수정사항을 쉽게 이해하도록 커밋을 정리할 수 있다. <a href="ch00/_rewriting_history">히스토리 단장하기</a> 에서 대화식으로 Rebase 하는 방법을 살펴본다.</p>
+<p><code>rebase -i</code> 명령을 사용하면 여러 커밋을 하나의 커밋으로 합치거나 프로젝트의 관리자가 수정사항을 쉽게 이해하도록 커밋을 정리할 수 있다. <a href="{{< relurl "book/ko/v2/ch00/_rewriting_history" >}}">히스토리 단장하기</a> 에서 대화식으로 Rebase 하는 방법을 살펴본다.</p>
 </div>
 </td>
 </tr>
@@ -678,7 +678,7 @@ $ git commit</code></pre>
 <div class="paragraph">
 <p>자 이제 등록한 리모트 저장소에 Push 한다.
 작업하던 것을 로컬 저장소의 <code>master</code> 브랜치에 Merge 한 후 Push 하는 것보다 리모트 브랜치에 바로 Push를 하는 방식이 훨씬 간단하다.
-이렇게 하는 이유는 관리자가 토픽 브랜치를 프로젝트에 포함시키고 싶지 않을 때 토픽 브랜치를 Merge 하기 이전 상태로 <code>master</code> 브랜치를 되돌릴 필요가 없기 때문이다. (<code>cherry-pick</code> 명령은 <a href="ch00/_rebase_cherry_pick">Rebase와 Cherry-Pick 워크플로</a> 에서 자세히 다룬다).
+이렇게 하는 이유는 관리자가 토픽 브랜치를 프로젝트에 포함시키고 싶지 않을 때 토픽 브랜치를 Merge 하기 이전 상태로 <code>master</code> 브랜치를 되돌릴 필요가 없기 때문이다. (<code>cherry-pick</code> 명령은 <a href="{{< relurl "book/ko/v2/ch00/_rebase_cherry_pick" >}}">Rebase와 Cherry-Pick 워크플로</a> 에서 자세히 다룬다).
 관리자가 토픽 브랜치를 Merge 하든 Rebase 하든 Cherry-Pick 하든지 간에 결국 다시 관리자의 저장소를 Pull 할 때는 토픽 브랜치의 내용이 들어 있을 것이다.</p>
 </div>
 <div class="paragraph">
@@ -694,7 +694,7 @@ $ git commit</code></pre>
 </div>
 <div class="paragraph">
 <p>Fork 한 저장소에 Push 하고 나면 프로젝트 관리자에게 이 내용을 알려야 한다.
-이것을 <em>Pull Request</em> 라고 한다. Git 호스팅 사이트에서 관리자에게 보낼 메시지를 생성하거나 <code>git request-pull</code> 명령으로 이메일을 수동으로 만들 수 있다. GitHub의 “Pull Request” 버튼은 자동으로 메시지를 만들어 주는데 관련 내용은 <a href="ch00/ch06-github">GitHub</a> 에서 살펴볼 수 있다.</p>
+이것을 <em>Pull Request</em> 라고 한다. Git 호스팅 사이트에서 관리자에게 보낼 메시지를 생성하거나 <code>git request-pull</code> 명령으로 이메일을 수동으로 만들 수 있다. GitHub의 “Pull Request” 버튼은 자동으로 메시지를 만들어 주는데 관련 내용은 <a href="{{< relurl "book/ko/v2/ch00/ch06-github" >}}">GitHub</a> 에서 살펴볼 수 있다.</p>
 </div>
 <div class="paragraph">
 <p><code>git request-pull</code> 명령은 아규먼트를 두 개 입력받는다. 첫 번째 아규먼트는 작업한 토픽 브랜치의 Base 브랜치이다. 두 번째는 토픽 브랜치가 위치한 저장소 URL인데 위에서 등록한 리모트 저장소 이름을 적을 수 있다. 이 명령은 토픽 브랜치 수정사항을 요약한 내용을 결과로 보여준다.
@@ -743,7 +743,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="featureB 수정작업이 끝난 직후 저장소의 모습.">
+<img src="{{< relurl "book/ko/v2/images/public-small-1.png" >}}" alt="featureB 수정작업이 끝난 직후 저장소의 모습.">
 </div>
 <div class="title">그림 70. featureB 수정작업이 끝난 직후 저장소의 모습.</div>
 </div>
@@ -763,7 +763,7 @@ $ git push -f myfork featureA</code></pre>
 </div>
 <div id="psp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="FeatureA에 대한 Rebase가 적용된 후의 모습.">
+<img src="{{< relurl "book/ko/v2/images/public-small-2.png" >}}" alt="FeatureA에 대한 Rebase가 적용된 후의 모습.">
 </div>
 <div class="title">그림 71. FeatureA에 대한 Rebase가 적용된 후의 모습.</div>
 </div>
@@ -799,7 +799,7 @@ $ git push myfork featureBv2</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="featureBv2 브랜치를 커밋한 이후 저장소 모습.">
+<img src="{{< relurl "book/ko/v2/images/public-small-3.png" >}}" alt="featureBv2 브랜치를 커밋한 이후 저장소 모습.">
 </div>
 <div class="title">그림 72. featureBv2 브랜치를 커밋한 이후 저장소 모습.</div>
 </div>

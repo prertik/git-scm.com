@@ -35,22 +35,22 @@ title: Git - GitHub 스크립팅
 <div class="paragraph">
 <p>GitHub 서비스부터 살펴보자.
 훅과 서비스는 저장소의 설정 페이지에서 연동할 수 있다. 이전에 동료를 추가하거나 기본 브랜치를 설정하던 그곳이다.
-“Webhooks와 Services” 탭은 <a href="ch00/_services_hooks">서비스와 훅 설정 화면.</a>처럼 생겼다.</p>
+“Webhooks와 Services” 탭은 <a href="{{< relurl "book/ko/v2/ch00/_services_hooks" >}}">서비스와 훅 설정 화면.</a>처럼 생겼다.</p>
 </div>
 <div id="_services_hooks" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-01-services.png" >}}" alt="서비스와 훅">
+<img src="{{< relurl "book/ko/v2/images/scripting-01-services.png" >}}" alt="서비스와 훅">
 </div>
 <div class="title">그림 130. 서비스와 훅 설정 화면.</div>
 </div>
 <div class="paragraph">
 <p>CI, 버그 트래커, 이슈 트래커, 채팅, 문서 시스템 등과 연동하는 데 사용하는 서비스가 수십 개 준비돼 있다.
 여기서는 가장 단순한 Email 훅을 살펴본다.
-“Add Service” 메뉴에서 “email” 을 선택하면 <a href="ch00/_service_config">Email 서비스 설정.</a> 같은 설정 화면으로 이동한다.</p>
+“Add Service” 메뉴에서 “email” 을 선택하면 <a href="{{< relurl "book/ko/v2/ch00/_service_config" >}}">Email 서비스 설정.</a> 같은 설정 화면으로 이동한다.</p>
 </div>
 <div id="_service_config" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-02-email-service.png" >}}" alt="Email 서비스">
+<img src="{{< relurl "book/ko/v2/images/scripting-02-email-service.png" >}}" alt="Email 서비스">
 </div>
 <div class="title">그림 131. Email 서비스 설정.</div>
 </div>
@@ -74,12 +74,12 @@ URL을 하나 주면 그 URL로 HTTP 페이로드를 보내준다.</p>
 <p>GitHub 훅 페이로드를 처리하는 간단한 웹 서비스를 하나 만들고 그 서비스에 원하는 동작을 구현하는 것이 일반적이다.</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/_services_hooks">서비스와 훅 설정 화면.</a>의 “Add webhook” 버튼을 클릭하면
-아래와 같은 <a href="ch00/_web_hook">웹훅 설정.</a> 페이지로 이동한다.</p>
+<p><a href="{{< relurl "book/ko/v2/ch00/_services_hooks" >}}">서비스와 훅 설정 화면.</a>의 “Add webhook” 버튼을 클릭하면
+아래와 같은 <a href="{{< relurl "book/ko/v2/ch00/_web_hook" >}}">웹훅 설정.</a> 페이지로 이동한다.</p>
 </div>
 <div id="_web_hook" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-03-webhook.png" >}}" alt="웹훅">
+<img src="{{< relurl "book/ko/v2/images/scripting-03-webhook.png" >}}" alt="웹훅">
 </div>
 <div class="title">그림 132. 웹훅 설정.</div>
 </div>
@@ -142,7 +142,7 @@ end</code></pre>
 </div>
 <div id="_web_hook_debug" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-04-webhook-debug.png" >}}" alt="웹훅 디버그">
+<img src="{{< relurl "book/ko/v2/images/scripting-04-webhook-debug.png" >}}" alt="웹훅 디버그">
 </div>
 <div class="title">그림 133. 웹훅 디버깅 정보.</div>
 </div>
@@ -230,7 +230,7 @@ hs_err_pid*
 </div>
 <div id="_access_token" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-05-access-token.png" >}}" alt="엑세스 토큰">
+<img src="{{< relurl "book/ko/v2/images/scripting-05-access-token.png" >}}" alt="엑세스 토큰">
 </div>
 <div class="title">그림 134. 설정 페이지의 “Applications” 탭에서 엑세스 토큰을 생성.</div>
 </div>
@@ -276,11 +276,11 @@ hs_err_pid*
 </div>
 </div>
 <div class="paragraph">
-<p>해당 이슈 페이지에 가면 코멘트를 확인할 수 있다. <a href="ch00/_api_comment">GitHub API로 쓴 코멘트.</a>처럼 잘 써진다.</p>
+<p>해당 이슈 페이지에 가면 코멘트를 확인할 수 있다. <a href="{{< relurl "book/ko/v2/ch00/_api_comment" >}}">GitHub API로 쓴 코멘트.</a>처럼 잘 써진다.</p>
 </div>
 <div id="_api_comment" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-06-comment.png" >}}" alt="API 코멘트">
+<img src="{{< relurl "book/ko/v2/images/scripting-06-comment.png" >}}" alt="API 코멘트">
 </div>
 <div class="title">그림 135. GitHub API로 쓴 코멘트.</div>
 </div>
@@ -353,11 +353,11 @@ end</code></pre>
 예를 들어 유효성을 검증하거나 상태값을 제공해 주는 테스팅 서비스의 경우 상태값을 제공해야 하는데, “컨텍스트” 필드를 통해 어떻게 상태가 변화했는지를 알 수 있다.</p>
 </div>
 <div class="paragraph">
-<p>이 훅을 적용하고 나서 누군가 Pull Request를 새로 열면 <a href="ch00/_commit_status">API로 표기한 커밋 상태.</a>같은 상태 메시지를 보게 된다.</p>
+<p>이 훅을 적용하고 나서 누군가 Pull Request를 새로 열면 <a href="{{< relurl "book/ko/v2/ch00/_commit_status" >}}">API로 표기한 커밋 상태.</a>같은 상태 메시지를 보게 된다.</p>
 </div>
 <div id="_commit_status" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-07-status.png" >}}" alt="커밋 상태">
+<img src="{{< relurl "book/ko/v2/images/scripting-07-status.png" >}}" alt="커밋 상태">
 </div>
 <div class="title">그림 136. API로 표기한 커밋 상태.</div>
 </div>

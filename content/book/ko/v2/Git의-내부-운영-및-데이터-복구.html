@@ -123,7 +123,7 @@ SHA-1 값을 외웠을 리도 없고 뭔가 찾아낼 방법이 필요하다.</p
 <div class="paragraph">
 <p>보통 <code>git reflog</code> 명령을 사용하는 게 가장 쉽다.
 HEAD가 가리키는 커밋이 바뀔 때마다 Git은 남몰래 자동으로 그 커밋이 무엇인지 기록한다.
-새로 커밋하거나 브랜치를 바꾸면 Reflog도 늘어난다. <a href="ch00/_git_refs">Git Refs</a> 절에서 배운 <code>git update-ref</code> 명령으로도 Reflog를 남길 수 있다. 이런 상황을 대비할 수 있다는 점이 <code>git update-ref</code> 를 꼭 사용해야 하는 이유 중 하나다.
+새로 커밋하거나 브랜치를 바꾸면 Reflog도 늘어난다. <a href="{{< relurl "book/ko/v2/ch00/_git_refs" >}}">Git Refs</a> 절에서 배운 <code>git update-ref</code> 명령으로도 Reflog를 남길 수 있다. 이런 상황을 대비할 수 있다는 점이 <code>git update-ref</code> 를 꼭 사용해야 하는 이유 중 하나다.
 <code>git reflog</code> 명령만 실행하면 언제나 발자취를 돌아볼 수 있다.</p>
 </div>
 <div class="listingblock">
@@ -306,7 +306,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 <div class="paragraph">
 <p>마지막에 있는 개체가 5MB로 가장 크다.
 이제 그 파일이 정확히 무슨 파일인지 알아내야 한다.
-<a href="ch00/_enforcing_commit_message_format">커밋 메시지 규칙 만들기</a> 에서 소개했던 <code>rev-list</code> 명령에 <code>--objects</code> 옵션을 추가하면 커밋의 SHA 값과 Blob 개체의 파일이름, SHA-1 값을 보여준다.
+<a href="{{< relurl "book/ko/v2/ch00/_enforcing_commit_message_format" >}}">커밋 메시지 규칙 만들기</a> 에서 소개했던 <code>rev-list</code> 명령에 <code>--objects</code> 옵션을 추가하면 커밋의 SHA 값과 Blob 개체의 파일이름, SHA-1 값을 보여준다.
 그 결과에서 해당 Blob의 이름을 찾는다.</p>
 </div>
 <div class="listingblock">
@@ -328,7 +328,7 @@ dadf725 oops - removed large tarball
 </div>
 <div class="paragraph">
 <p>이 파일을 히스토리에서 완전히 삭제하면 <code>6df76</code> 이후 커밋은 모두 재작성된다.
-<a href="ch00/_rewriting_history">히스토리 단장하기</a> 에서 배운 <code>filter-branch</code> 명령으로 삭제한다.</p>
+<a href="{{< relurl "book/ko/v2/ch00/_rewriting_history" >}}">히스토리 단장하기</a> 에서 배운 <code>filter-branch</code> 명령으로 삭제한다.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -340,7 +340,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><code>--index-filter</code> 옵션은 <a href="ch00/_rewriting_history">히스토리 단장하기</a> 에서 배운 <code>--tree-filter</code> 와 비슷하다. <code>--tree-filter</code> 는 디스크에 Checkout 해서 파일을 수정하지만 <code>--index-filter</code> 는 Staging Area에서 수정한다.</p>
+<p><code>--index-filter</code> 옵션은 <a href="{{< relurl "book/ko/v2/ch00/_rewriting_history" >}}">히스토리 단장하기</a> 에서 배운 <code>--tree-filter</code> 와 비슷하다. <code>--tree-filter</code> 는 디스크에 Checkout 해서 파일을 수정하지만 <code>--index-filter</code> 는 Staging Area에서 수정한다.</p>
 </div>
 <div class="paragraph">
 <p>삭제도 <code>rm file</code> 명령이 아니라 <code>git rm --cached</code> 명령으로 삭제한다. 디스크에서 삭제하는 것이 아니라 Index에서 삭제하는 것이다.

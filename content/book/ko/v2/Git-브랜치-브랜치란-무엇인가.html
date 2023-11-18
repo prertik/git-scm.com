@@ -29,7 +29,7 @@ Git 브랜치에 능숙해지면 개발 방식이 완전히 바뀌고 다른 도
 <p>Git이 브랜치를 다루는 과정을 이해하려면 우선 Git이 데이터를 어떻게 저장하는지 알아야 한다.</p>
 </div>
 <div class="paragraph">
-<p>Git은 데이터를 Change Set이나 변경사항(Diff)으로 기록하지 않고 일련의 스냅샷으로 기록한다는 것을 <a href="ch00/ch01-getting-started">시작하기</a> 에서 보여줬다.</p>
+<p>Git은 데이터를 Change Set이나 변경사항(Diff)으로 기록하지 않고 일련의 스냅샷으로 기록한다는 것을 <a href="{{< relurl "book/ko/v2/ch00/ch01-getting-started" >}}">시작하기</a> 에서 보여줬다.</p>
 </div>
 <div class="paragraph">
 <p>커밋하면 Git은 현 Staging Area에 있는 데이터의 스냅샷에 대한 포인터, 저자나 커밋 메시지 같은 메타데이터, 이전 커밋에 대한 포인터 등을 포함하는 커밋 개체(커밋 Object)를 저장한다.
@@ -37,7 +37,7 @@ Git 브랜치에 능숙해지면 개발 방식이 완전히 바뀌고 다른 도
 </div>
 <div class="paragraph">
 <p>파일이 3개 있는 디렉토리가 하나 있고 이 파일을 Staging Area에 저장하고 커밋하는 예제를 살펴 보자.
-파일을 Stage 하면 Git 저장소에 파일을 저장하고(Git은 이것을 Blob이라고 부른다) Staging Area에 해당 파일의 체크섬을 저장한다(<a href="ch00/ch01-getting-started">시작하기</a> 에서 살펴본 SHA-1을 사용한다).</p>
+파일을 Stage 하면 Git 저장소에 파일을 저장하고(Git은 이것을 Blob이라고 부른다) Staging Area에 해당 파일의 체크섬을 저장한다(<a href="{{< relurl "book/ko/v2/ch00/ch01-getting-started" >}}">시작하기</a> 에서 살펴본 SHA-1을 사용한다).</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -54,7 +54,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="커밋과 트리 데이터">
+<img src="{{< relurl "book/ko/v2/images/commit-and-tree.png" >}}" alt="커밋과 트리 데이터">
 </div>
 <div class="title">그림 9. 커밋과 트리 데이터</div>
 </div>
@@ -63,7 +63,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="커밋과 이전 커밋">
+<img src="{{< relurl "book/ko/v2/images/commits-and-parents.png" >}}" alt="커밋과 이전 커밋">
 </div>
 <div class="title">그림 10. 커밋과 이전 커밋</div>
 </div>
@@ -91,7 +91,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="브랜치와 커밋 히스토리">
+<img src="{{< relurl "book/ko/v2/images/branch-and-history.png" >}}" alt="브랜치와 커밋 히스토리">
 </div>
 <div class="title">그림 11. 브랜치와 커밋 히스토리</div>
 </div>
@@ -116,7 +116,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="한 커밋 히스토리를 가리키는 두 브랜치">
+<img src="{{< relurl "book/ko/v2/images/two-branches.png" >}}" alt="한 커밋 히스토리를 가리키는 두 브랜치">
 </div>
 <div class="title">그림 12. 한 커밋 히스토리를 가리키는 두 브랜치</div>
 </div>
@@ -130,7 +130,7 @@ Git은 아직 <code>master</code> 브랜치를 가리키고 있다.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="현재 작업 중인 브랜치를 가리키는 HEAD">
+<img src="{{< relurl "book/ko/v2/images/head-to-master.png" >}}" alt="현재 작업 중인 브랜치를 가리키는 HEAD">
 </div>
 <div class="title">그림 13. 현재 작업 중인 브랜치를 가리키는 HEAD</div>
 </div>
@@ -168,7 +168,7 @@ f30ab (HEAD -&gt; master, testing) add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD는 testing 브랜치를 가리킴">
+<img src="{{< relurl "book/ko/v2/images/head-to-testing.png" >}}" alt="HEAD는 testing 브랜치를 가리킴">
 </div>
 <div class="title">그림 14. HEAD는 testing 브랜치를 가리킴</div>
 </div>
@@ -184,7 +184,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="HEAD가 가리키는 testing 브랜치가 새 커밋을 가리킴">
+<img src="{{< relurl "book/ko/v2/images/advance-testing.png" >}}" alt="HEAD가 가리키는 testing 브랜치가 새 커밋을 가리킴">
 </div>
 <div class="title">그림 15. HEAD가 가리키는 testing 브랜치가 새 커밋을 가리킴</div>
 </div>
@@ -199,7 +199,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD가 Checkout 한 브랜치로 이동함">
+<img src="{{< relurl "book/ko/v2/images/checkout-master.png" >}}" alt="HEAD가 Checkout 한 브랜치로 이동함">
 </div>
 <div class="title">그림 16. HEAD가 Checkout 한 브랜치로 이동함</div>
 </div>
@@ -236,14 +236,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>프로젝트 히스토리는 분리돼 진행한다(<a href="ch00/divergent_history">갈라지는 브랜치</a>).
+<p>프로젝트 히스토리는 분리돼 진행한다(<a href="{{< relurl "book/ko/v2/ch00/divergent_history" >}}">갈라지는 브랜치</a>).
 우리는 브랜치를 하나 만들어 그 브랜치에서 일을 좀 하고, 다시 원래 브랜치로 되돌아와서 다른 일을 했다.
 두 작업 내용은 서로 독립적으로 각 브랜치에 존재한다. 커밋 사이를 자유롭게 이동하다가 때가 되면 두 브랜치를 Merge 한다.
 간단히 <code>branch</code>, <code>checkout</code>, <code>commit</code> 명령을 써서 말이다.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="갈라지는 브랜치">
+<img src="{{< relurl "book/ko/v2/images/advance-master.png" >}}" alt="갈라지는 브랜치">
 </div>
 <div class="title">그림 17. 갈라지는 브랜치</div>
 </div>

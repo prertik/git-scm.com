@@ -28,11 +28,11 @@ title: Git - Rebase 하기
 <div class="sect3">
 <h3 id="_rebase_의_기초">Rebase 의 기초</h3>
 <div class="paragraph">
-<p>앞의 <a href="ch00/_basic_merging">Merge 의 기초</a> 절에서 살펴본 예제로 다시 돌아가 보자. 두 개의 나누어진 브랜치의 모습을 볼 수 있다.</p>
+<p>앞의 <a href="{{< relurl "book/ko/v2/ch00/_basic_merging" >}}">Merge 의 기초</a> 절에서 살펴본 예제로 다시 돌아가 보자. 두 개의 나누어진 브랜치의 모습을 볼 수 있다.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="두 개의 브랜치로 나누어진 커밋 히스토리">
+<img src="{{< relurl "book/ko/v2/images/basic-rebase-1.png" >}}" alt="두 개의 브랜치로 나누어진 커밋 히스토리">
 </div>
 <div class="title">그림 35. 두 개의 브랜치로 나누어진 커밋 히스토리</div>
 </div>
@@ -42,7 +42,7 @@ title: Git - Rebase 하기
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="나뉜 브랜치를 Merge 하기">
+<img src="{{< relurl "book/ko/v2/images/basic-rebase-2.png" >}}" alt="나뉜 브랜치를 Merge 하기">
 </div>
 <div class="title">그림 36. 나뉜 브랜치를 Merge 하기</div>
 </div>
@@ -67,7 +67,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="`C4` 의 변경사항을 `C3` 에 적용하는 Rebase 과정.">
+<img src="{{< relurl "book/ko/v2/images/basic-rebase-3.png" >}}" alt="`C4` 의 변경사항을 `C3` 에 적용하는 Rebase 과정.">
 </div>
 <div class="title">그림 37. <code>C4</code> 의 변경사항을 <code>C3</code> 에 적용하는 Rebase 과정</div>
 </div>
@@ -82,7 +82,7 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="master 브랜치를 Fast-forward시키기">
+<img src="{{< relurl "book/ko/v2/images/basic-rebase-4.png" >}}" alt="master 브랜치를 Fast-forward시키기">
 </div>
 <div class="title">그림 38. master 브랜치를 Fast-forward시키기</div>
 </div>
@@ -105,14 +105,14 @@ Rebase 의 경우는 브랜치의 변경사항을 순서대로 다른 브랜치�
 <h3 id="_rebase_활용">Rebase 활용</h3>
 <div class="paragraph">
 <p>Rebase는 단순히 브랜치를 합치는 것만 아니라 다른 용도로도 사용할 수 있다.
-<a href="ch00/rbdiag_e">다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치</a> 같은 히스토리가 있다고 하자.
+<a href="{{< relurl "book/ko/v2/ch00/rbdiag_e" >}}">다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치</a> 같은 히스토리가 있다고 하자.
 <code>server</code> 브랜치를 만들어서 서버 기능을 추가하고
 그 브랜치에서 다시 <code>client</code> 브랜치를 만들어 클라이언트 기능을 추가한다.
 마지막으로 <code>server</code> 브랜치로 돌아가서 몇 가지 기능을 더 추가한다.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치">
+<img src="{{< relurl "book/ko/v2/images/interesting-rebase-1.png" >}}" alt="다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치">
 </div>
 <div class="title">그림 39. 다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치</div>
 </div>
@@ -131,12 +131,12 @@ Rebase 의 경우는 브랜치의 변경사항을 순서대로 다른 브랜치�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치를 Rebase 하기">
+<img src="{{< relurl "book/ko/v2/images/interesting-rebase-2.png" >}}" alt="다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치를 Rebase 하기">
 </div>
 <div class="title">그림 40. 다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치를 Rebase 하기</div>
 </div>
 <div class="paragraph">
-<p>이제 master 브랜치로 돌아가서 Fast-forward 시킬 수 있다(<a href="ch00/rbdiag_g">master 브랜치를 client 브랜치 위치로 진행 시키기</a> 참고).</p>
+<p>이제 master 브랜치로 돌아가서 Fast-forward 시킬 수 있다(<a href="{{< relurl "book/ko/v2/ch00/rbdiag_g" >}}">master 브랜치를 client 브랜치 위치로 진행 시키기</a> 참고).</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -146,7 +146,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="master 브랜치를 client 브랜치 위치로 진행 시키기">
+<img src="{{< relurl "book/ko/v2/images/interesting-rebase-3.png" >}}" alt="master 브랜치를 client 브랜치 위치로 진행 시키기">
 </div>
 <div class="title">그림 41. master 브랜치를 client 브랜치 위치로 진행 시키기</div>
 </div>
@@ -160,11 +160,11 @@ $ git merge client</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>server 브랜치의 수정사항을 master 브랜치에 적용했다. 그 결과는 <a href="ch00/rbdiag_h">master 브랜치에 server 브랜치의 수정 사항을 적용</a> 같다.</p>
+<p>server 브랜치의 수정사항을 master 브랜치에 적용했다. 그 결과는 <a href="{{< relurl "book/ko/v2/ch00/rbdiag_h" >}}">master 브랜치에 server 브랜치의 수정 사항을 적용</a> 같다.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="master 브랜치에 server 브랜치의 수정 사항을 적용">
+<img src="{{< relurl "book/ko/v2/images/interesting-rebase-4.png" >}}" alt="master 브랜치에 server 브랜치의 수정 사항을 적용">
 </div>
 <div class="title">그림 42. master 브랜치에 server 브랜치의 수정 사항을 적용</div>
 </div>
@@ -178,7 +178,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>모든 것이 <code>master</code> 브랜치에 통합됐기 때문에 더 필요하지 않다면 <code>client</code> 나 <code>server</code> 브랜치는 삭제해도 된다. 브랜치를 삭제해도 커밋 히스토리는 <a href="ch00/rbdiag_i">최종 커밋 히스토리</a> 같이 여전히 남아 있다.</p>
+<p>모든 것이 <code>master</code> 브랜치에 통합됐기 때문에 더 필요하지 않다면 <code>client</code> 나 <code>server</code> 브랜치는 삭제해도 된다. 브랜치를 삭제해도 커밋 히스토리는 <a href="{{< relurl "book/ko/v2/ch00/rbdiag_i" >}}">최종 커밋 히스토리</a> 같이 여전히 남아 있다.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -188,7 +188,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="최종 커밋 히스토리">
+<img src="{{< relurl "book/ko/v2/images/interesting-rebase-5.png" >}}" alt="최종 커밋 히스토리">
 </div>
 <div class="title">그림 43. 최종 커밋 히스토리</div>
 </div>
@@ -219,7 +219,7 @@ $ git branch -d server</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="저장소를 Clone 하고 일부 수정함">
+<img src="{{< relurl "book/ko/v2/images/perils-of-rebasing-1.png" >}}" alt="저장소를 Clone 하고 일부 수정함">
 </div>
 <div class="title">그림 44. 저장소를 Clone 하고 일부 수정함</div>
 </div>
@@ -229,7 +229,7 @@ $ git branch -d server</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Fetch 한 후 Merge 함">
+<img src="{{< relurl "book/ko/v2/images/perils-of-rebasing-2.png" >}}" alt="Fetch 한 후 Merge 함">
 </div>
 <div class="title">그림 45. Fetch 한 후 Merge 함</div>
 </div>
@@ -239,7 +239,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="한 팀원이 다른 팀원이 의존하는 커밋을 없애고 Rebase 한 커밋을 다시 Push 함">
+<img src="{{< relurl "book/ko/v2/images/perils-of-rebasing-3.png" >}}" alt="한 팀원이 다른 팀원이 의존하는 커밋을 없애고 Rebase 한 커밋을 다시 Push 함">
 </div>
 <div class="title">그림 46. 한 팀원이 다른 팀원이 의존하는 커밋을 없애고 Rebase 한 커밋을 다시 Push 함</div>
 </div>
@@ -249,7 +249,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="같은 Merge를 다시 한다">
+<img src="{{< relurl "book/ko/v2/images/perils-of-rebasing-4.png" >}}" alt="같은 Merge를 다시 한다">
 </div>
 <div class="title">그림 47. 같은 Merge를 다시 한다</div>
 </div>
@@ -273,7 +273,7 @@ $ git branch -d server</code></pre>
 <p>덮어쓴 커밋을 받아서 그 커밋을 기준으로 Rebase 할 때 Git은 원래 누가 작성한 코드인지 잘 찾아 낸다. 그래서 Patch가 원래대로 잘 적용된다.</p>
 </div>
 <div class="paragraph">
-<p>예를 들어 앞서 살펴본 예제를 보면 <a href="ch00/_pre_merge_rebase_work">한 팀원이 다른 팀원이 의존하는 커밋을 없애고 Rebase 한 커밋을 다시 Push 함</a> 상황에서 Merge 하는 대신 <code>git rebase teamone/master</code> 명령을 실행하면 Git은 아래와 같은 작업을 한다.</p>
+<p>예를 들어 앞서 살펴본 예제를 보면 <a href="{{< relurl "book/ko/v2/ch00/_pre_merge_rebase_work" >}}">한 팀원이 다른 팀원이 의존하는 커밋을 없애고 Rebase 한 커밋을 다시 Push 함</a> 상황에서 Merge 하는 대신 <code>git rebase teamone/master</code> 명령을 실행하면 Git은 아래와 같은 작업을 한다.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -292,11 +292,11 @@ $ git branch -d server</code></pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>결과를 확인해보면 <a href="ch00/_merge_rebase_work">같은 Merge를 다시 한다</a> 같은 결과 대신 제대로 정리된 <a href="ch00/_rebase_rebase_work">강제로 덮어쓴 브랜치에 Rebase 하기</a> 같은 결과를 얻을 수 있다.</p>
+<p>결과를 확인해보면 <a href="{{< relurl "book/ko/v2/ch00/_merge_rebase_work" >}}">같은 Merge를 다시 한다</a> 같은 결과 대신 제대로 정리된 <a href="{{< relurl "book/ko/v2/ch00/_rebase_rebase_work" >}}">강제로 덮어쓴 브랜치에 Rebase 하기</a> 같은 결과를 얻을 수 있다.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="강제로 덮어쓴 브랜치에 Rebase 하기">
+<img src="{{< relurl "book/ko/v2/images/perils-of-rebasing-5.png" >}}" alt="강제로 덮어쓴 브랜치에 Rebase 하기">
 </div>
 <div class="title">그림 48. 강제로 덮어쓴 브랜치에 Rebase 하기</div>
 </div>

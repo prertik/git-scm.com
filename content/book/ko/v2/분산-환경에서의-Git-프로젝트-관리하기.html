@@ -388,17 +388,17 @@ $ git diff 36c7db</code></pre>
 토픽 브랜치에서 작업을 하고 작업이 끝나면 토픽 브랜치를 검증하고 <code>master</code> 브랜치로 Merge 한 후 토픽 브랜치를 삭제하는 과정을 반복한다.</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/merwf_a">여러 토픽 브랜치 히스토리.</a> 처럼 <code>ruby_client</code> 브랜치와 <code>php_client</code> 브랜치가 있을 때 ,<code>ruby_client</code> 브랜치를 <code>master</code> 브랜치로 Merge 한 후 <code>php_client</code> 브랜치를 Merge 하면 <a href="ch00/merwf_b">Merge 한 후의 저장소.</a> 같아진다.</p>
+<p><a href="{{< relurl "book/ko/v2/ch00/merwf_a" >}}">여러 토픽 브랜치 히스토리.</a> 처럼 <code>ruby_client</code> 브랜치와 <code>php_client</code> 브랜치가 있을 때 ,<code>ruby_client</code> 브랜치를 <code>master</code> 브랜치로 Merge 한 후 <code>php_client</code> 브랜치를 Merge 하면 <a href="{{< relurl "book/ko/v2/ch00/merwf_b" >}}">Merge 한 후의 저장소.</a> 같아진다.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="여러 토픽 브랜치 히스토리.">
+<img src="{{< relurl "book/ko/v2/images/merging-workflows-1.png" >}}" alt="여러 토픽 브랜치 히스토리.">
 </div>
 <div class="title">그림 73. 여러 토픽 브랜치 히스토리.</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Merge 한 후의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/merging-workflows-2.png" >}}" alt="Merge 한 후의 저장소.">
 </div>
 <div class="title">그림 74. Merge 한 후의 저장소.</div>
 </div>
@@ -409,23 +409,23 @@ $ git diff 36c7db</code></pre>
 <p>개발자가 많고 규모가 큰 프로젝트에서는 최소한 두 단계로 Merge 하는 것이 좋다.
 살펴볼 예에서는 Long-Running 브랜치를 두 개를 유지한다. <code>master</code> 브랜치는 아주 안정적인 버전을 릴리즈하기 위해서 사용한다. <code>develop</code> 브랜치는 새로 수정된 코드를 통합할 때 사용한다.
 그리고 두 브랜치를 모두 공개 저장소에 Push 한다.
-우선 develop 브랜치에 토픽 브랜치(<a href="ch00/merwf_c">토픽 브랜치를 Merge 하기 전.</a>)를 <a href="ch00/merwf_d">토픽 브랜치를 Merge 한 후.</a> 같이 Merge 한다. 그 후에 릴리즈해도 될만한 수준이 되면 master 브랜치를 develop 브랜치까지 Fast-forward시킨다(<a href="ch00/merwf_e">토픽 브랜치를 릴리즈한 후.</a>).</p>
+우선 develop 브랜치에 토픽 브랜치(<a href="{{< relurl "book/ko/v2/ch00/merwf_c" >}}">토픽 브랜치를 Merge 하기 전.</a>)를 <a href="{{< relurl "book/ko/v2/ch00/merwf_d" >}}">토픽 브랜치를 Merge 한 후.</a> 같이 Merge 한다. 그 후에 릴리즈해도 될만한 수준이 되면 master 브랜치를 develop 브랜치까지 Fast-forward시킨다(<a href="{{< relurl "book/ko/v2/ch00/merwf_e" >}}">토픽 브랜치를 릴리즈한 후.</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="토픽 브랜치를 Merge 하기 전.">
+<img src="{{< relurl "book/ko/v2/images/merging-workflows-3.png" >}}" alt="토픽 브랜치를 Merge 하기 전.">
 </div>
 <div class="title">그림 75. 토픽 브랜치를 Merge 하기 전.</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="토픽 브랜치를 Merge 한 후.">
+<img src="{{< relurl "book/ko/v2/images/merging-workflows-4.png" >}}" alt="토픽 브랜치를 Merge 한 후.">
 </div>
 <div class="title">그림 76. 토픽 브랜치를 Merge 한 후.</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="토픽 브랜치를 릴리즈한 후.">
+<img src="{{< relurl "book/ko/v2/images/merging-workflows-5.png" >}}" alt="토픽 브랜치를 릴리즈한 후.">
 </div>
 <div class="title">그림 77. 토픽 브랜치를 릴리즈한 후.</div>
 </div>
@@ -443,12 +443,12 @@ $ git diff 36c7db</code></pre>
 <div class="paragraph">
 <p>Git을 개발하는 프로젝트는 Long-Running의 브랜치를 4개 운영한다.
 각 브랜치 이름은 <code>master</code>, <code>next</code>, <code>pu</code> (Proposed Updates), <code>maint</code> 이다. <code>maint</code> 는 마지막으로 릴리즈한 버전을 지원하는 브랜치다.
-기여자가 새로운 기능을 제안하면 관리자는 <a href="ch00/merwf_f">토픽 브랜치를 동시에 여러 개 관리하는 것은 복잡하다.</a> 처럼 자신의 저장소에 토픽 브랜치를 만들어 관리한다.
+기여자가 새로운 기능을 제안하면 관리자는 <a href="{{< relurl "book/ko/v2/ch00/merwf_f" >}}">토픽 브랜치를 동시에 여러 개 관리하는 것은 복잡하다.</a> 처럼 자신의 저장소에 토픽 브랜치를 만들어 관리한다.
 그리고 토픽에 부족한 점은 없는지, 안정적인지 계속 테스트한다. 안정화되면 <code>next</code> 로 Merge 하고 저장소에 Push 한다. 그러면 모두가 잘 통합됐는지 확인할 수 있다.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="토픽 브랜치를 동시에 여러 개 관리하는 것은 복잡하다.">
+<img src="{{< relurl "book/ko/v2/images/large-merges-1.png" >}}" alt="토픽 브랜치를 동시에 여러 개 관리하는 것은 복잡하다.">
 </div>
 <div class="title">그림 78. 토픽 브랜치를 동시에 여러 개 관리하는 것은 복잡하다.</div>
 </div>
@@ -460,7 +460,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="토픽 브랜치를 Long-Running 브랜치로 Merge 하기.">
+<img src="{{< relurl "book/ko/v2/images/large-merges-2.png" >}}" alt="토픽 브랜치를 Long-Running 브랜치로 Merge 하기.">
 </div>
 <div class="title">그림 79. 토픽 브랜치를 Long-Running 브랜치로 Merge 하기.</div>
 </div>
@@ -493,7 +493,7 @@ Git의 Cherry-pick은 커밋 하나만 Rebase 하는 것이다.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Cherry-pick을 실행하기 전의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/rebasing-1.png" >}}" alt="Cherry-pick을 실행하기 전의 저장소.">
 </div>
 <div class="title">그림 80. Cherry-pick을 실행하기 전의 저장소.</div>
 </div>
@@ -514,7 +514,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Cherry-pick 방식으로 커밋 하나를 적용한 후의 저장소.">
+<img src="{{< relurl "book/ko/v2/images/rebasing-2.png" >}}" alt="Cherry-pick 방식으로 커밋 하나를 적용한 후의 저장소.">
 </div>
 <div class="title">그림 81. Cherry-pick 방식으로 커밋 하나를 적용한 후의 저장소.</div>
 </div>
@@ -550,7 +550,7 @@ rerere 기능이 활성화 돼 있으면 Merge가 성공할 때 마다 그 이�
 <p>필요하다면 <code>git rerere</code> 명령을 사용하여 저장된 캐시를 바탕으로 대화형 인터페이스를 통해 충돌을 다룰 수도 있다.
 <code>git rerere</code> 명령을 직접 실행하면 현재 Merge 과정에서 발생한 충돌을 해결하는데 참고할 만한 이전 Merge 기록을 찾아준다(<code>rerere.enabled</code> 옵션이 켜져 있다면 자동).
 Rerere 기능을 사용할 때 기록할 내용을 세세하게 설정하거나, 기록된 내용 중에 특정 기록을 지운다거나 하는 보조 명령도 제공한다.
-자세한 내용은 <a href="ch00/ref_rerere">Rerere</a> 에서 다루기로 한다.</p>
+자세한 내용은 <a href="{{< relurl "book/ko/v2/ch00/ref_rerere" >}}">Rerere</a> 에서 다루기로 한다.</p>
 </div>
 </div>
 </div>
@@ -561,7 +561,7 @@ Rerere 기능을 사용할 때 기록할 내용을 세세하게 설정하거나,
 </div>
 <div class="paragraph">
 <p>적당한 때가 되면 릴리즈해야 한다. 그리고 언제든지 그 시점으로 되돌릴 수 있게 태그를 다는 것이 좋다.
-<a href="ch00/ch02-git-basics-chapter">Git의 기초</a>에서 살펴본 대로 태그를 달면 된다.
+<a href="{{< relurl "book/ko/v2/ch00/ch02-git-basics-chapter" >}}">Git의 기초</a>에서 살펴본 대로 태그를 달면 된다.
 서명된 태그를 달면 아래와 같이 출력된다.</p>
 </div>
 <div class="listingblock">

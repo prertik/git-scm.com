@@ -35,11 +35,11 @@ title: Git - Писање скрипти за GitHub
 <div class="paragraph">
 <p>Прво ћемо погледати сервисе.
 Интеграције за куке и за сервисе се могу наћи у <em>Settings</em> одељку вашег репозиторијума, где смо раније ишли да додамо сараднике и мењамо подразумевану грану пројекта.
-Под картицом <em>„Webhooks and Services”</em> ћете видети нешто као <a href="ch00/_services_hooks">Конфигурациони одељак за сервисе и куке</a>.</p>
+Под картицом <em>„Webhooks and Services”</em> ћете видети нешто као <a href="{{< relurl "book/sr/v2/ch00/_services_hooks" >}}">Конфигурациони одељак за сервисе и куке</a>.</p>
 </div>
 <div id="_services_hooks" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-01-services.png" >}}" alt="Сервиси и куке">
+<img src="{{< relurl "book/sr/v2/images/scripting-01-services.png" >}}" alt="Сервиси и куке">
 </div>
 <div class="title">Слика 129. Конфигурациони одељак за сервисе и куке</div>
 </div>
@@ -47,11 +47,11 @@ title: Git - Писање скрипти за GitHub
 <p>Ту се налази на десетине сервиса које можете одабрати. То су углавном интеграције у друге комерцијалне системе, или системе отвореног кода.
 Већина њих служи за сервисе континуалне интеграције, а ту су и трекери за проблеме и багове, системи за ћаскање и системи за документацију.
 Проћи ћемо кроз подешавање једног врло једноставног, куке за имејл.
-Ако из падајућег менија <em>„Add Service”</em> изаберете <em>„email”</em>, добићете конфигурациони екран као са слике <a href="ch00/_service_config">Конфигурација имејл сервиса</a>.</p>
+Ако из падајућег менија <em>„Add Service”</em> изаберете <em>„email”</em>, добићете конфигурациони екран као са слике <a href="{{< relurl "book/sr/v2/ch00/_service_config" >}}">Конфигурација имејл сервиса</a>.</p>
 </div>
 <div id="_service_config" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-02-email-service.png" >}}" alt="Имејл сервис">
+<img src="{{< relurl "book/sr/v2/images/scripting-02-email-service.png" >}}" alt="Имејл сервис">
 </div>
 <div class="title">Слика 130. Конфигурација имејл сервиса</div>
 </div>
@@ -75,12 +75,12 @@ title: Git - Писање скрипти за GitHub
 <p>У општем случају, ово функционише тако да можете подесити мали веб сервис који слуша товар GitHub куке и онда ради нешто са подацима када их прими.</p>
 </div>
 <div class="paragraph">
-<p>Да бисте омогућили куку, кликните на дугме <em>„Add webhook”</em> у <a href="ch00/_services_hooks">Конфигурациони одељак за сервисе и куке</a>.
-То ће вас одвести на страницу која изгледа као <a href="ch00/_web_hook">Конфигурација веб куке</a>.</p>
+<p>Да бисте омогућили куку, кликните на дугме <em>„Add webhook”</em> у <a href="{{< relurl "book/sr/v2/ch00/_services_hooks" >}}">Конфигурациони одељак за сервисе и куке</a>.
+То ће вас одвести на страницу која изгледа као <a href="{{< relurl "book/sr/v2/ch00/_web_hook" >}}">Конфигурација веб куке</a>.</p>
 </div>
 <div id="_web_hook" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-03-webhook.png" >}}" alt="Веб кука">
+<img src="{{< relurl "book/sr/v2/images/scripting-03-webhook.png" >}}" alt="Веб кука">
 </div>
 <div class="title">Слика 131. Конфигурација веб куке</div>
 </div>
@@ -143,7 +143,7 @@ end</code></pre>
 </div>
 <div id="_web_hook_debug" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-04-webhook-debug.png" >}}" alt="Дибаг veb куке">
+<img src="{{< relurl "book/sr/v2/images/scripting-04-webhook-debug.png" >}}" alt="Дибаг veb куке">
 </div>
 <div class="title">Слика 132. Информације за отклањање грешака у веб куки</div>
 </div>
@@ -229,7 +229,7 @@ hs_err_pid*
 </div>
 <div id="_access_token" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-05-access-token.png" >}}" alt="Приступни токен">
+<img src="{{< relurl "book/sr/v2/images/scripting-05-access-token.png" >}}" alt="Приступни токен">
 </div>
 <div class="title">Слика 133. Генеришите свој приступни токен са картице <em>„Applications”</em> на вашој страници за подешавања</div>
 </div>
@@ -275,11 +275,11 @@ hs_err_pid*
 </div>
 </div>
 <div class="paragraph">
-<p>Ако сада одете на тај тикет, видећете коментар који смо управо успешно послали као на <a href="ch00/_api_comment">Коментар постављен употребом GitHub API</a>.</p>
+<p>Ако сада одете на тај тикет, видећете коментар који смо управо успешно послали као на <a href="{{< relurl "book/sr/v2/ch00/_api_comment" >}}">Коментар постављен употребом GitHub API</a>.</p>
 </div>
 <div id="_api_comment" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-06-comment.png" >}}" alt="API коментар">
+<img src="{{< relurl "book/sr/v2/images/scripting-06-comment.png" >}}" alt="API коментар">
 </div>
 <div class="title">Слика 134. Коментар постављен употребом GitHub API</div>
 </div>
@@ -352,11 +352,11 @@ end</code></pre>
 На пример, сервис за тестирање може да јави статус, а и сервис за валидацију као што је овај може такође да јави статус — разлика између њих се прави путем <em>„context”</em> поља.</p>
 </div>
 <div class="paragraph">
-<p>Ако неко отвори нови захтев за повлачење на сервису GitHub и овај кука се окине, могли бисте видети нешто као <a href="ch00/_commit_status">Статус комита преко API</a>.</p>
+<p>Ако неко отвори нови захтев за повлачење на сервису GitHub и овај кука се окине, могли бисте видети нешто као <a href="{{< relurl "book/sr/v2/ch00/_commit_status" >}}">Статус комита преко API</a>.</p>
 </div>
 <div id="_commit_status" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-07-status.png" >}}" alt="Статус комита">
+<img src="{{< relurl "book/sr/v2/images/scripting-07-status.png" >}}" alt="Статус комита">
 </div>
 <div class="title">Слика 135. Статус комита преко API</div>
 </div>

@@ -30,7 +30,7 @@ title: Git - Укратко о гранању
 <p>Да бисмо заиста разумели како програм Гит барата гранањем, морамо да се вратимо корак уназад и да истражимо како програм Гит чува податке.</p>
 </div>
 <div class="paragraph">
-<p>Као што се можда сећате из <a href="ch00/what_is_git_section">Шта је Гит?</a>, програм Гит не чува податке као низ скупова промена или разлика, већ као низ <em>снимака</em>.</p>
+<p>Као што се можда сећате из <a href="{{< relurl "book/sr/v2/ch00/what_is_git_section" >}}">Шта је Гит?</a>, програм Гит не чува податке као низ скупова промена или разлика, већ као низ <em>снимака</em>.</p>
 </div>
 <div class="paragraph">
 <p>Када направите комит, program Гит чува комит објекат који садржи показивач на снимак садржаја који сте стејџовали.
@@ -38,7 +38,7 @@ title: Git - Укратко о гранању
 </div>
 <div class="paragraph">
 <p>Да бисмо ово сликовито приказали, претпоставимо да имате директоријум који садржи три фајла и да их све стејџујете, а затим комитујете.
-Стејџовање фајлова рачуна контролну суму сваког од њих (SHA-1 хеш као што смо поменули у <a href="ch00/what_is_git_section">Шта је Гит?</a>), чува ту верзију фајла у Гит репозиторијум (програм Гит то назива <em>блобовима)</em> и додаје ту контролну суму на стејџ:</p>
+Стејџовање фајлова рачуна контролну суму сваког од њих (SHA-1 хеш као што смо поменули у <a href="{{< relurl "book/sr/v2/ch00/what_is_git_section" >}}">Шта је Гит?</a>), чува ту верзију фајла у Гит репозиторијум (програм Гит то назива <em>блобовима)</em> и додаје ту контролну суму на стејџ:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Комит и његово стабло">
+<img src="{{< relurl "book/sr/v2/images/commit-and-tree.png" >}}" alt="Комит и његово стабло">
 </div>
 <div class="title">Слика 9. Комит и његово стабло</div>
 </div>
@@ -64,7 +64,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Комитови и њихови родитељи">
+<img src="{{< relurl "book/sr/v2/images/commits-and-parents.png" >}}" alt="Комитови и њихови родитељи">
 </div>
 <div class="title">Слика 10. Комитови и њихови родитељи</div>
 </div>
@@ -92,7 +92,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="Грана и њена историја комитова">
+<img src="{{< relurl "book/sr/v2/images/branch-and-history.png" >}}" alt="Грана и њена историја комитова">
 </div>
 <div class="title">Слика 11. Грана и њена историја комитова</div>
 </div>
@@ -115,7 +115,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Две гране које показују на исти низ комитова">
+<img src="{{< relurl "book/sr/v2/images/two-branches.png" >}}" alt="Две гране које показују на исти низ комитова">
 </div>
 <div class="title">Слика 12. Две гране које показују на исти низ комитова</div>
 </div>
@@ -129,7 +129,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="`HEAD` показује на грану">
+<img src="{{< relurl "book/sr/v2/images/head-to-master.png" >}}" alt="`HEAD` показује на грану">
 </div>
 <div class="title">Слика 13. <code>HEAD</code> показује на грану</div>
 </div>
@@ -166,7 +166,7 @@ f30ab (HEAD -&gt; master, testing) add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="`HEAD` показује на тренутну грану">
+<img src="{{< relurl "book/sr/v2/images/head-to-testing.png" >}}" alt="`HEAD` показује на тренутну грану">
 </div>
 <div class="title">Слика 14. <code>HEAD</code> показује на тренутну грану</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="`HEAD` грана се помера унапред када се направи комит">
+<img src="{{< relurl "book/sr/v2/images/advance-testing.png" >}}" alt="`HEAD` грана се помера унапред када се направи комит">
 </div>
 <div class="title">Слика 15. <code>HEAD</code> грана се помера унапред када се направи комит</div>
 </div>
@@ -221,7 +221,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="`HEAD` се помера када извршите одјављивање">
+<img src="{{< relurl "book/sr/v2/images/checkout-master.png" >}}" alt="`HEAD` се помера када извршите одјављивање">
 </div>
 <div class="title">Слика 16. <code>HEAD</code> се помера када извршите одјављивање</div>
 </div>
@@ -258,14 +258,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Сада се историја вашег пројекта раздвојила (погледајте <a href="ch00/divergent_history">Раздвојена историја</a>).
+<p>Сада се историја вашег пројекта раздвојила (погледајте <a href="{{< relurl "book/sr/v2/ch00/divergent_history" >}}">Раздвојена историја</a>).
 Направили сте грану, пребацили сте се на њу, урадили нешто у њој, и онда се вратили назад на главну грану и урадили још мало посла.
 Обе ове промене су изоловане у посебним гранама: можете да скачете с једне на другу напред-назад и да их спојите онда када будете спремни.
 И све сте то урадили простим командама <code>branch</code>, <code>checkout</code> и <code>commit</code>.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Раздвојена историја">
+<img src="{{< relurl "book/sr/v2/images/advance-master.png" >}}" alt="Раздвојена историја">
 </div>
 <div class="title">Слика 17. Раздвојена историја</div>
 </div>

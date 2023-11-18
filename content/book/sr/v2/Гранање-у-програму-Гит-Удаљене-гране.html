@@ -60,7 +60,7 @@ title: Git - Удаљене гране
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Сервер и локални репозиторијуми после клонирања">
+<img src="{{< relurl "book/sr/v2/images/remote-branches-1.png" >}}" alt="Сервер и локални репозиторијуми после клонирања">
 </div>
 <div class="title">Слика 30. Сервер и локални репозиторијуми после клонирања</div>
 </div>
@@ -70,7 +70,7 @@ title: Git - Удаљене гране
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Локални и удаљени рад могу да се разиђу">
+<img src="{{< relurl "book/sr/v2/images/remote-branches-2.png" >}}" alt="Локални и удаљени рад могу да се разиђу">
 </div>
 <div class="title">Слика 31. Локални и удаљени рад могу да се разиђу</div>
 </div>
@@ -80,19 +80,19 @@ title: Git - Удаљене гране
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` ажурира важе удаљене праћене гране">
+<img src="{{< relurl "book/sr/v2/images/remote-branches-3.png" >}}" alt="`git fetch` ажурира важе удаљене праћене гране">
 </div>
 <div class="title">Слика 32. <code>git fetch</code> ажурира важе удаљене праћене гране</div>
 </div>
 <div class="paragraph">
 <p>Да бисмо показали ситуацију када имате неколико удаљених сервера и објаснили како изгледају удаљене гране за те удаљене пројекте, хајде да претпоставимо да имате још један интерни Гит сервер који за развој користи само један од ваших спринт тимова.
 Овај сервер се налази на адреси <code>git.team1.ourcompany.com</code>.
-Можете да га додате као нову удаљену референцу у пројекат на ком тренутно радите тако што ћете извршити команду <code>git remote add</code> као што смо већ објаснили у <a href="ch00/ch02-git-basics-chapter">Основе програма Гит</a>.
+Можете да га додате као нову удаљену референцу у пројекат на ком тренутно радите тако што ћете извршити команду <code>git remote add</code> као што смо већ објаснили у <a href="{{< relurl "book/sr/v2/ch00/ch02-git-basics-chapter" >}}">Основе програма Гит</a>.
 Ову удаљену грану назовите <code>teamone</code>, што ће представљати кратко име за тај цео URL.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Додавање још једног удаљеног сервера">
+<img src="{{< relurl "book/sr/v2/images/remote-branches-4.png" >}}" alt="Додавање још једног удаљеног сервера">
 </div>
 <div class="title">Слика 33. Додавање још једног удаљеног сервера</div>
 </div>
@@ -102,7 +102,7 @@ title: Git - Удаљене гране
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Удаљена праћена грана за `teamone/master`">
+<img src="{{< relurl "book/sr/v2/images/remote-branches-5.png" >}}" alt="Удаљена праћена грана за `teamone/master`">
 </div>
 <div class="title">Слика 34. Удаљена праћена грана за <code>teamone/master</code>
 </div>
@@ -133,7 +133,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Ово је донекле пречица.
 Програм Гит аутоматски развија име гране <code>serverfix</code> у <code>refs/heads/serverfix:refs/heads/serverfix</code>, што значи „Узми моју локалну <code>serverfix</code> грану и гурни је тако да се ажурира <code>serverfix</code> грана на удаљеном серверу.”
-Део <code>refs/heads/</code> ћемо детаљније погледати у <a href="ch00/ch10-git-internals">Гит изнутра</a>, али у општем случају можете да га изоставите.
+Део <code>refs/heads/</code> ћемо детаљније погледати у <a href="{{< relurl "book/sr/v2/ch00/ch10-git-internals" >}}">Гит изнутра</a>, али у општем случају можете да га изоставите.
 Можете да урадите и <code>git push origin serverfix:serverfix</code>, што ради исту ствар — каже „Узми моју serverfix грану и уреди да постане serverfix грана удаљеног сервера.”.
 Овај формат можете употребити да гурнете локалну грану у удаљену грану која има другачије име.
 Ако не желите да се на удаљеном серверу зове <code>serverfix</code>, можете да извршите <code>git push origin serverfix:awesomebranch</code> чиме локалну <code>serverfix</code> грану гурате у <code>awesomebranch</code> грану на удаљеном пројекту.</p>
@@ -154,7 +154,7 @@ To https://github.com/schacon/simplegit
 <p>Ако не желите да куцате ове податке сваки пут када вршите гурање, можете да подесите „кеш акредитива”. Најједноставнији начин је да их једноставно задржите у меморији на неколико минута, то лако можете подесити извршавањем <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>За више информација о разним опцијама за кеширање акредитива које су вам доступне, погледајте <a href="ch00/_credential_caching">Складиште акредитива</a>.</p>
+<p>За више информација о разним опцијама за кеширање акредитива које су вам доступне, погледајте <a href="{{< relurl "book/sr/v2/ch00/_credential_caching" >}}">Складиште акредитива</a>.</p>
 </div>
 </td>
 </tr>

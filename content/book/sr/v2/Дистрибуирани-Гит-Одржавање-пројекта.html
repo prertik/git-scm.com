@@ -371,17 +371,17 @@ $ git diff 36c7db</code></pre>
 Када имате рад у тематској грани који вам се чини завршеним, или рад који је неко други допринео а ви сте га проверили, спајате га у своју <code>master</code> грану, па бришете ту управо спојену тематску грану и понављате процес.</p>
 </div>
 <div class="paragraph">
-<p>На пример, ако имамо репозиторијум са радом у две гране које се зову <code>ruby_client</code> и <code>php_client</code> који изгледа као <a href="ch00/merwf_a">Историја са неколико тематских грана</a> и прво спојимо <code>ruby_client</code>, па онда <code>php_client</code>, историја коју ћете на крају имати изгледа као <a href="ch00/merwf_b">После спајања тематске гране</a>.</p>
+<p>На пример, ако имамо репозиторијум са радом у две гране које се зову <code>ruby_client</code> и <code>php_client</code> који изгледа као <a href="{{< relurl "book/sr/v2/ch00/merwf_a" >}}">Историја са неколико тематских грана</a> и прво спојимо <code>ruby_client</code>, па онда <code>php_client</code>, историја коју ћете на крају имати изгледа као <a href="{{< relurl "book/sr/v2/ch00/merwf_b" >}}">После спајања тематске гране</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Историја са неколико тематских грана">
+<img src="{{< relurl "book/sr/v2/images/merging-workflows-1.png" >}}" alt="Историја са неколико тематских грана">
 </div>
 <div class="title">Слика 72. Историја са неколико тематских грана</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="После спајања тематске гране">
+<img src="{{< relurl "book/sr/v2/images/merging-workflows-2.png" >}}" alt="После спајања тематске гране">
 </div>
 <div class="title">Слика 73. После спајања тематске гране</div>
 </div>
@@ -392,23 +392,23 @@ $ git diff 36c7db</code></pre>
 <p>Ако имате важнији пројекат, можда ћете желети да користите двофазни циклус спајања.
 У овом сценарију имате две дуготрајне гране, <code>master</code> и <code>develop</code>, у којима одређујете да се <code>master</code> ажурира само када се издвоји врло стабилно издање и сав нови кôд се интегрише у <code>develop</code> грану.
 Обе ове гране редовно гурате у јавни репозиторијум.
-Сваки пут када имате нову тематску грану коју треба спојити (<a href="ch00/merwf_c">Пре спајања тематске гране</a>), спајате је у <code>develop</code> (<a href="ch00/merwf_d">Након спајања тематске гране</a>); затим, када означите издање, <code>master</code> грану премотате унапред на место на којем се налази сада стабилна <code>develop</code> грана (<a href="ch00/merwf_e">Након издања пројекта</a>).</p>
+Сваки пут када имате нову тематску грану коју треба спојити (<a href="{{< relurl "book/sr/v2/ch00/merwf_c" >}}">Пре спајања тематске гране</a>), спајате је у <code>develop</code> (<a href="{{< relurl "book/sr/v2/ch00/merwf_d" >}}">Након спајања тематске гране</a>); затим, када означите издање, <code>master</code> грану премотате унапред на место на којем се налази сада стабилна <code>develop</code> грана (<a href="{{< relurl "book/sr/v2/ch00/merwf_e" >}}">Након издања пројекта</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Пре спајања тематске гране">
+<img src="{{< relurl "book/sr/v2/images/merging-workflows-3.png" >}}" alt="Пре спајања тематске гране">
 </div>
 <div class="title">Слика 74. Пре спајања тематске гране</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Након спајања тематске гране">
+<img src="{{< relurl "book/sr/v2/images/merging-workflows-4.png" >}}" alt="Након спајања тематске гране">
 </div>
 <div class="title">Слика 75. Након спајања тематске гране</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Након издања пројекта">
+<img src="{{< relurl "book/sr/v2/images/merging-workflows-5.png" >}}" alt="Након издања пројекта">
 </div>
 <div class="title">Слика 76. Након издања пројекта</div>
 </div>
@@ -423,13 +423,13 @@ $ git diff 36c7db</code></pre>
 <div class="paragraph">
 <p>
 Гит пројекат има четири дуготрајне гране: <code>master</code>, <code>next</code> и <code>seen</code> (раније се звала <code>pu</code> –- предложена ажурирања) за нови рад и <code>maint</code> за бекпортове одржавања.
-Када сарадници унесу нови рад, он се сакупља у тематске гране репозиторијума одржаваоца на начин сличан ономе што смо већ описали (погледајте <a href="ch00/merwf_f">Управљање комплексним низом тематских грана на које се даје допринос</a>).
+Када сарадници унесу нови рад, он се сакупља у тематске гране репозиторијума одржаваоца на начин сличан ономе што смо већ описали (погледајте <a href="{{< relurl "book/sr/v2/ch00/merwf_f" >}}">Управљање комплексним низом тематских грана на које се даје допринос</a>).
 У овом тренутку, теме се процењују да би се одредило да ли је безбедно да се употребе или још треба да се ради на њима.
 Ако су безбедне, спајају се у <code>next</code>, и та грана се гура како би сви могли да пробају интегрисане теме заједно.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Управљање комплексним низом тематских грана на које се даје допринос">
+<img src="{{< relurl "book/sr/v2/images/large-merges-1.png" >}}" alt="Управљање комплексним низом тематских грана на које се даје допринос">
 </div>
 <div class="title">Слика 77. Управљање комплексним низом тематских грана на које се даје допринос</div>
 </div>
@@ -441,7 +441,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Спајање тематских грана доприноса у дуготрајне гране за интеграцију">
+<img src="{{< relurl "book/sr/v2/images/large-merges-2.png" >}}" alt="Спајање тематских грана доприноса у дуготрајне гране за интеграцију">
 </div>
 <div class="title">Слика 78. Спајање тематских грана доприноса у дуготрајне гране за интеграцију</div>
 </div>
@@ -472,7 +472,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Пример историје пре одабирања">
+<img src="{{< relurl "book/sr/v2/images/rebasing-1.png" >}}" alt="Пример историје пре одабирања">
 </div>
 <div class="title">Слика 79. Пример историје пре одабирања</div>
 </div>
@@ -493,7 +493,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Историја након одабира комита на тематској грани">
+<img src="{{< relurl "book/sr/v2/images/rebasing-2.png" >}}" alt="Историја након одабира комита на тематској грани">
 </div>
 <div class="title">Слика 80. Историја након одабира комита на тематској грани</div>
 </div>
@@ -527,7 +527,7 @@ Finished one cherry-pick.
 <p>Ако буде било потребе, командом <code>git rerere</code> можете да имате интеракцију са rerere кешом.
 Када се позове сама, програм Гит проверава своју базу података решења и покушава да пронађе подударање са било којим од тренутних конфликата при спајању и реши их (мада се ово ради аутоматски ако је <code>rerere.enabled</code> подешено на <code>true</code>).
 Постоје и подкоманде којима можете да видите шта ће бити забележено, да обришете одређено решење из кеша и да обришете цео кеш.
-Rerere ћемо детаљније описати у <a href="ch00/ref_rerere">Rerere</a>.</p>
+Rerere ћемо детаљније описати у <a href="{{< relurl "book/sr/v2/ch00/ref_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -536,7 +536,7 @@ Rerere ћемо детаљније описати у <a href="ch00/ref_rerere">R
 <div class="paragraph">
 <p>
 Када одлучите да направите пресек и објавите ново издање, обично је добра идеја да доделите ознаку тако да бисте могли поново да креирате то издање у било ком каснијем тренутку.
-Нову ознаку можете направити онако како смо објаснили у <a href="ch00/ch02-git-basics-chapter">Основе програма Гит</a>.
+Нову ознаку можете направити онако како смо објаснили у <a href="{{< relurl "book/sr/v2/ch00/ch02-git-basics-chapter" >}}">Основе програма Гит</a>.
 Ако одлучите да потпишете ознаку као одржавалац, означавање би могло да изгледа овако:</p>
 </div>
 <div class="listingblock">

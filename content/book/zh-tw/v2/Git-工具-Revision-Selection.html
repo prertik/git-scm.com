@@ -140,7 +140,7 @@ $ git show topic1</code></pre>
 </div>
 <div class="paragraph">
 <p>If you want to see which specific SHA-1 a branch points to, or if you want to see what any of these examples boils down to in terms of SHA-1s, you can use a Git plumbing tool called <code>rev-parse</code>.
-You can see <a href="ch00/ch10-git-internals">[ch10-git-internals]</a> for more information about plumbing tools; basically, <code>rev-parse</code> exists for lower-level operations and isn’t designed to be used in day-to-day operations.
+You can see <a href="{{< relurl "book/zh-tw/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a> for more information about plumbing tools; basically, <code>rev-parse</code> exists for lower-level operations and isn’t designed to be used in day-to-day operations.
 However, it can be helpful sometimes when you need to see what’s really going on.
 Here you can run <code>rev-parse</code> on your branch.</p>
 </div>
@@ -324,11 +324,11 @@ This is particularly useful for managing your branches – if you have a lot of 
 <div class="paragraph">
 <p>The most common range specification is the double-dot syntax.
 This basically asks Git to resolve a range of commits that are reachable from one commit but aren’t reachable from another.
-For example, say you have a commit history that looks like <a href="ch00/rdouble_dot">Example history for range selection.</a>.</p>
+For example, say you have a commit history that looks like <a href="{{< relurl "book/zh-tw/v2/ch00/rdouble_dot" >}}">Example history for range selection.</a>.</p>
 </div>
 <div id="rdouble_dot" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/double-dot.png" >}}" alt="Example history for range selection.">
+<img src="{{< relurl "book/zh-tw/v2/images/double-dot.png" >}}" alt="Example history for range selection.">
 </div>
 <div class="title">圖表 136. Example history for range selection.</div>
 </div>
@@ -403,7 +403,7 @@ $ git log refA refB --not refC</code></pre>
 <h4 id="r_triple_dot">Triple Dot</h4>
 <div class="paragraph">
 <p>The last major range-selection syntax is the triple-dot syntax, which specifies all the commits that are reachable by either of two references but not by both of them.
-Look back at the example commit history in <a href="ch00/rdouble_dot">Example history for range selection.</a>.
+Look back at the example commit history in <a href="{{< relurl "book/zh-tw/v2/ch00/rdouble_dot" >}}">Example history for range selection.</a>.
 If you want to see what is in <code>master</code> or <code>experiment</code> but not any common references, you can run</p>
 </div>
 <div class="listingblock">

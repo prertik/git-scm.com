@@ -40,7 +40,7 @@ title: Git - 取得一個 Git 倉儲
 <div class="paragraph">
 <p>這個命令將會建立一個名為 <code>.git</code> 的子資料夾，其中包含 Git 所有必需的倉儲檔案，也就是 Git 倉儲的骨架。
 到現在這步驟為止，倉儲預設沒有追蹤任何檔案。
-（想知道你剛建立的 <code>.git</code> 資料夾內有些什麼檔案，請參考<a href="ch00/ch10-git-internals">[ch10-git-internals]</a>）</p>
+（想知道你剛建立的 <code>.git</code> 資料夾內有些什麼檔案，請參考<a href="{{< relurl "book/zh-tw/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a>）</p>
 </div>
 <div class="paragraph">
 <p>如果你的專案資料夾原本已經有檔案（不是空的），那麼建議你應該馬上追蹤這些原本就有的檔案，然後進行第一次提交。
@@ -65,7 +65,7 @@ $ git commit -m 'initial project version'</code></pre>
 若你熟悉其它像是 Subversion 的版本控制系統，你應該注意現在這個命令是克隆（clone），而非取出（checkout）。
 這是 Git 和其他版本控制系統的重要差異：Git 並不僅只是取得專案最新的內容，而是把遠端倉儲內幾乎所有的資料都抓回來了。
 專案歷史紀錄中，每個檔案的每個版本預設都會在你執行 <code>git clone</code> 時被拉取（pull）回來。
-實際上，如果伺服器的硬碟損壞，你通常可以使用任何客戶端克隆的倉儲來將伺服器重建回原本克隆的狀態。（你可能遺失一些伺服器的掛勾程式 <code>hooks</code>，但你所有的版本資料都還會健在，請查看 <a href="ch00/r_git_on_the_server">在伺服器上佈署 Git</a> 獲得更多資訊）</p>
+實際上，如果伺服器的硬碟損壞，你通常可以使用任何客戶端克隆的倉儲來將伺服器重建回原本克隆的狀態。（你可能遺失一些伺服器的掛勾程式 <code>hooks</code>，但你所有的版本資料都還會健在，請查看 <a href="{{< relurl "book/zh-tw/v2/ch00/r_git_on_the_server" >}}">在伺服器上佈署 Git</a> 獲得更多資訊）</p>
 </div>
 <div class="paragraph">
 <p>克隆倉庫的命令格式是 <code>git clone [url]</code>。
@@ -92,7 +92,7 @@ $ git commit -m 'initial project version'</code></pre>
 <div class="paragraph">
 <p>Git 支援多種數據傳輸協定。
 上一個範例採用 <code>https://</code> 協定，但你可能會看過 <code>git://</code> 或 <code>user@server:path/to/repo.git</code> 等使用 SSH 傳輸的協定。
-在 <a href="ch00/r_git_on_the_server">在伺服器上佈署 Git</a> 章節將會介紹這些協定在伺服器端如何配置及使用，以及各種方式的優缺點。</p>
+在 <a href="{{< relurl "book/zh-tw/v2/ch00/r_git_on_the_server" >}}">在伺服器上佈署 Git</a> 章節將會介紹這些協定在伺服器端如何配置及使用，以及各種方式的優缺點。</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

@@ -66,7 +66,7 @@ Git provides an easy way to check for this – before you commit, run <code>git 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="Output of `git diff --check`.">
+<img src="{{< relurl "book/zh-tw/v2/images/git-diff-check.png" >}}" alt="Output of `git diff --check`.">
 </div>
 <div class="title">圖表 57. Output of <code>git diff --check</code>.</div>
 </div>
@@ -77,10 +77,10 @@ Git provides an easy way to check for this – before you commit, run <code>git 
 <p>Next, try to make each commit a logically separate changeset.
 If you can, try to make your changes digestible – don’t code for a whole weekend on five different issues and then submit them all as one massive commit on Monday.
 Even if you don’t commit during the weekend, use the staging area on Monday to split your work into at least one commit per issue, with a useful message per commit.
-If some of the changes modify the same file, try to use <code>git add --patch</code> to partially stage files (covered in detail in <a href="ch00/r_interactive_staging">Interactive Staging</a>).
+If some of the changes modify the same file, try to use <code>git add --patch</code> to partially stage files (covered in detail in <a href="{{< relurl "book/zh-tw/v2/ch00/r_interactive_staging" >}}">Interactive Staging</a>).
 The project snapshot at the tip of the branch is identical whether you do one commit or five, as long as all the changes are added at some point, so try to make things easier on your fellow developers when they have to review your changes.
 This approach also makes it easier to pull out or revert one of the changesets if you need to later.
-<a href="ch00/r_rewriting_history">Rewriting History</a> describes a number of useful Git tricks for rewriting history and interactively staging files – use these tools to help craft a clean and understandable history before sending the work to someone else.</p>
+<a href="{{< relurl "book/zh-tw/v2/ch00/r_rewriting_history" >}}">Rewriting History</a> describes a number of useful Git tricks for rewriting history and interactively staging files – use these tools to help craft a clean and understandable history before sending the work to someone else.</p>
 </div>
 <div class="paragraph">
 <p>The last thing to keep in mind is the commit message.
@@ -209,7 +209,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="John’s divergent history.">
+<img src="{{< relurl "book/zh-tw/v2/images/small-team-1.png" >}}" alt="John’s divergent history.">
 </div>
 <div class="title">圖表 58. John’s divergent history.</div>
 </div>
@@ -229,7 +229,7 @@ Merge made by recursive.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="John’s repository after merging `origin/master`.">
+<img src="{{< relurl "book/zh-tw/v2/images/small-team-2.png" >}}" alt="John’s repository after merging `origin/master`.">
 </div>
 <div class="title">圖表 59. John’s repository after merging <code>origin/master</code>.</div>
 </div>
@@ -249,7 +249,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="John’s history after pushing to the `origin` server.">
+<img src="{{< relurl "book/zh-tw/v2/images/small-team-3.png" >}}" alt="John’s history after pushing to the `origin` server.">
 </div>
 <div class="title">圖表 60. John’s history after pushing to the <code>origin</code> server.</div>
 </div>
@@ -260,7 +260,7 @@ She hasn’t fetched John’s changes yet, so her commit history looks like this
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Jessica’s topic branch.">
+<img src="{{< relurl "book/zh-tw/v2/images/small-team-4.png" >}}" alt="Jessica’s topic branch.">
 </div>
 <div class="title">圖表 61. Jessica’s topic branch.</div>
 </div>
@@ -282,7 +282,7 @@ Jessica’s history now looks like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="Jessica’s history after fetching John’s changes.">
+<img src="{{< relurl "book/zh-tw/v2/images/small-team-5.png" >}}" alt="Jessica’s history after fetching John’s changes.">
 </div>
 <div class="title">圖表 62. Jessica’s history after fetching John’s changes.</div>
 </div>
@@ -302,7 +302,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 <div class="paragraph">
 <p>The <code>issue54..origin/master</code> syntax is a log filter that asks Git to only show the list of commits that are on the latter branch (in this case <code>origin/master</code>) that are not on the first branch (in this case <code>issue54</code>).
-We’ll go over this syntax in detail in <a href="ch00/r_commit_ranges">Commit Ranges</a>.</p>
+We’ll go over this syntax in detail in <a href="{{< relurl "book/zh-tw/v2/ch00/r_commit_ranges" >}}">Commit Ranges</a>.</p>
 </div>
 <div class="paragraph">
 <p>For now, we can see from the output that there is a single commit that John has made that Jessica has not merged in.
@@ -352,7 +352,7 @@ Merge made by recursive.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="Jessica’s history after merging John’s changes.">
+<img src="{{< relurl "book/zh-tw/v2/images/small-team-6.png" >}}" alt="Jessica’s history after merging John’s changes.">
 </div>
 <div class="title">圖表 63. Jessica’s history after merging John’s changes.</div>
 </div>
@@ -372,7 +372,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="Jessica’s history after pushing all changes back to the server.">
+<img src="{{< relurl "book/zh-tw/v2/images/small-team-7.png" >}}" alt="Jessica’s history after pushing all changes back to the server.">
 </div>
 <div class="title">圖表 64. Jessica’s history after pushing all changes back to the server.</div>
 </div>
@@ -384,7 +384,7 @@ The general sequence is something like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="General sequence of events for a simple multiple-developer Git workflow.">
+<img src="{{< relurl "book/zh-tw/v2/images/small-team-flow.png" >}}" alt="General sequence of events for a simple multiple-developer Git workflow.">
 </div>
 <div class="title">圖表 65. General sequence of events for a simple multiple-developer Git workflow.</div>
 </div>
@@ -462,7 +462,7 @@ $ git commit -am 'add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Jessica’s initial commit history.">
+<img src="{{< relurl "book/zh-tw/v2/images/managed-team-1.png" >}}" alt="Jessica’s initial commit history.">
 </div>
 <div class="title">圖表 66. Jessica’s initial commit history.</div>
 </div>
@@ -505,7 +505,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>This is called a <em>refspec</em>.
-See <a href="ch00/r_refspec">The Refspec</a> for a more detailed discussion of Git refspecs and different things you can do with them.
+See <a href="{{< relurl "book/zh-tw/v2/ch00/r_refspec" >}}">The Refspec</a> for a more detailed discussion of Git refspecs and different things you can do with them.
 Also notice the <code>-u</code> flag; this is short for <code>--set-upstream</code>, which configures the branches for easier pushing and pulling later.</p>
 </div>
 <div class="paragraph">
@@ -566,7 +566,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="Jessica’s history after committing on a feature branch.">
+<img src="{{< relurl "book/zh-tw/v2/images/managed-team-2.png" >}}" alt="Jessica’s history after committing on a feature branch.">
 </div>
 <div class="title">圖表 67. Jessica’s history after committing on a feature branch.</div>
 </div>
@@ -576,7 +576,7 @@ After the integrators merge these branches into the mainline, a fetch will bring
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="Jessica’s history after merging both her topic branches.">
+<img src="{{< relurl "book/zh-tw/v2/images/managed-team-3.png" >}}" alt="Jessica’s history after merging both her topic branches.">
 </div>
 <div class="title">圖表 68. Jessica’s history after merging both her topic branches.</div>
 </div>
@@ -587,7 +587,7 @@ The sequence for the workflow you saw here is something like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="Basic sequence of this managed-team workflow.">
+<img src="{{< relurl "book/zh-tw/v2/images/managed-team-flow.png" >}}" alt="Basic sequence of this managed-team workflow.">
 </div>
 <div class="title">圖表 69. Basic sequence of this managed-team workflow.</div>
 </div>
@@ -625,7 +625,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>You may want to use <code>rebase -i</code> to squash your work down to a single commit, or rearrange the work in the commits to make the patch easier for the maintainer to review – see <a href="ch00/r_rewriting_history">Rewriting History</a> for more information about interactive rebasing.</p>
+<p>You may want to use <code>rebase -i</code> to squash your work down to a single commit, or rearrange the work in the commits to make the patch easier for the maintainer to review – see <a href="{{< relurl "book/zh-tw/v2/ch00/r_rewriting_history" >}}">Rewriting History</a> for more information about interactive rebasing.</p>
 </div>
 </td>
 </tr>
@@ -654,7 +654,7 @@ If the maintainers merge, rebase, or cherry-pick your work, you’ll eventually 
 <div class="paragraph">
 <p>
 When your work has been pushed up to your fork, you need to notify the maintainer.
-This is often called a pull request, and you can either generate it via the website – GitHub has its own Pull Request mechanism that we’ll go over in <a href="ch00/ch06-github">[ch06-github]</a> – or you can run the <code>git request-pull</code> command and email the output to the project maintainer manually.</p>
+This is often called a pull request, and you can either generate it via the website – GitHub has its own Pull Request mechanism that we’ll go over in <a href="{{< relurl "book/zh-tw/v2/ch00/ch06-github" >}}">[ch06-github]</a> – or you can run the <code>git request-pull</code> command and email the output to the project maintainer manually.</p>
 </div>
 <div class="paragraph">
 <p>The <code>request-pull</code> command takes the base branch into which you want your topic branch pulled and the Git repository URL you want them to pull from, and outputs a summary of all the changes you’re asking to be pulled in.
@@ -702,7 +702,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="Initial commit history with `featureB` work.">
+<img src="{{< relurl "book/zh-tw/v2/images/public-small-1.png" >}}" alt="Initial commit history with `featureB` work.">
 </div>
 <div class="title">圖表 70. Initial commit history with <code>featureB</code> work.</div>
 </div>
@@ -718,11 +718,11 @@ $ git push -f myfork featureA</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This rewrites your history to now look like <a href="ch00/rpsp_b">Commit history after <code>featureA</code> work.</a>.</p>
+<p>This rewrites your history to now look like <a href="{{< relurl "book/zh-tw/v2/ch00/rpsp_b" >}}">Commit history after <code>featureA</code> work.</a>.</p>
 </div>
 <div id="rpsp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="Commit history after `featureA` work.">
+<img src="{{< relurl "book/zh-tw/v2/images/public-small-2.png" >}}" alt="Commit history after `featureA` work.">
 </div>
 <div class="title">圖表 71. Commit history after <code>featureA</code> work.</div>
 </div>
@@ -757,7 +757,7 @@ Also the <code>--no-commit</code> option can be useful to delay the merge commit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="Commit history after `featureBv2` work.">
+<img src="{{< relurl "book/zh-tw/v2/images/public-small-3.png" >}}" alt="Commit history after `featureBv2` work.">
 </div>
 <div class="title">圖表 72. Commit history after <code>featureBv2</code> work.</div>
 </div>

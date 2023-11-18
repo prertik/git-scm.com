@@ -82,7 +82,7 @@ origin    git@github.com:mojombo/grit.git (push)</code></pre>
 我們可能對其中某些遠端版本庫還擁有推送權限，不過我們不會在這裡詳述這個部分。</p>
 </div>
 <div class="paragraph">
-<p>注意：這些遠端版本庫使用了不同的通訊協定；我們將會在 <a href="ch00/r_git_on_the_server">在伺服器上佈署 Git</a> 對它有更多的說明。</p>
+<p>注意：這些遠端版本庫使用了不同的通訊協定；我們將會在 <a href="{{< relurl "book/zh-tw/v2/ch00/r_git_on_the_server" >}}">在伺服器上佈署 Git</a> 對它有更多的說明。</p>
 </div>
 </div>
 <div class="sect3">
@@ -122,7 +122,7 @@ From https://github.com/paulboone/ticgit
 </div>
 <div class="paragraph">
 <p>現在 Paul 的 master 分支可以在本地端透過 <code>pb/master</code> 存取到（譯註：把 <code>pb/master</code> 想成 Paul 的 master 在你本地端的「分身」——實際上它被稱為「遠端追蹤分支（remote-tracking branch）」）——你可以把它合併（merge）到你的其中一個分支；或者，如果你想要檢視它的話，可以在它身上檢出（checkout）一個本地分支。
-（我們將會在 <a href="ch00/ch03-git-branching">[ch03-git-branching]</a> 中詳細介紹什麼是分支以及如何使用它們。）</p>
+（我們將會在 <a href="{{< relurl "book/zh-tw/v2/ch00/ch03-git-branching" >}}">[ch03-git-branching]</a> 中詳細介紹什麼是分支以及如何使用它們。）</p>
 </div>
 </div>
 <div class="sect3">
@@ -146,7 +146,7 @@ From https://github.com/paulboone/ticgit
 當你準備好合併你的工作內容時，你必需用手動的方式進行合併。</p>
 </div>
 <div class="paragraph">
-<p>如果你的目前分支被設定為「追蹤」遠端上的分支（閱讀下一節以及 <a href="ch00/ch03-git-branching">[ch03-git-branching]</a> 以了解更多資訊），你便可使用 <code>git pull</code> 命令來自動「獲取」並「合併」那個遠端分支到你目前的分支裡去；
+<p>如果你的目前分支被設定為「追蹤」遠端上的分支（閱讀下一節以及 <a href="{{< relurl "book/zh-tw/v2/ch00/ch03-git-branching" >}}">[ch03-git-branching]</a> 以了解更多資訊），你便可使用 <code>git pull</code> 命令來自動「獲取」並「合併」那個遠端分支到你目前的分支裡去；
 由於 <code>git clone</code> 命令會「自動地」將本地分支 master 設定為「追蹤」遠端上的 master（無論預設分支叫什麼名稱。譯註：只要是預設分支都會自動設定追踨行為，而 master 常常是預設分支），這可能會讓你有比較輕鬆自在的工作流程：
 只要執行 <code>git pull</code> 通常就會從你最初克隆的伺服器上獲取資料，然後試著自動合併到目前的分支。</p>
 </div>
@@ -167,7 +167,7 @@ From https://github.com/paulboone/ticgit
 <p>只有在你對克隆來源的伺服器有寫入權限，並且在這個當下還沒有其它人推送過，這個命令才會成功；
 如果你和其它人同時做了克隆，然後他們先推送到上游，接著換你推送到上游，毫無疑問地你的推送會被拒絕；
 你必需先獲取他們的工作內容，將其整併到你之前的工作內容，如此你才會被允許推送。
-閱讀 <a href="ch00/ch03-git-branching">[ch03-git-branching]</a> 以了解更多關於「如何推送到遠端伺服器」的詳細資訊。</p>
+閱讀 <a href="{{< relurl "book/zh-tw/v2/ch00/ch03-git-branching" >}}">[ch03-git-branching]</a> 以了解更多關於「如何推送到遠端伺服器」的詳細資訊。</p>
 </div>
 </div>
 <div class="sect3">

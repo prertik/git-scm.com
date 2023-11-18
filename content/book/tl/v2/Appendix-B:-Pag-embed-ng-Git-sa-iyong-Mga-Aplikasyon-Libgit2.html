@@ -57,7 +57,7 @@ Ang <code>git_repository</code> na uri ay kumakatawan sa isang pamamahala sa isa
 Ito ang pinakasimpleng paraan, para kapag alam mo ang eksaktong path sa gumaganang direktoryo ng repositoryo o <code>.git</code> na folder. Mayroon ding <code>git_repository_open_ext</code> na kinabibilangan ng mga opsyon para sa paghahanap, <code>git_clone</code> at mga kaibigan para sa paggawa ng isang lokal na clone ng isang remote na repositoryo, at <code>git_repository_init</code> para sa paglikha ng isang ganap na bagong repositoryo.</p>
 </div>
 <div class="paragraph">
-<p>Ang pangalawang tipak ng code ay gumagamit ng rev-parse na syntax (tingnan ang <a href="ch00/_branch_references">Mga Reperensiya ng Branch</a> para sa higit pa nito) upang makuha ang commit na ang HEAD na sa kalaunan.
+<p>Ang pangalawang tipak ng code ay gumagamit ng rev-parse na syntax (tingnan ang <a href="{{< relurl "book/tl/v2/ch00/_branch_references" >}}">Mga Reperensiya ng Branch</a> para sa higit pa nito) upang makuha ang commit na ang HEAD na sa kalaunan.
 Ang binalik na uri ay isang <code>git_object</code> pointer, na kumakatawan sa isang bagay na umiiral sa database ng Git object para sa isang repository. <code>git_object</code> ay talagang isang “parent” na uri para sa maraming iba’t-ibang mga uri ng mga bagay; ang layout ng memorya para sa bawat isa sa mga uri ng “child” ay kapareho ng para sa <code>git_object</code>, para maaari mong isumite ng ligtas ang tama. Sa kasong ito, ang <code>git_object_type(commit)</code> ay babalik sa <code>GIT_OBJ_COMMIT</code>, kaya ligtas itong isumite sa isang <code>git_commit</code> pointer.</p>
 </div>
 <div class="paragraph">
@@ -161,7 +161,7 @@ Ginagamit nito ang tip ng HEAD para sa nag-iisang parent.</p>
 </div>
 <div class="paragraph">
 <p>Ang Ruby na code ay maganda at malinis, ngunit dahil ang Libgit2 ay gumagawa ng mabigat na proseso, ang code na ito ay gagana ng masmabilis, din.
-Kung ikaw ay hindi isang rubyist, hinahawakan namin ang ilang iba pang mga bindings sa <a href="ch00/_libgit2_bindings">Iba pang mga Binding</a>.</p>
+Kung ikaw ay hindi isang rubyist, hinahawakan namin ang ilang iba pang mga bindings sa <a href="{{< relurl "book/tl/v2/ch00/_libgit2_bindings" >}}">Iba pang mga Binding</a>.</p>
 </div>
 <div class="sect3">
 <h3 id="_advanced_na_functionality">Advanced na Functionality</h3>

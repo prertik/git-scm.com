@@ -41,7 +41,7 @@ Ang remote na mga reperensiya ay mga reperensiya (mga pointer) sa iyong remote n
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Ang server at lokal na mga repositoryo pagkatapos ng pag-clone.">
+<img src="{{< relurl "book/tl/v2/images/remote-branches-1.png" >}}" alt="Ang server at lokal na mga repositoryo pagkatapos ng pag-clone.">
 </div>
 <div class="title">Figure 30. Ang server at lokal na mga repositoryo pagkatapos ng pag-clone</div>
 </div>
@@ -50,7 +50,7 @@ Ang remote na mga reperensiya ay mga reperensiya (mga pointer) sa iyong remote n
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Ang lokal at remote na trabaho ay maaaring ihiwalay.">
+<img src="{{< relurl "book/tl/v2/images/remote-branches-2.png" >}}" alt="Ang lokal at remote na trabaho ay maaaring ihiwalay.">
 </div>
 <div class="title">Figure 31. Ang lokal at remote na trabaho ay maaaring ihiwalay</div>
 </div>
@@ -59,16 +59,16 @@ Ang remote na mga reperensiya ay mga reperensiya (mga pointer) sa iyong remote n
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="Ang `git fetch` ay ia-update ang iyong remote na mga reperensya.">
+<img src="{{< relurl "book/tl/v2/images/remote-branches-3.png" >}}" alt="Ang `git fetch` ay ia-update ang iyong remote na mga reperensya.">
 </div>
 <div class="title">Figure 32. Ang <code>git fetch</code> ay ia-update ang iyong remote na mga reperensya</div>
 </div>
 <div class="paragraph">
-<p>Upang ipakita ang pagkakaroon ng maramihang remote na mga server at kung ano ang hitsura ng remote na mga branch para sa mga remote na proyekto, ating ipalagay na mayroon kang ibang panloob na Git na server na ginagamit lamang para sa pag-develop ng isa sa iyong mga sprint na mga koponan. Ang server na ito ay nasa <code>git.team1.ourcompany.com</code>. Maaari mong idagdag ito bilang isang panibagong remote na reperensya kung saan mo kasalukuyang tinatrabaho ang <code>git remote add</code> na utos na ating nasakop sa <a href="ch00/_git_basics_chapter">Mga Pangunahing Kaalaman sa Git</a>. Pangalanan itong remote na <code>teamone</code>, na magiging iyong maikling pangalan para sa buong URL na iyon.</p>
+<p>Upang ipakita ang pagkakaroon ng maramihang remote na mga server at kung ano ang hitsura ng remote na mga branch para sa mga remote na proyekto, ating ipalagay na mayroon kang ibang panloob na Git na server na ginagamit lamang para sa pag-develop ng isa sa iyong mga sprint na mga koponan. Ang server na ito ay nasa <code>git.team1.ourcompany.com</code>. Maaari mong idagdag ito bilang isang panibagong remote na reperensya kung saan mo kasalukuyang tinatrabaho ang <code>git remote add</code> na utos na ating nasakop sa <a href="{{< relurl "book/tl/v2/ch00/_git_basics_chapter" >}}">Mga Pangunahing Kaalaman sa Git</a>. Pangalanan itong remote na <code>teamone</code>, na magiging iyong maikling pangalan para sa buong URL na iyon.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Pagdagdag ng ibang server bilang isang remote.">
+<img src="{{< relurl "book/tl/v2/images/remote-branches-4.png" >}}" alt="Pagdagdag ng ibang server bilang isang remote.">
 </div>
 <div class="title">Figure 33. Pagdagdag ng ibang server bilang isang remote</div>
 </div>
@@ -77,7 +77,7 @@ Ang remote na mga reperensiya ay mga reperensiya (mga pointer) sa iyong remote n
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Ang remote tracking na branch para sa `teamone/master`.">
+<img src="{{< relurl "book/tl/v2/images/remote-branches-5.png" >}}" alt="Ang remote tracking na branch para sa `teamone/master`.">
 </div>
 <div class="title">Figure 34. Ang remote tracking na branch para sa <code>teamone/master</code>
 </div>
@@ -104,7 +104,7 @@ To https://github.com/schacon/simplegit
 </div>
 </div>
 <div class="paragraph">
-<p>Ito ay medyo parang isang daang tuwiran. Ang Git ay awtomatikong pinapalaki ang <code>serverfix</code> na pangalan ng branch palabas sa <code>refs/heads/serverfix:refs/heads/serverfix</code>, na nangangahulugang, “Kunin mo ang aking serverfix na lokal na branch at i-push ito upang i-update ang serverfix na branch ng remote.” Dumako tayo sa <code>refs/heads/</code> na bahagi sa detalye sa <a href="ch00/_git_internals">Mga Panloob ng GIT</a>, ngunit kadalasan ay maaari mo itong hayaan. Maaari ka ring gumawa ng <code>git push origin serverfix:serverfix</code>, na gumagawa ng parehong bagay — nagsasabi ito na, “Kunin mo ang aking serverfix at gawin itong serverfix ng remote.” Maaari mong gamitin ang format na ito upang mag-push ng isang lokal na branch sa isang remote na branch na kakaibang nakapangalan. Kung hindi mo gustong tawagin itong <code>serverfix</code> sa remote, sa halip ay maaari mong patakbuhin ang <code>git push origin serverfix:awesomebranch</code> upang i-push ang iyong lokal na <code>serverfix</code> na branch patungo sa <code>awesomebranch</code> na branch sa remote na proyekto.</p>
+<p>Ito ay medyo parang isang daang tuwiran. Ang Git ay awtomatikong pinapalaki ang <code>serverfix</code> na pangalan ng branch palabas sa <code>refs/heads/serverfix:refs/heads/serverfix</code>, na nangangahulugang, “Kunin mo ang aking serverfix na lokal na branch at i-push ito upang i-update ang serverfix na branch ng remote.” Dumako tayo sa <code>refs/heads/</code> na bahagi sa detalye sa <a href="{{< relurl "book/tl/v2/ch00/_git_internals" >}}">Mga Panloob ng GIT</a>, ngunit kadalasan ay maaari mo itong hayaan. Maaari ka ring gumawa ng <code>git push origin serverfix:serverfix</code>, na gumagawa ng parehong bagay — nagsasabi ito na, “Kunin mo ang aking serverfix at gawin itong serverfix ng remote.” Maaari mong gamitin ang format na ito upang mag-push ng isang lokal na branch sa isang remote na branch na kakaibang nakapangalan. Kung hindi mo gustong tawagin itong <code>serverfix</code> sa remote, sa halip ay maaari mong patakbuhin ang <code>git push origin serverfix:awesomebranch</code> upang i-push ang iyong lokal na <code>serverfix</code> na branch patungo sa <code>awesomebranch</code> na branch sa remote na proyekto.</p>
 </div>
 <div class="exampleblock">
 <div class="title">Example 6. Huwag i-type ang iyong password sa bawat panahon</div>
@@ -116,7 +116,7 @@ To https://github.com/schacon/simplegit
 <p>Kung hindi mo gustong i-type ito sa bawat isang pagkakataon na magpu-push ka, maaari mong magtakda ng isang “credential cache”. Ang pinakasimple ay ang panatilihin ito sa memorya sa isang maikling minuto, kung saan maaari mong madaling itakda sa pamamagitan ng pagpapatakbo ng <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>Para sa karagdagang impormasyon sa iba’t ibang mga opsyon ng credential caching na maaaring magamit, tingnan ang <a href="ch00/_credential_caching">Kredensyal na ImbakanCredential Storage</a>.</p>
+<p>Para sa karagdagang impormasyon sa iba’t ibang mga opsyon ng credential caching na maaaring magamit, tingnan ang <a href="{{< relurl "book/tl/v2/ch00/_credential_caching" >}}">Kredensyal na ImbakanCredential Storage</a>.</p>
 </div>
 </div>
 </div>

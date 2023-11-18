@@ -35,7 +35,7 @@ At saka tatalakayin din natin ang iba’t iba, na hindi pamantayan na mga uri ng
 <div class="sect3">
 <h3 id="_pag_merge_sa_mga_kasalungat">Pag-merge sa mga Kasalungat</h3>
 <div class="paragraph">
-<p>Habang nasakop natin ang maraming mga batayan sa paglulutas ng merge na mga salungat sa <a href="ch00/_basic_merge_conflicts">Mga Pangunahing Salungatan sa Pag-Merge</a>, para sa higit na kumplikado na mga salungat, Ang Git ay nagbibigay na ilang mga kasangkapan para tulungan ka na tingnan kung ano ang nangyayari at kung paano mas mahusay na makitungo sa mga salungat.</p>
+<p>Habang nasakop natin ang maraming mga batayan sa paglulutas ng merge na mga salungat sa <a href="{{< relurl "book/tl/v2/ch00/_basic_merge_conflicts" >}}">Mga Pangunahing Salungatan sa Pag-Merge</a>, para sa higit na kumplikado na mga salungat, Ang Git ay nagbibigay na ilang mga kasangkapan para tulungan ka na tingnan kung ano ang nangyayari at kung paano mas mahusay na makitungo sa mga salungat.</p>
 </div>
 <div class="paragraph">
 <p>Una sa lahat, kung sa lahat ay posible, subukan na siguraduhin na ang iyong tinatrabahong direktoryo ay malinis bago magsagawa ng merge na maaaring magkakaroon ng mga salungat.
@@ -468,7 +468,7 @@ Ito ay nakakatulong sayo na kunin ang konteksto na sa kung ano ang maaaring maii
 Pagrepaso nang kaunti sa kasaysayan para tandaan kung bakit ang dalawang mga linya sa development na hinahawakan natin sa parehong nakakatulong minsan.</p>
 </div>
 <div class="paragraph">
-<p>Para makakuha ng buong listahan sa lahat ng natatanging mga commit na nakasali sa alinmang branch na sangkot sa merge na ito, maaari nating gamitin ang “triple dot” na syntax na natutunan natin sa <a href="ch00/_triple_dot">Triple na Dot</a>.</p>
+<p>Para makakuha ng buong listahan sa lahat ng natatanging mga commit na nakasali sa alinmang branch na sangkot sa merge na ito, maaari nating gamitin ang “triple dot” na syntax na natutunan natin sa <a href="{{< relurl "book/tl/v2/ch00/_triple_dot" >}}">Triple na Dot</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -612,7 +612,7 @@ Sabihin mo na ikaw ay nagsimula sa pagtrabaho sa isang topic na branch, aksident
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="Aksidenteng merge commit.">
+<img src="{{< relurl "book/tl/v2/images/undomerge-start.png" >}}" alt="Aksidenteng merge commit.">
 </div>
 <div class="title">Figure 138. Aksidenteng merge commit</div>
 </div>
@@ -627,13 +627,13 @@ Sa maraming mga kaso, kung ikaw ay sumusunod sa maling <code>git merge</code> na
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="Kasaysayan pagkatapos ang `git reset --hard HEAD~`.">
+<img src="{{< relurl "book/tl/v2/images/undomerge-reset.png" >}}" alt="Kasaysayan pagkatapos ang `git reset --hard HEAD~`.">
 </div>
 <div class="title">Figure 139. Kasaysayan pagkatapos ang <code>git reset --hard HEAD~</code>
 </div>
 </div>
 <div class="paragraph">
-<p>Tinatalakay namin ang <code>reset</code> na balik sa <a href="ch00/_git_reset">Ang Reset Demystified</a>, kaya ito ay hindi napakahirap na malaman kung ano nangyayari dito.
+<p>Tinatalakay namin ang <code>reset</code> na balik sa <a href="{{< relurl "book/tl/v2/ch00/_git_reset" >}}">Ang Reset Demystified</a>, kaya ito ay hindi napakahirap na malaman kung ano nangyayari dito.
 Narito ang isang mabilis na refresher: <code>reset --hard</code> kadalasang napupunta sa tatlong paraan:</p>
 </div>
 <div class="olist arabic">
@@ -652,7 +652,7 @@ sa kasong ito, gusto naming ilipat ang <code>master</code> sa kung saan ito ay n
 </div>
 <div class="paragraph">
 <p>Ang kakulangan sa diskarteng ito ay ang kanyang sinusulatang muli na kasaysayan, na maaaring maging problema na may isang ibinabahaging direktoryo.
-Tingnan ang <a href="ch00/_rebase_peril">Ang mga Panganib ng Pag-rebase</a> para sa marami na mga pwedeng mangyari; ang maikling bersyon ay kung ang ibang tao ay mayroong mga commit na iyong sinusulatang muli, dapat mong marahil iwasan ang <code>reset</code>.
+Tingnan ang <a href="{{< relurl "book/tl/v2/ch00/_rebase_peril" >}}">Ang mga Panganib ng Pag-rebase</a> para sa marami na mga pwedeng mangyari; ang maikling bersyon ay kung ang ibang tao ay mayroong mga commit na iyong sinusulatang muli, dapat mong marahil iwasan ang <code>reset</code>.
 Ang pamamaraan na ito ay hindi rin gagana kung ang ibang mga anumang commit ay nalikha mula nang na-merge; paglilipat sa mga ref ay epektibong mawawala ang mga pagbabago na iyon.</p>
 </div>
 </div>
@@ -678,7 +678,7 @@ Sa kasong ito, gusto natin na pawalang-bisa ang lahat na pagbabago na ipinakilal
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="Kasaysayan pagkatapos ng `git revert -m 1`.">
+<img src="{{< relurl "book/tl/v2/images/undomerge-revert.png" >}}" alt="Kasaysayan pagkatapos ng `git revert -m 1`.">
 </div>
 <div class="title">Figure 140. Kasaysayang pagkatapos ng <code>git revert -m 1</code>
 </div>
@@ -699,7 +699,7 @@ Kung ano ang mas masahol, kung ikaw ay magdagdag sa <code>topic</code> at i-merg
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="Kasaysayan na may isang masamang merge.">
+<img src="{{< relurl "book/tl/v2/images/undomerge-revert2.png" >}}" alt="Kasaysayan na may isang masamang merge.">
 </div>
 <div class="title">Figure 141. Kasaysayan na may isang masamang merge</div>
 </div>
@@ -715,7 +715,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="Kasaysayan pagkatapos ng pagre-re-merge sa isang na revert na merge.">
+<img src="{{< relurl "book/tl/v2/images/undomerge-revert3.png" >}}" alt="Kasaysayan pagkatapos ng pagre-re-merge sa isang na revert na merge.">
 </div>
 <div class="title">Figure 142. Kasaysayan pagkatapos ng pagre-re-merge sa isang na revert na merge</div>
 </div>
@@ -863,7 +863,7 @@ Ito ay hindi karaniwan, dahil ito ay bihirang kapaki-pakinabang, ngunit ito ay m
 <div class="paragraph">
 <p>Sa kasong ito, gusto nating i-pull ang Rack na proyekto sa ating <code>master</code> na proyekto bilang isang subdirektoryo.
 Magagawa natin iyan sa Git na may <code>git read-tree</code>.
-Matutunan mo ang higit na tungkol sa <code>read-tree</code> at ang mga kaibigan nito sa <a href="ch00/_git_internals">Mga Panloob ng GIT</a>, ngunit para sa ngayon ay malaman ang root tree sa isang branch sa iyong kasalukuyang staging area at tinatrabahuang direktoryo.
+Matutunan mo ang higit na tungkol sa <code>read-tree</code> at ang mga kaibigan nito sa <a href="{{< relurl "book/tl/v2/ch00/_git_internals" >}}">Mga Panloob ng GIT</a>, ngunit para sa ngayon ay malaman ang root tree sa isang branch sa iyong kasalukuyang staging area at tinatrabahuang direktoryo.
 Kakalipat lang natin pabalik sa iyong <code>master</code> na branch, at nagpull tayo sa <code>rack_branch</code> na branch sa <code>rack</code> na subdirektoryo sa ating <code>master</code> na branch sa ating pangunahing proyekto:</p>
 </div>
 <div class="listingblock">
@@ -900,7 +900,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 You can also do the opposite – make changes in the <code>rack</code> subdirectory of your master branch and then merge them into your <code>rack_branch</code> branch later to submit them to the maintainers or push them upstream.</p>
 </div>
 <div class="paragraph">
-<p>This gives us a way to have a workflow somewhat similar to the submodule workflow without using submodules (which we will cover in <a href="ch00/_git_submodules">Mga Submodule</a>).
+<p>This gives us a way to have a workflow somewhat similar to the submodule workflow without using submodules (which we will cover in <a href="{{< relurl "book/tl/v2/ch00/_git_submodules" >}}">Mga Submodule</a>).
 We can keep branches with other related projects in our repository and subtree merge them into our project occasionally.
 It is nice in some ways, for example all the code is committed to a single place.
 However, it has other drawbacks in that it’s a bit more complex and easier to make mistakes in reintegrating changes or accidentally pushing a branch into an unrelated repository.</p>

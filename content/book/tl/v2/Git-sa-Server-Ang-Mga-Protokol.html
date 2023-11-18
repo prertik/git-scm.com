@@ -64,7 +64,7 @@ Halimbawa, upang i-clone ang isang lokal na repositoryo, maaari kang magpagana n
 <p>Ang Git ay gumagana ng bahagyang maiba kapag tahasang tinukoy mo ang <code>file://</code> sa simula ng URL.
 Kapag ang landas lamang ang tinukoy mo, Sinusubukan ng Git na gumamit ng mga hardlink o direktang kinokopya ang mga file na kailangan nito.
 Kapag tinukoy mo ang <code>file://</code>, pinapagana ng Git ang mga proseso na karanawing ginagamit upang lumipat ng data sa isang network, na kung saan ay karaniwang mas mahina.
-Ang pinakarason upang tukuyin ang <code>file://</code> na prefix ay kung gusto mo ng isang malinis na kopya ng repositoryo na may mga reperensiya o mga object na naiwan — Sa pangkalahatan ay pagkatapos ng pag-import mula sa ibang VCS o sa isang bagay na katulad (tingnan <a href="ch00/_git_internals">Mga Panloob ng GIT</a> para sa mga gawain ng pagpapanatili).
+Ang pinakarason upang tukuyin ang <code>file://</code> na prefix ay kung gusto mo ng isang malinis na kopya ng repositoryo na may mga reperensiya o mga object na naiwan — Sa pangkalahatan ay pagkatapos ng pag-import mula sa ibang VCS o sa isang bagay na katulad (tingnan <a href="{{< relurl "book/tl/v2/ch00/_git_internals" >}}">Mga Panloob ng GIT</a> para sa mga gawain ng pagpapanatili).
 Gagamitin natin ang normal na landas dito dahil ang paggawa nito ay halos parati na mas mabilis.</p>
 </div>
 <div class="paragraph">
@@ -84,7 +84,7 @@ Gagamitin natin ang normal na landas dito dahil ang paggawa nito ay halos parati
 <p>Ang mga kalamangan ng isang repositoryo na nakabatay sa file ay ang mga ito ay simple at ginagamit ang mga umiiral na mga pahintulot ng file at access sa network.
 Kapag ibinahagi mo na ang isang filesystem na kung saan may-access ang lahat ng iyong team, ang pag-set up ng isang repositoryo ay napakadali.
 Ilalagay mo ang kopya ng hubad na repositoryo sa kung saan may access ang lahat at i-set ang pagbasa/pagsulat na mga pahintulot katulad ng kahit anong ibinahagi na direktoryo.
-Tatalakayin natin kung papaano mag-export ng isang kopya ng hubad na repositoryo para sa itong layunin sa <a href="ch00/_getting_git_on_a_server">Pagkuha ng Git sa isang Server</a>.</p>
+Tatalakayin natin kung papaano mag-export ng isang kopya ng hubad na repositoryo para sa itong layunin sa <a href="{{< relurl "book/tl/v2/ch00/_getting_git_on_a_server" >}}">Pagkuha ng Git sa isang Server</a>.</p>
 </div>
 <div class="paragraph">
 <p>Ito rin ay isang magandang opsyon para sa mabilis na pagkuha ng trabaho mula sa gumagana na repositoryo ng iba.
@@ -141,7 +141,7 @@ Ito ay pareho para sa access sa pagbasa.</p>
 Kapag ang server ay hindi tumugon ng isang matalinong serbisyo ng Git HTTP, Susubukan ng kliyente ng Git na bumalik sa mas madaling <em>Dumb</em> HTTP na protokol.
 Inaasahan ng Dumb na protokol ang hubad na repositoryo ng Git ang ihahatid tulad ng mga normal na mga file mula sa web server.
 Ang kagandahan ng Dumb HTTP ay ang madaling pag set-up nito.
-Sa totoo lang, ang kailangan mo lang gawin ay maglagay ng hubad na repositoryo ng Git sa ilalim ng isang HTTP na dokumento sa root at mag-set up ng isang tiyak na <code>post-update</code> hook, at tapos ka na (Tingnan <a href="ch00/_git_hooks">Mga Hook ng Git</a>).
+Sa totoo lang, ang kailangan mo lang gawin ay maglagay ng hubad na repositoryo ng Git sa ilalim ng isang HTTP na dokumento sa root at mag-set up ng isang tiyak na <code>post-update</code> hook, at tapos ka na (Tingnan <a href="{{< relurl "book/tl/v2/ch00/_git_hooks" >}}">Mga Hook ng Git</a>).
 Sa puntong iyon, sinuman na makaka-access sa web server sa ilalim na kung saan maaaring ilagay ang repositoryo ay maaaring i-clone ang iyong repositoryo.
 Upang payagan ang access sa pagbasa sa iyong repositoryo sa HTTP, gumawa ng katulad nito:</p>
 </div>
@@ -166,7 +166,7 @@ Ang utos na ito ay pinapagana kapag nag-push ka sa repositoryo na ito (marahil s
 </div>
 <div class="paragraph">
 <p>Sa partikular na kaso na ito, ginagamit natin ang <code>/var/www/htdocs</code> na landas na karaniwan sa mga Apache na setup, pero makikita mo na maaaring gumamit ng anumang statik na web server — ilagay lamang ang hubad na repositoryo sa kanyang landas.
-Ang data ng Git ay hinahatid bilang isang statik na mga file (tingnan ang <a href="ch00/_git_internals">Mga Panloob ng GIT</a> na kabanata para sa mga detalye kung papaano ito eksaktong hinahatid).</p>
+Ang data ng Git ay hinahatid bilang isang statik na mga file (tingnan ang <a href="{{< relurl "book/tl/v2/ch00/_git_internals" >}}">Mga Panloob ng GIT</a> na kabanata para sa mga detalye kung papaano ito eksaktong hinahatid).</p>
 </div>
 <div class="paragraph">
 <p>Sa pangkalahatan pipili ka kung magpapagana ng pabasa/pagsulat na Smart HTTP server o ilagay na ma-access ang mga file bilang read-only sa Dumb na paraan.
@@ -200,7 +200,7 @@ Maliban dun, napakaliit ng kalamangan ang mayroon ang ibang mga protokol sa Smar
 <div class="paragraph">
 <p>Kung ikaw ny gumagamit ng HTTP para sa pagpapatunay ng pag-push, paminsan ang pagbibigay ng iyong mga kredensyal ay mas mahirap kaysa gumamit ng mga susi sa SSH.
 Gayunpaman, may mga iilang mga instrumento sa pag-cache ng kridensyal na maaari mong gamitin, kasali na ang Keychain access sa macOS at Tagapamahala ng Kredensyal sa Windows, upang gawin itong madali.
-Basahin ang <a href="ch00/_credential_caching">Kredensyal na ImbakanCredential Storage</a> upang makita kung papaano mag set up ng ligtas na pag-cache ng password sa iyong sistema.</p>
+Basahin ang <a href="{{< relurl "book/tl/v2/ch00/_credential_caching" >}}">Kredensyal na ImbakanCredential Storage</a> upang makita kung papaano mag set up ng ligtas na pag-cache ng password sa iyong sistema.</p>
 </div>
 </div>
 </div>

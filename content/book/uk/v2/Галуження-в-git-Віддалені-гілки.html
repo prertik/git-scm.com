@@ -58,7 +58,7 @@ title: Git - Віддалені гілки
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Серверний та локальний репозиторії після клонування.">
+<img src="{{< relurl "book/uk/v2/images/remote-branches-1.png" >}}" alt="Серверний та локальний репозиторії після клонування.">
 </div>
 <div class="title">Рисунок 30. Серверний та локальний репозиторії після клонування</div>
 </div>
@@ -68,7 +68,7 @@ title: Git - Віддалені гілки
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Локальна та віддалена робота розійшлися.">
+<img src="{{< relurl "book/uk/v2/images/remote-branches-2.png" >}}" alt="Локальна та віддалена робота розійшлися.">
 </div>
 <div class="title">Рисунок 31. Локальна та віддалена робота розійшлися</div>
 </div>
@@ -78,19 +78,19 @@ title: Git - Віддалені гілки
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` оновлює віддалені посилання.">
+<img src="{{< relurl "book/uk/v2/images/remote-branches-3.png" >}}" alt="`git fetch` оновлює віддалені посилання.">
 </div>
 <div class="title">Рисунок 32. <code>git fetch</code> оновлює віддалені посилання</div>
 </div>
 <div class="paragraph">
 <p>Щоб продемонструвати роботу з кількома віддаленими серверами і як виглядають віддалені гілки для віддалених проектів, уявімо, що ви маєте ще один внутрішній Git сервер, котрий використовує лиш одна з ваших спринт команд.
 Cервер розташований за адресою <code>git.team1.ourcompany.com</code>.
-Ви можете додати його як нове віддалене посилання до вашого поточного проекту за допомогою команди <code>git remote add</code>, як ми розповідали в <a href="ch00/ch02-git-basics-chapter">Основи Git</a>.
+Ви можете додати його як нове віддалене посилання до вашого поточного проекту за допомогою команди <code>git remote add</code>, як ми розповідали в <a href="{{< relurl "book/uk/v2/ch00/ch02-git-basics-chapter" >}}">Основи Git</a>.
 Дайте йому ім’я <code>teamone</code>, і це буде вашим скороченням для повного URL.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Додавання нового віддаленого сервера.">
+<img src="{{< relurl "book/uk/v2/images/remote-branches-4.png" >}}" alt="Додавання нового віддаленого сервера.">
 </div>
 <div class="title">Рисунок 33. Додавання нового віддаленого сервера</div>
 </div>
@@ -100,7 +100,7 @@ Cервер розташований за адресою <code>git.team1.ourcomp
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Віддалено-відслідковувана гілка `teamone/master`.">
+<img src="{{< relurl "book/uk/v2/images/remote-branches-5.png" >}}" alt="Віддалено-відслідковувана гілка `teamone/master`.">
 </div>
 <div class="title">Рисунок 34. Віддалено-відслідковувана гілка <code>teamone/master</code>
 </div>
@@ -132,7 +132,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Це трохи скорочено.
 Git автоматично замінює назву гілки <code>serverfix</code> з <code>refs/heads/serverfix:refs/heads/serverfix</code>, що означає “Візьми мою локальну гілку serverfix та надішли її для оновлення віддаленої гілки serverfix.”
-Ми детальніше розглянемо <code>refs/heads/</code> в <a href="ch00/ch10-git-internals">Git зсередини</a>, але, взагалі, можете зараз це пропустити.
+Ми детальніше розглянемо <code>refs/heads/</code> в <a href="{{< relurl "book/uk/v2/ch00/ch10-git-internals" >}}">Git зсередини</a>, але, взагалі, можете зараз це пропустити.
 Також ви можете виконати <code>git push origin serverfix:serverfix</code>, що зробить те саме, тобто скаже “Бери мій serverfix та шли на віддалений serverfix.”
 Користуйтеся таким підходом щоб надсилати локальні гілки, що називаються інакше ніж віддалені.
 Якщо ви не хочете мати віддалену назву <code>serverfix</code>, виконайте натомість <code>git push origin serverfix:awesomebranch</code>, щоб надіслати локальну <code>serverfix</code> на віддалену з назвою <code>awesomebranch</code>.</p>
@@ -154,7 +154,7 @@ Git автоматично замінює назву гілки <code>serverfix<
 Найпростіше — дозволити тримати цю інформацію в пам’яті протягом кількох хвилин, для чого виконайте <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>Більше інформації про способи кешування ідентифікації користувачів у секції <a href="ch00/_credential_caching">Збереження посвідчення (credential)</a>.</p>
+<p>Більше інформації про способи кешування ідентифікації користувачів у секції <a href="{{< relurl "book/uk/v2/ch00/_credential_caching" >}}">Збереження посвідчення (credential)</a>.</p>
 </div>
 </td>
 </tr>

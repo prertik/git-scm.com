@@ -30,7 +30,7 @@ title: Git - Гілки у кількох словах
 <p>Щоб дійсно зрозуміти як Git працює з гілками, нам треба повернутись назад та розібратись, як Git зберігає дані.</p>
 </div>
 <div class="paragraph">
-<p>Як ви можете пам’ятати з <a href="ch00/ch01-getting-started">Вступ</a>, Git зберігає дані не як послідовність змін, а як послідовність знімків.</p>
+<p>Як ви можете пам’ятати з <a href="{{< relurl "book/uk/v2/ch00/ch01-getting-started" >}}">Вступ</a>, Git зберігає дані не як послідовність змін, а як послідовність знімків.</p>
 </div>
 <div class="paragraph">
 <p>Коли ви фіксуєте зміни, Git зберігає об’єкт фіксації, що містить вказівник на знімок змісту, який ви додали.
@@ -38,7 +38,7 @@ title: Git - Гілки у кількох словах
 </div>
 <div class="paragraph">
 <p>Щоб це уявити, припустимо, що у вас є тека з трьома файлами, які ви додали та зафіксували.
-Додання файлів обчислює контрольну суму для кожного (SHA-1 хеш про котрий ми згадували в <a href="ch00/ch01-getting-started">Вступ</a>), зберігає версію файлу в сховищі Git (Git називає їх блобами), та додає їх контрольні суми до області додавання:</p>
+Додання файлів обчислює контрольну суму для кожного (SHA-1 хеш про котрий ми згадували в <a href="{{< relurl "book/uk/v2/ch00/ch01-getting-started" >}}">Вступ</a>), зберігає версію файлу в сховищі Git (Git називає їх блобами), та додає їх контрольні суми до області додавання:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Фіксація та її дерево.">
+<img src="{{< relurl "book/uk/v2/images/commit-and-tree.png" >}}" alt="Фіксація та її дерево.">
 </div>
 <div class="title">Рисунок 9. Фіксація як дерево</div>
 </div>
@@ -64,7 +64,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Фіксації та їх батьки.">
+<img src="{{< relurl "book/uk/v2/images/commits-and-parents.png" >}}" alt="Фіксації та їх батьки.">
 </div>
 <div class="title">Рисунок 10. Фіксації та їх батьки</div>
 </div>
@@ -92,7 +92,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="Гілка та її історія фіксацій.">
+<img src="{{< relurl "book/uk/v2/images/branch-and-history.png" >}}" alt="Гілка та її історія фіксацій.">
 </div>
 <div class="title">Рисунок 11. Гілка та її історія фіксацій</div>
 </div>
@@ -115,7 +115,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Дві гілки вказують на одну послідовність фіксацій.">
+<img src="{{< relurl "book/uk/v2/images/two-branches.png" >}}" alt="Дві гілки вказують на одну послідовність фіксацій.">
 </div>
 <div class="title">Рисунок 12. Дві гілки вказують на одну послідовність фіксацій</div>
 </div>
@@ -129,7 +129,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD вказує на гілку.">
+<img src="{{< relurl "book/uk/v2/images/head-to-master.png" >}}" alt="HEAD вказує на гілку.">
 </div>
 <div class="title">Рисунок 13. HEAD вказує на гілку</div>
 </div>
@@ -166,7 +166,7 @@ f30ab (HEAD -&gt; master, testing) add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD вказує на поточну гілку.">
+<img src="{{< relurl "book/uk/v2/images/head-to-testing.png" >}}" alt="HEAD вказує на поточну гілку.">
 </div>
 <div class="title">Рисунок 14. HEAD вказує на поточну гілку</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'Зробив зміни'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="Гілка HEAD пересувається уперед при фіксації.">
+<img src="{{< relurl "book/uk/v2/images/advance-testing.png" >}}" alt="Гілка HEAD пересувається уперед при фіксації.">
 </div>
 <div class="title">Рисунок 15. Гілка HEAD пересувається уперед при фіксації</div>
 </div>
@@ -197,7 +197,7 @@ $ git commit -a -m 'Зробив зміни'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD пересувається" width="коли ви отримуєте (checkout).">
+<img src="{{< relurl "book/uk/v2/images/checkout-master.png" >}}" alt="HEAD пересувається" width="коли ви отримуєте (checkout).">
 </div>
 <div class="title">Рисунок 16. HEAD пересувається, коли ви отримуєте (checkout)</div>
 </div>
@@ -234,14 +234,14 @@ $ git commit -a -m 'Зробив інші зміни'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Тепер історія вашого проекту розбіглася (<code>diverged</code>) (дивіться <a href="ch00/divergent_history">Історія, що розбіглася</a>).
+<p>Тепер історія вашого проекту розбіглася (<code>diverged</code>) (дивіться <a href="{{< relurl "book/uk/v2/ch00/divergent_history" >}}">Історія, що розбіглася</a>).
 Ви створили гілку, дещо в ній зробили, переключились на головну гілку та зробили там щось інше.
 Обидві зміни ізольовані в окремих гілках. Ви можете переключатись між цими гілками та злити їх, коли вони будуть готові.
 І все це ви зробили за допомогою простих команд <code>branch</code>, <code>checkout</code> та <code>commit</code>.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Історія" width="що розбіглася.">
+<img src="{{< relurl "book/uk/v2/images/advance-master.png" >}}" alt="Історія" width="що розбіглася.">
 </div>
 <div class="title">Рисунок 17. Історія, що розбіглася</div>
 </div>

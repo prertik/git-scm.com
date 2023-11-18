@@ -360,17 +360,17 @@ Masz różne możliwości, opiszemy więc kilka z nich.</p>
 Jednym z prostszych przepływów pracy jest scalenie zmian z twoją gałęzią <code>master</code>.
 W tym scenariuszu, posiadasz gałąź <code>master</code>, która zawiera stabilny kod.
 Kiedy masz zmiany w jednej z gałęzi tematycznych które wykonałeś, lub ktoś Ci przesłał a Ty je zweryfikowałeś, scalasz je z gałęzią <code>master</code>, usuwasz gałąź i kontynuujesz pracę.
-Jeżeli mielibyśmy repozytorium ze zmianami w dwóch gałęziach <code>ruby_client</code> oraz <code>php_client</code> (zob. <a href="ch00/merwf_a">Historia zmian z kilkoma gałęziami tematycznymi.</a>) i mielibyśmy scalić najpierw <code>ruby_client</code>, a w następnej kolejności <code>php_client</code>, to Twoja historia zmian wyglądała by podobnie do <a href="ch00/merwf_b">Po scaleniu gałęzi tematycznej.</a>.</p>
+Jeżeli mielibyśmy repozytorium ze zmianami w dwóch gałęziach <code>ruby_client</code> oraz <code>php_client</code> (zob. <a href="{{< relurl "book/pl/v2/ch00/merwf_a" >}}">Historia zmian z kilkoma gałęziami tematycznymi.</a>) i mielibyśmy scalić najpierw <code>ruby_client</code>, a w następnej kolejności <code>php_client</code>, to Twoja historia zmian wyglądała by podobnie do <a href="{{< relurl "book/pl/v2/ch00/merwf_b" >}}">Po scaleniu gałęzi tematycznej.</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Historia zmian z kilkoma gałęziami tematycznymi.">
+<img src="{{< relurl "book/pl/v2/images/merging-workflows-1.png" >}}" alt="Historia zmian z kilkoma gałęziami tematycznymi.">
 </div>
 <div class="title">Figure 73. Historia zmian z kilkoma gałęziami tematycznymi.</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Po scaleniu gałęzi tematycznej.">
+<img src="{{< relurl "book/pl/v2/images/merging-workflows-2.png" >}}" alt="Po scaleniu gałęzi tematycznej.">
 </div>
 <div class="title">Figure 74. Po scaleniu gałęzi tematycznej.</div>
 </div>
@@ -381,23 +381,23 @@ Jeżeli mielibyśmy repozytorium ze zmianami w dwóch gałęziach <code>ruby_cli
 <p>Jeżeli masz większą ilość programistów lub większy projekt, będziesz chciał pewnie używał przynajmniej dwufazowego cyklu scalania.
 W tym scenariuszu, posiadasz funkcjonujące już długo dwie gałęzie <code>master</code> oraz <code>develop</code>, z których <code>master</code> jest aktualizowana tylko z bardzo stabilnymi zmianami, a cały nowy kod jest włączany do gałęzi <code>develop</code>.
 Regularnie wysyłasz ("push") obie te gałęzie do publicznego repozytorium.
-Za każdym razem gdy masz nową gałąź tematyczną do zintegrowania (<a href="ch00/merwf_c">Przed scaleniem gałęzi tematycznej.</a>), włączasz ją do <code>develop</code> (<a href="ch00/merwf_d">Po scaleniu gałęzi tematycznej.</a>); a kiedy tagujesz kolejną wersję, przesuwasz <code>master</code> za pomocą fast-forward o punktu w którym jest gałąź <code>develop</code> (<a href="ch00/merwf_e">Po utworzeniu kolejnej wersji.</a>).</p>
+Za każdym razem gdy masz nową gałąź tematyczną do zintegrowania (<a href="{{< relurl "book/pl/v2/ch00/merwf_c" >}}">Przed scaleniem gałęzi tematycznej.</a>), włączasz ją do <code>develop</code> (<a href="{{< relurl "book/pl/v2/ch00/merwf_d" >}}">Po scaleniu gałęzi tematycznej.</a>); a kiedy tagujesz kolejną wersję, przesuwasz <code>master</code> za pomocą fast-forward o punktu w którym jest gałąź <code>develop</code> (<a href="{{< relurl "book/pl/v2/ch00/merwf_e" >}}">Po utworzeniu kolejnej wersji.</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Przed scaleniem gałęzi tematycznej.">
+<img src="{{< relurl "book/pl/v2/images/merging-workflows-3.png" >}}" alt="Przed scaleniem gałęzi tematycznej.">
 </div>
 <div class="title">Figure 75. Przed scaleniem gałęzi tematycznej.</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Po scaleniu gałęzi tematycznej.">
+<img src="{{< relurl "book/pl/v2/images/merging-workflows-4.png" >}}" alt="Po scaleniu gałęzi tematycznej.">
 </div>
 <div class="title">Figure 76. Po scaleniu gałęzi tematycznej.</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Po utworzeniu kolejnej wersji.">
+<img src="{{< relurl "book/pl/v2/images/merging-workflows-5.png" >}}" alt="Po utworzeniu kolejnej wersji.">
 </div>
 <div class="title">Figure 77. Po utworzeniu kolejnej wersji.</div>
 </div>
@@ -412,13 +412,13 @@ Wtedy jeżeli kod w znajdujący się w niej jest stabilny i przechodzi wszystkie
 <div class="paragraph">
 <p>
 Projekt Gita ma cztery długo funkcjonujące już gałęzie: <code>master</code>, <code>next</code>, <code>pu</code> (z ang. <em>proposed updates</em>, czyli proponowane zmiany) dla nowych funkcjonalności, oraz <code>maint</code> do wprowadzania poprawek z nowszej wersji na starszą.
-Kiedy nowe zmiany są dostarczone przez deweloperów, zbierane są do gałęzi tematycznych w repozytorium opiekuna, w sposób podobny do tego który opisałem (zob. <a href="ch00/merwf_f">Zarządzanie złożoną serią równoczesnych zmian w gałęziach tematycznych.</a>).
+Kiedy nowe zmiany są dostarczone przez deweloperów, zbierane są do gałęzi tematycznych w repozytorium opiekuna, w sposób podobny do tego który opisałem (zob. <a href="{{< relurl "book/pl/v2/ch00/merwf_f" >}}">Zarządzanie złożoną serią równoczesnych zmian w gałęziach tematycznych.</a>).
 W tym momencie, są one weryfikowane i sprawdzane czy mogą być użyte, lub czy nadal wymagają dalszych prac.
 Jeżeli są gotowe, są włączona do <code>next</code>, a ta gałąź jest wypychana dalej, tak aby każdy mógł wypróbować nowe funkcjonalności.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Zarządzanie złożoną serią równoczesnych zmian w gałęziach tematycznych.">
+<img src="{{< relurl "book/pl/v2/images/large-merges-1.png" >}}" alt="Zarządzanie złożoną serią równoczesnych zmian w gałęziach tematycznych.">
 </div>
 <div class="title">Figure 78. Zarządzanie złożoną serią równoczesnych zmian w gałęziach tematycznych.</div>
 </div>
@@ -429,7 +429,7 @@ Oznacza to, że <code>master</code> praktycznie zawsze przesuwa się do przodu, 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Włączanie gałęzi tematycznych do długo funkcjonujących gałęzi.">
+<img src="{{< relurl "book/pl/v2/images/large-merges-2.png" >}}" alt="Włączanie gałęzi tematycznych do długo funkcjonujących gałęzi.">
 </div>
 <div class="title">Figure 79. Włączanie gałęzi tematycznych do długo funkcjonujących gałęzi.</div>
 </div>
@@ -456,7 +456,7 @@ Jest to całkiem przydatne, w sytuacji gdy masz większą ilość zmian w gałę
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Przykładowa historia przez wybiórczym zaciąganiem zmian.">
+<img src="{{< relurl "book/pl/v2/images/rebasing-1.png" >}}" alt="Przykładowa historia przez wybiórczym zaciąganiem zmian.">
 </div>
 <div class="title">Figure 80. Przykładowa historia przez wybiórczym zaciąganiem zmian</div>
 </div>
@@ -477,7 +477,7 @@ Teraz Twoja historia zmian wygląda tak:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Historia po wybiórczym zaciągnięciu zmiany z gałęzi tematycznej.">
+<img src="{{< relurl "book/pl/v2/images/rebasing-2.png" >}}" alt="Historia po wybiórczym zaciągnięciu zmiany z gałęzi tematycznej.">
 </div>
 <div class="title">Figure 81. Historia po wybiórczym zaciągnięciu zmiany z gałęzi tematycznej.</div>
 </div>
@@ -510,7 +510,7 @@ The configuration setting is <code>rerere.enabled</code>, and it’s handy enoug
 <div class="paragraph">
 <p>If you need to, you can interact with the rerere cache using the <code>git rerere</code> command.
 When it’s invoked alone, Git checks its database of resolutions and tries to find a match with any current merge conflicts and resolve them (although this is done automatically if <code>rerere.enabled</code> is set to <code>true</code>).
-There are also subcommands to see what will be recorded, to erase specific resolution from the cache, and to clear the entire cache. We will cover rerere in more detail in <a href="ch00/_rerere">Rerere</a>.</p>
+There are also subcommands to see what will be recorded, to erase specific resolution from the cache, and to clear the entire cache. We will cover rerere in more detail in <a href="{{< relurl "book/pl/v2/ch00/_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -519,7 +519,7 @@ There are also subcommands to see what will be recorded, to erase specific resol
 <div class="paragraph">
 <p>
 Kiedy zdecydowałeś, że wydasz nową wersję, najprawdopodobniej będziesz chciał stworzyć etykietę, tak abyś mógł odtworzyć tą wersję w każdym momencie.
-Możesz stworzyć nową etykietę, tak jak zostało to opisane w rozdziale <a href="ch00/_git_basics_chapter">Podstawy Gita</a>.
+Możesz stworzyć nową etykietę, tak jak zostało to opisane w rozdziale <a href="{{< relurl "book/pl/v2/ch00/_git_basics_chapter" >}}">Podstawy Gita</a>.
 Jeżeli zdecydujesz się na utworzenie etykiety jako opiekun, komenda powinna wyglądać podobnie do poniższej:</p>
 </div>
 <div class="listingblock">

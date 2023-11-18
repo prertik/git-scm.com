@@ -52,7 +52,7 @@ Ponadto Git utworzy Twoją własną lokalną gałąź <code>master</code> zaczyn
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Server and local repositories after cloning.">
+<img src="{{< relurl "book/pl/v2/images/remote-branches-1.png" >}}" alt="Server and local repositories after cloning.">
 </div>
 <div class="title">Figure 30. Serwer i lokalne repozytoria po klonowaniu</div>
 </div>
@@ -62,7 +62,7 @@ Co więcej, dopóki nie skontaktujesz się z serwerem zdalnym, Twój wskaźnik <
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Local and remote work can diverge.">
+<img src="{{< relurl "book/pl/v2/images/remote-branches-2.png" >}}" alt="Local and remote work can diverge.">
 </div>
 <div class="title">Figure 31. Lokalna i zdalna praca może się rozbiegać</div>
 </div>
@@ -72,19 +72,19 @@ Polecenie to sprawdzi który serwer to “origin” (w tym wypadku <code>git.our
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` updates your remote references.">
+<img src="{{< relurl "book/pl/v2/images/remote-branches-3.png" >}}" alt="`git fetch` updates your remote references.">
 </div>
 <div class="title">Figure 32. Polecenie <code>git fetch</code> aktualizuje zdalne referencje</div>
 </div>
 <div class="paragraph">
 <p>Aby zademonstrować posiadanie kilku serwerów zdalnych oraz jak wyglądają gałęzie zdalne dla tych zdalnych projektów, przyjmijmy że posiadasz kolejny serwer Gita używany tylko do rozwoju przez jeden z Twoich zespołów.
 Ten serwer jest pod adresem <code>git.team1.ourcompany.com</code>.
-Możesz dodać go jako nowe zdalne odniesienie do projektu nad którym obecnie pracujesz poprzez wykonanie komendy <code>git remote add</code> jak zostało omówione w <a href="ch00/_git_basics_chapter">Podstawy Gita</a>.
+Możesz dodać go jako nowe zdalne odniesienie do projektu nad którym obecnie pracujesz poprzez wykonanie komendy <code>git remote add</code> jak zostało omówione w <a href="{{< relurl "book/pl/v2/ch00/_git_basics_chapter" >}}">Podstawy Gita</a>.
 Nazwij to odniesienie <code>teamone</code>, co będzie Twoim skrótem dla całego adresu URL.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Adding another server as a remote.">
+<img src="{{< relurl "book/pl/v2/images/remote-branches-4.png" >}}" alt="Adding another server as a remote.">
 </div>
 <div class="title">Figure 33. Dodanie kolejnego serwera jako zdalny</div>
 </div>
@@ -94,7 +94,7 @@ Ponieważ ten serwer posiada podzbiór danych które Twój serwer <code>origin</
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch for `teamone/master`.">
+<img src="{{< relurl "book/pl/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch for `teamone/master`.">
 </div>
 <div class="title">Figure 34. Śledzenie zdalnej gałęzi dla <code>teamone/master</code>
 </div>
@@ -126,7 +126,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Jest to tak naprawdę skrót.
 Git automatycznie rozwija nazwę gałęzi <code>serverfix</code> do <code>refs/heads/serverfix:refs/heads/serverfix</code>, co oznacza “Weź moją lokalną gałąź serverfix i wypchnij ją aby zaktualizować zdalną gałąź serverfix.”
-W szczegółach zajmiemy się częścią <code>refs/heads/</code> w rozdziale <a href="ch00/_git_internals">Mechanizmy wewnętrzne w Git</a>, aczkolwiek możesz ją teraz pominąć.
+W szczegółach zajmiemy się częścią <code>refs/heads/</code> w rozdziale <a href="{{< relurl "book/pl/v2/ch00/_git_internals" >}}">Mechanizmy wewnętrzne w Git</a>, aczkolwiek możesz ją teraz pominąć.
 Możesz również wykonać <code>git push origin serverfix:serverfix</code>, co wykonuje to samo – mówiąc, “Weź serverfix i stwórz zdalnie serverfix.”
 Możesz wykorzystać ten format do wypchnięcia gałęzi lokalnej na gałąź zdalną która nazywa się inaczej.
 Jeśli nie chcesz nazywać jej <code>serverfix</code> na serwerze, możesz zamiast tego wykonać <code>git push origin serverfix:awesomebranch</code> aby wypchnąć lokalną gałąź <code>serverfix</code> na gałąź <code>awesomebranch</code> w projekcie zdalnym.</p>
@@ -146,7 +146,7 @@ Jeśli nie chcesz nazywać jej <code>serverfix</code> na serwerze, możesz zamia
 <p>Jeśli nie chcesz wpisywać tego za każdym razem kiedy wypychasz zmiany, możesz ustawić “cache danych autoryzacyjnych”. Najprościej jest je przechować w pamięci przez kilka minut, co możesz z łatwością ustawić wykonując <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>Po więcej informacji na temat dostępnych różnych opcji cache’owania, spójrz na <a href="ch00/_credential_caching">Credential Storage</a>.</p>
+<p>Po więcej informacji na temat dostępnych różnych opcji cache’owania, spójrz na <a href="{{< relurl "book/pl/v2/ch00/_credential_caching" >}}">Credential Storage</a>.</p>
 </div>
 </td>
 </tr>

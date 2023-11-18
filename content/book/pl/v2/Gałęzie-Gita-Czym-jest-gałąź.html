@@ -24,13 +24,13 @@ Prawie każdy system kontroli wersji posiada wsparcie dla gałęzi. Rozgałęzie
 <p>Żeby naprawdę zrozumieć sposób, w jaki Git obsługuje gałęzie, trzeba cofnąć się o krok i przyjrzeć temu, w jaki sposób Git przechowuje dane.</p>
 </div>
 <div class="paragraph">
-<p>Jak może pamiętasz z rozdziału <a href="ch00/_getting_started">Pierwsze kroki</a>, Git nie przechowuje danych jako serii zmian i różnic, ale jako zestaw migawek.</p>
+<p>Jak może pamiętasz z rozdziału <a href="{{< relurl "book/pl/v2/ch00/_getting_started" >}}">Pierwsze kroki</a>, Git nie przechowuje danych jako serii zmian i różnic, ale jako zestaw migawek.</p>
 </div>
 <div class="paragraph">
 <p>Kiedy zatwierdzasz zmiany w Gicie, ten zapisuje obiekt zmian (commit), który z kolei zawiera wskaźnik na migawkę zawartości, która w danej chwili znajduje się w poczekalni, metadane autora i opisu oraz zero lub więcej wskaźników na zmiany, które były bezpośrednimi rodzicami zmiany właśnie zatwierdzanej: brak rodziców w przypadku pierwszej, jeden w przypadku zwykłej, oraz kilka w przypadku zmiany powstałej wskutek scalenia dwóch lub więcej gałęzi.</p>
 </div>
 <div class="paragraph">
-<p>Aby lepiej to zobrazować, załóżmy, że posiadasz katalog zawierający trzy pliki, które umieszczasz w poczekalni, a następnie zatwierdzasz zmiany. Umieszczenie w poczekalni plików powoduje wyliczenie sumy kontrolnej każdego z nich (skrótu SHA-1 wspomnianego w rozdziale <a href="ch00/_getting_started">Pierwsze kroki</a>), zapisanie wersji plików w repozytorium (Git nazywa je blobami) i dodanie sumy kontrolnej do poczekalni:</p>
+<p>Aby lepiej to zobrazować, załóżmy, że posiadasz katalog zawierający trzy pliki, które umieszczasz w poczekalni, a następnie zatwierdzasz zmiany. Umieszczenie w poczekalni plików powoduje wyliczenie sumy kontrolnej każdego z nich (skrótu SHA-1 wspomnianego w rozdziale <a href="{{< relurl "book/pl/v2/ch00/_getting_started" >}}">Pierwsze kroki</a>), zapisanie wersji plików w repozytorium (Git nazywa je blobami) i dodanie sumy kontrolnej do poczekalni:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -46,7 +46,7 @@ $ git commit -m 'initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
+<img src="{{< relurl "book/pl/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
 </div>
 <div class="title">Figure 9. Zmiany i ich drzewo</div>
 </div>
@@ -55,7 +55,7 @@ $ git commit -m 'initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
+<img src="{{< relurl "book/pl/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
 </div>
 <div class="title">Figure 10. Zmiany i ich rodzice</div>
 </div>
@@ -81,7 +81,7 @@ polecenie <code>git init</code> domyślnie tworzy ją i większość ludzi nie p
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
+<img src="{{< relurl "book/pl/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
 </div>
 <div class="title">Figure 11. Gałąź i jej historia zmian</div>
 </div>
@@ -101,7 +101,7 @@ Co się stanie, jeśli utworzysz nową gałąź? Cóż, utworzony zostanie nowy 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
+<img src="{{< relurl "book/pl/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
 </div>
 <div class="title">Figure 12. Dwie gałęzie wskazują na ten sam zestaw zmian</div>
 </div>
@@ -110,7 +110,7 @@ Co się stanie, jeśli utworzysz nową gałąź? Cóż, utworzony zostanie nowy 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
+<img src="{{< relurl "book/pl/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
 </div>
 <div class="title">Figure 13. HEAD wskazuje na gałąź, na której się znajdujesz.</div>
 </div>
@@ -149,7 +149,7 @@ Przełączmy się zatem do nowo utworzonej gałęzi testing:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
+<img src="{{< relurl "book/pl/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
 </div>
 <div class="title">Figure 14. HEAD wskazuje na bierzącą gałąź</div>
 </div>
@@ -165,7 +165,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
+<img src="{{< relurl "book/pl/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
 </div>
 <div class="title">Figure 15. Gałąź wskazywana przez HEAD przesuwa się naprzód po każdym zatwierdzeniu zmian.</div>
 </div>
@@ -180,7 +180,7 @@ Przełączmy się zatem z powrotem na gałąź master:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
+<img src="{{< relurl "book/pl/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
 </div>
 <div class="title">Figure 16. HEAD moves when you checkout</div>
 </div>
@@ -216,12 +216,12 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Teraz historia Twojego projektu została rozszczepiona (zobacz  <a href="ch00/divergent_history">Rozwidlona historia gałęzi</a>).
+<p>Teraz historia Twojego projektu została rozszczepiona (zobacz  <a href="{{< relurl "book/pl/v2/ch00/divergent_history" >}}">Rozwidlona historia gałęzi</a>).
 Stworzyłeś i przełączyłeś się na gałąź, wykonałeś na niej pracę, a następnie powróciłeś na gałąź główną i wykonałeś inną pracę. Oba zestawy zmian są od siebie odizolowane w odrębnych gałęziach: możesz przełączać się pomiędzy nimi oraz scalić je razem, kiedy będziesz na to gotowy. A wszystko to wykonałeś za pomocą prostych poleceń <code>branch</code> i <code>checkout</code> i <code>commit</code>.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Divergent history.">
+<img src="{{< relurl "book/pl/v2/images/advance-master.png" >}}" alt="Divergent history.">
 </div>
 <div class="title">Figure 17. Rozwidlona historia gałęzi</div>
 </div>

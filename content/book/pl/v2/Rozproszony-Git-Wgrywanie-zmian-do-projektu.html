@@ -64,7 +64,7 @@ Git dostarcza łatwy sposób do tego – zanim wgrasz zmiany, uruchom <code>git 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="Wynik polecenia `git diff --check`.">
+<img src="{{< relurl "book/pl/v2/images/git-diff-check.png" >}}" alt="Wynik polecenia `git diff --check`.">
 </div>
 <div class="title">Figure 57. Wynik polecenia <code>git diff --check</code>.</div>
 </div>
@@ -75,10 +75,10 @@ Git dostarcza łatwy sposób do tego – zanim wgrasz zmiany, uruchom <code>git 
 <p>Następnie spróbuj w każdym commit-ie zawrzeć logicznie odrębny zestaw zmian.
 Jeżeli możesz, twórz nie za duże łatki – nie programuj cały weekend poprawiając pięć różnych błędów, aby następnie wszystkie je wypuścić w jednym dużym commit-cie w poniedziałek.
 Nawet jeżeli nie zatwierdzasz zmian w ciągu weekendu, użyj przechowalni ("stage"), aby w poniedziałek rozdzielić zmiany na przynajmniej jeden commit dla każdego błędu, dodając użyteczny komentarz do każdego commitu.
-Jeżeli niektóre ze zmian modyfikują ten sam plik, spróbuj użyć komendy <code>git add --patch</code>, aby częściowo dodać zmiany do przechowalni (dokładniej opisane to jest w rozdziale <a href="ch00/_interactive_staging">Interaktywne używanie przechowali</a>).
+Jeżeli niektóre ze zmian modyfikują ten sam plik, spróbuj użyć komendy <code>git add --patch</code>, aby częściowo dodać zmiany do przechowalni (dokładniej opisane to jest w rozdziale <a href="{{< relurl "book/pl/v2/ch00/_interactive_staging" >}}">Interaktywne używanie przechowali</a>).
 Końcowa migawka projektu w gałęzi jest identyczna, nieważne czy zrobisz jeden czy pięć commitów, więc spróbuj ułatwić życie swoim współpracownikom kiedy będą musieli przeglądać Twoje zmiany.
 Takie podejście ułatwia również pobranie lub przywrócenie pojedynczych zestawów zmian w razie potrzeby.
-Rozdział <a href="ch00/_rewriting_history">Przepisywanie historii</a> opisuje kilka ciekawych trików dotyczących nadpisywania historii zmian i interaktywnego dodawania plików do przechowalni – używaj ich do utrzymania czystej i przejrzystej historii.</p>
+Rozdział <a href="{{< relurl "book/pl/v2/ch00/_rewriting_history" >}}">Przepisywanie historii</a> opisuje kilka ciekawych trików dotyczących nadpisywania historii zmian i interaktywnego dodawania plików do przechowalni – używaj ich do utrzymania czystej i przejrzystej historii.</p>
 </div>
 <div class="paragraph">
 <p>Ostatnią rzeczą na którą należy zwrócić uwagę są komentarze do zmian.
@@ -206,7 +206,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="Rozbieżna historia w repozytorium Johna.">
+<img src="{{< relurl "book/pl/v2/images/small-team-1.png" >}}" alt="Rozbieżna historia w repozytorium Johna.">
 </div>
 <div class="title">Figure 58. Rozbieżna historia w repozytorium Johna.</div>
 </div>
@@ -226,7 +226,7 @@ Merge made by recursive.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="Repozytorium Johna po połączeniu z `origin/master`.">
+<img src="{{< relurl "book/pl/v2/images/small-team-2.png" >}}" alt="Repozytorium Johna po połączeniu z `origin/master`.">
 </div>
 <div class="title">Figure 59. Repozytorium Johna po połączeniu z <code>origin/master</code>.</div>
 </div>
@@ -246,7 +246,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="Historia zmian Johna po wypchnięciu ich na serwer `origin`.">
+<img src="{{< relurl "book/pl/v2/images/small-team-3.png" >}}" alt="Historia zmian Johna po wypchnięciu ich na serwer `origin`.">
 </div>
 <div class="title">Figure 60. Historia zmian Johna po wypchnięciu ich na serwer <code>origin</code>.</div>
 </div>
@@ -257,7 +257,7 @@ Nie pobrała jeszcze zmian Johna, więc jej historia zmian wygląda tak:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Gałąź tematyczna Jessiki.">
+<img src="{{< relurl "book/pl/v2/images/small-team-4.png" >}}" alt="Gałąź tematyczna Jessiki.">
 </div>
 <div class="title">Figure 61. Gałąź tematyczna Jessiki.</div>
 </div>
@@ -279,7 +279,7 @@ Historia zmian u Jessiki wygląda następująco:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="Historia zmian u Jessiki po pobraniu zmian Johna.">
+<img src="{{< relurl "book/pl/v2/images/small-team-5.png" >}}" alt="Historia zmian u Jessiki po pobraniu zmian Johna.">
 </div>
 <div class="title">Figure 62. Historia zmian u Jessiki po pobraniu zmian Johna.</div>
 </div>
@@ -298,7 +298,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 </div>
 <div class="paragraph">
-<p>Składnia <code>issue54..origin/master</code> jest filtrem logu, który prosi Gita o pokazanie tylko listy commitów, które są na drugiej gałęzi (w tym przypadku <code>origin/master</code>), które nie są na pierwszej gałęzi (w tym przypadku <code>issue54</code>). Omówimy tę składnię szczegółowo w <a href="ch00/_commit_ranges">Zakresy zmian</a>.</p>
+<p>Składnia <code>issue54..origin/master</code> jest filtrem logu, który prosi Gita o pokazanie tylko listy commitów, które są na drugiej gałęzi (w tym przypadku <code>origin/master</code>), które nie są na pierwszej gałęzi (w tym przypadku <code>issue54</code>). Omówimy tę składnię szczegółowo w <a href="{{< relurl "book/pl/v2/ch00/_commit_ranges" >}}">Zakresy zmian</a>.</p>
 </div>
 <div class="paragraph">
 <p>Na razie widzimy w wyniku powyższego polecenia, że jest jeden commit Johna, którego nie scaliła Jessicą.
@@ -348,7 +348,7 @@ Merge made by recursive.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="Historia zmian u Jessiki po włączeniu zmian Johna.">
+<img src="{{< relurl "book/pl/v2/images/small-team-6.png" >}}" alt="Historia zmian u Jessiki po włączeniu zmian Johna.">
 </div>
 <div class="title">Figure 63. Historia zmian u Jessiki po włączeniu zmian Johna.</div>
 </div>
@@ -368,7 +368,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="Historia zmian u Jessiki po wypchnięciu zmian na serwer.">
+<img src="{{< relurl "book/pl/v2/images/small-team-7.png" >}}" alt="Historia zmian u Jessiki po wypchnięciu zmian na serwer.">
 </div>
 <div class="title">Figure 64. Historia zmian u Jessiki po wypchnięciu zmian na serwer.</div>
 </div>
@@ -380,7 +380,7 @@ Zazwyczaj sekwencja będzie wyglądała mniej więcej tak:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="Sekwencja zdarzeń dla prostego przepływu zmian między programistami.">
+<img src="{{< relurl "book/pl/v2/images/small-team-flow.png" >}}" alt="Sekwencja zdarzeń dla prostego przepływu zmian między programistami.">
 </div>
 <div class="title">Figure 65. Sekwencja zdarzeń dla prostego przepływu zmian między programistami.</div>
 </div>
@@ -458,7 +458,7 @@ $ git commit -am 'add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Początkowa historia zmian u Jessiki.">
+<img src="{{< relurl "book/pl/v2/images/managed-team-1.png" >}}" alt="Początkowa historia zmian u Jessiki.">
 </div>
 <div class="title">Figure 66. Początkowa historia zmian u Jessiki.</div>
 </div>
@@ -500,7 +500,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>Jest to nazywane <em>refspec</em>.
-Zobacz sekcję <a href="ch00/_refspec">Refspec</a> aby dowiedzieć się więcej o <em>refspec</em> i o rzeczach, które można z nimi zrobić.
+Zobacz sekcję <a href="{{< relurl "book/pl/v2/ch00/_refspec" >}}">Refspec</a> aby dowiedzieć się więcej o <em>refspec</em> i o rzeczach, które można z nimi zrobić.
 Zwróć uwagę również na flagę <code>-u</code>; jest to skrót od flagi <code>--set-upstream</code>, która konfiguruje gałęzie aby później łatwiej wypychało się pobierało zmiany.</p>
 </div>
 <div class="paragraph">
@@ -561,7 +561,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="Historia zmian u Jessiki po wprowadzeniu zmian w gałęzi.">
+<img src="{{< relurl "book/pl/v2/images/managed-team-2.png" >}}" alt="Historia zmian u Jessiki po wprowadzeniu zmian w gałęzi.">
 </div>
 <div class="title">Figure 67. Historia zmian u Jessiki po wprowadzeniu zmian w gałęzi.</div>
 </div>
@@ -571,7 +571,7 @@ Po włączeniu tych gałęzi do głównej, zostaną pobrane zmiany, tworząc his
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="Historia zmian u Jessiki po włączeniu jej obu gałęzi.">
+<img src="{{< relurl "book/pl/v2/images/managed-team-3.png" >}}" alt="Historia zmian u Jessiki po włączeniu jej obu gałęzi.">
 </div>
 <div class="title">Figure 68. Historia zmian u Jessiki po włączeniu jej obu gałęzi.</div>
 </div>
@@ -582,7 +582,7 @@ Sekwencja przepływu pracy, którą tutaj zobaczyłeś, jest podobna do poniższ
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="Podstawowa sekwencja omawianego przepływu pracy w zespole zarządzanym.">
+<img src="{{< relurl "book/pl/v2/images/managed-team-flow.png" >}}" alt="Podstawowa sekwencja omawianego przepływu pracy w zespole zarządzanym.">
 </div>
 <div class="title">Figure 69. Podstawowa sekwencja omawianego przepływu pracy w zespole zarządzanym.</div>
 </div>
@@ -620,7 +620,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Możesz chcieć użyć <code>rebase -i</code>, aby złączyć swoje zmiany do jednego commita, lub przeorganizować je, tak aby poprawka była łatwiejsza do zweryfikowania przez opiekuna - zobacz sekcję <a href="ch00/_rewriting_history">Przepisywanie historii</a>, aby dowiedzieć się więcej o tego typu operacjach.</p>
+<p>Możesz chcieć użyć <code>rebase -i</code>, aby złączyć swoje zmiany do jednego commita, lub przeorganizować je, tak aby poprawka była łatwiejsza do zweryfikowania przez opiekuna - zobacz sekcję <a href="{{< relurl "book/pl/v2/ch00/_rewriting_history" >}}">Przepisywanie historii</a>, aby dowiedzieć się więcej o tego typu operacjach.</p>
 </div>
 </td>
 </tr>
@@ -649,7 +649,7 @@ Jeżeli opiekun włączy, zmieni bazę lub pobierze część Twoich zmian, będz
 <div class="paragraph">
 <p>
 Kiedy wgrasz wprowadzone zmiany do swojego rozwidlenia projektu, powinieneś powiadomić o tym opiekuna.
-Jest to często nazywane operacją <em>pull request</em> i możesz ją wykonać albo poprzez stronę internetową – GitHub ma własny mechanizm "Pull Request", który omówimy w rodziale <a href="ch00/_github">GitHub</a> – albo wykonując komendę <code>git request-pull</code> i ręcznie wysyłając jej wynik e-mailem do opiekuna projektu.</p>
+Jest to często nazywane operacją <em>pull request</em> i możesz ją wykonać albo poprzez stronę internetową – GitHub ma własny mechanizm "Pull Request", który omówimy w rodziale <a href="{{< relurl "book/pl/v2/ch00/_github" >}}">GitHub</a> – albo wykonując komendę <code>git request-pull</code> i ręcznie wysyłając jej wynik e-mailem do opiekuna projektu.</p>
 </div>
 <div class="paragraph">
 <p>Komenda <code>request-pull</code> pobiera docelową gałąź, do której chcesz wysłać zmiany, oraz adres URL repozytorium Gita, z którego chcesz pobrać zmiany, a następnie generuje podsumowanie zmian, które będziesz wysyłał.
@@ -697,7 +697,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="Początkowa historia zmian z poprawkami z gałęzi `featureB`.">
+<img src="{{< relurl "book/pl/v2/images/public-small-1.png" >}}" alt="Początkowa historia zmian z poprawkami z gałęzi `featureB`.">
 </div>
 <div class="title">Figure 70. Początkowa historia zmian z poprawkami z gałęzi <code>featureB</code>.</div>
 </div>
@@ -717,7 +717,7 @@ $ git push -f myfork featureA</code></pre>
 </div>
 <div id="psp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="Historia zmian po pracach na gałęzi `featureA`.">
+<img src="{{< relurl "book/pl/v2/images/public-small-2.png" >}}" alt="Historia zmian po pracach na gałęzi `featureA`.">
 </div>
 <div class="title">Figure 71. Historia zmian po pracach na gałęzi <code>featureA</code>.</div>
 </div>
@@ -752,7 +752,7 @@ Również opcja <code>--no-commit</code> może być przydatna do opóźnienia co
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="Historia zmian po zmianach w gałęzi `featureBv2`.">
+<img src="{{< relurl "book/pl/v2/images/public-small-3.png" >}}" alt="Historia zmian po zmianach w gałęzi `featureBv2`.">
 </div>
 <div class="title">Figure 72. Historia zmian po zmianach w gałęzi <code>featureBv2</code>.</div>
 </div>

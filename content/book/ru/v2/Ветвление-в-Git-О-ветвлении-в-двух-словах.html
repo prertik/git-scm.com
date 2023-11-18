@@ -30,7 +30,7 @@ title: Git - О ветвлении в двух словах
 <p>Для точного понимания механизма ветвлений, необходимо вернуться назад и изучить то, как Git хранит данные.</p>
 </div>
 <div class="paragraph">
-<p>Как вы можете помнить из <a href="ch00/what_is_git_section">Что такое Git?</a>, Git не хранит данные в виде последовательности изменений, он использует набор снимков (snapshot).</p>
+<p>Как вы можете помнить из <a href="{{< relurl "book/ru/v2/ch00/what_is_git_section" >}}">Что такое Git?</a>, Git не хранит данные в виде последовательности изменений, он использует набор снимков (snapshot).</p>
 </div>
 <div class="paragraph">
 <p>Когда вы делаете коммит, Git сохраняет его в виде объекта, который содержит указатель на снимок (snapshot) подготовленных данных.
@@ -38,7 +38,7 @@ title: Git - О ветвлении в двух словах
 </div>
 <div class="paragraph">
 <p>Предположим, у вас есть каталог с тремя файлами и вы добавляете их все в индекс и создаёте коммит.
-Во время индексации вычисляется контрольная сумма каждого файла (SHA-1 как мы узнали из <a href="ch00/what_is_git_section">Что такое Git?</a>), затем каждый файл сохраняется в репозиторий (Git называет такой файл <em>блоб</em> — большой бинарный объект), а контрольная сумма попадёт в индекс:</p>
+Во время индексации вычисляется контрольная сумма каждого файла (SHA-1 как мы узнали из <a href="{{< relurl "book/ru/v2/ch00/what_is_git_section" >}}">Что такое Git?</a>), затем каждый файл сохраняется в репозиторий (Git называет такой файл <em>блоб</em> — большой бинарный объект), а контрольная сумма попадёт в индекс:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Коммит и его дерево">
+<img src="{{< relurl "book/ru/v2/images/commit-and-tree.png" >}}" alt="Коммит и его дерево">
 </div>
 <div class="title">Рисунок 9. Коммит и его дерево</div>
 </div>
@@ -64,7 +64,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Коммит и его родители">
+<img src="{{< relurl "book/ru/v2/images/commits-and-parents.png" >}}" alt="Коммит и его родители">
 </div>
 <div class="title">Рисунок 10. Коммит и его родители</div>
 </div>
@@ -92,7 +92,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="Ветка и история коммитов">
+<img src="{{< relurl "book/ru/v2/images/branch-and-history.png" >}}" alt="Ветка и история коммитов">
 </div>
 <div class="title">Рисунок 11. Ветка и история коммитов</div>
 </div>
@@ -115,7 +115,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Две ветки указывают на одну и ту же последовательность коммитов">
+<img src="{{< relurl "book/ru/v2/images/two-branches.png" >}}" alt="Две ветки указывают на одну и ту же последовательность коммитов">
 </div>
 <div class="title">Рисунок 12. Две ветки указывают на одну и ту же последовательность коммитов</div>
 </div>
@@ -129,7 +129,7 @@ $ git commit -m 'Initial commit'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD указывает на ветку">
+<img src="{{< relurl "book/ru/v2/images/head-to-master.png" >}}" alt="HEAD указывает на ветку">
 </div>
 <div class="title">Рисунок 13. HEAD указывает на ветку</div>
 </div>
@@ -166,7 +166,7 @@ f30ab (HEAD -&gt; master, testing) Add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD указывает на текущую ветку">
+<img src="{{< relurl "book/ru/v2/images/head-to-testing.png" >}}" alt="HEAD указывает на текущую ветку">
 </div>
 <div class="title">Рисунок 14. HEAD указывает на текущую ветку</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="Указатель на ветку HEAD переместился вперёд после коммита">
+<img src="{{< relurl "book/ru/v2/images/advance-testing.png" >}}" alt="Указатель на ветку HEAD переместился вперёд после коммита">
 </div>
 <div class="title">Рисунок 15. Указатель на ветку HEAD переместился вперёд после коммита</div>
 </div>
@@ -221,7 +221,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD перемещается когда вы делаете checkout">
+<img src="{{< relurl "book/ru/v2/images/checkout-master.png" >}}" alt="HEAD перемещается когда вы делаете checkout">
 </div>
 <div class="title">Рисунок 16. HEAD перемещается когда вы делаете checkout</div>
 </div>
@@ -257,14 +257,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Теперь история вашего проекта разошлась (см <a href="ch00/rdivergent_history">Разветвлённая история</a>).
+<p>Теперь история вашего проекта разошлась (см <a href="{{< relurl "book/ru/v2/ch00/rdivergent_history" >}}">Разветвлённая история</a>).
 Вы создали ветку и переключились на неё, поработали, а затем вернулись в основную ветку и поработали в ней.
 Эти изменения изолированы друг от друга: вы можете свободно переключаться туда и обратно, а когда понадобится — объединить их.
 И всё это делается простыми командами: <code>branch</code>, <code>checkout</code> и <code>commit</code>.</p>
 </div>
 <div id="rdivergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Разветвлённая история">
+<img src="{{< relurl "book/ru/v2/images/advance-master.png" >}}" alt="Разветвлённая история">
 </div>
 <div class="title">Рисунок 17. Разветвлённая история</div>
 </div>

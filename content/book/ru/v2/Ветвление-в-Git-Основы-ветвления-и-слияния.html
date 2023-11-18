@@ -63,7 +63,7 @@ title: Git - Основы ветвления и слияния
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Простая история коммитов">
+<img src="{{< relurl "book/ru/v2/images/basic-branching-1.png" >}}" alt="Простая история коммитов">
 </div>
 <div class="title">Рисунок 18. Простая история коммитов</div>
 </div>
@@ -88,7 +88,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Создание нового указателя ветки">
+<img src="{{< relurl "book/ru/v2/images/basic-branching-2.png" >}}" alt="Создание нового указателя ветки">
 </div>
 <div class="title">Рисунок 19. Создание нового указателя ветки</div>
 </div>
@@ -104,7 +104,7 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="Ветка iss53 двигается вперед">
+<img src="{{< relurl "book/ru/v2/images/basic-branching-3.png" >}}" alt="Ветка iss53 двигается вперед">
 </div>
 <div class="title">Рисунок 20. Ветка iss53 движется вперед</div>
 </div>
@@ -116,7 +116,7 @@ $ git commit -a -m 'Create new footer [issue 53]'</code></pre>
 <div class="paragraph">
 <p>Имейте в виду, что если рабочий каталог или индекс содержат незафиксированные изменения, конфликтующие с веткой, на которую вы хотите переключиться, то Git не позволит переключить ветки.
 Лучше всего переключаться из чистого рабочего состояния проекта: все изменённые файлы добавить в индекс и сделать коммит.
-Есть способы обойти это (припрятать изменения (stash) или добавить их в последний коммит (amend)), но об этом мы поговорим позже в разделе <a href="ch00/r_git_stashing">Припрятывание и очистка</a> главы 7.
+Есть способы обойти это (припрятать изменения (stash) или добавить их в последний коммит (amend)), но об этом мы поговорим позже в разделе <a href="{{< relurl "book/ru/v2/ch00/r_git_stashing" >}}">Припрятывание и очистка</a> главы 7.
 Теперь предположим, что вы зафиксировали все свои изменения и можете переключиться на ветку <code>master</code>:</p>
 </div>
 <div class="listingblock">
@@ -146,7 +146,7 @@ $ git commit -a -m 'Fix broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="Ветка hotfix основана на ветке `master`">
+<img src="{{< relurl "book/ru/v2/images/basic-branching-4.png" >}}" alt="Ветка hotfix основана на ветке `master`">
 </div>
 <div class="title">Рисунок 21. Ветка hotfix основана на ветке <code>master</code>
 </div>
@@ -177,7 +177,7 @@ Git просто переместил указатель ветки вперед
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="`master` перемотан до `hotfix`">
+<img src="{{< relurl "book/ru/v2/images/basic-branching-5.png" >}}" alt="`master` перемотан до `hotfix`">
 </div>
 <div class="title">Рисунок 22. <code>master</code> перемотан до <code>hotfix</code>
 </div>
@@ -208,7 +208,7 @@ $ git commit -a -m 'Finish the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="Продолжение работы над `iss53`">
+<img src="{{< relurl "book/ru/v2/images/basic-branching-6.png" >}}" alt="Продолжение работы над `iss53`">
 </div>
 <div class="title">Рисунок 23. Продолжение работы над <code>iss53</code>
 </div>
@@ -244,7 +244,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Использование трёх снимков при слиянии">
+<img src="{{< relurl "book/ru/v2/images/basic-merging-1.png" >}}" alt="Использование трёх снимков при слиянии">
 </div>
 <div class="title">Рисунок 24. Использование трёх снимков при слиянии</div>
 </div>
@@ -254,7 +254,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Коммит слияния">
+<img src="{{< relurl "book/ru/v2/images/basic-merging-2.png" >}}" alt="Коммит слияния">
 </div>
 <div class="title">Рисунок 25. Коммит слияния</div>
 </div>
@@ -369,7 +369,7 @@ Hit return to start merge resolution tool (opendiff):</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Мы рассмотрим более продвинутые инструменты для разрешения сложных конфликтов слияния в разделе <a href="ch00/r_advanced_merging">Продвинутое слияние</a> главы 7.</p>
+<p>Мы рассмотрим более продвинутые инструменты для разрешения сложных конфликтов слияния в разделе <a href="{{< relurl "book/ru/v2/ch00/r_advanced_merging" >}}">Продвинутое слияние</a> главы 7.</p>
 </div>
 </td>
 </tr>

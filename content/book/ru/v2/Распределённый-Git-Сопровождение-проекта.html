@@ -370,17 +370,17 @@ $ git diff 36c7db</code></pre>
 Когда работа в тематической ветке завершена или вы проверили чью-то работу, вы сливаете её в ветку <code>master</code> и удаляете, затем процесс повторяется.</p>
 </div>
 <div class="paragraph">
-<p>Если в репозитории присутствуют две ветки <code>ruby_client</code> и <code>php_client</code> с проделанной работой, как показано на рисунке <a href="ch00/rmerwf_a">История с несколькими тематическими ветками</a>, и вы сначала сливаете ветку <code>ruby_client</code>, а затем <code>php_client</code>, то состояние вашего репозитория будет выглядеть как показано на рисунке <a href="ch00/rmerwf_b">Слияние тематической ветки</a>.</p>
+<p>Если в репозитории присутствуют две ветки <code>ruby_client</code> и <code>php_client</code> с проделанной работой, как показано на рисунке <a href="{{< relurl "book/ru/v2/ch00/rmerwf_a" >}}">История с несколькими тематическими ветками</a>, и вы сначала сливаете ветку <code>ruby_client</code>, а затем <code>php_client</code>, то состояние вашего репозитория будет выглядеть как показано на рисунке <a href="{{< relurl "book/ru/v2/ch00/rmerwf_b" >}}">Слияние тематической ветки</a>.</p>
 </div>
 <div id="rmerwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="История с несколькими тематическими ветками">
+<img src="{{< relurl "book/ru/v2/images/merging-workflows-1.png" >}}" alt="История с несколькими тематическими ветками">
 </div>
 <div class="title">Рисунок 72. История с несколькими тематическими ветками</div>
 </div>
 <div id="rmerwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Слияние тематической ветки">
+<img src="{{< relurl "book/ru/v2/images/merging-workflows-2.png" >}}" alt="Слияние тематической ветки">
 </div>
 <div class="title">Рисунок 73. Слияние тематической ветки</div>
 </div>
@@ -391,23 +391,23 @@ $ git diff 36c7db</code></pre>
 <p>Если у вас очень важный проект, то возможно вам стоит использовать двухступенчатый цикл слияния.
 При таком сценарии у вас имеются две долгоживущие ветки <code>master</code> и <code>develop</code>, где в <code>master</code> сливаются только очень стабильные изменения, а все новые доработки интегрируются в ветку <code>develop</code>.
 Обе ветки регулярно отправляются в публичный репозиторий.
-Каждый раз, когда новая тематическая ветка готова к слиянию (<a href="ch00/rmerwf_c">Перед слиянием тематической ветки</a>), вы сливаете её в <code>develop</code> (<a href="ch00/rmerwf_d">После слияния тематической ветки</a>); затем, когда вы выпускаете релиз, ветка <code>master</code> смещается на стабильное состояние ветки <code>develop</code> (<a href="ch00/rmerwf_e">После релиза проекта</a>).</p>
+Каждый раз, когда новая тематическая ветка готова к слиянию (<a href="{{< relurl "book/ru/v2/ch00/rmerwf_c" >}}">Перед слиянием тематической ветки</a>), вы сливаете её в <code>develop</code> (<a href="{{< relurl "book/ru/v2/ch00/rmerwf_d" >}}">После слияния тематической ветки</a>); затем, когда вы выпускаете релиз, ветка <code>master</code> смещается на стабильное состояние ветки <code>develop</code> (<a href="{{< relurl "book/ru/v2/ch00/rmerwf_e" >}}">После релиза проекта</a>).</p>
 </div>
 <div id="rmerwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Перед слиянием тематической ветки">
+<img src="{{< relurl "book/ru/v2/images/merging-workflows-3.png" >}}" alt="Перед слиянием тематической ветки">
 </div>
 <div class="title">Рисунок 74. Перед слиянием тематической ветки</div>
 </div>
 <div id="rmerwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="После слияния тематической ветки">
+<img src="{{< relurl "book/ru/v2/images/merging-workflows-4.png" >}}" alt="После слияния тематической ветки">
 </div>
 <div class="title">Рисунок 75. После слияния тематической ветки</div>
 </div>
 <div id="rmerwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="После релиза тематической ветки">
+<img src="{{< relurl "book/ru/v2/images/merging-workflows-5.png" >}}" alt="После релиза тематической ветки">
 </div>
 <div class="title">Рисунок 76. После релиза проекта</div>
 </div>
@@ -422,13 +422,13 @@ $ git diff 36c7db</code></pre>
 <div class="paragraph">
 <p>
 В проекте Git присутствуют четыре долгоживущие ветки: <code>master</code>, <code>next</code>, <code>seen</code> (ранее <code>pu</code> — предложенные обновления) для новой работы и <code>maint</code> для поддержки обратной совместимости.
-Предложенные участниками проекта наработки накапливаются в тематических ветках основного репозитория по ранее описанному принципу (рис. <a href="ch00/rmerwf_f">Управление сложным набором параллельно разрабатываемых тематических веток</a>).
+Предложенные участниками проекта наработки накапливаются в тематических ветках основного репозитория по ранее описанному принципу (рис. <a href="{{< relurl "book/ru/v2/ch00/rmerwf_f" >}}">Управление сложным набором параллельно разрабатываемых тематических веток</a>).
 На этом этапе производится оценка содержимого тематических веток, чтобы определить, работают ли предложенные фрагменты так, как положено, или им требуется доработка.
 Если всё в порядке, тематические ветки сливаются в ветку <code>next</code>, которая отправляется на сервер, чтобы у каждого была возможность опробовать результат интеграции.</p>
 </div>
 <div id="rmerwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Управление сложным набором параллельно разрабатываемых тематических веток">
+<img src="{{< relurl "book/ru/v2/images/large-merges-1.png" >}}" alt="Управление сложным набором параллельно разрабатываемых тематических веток">
 </div>
 <div class="title">Рисунок 77. Управление сложным набором параллельно разрабатываемых тематических веток</div>
 </div>
@@ -440,7 +440,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Слияние тематических веток в долгоживущие ветки интеграции">
+<img src="{{< relurl "book/ru/v2/images/large-merges-2.png" >}}" alt="Слияние тематических веток в долгоживущие ветки интеграции">
 </div>
 <div class="title">Рисунок 78. Слияние тематических веток в долгоживущие ветки интеграции</div>
 </div>
@@ -470,7 +470,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Пример истории, из которой нужно отобрать отдельные коммиты">
+<img src="{{< relurl "book/ru/v2/images/rebasing-1.png" >}}" alt="Пример истории, из которой нужно отобрать отдельные коммиты">
 </div>
 <div class="title">Рисунок 79. Пример истории, из которой нужно отобрать отдельные коммиты</div>
 </div>
@@ -491,7 +491,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="История после отбора коммита из тематической ветки">
+<img src="{{< relurl "book/ru/v2/images/rebasing-2.png" >}}" alt="История после отбора коммита из тематической ветки">
 </div>
 <div class="title">Рисунок 80. История после отбора коммита из тематической ветки</div>
 </div>
@@ -525,7 +525,7 @@ Finished one cherry-pick.
 <p>Если нужно, вы можете обращаться к кэшу «rerere» напрямую, используя команду <code>git rerere</code>.
 Когда команда вызвана без параметров, Git проверяет базу данных и пытается найти решение для разрешения текущего конфликта слияния (точно так же как и при установленной настройке <code>rerere.enabled</code> в значение <code>true</code>).
 Существует множество дополнительных команд для просмотра, что именно будет записано, удаления отдельных записей из кэша, а так же его полной очистки.
-Более детально «rerere» будет рассмотрено в разделе <a href="ch00/r_rerere">Rerere</a> главы 7.</p>
+Более детально «rerere» будет рассмотрено в разделе <a href="{{< relurl "book/ru/v2/ch00/r_rerere" >}}">Rerere</a> главы 7.</p>
 </div>
 </div>
 </div>
@@ -534,7 +534,7 @@ Finished one cherry-pick.
 <div class="paragraph">
 <p>
 После выпуска релиза, возможно, вы захотите пометить текущее состояние так, чтобы можно было вернуться к нему в любой момент.
-Для этого можно добавить тег, как было описано в главе <a href="ch00/ch02-git-basics-chapter">Основы Git</a>.
+Для этого можно добавить тег, как было описано в главе <a href="{{< relurl "book/ru/v2/ch00/ch02-git-basics-chapter" >}}">Основы Git</a>.
 Кроме этого, вы можете добавить цифровую подпись для тега, выглядеть это будет вот так:</p>
 </div>
 <div class="listingblock">

@@ -99,7 +99,7 @@ origin    git@github.com:mojombo/grit.git (push)</code></pre>
 We may additionally have permission to push to one or more of these, though we can’t tell that here.</p>
 </div>
 <div class="paragraph">
-<p>Notice that these remotes use a variety of protocols; we’ll cover more about this in <a href="ch00/_getting_git_on_a_server">Getting Git on a Server</a>.</p>
+<p>Notice that these remotes use a variety of protocols; we’ll cover more about this in <a href="{{< relurl "book/tr/v2/ch00/_getting_git_on_a_server" >}}">Getting Git on a Server</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -139,7 +139,7 @@ From https://github.com/paulboone/ticgit
 </div>
 <div class="paragraph">
 <p>Paul’s master branch is now accessible locally as <code>pb/master</code> — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it.
-(We’ll go over what branches are and how to use them in much more detail in <a href="ch00/ch03-git-branching">Git Branching</a>.)</p>
+(We’ll go over what branches are and how to use them in much more detail in <a href="{{< relurl "book/tr/v2/ch00/ch03-git-branching" >}}">Git Branching</a>.)</p>
 </div>
 </div>
 <div class="sect3">
@@ -163,7 +163,7 @@ It’s important to note that the <code>git fetch</code> command only downloads 
 You have to merge it manually into your work when you’re ready.</p>
 </div>
 <div class="paragraph">
-<p>If your current branch is set up to track a remote branch (see the next section and <a href="ch00/ch03-git-branching">Git Branching</a> for more information), you can use the <code>git pull</code> command to automatically fetch and then merge that remote branch into your current branch.
+<p>If your current branch is set up to track a remote branch (see the next section and <a href="{{< relurl "book/tr/v2/ch00/ch03-git-branching" >}}">Git Branching</a> for more information), you can use the <code>git pull</code> command to automatically fetch and then merge that remote branch into your current branch.
 This may be an easier or more comfortable workflow for you; and by default, the <code>git clone</code> command automatically sets up your local master branch to track the remote master branch (or whatever the default branch is called) on the server you cloned from.
 Running <code>git pull</code> generally fetches data from the server you originally cloned from and automatically tries to merge it into the code you’re currently working on.</p>
 </div>
@@ -184,7 +184,7 @@ If you want to push your master branch to your <code>origin</code> server (again
 <p>This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime.
 If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected.
 You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push.
-See <a href="ch00/ch03-git-branching">Git Branching</a> for more detailed information on how to push to remote servers.</p>
+See <a href="{{< relurl "book/tr/v2/ch00/ch03-git-branching" >}}">Git Branching</a> for more detailed information on how to push to remote servers.</p>
 </div>
 </div>
 <div class="sect3">

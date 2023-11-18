@@ -60,7 +60,7 @@ git_repository_free(repo);</code></pre>
 他の方法としては、 <code>git_repository_open_ext</code> を使って検索オプション付きで開く方法、 <code>git_clone</code> とその仲間を使ってリモートリポジトリのローカルなクローンを作る方法、 <code>git_repository_init</code> を使って全く新規にリポジトリを作る方法があります。</p>
 </div>
 <div class="paragraph">
-<p>2番目のコードのかたまりは、 rev-parse 文法（詳細は <a href="ch00/r_branch_references">ブランチの参照</a> を参照）を使って、HEADが最終的に指しているコミットを取得しています。
+<p>2番目のコードのかたまりは、 rev-parse 文法（詳細は <a href="{{< relurl "book/ja/v2/ch00/r_branch_references" >}}">ブランチの参照</a> を参照）を使って、HEADが最終的に指しているコミットを取得しています。
 戻り値は <code>git_object</code> 型のポインタで、これはリポジトリのGitオブジェクトデータベースに存在する何かを表しています。
 <code>git_object</code> 型は、実際には数種類のオブジェクトの “親” にあたります。 “子” にあたる型のメモリレイアウトは <code>git_object</code> 型と同じになっているので、正しい型へのキャストは安全に行えます。
 上記の場合では、 <code>git_object_type(commit)</code> が <code>GIT_OBJ_COMMIT</code> を返すので、 <code>git_commit</code> 型のポインタへ安全にキャストできます。</p>
@@ -168,7 +168,7 @@ commit = repo.lookup(commit_id) # <b class="conum">(8)</b></code></pre>
 </div>
 <div class="paragraph">
 <p>このRubyのコードは単純明快です。また、重い処理はLibgit2が行っているので、非常に高速に実行できます。
-Rubyist でない方のために、 <a href="ch00/r_libgit2_bindings">その他のバインディング</a> では他のバインディングにも触れています。</p>
+Rubyist でない方のために、 <a href="{{< relurl "book/ja/v2/ch00/r_libgit2_bindings" >}}">その他のバインディング</a> では他のバインディングにも触れています。</p>
 </div>
 <div class="sect3">
 <h3 id="_高度な機能">高度な機能</h3>

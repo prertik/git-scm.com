@@ -129,7 +129,7 @@ JGitは <code>refs/heads/master</code> にある <em>実際の</em> master参照
 <div class="paragraph">
 <p>2行目では、 <code>master</code> 参照の指す先を取得して、ObjectIdインスタンスの形で返します。
 ObjectIdはGitのオブジェクトデータベース中にある（または、データベース中にない）オブジェクトのSHA-1ハッシュを表しています。
-3行目は似たような処理ですが、ここではJGitがrev-parse文法（詳細は <a href="ch00/r_branch_references">ブランチの参照</a> を参照）を処理する方法を示しています。Gitが解釈できる任意のオブジェクト指定子を渡すことができ、JGitはそのオブジェクトのvalidなObjectIdか <code>null</code> のどちらかを返します。</p>
+3行目は似たような処理ですが、ここではJGitがrev-parse文法（詳細は <a href="{{< relurl "book/ja/v2/ch00/r_branch_references" >}}">ブランチの参照</a> を参照）を処理する方法を示しています。Gitが解釈できる任意のオブジェクト指定子を渡すことができ、JGitはそのオブジェクトのvalidなObjectIdか <code>null</code> のどちらかを返します。</p>
 </div>
 <div class="paragraph">
 <p>次の2行はオブジェクトの生の内容をロードする方法を示しています。

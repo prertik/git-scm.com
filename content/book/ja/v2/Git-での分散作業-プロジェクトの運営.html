@@ -375,17 +375,17 @@ $ git diff 36c7db</code></pre>
 <p>シンプルなワークフローのひとつとして、作業を自分の <code>master</code> ブランチに取り込むことを考えます。
 ここでは、<code>master</code> ブランチで安定版のコードを管理しているものとします。
 トピックブランチでの作業が一段落したら (あるいは誰かから受け取ったパッチをトピックブランチ上で検証し終えたら)、それを master ブランチにマージしてからトピックブランチを削除し、作業を進めることになります。
-<code>ruby_client</code> および <code>php_client</code> の二つのブランチを持つ <a href="ch00/rmerwf_a">いくつかのトピックブランチを含む履歴</a> のようなリポジトリでまず <code>ruby_client</code> をマージしてから <code>php_client</code> もマージすると、歴史は <a href="ch00/rmerwf_b">トピックブランチをマージした後の状態</a> のようになります。</p>
+<code>ruby_client</code> および <code>php_client</code> の二つのブランチを持つ <a href="{{< relurl "book/ja/v2/ch00/rmerwf_a" >}}">いくつかのトピックブランチを含む履歴</a> のようなリポジトリでまず <code>ruby_client</code> をマージしてから <code>php_client</code> もマージすると、歴史は <a href="{{< relurl "book/ja/v2/ch00/rmerwf_b" >}}">トピックブランチをマージした後の状態</a> のようになります。</p>
 </div>
 <div id="rmerwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="いくつかのトピックブランチを含む履歴">
+<img src="{{< relurl "book/ja/v2/images/merging-workflows-1.png" >}}" alt="いくつかのトピックブランチを含む履歴">
 </div>
 <div class="title">図 72. いくつかのトピックブランチを含む履歴</div>
 </div>
 <div id="rmerwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="トピックブランチをマージした後の状態">
+<img src="{{< relurl "book/ja/v2/images/merging-workflows-2.png" >}}" alt="トピックブランチをマージした後の状態">
 </div>
 <div class="title">図 73. トピックブランチをマージした後の状態</div>
 </div>
@@ -396,23 +396,23 @@ $ git diff 36c7db</code></pre>
 <p>より重要なプロジェクトの場合は、二段階のマージサイクルを使うこともあるでしょう。
 ここでは、長期間運用するブランチが <code>master</code> と <code>develop</code> のふたつあるものとします。<code>master</code> が更新されるのは安定版がリリースされるときだけで、新しいコードはずべて <code>develop</code> ブランチに統合されるという流れです。
 これらのブランチは、両方とも定期的に公開リポジトリにプッシュすることになります。
-新しいトピックブランチをマージする準備ができたら (<a href="ch00/rmerwf_c">トピックブランチのマージ前</a>)、それを <code>develop</code> にマージします (<a href="ch00/rmerwf_d">トピックブランチのマージ後</a>)。そしてリリースタグを打つときに、<code>master</code> を現在の <code>develop</code> ブランチが指す位置に進めます (<a href="ch00/rmerwf_e">プロジェクトのリリース後</a>)。</p>
+新しいトピックブランチをマージする準備ができたら (<a href="{{< relurl "book/ja/v2/ch00/rmerwf_c" >}}">トピックブランチのマージ前</a>)、それを <code>develop</code> にマージします (<a href="{{< relurl "book/ja/v2/ch00/rmerwf_d" >}}">トピックブランチのマージ後</a>)。そしてリリースタグを打つときに、<code>master</code> を現在の <code>develop</code> ブランチが指す位置に進めます (<a href="{{< relurl "book/ja/v2/ch00/rmerwf_e" >}}">プロジェクトのリリース後</a>)。</p>
 </div>
 <div id="rmerwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="トピックブランチのマージ前">
+<img src="{{< relurl "book/ja/v2/images/merging-workflows-3.png" >}}" alt="トピックブランチのマージ前">
 </div>
 <div class="title">図 74. トピックブランチのマージ前</div>
 </div>
 <div id="rmerwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="トピックブランチのマージ後">
+<img src="{{< relurl "book/ja/v2/images/merging-workflows-4.png" >}}" alt="トピックブランチのマージ後">
 </div>
 <div class="title">図 75. トピックブランチのマージ後</div>
 </div>
 <div id="rmerwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="トピックブランチのリリース後">
+<img src="{{< relurl "book/ja/v2/images/merging-workflows-5.png" >}}" alt="トピックブランチのリリース後">
 </div>
 <div class="title">図 76. プロジェクトのリリース後</div>
 </div>
@@ -429,13 +429,13 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="paragraph">
 <p>Git 開発プロジェクトには、常時稼働するブランチが四つあります。<code>master</code>、<code>next</code>、そして新しい作業用の <code>pu</code> (proposed updates) とメンテナンスバックポート用の <code>maint</code> です。
-新しいコードを受け取ったメンテナは、まず自分のリポジトリのトピックブランチにそれを格納します。先ほど説明したのと同じ方式です ( <a href="ch00/rmerwf_f">複数のトピックブランチの並行管理</a> を参照ください)。
+新しいコードを受け取ったメンテナは、まず自分のリポジトリのトピックブランチにそれを格納します。先ほど説明したのと同じ方式です ( <a href="{{< relurl "book/ja/v2/ch00/rmerwf_f" >}}">複数のトピックブランチの並行管理</a> を参照ください)。
 そしてその内容を検証し、安全に取り込める状態かさらなる作業が必要かを見極めます。
 だいじょうぶだと判断したらそれを <code>next</code> にマージします。このブランチをプッシュすれば、すべてのメンバーがそれを試せるようになります。</p>
 </div>
 <div id="rmerwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="複数のトピックブランチの並行管理">
+<img src="{{< relurl "book/ja/v2/images/large-merges-1.png" >}}" alt="複数のトピックブランチの並行管理">
 </div>
 <div class="title">図 77. 複数のトピックブランチの並行管理</div>
 </div>
@@ -446,7 +446,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="常時稼働する統合用ブランチへのトピックブランチのマージ">
+<img src="{{< relurl "book/ja/v2/images/large-merges-2.png" >}}" alt="常時稼働する統合用ブランチへのトピックブランチのマージ">
 </div>
 <div class="title">図 78. 常時稼働する統合用ブランチへのトピックブランチのマージ</div>
 </div>
@@ -478,7 +478,7 @@ Git におけるチェリーピックとは、コミット単位でのリベー�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="チェリーピック前の歴史">
+<img src="{{< relurl "book/ja/v2/images/rebasing-1.png" >}}" alt="チェリーピック前の歴史">
 </div>
 <div class="title">図 79. チェリーピック前の歴史</div>
 </div>
@@ -499,7 +499,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="トピックブランチのコミットをチェリーピックした後の歴史">
+<img src="{{< relurl "book/ja/v2/images/rebasing-2.png" >}}" alt="トピックブランチのコミットをチェリーピックした後の歴史">
 </div>
 <div class="title">図 80. トピックブランチのコミットをチェリーピックした後の歴史</div>
 </div>
@@ -533,7 +533,7 @@ Finished one cherry-pick.
 <div class="paragraph">
 <p>必要に応じてキャッシュを操作することもできます。<code>git rerere</code> コマンドを使うのです。
 このコマンドをオプションなしで実行するとキャッシュが検索され、コンフリクトの内容に合致するものがある場合はそれを用いてコンフリクトの解消が試みられます（ただし、<code>rerere.enabled</code> が <code>true</code> に設定されている場合、一連の処理は自動で行われます）。
-また、サブコマンドも複数用意されています。それらを使うと、キャッシュされようとしている内容の確認、キャッシュされた内容を指定して削除、キャッシュをすべて削除、などができるようになります。rerere については <a href="ch00/r_rerere">Rerere</a> で詳しく説明します。</p>
+また、サブコマンドも複数用意されています。それらを使うと、キャッシュされようとしている内容の確認、キャッシュされた内容を指定して削除、キャッシュをすべて削除、などができるようになります。rerere については <a href="{{< relurl "book/ja/v2/ch00/r_rerere" >}}">Rerere</a> で詳しく説明します。</p>
 </div>
 </div>
 </div>
@@ -544,7 +544,7 @@ Finished one cherry-pick.
 </div>
 <div class="paragraph">
 <p>いよいよリリースする時がきました。おそらく、後からいつでもこのリリースを取得できるようにタグを打っておくことになるでしょう。
-新しいタグを打つ方法は <a href="ch00/ch02-git-basics">[ch02-git-basics]</a> で説明しました。
+新しいタグを打つ方法は <a href="{{< relurl "book/ja/v2/ch00/ch02-git-basics" >}}">[ch02-git-basics]</a> で説明しました。
 タグにメンテナの署名を入れておきたい場合は、このようにします。</p>
 </div>
 <div class="listingblock">

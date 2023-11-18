@@ -30,7 +30,7 @@ title: Git - 高度なマージ手法
 <div class="sect3">
 <h3 id="_マージのコンフリクト">マージのコンフリクト</h3>
 <div class="paragraph">
-<p>マージのコンフリクトをどのように解消するか、基本的なところを <a href="ch00/r_basic_merge_conflicts">マージ時のコンフリクト</a> で紹介しました。ここでは、複雑なコンフリクトの場合に、状況を把握しコンフリクトを上手に解消するための Git ツールを紹介します。</p>
+<p>マージのコンフリクトをどのように解消するか、基本的なところを <a href="{{< relurl "book/ja/v2/ch00/r_basic_merge_conflicts" >}}">マージ時のコンフリクト</a> で紹介しました。ここでは、複雑なコンフリクトの場合に、状況を把握しコンフリクトを上手に解消するための Git ツールを紹介します。</p>
 </div>
 <div class="paragraph">
 <p>まず、可能な限り、作業ディレクトリがクリーンな状態であることを確認しましょう。コンフリクトを起こす可能性のあるマージを実行するのはその後です。作業中の内容があるのなら、一時保存用のブランチを作ってコミットするか stash に隠してしまいましょう。こうしておけば、<strong>何が</strong> 起こってもやり直しがききます。以下で説明するヒントのなかには、作業ディレクトリの変更を保存せずにマージを行うと未保存の作業が消えてしまうものもあります。</p>
@@ -431,7 +431,7 @@ hello()</code></pre>
 <p>もう一つ、コンフリクトの解決に使える便利なツールが <code>git log</code> です。どういった流れでコンフリクトが発生したのかを追跡するときに使えます。というのも、歴史を少し紐解いてみると、平行して進行していた2つの開発作業がなぜコードの同じ部分を編集するに至ったか、その理由を思い出せたりするからです。</p>
 </div>
 <div class="paragraph">
-<p>マージ対象のブランチに含まれるコミットを重複分を除いて表示させるには、<a href="ch00/r_triple_dot">トリプルドット</a> で触れた「トリプルドット」記法を使います。</p>
+<p>マージ対象のブランチに含まれるコミットを重複分を除いて表示させるには、<a href="{{< relurl "book/ja/v2/ch00/r_triple_dot" >}}">トリプルドット</a> で触れた「トリプルドット」記法を使います。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -568,7 +568,7 @@ Git を使うことの利点は、間違ってもいい、ということです�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="間違って作成したマージコミット">
+<img src="{{< relurl "book/ja/v2/images/undomerge-start.png" >}}" alt="間違って作成したマージコミット">
 </div>
 <div class="title">図 137. 間違って作成したマージコミット</div>
 </div>
@@ -583,12 +583,12 @@ Git を使うことの利点は、間違ってもいい、ということです�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="`git reset --hard HEAD~` 実行後の歴史">
+<img src="{{< relurl "book/ja/v2/images/undomerge-reset.png" >}}" alt="`git reset --hard HEAD~` 実行後の歴史">
 </div>
 <div class="title">図 138. <code>git reset --hard HEAD~</code> 実行後の歴史</div>
 </div>
 <div class="paragraph">
-<p><code>reset</code> コマンドについては <a href="ch00/r_git_reset">リセットコマンド詳説</a> で触れましたので、ここで何が起こっているか、理解するのは難しいことではないと思います。
+<p><code>reset</code> コマンドについては <a href="{{< relurl "book/ja/v2/ch00/r_git_reset" >}}">リセットコマンド詳説</a> で触れましたので、ここで何が起こっているか、理解するのは難しいことではないと思います。
 念のためおさらいしておきましょう。<code>reset --hard</code> を実行すると、通常は以下の処理が走ります。</p>
 </div>
 <div class="olist arabic">
@@ -607,7 +607,7 @@ Git を使うことの利点は、間違ってもいい、ということです�
 </div>
 <div class="paragraph">
 <p>この方法の欠点は、歴史を書き換えてしまう点です。共有リポジトリで作業していると、問題視される場合があります。
-書き換えようとしているコミットをほかの人たちもプルしてしまっている場合は、<code>reset</code> は使わないほうが無難でしょう。理由については <a href="ch00/r_rebase_peril">ほんとうは怖いリベース</a> を確認してみてください。
+書き換えようとしているコミットをほかの人たちもプルしてしまっている場合は、<code>reset</code> は使わないほうが無難でしょう。理由については <a href="{{< relurl "book/ja/v2/ch00/r_rebase_peril" >}}">ほんとうは怖いリベース</a> を確認してみてください。
 また、新たなコミットがマージ以後に追加されている場合は、この方法はうまくいきません。参照を移動してしまうと、追加された内容を削除することになってしまうからです。</p>
 </div>
 </div>
@@ -633,7 +633,7 @@ Git を使うことの利点は、間違ってもいい、ということです�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="`git revert -m 1` の後の歴史">
+<img src="{{< relurl "book/ja/v2/images/undomerge-revert.png" >}}" alt="`git revert -m 1` の後の歴史">
 </div>
 <div class="title">図 139. <code>git revert -m 1</code> の後の歴史</div>
 </div>
@@ -653,7 +653,7 @@ Already up-to-date.</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="よくないマージを含む歴史">
+<img src="{{< relurl "book/ja/v2/images/undomerge-revert2.png" >}}" alt="よくないマージを含む歴史">
 </div>
 <div class="title">図 140. よくないマージを含む歴史</div>
 </div>
@@ -669,7 +669,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="revert 済みのマージコミットを再度マージした後の歴史">
+<img src="{{< relurl "book/ja/v2/images/undomerge-revert3.png" >}}" alt="revert 済みのマージコミットを再度マージした後の歴史">
 </div>
 <div class="title">図 141. revert 済みのマージコミットを再度マージした後の歴史</div>
 </div>
@@ -801,7 +801,7 @@ README</code></pre>
 <p>これは、考えようによっては変な話です。リポジトリにあるブランチがすべて、同一プロジェクトのブランチである必要はない、ということなのですから。めったにない話です（ちょっとやそっとのことでは役に立たないので）が、完全に異なる歴史を持つ複数のブランチを1つのリポジトリで保持するのはとても簡単なのです。</p>
 </div>
 <div class="paragraph">
-<p>この例では、Rack プロジェクトを <code>master</code> プロジェクトのサブディレクトリとして取り込みたくなったとしましょう。そのときには、<code>git read-tree</code> を使います。<code>read-tree</code> とその仲間たちについては <a href="ch00/ch10-git-internals">[ch10-git-internals]</a> で詳しく説明します。現時点では、とりあえず「あるブランチのルートツリーを読み込んで、それを現在のステージングエリアと作業ディレクトリに書き込むもの」だと認識しておけばよいでしょう。まず <code>master</code> ブランチに戻り、 <code>rack_branch</code> ブランチの内容を <code>master</code> ブランチの <code>rack</code> サブディレクトリに取り込みます。</p>
+<p>この例では、Rack プロジェクトを <code>master</code> プロジェクトのサブディレクトリとして取り込みたくなったとしましょう。そのときには、<code>git read-tree</code> を使います。<code>read-tree</code> とその仲間たちについては <a href="{{< relurl "book/ja/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a> で詳しく説明します。現時点では、とりあえず「あるブランチのルートツリーを読み込んで、それを現在のステージングエリアと作業ディレクトリに書き込むもの」だと認識しておけばよいでしょう。まず <code>master</code> ブランチに戻り、 <code>rack_branch</code> ブランチの内容を <code>master</code> ブランチの <code>rack</code> サブディレクトリに取り込みます。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -832,7 +832,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 <p>Rack プロジェクトでのすべての変更がマージされ、ローカルにコミットできる準備が整いました。この逆を行うこともできます。master ブランチの <code>rack</code> サブディレクトリで変更した内容を後で <code>rack_branch</code> ブランチにマージし、それをメンテナに投稿したり本家にプッシュしたりといったことも可能です。</p>
 </div>
 <div class="paragraph">
-<p>この機能を使えば、サブモジュールを使った作業手順に似た手順（<a href="ch00/r_git_submodules">サブモジュール</a> で紹介する予定）を、サブモジュールなしで採用できます。違うプロジェクトのデータをブランチとしてプロジェクトリポジトリ内に保持しておけますし、サブツリーマージを使ってそのブランチを取組中のプロジェクトに取り込むこともできます。これは見方によっては、例えば、すべてのコードが同じ場所にコミットされるという意味では、便利だといえるでしょう。ですが、欠点がないわけではありません。構成が複雑になり変更を取り込む際に間違いやすくなってしまうでしょう。関係ないリポジトリに誤ってプッシュしてしまうことだってあるかもしれません。</p>
+<p>この機能を使えば、サブモジュールを使った作業手順に似た手順（<a href="{{< relurl "book/ja/v2/ch00/r_git_submodules" >}}">サブモジュール</a> で紹介する予定）を、サブモジュールなしで採用できます。違うプロジェクトのデータをブランチとしてプロジェクトリポジトリ内に保持しておけますし、サブツリーマージを使ってそのブランチを取組中のプロジェクトに取り込むこともできます。これは見方によっては、例えば、すべてのコードが同じ場所にコミットされるという意味では、便利だといえるでしょう。ですが、欠点がないわけではありません。構成が複雑になり変更を取り込む際に間違いやすくなってしまうでしょう。関係ないリポジトリに誤ってプッシュしてしまうことだってあるかもしれません。</p>
 </div>
 <div class="paragraph">
 <p>また、少し違和感を覚えるかもしれませんが、<code>rack</code> サブディレクトリの内容と <code>rack_branch</code> ブランチのコードの差分を取得する (そして、マージしなければならない内容を知る) には、通常の <code>diff</code> コマンドを使うことはできません。そのかわりに、<code>git diff-tree</code> で比較対象のブランチを指定します。</p>

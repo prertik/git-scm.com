@@ -26,17 +26,17 @@ title: Git - プロジェクトのメンテナンス
 <div class="paragraph">
 <p>新しいプロジェクトを作って、自分たちのプロジェクトのコードを共有しましょう。
 まずはダッシュボードの右側にある “New repository” ボタンをクリックするか、
-上のツールバーでユーザー名の隣にある <code>+</code> ボタン (<a href="ch00/r_new_repo_dropdown">“New repository” ドロップダウン</a> を参照) をクリックしましょう。</p>
+上のツールバーでユーザー名の隣にある <code>+</code> ボタン (<a href="{{< relurl "book/ja/v2/ch00/r_new_repo_dropdown" >}}">“New repository” ドロップダウン</a> を参照) をクリックしましょう。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/newrepo.png" >}}" alt="``Your repositories'' エリア">
+<img src="{{< relurl "book/ja/v2/images/newrepo.png" >}}" alt="``Your repositories'' エリア">
 </div>
 <div class="title">図 109. “Your repositories” エリア</div>
 </div>
 <div id="r_new_repo_dropdown" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/new-repo.png" >}}" alt="``new repository'' ドロップダウン">
+<img src="{{< relurl "book/ja/v2/images/new-repo.png" >}}" alt="``new repository'' ドロップダウン">
 </div>
 <div class="title">図 110. “New repository” ドロップダウン</div>
 </div>
@@ -45,7 +45,7 @@ title: Git - プロジェクトのメンテナンス
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/newrepoform.png" >}}" alt="``new repository'' フォーム">
+<img src="{{< relurl "book/ja/v2/images/newrepoform.png" >}}" alt="``new repository'' フォーム">
 </div>
 <div class="title">図 111. “new repository” フォーム</div>
 </div>
@@ -56,7 +56,7 @@ title: Git - プロジェクトのメンテナンス
 </div>
 <div class="paragraph">
 <p>まだ何もコードが存在しないので、GitHub はここで、新しい Git リポジトリを作る方法と既存の Git プロジェクトを取り込む方法を教えてくれます。
-ここでは、それらの手順について長々と繰り返したりはしません。忘れてしまった人は、<a href="ch00/ch02-git-basics">[ch02-git-basics]</a> を見直しましょう。</p>
+ここでは、それらの手順について長々と繰り返したりはしません。忘れてしまった人は、<a href="{{< relurl "book/ja/v2/ch00/ch02-git-basics" >}}">[ch02-git-basics]</a> を見直しましょう。</p>
 </div>
 <div class="paragraph">
 <p>これで GitHub 上にプロジェクトが用意でき、他の人たちにその URL を示せるようになりました。
@@ -94,7 +94,7 @@ HTTP の URL は、ブラウザでそのプロジェクトのページを表示�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reposettingslink.png" >}}" alt="リポジトリの設定用のリンク">
+<img src="{{< relurl "book/ja/v2/images/reposettingslink.png" >}}" alt="リポジトリの設定用のリンク">
 </div>
 <div class="title">図 112. リポジトリの設定用のリンク</div>
 </div>
@@ -106,7 +106,7 @@ HTTP の URL は、ブラウザでそのプロジェクトのページを表示�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/collaborators.png" >}}" alt="リポジトリのコラボレーター">
+<img src="{{< relurl "book/ja/v2/images/collaborators.png" >}}" alt="リポジトリのコラボレーター">
 </div>
 <div class="title">図 113. リポジトリのコラボレーター</div>
 </div>
@@ -129,11 +129,11 @@ HTTP の URL は、ブラウザでそのプロジェクトのページを表示�
 <h4 id="r_email_notifications">メールでの通知</h4>
 <div class="paragraph">
 <p>あなたのプロジェクトを見つけた誰かが、コードに手を加えてプルリクエストを送ってきました。
-このときあなたは、<a href="ch00/r_email_pr">プルリクエストのメールでの通知</a> のような通知メールを受け取るはずです。</p>
+このときあなたは、<a href="{{< relurl "book/ja/v2/ch00/r_email_pr" >}}">プルリクエストのメールでの通知</a> のような通知メールを受け取るはずです。</p>
 </div>
 <div id="r_email_pr" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-01-email.png" >}}" alt="プルリクエストのメールでの通知">
+<img src="{{< relurl "book/ja/v2/images/maint-01-email.png" >}}" alt="プルリクエストのメールでの通知">
 </div>
 <div class="title">図 114. プルリクエストのメールでの通知</div>
 </div>
@@ -146,7 +146,7 @@ HTTP の URL は、ブラウザでそのプロジェクトのページを表示�
 <div class="paragraph">
 <p><code>git pull &lt;url&gt; patch-1</code> と書いてある行に注目しましょう。
 このようにすれば、リモートを追加しなくても、このブランチをマージできます。
-この件については、<a href="ch00/r_checking_out_remotes">リモートブランチのチェックアウト</a> で簡単に紹介しました。
+この件については、<a href="{{< relurl "book/ja/v2/ch00/r_checking_out_remotes" >}}">リモートブランチのチェックアウト</a> で簡単に紹介しました。
 もしお望みなら、トピックブランチを作ってそこに移動し、そしてこのコマンドを実行すれば、プルリクエストの変更をマージできます。</p>
 </div>
 <div class="paragraph">
@@ -163,7 +163,7 @@ HTTP の URL は、ブラウザでそのプロジェクトのページを表示�
 <div class="sect4">
 <h4 id="_プルリクエスト上での共同作業">プルリクエスト上での共同作業</h4>
 <div class="paragraph">
-<p><a href="ch00/r_github_flow">GitHub Flow</a> で説明したとおり、プルリクエストの作者とのやりとりができるようになりました。
+<p><a href="{{< relurl "book/ja/v2/ch00/r_github_flow" >}}">GitHub Flow</a> で説明したとおり、プルリクエストの作者とのやりとりができるようになりました。
 コードの特定の行にコメントをしたり、コミット全体やプルリクエストそのものに対してコメントしたりすることができ、
 その際には GitHub Flavored Markdown が使えます。</p>
 </div>
@@ -173,7 +173,7 @@ HTTP の URL は、ブラウザでそのプロジェクトのページを表示�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-03-email-resp.png" >}}" alt="メールでの返信">
+<img src="{{< relurl "book/ja/v2/images/maint-03-email-resp.png" >}}" alt="メールでの返信">
 </div>
 <div class="title">図 115. メールでの返信が、スレッドに含まれる</div>
 </div>
@@ -185,11 +185,11 @@ HTTP の URL は、ブラウザでそのプロジェクトのページを表示�
 <p>もし特別な作業をせずにマージできる状態なら、GitHub のサイト上で単に “Merge” ボタンを押すだけでマージを済ませることもできます。
 このボタンを押すと “non-fast-forward” マージを行います。つまり、fast-forward マージが可能な場合でも、強制的にマージコミットを作ります。
 要するに、どんな場合であっても、マージボタンを押したらマージコミットが作られるということです。
-<a href="ch00/r_merge_button">マージボタンと、プルリクエストを手動でマージするための手順</a> にあるとおり、ヒントのリンクをクリックすれば、GitHub がこれらの情報をすべて教えてくれます。</p>
+<a href="{{< relurl "book/ja/v2/ch00/r_merge_button" >}}">マージボタンと、プルリクエストを手動でマージするための手順</a> にあるとおり、ヒントのリンクをクリックすれば、GitHub がこれらの情報をすべて教えてくれます。</p>
 </div>
 <div id="r_merge_button" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-02-merge.png" >}}" alt="マージボタン">
+<img src="{{< relurl "book/ja/v2/images/maint-02-merge.png" >}}" alt="マージボタン">
 </div>
 <div class="title">図 116. マージボタンと、プルリクエストを手動でマージするための手順</div>
 </div>
@@ -202,7 +202,7 @@ HTTP の URL は、ブラウザでそのプロジェクトのページを表示�
 <div class="paragraph">
 <p><strong>大量の</strong> プルリクエストを扱っていて、取り込むたびにいちいちリモートを追加するのが面倒な場合は、
 GitHub が提供するちょっとしたトリックを使えます。
-これは高度な話題なので、その詳細は <a href="ch00/r_refspec">Refspec</a> であらためて取り上げます。ただ、これはとても便利です。</p>
+これは高度な話題なので、その詳細は <a href="{{< relurl "book/ja/v2/ch00/r_refspec" >}}">Refspec</a> であらためて取り上げます。ただ、これはとても便利です。</p>
 </div>
 <div class="paragraph">
 <p>GitHub は、個々のプルリクエストのブランチを、サーバー上で擬似ブランチとして公開しています。
@@ -340,7 +340,7 @@ GitHub 上には、これだけではなく <code>refs/pull/#/merge</code> と�
 </div>
 <div id="r_pr_targets" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-04-target.png" >}}" alt="PRの対象">
+<img src="{{< relurl "book/ja/v2/images/maint-04-target.png" >}}" alt="PRの対象">
 </div>
 <div class="title">図 117. プルリクエストの対象となるフォークとブランチを手動で変更する</div>
 </div>
@@ -360,7 +360,7 @@ GitHub 上には、これだけではなく <code>refs/pull/#/merge</code> と�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-05-mentions.png" >}}" alt="言及">
+<img src="{{< relurl "book/ja/v2/images/maint-05-mentions.png" >}}" alt="言及">
 </div>
 <div class="title">図 118. 誰かについて言及するには、@ を入力する</div>
 </div>
@@ -382,7 +382,7 @@ GitHub 上のプルリクエストでは、チームや社内の他のメンバ�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-06-unsubscribe.png" >}}" alt="購読解除">
+<img src="{{< relurl "book/ja/v2/images/maint-06-unsubscribe.png" >}}" alt="購読解除">
 </div>
 <div class="title">図 119. Issue やプルリクエストの購読の解除</div>
 </div>
@@ -396,7 +396,7 @@ GitHub 上のプルリクエストでは、チームや社内の他のメンバ�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-07-notifications.png" >}}" alt="通知センター">
+<img src="{{< relurl "book/ja/v2/images/maint-07-notifications.png" >}}" alt="通知センター">
 </div>
 <div class="title">図 120. 通知センターのオプション</div>
 </div>
@@ -409,11 +409,11 @@ GitHub 上のプルリクエストでは、チームや社内の他のメンバ�
 <div class="paragraph">
 <p>Web での通知は GitHub 上でだけ行われるもので、GitHub のサイトに行かないと確認できません。
 このオプションを選んだ場合、あなたに届いた通知は、画面上部の通知アイコンに青い点として表示されて、
-<a href="ch00/r_not_center">通知センター</a> のようになります。</p>
+<a href="{{< relurl "book/ja/v2/ch00/r_not_center" >}}">通知センター</a> のようになります。</p>
 </div>
 <div id="r_not_center" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-08-notifications-page.png" >}}" alt="通知センター">
+<img src="{{< relurl "book/ja/v2/images/maint-08-notifications-page.png" >}}" alt="通知センター">
 </div>
 <div class="title">図 121. 通知センター</div>
 </div>
@@ -434,7 +434,7 @@ GitHub のパワーユーザーの多くは、メールでの通知を完全に�
 <div class="paragraph">
 <p>メールでの通知を使って、GitHub からの通知を処理することもできます。
 この機能を有効にしておくと、さまざまな通知をメールで受け取れるようになります。
-その例を <a href="ch00/r_email_notification">通知メールで送られたコメント</a> と <a href="ch00/r_email_pr">プルリクエストのメールでの通知</a> に示します。
+その例を <a href="{{< relurl "book/ja/v2/ch00/r_email_notification" >}}">通知メールで送られたコメント</a> と <a href="{{< relurl "book/ja/v2/ch00/r_email_pr" >}}">プルリクエストのメールでの通知</a> に示します。
 メールのスレッド機能にも対応しているので、スレッド対応のメールソフトを使えば適切に表示できることでしょう。</p>
 </div>
 <div class="paragraph">
@@ -442,7 +442,7 @@ GitHub のパワーユーザーの多くは、メールでの通知を完全に�
 これらを使えば、フィルタリングやフォルダ分けの設定も簡単に行えます。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_email_pr">プルリクエストのメールでの通知</a> に示す、Tony に送られたメールのヘッダーには、このような情報が含まれています。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_email_pr" >}}">プルリクエストのメールでの通知</a> に示す、Tony に送られたメールのヘッダーには、このような情報が含まれています。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -520,11 +520,11 @@ README ファイルを発見すると、GitHub はそれをレンダリングし
 <div class="paragraph">
 <p>GitHub は、<code>CONTRIBUTING</code> も特別扱いするファイルとして認識します。
 <code>CONTRIBUTING</code> という名前 (拡張子は何でもかまいません) のファイルを用意すると、
-誰かがプルリクエストを作ろうとしたときに、GitHub がその内容を <a href="ch00/r_contrib_file">CONTRIBUTING ファイルが存在するプロジェクトへのプルリクエスト</a> のように表示します。</p>
+誰かがプルリクエストを作ろうとしたときに、GitHub がその内容を <a href="{{< relurl "book/ja/v2/ch00/r_contrib_file" >}}">CONTRIBUTING ファイルが存在するプロジェクトへのプルリクエスト</a> のように表示します。</p>
 </div>
 <div id="r_contrib_file" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-09-contrib.png" >}}" alt="協力にあたっての注意">
+<img src="{{< relurl "book/ja/v2/images/maint-09-contrib.png" >}}" alt="協力にあたっての注意">
 </div>
 <div class="title">図 122. CONTRIBUTING ファイルが存在するプロジェクトへのプルリクエスト</div>
 </div>
@@ -548,7 +548,7 @@ README ファイルを発見すると、GitHub はそれをレンダリングし
 </div>
 <div id="r_default_branch" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-10-default-branch.png" >}}" alt="デフォルトブランチ">
+<img src="{{< relurl "book/ja/v2/images/maint-10-default-branch.png" >}}" alt="デフォルトブランチ">
 </div>
 <div class="title">図 123. プロジェクトのデフォルトブランチの変更</div>
 </div>
@@ -565,7 +565,7 @@ README ファイルを発見すると、GitHub はそれをレンダリングし
 </div>
 <div id="r_transfer_project" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-11-transfer.png" >}}" alt="移管">
+<img src="{{< relurl "book/ja/v2/images/maint-11-transfer.png" >}}" alt="移管">
 </div>
 <div class="title">図 124. 別の GitHub ユーザーや組織への、プロジェクトの移管</div>
 </div>

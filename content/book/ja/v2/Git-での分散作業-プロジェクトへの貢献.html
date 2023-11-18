@@ -70,7 +70,7 @@ Git には、余計な空白文字をチェックするための簡単な仕組�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="`git diff --check` 実行結果">
+<img src="{{< relurl "book/ja/v2/images/git-diff-check.png" >}}" alt="`git diff --check` 実行結果">
 </div>
 <div class="title">図 56. <code>git diff --check</code> 実行結果</div>
 </div>
@@ -81,10 +81,10 @@ Git には、余計な空白文字をチェックするための簡単な仕組�
 <p>次に、コミットの単位が論理的に独立した変更となるようにしましょう。
 つまり、個々の変更内容を把握しやすくするということです。週末に五つの問題点を修正した大規模な変更を、月曜日にまとめてコミットするなどということは避けましょう。
 仮に週末の間にコミットできなかったとしても、ステージングエリアを活用して月曜日にコミット内容を調整することができます。修正した問題ごとにコミットを分割し、それぞれに適切なコメントをつければいいのです。
-もし別々の問題の修正で同じファイルを変更しているのなら、<code>git add --patch</code> を使ってその一部だけをステージすることもできます (詳しくは <a href="ch00/r_interactive_staging">対話的なステージング</a> で説明します)。
+もし別々の問題の修正で同じファイルを変更しているのなら、<code>git add --patch</code> を使ってその一部だけをステージすることもできます (詳しくは <a href="{{< relurl "book/ja/v2/ch00/r_interactive_staging" >}}">対話的なステージング</a> で説明します)。
 すべての変更を同時に追加しさえすれば、一度にコミットしようが五つのコミットに分割しようがブランチの先端は同じ状態になります。あとから変更内容をレビューする他のメンバーのことも考えて、できるだけレビューしやすい状態でコミットするようにしましょう。
 こうしておけば、あとからその変更の一部だけを取り消したりするのにも便利です。
-<a href="ch00/r_rewriting_history">歴史の書き換え</a> では、Git を使って歴史を書き換えたり対話的にファイルをステージしたりする方法を説明します。作業内容を誰かに送る前にその方法を使えば、きれいでわかりやすい歴史を作り上げることができます。</p>
+<a href="{{< relurl "book/ja/v2/ch00/r_rewriting_history" >}}">歴史の書き換え</a> では、Git を使って歴史を書き換えたり対話的にファイルをステージしたりする方法を説明します。作業内容を誰かに送る前にその方法を使えば、きれいでわかりやすい歴史を作り上げることができます。</p>
 </div>
 <div class="paragraph">
 <p>最後に注意しておきたいのが、コミットメッセージです。
@@ -211,7 +211,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="John の分岐した歴史">
+<img src="{{< relurl "book/ja/v2/images/small-team-1.png" >}}" alt="John の分岐した歴史">
 </div>
 <div class="title">図 57. John の分岐した歴史</div>
 </div>
@@ -231,7 +231,7 @@ Merge made by recursive.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="`origin/master` をマージしたあとの John のリポジトリ">
+<img src="{{< relurl "book/ja/v2/images/small-team-2.png" >}}" alt="`origin/master` をマージしたあとの John のリポジトリ">
 </div>
 <div class="title">図 58. <code>origin/master</code> をマージしたあとの John のリポジトリ</div>
 </div>
@@ -251,7 +251,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="origin サーバーにプッシュした後の John の履歴">
+<img src="{{< relurl "book/ja/v2/images/small-team-3.png" >}}" alt="origin サーバーにプッシュした後の John の履歴">
 </div>
 <div class="title">図 59. origin サーバーにプッシュした後の John の履歴</div>
 </div>
@@ -262,7 +262,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Jessica のコミット履歴">
+<img src="{{< relurl "book/ja/v2/images/small-team-4.png" >}}" alt="Jessica のコミット履歴">
 </div>
 <div class="title">図 60. Jessica のコミット履歴</div>
 </div>
@@ -283,7 +283,7 @@ From jessica@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="John の変更を取り込んだ後の Jessica の履歴">
+<img src="{{< relurl "book/ja/v2/images/small-team-5.png" >}}" alt="John の変更を取り込んだ後の Jessica の履歴">
 </div>
 <div class="title">図 61. John の変更を取り込んだ後の Jessica の履歴</div>
 </div>
@@ -302,7 +302,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 </div>
 <div class="paragraph">
-<p><code>issue54..origin/master</code> はログのフィルター記法です。このように書くと、後者のブランチ（この例では <code>origin/master</code> ）には含まれるが前者のブランチ（この例では <code>issue54</code> ）には含まれないコミットのログだけを表示します。この記法の詳細は <a href="ch00/r_commit_ranges">コミットの範囲指定</a> で説明します。</p>
+<p><code>issue54..origin/master</code> はログのフィルター記法です。このように書くと、後者のブランチ（この例では <code>origin/master</code> ）には含まれるが前者のブランチ（この例では <code>issue54</code> ）には含まれないコミットのログだけを表示します。この記法の詳細は <a href="{{< relurl "book/ja/v2/ch00/r_commit_ranges" >}}">コミットの範囲指定</a> で説明します。</p>
 </div>
 <div class="paragraph">
 <p>この例では、John が作成して Jessica がまだマージしていないコミットがひとつあることがコマンド出力から読み取れます。仮にここで Jessica が <code>origin/master</code> をマージするとしましょう。その場合、Jessica の手元のファイルを変更するのは John が作成したコミットひとつだけ、という状態になります。</p>
@@ -350,7 +350,7 @@ Merge made by recursive.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="John の変更をマージした後の Jessica の履歴">
+<img src="{{< relurl "book/ja/v2/images/small-team-6.png" >}}" alt="John の変更をマージした後の Jessica の履歴">
 </div>
 <div class="title">図 62. John の変更をマージした後の Jessica の履歴</div>
 </div>
@@ -370,7 +370,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="すべての変更をサーバーに書き戻した後の Jessica の履歴">
+<img src="{{< relurl "book/ja/v2/images/small-team-7.png" >}}" alt="すべての変更をサーバーに書き戻した後の Jessica の履歴">
 </div>
 <div class="title">図 63. すべての変更をサーバーに書き戻した後の Jessica の履歴</div>
 </div>
@@ -382,7 +382,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="複数開発者での Git を使ったシンプルな開発作業のイベントシーケンス">
+<img src="{{< relurl "book/ja/v2/images/small-team-flow.png" >}}" alt="複数開発者での Git を使ったシンプルな開発作業のイベントシーケンス">
 </div>
 <div class="title">図 64. 複数開発者での Git を使ったシンプルな開発作業のイベントシーケンス</div>
 </div>
@@ -462,7 +462,7 @@ $ git commit -am 'add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Jessica のコミット履歴">
+<img src="{{< relurl "book/ja/v2/images/managed-team-1.png" >}}" alt="Jessica のコミット履歴">
 </div>
 <div class="title">図 65. Jessica のコミット履歴</div>
 </div>
@@ -505,7 +505,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>これは <em>refspec</em> と呼ばれます。
-<a href="ch00/r_refspec">Refspec</a> で、Git の refspec の詳細とそれで何ができるのかを説明します。
+<a href="{{< relurl "book/ja/v2/ch00/r_refspec" >}}">Refspec</a> で、Git の refspec の詳細とそれで何ができるのかを説明します。
 また、 <code>-u</code> オプションが使われていることにも注意しましょう。これは <code>--set-upstream</code> オプションの省略形で、のちのちブランチのプッシュ・プルで楽をするための設定です。</p>
 </div>
 <div class="paragraph">
@@ -566,7 +566,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="Jessica がブランチにコミットした後のコミット履歴">
+<img src="{{< relurl "book/ja/v2/images/managed-team-2.png" >}}" alt="Jessica がブランチにコミットした後のコミット履歴">
 </div>
 <div class="title">図 66. Jessica がブランチにコミットした後のコミット履歴</div>
 </div>
@@ -576,7 +576,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="Jessica が両方のトピックブランチをマージしたあとのコミット履歴">
+<img src="{{< relurl "book/ja/v2/images/managed-team-3.png" >}}" alt="Jessica が両方のトピックブランチをマージしたあとのコミット履歴">
 </div>
 <div class="title">図 67. Jessica が両方のトピックブランチをマージしたあとのコミット履歴</div>
 </div>
@@ -587,7 +587,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="管理されたチームでのワークフローの基本的な流れ">
+<img src="{{< relurl "book/ja/v2/images/managed-team-flow.png" >}}" alt="管理されたチームでのワークフローの基本的な流れ">
 </div>
 <div class="title">図 68. 管理されたチームでのワークフローの基本的な流れ</div>
 </div>
@@ -627,7 +627,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p><code>rebase -i</code> を使ってすべての作業をひとつのコミットにまとめたり、メンテナがレビューしやすいようにコミット内容を整理したりといったことも行うかもしれません。対話的なリベースの方法については <a href="ch00/r_rewriting_history">歴史の書き換え</a> で詳しく説明します。</p>
+<p><code>rebase -i</code> を使ってすべての作業をひとつのコミットにまとめたり、メンテナがレビューしやすいようにコミット内容を整理したりといったことも行うかもしれません。対話的なリベースの方法については <a href="{{< relurl "book/ja/v2/ch00/r_rewriting_history" >}}">歴史の書き換え</a> で詳しく説明します。</p>
 </div>
 </td>
 </tr>
@@ -657,7 +657,7 @@ $ git commit</code></pre>
 </div>
 <div class="paragraph">
 <p>自分用のフォークに作業内容をプッシュし終えたら、それをメンテナに伝えましょう。
-これは、よく「プルリクエスト」と呼ばれるもので、ウェブサイトから実行する (GutHub には Pull request を行う独自の仕組みがあります。詳しくは <a href="ch00/ch06-github">[ch06-github]</a> で説明します) こともできれば、 <code>git request-pull</code> コマンドの出力をプロジェクトのメンテナにメールで送ることもできます。</p>
+これは、よく「プルリクエスト」と呼ばれるもので、ウェブサイトから実行する (GutHub には Pull request を行う独自の仕組みがあります。詳しくは <a href="{{< relurl "book/ja/v2/ch00/ch06-github" >}}">[ch06-github]</a> で説明します) こともできれば、 <code>git request-pull</code> コマンドの出力をプロジェクトのメンテナにメールで送ることもできます。</p>
 </div>
 <div class="paragraph">
 <p><code>request-pull</code> コマンドには、トピックブランチをプルしてもらいたい先のブランチとその Git リポジトリの URL を指定します。すると、プルしてもらいたい変更の概要が出力されます。
@@ -705,7 +705,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="`featureB` に関する作業のコミット履歴">
+<img src="{{< relurl "book/ja/v2/images/public-small-1.png" >}}" alt="`featureB` に関する作業のコミット履歴">
 </div>
 <div class="title">図 69. <code>featureB</code> に関する作業のコミット履歴</div>
 </div>
@@ -721,11 +721,11 @@ $ git push -f myfork featureA</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>これで、あなたの歴史は <a href="ch00/rpsp_b"><code>featureA</code> の作業を終えた後のコミット履歴</a> のように書き換えられました。</p>
+<p>これで、あなたの歴史は <a href="{{< relurl "book/ja/v2/ch00/rpsp_b" >}}"><code>featureA</code> の作業を終えた後のコミット履歴</a> のように書き換えられました。</p>
 </div>
 <div id="rpsp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="`featureA` の作業を終えた後のコミット履歴">
+<img src="{{< relurl "book/ja/v2/images/public-small-2.png" >}}" alt="`featureA` の作業を終えた後のコミット履歴">
 </div>
 <div class="title">図 70. <code>featureA</code> の作業を終えた後のコミット履歴</div>
 </div>
@@ -760,7 +760,7 @@ $ git push myfork featureBv2</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="`featureBv2` の作業を終えた後のコミット履歴">
+<img src="{{< relurl "book/ja/v2/images/public-small-3.png" >}}" alt="`featureBv2` の作業を終えた後のコミット履歴">
 </div>
 <div class="title">図 71. <code>featureBv2</code> の作業を終えた後のコミット履歴</div>
 </div>

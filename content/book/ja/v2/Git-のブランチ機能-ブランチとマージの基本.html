@@ -65,7 +65,7 @@ title: Git - ブランチとマージの基本
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="単純なコミットの歴史">
+<img src="{{< relurl "book/ja/v2/images/basic-branching-1.png" >}}" alt="単純なコミットの歴史">
 </div>
 <div class="title">図 18. 単純なコミットの歴史</div>
 </div>
@@ -90,7 +90,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="新たなブランチポインタの作成">
+<img src="{{< relurl "book/ja/v2/images/basic-branching-2.png" >}}" alt="新たなブランチポインタの作成">
 </div>
 <div class="title">図 19. 新たなブランチポインタの作成</div>
 </div>
@@ -106,7 +106,7 @@ $ git commit -a -m 'added a new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="作業した結果、iss53 ブランチが移動した">
+<img src="{{< relurl "book/ja/v2/images/basic-branching-3.png" >}}" alt="作業した結果、iss53 ブランチが移動した">
 </div>
 <div class="title">図 20. 作業した結果、iss53 ブランチが移動した</div>
 </div>
@@ -121,7 +121,7 @@ Git を使っていれば、ここで <code>iss53</code> に関する変更を�
 <p>しかしその前に注意すべき点があります。
 作業ディレクトリやステージングエリアに未コミットの変更が残っている場合、それがもしチェックアウト先のブランチと衝突する内容ならブランチの切り替えはできません。
 ブランチを切り替える際には、クリーンな状態にしておくのが一番です。
-これを回避する方法もあります (stash およびコミットの amend という処理です) が、後ほど <a href="ch00/r_git_stashing">作業の隠しかたと消しかた</a> で説明します。
+これを回避する方法もあります (stash およびコミットの amend という処理です) が、後ほど <a href="{{< relurl "book/ja/v2/ch00/r_git_stashing" >}}">作業の隠しかたと消しかた</a> で説明します。
 今回はすべての変更をコミットし終えているので、master ブランチに戻ることができます。</p>
 </div>
 <div class="listingblock">
@@ -152,7 +152,7 @@ $ git commit -a -m 'fixed the broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="`master` から新たに作成した hotfix ブランチ">
+<img src="{{< relurl "book/ja/v2/images/basic-branching-4.png" >}}" alt="`master` から新たに作成した hotfix ブランチ">
 </div>
 <div class="title">図 21. <code>master</code> から新たに作成した hotfix ブランチ</div>
 </div>
@@ -182,7 +182,7 @@ Fast-forward
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="`master`が`hotfix`にfast-forwardされた">
+<img src="{{< relurl "book/ja/v2/images/basic-branching-5.png" >}}" alt="`master`が`hotfix`にfast-forwardされた">
 </div>
 <div class="title">図 22. `master`が`hotfix`にfast-forwardされた</div>
 </div>
@@ -213,7 +213,7 @@ $ git commit -a -m 'finished the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="`iss53` の作業を続ける">
+<img src="{{< relurl "book/ja/v2/images/basic-branching-6.png" >}}" alt="`iss53` の作業を続ける">
 </div>
 <div class="title">図 23. <code>iss53</code> の作業を続ける</div>
 </div>
@@ -252,7 +252,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="三つのスナップショットを使ったマージ">
+<img src="{{< relurl "book/ja/v2/images/basic-merging-1.png" >}}" alt="三つのスナップショットを使ったマージ">
 </div>
 <div class="title">図 24. 三つのスナップショットを使ったマージ</div>
 </div>
@@ -262,7 +262,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="マージコミット">
+<img src="{{< relurl "book/ja/v2/images/basic-merging-2.png" >}}" alt="マージコミット">
 </div>
 <div class="title">図 25. マージコミット</div>
 </div>
@@ -386,7 +386,7 @@ Hit return to start merge resolution tool (opendiff):</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>もっと難しいコンフリクトを解消するための方法を知りたい場合は、<a href="ch00/r_advanced_merging">高度なマージ手法</a> を参照ください。</p>
+<p>もっと難しいコンフリクトを解消するための方法を知りたい場合は、<a href="{{< relurl "book/ja/v2/ch00/r_advanced_merging" >}}">高度なマージ手法</a> を参照ください。</p>
 </div>
 </td>
 </tr>

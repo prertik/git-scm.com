@@ -65,7 +65,7 @@ Git はまた、ローカルに <code>master</code> というブランチも作�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="クローン後のサーバーとローカルのリポジトリ">
+<img src="{{< relurl "book/ja/v2/images/remote-branches-1.png" >}}" alt="クローン後のサーバーとローカルのリポジトリ">
 </div>
 <div class="title">図 30. クローン後のサーバーとローカルのリポジトリ</div>
 </div>
@@ -76,7 +76,7 @@ Git はまた、ローカルに <code>master</code> というブランチも作�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="ローカルとリモートの作業が枝分かれすることがある">
+<img src="{{< relurl "book/ja/v2/images/remote-branches-2.png" >}}" alt="ローカルとリモートの作業が枝分かれすることがある">
 </div>
 <div class="title">図 31. ローカルとリモートの作業が枝分かれすることがある</div>
 </div>
@@ -86,7 +86,7 @@ Git はまた、ローカルに <code>master</code> というブランチも作�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` によるリモートへの参照の更新">
+<img src="{{< relurl "book/ja/v2/images/remote-branches-3.png" >}}" alt="`git fetch` によるリモートへの参照の更新">
 </div>
 <div class="title">図 32. <code>git fetch</code> によるリモートへの参照の更新</div>
 </div>
@@ -94,12 +94,12 @@ Git はまた、ローカルに <code>master</code> というブランチも作�
 <p>複数のリモートサーバーがあった場合にリモートのブランチがどのようになるのかを知るために、もうひとつ Git サーバーがあるものと仮定しましょう。
 こちらのサーバーは、チームの一部のメンバーが開発目的にのみ使用しています。
 このサーバーは <code>git.team1.ourcompany.com</code> にあるものとしましょう。
-このサーバーをあなたの作業中のプロジェクトから参照できるようにするには、<a href="ch00/ch02-git-basics">[ch02-git-basics]</a> で紹介した <code>git remote add</code> コマンドを使用します。
+このサーバーをあなたの作業中のプロジェクトから参照できるようにするには、<a href="{{< relurl "book/ja/v2/ch00/ch02-git-basics" >}}">[ch02-git-basics]</a> で紹介した <code>git remote add</code> コマンドを使用します。
 このリモートに <code>teamone</code> という名前をつけ、URL ではなく短い名前で参照できるようにします。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="別のサーバーをリモートとして追加">
+<img src="{{< relurl "book/ja/v2/images/remote-branches-4.png" >}}" alt="別のサーバーをリモートとして追加">
 </div>
 <div class="title">図 33. 別のサーバーをリモートとして追加</div>
 </div>
@@ -110,7 +110,7 @@ Git はまた、ローカルに <code>master</code> というブランチも作�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="リモート `teamone/master` を追跡するブランチ">
+<img src="{{< relurl "book/ja/v2/images/remote-branches-5.png" >}}" alt="リモート `teamone/master` を追跡するブランチ">
 </div>
 <div class="title">図 34. リモート <code>teamone/master</code> を追跡するブランチ</div>
 </div>
@@ -145,7 +145,7 @@ To https://github.com/schacon/simplegit
 <p>これは、ちょっとしたショートカットです。
 Git はまずブランチ名 <code>serverfix</code> を <code>refs/heads/serverfix:refs/heads/serverfix</code> に展開します。
 これは「手元のローカルブランチ serverfix をプッシュして、リモートの serverfix ブランチを更新しろ」という意味です。
-<code>refs/heads/</code> の部分の意味については <a href="ch00/ch10-git-internals">[ch10-git-internals]</a> で詳しく説明しますが、これは一般的に省略可能です。
+<code>refs/heads/</code> の部分の意味については <a href="{{< relurl "book/ja/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a> で詳しく説明しますが、これは一般的に省略可能です。
 <code>git push origin serverfix:serverfix</code> とすることもできます。
 これも同じことで、「こっちの serverfix で、リモートの serverfix を更新しろ」という意味になります。
 この方式を使えば、ローカルブランチの内容をリモートにある別の名前のブランチにプッシュすることができます。
@@ -168,7 +168,7 @@ Git はまずブランチ名 <code>serverfix</code> を <code>refs/heads/serverf
 一番シンプルな方法は、数分間だけメモリに記憶させる方法です。この方法を使いたければ、<code>git config --global credential.helper cache</code> を実行しましょう。</p>
 </div>
 <div class="paragraph">
-<p>それ以外に使える認証情報キャッシュの方式については、<a href="ch00/r_credential_caching">認証情報の保存</a> を参照ください。</p>
+<p>それ以外に使える認証情報キャッシュの方式については、<a href="{{< relurl "book/ja/v2/ch00/r_credential_caching" >}}">認証情報の保存</a> を参照ください。</p>
 </div>
 </td>
 </tr>

@@ -33,13 +33,13 @@ Git のブランチ機能は圧倒的に軽量です。ブランチの作成は�
 <p>Git のブランチの仕組みについてきちんと理解するには、少し後戻りして Git がデータを格納する方法を知っておく必要があります。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/ch01-introduction">[ch01-introduction]</a> で説明したように、Git はチェンジセットや差分としてデータを保持しているのではありません。そうではなく、スナップショットとして保持しています。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/ch01-introduction" >}}">[ch01-introduction]</a> で説明したように、Git はチェンジセットや差分としてデータを保持しているのではありません。そうではなく、スナップショットとして保持しています。</p>
 </div>
 <div class="paragraph">
 <p>Git にコミットすると、Git はコミットオブジェクトを作成して格納します。このオブジェクトには、あなたがステージしたスナップショットへのポインタや作者・メッセージのメタデータ、そしてそのコミットの直接の親となるコミットへのポインタが含まれています。最初のコミットの場合は親はいません。通常のコミットの場合は親がひとつ存在します。複数のブランチからマージした場合は、親も複数となります。</p>
 </div>
 <div class="paragraph">
-<p>これを視覚化して考えるために、ここに 3 つのファイルを含むディレクトリがあると仮定しましょう。3 つのファイルをすべてステージしてコミットしたところです。ステージしたファイルについてチェックサム (<a href="ch00/ch01-introduction">[ch01-introduction]</a> で説明した SHA-1 ハッシュ) を計算し、そのバージョンのファイルを Git ディレクトリに格納し (Git はファイルを blob として扱います)、そしてそのチェックサムをステージングエリアに追加します。</p>
+<p>これを視覚化して考えるために、ここに 3 つのファイルを含むディレクトリがあると仮定しましょう。3 つのファイルをすべてステージしてコミットしたところです。ステージしたファイルについてチェックサム (<a href="{{< relurl "book/ja/v2/ch00/ch01-introduction" >}}">[ch01-introduction]</a> で説明した SHA-1 ハッシュ) を計算し、そのバージョンのファイルを Git ディレクトリに格納し (Git はファイルを blob として扱います)、そしてそのチェックサムをステージングエリアに追加します。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -56,7 +56,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="コミットおよびそのツリー">
+<img src="{{< relurl "book/ja/v2/images/commit-and-tree.png" >}}" alt="コミットおよびそのツリー">
 </div>
 <div class="title">図 9. コミットおよびそのツリー</div>
 </div>
@@ -65,7 +65,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="コミットおよびその親">
+<img src="{{< relurl "book/ja/v2/images/commits-and-parents.png" >}}" alt="コミットおよびその親">
 </div>
 <div class="title">図 10. コミットおよびその親</div>
 </div>
@@ -91,7 +91,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="ブランチおよびそのコミットの歴史">
+<img src="{{< relurl "book/ja/v2/images/branch-and-history.png" >}}" alt="ブランチおよびそのコミットの歴史">
 </div>
 <div class="title">図 11. ブランチおよびそのコミットの歴史</div>
 </div>
@@ -117,7 +117,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="ふたつのブランチが同じ一連のコミットを指す">
+<img src="{{< relurl "book/ja/v2/images/two-branches.png" >}}" alt="ふたつのブランチが同じ一連のコミットを指す">
 </div>
 <div class="title">図 12. ふたつのブランチが同じ一連のコミットを指す</div>
 </div>
@@ -132,7 +132,7 @@ Git では、HEAD はあなたが作業しているローカルブランチへ�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="ブランチを指す HEAD">
+<img src="{{< relurl "book/ja/v2/images/head-to-master.png" >}}" alt="ブランチを指す HEAD">
 </div>
 <div class="title">図 13. ブランチを指す HEAD</div>
 </div>
@@ -172,7 +172,7 @@ f30ab (HEAD -&gt; master, testing) add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD は現在のブランチを指す">
+<img src="{{< relurl "book/ja/v2/images/head-to-testing.png" >}}" alt="HEAD は現在のブランチを指す">
 </div>
 <div class="title">図 14. HEAD は現在のブランチを指す</div>
 </div>
@@ -188,7 +188,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="HEAD が指すブランチが、コミットによって移動する">
+<img src="{{< relurl "book/ja/v2/images/advance-testing.png" >}}" alt="HEAD が指すブランチが、コミットによって移動する">
 </div>
 <div class="title">図 15. HEAD が指すブランチが、コミットによって移動する</div>
 </div>
@@ -203,7 +203,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="チェックアウトによって HEAD が移動する">
+<img src="{{< relurl "book/ja/v2/images/checkout-master.png" >}}" alt="チェックアウトによって HEAD が移動する">
 </div>
 <div class="title">図 16. チェックアウトによって HEAD が移動する</div>
 </div>
@@ -241,14 +241,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>これで、プロジェクトの歴史が二つに分かれました (<a href="ch00/rdivergent_history">分裂した歴史</a> を参照ください)。
+<p>これで、プロジェクトの歴史が二つに分かれました (<a href="{{< relurl "book/ja/v2/ch00/rdivergent_history" >}}">分裂した歴史</a> を参照ください)。
 新たなブランチを作成してそちらに切り替え、何らかの作業を行い、メインブランチに戻って別の作業をした状態です。
 どちらの変更も、ブランチごとに分離しています。ブランチを切り替えつつそれぞれの作業を進め、必要に応じてマージすることができます。
 これらをすべて、シンプルに <code>branch</code> コマンドと <code>checkout</code> コマンドそして <code>commit</code> コマンドで行えるのです。</p>
 </div>
 <div id="rdivergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="分裂した歴史">
+<img src="{{< relurl "book/ja/v2/images/advance-master.png" >}}" alt="分裂した歴史">
 </div>
 <div class="title">図 17. 分裂した歴史</div>
 </div>

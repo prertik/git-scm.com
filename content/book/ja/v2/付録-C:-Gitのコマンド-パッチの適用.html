@@ -28,7 +28,7 @@ url: book/ja/v2/付録-C:-Gitのコマンド-パッチの適用
 <p><code>git cherry-pick</code> コマンドは、あるコミットで行われた変更を取得して、それを現在のブランチへ新しいコミットとして取り込む場合に使用されます。これは、あるブランチをマージしてすべての変更を取り込むのではなく、そのブランチから一つか二つのコミットだけを個別に取り込みたい場合に役立ちます。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_rebase_cherry_pick">リベースとチェリーピックのワークフロー</a> では、チェリーピックの説明を行い、実例を示しました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_rebase_cherry_pick" >}}">リベースとチェリーピックのワークフロー</a> では、チェリーピックの説明を行い、実例を示しました。</p>
 </div>
 </div>
 <div class="sect3">
@@ -37,16 +37,16 @@ url: book/ja/v2/付録-C:-Gitのコマンド-パッチの適用
 <p><code>git rebase</code> コマンドは、基本的には <code>cherry-pick</code> を自動化したものです。対象となる一連のコミットを決めた上で、それらを一つずつ、元と同じ順序となるように、どこか別の場所へチェリーピックします。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_rebasing">リベース</a> では、リベースについて詳しく取り上げました。ここでは、公開済みのブランチのリベースに関連した、共同作業の際の課題についても取り上げました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_rebasing" >}}">リベース</a> では、リベースについて詳しく取り上げました。ここでは、公開済みのブランチのリベースに関連した、共同作業の際の課題についても取り上げました。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_replace">Git オブジェクトの置き換え</a> では、歴史を分割して、二つの別々のリポジトリへ格納する例を通して、このコマンドの実用的な使い方を示しました。またその際に <code>--onto</code> フラグを使用しました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_replace" >}}">Git オブジェクトの置き換え</a> では、歴史を分割して、二つの別々のリポジトリへ格納する例を通して、このコマンドの実用的な使い方を示しました。またその際に <code>--onto</code> フラグを使用しました。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_rerere">Rerere</a> では、リベース中に発生するマージコンフリクトについて見てきました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_rerere" >}}">Rerere</a> では、リベース中に発生するマージコンフリクトについて見てきました。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_changing_multiple">複数のコミットメッセージの変更</a> では、 <code>-i</code> オプションを指定して、対話的スクリプティングモードを使用しました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_changing_multiple" >}}">複数のコミットメッセージの変更</a> では、 <code>-i</code> オプションを指定して、対話的スクリプティングモードを使用しました。</p>
 </div>
 </div>
 <div class="sect3">
@@ -55,7 +55,7 @@ url: book/ja/v2/付録-C:-Gitのコマンド-パッチの適用
 <p><code>git revert</code> コマンドは、本質的には <code>git cherry-pick</code> コマンドの逆です。このコマンドは、コマンドの対象となるコミットで取り込まれた変更に対して、本質的にはそれを元に戻したり取り消したりすることで、そのコミットとは逆の変更を行うコミットを新規に作成します。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_reverse_commit">コミットの打ち消し</a> では、マージコミットを元に戻すのにこのコマンドを使用しました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_reverse_commit" >}}">コミットの打ち消し</a> では、マージコミットを元に戻すのにこのコマンドを使用しました。</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

@@ -144,7 +144,7 @@ Delovni direktorij si lahko predstavljate kot <strong>peskovnik</strong>, kjer l
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-workflow.png" >}}" alt="Gitov običajni potek dela">
+<img src="{{< relurl "book/sl/v2/images/reset-workflow.png" >}}" alt="Gitov običajni potek dela">
 </div>
 <div class="title">Slika 137. Gitov običajni potek dela</div>
 </div>
@@ -155,7 +155,7 @@ Sedaj zaženemo <code>git init</code>, kar bo ustvarilo repozitorij Git z refere
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex1.png" >}}" alt="Novo inicializirani repozitorij Git z datoteko izven področja priprave v delovnem direktoriju">
+<img src="{{< relurl "book/sl/v2/images/reset-ex1.png" >}}" alt="Novo inicializirani repozitorij Git z datoteko izven področja priprave v delovnem direktoriju">
 </div>
 <div class="title">Slika 138. Novo inicializirani repozitorij Git z datoteko izven področja priprave v delovnem direktoriju</div>
 </div>
@@ -167,7 +167,7 @@ Sedaj zaženemo <code>git init</code>, kar bo ustvarilo repozitorij Git z refere
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex2.png" >}}" alt="`git add` kopira datoteko v indeks">
+<img src="{{< relurl "book/sl/v2/images/reset-ex2.png" >}}" alt="`git add` kopira datoteko v indeks">
 </div>
 <div class="title">Slika 139. <code>git add</code> kopira datoteko v indeks</div>
 </div>
@@ -176,7 +176,7 @@ Sedaj zaženemo <code>git init</code>, kar bo ustvarilo repozitorij Git z refere
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex3.png" >}}" alt="Korak `git commit`">
+<img src="{{< relurl "book/sl/v2/images/reset-ex3.png" >}}" alt="Korak `git commit`">
 </div>
 <div class="title">Slika 140. Korak <code>git commit</code>
 </div>
@@ -191,7 +191,7 @@ Imenujmo jo <strong>v2</strong> datoteke in jo označimo z rdečo barvo.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex4.png" >}}" alt="Repozitorij Git s spremenjeno datoteko v delovnem direktoriju">
+<img src="{{< relurl "book/sl/v2/images/reset-ex4.png" >}}" alt="Repozitorij Git s spremenjeno datoteko v delovnem direktoriju">
 </div>
 <div class="title">Slika 141. Repozitorij Git s spremenjeno datoteko v delovnem direktoriju</div>
 </div>
@@ -201,7 +201,7 @@ Nato zaženemo <code>git add</code>, da jo damo v področje priprave (v naš ind
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex5.png" >}}" alt="Dodajanje spremembe v področje priprave (indeks)">
+<img src="{{< relurl "book/sl/v2/images/reset-ex5.png" >}}" alt="Dodajanje spremembe v področje priprave (indeks)">
 </div>
 <div class="title">Slika 142. Dodajanje spremembe v področje priprave (indeks)</div>
 </div>
@@ -211,7 +211,7 @@ Na koncu zaženemo <code>git commit</code>, da zaključimo potrjevanje.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex6.png" >}}" alt="Korak `git commit` s spremenjeno datoteko">
+<img src="{{< relurl "book/sl/v2/images/reset-ex6.png" >}}" alt="Korak `git commit` s spremenjeno datoteko">
 </div>
 <div class="title">Slika 143. Korak <code>git commit</code> s spremenjeno datoteko</div>
 </div>
@@ -234,7 +234,7 @@ Tako je sedaj videti naša zgodovina:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-start.png" >}}" alt="Repozitorij Git s tremi potrditvami">
+<img src="{{< relurl "book/sl/v2/images/reset-start.png" >}}" alt="Repozitorij Git s tremi potrditvami">
 </div>
 <div class="title">Slika 144. Repozitorij Git s tremi potrditvami</div>
 </div>
@@ -252,7 +252,7 @@ To pomeni, da če je HEAD nastavljen na vejo <code>master</code> (torej se trenu
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-soft.png" >}}" alt="Mehka ponastavitev">
+<img src="{{< relurl "book/sl/v2/images/reset-soft.png" >}}" alt="Mehka ponastavitev">
 </div>
 <div class="title">Slika 145. Mehka ponastavitev</div>
 </div>
@@ -264,7 +264,7 @@ Z uporabo <code>reset --soft</code> se bo postopek tam preprosto ustavil.</p>
 <p>Sedaj si vzemite trenutek in si oglejte ta diagram ter ugotovite, kaj se je zgodilo: v bistvu se je preklical zadnji ukaz <code>git commit</code>.
 Ko zaženete <code>git commit</code>, Git ustvari novo potrditev in nanjo premakne vejo, na katero kaže HEAD.
 Ko se z ukazom <code>reset</code> vrnete na <code>HEAD~</code> (na nadrejeno od <code>HEAD</code>), premaknete vejo nazaj na prejšnje mesto, pri tem pa ne spremenite indeksa ali delovnega direktorija.
-Sedaj lahko posodobite indeks in znova zaženete <code>git commit</code>, da dosežete to, kar bi naredil <code>git commit --amend</code> (glejte <a href="ch00/_git_amend">Spreminjanje zadnje potrditve</a>).</p>
+Sedaj lahko posodobite indeks in znova zaženete <code>git commit</code>, da dosežete to, kar bi naredil <code>git commit --amend</code> (glejte <a href="{{< relurl "book/sl/v2/ch00/_git_amend" >}}">Spreminjanje zadnje potrditve</a>).</p>
 </div>
 </div>
 <div class="sect4">
@@ -277,7 +277,7 @@ Sedaj lahko posodobite indeks in znova zaženete <code>git commit</code>, da dos
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-mixed.png" >}}" alt="Mešana ponastavitev">
+<img src="{{< relurl "book/sl/v2/images/reset-mixed.png" >}}" alt="Mešana ponastavitev">
 </div>
 <div class="title">Slika 146. Mešana ponastavitev</div>
 </div>
@@ -298,7 +298,7 @@ Vrnili ste se na stanje pred zagonom ukazov <code>git add</code> in <code>git co
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-hard.png" >}}" alt="Trda ponastavitev">
+<img src="{{< relurl "book/sl/v2/images/reset-hard.png" >}}" alt="Trda ponastavitev">
 </div>
 <div class="title">Slika 147. Trda ponastavitev</div>
 </div>
@@ -359,7 +359,7 @@ Ta oblika (ker niste navedli SHA-1 ali veje in niste navedli <code>--soft</code>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path1.png" >}}" alt="Mešana ponastavitev s potjo">
+<img src="{{< relurl "book/sl/v2/images/reset-path1.png" >}}" alt="Mešana ponastavitev s potjo">
 </div>
 <div class="title">Slika 148. Mešana ponastavitev s potjo</div>
 </div>
@@ -369,12 +369,12 @@ Ta oblika (ker niste navedli SHA-1 ali veje in niste navedli <code>--soft</code>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path2.png" >}}" alt="Dodajanje datoteke v področje priprave (indeks)">
+<img src="{{< relurl "book/sl/v2/images/reset-path2.png" >}}" alt="Dodajanje datoteke v področje priprave (indeks)">
 </div>
 <div class="title">Slika 149. Dodajanje datoteke v področje priprave (indeks)</div>
 </div>
 <div class="paragraph">
-<p>To je razlog, zakaj nam izhod ukaza <code>git status</code> predlaga, naj za preklic dajanja datoteke v področje priprave uporabimo ta ukaz (za več informacij glejte razdelek <a href="ch00/_unstaging">Povrnitev datoteke iz področja priprave</a>).</p>
+<p>To je razlog, zakaj nam izhod ukaza <code>git status</code> predlaga, naj za preklic dajanja datoteke v področje priprave uporabimo ta ukaz (za več informacij glejte razdelek <a href="{{< relurl "book/sl/v2/ch00/_unstaging" >}}">Povrnitev datoteke iz področja priprave</a>).</p>
 </div>
 <div class="paragraph">
 <p>Enako lahko dosežemo tudi tako, da Gitu ne dovolimo, da smo mislili »povleci podatke iz HEAD«, tako da navedemo specifično potrditev, od koder želimo povleči datoteko.
@@ -382,7 +382,7 @@ Tako bi lahko zagnali nekaj podobnega <code>git reset eb43bf file.txt</code>.</p
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path3.png" >}}" alt="Mehka ponastavitev s potjo na določeno potrditev">
+<img src="{{< relurl "book/sl/v2/images/reset-path3.png" >}}" alt="Mehka ponastavitev s potjo na določeno potrditev">
 </div>
 <div class="title">Slika 150. Mehka ponastavitev s potjo na določeno potrditev</div>
 </div>
@@ -403,7 +403,7 @@ Tako lahko izbirate katero vsebino želite pustiti izven področja priprave, ali
 <div class="paragraph">
 <p>Recimo, da imate vrsto potrditev s sporočili, kot so »ups.«, »WIP« in »forgot this file«.
 Uporabite lahko <code>reset</code>, da jih hitro in enostavno združite v eno samo potrditev, kar vas bo naredilo pametnejšega.
-V razdelku <a href="ch00/_squashing">Stiskanje potrditev skupaj</a> je prikazan še en način, kako to storiti, vendar bo v tem primeru lažje uporabiti <code>reset</code>.</p>
+V razdelku <a href="{{< relurl "book/sl/v2/ch00/_squashing" >}}">Stiskanje potrditev skupaj</a> je prikazan še en način, kako to storiti, vendar bo v tem primeru lažje uporabiti <code>reset</code>.</p>
 </div>
 <div class="paragraph">
 <p>Recimo, da imate projekt, kjer prva potrditev vsebuje eno datoteko, druga pa je dodala novo datoteko in spremenila prvo, tretja potrditev pa je ponovno spremenila prvo datoteko.
@@ -411,7 +411,7 @@ Druga potrditev je bilo delo v napredku in ga želite stisniti skupaj.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r1.png" >}}" alt="Repozitorij Git">
+<img src="{{< relurl "book/sl/v2/images/reset-squash-r1.png" >}}" alt="Repozitorij Git">
 </div>
 <div class="title">Slika 151. Repozitorij Git</div>
 </div>
@@ -420,7 +420,7 @@ Druga potrditev je bilo delo v napredku in ga želite stisniti skupaj.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r2.png" >}}" alt="Premik HEAD-a pri mehki ponastavitvi">
+<img src="{{< relurl "book/sl/v2/images/reset-squash-r2.png" >}}" alt="Premik HEAD-a pri mehki ponastavitvi">
 </div>
 <div class="title">Slika 152. Premik HEAD-a pri mehki ponastavitvi</div>
 </div>
@@ -429,7 +429,7 @@ Druga potrditev je bilo delo v napredku in ga želite stisniti skupaj.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r3.png" >}}" alt="Repozitorij Git s stisnjeno potrditvijo">
+<img src="{{< relurl "book/sl/v2/images/reset-squash-r3.png" >}}" alt="Repozitorij Git s stisnjeno potrditvijo">
 </div>
 <div class="title">Slika 153. Repozitorij Git s stisnjeno potrditvijo</div>
 </div>
@@ -470,7 +470,7 @@ HEAD bo sedaj kazal na <code>master</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-checkout.png" >}}" alt="`git checkout` in `git reset`">
+<img src="{{< relurl "book/sl/v2/images/reset-checkout.png" >}}" alt="`git checkout` in `git reset`">
 </div>
 <div class="title">Slika 154. <code>git checkout</code> in <code>git reset</code>
 </div>

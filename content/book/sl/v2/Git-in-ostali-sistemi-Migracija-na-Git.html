@@ -353,7 +353,7 @@ Kot smo govorili zgoraj, sta dva načina, da omogočimo Gitu in Perforcu govorit
 <h4 id="_perforce_git_fusion">Perforce Git Fusion</h4>
 <div class="paragraph">
 <p>Git Fusion naredi ta proces precej neboleč.
-Samo nastavite nastavitve svojega projekta, preslikave uporabnika in veje, ki uporabljajo nastavitveno datoteko (kot je omenjeno v <a href="ch00/_p4_git_fusion">Git Fusion</a>) in klonirajte repozitorij.
+Samo nastavite nastavitve svojega projekta, preslikave uporabnika in veje, ki uporabljajo nastavitveno datoteko (kot je omenjeno v <a href="{{< relurl "book/sl/v2/ch00/_p4_git_fusion" >}}">Git Fusion</a>) in klonirajte repozitorij.
 Git Fusion vas pusti z nečim, kar je videti kot domači repozitorij Git, ki je nato pripravljen za potiskanje na domačega gostitelja Git, če želite.
 Perforce bi lahko uporabili celo kot vaš gostitelj Git, če želite.</p>
 </div>
@@ -400,7 +400,7 @@ Importing revision 9957 (100%)</code></pre>
 </div>
 <div class="paragraph">
 <p>Ta določeni projekt ima samo eno vejo, vendar če imate veje, ki so nastavljive s pogledi vej (ali samo skupkom direktorijev), lahko uporabite zastavico <code>--detect-branches</code> na <code>git p4 clone</code>, da uvozite tudi vse veje projekta.
-Glejte razdelek <a href="ch00/_git_p4_branches">Veje</a> za nekoliko več podrobnosti o tem.</p>
+Glejte razdelek <a href="{{< relurl "book/sl/v2/ch00/_git_p4_branches" >}}">Veje</a> za nekoliko več podrobnosti o tem.</p>
 </div>
 <div class="paragraph">
 <p>Na tej točki ste že skoraj končali.
@@ -472,7 +472,7 @@ Date:   Tue Jul 7 01:35:51 2009 -0800
 Če vaš sistem ni eden od zgoraj omenjenih, poiščite uvoznika na spletu — kakovostni uvozniki so na voljo za mnoge druge sisteme, vključno s CVS, Clear Case, Visual Source Safe in celo imenikom arhivov.
 Če nobeno od teh orodij ne deluje za vas, ali imate bolj zapleteno orodje, ali pa potrebujete drugačen postopek uvoza, uporabite <code>git fast-import</code>.
 Ta ukaz preprosto prebere navodila iz standardnega vhoda za pisanje določenih podatkov Git.
-Na ta način je veliko lažje ustvariti objekte Git kot z uporabo surovih ukazov Git ali poskusom pisanja surovih objektov (za več informacij glejte poglavje <a href="ch00/ch10-git-internals">Notranjost Gita</a>).
+Na ta način je veliko lažje ustvariti objekte Git kot z uporabo surovih ukazov Git ali poskusom pisanja surovih objektov (za več informacij glejte poglavje <a href="{{< relurl "book/sl/v2/ch00/ch10-git-internals" >}}">Notranjost Gita</a>).
 Na ta način lahko napišete uvozni skript, ki iz sistema, iz katerega uvažate, bere potrebne informacije in izpiše preprosta navodila na standardni izhod.
 Nato lahko to program poženete in njegov izhod preusmerite skozi <code>git fast-import</code>.</p>
 </div>
@@ -498,7 +498,7 @@ Vse, kar morate storiti, je povedati <code>fast-import</code>, kaj so posnetki v
 Vaša strategija bo, da boste posamezne posnetke poiskali po vrstnem redu in za vsako mapo ustvarili potrditev z vsebino te mape, pri tem pa vsako potrditev povezali s prejšnjo.</p>
 </div>
 <div class="paragraph">
-<p>Kot smo storili v <a href="ch00/_an_example_git_enforced_policy">Primer pravilnika, ki ga uveljavlja Git</a>, bomo to napisali v Rubyju, ker gre za jezik, s katerim se običajno ukvarjamo, in ker je običajno enostaven za branje.
+<p>Kot smo storili v <a href="{{< relurl "book/sl/v2/ch00/_an_example_git_enforced_policy" >}}">Primer pravilnika, ki ga uveljavlja Git</a>, bomo to napisali v Rubyju, ker gre za jezik, s katerim se običajno ukvarjamo, in ker je običajno enostaven za branje.
 Ta primer lahko precej enostavno napišete v katerem koli drugem jeziku, ki ga poznate — le ustrezne podatke morate izpisati v stdout.
 Če delate v sistemu Windows, bodite pozorni, da ne vnesete vsebnosti pomika na konec vrstice — <code>git fast-import</code> zelo natančno zahteva samo vrstice (LF), ne pa vsebnosti pomika s karetom (CRLF), ki jih uporablja Windows.</p>
 </div>

@@ -140,7 +140,7 @@ $ git show topic1</code></pre>
 </div>
 <div class="paragraph">
 <p>Če želite videti, na kateri specifični SHA-1 se nanaša veja, ali če želite videti, kaj kateri od teh primerov pomeni v smislu SHA-1, lahko uporabite Gitovo orodje napeljave imenovano <code>rev-parse</code>.
-Za več informacij o orodjih napeljave si oglejte poglavje <a href="ch00/ch10-git-internals">Notranjost Gita</a>; v osnovi obstaja orodje <code>rev-parse</code> za nižje nivojske operacije in ni zasnovano za vsakodnevno uporabo.
+Za več informacij o orodjih napeljave si oglejte poglavje <a href="{{< relurl "book/sl/v2/ch00/ch10-git-internals" >}}">Notranjost Gita</a>; v osnovi obstaja orodje <code>rev-parse</code> za nižje nivojske operacije in ni zasnovano za vsakodnevno uporabo.
 Vendar pa je včasih lahko koristno, ko želite videti, kaj se v resnici dogaja.
 Tukaj lahko poženete <code>rev-parse</code> na svoji veji.</p>
 </div>
@@ -384,11 +384,11 @@ To je še posebej koristno za upravljanje vej — če imate veliko vej, lahk
 <div class="paragraph">
 <p>Najpogostejša specifikacija obsega je sintaksa z dvema pikama.
 To Gitu omogoča, da določi obseg potrditev, ki so dosegljive iz ene potrditve, a niso dosegljive iz druge.
-Na primer, recimo, da imate zgodovino potrditev, ki je videti kot slika <a href="ch00/double_dot">Primer zgodovine za izbiro obsega</a>.</p>
+Na primer, recimo, da imate zgodovino potrditev, ki je videti kot slika <a href="{{< relurl "book/sl/v2/ch00/double_dot" >}}">Primer zgodovine za izbiro obsega</a>.</p>
 </div>
 <div id="double_dot" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/double-dot.png" >}}" alt="Primer zgodovine za izbiro obsega">
+<img src="{{< relurl "book/sl/v2/images/double-dot.png" >}}" alt="Primer zgodovine za izbiro obsega">
 </div>
 <div class="title">Slika 136. Primer zgodovine za izbiro obsega</div>
 </div>
@@ -463,7 +463,7 @@ $ git log refA refB --not refC</code></pre>
 <h4 id="_triple_dot">Trojna pika</h4>
 <div class="paragraph">
 <p>Zadnja glavna sintaksa za izbiro obsega je trojna pika, ki določa vse potrditve, do katerih je mogoče priti <em>bodisi</em> z eno ali drugo referenco, ne pa z obema hkrati.
-Oglejmo si primer zgodovine potrditev na sliki <a href="ch00/double_dot">Primer zgodovine za izbiro obsega</a>.
+Oglejmo si primer zgodovine potrditev na sliki <a href="{{< relurl "book/sl/v2/ch00/double_dot" >}}">Primer zgodovine za izbiro obsega</a>.
 Če želite videti, kaj je v <code>master</code> ali <code>experiment</code> vendar brez skupnih referenc, lahko poženete:</p>
 </div>
 <div class="listingblock">

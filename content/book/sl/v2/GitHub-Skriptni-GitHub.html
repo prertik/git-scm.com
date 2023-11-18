@@ -35,11 +35,11 @@ V tem razdelku bomo pokrili, kako uporabljati GitHubov sistem kljuk in njegov AP
 <div class="paragraph">
 <p>Najprej bomo pogledali storitve.
 Obe integraciji kljuke in storitve se lahko najde v razdelku »Settings« vašega repozitorija, kjer smo prej pogledali dodajanje sodelavcev in spreminjanje privzete veje vašega projekta.
-Pod zavihkom »Webhooks and Services« boste videli nekaj, kot je na sliki <a href="ch00/_services_hooks">Nastavitveni razdelek storitve in kljuke</a>.</p>
+Pod zavihkom »Webhooks and Services« boste videli nekaj, kot je na sliki <a href="{{< relurl "book/sl/v2/ch00/_services_hooks" >}}">Nastavitveni razdelek storitve in kljuke</a>.</p>
 </div>
 <div id="_services_hooks" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-01-services.png" >}}" alt="Nastavitveni razdelek storitve in kljuke">
+<img src="{{< relurl "book/sl/v2/images/scripting-01-services.png" >}}" alt="Nastavitveni razdelek storitve in kljuke">
 </div>
 <div class="title">Slika 129. Nastavitveni razdelek storitve in kljuke</div>
 </div>
@@ -47,11 +47,11 @@ Pod zavihkom »Webhooks and Services« boste videli nekaj, kot je na sliki <a hr
 <p>Na voljo je ducat storitev, ki jih lahko izberete, večina od teh integracij v ostale komercialne in odprtokodne sisteme.
 Večina njih je za storitve stalne integracije, sledenja hroščev in težav, sisteme pogovornih sob in sisteme dokumentaicije.
 Šli bomo skozi nastavitev zelo enostavne, e-poštne kljuke.
-Če izberete »email« iz padajočega menija »Add Service«, boste dobili nastavitveni zaslon, kot je na sliki <a href="ch00/_service_config">Nastavitve e-poštne storitve</a>.</p>
+Če izberete »email« iz padajočega menija »Add Service«, boste dobili nastavitveni zaslon, kot je na sliki <a href="{{< relurl "book/sl/v2/ch00/_service_config" >}}">Nastavitve e-poštne storitve</a>.</p>
 </div>
 <div id="_service_config" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-02-email-service.png" >}}" alt="Nastavitve e-poštne storitve">
+<img src="{{< relurl "book/sl/v2/images/scripting-02-email-service.png" >}}" alt="Nastavitve e-poštne storitve">
 </div>
 <div class="title">Slika 130. Nastavitve e-poštne storitve</div>
 </div>
@@ -75,12 +75,12 @@ Določite URL in GitHub bo na ta URL poslal koristno vsebino HTTP, za katerikoli
 <p>V splošnem je način, kako to deluje, da nastavite majhno spletno storitev, ki posluša za Githubovo kljuko koristnih vsebin in nato nekaj naredi s podatki, ko jih prejme.</p>
 </div>
 <div class="paragraph">
-<p>Da kljuko omogočite, kliknite na gumb »Add webhook« na sliki <a href="ch00/_services_hooks">Nastavitveni razdelek storitve in kljuke</a>.
-To vas bo prineslo na stran, ki izgleda kot slika <a href="ch00/_web_hook">Nastavitev spletne kljuke</a>.</p>
+<p>Da kljuko omogočite, kliknite na gumb »Add webhook« na sliki <a href="{{< relurl "book/sl/v2/ch00/_services_hooks" >}}">Nastavitveni razdelek storitve in kljuke</a>.
+To vas bo prineslo na stran, ki izgleda kot slika <a href="{{< relurl "book/sl/v2/ch00/_web_hook" >}}">Nastavitev spletne kljuke</a>.</p>
 </div>
 <div id="_web_hook" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-03-webhook.png" >}}" alt="Nastavitev spletne kljuke">
+<img src="{{< relurl "book/sl/v2/images/scripting-03-webhook.png" >}}" alt="Nastavitev spletne kljuke">
 </div>
 <div class="title">Slika 131. Nastavitev spletne kljuke</div>
 </div>
@@ -143,7 +143,7 @@ To naredi testiranje in razhroščevanje vaše kljuke izjemno enostavno.</p>
 </div>
 <div id="_web_hook_debug" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-04-webhook-debug.png" >}}" alt="Informacije razhroščevanja spletne kljuke">
+<img src="{{< relurl "book/sl/v2/images/scripting-04-webhook-debug.png" >}}" alt="Informacije razhroščevanja spletne kljuke">
 </div>
 <div class="title">Slika 132. Informacije razhroščevanja spletne kljuke</div>
 </div>
@@ -229,7 +229,7 @@ Tega lahko generirate iz zavihka »Applications« na strani vaših nastavitev.</
 </div>
 <div id="_access_token" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-05-access-token.png" >}}" alt="Generirajte žeton dostopa iz zavihka »Applications« vaše strani nastavitev">
+<img src="{{< relurl "book/sl/v2/images/scripting-05-access-token.png" >}}" alt="Generirajte žeton dostopa iz zavihka »Applications« vaše strani nastavitev">
 </div>
 <div class="title">Slika 133. Generirajte žeton dostopa iz zavihka »Applications« vaše strani nastavitev</div>
 </div>
@@ -275,11 +275,11 @@ Da to naredite, moramo narediti zahtevek HTTP POST na <code>repos/&lt;user&gt;/&
 </div>
 </div>
 <div class="paragraph">
-<p>Če greste sedaj na to težavo, lahko vidite komentar, ki smo ga ravnokar uspešno poslali kot na sliki <a href="ch00/_api_comment">Komentar poslan iz API-ja GitHub</a>.</p>
+<p>Če greste sedaj na to težavo, lahko vidite komentar, ki smo ga ravnokar uspešno poslali kot na sliki <a href="{{< relurl "book/sl/v2/ch00/_api_comment" >}}">Komentar poslan iz API-ja GitHub</a>.</p>
 </div>
 <div id="_api_comment" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-06-comment.png" >}}" alt="Komentar poslan iz API-ja GitHub">
+<img src="{{< relurl "book/sl/v2/images/scripting-06-comment.png" >}}" alt="Komentar poslan iz API-ja GitHub">
 </div>
 <div class="title">Slika 134. Komentar poslan iz API-ja GitHub</div>
 </div>
@@ -352,11 +352,11 @@ V tem krmilniku spletne kljuke smo pogledali vsako potrditev, ki je bila ravnoka
 Na primer, testna storitev lahko ponudi status in taka storitev preverjanja lahko tudi ponudi status — razlikujeta se v polju »context«.</p>
 </div>
 <div class="paragraph">
-<p>Če nekdo odpre nov zahtevek potega na GitHubu in je ta kljuka nastavljena, lahko vidite nekaj kot je slika <a href="ch00/_commit_status">Status potrditve preko API-ja</a>.</p>
+<p>Če nekdo odpre nov zahtevek potega na GitHubu in je ta kljuka nastavljena, lahko vidite nekaj kot je slika <a href="{{< relurl "book/sl/v2/ch00/_commit_status" >}}">Status potrditve preko API-ja</a>.</p>
 </div>
 <div id="_commit_status" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-07-status.png" >}}" alt="Status potrditve preko API-ja">
+<img src="{{< relurl "book/sl/v2/images/scripting-07-status.png" >}}" alt="Status potrditve preko API-ja">
 </div>
 <div class="title">Slika 135. Status potrditve preko API-ja</div>
 </div>

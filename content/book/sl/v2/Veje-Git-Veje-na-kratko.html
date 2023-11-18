@@ -30,7 +30,7 @@ Razumevanje in osvojitev te lastnosti vam da zmogljivo in unikatno orodje ter la
 <p>Za resnično razumevanje, na kakšen način Git dela razvejanje, se moramo vrniti korak nazaj in raziskati, kako Git shranjuje svoje podatke.</p>
 </div>
 <div class="paragraph">
-<p>Kakor se morda spomnite iz <a href="ch00/what_is_git_section">Kaj je Git?</a>, Git ne shranjuje podatkov kot serije skupkov sprememb ali razlik, vendar namesto tega kot serije <em>posnetkov</em>.</p>
+<p>Kakor se morda spomnite iz <a href="{{< relurl "book/sl/v2/ch00/what_is_git_section" >}}">Kaj je Git?</a>, Git ne shranjuje podatkov kot serije skupkov sprememb ali razlik, vendar namesto tega kot serije <em>posnetkov</em>.</p>
 </div>
 <div class="paragraph">
 <p>Ko naredite potrditev, Git shrani objekt potrditve, ki vsebuje kazalec k posnetku vsebine, ki ste jo dali v področje priprave.
@@ -38,7 +38,7 @@ Ta objekt vsebuje tudi avtorjevo ime in e-pošto, sporočilo, ki ste ga vpisali,
 </div>
 <div class="paragraph">
 <p>Da to vizualiziramo, predpostavimo, da imate direktorij, ki vsebuje tri datoteke in vse daste v področje priprave in nato potrdite.
-Dajanje datotek v področje priprave izračuna kontrolno vsoto za vsako (zgoščena vrednost SHA-1, ki smo jo omenili v <a href="ch00/what_is_git_section">Kaj je Git?</a>), shrani to različico datoteke v repozitorij Git (Git se sklicuje nanje kot <em>blob</em>) in doda to kontrolno vsoto v področje priprave:</p>
+Dajanje datotek v področje priprave izračuna kontrolno vsoto za vsako (zgoščena vrednost SHA-1, ki smo jo omenili v <a href="{{< relurl "book/sl/v2/ch00/what_is_git_section" >}}">Kaj je Git?</a>), shrani to različico datoteke v repozitorij Git (Git se sklicuje nanje kot <em>blob</em>) in doda to kontrolno vsoto v področje priprave:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ Git nato ustvari objekt potrditve, ki ima metapodatke in kazalec na vrhnje drevo
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Potrditev in njeno drevo">
+<img src="{{< relurl "book/sl/v2/images/commit-and-tree.png" >}}" alt="Potrditev in njeno drevo">
 </div>
 <div class="title">Slika 9. Potrditev in njeno drevo</div>
 </div>
@@ -64,7 +64,7 @@ Git nato ustvari objekt potrditve, ki ima metapodatke in kazalec na vrhnje drevo
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Potrditve in njihove nadrejene">
+<img src="{{< relurl "book/sl/v2/images/commits-and-parents.png" >}}" alt="Potrditve in njihove nadrejene">
 </div>
 <div class="title">Slika 10. Potrditve in njihove nadrejene</div>
 </div>
@@ -92,7 +92,7 @@ Edini razlog, da ima skoraj vsak repozitorij eno, je, da jo ukaz <code>git init<
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="Veja in njena zgodovina potrditev">
+<img src="{{< relurl "book/sl/v2/images/branch-and-history.png" >}}" alt="Veja in njena zgodovina potrditev">
 </div>
 <div class="title">Slika 11. Veja in njena zgodovina potrditev</div>
 </div>
@@ -115,7 +115,7 @@ To naredite z ukazom <code>git branch</code>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Dve veji, ki kažeta na isto serijo potrditev">
+<img src="{{< relurl "book/sl/v2/images/two-branches.png" >}}" alt="Dve veji, ki kažeta na isto serijo potrditev">
 </div>
 <div class="title">Slika 12. Dve veji, ki kažeta na isto serijo potrditev</div>
 </div>
@@ -129,7 +129,7 @@ Ukaz <code>git branch</code> je samo <em>ustvaril</em> novo vejo, ni pa tudi pre
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD, ki kaže na vejo">
+<img src="{{< relurl "book/sl/v2/images/head-to-master.png" >}}" alt="HEAD, ki kaže na vejo">
 </div>
 <div class="title">Slika 13. HEAD, ki kaže na vejo</div>
 </div>
@@ -166,7 +166,7 @@ Preklopimo na novo vejo <code>testing</code>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD kaže na trenutno vejo">
+<img src="{{< relurl "book/sl/v2/images/head-to-testing.png" >}}" alt="HEAD kaže na trenutno vejo">
 </div>
 <div class="title">Slika 14. HEAD kaže na trenutno vejo</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'Make a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="Veja HEAD se premakne naprej, ko je narejena potrditev">
+<img src="{{< relurl "book/sl/v2/images/advance-testing.png" >}}" alt="Veja HEAD se premakne naprej, ko je narejena potrditev">
 </div>
 <div class="title">Slika 15. Veja HEAD se premakne naprej, ko je narejena potrditev</div>
 </div>
@@ -221,7 +221,7 @@ Za prikaz vseh vej dodajte <code>--all</code> ukazu <code>git log</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD se premakne, ko izvlečete">
+<img src="{{< relurl "book/sl/v2/images/checkout-master.png" >}}" alt="HEAD se premakne, ko izvlečete">
 </div>
 <div class="title">Slika 16. HEAD se premakne, ko izvlečete</div>
 </div>
@@ -258,14 +258,14 @@ $ git commit -a -m 'Make other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Sedaj se je zgodovina vašega projekta spremenila (glejte sliko <a href="ch00/divergent_history">Različna zgodovina</a>).
+<p>Sedaj se je zgodovina vašega projekta spremenila (glejte sliko <a href="{{< relurl "book/sl/v2/ch00/divergent_history" >}}">Različna zgodovina</a>).
 Ustvarili in preklopili ste na vejo, naredili nekaj dela na njej in nato preklopili nazaj na svojo glavno vejo ter naredili drugo delo.
 Obe od teh sprememb sta izolirani v ločenih vejah: lahko preklopite nazaj in naprej med vejama in ju združite skupaj, ko ste pripravljeni.
 In vse to ste naredili z enostavnimi ukazi <code>branch</code>, <code>checkout</code> in <code>commit</code>.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Različna zgodovina">
+<img src="{{< relurl "book/sl/v2/images/advance-master.png" >}}" alt="Različna zgodovina">
 </div>
 <div class="title">Slika 17. Različna zgodovina</div>
 </div>

@@ -124,7 +124,7 @@ Trik se skriva v iskanju tega najnovejšega SHA-1 — saj si ga niste zapomn
 <p>Pogosto najhitrejši način je uporaba orodja, imenovanega <code>git reflog</code>.
 Kot delo sodelavcem Git tiho beleži, kje je vaš HEAD vsakič, ko ga spremenite.
 Vsakič, ko potrdite, ali spremenite veje, se posodobi reflog.
-Reflog se posodablja tudi z ukazom <code>git update-ref</code>, kar je še en razlog, da ga uporabite namesto da bi vrednosti SHA-1 zapisovali neposredno v vaše datoteke ref, kot smo opisali v <a href="ch00/_git_refs">Reference Git</a>.
+Reflog se posodablja tudi z ukazom <code>git update-ref</code>, kar je še en razlog, da ga uporabite namesto da bi vrednosti SHA-1 zapisovali neposredno v vaše datoteke ref, kot smo opisali v <a href="{{< relurl "book/sl/v2/ch00/_git_refs" >}}">Reference Git</a>.
 Kjer ste bili kadarkoli, si lahko ogledate tako, da poženete <code>git reflog</code>:</p>
 </div>
 <div class="listingblock">
@@ -307,7 +307,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>Velik objekt se nahaja na dnu: 5 MB.
-Da ugotovite, katera datoteka je to, boste uporabili ukaz <code>rev-list</code>, ki ste ga uporabili v <a href="ch00/_enforcing_commit_message_format">Uveljavljanje določene oblike sporočila potrditve</a>.
+Da ugotovite, katera datoteka je to, boste uporabili ukaz <code>rev-list</code>, ki ste ga uporabili v <a href="{{< relurl "book/sl/v2/ch00/_enforcing_commit_message_format" >}}">Uveljavljanje določene oblike sporočila potrditve</a>.
 Če ukazu <code>rev-list</code> podate <code>--objects</code>, izpiše vse vrednosti SHA-1 potrditev in tudi SHA-1 blobov s potmi datotek, ki so z njimi povezane.
 To lahko uporabite, da poiščete ime svojega bloba:</p>
 </div>
@@ -330,7 +330,7 @@ dadf725 Oops - remove large tarball
 </div>
 <div class="paragraph">
 <p>Prepisati morate vse potrditve navzdol, katere izvirajo iz <code>7b30847</code>, da bi popolnoma odstranili to datoteko iz vaše zgodovine Gita.
-To storite tako, da uporabite <code>filter-branch</code>, kakor ste storili v <a href="ch00/_rewriting_history">Prepisovanje zgodovine</a>:</p>
+To storite tako, da uporabite <code>filter-branch</code>, kakor ste storili v <a href="{{< relurl "book/sl/v2/ch00/_rewriting_history" >}}">Prepisovanje zgodovine</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -342,7 +342,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Možnost <code>--index-filter</code> je podobna možnosti <code>--tree-filter</code> uporabljeni v <a href="ch00/_rewriting_history">Prepisovanje zgodovine</a>, razlika je v tem, da namesto podajanja ukaza, ki spreminja datoteke izvlečene na disk, vsakič spreminjate svoje področje priprave ali indeks.</p>
+<p>Možnost <code>--index-filter</code> je podobna možnosti <code>--tree-filter</code> uporabljeni v <a href="{{< relurl "book/sl/v2/ch00/_rewriting_history" >}}">Prepisovanje zgodovine</a>, razlika je v tem, da namesto podajanja ukaza, ki spreminja datoteke izvlečene na disk, vsakič spreminjate svoje področje priprave ali indeks.</p>
 </div>
 <div class="paragraph">
 <p>Namesto da bi z nečim, kot je <code>rm file</code>, odstranili določeno datoteko, jo morate odstraniti z <code>git rm --cached</code> — morate jo odstraniti iz indeksa, ne z diska.

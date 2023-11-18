@@ -58,7 +58,7 @@ To je najenostavnejša metoda, ko poznate točno pot do delovnega direktorija re
 Obstaja tudi <code>git_repository_open_ext</code>, ki vključuje možnosti za iskanje, <code>git_clone</code> s prijatelji za izdelavo lokalnega klona oddaljenega repozitorija in <code>git_repository_init</code> za izdelavo celotnega novega repozitorija.</p>
 </div>
 <div class="paragraph">
-<p>Drug kos kode uporablja sintakso rev-parse (glejte razdelek <a href="ch00/_branch_references">Reference vej</a> za več o tem), da dobi potrditev, na katero HEAD eventualno kaže.
+<p>Drug kos kode uporablja sintakso rev-parse (glejte razdelek <a href="{{< relurl "book/sl/v2/ch00/_branch_references" >}}">Reference vej</a> za več o tem), da dobi potrditev, na katero HEAD eventualno kaže.
 Vrnjeni tip je kazalec <code>git_object</code>, ki predstavlja nekaj, kar obstaja v objektni podatkovni bazi Gita za repozitorij.
 <code>git_object</code> je dejansko »nadrejeni« tip za nekaj različnih vrst objektov; postavitev spomina za vsakega od »podrejenih« tipov je enak za <code>git_object</code>, tako da lahko varno oddate pravega.
 V tem primeru bi <code>git_object_type(commit)</code> vrnil <code>GIT_OBJ_COMMIT</code>, torej je varno potrditi kazalec <code>git_commit</code>.</p>
@@ -164,7 +164,7 @@ To uporablja vrh HEAD-a za eno nadrejeno.</p>
 </div>
 <div class="paragraph">
 <p>Koda Ruby je lepa in čista, vendar ker Libgit2 izvaja težka opravila, se bo ta koda tudi poganjala hitro.
-Če niste rubist, se bomo dotaknili nekaterih ostalih povezav v <a href="ch00/_libgit2_bindings">Ostale vezave</a>.</p>
+Če niste rubist, se bomo dotaknili nekaterih ostalih povezav v <a href="{{< relurl "book/sl/v2/ch00/_libgit2_bindings" >}}">Ostale vezave</a>.</p>
 </div>
 <div class="sect3">
 <h3 id="_napredna_funkcionalnost">Napredna funkcionalnost</h3>

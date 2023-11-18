@@ -66,7 +66,7 @@ Git ponuja enostaven način, da to preverite — preden potrdite, poženite 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="Izpis `git diff --check`">
+<img src="{{< relurl "book/sl/v2/images/git-diff-check.png" >}}" alt="Izpis `git diff --check`">
 </div>
 <div class="title">Slika 56. Izpis <code>git diff --check</code>
 </div>
@@ -78,12 +78,12 @@ Git ponuja enostaven način, da to preverite — preden potrdite, poženite 
 <p>Naslednje poskusite narediti vsako potrditev kot logičen ločen skupek sprememb.
 Če lahko, poskusite narediti svoje spremembe prebavljive — ne kodirajte cel vikend na petih različnih težavah in nato pošljite vse kot eno masovno potrditev v ponedeljek.
 Tudi če ne naredite potrditve med koncem tedna, uporabite področje priprave v ponedeljek, da se loči vaše delo v vsaj eno potrditev na težavo z uporabnim sporočilom na potrditev.
-Če nekatere spremembe spremenijo isto datoteko, poskusite uporabiti <code>git add --patch</code> za delno pripravo datoteke (podrobno pokrito v razdelku <a href="ch00/_interactive_staging">Interaktivno pripravljanje</a>).
+Če nekatere spremembe spremenijo isto datoteko, poskusite uporabiti <code>git add --patch</code> za delno pripravo datoteke (podrobno pokrito v razdelku <a href="{{< relurl "book/sl/v2/ch00/_interactive_staging" >}}">Interaktivno pripravljanje</a>).
 Posnetek projekta pri vrhu veje je identičen, če naredite eno ali pa pet potrditev, dokler so vse spremembe dodane na neki točki, torej poskusite narediti stvari enostavne za svoje kolege razvijalce, ko bodo morali pregledati vaše spremembe.</p>
 </div>
 <div class="paragraph">
 <p>Ta pristop naredi enostavnejše tudi vlečenje ali povrnitev ene izmed skupka sprememb, če to kasneje potrebujete.
-Razdelek <a href="ch00/_rewriting_history">Prepisovanje zgodovine</a> opisuje število uporabnih trikov Git za prepisovanje zgodovine in interaktivno dajanje datotek v področje priprave — uporabite ta orodja, da vam pomagajo izdelati čisto in razumljivo zgodovino, preden pošljete delo nekomu drugemu.</p>
+Razdelek <a href="{{< relurl "book/sl/v2/ch00/_rewriting_history" >}}">Prepisovanje zgodovine</a> opisuje število uporabnih trikov Git za prepisovanje zgodovine in interaktivno dajanje datotek v področje priprave — uporabite ta orodja, da vam pomagajo izdelati čisto in razumljivo zgodovino, preden pošljete delo nekomu drugemu.</p>
 </div>
 <div class="paragraph">
 <p>Zadnja stvar za pomnjenje je sporočilo potrditve.
@@ -237,7 +237,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="Johnova drugačna zgodovina">
+<img src="{{< relurl "book/sl/v2/images/small-team-1.png" >}}" alt="Johnova drugačna zgodovina">
 </div>
 <div class="title">Slika 57. Johnova drugačna zgodovina</div>
 </div>
@@ -257,7 +257,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="Johnov repozitorij po združitvi `origin/master`">
+<img src="{{< relurl "book/sl/v2/images/small-team-2.png" >}}" alt="Johnov repozitorij po združitvi `origin/master`">
 </div>
 <div class="title">Slika 58. Johnov repozitorij po združitvi <code>origin/master</code>
 </div>
@@ -278,7 +278,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="Johnova zgodovina po potisku na strežnik `origin`">
+<img src="{{< relurl "book/sl/v2/images/small-team-3.png" >}}" alt="Johnova zgodovina po potisku na strežnik `origin`">
 </div>
 <div class="title">Slika 59. Johnova zgodovina po potisku na strežnik <code>origin</code>
 </div>
@@ -289,7 +289,7 @@ Ni pa še prenesla Johnovih sprememb, zato je njena zgodovina potrditev videti n
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Jessicina tematska veja">
+<img src="{{< relurl "book/sl/v2/images/small-team-4.png" >}}" alt="Jessicina tematska veja">
 </div>
 <div class="title">Slika 60. Jessicina tematska veja</div>
 </div>
@@ -311,7 +311,7 @@ Zgodovina Jessice je sedaj videti takole:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="Zgodovina Jessice po prenosu Johnovih sprememb">
+<img src="{{< relurl "book/sl/v2/images/small-team-5.png" >}}" alt="Zgodovina Jessice po prenosu Johnovih sprememb">
 </div>
 <div class="title">Slika 61. Zgodovina Jessice po prenosu Johnovih sprememb</div>
 </div>
@@ -331,7 +331,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 <div class="paragraph">
 <p>Sintaksa <code>issue54..origin/master</code> je dnevniški filter, ki vpraša Git, da prikaže samo seznam potrditev, ki so na slednji veji (v tem primeru <code>origin/master</code>) in ki niso na prvi veji (v tem primeru <code>issue54</code>).
-Skozi to sintakso bomo šli podrobneje v <a href="ch00/_commit_ranges">Obsegi potrditev</a>.</p>
+Skozi to sintakso bomo šli podrobneje v <a href="{{< relurl "book/sl/v2/ch00/_commit_ranges" >}}">Obsegi potrditev</a>.</p>
 </div>
 <div class="paragraph">
 <p>Iz zgornjega izpisa lahko vidimo, da je ena potrditev, ki jo je naredil John, in je Jessica ni združila v njeno lokalno delo.
@@ -383,7 +383,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="Jessicina zgodovina po združitvi Johnovih sprememb">
+<img src="{{< relurl "book/sl/v2/images/small-team-6.png" >}}" alt="Jessicina zgodovina po združitvi Johnovih sprememb">
 </div>
 <div class="title">Slika 62. Jessicina zgodovina po združitvi Johnovih sprememb</div>
 </div>
@@ -403,7 +403,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="Jessicina zgodovina po potisku vseh sprememb nazaj na strežnik">
+<img src="{{< relurl "book/sl/v2/images/small-team-7.png" >}}" alt="Jessicina zgodovina po potisku vseh sprememb nazaj na strežnik">
 </div>
 <div class="title">Slika 63. Jessicina zgodovina po potisku vseh sprememb nazaj na strežnik</div>
 </div>
@@ -415,7 +415,7 @@ Splošno zaporedje je nekaj takega:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="Splošno zaporedje dogodkov za enostaven potek dela Git z več razvijalci">
+<img src="{{< relurl "book/sl/v2/images/small-team-flow.png" >}}" alt="Splošno zaporedje dogodkov za enostaven potek dela Git z več razvijalci">
 </div>
 <div class="title">Slika 64. Splošno zaporedje dogodkov za enostaven potek dela Git z več razvijalci</div>
 </div>
@@ -493,7 +493,7 @@ $ git commit -am 'Add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Jessicina prvotna zgodovina potrditev">
+<img src="{{< relurl "book/sl/v2/images/managed-team-1.png" >}}" alt="Jessicina prvotna zgodovina potrditev">
 </div>
 <div class="title">Slika 65. Jessicina prvotna zgodovina potrditev</div>
 </div>
@@ -536,7 +536,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>To se imenuje <em>refspec</em>.
-Glejte razdelek <a href="ch00/_refspec">Refspec</a> za bolj podrobno diskusijo refspec Gita in različnih stvari, ki jih lahko naredite z njimi.
+Glejte razdelek <a href="{{< relurl "book/sl/v2/ch00/_refspec" >}}">Refspec</a> za bolj podrobno diskusijo refspec Gita in različnih stvari, ki jih lahko naredite z njimi.
 Bodite pozorni tudi na zastavico <code>-u</code>; to je okrajšava za <code>--set-upstream</code>, ki nastavi veje za enostavnejše kasnejše potiskanje in vlečenje.</p>
 </div>
 <div class="paragraph">
@@ -597,7 +597,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="Jessicina zgodovina po potrditvi na veji lastnosti">
+<img src="{{< relurl "book/sl/v2/images/managed-team-2.png" >}}" alt="Jessicina zgodovina po potrditvi na veji lastnosti">
 </div>
 <div class="title">Slika 66. Jessicina zgodovina po potrditvi na veji lastnosti</div>
 </div>
@@ -607,7 +607,7 @@ Ko povezovalci združijo ti veji v glavno vejo, bo prenos prinesel novo potrdite
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="Jessicina zgodovina po združitvi obeh njenih tematskih vej">
+<img src="{{< relurl "book/sl/v2/images/managed-team-3.png" >}}" alt="Jessicina zgodovina po združitvi obeh njenih tematskih vej">
 </div>
 <div class="title">Slika 67. Jessicina zgodovina po združitvi obeh njenih tematskih vej</div>
 </div>
@@ -618,7 +618,7 @@ Zaporedje poteka dela, ki ste ga tu videli, je nekaj takega:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="Osnovno zaporedje tega poteka dela upravljane ekipe">
+<img src="{{< relurl "book/sl/v2/images/managed-team-flow.png" >}}" alt="Osnovno zaporedje tega poteka dela upravljane ekipe">
 </div>
 <div class="title">Slika 68. Osnovno zaporedje tega poteka dela upravljane ekipe</div>
 </div>
@@ -656,7 +656,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Lahko boste želeli uporabiti <code>rebase -i</code>, da svoje delo stisnete v eno potrditev ali delo preuredite v potrditve, da naredite programski popravek enostavnejši za pregled razvijalcev — za več informacij o interaktivnem ponovnem baziranju glejte razdelek <a href="ch00/_rewriting_history">Prepisovanje zgodovine</a>.</p>
+<p>Lahko boste želeli uporabiti <code>rebase -i</code>, da svoje delo stisnete v eno potrditev ali delo preuredite v potrditve, da naredite programski popravek enostavnejši za pregled razvijalcev — za več informacij o interaktivnem ponovnem baziranju glejte razdelek <a href="{{< relurl "book/sl/v2/ch00/_rewriting_history" >}}">Prepisovanje zgodovine</a>.</p>
 </div>
 </td>
 </tr>
@@ -674,7 +674,7 @@ Nato morate dodati ta novi URL repozitorija kot novo daljavo svojega lokalnega r
 <div class="paragraph">
 <p>Nato morate potisniti svoje novo delo v ta repozitorij.
 Najenostavnejše je potisniti tematsko vejo, na kateri delate, na vaš razvejan repozitorij namesto združevanja v vašo vejo <code>master</code> in potiskanja tega navzgor.
-Razlog je, da če delo ni sprejeto, ali so izbrane samo najboljše spremembe (angl. <em>cherry picking</em>), vam ni treba previti nazaj vaše veje <code>master</code> (operacija Gita <code>cherry-pick</code> je pokrita bolj podrobno v <a href="ch00/_rebase_cherry_pick">Poteki dela ponovnega baziranja in izbire najboljšega</a>).
+Razlog je, da če delo ni sprejeto, ali so izbrane samo najboljše spremembe (angl. <em>cherry picking</em>), vam ni treba previti nazaj vaše veje <code>master</code> (operacija Gita <code>cherry-pick</code> je pokrita bolj podrobno v <a href="{{< relurl "book/sl/v2/ch00/_rebase_cherry_pick" >}}">Poteki dela ponovnega baziranja in izbire najboljšega</a>).
 Če vzdrževalci združijo, ponovno bazirajo ali izberejo samo najboljše spremembe vašega dela, ga boste tako ali tako eventualno povlekli nazaj iz njihovega repozitorija:</p>
 </div>
 <div class="paragraph">
@@ -688,7 +688,7 @@ Razlog je, da če delo ni sprejeto, ali so izbrane samo najboljše spremembe (an
 <div class="paragraph">
 <p>
 Ko je bilo vaše delo potisnjeno na vašo razvejitev, morate obvestiti vzdrževalce prvotnega projekta, da imate delo, ki ga želite, da ga združijo.
-To je pogostokrat imenovano <em>zahtevek potega</em> in tak zahtevek običajno generirate preko spletne strani — GitHub ima svoj lastni mehanizem zahtevkov potega, ki jih bomo obravnavali v <a href="ch00/ch06-github">GitHub</a> — ali pa poženete ukaz <code>git request-pull</code> in pošljete vzdrževalcu projekta dani izpis ročno po e-pošti.</p>
+To je pogostokrat imenovano <em>zahtevek potega</em> in tak zahtevek običajno generirate preko spletne strani — GitHub ima svoj lastni mehanizem zahtevkov potega, ki jih bomo obravnavali v <a href="{{< relurl "book/sl/v2/ch00/ch06-github" >}}">GitHub</a> — ali pa poženete ukaz <code>git request-pull</code> in pošljete vzdrževalcu projekta dani izpis ročno po e-pošti.</p>
 </div>
 <div class="paragraph">
 <p>Ukaz <code>git request-pull</code> vzame osnovno vejo, v katero želite povleči svojo tematsko vejo, in URL repozitorija Git, iz katerega želite, da ga povlečejo, ter izpiše povzetek vseh sprememb, za katere želite, da se povlečejo.
@@ -737,7 +737,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="Začetna zgodovina potrjevanja dela `featureB`">
+<img src="{{< relurl "book/sl/v2/images/public-small-1.png" >}}" alt="Začetna zgodovina potrjevanja dela `featureB`">
 </div>
 <div class="title">Slika 69. Začetna zgodovina potrjevanja dela <code>featureB</code>
 </div>
@@ -754,11 +754,11 @@ $ git push -f myfork featureA</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>To prepiše vašo zgodovino, da je sedaj videti kot na sliki <a href="ch00/psp_b">Zgodovina potrditev po delu <code>featureA</code></a>.</p>
+<p>To prepiše vašo zgodovino, da je sedaj videti kot na sliki <a href="{{< relurl "book/sl/v2/ch00/psp_b" >}}">Zgodovina potrditev po delu <code>featureA</code></a>.</p>
 </div>
 <div id="psp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="Zgodovina potrditev po delu `featureA`">
+<img src="{{< relurl "book/sl/v2/images/public-small-2.png" >}}" alt="Zgodovina potrditev po delu `featureA`">
 </div>
 <div class="title">Slika 70. Zgodovina potrditev po delu <code>featureA</code>
 </div>
@@ -794,7 +794,7 @@ Uporabna je lahko tudi možnost <code>--no-commit</code>, ki zakasni potrditev z
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="Zgodovina potrditev po delu `featureBv2`">
+<img src="{{< relurl "book/sl/v2/images/public-small-3.png" >}}" alt="Zgodovina potrditev po delu `featureBv2`">
 </div>
 <div class="title">Slika 71. Zgodovina potrditev po delu <code>featureBv2</code>
 </div>

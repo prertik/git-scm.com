@@ -40,7 +40,7 @@ Pendekatan yang kedua dengan melakukan <em>clone</em> ke repositori Git yang ada
 <div class="paragraph">
 <p>Ini akan membuat sub direktori baru bernama <code>.git</code> yang berisi semua file repositori yang diperlukan - kerangka penyimpanan repositori Git.
 Pada titik ini, tidak ada yang dilacak dalam <em>project</em> Anda.
-(Lihat <a href="ch00/_git_internals">Git Internals</a> untuk informasi lebih lanjut tentang file apa saja yang terdapat di direktori <code>.git</code> yang baru saja Anda buat.)</p>
+(Lihat <a href="{{< relurl "book/id/v2/ch00/_git_internals" >}}">Git Internals</a> untuk informasi lebih lanjut tentang file apa saja yang terdapat di direktori <code>.git</code> yang baru saja Anda buat.)</p>
 </div>
 <div class="paragraph">
 <p>Jika Anda ingin memulai mengendalikan-versi file yang ada (berlawanan dengan direktori kosong), Anda mungkin harus mulai melacak file-file tersebut dan melakukan <em>commit</em> awal.
@@ -64,7 +64,7 @@ Pada titik ini, Anda memiliki repositori Git dengan file yang dilacak dan <em>co
 <p>Jika Anda ingin mendapatkan duplikat repositori Git yang ada - misalnya, sebuah <em>project</em> yang ingin Anda kontribusikan - <em>command</em> yang Anda butuhkan adalah <code>git clone</code>.
 Jika Anda terbiasa dengan sistem VCS lain seperti <em>Subversion</em>, Anda akan melihat bahwa <em>command</em>-nya adalah "clone" dan bukan "checkout".
 Setiap versi setiap file untuk sejarah <em>project</em> ditarik secara default saat Anda menjalankan <code>git clone</code>.
-Sebenarnya, jika <em>disk server</em> Anda rusak, Anda dapat sering menggunakan hampir semua duplikat pada klien mana pun untuk mengatur server kembali ke keadaan saat duplikat (Anda mungkin kehilangan beberapa kait sisi server dan semacamnya, tapi semua data berversi akan ada di sana - lihat <a href="ch00/_git_on_the_server">Getting Git on a Server</a> untuk lebih jelasnya).</p>
+Sebenarnya, jika <em>disk server</em> Anda rusak, Anda dapat sering menggunakan hampir semua duplikat pada klien mana pun untuk mengatur server kembali ke keadaan saat duplikat (Anda mungkin kehilangan beberapa kait sisi server dan semacamnya, tapi semua data berversi akan ada di sana - lihat <a href="{{< relurl "book/id/v2/ch00/_git_on_the_server" >}}">Getting Git on a Server</a> untuk lebih jelasnya).</p>
 </div>
 <div class="paragraph">
 <p>Anda menduplikat sebuah repositori dengan <code>git clone [url]</code>. 
@@ -91,7 +91,7 @@ Jika Anda ingin menduplikat repositori ke dalam direktori yang bernama sesuatu s
 <div class="paragraph">
 <p>Git memiliki sejumlah protokol transfer yang berbeda yang dapat Anda gunakan.
 Contoh sebelumnya menggunakan protokol <code>https://</code>, tetapi Anda juga bisa melihat <code>git://</code> atau <code>user@server:path/to/repo.git</code>, yang menggunakan protokol transfer SSH.
-<a href="ch00/_git_on_the_server">Getting Git on a Server</a> akan memperkenalkan semua pilihan yang tersedia yang bisa diatur server untuk mengakses repositori Git Anda dengan membahas kelebihan dan kekurangan masing-masing pilihan.</p>
+<a href="{{< relurl "book/id/v2/ch00/_git_on_the_server" >}}">Getting Git on a Server</a> akan memperkenalkan semua pilihan yang tersedia yang bisa diatur server untuk mengakses repositori Git Anda dengan membahas kelebihan dan kekurangan masing-masing pilihan.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

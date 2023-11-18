@@ -25,17 +25,17 @@ title: Git - Maintaining a Project
 <h3 id="_creating_a_new_repository">Creating a New Repository</h3>
 <div class="paragraph">
 <p>Let’s create a new repository to share our project code with.
-Start by clicking the “New repository” button on the right-hand side of the dashboard, or from the <code>+</code> button in the top toolbar next to your username as seen in <a href="ch00/_new_repo_dropdown">The “New repository” dropdown.</a>.</p>
+Start by clicking the “New repository” button on the right-hand side of the dashboard, or from the <code>+</code> button in the top toolbar next to your username as seen in <a href="{{< relurl "book/uz/v2/ch00/_new_repo_dropdown" >}}">The “New repository” dropdown.</a>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/newrepo.png" >}}" alt="The ``Your repositories'' area.">
+<img src="{{< relurl "book/uz/v2/images/newrepo.png" >}}" alt="The ``Your repositories'' area.">
 </div>
 <div class="title">Figure 110. The “Your repositories” area.</div>
 </div>
 <div id="_new_repo_dropdown" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/new-repo.png" >}}" alt="The ``new repository'' dropdown.">
+<img src="{{< relurl "book/uz/v2/images/new-repo.png" >}}" alt="The ``new repository'' dropdown.">
 </div>
 <div class="title">Figure 111. The “New repository” dropdown.</div>
 </div>
@@ -44,7 +44,7 @@ Start by clicking the “New repository” button on the right-hand side of the 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/newrepoform.png" >}}" alt="The ``new repository'' form.">
+<img src="{{< relurl "book/uz/v2/images/newrepoform.png" >}}" alt="The ``new repository'' form.">
 </div>
 <div class="title">Figure 112. The “new repository” form.</div>
 </div>
@@ -54,7 +54,7 @@ For now, just click the “Create Repository” button, and boom – you have a 
 </div>
 <div class="paragraph">
 <p>Since you have no code there yet, GitHub will show you instructions for how create a brand-new Git repository, or connect an existing Git project.
-We won’t belabor this here; if you need a refresher, check out <a href="ch00/_git_basics_chapter">Git асослари</a>.</p>
+We won’t belabor this here; if you need a refresher, check out <a href="{{< relurl "book/uz/v2/ch00/_git_basics_chapter" >}}">Git асослари</a>.</p>
 </div>
 <div class="paragraph">
 <p>Now that your project is hosted on GitHub, you can give the URL to anyone you want to share your project with.
@@ -88,7 +88,7 @@ Doing so will give them “push” access, which means they have both read and w
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reposettingslink.png" >}}" alt="The repository settings link.">
+<img src="{{< relurl "book/uz/v2/images/reposettingslink.png" >}}" alt="The repository settings link.">
 </div>
 <div class="title">Figure 113. The repository settings link.</div>
 </div>
@@ -100,7 +100,7 @@ If you need to revoke access, just click the “X” on the right-hand side of t
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/collaborators.png" >}}" alt="The repository collaborators box.">
+<img src="{{< relurl "book/uz/v2/images/collaborators.png" >}}" alt="The repository collaborators box.">
 </div>
 <div class="title">Figure 114. Repository collaborators.</div>
 </div>
@@ -119,11 +119,11 @@ If you need to revoke access, just click the “X” on the right-hand side of t
 <div class="sect4">
 <h4 id="_email_notifications">Email Notifications</h4>
 <div class="paragraph">
-<p>Someone comes along and makes a change to your code and sends you a Pull Request. You should get an email notifying you about the new Pull Request and it should look something like <a href="ch00/_email_pr">Email notification of a new Pull Request.</a>.</p>
+<p>Someone comes along and makes a change to your code and sends you a Pull Request. You should get an email notifying you about the new Pull Request and it should look something like <a href="{{< relurl "book/uz/v2/ch00/_email_pr" >}}">Email notification of a new Pull Request.</a>.</p>
 </div>
 <div id="_email_pr" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-01-email.png" >}}" alt="Pull Request email notification">
+<img src="{{< relurl "book/uz/v2/images/maint-01-email.png" >}}" alt="Pull Request email notification">
 </div>
 <div class="title">Figure 115. Email notification of a new Pull Request.</div>
 </div>
@@ -131,7 +131,7 @@ If you need to revoke access, just click the “X” on the right-hand side of t
 <p>There are a few things to notice about this email. It will give you a small diffstat — a list of files that have changed in the Pull Request and by how much. It gives you a link to the Pull Request on GitHub. It also gives you a few URLs that you can use from the command line.</p>
 </div>
 <div class="paragraph">
-<p>If you notice the line that says <code>git pull &lt;url&gt; patch-1</code>, this is a simple way to merge in a remote branch without having to add a remote. We went over this quickly in <a href="ch00/_checking_out_remotes">Checking Out Remote Branches</a>. If you wish, you can create and switch to a topic branch and then run this command to merge in the Pull Request changes.</p>
+<p>If you notice the line that says <code>git pull &lt;url&gt; patch-1</code>, this is a simple way to merge in a remote branch without having to add a remote. We went over this quickly in <a href="{{< relurl "book/uz/v2/ch00/_checking_out_remotes" >}}">Checking Out Remote Branches</a>. If you wish, you can create and switch to a topic branch and then run this command to merge in the Pull Request changes.</p>
 </div>
 <div class="paragraph">
 <p>The other interesting URLs are the <code>.diff</code> and <code>.patch</code> URLs, which as you may guess, provide unified diff and patch versions of the Pull Request. You could technically merge in the Pull Request work with something like this:</p>
@@ -145,14 +145,14 @@ If you need to revoke access, just click the “X” on the right-hand side of t
 <div class="sect4">
 <h4 id="_collaborating_on_the_pull_request">Collaborating on the Pull Request</h4>
 <div class="paragraph">
-<p>As we covered in <a href="ch00/_github_flow">The GitHub Flow</a>, you can now have a conversation with the person who opened the Pull Request. You can comment on specific lines of code, comment on whole commits or comment on the entire Pull Request itself, using GitHub Flavored Markdown everywhere.</p>
+<p>As we covered in <a href="{{< relurl "book/uz/v2/ch00/_github_flow" >}}">The GitHub Flow</a>, you can now have a conversation with the person who opened the Pull Request. You can comment on specific lines of code, comment on whole commits or comment on the entire Pull Request itself, using GitHub Flavored Markdown everywhere.</p>
 </div>
 <div class="paragraph">
 <p>Every time someone else comments on the Pull Request you will continue to get email notifications so you know there is activity happening. They will each have a link to the Pull Request where the activity is happening and you can also directly respond to the email to comment on the Pull Request thread.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-03-email-resp.png" >}}" alt="Email response">
+<img src="{{< relurl "book/uz/v2/images/maint-03-email-resp.png" >}}" alt="Email response">
 </div>
 <div class="title">Figure 116. Responses to emails are included in the thread.</div>
 </div>
@@ -160,11 +160,11 @@ If you need to revoke access, just click the “X” on the right-hand side of t
 <p>Once the code is in a place you like and want to merge it in, you can either pull the code down and merge it locally, either with the <code>git pull &lt;url&gt; &lt;branch&gt;</code> syntax we saw earlier, or by adding the fork as a remote and fetching and merging.</p>
 </div>
 <div class="paragraph">
-<p>If the merge is trivial, you can also just hit the “Merge” button on the GitHub site. This will do a “non-fast-forward” merge, creating a merge commit even if a fast-forward merge was possible. This means that no matter what, every time you hit the merge button, a merge commit is created. As you can see in <a href="ch00/_merge_button">Merge button and instructions for merging a Pull Request manually.</a>, GitHub gives you all of this information if you click the hint link.</p>
+<p>If the merge is trivial, you can also just hit the “Merge” button on the GitHub site. This will do a “non-fast-forward” merge, creating a merge commit even if a fast-forward merge was possible. This means that no matter what, every time you hit the merge button, a merge commit is created. As you can see in <a href="{{< relurl "book/uz/v2/ch00/_merge_button" >}}">Merge button and instructions for merging a Pull Request manually.</a>, GitHub gives you all of this information if you click the hint link.</p>
 </div>
 <div id="_merge_button" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-02-merge.png" >}}" alt="Merge button">
+<img src="{{< relurl "book/uz/v2/images/maint-02-merge.png" >}}" alt="Merge button">
 </div>
 <div class="title">Figure 117. Merge button and instructions for merging a Pull Request manually.</div>
 </div>
@@ -175,13 +175,13 @@ If you need to revoke access, just click the “X” on the right-hand side of t
 <div class="sect4">
 <h4 id="_pr_refs">Pull Request Refs</h4>
 <div class="paragraph">
-<p>If you’re dealing with a <strong>lot</strong> of Pull Requests and don’t want to add a bunch of remotes or do one time pulls every time, there is a neat trick that GitHub allows you to do. This is a bit of an advanced trick and we’ll go over the details of this a bit more in <a href="ch00/_refspec">The Refspec</a>, but it can be pretty useful.</p>
+<p>If you’re dealing with a <strong>lot</strong> of Pull Requests and don’t want to add a bunch of remotes or do one time pulls every time, there is a neat trick that GitHub allows you to do. This is a bit of an advanced trick and we’ll go over the details of this a bit more in <a href="{{< relurl "book/uz/v2/ch00/_refspec" >}}">The Refspec</a>, but it can be pretty useful.</p>
 </div>
 <div class="paragraph">
 <p>GitHub actually advertises the Pull Request branches for a repository as sort of pseudo-branches on the server. By default you don’t get them when you clone, but they are there in an obscured way and you can access them pretty easily.</p>
 </div>
 <div class="paragraph">
-<p>To demonstrate this, we’re going to use a low-level command (often referred to as a “plumbing” command, which we’ll read about more in <a href="ch00/_plumbing_porcelain">Plumbing and Porcelain</a>) called <code>ls-remote</code>. This command is generally not used in day-to-day Git operations but it’s useful to show us what references are present on the server.</p>
+<p>To demonstrate this, we’re going to use a low-level command (often referred to as a “plumbing” command, which we’ll read about more in <a href="{{< relurl "book/uz/v2/ch00/_plumbing_porcelain" >}}">Plumbing and Porcelain</a>) called <code>ls-remote</code>. This command is generally not used in day-to-day Git operations but it’s useful to show us what references are present on the server.</p>
 </div>
 <div class="paragraph">
 <p>If we run this command against the “blink” repository we were using earlier, we will get a list of all the branches and tags and other references in the repository.</p>
@@ -294,7 +294,7 @@ There’s also a <code>refs/pull/#/merge</code> ref on the GitHub side, which re
 </div>
 <div id="_pr_targets" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-04-target.png" >}}" alt="PR targets">
+<img src="{{< relurl "book/uz/v2/images/maint-04-target.png" >}}" alt="PR targets">
 </div>
 <div class="title">Figure 118. Manually change the Pull Request target fork and branch.</div>
 </div>
@@ -313,7 +313,7 @@ There’s also a <code>refs/pull/#/merge</code> ref on the GitHub side, which re
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-05-mentions.png" >}}" alt="Mentions">
+<img src="{{< relurl "book/uz/v2/images/maint-05-mentions.png" >}}" alt="Mentions">
 </div>
 <div class="title">Figure 119. Start typing @ to mention someone.</div>
 </div>
@@ -328,7 +328,7 @@ There’s also a <code>refs/pull/#/merge</code> ref on the GitHub side, which re
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-06-unsubscribe.png" >}}" alt="Unsubscribe">
+<img src="{{< relurl "book/uz/v2/images/maint-06-unsubscribe.png" >}}" alt="Unsubscribe">
 </div>
 <div class="title">Figure 120. Unsubscribe from an Issue or Pull Request.</div>
 </div>
@@ -340,7 +340,7 @@ If you go to the “Notification center” tab from the settings page, you can s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-07-notifications.png" >}}" alt="Notification center">
+<img src="{{< relurl "book/uz/v2/images/maint-07-notifications.png" >}}" alt="Notification center">
 </div>
 <div class="title">Figure 121. Notification center options.</div>
 </div>
@@ -350,11 +350,11 @@ If you go to the “Notification center” tab from the settings page, you can s
 <div class="sect5">
 <h6 id="_web_notifications">Web Notifications</h6>
 <div class="paragraph">
-<p>Web notifications only exist on GitHub and you can only check them on GitHub. If you have this option selected in your preferences and a notification is triggered for you, you will see a small blue dot over your notifications icon at the top of your screen as seen in <a href="ch00/_not_center">Notification center.</a>.</p>
+<p>Web notifications only exist on GitHub and you can only check them on GitHub. If you have this option selected in your preferences and a notification is triggered for you, you will see a small blue dot over your notifications icon at the top of your screen as seen in <a href="{{< relurl "book/uz/v2/ch00/_not_center" >}}">Notification center.</a>.</p>
 </div>
 <div id="_not_center" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-08-notifications-page.png" >}}" alt="Notification center">
+<img src="{{< relurl "book/uz/v2/images/maint-08-notifications-page.png" >}}" alt="Notification center">
 </div>
 <div class="title">Figure 122. Notification center.</div>
 </div>
@@ -368,13 +368,13 @@ If you go to the “Notification center” tab from the settings page, you can s
 <div class="sect5">
 <h6 id="_email_notifications_2">Email Notifications</h6>
 <div class="paragraph">
-<p>Email notifications are the other way you can handle notifications through GitHub. If you have this turned on you will get emails for each notification. We saw examples of this in <a href="ch00/_email_notification">Comments sent as email notifications</a> and <a href="ch00/_email_pr">Email notification of a new Pull Request.</a>. The emails will also be threaded properly, which is nice if you’re using a threading email client.</p>
+<p>Email notifications are the other way you can handle notifications through GitHub. If you have this turned on you will get emails for each notification. We saw examples of this in <a href="{{< relurl "book/uz/v2/ch00/_email_notification" >}}">Comments sent as email notifications</a> and <a href="{{< relurl "book/uz/v2/ch00/_email_pr" >}}">Email notification of a new Pull Request.</a>. The emails will also be threaded properly, which is nice if you’re using a threading email client.</p>
 </div>
 <div class="paragraph">
 <p>There is also a fair amount of metadata embedded in the headers of the emails that GitHub sends you, which can be really helpful for setting up custom filters and rules.</p>
 </div>
 <div class="paragraph">
-<p>For instance, if we look at the actual email headers sent to Tony in the email shown in <a href="ch00/_email_pr">Email notification of a new Pull Request.</a>, we will see the following among the information sent:</p>
+<p>For instance, if we look at the actual email headers sent to Tony in the email shown in <a href="{{< relurl "book/uz/v2/ch00/_email_pr" >}}">Email notification of a new Pull Request.</a>, we will see the following among the information sent:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -441,11 +441,11 @@ X-GitHub-Recipient-Address: tchacon@example.com</code></pre>
 <div class="sect3">
 <h3 id="_contributing">CONTRIBUTING</h3>
 <div class="paragraph">
-<p>The other special file that GitHub recognizes is the <code>CONTRIBUTING</code> file. If you have a file named <code>CONTRIBUTING</code> with any file extension, GitHub will show <a href="ch00/_contrib_file">Opening a Pull Request when a CONTRIBUTING file exists.</a> when anyone starts opening a Pull Request.</p>
+<p>The other special file that GitHub recognizes is the <code>CONTRIBUTING</code> file. If you have a file named <code>CONTRIBUTING</code> with any file extension, GitHub will show <a href="{{< relurl "book/uz/v2/ch00/_contrib_file" >}}">Opening a Pull Request when a CONTRIBUTING file exists.</a> when anyone starts opening a Pull Request.</p>
 </div>
 <div id="_contrib_file" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-09-contrib.png" >}}" alt="Contributing notice">
+<img src="{{< relurl "book/uz/v2/images/maint-09-contrib.png" >}}" alt="Contributing notice">
 </div>
 <div class="title">Figure 123. Opening a Pull Request when a CONTRIBUTING file exists.</div>
 </div>
@@ -465,7 +465,7 @@ X-GitHub-Recipient-Address: tchacon@example.com</code></pre>
 </div>
 <div id="_default_branch" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-10-default-branch.png" >}}" alt="Default branch">
+<img src="{{< relurl "book/uz/v2/images/maint-10-default-branch.png" >}}" alt="Default branch">
 </div>
 <div class="title">Figure 124. Change the default branch for a project.</div>
 </div>
@@ -480,7 +480,7 @@ X-GitHub-Recipient-Address: tchacon@example.com</code></pre>
 </div>
 <div id="_transfer_project" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-11-transfer.png" >}}" alt="Transfer">
+<img src="{{< relurl "book/uz/v2/images/maint-11-transfer.png" >}}" alt="Transfer">
 </div>
 <div class="title">Figure 125. Transfer a project to another GitHub user or Organization.</div>
 </div>

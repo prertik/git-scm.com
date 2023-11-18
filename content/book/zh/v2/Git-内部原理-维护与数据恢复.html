@@ -127,7 +127,7 @@ fdf4fc3344e67ab068f836878b6c4951e3b15f3d first commit</code></pre>
 当你正在工作时，Git 会默默地记录每一次你改变 HEAD 时它的值。
 每一次你提交或改变分支，引用日志都会被更新。
 引用日志（reflog）也可以通过 <code>git update-ref</code> 命令更新，我们在
-<a href="ch00/_git_refs">Git 引用</a> 有提到使用这个命令而不是是直接将 SHA-1 的值写入引用文件中的原因。
+<a href="{{< relurl "book/zh/v2/ch00/_git_refs" >}}">Git 引用</a> 有提到使用这个命令而不是是直接将 SHA-1 的值写入引用文件中的原因。
 你可以在任何时候通过执行 <code>git reflog</code> 命令来了解你曾经做过什么：</p>
 </div>
 <div class="listingblock">
@@ -313,7 +313,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>你可以看到这个大对象出现在返回结果的最底部：占用 5MB 空间。
-为了找出具体是哪个文件，可以使用 <code>rev-list</code> 命令，我们在 <a href="ch00/_enforcing_commit_message_format">指定特殊的提交信息格式</a> 中曾提到过。
+为了找出具体是哪个文件，可以使用 <code>rev-list</code> 命令，我们在 <a href="{{< relurl "book/zh/v2/ch00/_enforcing_commit_message_format" >}}">指定特殊的提交信息格式</a> 中曾提到过。
 如果你传递 <code>--objects</code> 参数给 <code>rev-list</code> 命令，它就会列出所有提交的 SHA-1、数据对象的 SHA-1 和与它们相关联的文件路径。
 可以使用以下命令来找出你的数据对象的名字：</p>
 </div>
@@ -336,7 +336,7 @@ dadf725 oops - removed large tarball
 </div>
 <div class="paragraph">
 <p>现在，你必须重写 <code>7b30847</code> 提交之后的所有提交来从 Git 历史中完全移除这个文件。
-为了执行这个操作，我们要使用 <code>filter-branch</code> 命令，这个命令在 <a href="ch00/_rewriting_history">重写历史</a> 中也使用过：</p>
+为了执行这个操作，我们要使用 <code>filter-branch</code> 命令，这个命令在 <a href="{{< relurl "book/zh/v2/ch00/_rewriting_history" >}}">重写历史</a> 中也使用过：</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -348,7 +348,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><code>--index-filter</code> 选项类似于在 <a href="ch00/_rewriting_history">重写历史</a> 中提到的的 <code>--tree-filter</code> 选项，
+<p><code>--index-filter</code> 选项类似于在 <a href="{{< relurl "book/zh/v2/ch00/_rewriting_history" >}}">重写历史</a> 中提到的的 <code>--tree-filter</code> 选项，
 不过这个选项并不会让命令将修改在硬盘上检出的文件，而只是修改在暂存区或索引中的文件。</p>
 </div>
 <div class="paragraph">

@@ -63,7 +63,7 @@ Git 也会给你一个与 origin 的 <code>master</code> 分支在指向同一�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="克隆之后的服务器与本地仓库。">
+<img src="{{< relurl "book/zh/v2/images/remote-branches-1.png" >}}" alt="克隆之后的服务器与本地仓库。">
 </div>
 <div class="title">Figure 30. 克隆之后的服务器与本地仓库</div>
 </div>
@@ -74,7 +74,7 @@ Git 也会给你一个与 origin 的 <code>master</code> 分支在指向同一�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="本地与远程的工作可以分叉。">
+<img src="{{< relurl "book/zh/v2/images/remote-branches-2.png" >}}" alt="本地与远程的工作可以分叉。">
 </div>
 <div class="title">Figure 31. 本地与远程的工作可以分叉</div>
 </div>
@@ -85,7 +85,7 @@ Git 也会给你一个与 origin 的 <code>master</code> 分支在指向同一�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` 更新你的远程仓库引用。">
+<img src="{{< relurl "book/zh/v2/images/remote-branches-3.png" >}}" alt="`git fetch` 更新你的远程仓库引用。">
 </div>
 <div class="title">Figure 32. <code>git fetch</code> 更新你的远程跟踪分支</div>
 </div>
@@ -93,12 +93,12 @@ Git 也会给你一个与 origin 的 <code>master</code> 分支在指向同一�
 <p>为了演示有多个远程仓库与远程分支的情况，我们假定你有另一个内部 Git 服务器，仅服务于你的某个敏捷开发团队。
 这个服务器位于 <code>git.team1.ourcompany.com</code>。
 你可以运行 <code>git remote add</code> 命令添加一个新的远程仓库引用到当前的项目，这个命令我们会在
-<a href="ch00/ch02-git-basics-chapter">Git 基础</a> 中详细说明。
+<a href="{{< relurl "book/zh/v2/ch00/ch02-git-basics-chapter" >}}">Git 基础</a> 中详细说明。
 将这个远程仓库命名为 <code>teamone</code>，将其作为完整 URL 的缩写。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="添加另一个远程仓库。">
+<img src="{{< relurl "book/zh/v2/images/remote-branches-4.png" >}}" alt="添加另一个远程仓库。">
 </div>
 <div class="title">Figure 33. 添加另一个远程仓库</div>
 </div>
@@ -109,7 +109,7 @@ Git 也会给你一个与 origin 的 <code>master</code> 分支在指向同一�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="远程跟踪分支 `teamone/master`。">
+<img src="{{< relurl "book/zh/v2/images/remote-branches-5.png" >}}" alt="远程跟踪分支 `teamone/master`。">
 </div>
 <div class="title">Figure 34. 远程跟踪分支 <code>teamone/master</code>
 </div>
@@ -142,7 +142,7 @@ To https://github.com/schacon/simplegit
 <p>这里有些工作被简化了。
 Git 自动将 <code>serverfix</code> 分支名字展开为 <code>refs/heads/serverfix:refs/heads/serverfix</code>，
 那意味着，“推送本地的 <code>serverfix</code> 分支来更新远程仓库上的 <code>serverfix</code> 分支。”
-我们将会详细学习 <a href="ch00/ch10-git-internals">Git 内部原理</a> 的 <code>refs/heads/</code> 部分，
+我们将会详细学习 <a href="{{< relurl "book/zh/v2/ch00/ch10-git-internals" >}}">Git 内部原理</a> 的 <code>refs/heads/</code> 部分，
 但是现在可以先把它放在儿。你也可以运行 <code>git push origin serverfix:serverfix</code>，
 它会做同样的事——也就是说“推送本地的 <code>serverfix</code> 分支，将其作为远程仓库的 <code>serverfix</code> 分支”
 可以通过这种格式来推送本地分支到一个命名不相同的远程分支。
@@ -166,7 +166,7 @@ Git 自动将 <code>serverfix</code> 分支名字展开为 <code>refs/heads/serv
 最简单的方式就是将其保存在内存中几分钟，可以简单地运行 <code>git config --global credential.helper cache</code> 来设置它。</p>
 </div>
 <div class="paragraph">
-<p>想要了解更多关于不同验证缓存的可用选项，查看 <a href="ch00/_credential_caching">凭证存储</a>。</p>
+<p>想要了解更多关于不同验证缓存的可用选项，查看 <a href="{{< relurl "book/zh/v2/ch00/_credential_caching" >}}">凭证存储</a>。</p>
 </div>
 </td>
 </tr>

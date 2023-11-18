@@ -63,7 +63,7 @@ title: Git - 分支的新建与合并
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="一个简单的提交历史。">
+<img src="{{< relurl "book/zh/v2/images/basic-branching-1.png" >}}" alt="一个简单的提交历史。">
 </div>
 <div class="title">Figure 18. 一个简单提交历史</div>
 </div>
@@ -88,7 +88,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="创建一个新分支指针。">
+<img src="{{< relurl "book/zh/v2/images/basic-branching-2.png" >}}" alt="创建一个新分支指针。">
 </div>
 <div class="title">Figure 19. 创建一个新分支指针</div>
 </div>
@@ -105,7 +105,7 @@ $ git commit -a -m 'added a new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="`iss53` 分支随着工作的进展向前推进。">
+<img src="{{< relurl "book/zh/v2/images/basic-branching-3.png" >}}" alt="`iss53` 分支随着工作的进展向前推进。">
 </div>
 <div class="title">Figure 20. <code>iss53</code> 分支随着工作的进展向前推进</div>
 </div>
@@ -120,7 +120,7 @@ $ git commit -a -m 'added a new footer [issue 53]'</code></pre>
 它可能会和你即将检出的分支产生冲突从而阻止 Git 切换到该分支。
 最好的方法是，在你切换分支之前，保持好一个干净的状态。
 有一些方法可以绕过这个问题（即，暂存（stashing） 和 修补提交（commit amending）），
-我们会在 <a href="ch00/_git_stashing">贮藏与清理</a> 中看到关于这两个命令的介绍。
+我们会在 <a href="{{< relurl "book/zh/v2/ch00/_git_stashing" >}}">贮藏与清理</a> 中看到关于这两个命令的介绍。
 现在，我们假设你已经把你的修改全部提交了，这时你可以切换回 <code>master</code> 分支了：</p>
 </div>
 <div class="listingblock">
@@ -150,7 +150,7 @@ $ git commit -a -m 'fixed the broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="基于 `master` 分支的紧急问题分支（hotfix branch）。">
+<img src="{{< relurl "book/zh/v2/images/basic-branching-4.png" >}}" alt="基于 `master` 分支的紧急问题分支（hotfix branch）。">
 </div>
 <div class="title">Figure 21. 基于 <code>master</code> 分支的紧急问题分支 <code>hotfix branch</code>
 </div>
@@ -181,7 +181,7 @@ Fast-forward
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="`master` 被快进到 `hotfix`。">
+<img src="{{< relurl "book/zh/v2/images/basic-branching-5.png" >}}" alt="`master` 被快进到 `hotfix`。">
 </div>
 <div class="title">Figure 22. <code>master</code> 被快进到 <code>hotfix</code>
 </div>
@@ -212,7 +212,7 @@ $ git commit -a -m 'finished the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="继续在 `iss53` 分支上的工作。">
+<img src="{{< relurl "book/zh/v2/images/basic-branching-6.png" >}}" alt="继续在 `iss53` 分支上的工作。">
 </div>
 <div class="title">Figure 23. 继续在 <code>iss53</code> 分支上的工作</div>
 </div>
@@ -248,7 +248,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="一次典型合并中所用到的三个快照。">
+<img src="{{< relurl "book/zh/v2/images/basic-merging-1.png" >}}" alt="一次典型合并中所用到的三个快照。">
 </div>
 <div class="title">Figure 24. 一次典型合并中所用到的三个快照</div>
 </div>
@@ -258,7 +258,7 @@ index.html |    1 +
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="一个合并提交。">
+<img src="{{< relurl "book/zh/v2/images/basic-merging-2.png" >}}" alt="一个合并提交。">
 </div>
 <div class="title">Figure 25. 一个合并提交</div>
 </div>
@@ -374,7 +374,7 @@ Hit return to start merge resolution tool (opendiff):</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>如果你需要更加高级的工具来解决复杂的合并冲突，我们会在 <a href="ch00/_advanced_merging">高级合并</a> 介绍更多关于分支合并的内容。</p>
+<p>如果你需要更加高级的工具来解决复杂的合并冲突，我们会在 <a href="{{< relurl "book/zh/v2/ch00/_advanced_merging" >}}">高级合并</a> 介绍更多关于分支合并的内容。</p>
 </div>
 </td>
 </tr>

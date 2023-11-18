@@ -79,7 +79,7 @@ title: Git - 获取 Git 仓库
 <div class="paragraph">
 <p>该命令将创建一个名为 <code>.git</code> 的子目录，这个子目录含有你初始化的 Git 仓库中所有的必须文件，这些文件是 Git 仓库的骨干。
 但是，在这个时候，我们仅仅是做了一个初始化的操作，你的项目里的文件还没有被跟踪。
-(参见 <a href="ch00/ch10-git-internals">Git 内部原理</a> 来了解更多关于到底 <code>.git</code> 文件夹中包含了哪些文件的信息。)</p>
+(参见 <a href="{{< relurl "book/zh/v2/ch00/ch10-git-internals" >}}">Git 内部原理</a> 来了解更多关于到底 <code>.git</code> 文件夹中包含了哪些文件的信息。)</p>
 </div>
 <div class="paragraph">
 <p>如果在一个已存在文件的文件夹（而非空文件夹）中进行版本控制，你应该开始追踪这些文件并进行初始提交。
@@ -105,7 +105,7 @@ $ git commit -m 'initial project version'</code></pre>
 这是 Git 区别于其它版本控制系统的一个重要特性，Git 克隆的是该 Git 仓库服务器上的几乎所有数据，而不是仅仅复制完成你的工作所需要文件。
 当你执行 <code>git clone</code> 命令的时候，默认配置下远程 Git 仓库中的每一个文件的每一个版本都将被拉取下来。
 事实上，如果你的服务器的磁盘坏掉了，你通常可以使用任何一个克隆下来的用户端来重建服务器上的仓库
-（虽然可能会丢失某些服务器端的钩子（hook）设置，但是所有版本的数据仍在，详见 <a href="ch00/_getting_git_on_a_server">在服务器上搭建 Git</a> ）。</p>
+（虽然可能会丢失某些服务器端的钩子（hook）设置，但是所有版本的数据仍在，详见 <a href="{{< relurl "book/zh/v2/ch00/_getting_git_on_a_server" >}}">在服务器上搭建 Git</a> ）。</p>
 </div>
 <div class="paragraph">
 <p>克隆仓库的命令是 <code>git clone &lt;url&gt;</code> 。
@@ -135,7 +135,7 @@ $ git commit -m 'initial project version'</code></pre>
 <div class="paragraph">
 <p>Git 支持多种数据传输协议。
 上面的例子使用的是 <code>https://</code> 协议，不过你也可以使用 <code>git://</code> 协议或者使用 SSH 传输协议，比如 <code>user@server:path/to/repo.git</code> 。
-<a href="ch00/_getting_git_on_a_server">在服务器上搭建 Git</a> 将会介绍所有这些协议在服务器端如何配置使用，以及各种方式之间的利弊。</p>
+<a href="{{< relurl "book/zh/v2/ch00/_getting_git_on_a_server" >}}">在服务器上搭建 Git</a> 将会介绍所有这些协议在服务器端如何配置使用，以及各种方式之间的利弊。</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

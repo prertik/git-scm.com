@@ -240,18 +240,18 @@ $Id: 42812b7653c7b88933f8a9d6cad0ca16714b9bb3 $</code></pre>
 <div class="paragraph">
 <p>因此 Git 属性提供了另一种方法：我们可以编写自己的过滤器来实现文件提交或检出时的关键字替换。
 一个过滤器由“clean”和“smudge”两个子过滤器组成。
-在 <code>.gitattributes</code> 文件中，你能对特定的路径设置一个过滤器，然后设置文件检出前的处理脚本（“smudge”，见 <a href="ch00/filters_a">“smudge”过滤器会在文件被检出时触发</a>）和文件暂存前的处理脚本（“clean”，见 <a href="ch00/filters_b">“clean”过滤器会在文件被暂存时触发</a>）。
+在 <code>.gitattributes</code> 文件中，你能对特定的路径设置一个过滤器，然后设置文件检出前的处理脚本（“smudge”，见 <a href="{{< relurl "book/zh/v2/ch00/filters_a" >}}">“smudge”过滤器会在文件被检出时触发</a>）和文件暂存前的处理脚本（“clean”，见 <a href="{{< relurl "book/zh/v2/ch00/filters_b" >}}">“clean”过滤器会在文件被暂存时触发</a>）。
 这两个过滤器能够被用来做各种有趣的事。</p>
 </div>
 <div id="filters_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/smudge.png" >}}" alt="“smudge”过滤器会在文件被检出时触发。">
+<img src="{{< relurl "book/zh/v2/images/smudge.png" >}}" alt="“smudge”过滤器会在文件被检出时触发。">
 </div>
 <div class="title">Figure 144. “smudge”过滤器会在文件被检出时触发</div>
 </div>
 <div id="filters_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/clean.png" >}}" alt="“clean”过滤器会在文件被暂存时触发。">
+<img src="{{< relurl "book/zh/v2/images/clean.png" >}}" alt="“clean”过滤器会在文件被暂存时触发。">
 </div>
 <div class="title">Figure 145. “clean”过滤器会在文件被暂存时触发</div>
 </div>

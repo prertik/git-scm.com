@@ -98,7 +98,7 @@ dfa04c9ef3d5197182f13fb5b9b1fb7717d2222a
 <div class="paragraph">
 <p>下一步要实现从每个提交中提取出提交信息。
 使用另一个叫做 <code>git cat-file</code> 的底层命令来获得原始的提交数据。
-我们将在 <a href="ch00/ch10-git-internals">Git 内部原理</a> 了解到这些底层命令的细节；
+我们将在 <a href="{{< relurl "book/zh/v2/ch00/ch10-git-internals" >}}">Git 内部原理</a> 了解到这些底层命令的细节；
 现在暂时先看一下这条命令的输出：</p>
 </div>
 <div class="listingblock">
@@ -215,7 +215,7 @@ end</code></pre>
 <p>既然拿到了用户权限的数据，接下来你需要找出提交都修改了哪些路径，从而才能保证推送者对所有这些路径都有权限。</p>
 </div>
 <div class="paragraph">
-<p>使用 <code>git log</code> 的 <code>--name-only</code> 选项（在 <a href="ch00/ch02-git-basics-chapter">Git 基础</a>
+<p>使用 <code>git log</code> 的 <code>--name-only</code> 选项（在 <a href="{{< relurl "book/zh/v2/ch00/ch02-git-basics-chapter" >}}">Git 基础</a>
 一章中里简单地提过），我们可以轻而易举的找出一次提交里修改的文件：</p>
 </div>
 <div class="listingblock">
@@ -506,7 +506,7 @@ end</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>此脚本使用了 <a href="ch00/_revision_selection">选择修订版本</a> 一章中不曾提到的语法。
+<p>此脚本使用了 <a href="{{< relurl "book/zh/v2/ch00/_revision_selection" >}}">选择修订版本</a> 一章中不曾提到的语法。
 通过运行这个命令可以获得一系列之前推送过的提交：</p>
 </div>
 <div class="listingblock">

@@ -98,7 +98,7 @@ origin    git@github.com:mojombo/grit.git (push)</code></pre>
 <p>这表示我们能非常方便地拉取其它用户的贡献。我们还可以拥有向他们推送的权限，这里暂不详述。</p>
 </div>
 <div class="paragraph">
-<p>注意这些远程仓库使用了不同的协议。我们将会在 <a href="ch00/_getting_git_on_a_server">在服务器上搭建 Git</a> 中了解关于它们的更多信息。</p>
+<p>注意这些远程仓库使用了不同的协议。我们将会在 <a href="{{< relurl "book/zh/v2/ch00/_getting_git_on_a_server" >}}">在服务器上搭建 Git</a> 中了解关于它们的更多信息。</p>
 </div>
 </div>
 <div class="sect3">
@@ -139,7 +139,7 @@ From https://github.com/paulboone/ticgit
 <div class="paragraph">
 <p>现在 Paul 的 master 分支可以在本地通过 <code>pb/master</code> 访问到——你可以将它合并到自己的某个分支中，
 或者如果你想要查看它的话，可以检出一个指向该点的本地分支。
-（我们将会在 <a href="ch00/ch03-git-branching">Git 分支</a> 中详细介绍什么是分支以及如何使用分支。）</p>
+（我们将会在 <a href="{{< relurl "book/zh/v2/ch00/ch03-git-branching" >}}">Git 分支</a> 中详细介绍什么是分支以及如何使用分支。）</p>
 </div>
 </div>
 <div class="sect3">
@@ -163,7 +163,7 @@ From https://github.com/paulboone/ticgit
 当准备好时你必须手动将其合并入你的工作。</p>
 </div>
 <div class="paragraph">
-<p>如果你的当前分支设置了跟踪远程分支（阅读下一节和 <a href="ch00/ch03-git-branching">Git 分支</a> 了解更多信息），
+<p>如果你的当前分支设置了跟踪远程分支（阅读下一节和 <a href="{{< relurl "book/zh/v2/ch00/ch03-git-branching" >}}">Git 分支</a> 了解更多信息），
 那么可以用 <code>git pull</code> 命令来自动抓取后合并该远程分支到当前分支。
 这或许是个更加简单舒服的工作流程。默认情况下，<code>git clone</code> 命令会自动设置本地 master
 分支跟踪克隆的远程仓库的 <code>master</code> 分支（或其它名字的默认分支）。
@@ -187,7 +187,7 @@ From https://github.com/paulboone/ticgit
 <p>只有当你有所克隆服务器的写入权限，并且之前没有人推送过时，这条命令才能生效。
 当你和其他人在同一时间克隆，他们先推送到上游然后你再推送到上游，你的推送就会毫无疑问地被拒绝。
 你必须先抓取他们的工作并将其合并进你的工作后才能推送。
-阅读 <a href="ch00/ch03-git-branching">Git 分支</a> 了解如何推送到远程仓库服务器的详细信息。</p>
+阅读 <a href="{{< relurl "book/zh/v2/ch00/ch03-git-branching" >}}">Git 分支</a> 了解如何推送到远程仓库服务器的详细信息。</p>
 </div>
 </div>
 <div class="sect3">

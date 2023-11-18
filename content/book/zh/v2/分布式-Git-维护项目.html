@@ -386,18 +386,18 @@ $ git diff 36c7db</code></pre>
 当你完成某个主题分支的工作，或审核通过了其他人所贡献的工作时，你会将其合并进入 <code>master</code> 分支，之后将主题分支删除，如此反复。</p>
 </div>
 <div class="paragraph">
-<p>举例来说，如果我们的版本库包含类似 <a href="ch00/merwf_a">包含若干主题分支的提交历史。</a> 的两个名称分别为 <code>ruby_client</code> 和 <code>php_client</code> 的分支，
-并且我们合并完 <code>ruby_client</code> 分支后，再合并 <code>php_client</code> 分支，那么提交历史最后会变成 <a href="ch00/merwf_b">合并主题分支之后。</a> 的样子。</p>
+<p>举例来说，如果我们的版本库包含类似 <a href="{{< relurl "book/zh/v2/ch00/merwf_a" >}}">包含若干主题分支的提交历史。</a> 的两个名称分别为 <code>ruby_client</code> 和 <code>php_client</code> 的分支，
+并且我们合并完 <code>ruby_client</code> 分支后，再合并 <code>php_client</code> 分支，那么提交历史最后会变成 <a href="{{< relurl "book/zh/v2/ch00/merwf_b" >}}">合并主题分支之后。</a> 的样子。</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="包含若干主题分支的提交历史。">
+<img src="{{< relurl "book/zh/v2/images/merging-workflows-1.png" >}}" alt="包含若干主题分支的提交历史。">
 </div>
 <div class="title">Figure 73. 包含若干主题分支的提交历史。</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="合并主题分支之后。">
+<img src="{{< relurl "book/zh/v2/images/merging-workflows-2.png" >}}" alt="合并主题分支之后。">
 </div>
 <div class="title">Figure 74. 合并主题分支之后。</div>
 </div>
@@ -408,23 +408,23 @@ $ git diff 36c7db</code></pre>
 <p>如果你的项目非常重要，你可能会使用两阶段合并循环。
 在这种情况下，你会维护两个长期分支，分别是 <code>master</code> 和 <code>develop</code>，<code>master</code> 分支只会在一个非常稳定的版本发布时才会更新，而所有的新代码会首先整合进入 <code>develop</code> 分支。
 你定期将这两个分支推送到公共版本库中。
-每次需要合并新的主题分支时（<a href="ch00/merwf_c">合并主题分支前。</a>），你都应该合并进入 <code>develop</code> 分支（<a href="ch00/merwf_d">合并主题分支后。</a>）；当打标签发布的时候，你会将 <code>master</code> 分支快进到已经稳定的 <code>develop</code> 分支（<a href="ch00/merwf_e">一次发布之后。</a>）。</p>
+每次需要合并新的主题分支时（<a href="{{< relurl "book/zh/v2/ch00/merwf_c" >}}">合并主题分支前。</a>），你都应该合并进入 <code>develop</code> 分支（<a href="{{< relurl "book/zh/v2/ch00/merwf_d" >}}">合并主题分支后。</a>）；当打标签发布的时候，你会将 <code>master</code> 分支快进到已经稳定的 <code>develop</code> 分支（<a href="{{< relurl "book/zh/v2/ch00/merwf_e" >}}">一次发布之后。</a>）。</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="合并主题分支前。">
+<img src="{{< relurl "book/zh/v2/images/merging-workflows-3.png" >}}" alt="合并主题分支前。">
 </div>
 <div class="title">Figure 75. 合并主题分支前。</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="合并主题分支后。">
+<img src="{{< relurl "book/zh/v2/images/merging-workflows-4.png" >}}" alt="合并主题分支后。">
 </div>
 <div class="title">Figure 76. 合并主题分支后。</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="一次发布之后。">
+<img src="{{< relurl "book/zh/v2/images/merging-workflows-5.png" >}}" alt="一次发布之后。">
 </div>
 <div class="title">Figure 77. 一次发布之后。</div>
 </div>
@@ -441,13 +441,13 @@ $ git diff 36c7db</code></pre>
 <div class="paragraph">
 <p>
 Git 项目包含四个长期分支：<code>master</code>、<code>next</code>，用于新工作的 <code>pu</code>（proposed updates）和用于维护性向后移植工作（maintenance backports）的 <code>maint</code> 分支。
-贡献者的新工作会以类似之前所介绍的方式收入主题分支中（见 <a href="ch00/merwf_f">管理复杂的一系列接收贡献的平行主题分支。</a>）。
+贡献者的新工作会以类似之前所介绍的方式收入主题分支中（见 <a href="{{< relurl "book/zh/v2/ch00/merwf_f" >}}">管理复杂的一系列接收贡献的平行主题分支。</a>）。
 之后对主题分支进行测试评估，检查其是否已经能够合并，或者仍需要更多工作。
 安全的主题分支会被合并入 <code>next</code> 分支，之后该分支会被推送使得所有人都可以尝试整合到一起的特性。</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="管理复杂的一系列接收贡献的平行主题分支。">
+<img src="{{< relurl "book/zh/v2/images/large-merges-1.png" >}}" alt="管理复杂的一系列接收贡献的平行主题分支。">
 </div>
 <div class="title">Figure 78. 管理复杂的一系列接收贡献的平行主题分支。</div>
 </div>
@@ -458,7 +458,7 @@ Git 项目包含四个长期分支：<code>master</code>、<code>next</code>，�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="将贡献的主题分支并入长期整合分支。">
+<img src="{{< relurl "book/zh/v2/images/large-merges-2.png" >}}" alt="将贡献的主题分支并入长期整合分支。">
 </div>
 <div class="title">Figure 79. 将贡献的主题分支并入长期整合分支。</div>
 </div>
@@ -491,7 +491,7 @@ Git 中的拣选类似于对特定的某次提交的变基。
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="拣选之前的示例历史。">
+<img src="{{< relurl "book/zh/v2/images/rebasing-1.png" >}}" alt="拣选之前的示例历史。">
 </div>
 <div class="title">Figure 80. 拣选之前的示例历史。</div>
 </div>
@@ -512,7 +512,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="拣选主题分支中的一个提交后的历史。">
+<img src="{{< relurl "book/zh/v2/images/rebasing-2.png" >}}" alt="拣选主题分支中的一个提交后的历史。">
 </div>
 <div class="title">Figure 81. 拣选主题分支中的一个提交后的历史。</div>
 </div>
@@ -548,7 +548,7 @@ Finished one cherry-pick.
 当单独调用它时，Git 会检查解决方案数据库，尝试寻找一个和当前任一冲突相关的匹配项并解决冲突
 （尽管当 <code>rerere.enabled</code> 被设置为 <code>true</code> 时会自动进行）。
 它也有若干子命令，可用来查看记录项，删除特定解决方案和清除缓存全部内容等。
-我们将在 <a href="ch00/ef_rerere">Rerere</a> 中详细探讨。</p>
+我们将在 <a href="{{< relurl "book/zh/v2/ch00/ef_rerere" >}}">Rerere</a> 中详细探讨。</p>
 </div>
 </div>
 </div>
@@ -557,7 +557,7 @@ Finished one cherry-pick.
 <div class="paragraph">
 <p>
 当你决定进行一次发布时，你可能想要打一个标签，这样在之后的任何一个提交点都可以重新创建该发布。
-你在 <a href="ch00/ch02-git-basics-chapter">Git 基础</a> 中已经了解了创建新标签的过程。
+你在 <a href="{{< relurl "book/zh/v2/ch00/ch02-git-basics-chapter" >}}">Git 基础</a> 中已经了解了创建新标签的过程。
 作为一个维护者，如果你决定要为标签签名的话，打标签的过程应该是这样子的：</p>
 </div>
 <div class="listingblock">

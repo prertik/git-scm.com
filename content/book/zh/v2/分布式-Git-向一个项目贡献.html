@@ -66,7 +66,7 @@ Git 提供了一个简单的方式来检查这点——在提交前，运行 <co
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="`git diff --check` 的输出。">
+<img src="{{< relurl "book/zh/v2/images/git-diff-check.png" >}}" alt="`git diff --check` 的输出。">
 </div>
 <div class="title">Figure 57. <code>git diff --check</code> 的输出</div>
 </div>
@@ -77,12 +77,12 @@ Git 提供了一个简单的方式来检查这点——在提交前，运行 <co
 <p>接下来，尝试让每一个提交成为一个逻辑上的独立变更集。
 如果可以，尝试让改动可以理解——不要在整个周末编码解决五个问题，然后在周一时将它们提交为一个巨大的提交。
 即使在周末期间你无法提交，在周一时使用暂存区域将你的工作最少拆分为每个问题一个提交，并且为每一个提交附带一个有用的信息。
-如果其中一些改动修改了同一个文件，尝试使用 <code>git add --patch</code> 来部分暂存文件（在 <a href="ch00/_interactive_staging">交互式暂存</a> 中有详细介绍）。
+如果其中一些改动修改了同一个文件，尝试使用 <code>git add --patch</code> 来部分暂存文件（在 <a href="{{< relurl "book/zh/v2/ch00/_interactive_staging" >}}">交互式暂存</a> 中有详细介绍）。
 不管你做一个或五个提交，只要所有的改动都曾添加过，项目分支末端的快照就是一样的，所以尽量让你的开发者同事们在审查你的改动的时候更容易些吧。</p>
 </div>
 <div class="paragraph">
 <p>当你之后需要时这个方法也会使拉出或还原一个变更集更容易些。
-<a href="ch00/_rewriting_history">重写历史</a> 描述了重写历史与交互式暂存文件的若干有用的 Git 技巧——在将工作发送给其他人前使用这些工具来帮助生成一个干净又易懂的历史。</p>
+<a href="{{< relurl "book/zh/v2/ch00/_rewriting_history" >}}">重写历史</a> 描述了重写历史与交互式暂存文件的若干有用的 Git 技巧——在将工作发送给其他人前使用这些工具来帮助生成一个干净又易懂的历史。</p>
 </div>
 <div class="paragraph">
 <p>最后一件要牢记的事是提交信息。
@@ -235,7 +235,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="John 的分叉历史。">
+<img src="{{< relurl "book/zh/v2/images/small-team-1.png" >}}" alt="John 的分叉历史。">
 </div>
 <div class="title">Figure 58. John 的分叉历史</div>
 </div>
@@ -255,7 +255,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="合并了 `origin/master` 之后 John 的仓库。">
+<img src="{{< relurl "book/zh/v2/images/small-team-2.png" >}}" alt="合并了 `origin/master` 之后 John 的仓库。">
 </div>
 <div class="title">Figure 59. 合并了 <code>origin/master</code> 之后 John 的仓库</div>
 </div>
@@ -276,7 +276,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="推送到 `origin` 服务器后 John 的历史。">
+<img src="{{< relurl "book/zh/v2/images/small-team-3.png" >}}" alt="推送到 `origin` 服务器后 John 的历史。">
 </div>
 <div class="title">Figure 60. 推送到 <code>origin</code> 服务器后 John 的历史</div>
 </div>
@@ -286,7 +286,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Jessica 的主题分支。">
+<img src="{{< relurl "book/zh/v2/images/small-team-4.png" >}}" alt="Jessica 的主题分支。">
 </div>
 <div class="title">Figure 61. Jessica 的主题分支</div>
 </div>
@@ -309,7 +309,7 @@ Jessica 的历史现在看起来像这样：</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="抓取 John 的改动后 Jessica 的历史。">
+<img src="{{< relurl "book/zh/v2/images/small-team-5.png" >}}" alt="抓取 John 的改动后 Jessica 的历史。">
 </div>
 <div class="title">Figure 62. 抓取 John 的改动后 Jessica 的历史</div>
 </div>
@@ -330,7 +330,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 <div class="paragraph">
 <p><code>issue54..origin/master</code> 语法是一个日志过滤器，要求 Git 只显示所有在后面分支
 （在本例中是 <code>origin/master</code>）但不在前面分支（在本例中是 <code>issue54</code>）的提交的列表。
-我们将会在 <a href="ch00/_commit_ranges">提交区间</a> 中详细介绍这个语法。</p>
+我们将会在 <a href="{{< relurl "book/zh/v2/ch00/_commit_ranges" >}}">提交区间</a> 中详细介绍这个语法。</p>
 </div>
 <div class="paragraph">
 <p>目前，我们可以从输出中看到有一个 John 生成的但是 Jessica 还没有合并的提交。
@@ -384,7 +384,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="合并了 John 的改动后 Jessica 的历史。">
+<img src="{{< relurl "book/zh/v2/images/small-team-6.png" >}}" alt="合并了 John 的改动后 Jessica 的历史。">
 </div>
 <div class="title">Figure 63. 合并了 John 的改动后 Jessica 的历史</div>
 </div>
@@ -405,7 +405,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="推送所有的改动回服务器后 Jessica 的历史。">
+<img src="{{< relurl "book/zh/v2/images/small-team-7.png" >}}" alt="推送所有的改动回服务器后 Jessica 的历史。">
 </div>
 <div class="title">Figure 64. 推送所有的改动回服务器后 Jessica 的历史</div>
 </div>
@@ -417,7 +417,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="一个简单的多人 Git 工作流程的通常事件顺序。">
+<img src="{{< relurl "book/zh/v2/images/small-team-flow.png" >}}" alt="一个简单的多人 Git 工作流程的通常事件顺序。">
 </div>
 <div class="title">Figure 65. 一个简单的多人 Git 工作流程的通常事件顺序</div>
 </div>
@@ -497,7 +497,7 @@ $ git commit -am 'add ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Jessica 的初始提交历史。">
+<img src="{{< relurl "book/zh/v2/images/managed-team-1.png" >}}" alt="Jessica 的初始提交历史。">
 </div>
 <div class="title">Figure 66. Jessica 的初始提交历史</div>
 </div>
@@ -541,7 +541,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>这称作一个 <em>引用规范</em>。
-查看 <a href="ch00/_refspec">引用规范</a> 了解关于 Git 引用规范与通过它们可以做的不同的事情的详细讨论。
+查看 <a href="{{< relurl "book/zh/v2/ch00/_refspec" >}}">引用规范</a> 了解关于 Git 引用规范与通过它们可以做的不同的事情的详细讨论。
 也要注意 <code>-u</code> 标记；这是 <code>--set-upstream</code> 的简写，该标记会为之后轻松地推送与拉取配置分支。</p>
 </div>
 <div class="paragraph">
@@ -603,7 +603,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="在一个主题分支提交后 Jessica 的历史。">
+<img src="{{< relurl "book/zh/v2/images/managed-team-2.png" >}}" alt="在一个主题分支提交后 Jessica 的历史。">
 </div>
 <div class="title">Figure 67. 在一个主题分支提交后 Jessica 的历史</div>
 </div>
@@ -613,7 +613,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="合并了 Jessica 的两个主题分支后她的历史。">
+<img src="{{< relurl "book/zh/v2/images/managed-team-3.png" >}}" alt="合并了 Jessica 的两个主题分支后她的历史。">
 </div>
 <div class="title">Figure 68. 合并了 Jessica 的两个主题分支后她的历史</div>
 </div>
@@ -624,7 +624,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="这种管理团队工作流程的基本顺序。">
+<img src="{{< relurl "book/zh/v2/images/managed-team-flow.png" >}}" alt="这种管理团队工作流程的基本顺序。">
 </div>
 <div class="title">Figure 69. 这种管理团队工作流程的基本顺序</div>
 </div>
@@ -663,7 +663,7 @@ $ git commit</code></pre>
 <td class="content">
 <div class="paragraph">
 <p>你可以用 <code>rebase -i</code> 将工作压缩成一个单独的提交，或者重排提交中的工作使补丁更容易被维护者审核——
-查看 <a href="ch00/_rewriting_history">重写历史</a> 了解关于交互式变基的更多信息。</p>
+查看 <a href="{{< relurl "book/zh/v2/ch00/_rewriting_history" >}}">重写历史</a> 了解关于交互式变基的更多信息。</p>
 </div>
 </td>
 </tr>
@@ -682,7 +682,7 @@ $ git commit</code></pre>
 <p>然后需要推送工作到上面。
 相对于合并到主分支再推送上去，推送你正在工作的主题分支到仓库上更简单。
 原因是工作如果不被接受或者是被拣选的，就不必回退你的 master 分支
-（拣选操作 <code>cherry-pick</code> 详见 <a href="ch00/_rebase_cherry_pick">变基与拣选工作流</a>）。
+（拣选操作 <code>cherry-pick</code> 详见 <a href="{{< relurl "book/zh/v2/ch00/_rebase_cherry_pick" >}}">变基与拣选工作流</a>）。
 如果维护者合并、变基或拣选你的工作，不管怎样你最终会通过拉取他们的仓库找回来你的工作。</p>
 </div>
 <div class="paragraph">
@@ -697,7 +697,7 @@ $ git commit</code></pre>
 <p>
 当工作已经被推送到你的派生仓库后，你需要通知原项目的维护者你有想要他们合并的工作。
 这通常被称作一个 <strong>拉取请求（Pull Request）</strong>，你通常可以通过网站生成它——
-GitHub 有它自己的 Pull Request 机制，我们将会在 <a href="ch00/ch06-github">GitHub</a>
+GitHub 有它自己的 Pull Request 机制，我们将会在 <a href="{{< relurl "book/zh/v2/ch00/ch06-github" >}}">GitHub</a>
 介绍——也可以运行 <code>git request-pull</code> 命令然后将随后的输出通过电子邮件手动发送给项目维护者。</p>
 </div>
 <div class="paragraph">
@@ -748,7 +748,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="`featureB` 的初始提交历史。">
+<img src="{{< relurl "book/zh/v2/images/public-small-1.png" >}}" alt="`featureB` 的初始提交历史。">
 </div>
 <div class="title">Figure 70. <code>featureB</code> 的初始提交历史</div>
 </div>
@@ -764,11 +764,11 @@ $ git push -f myfork featureA</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>这样会重写你的历史，现在看起来像是 <a href="ch00/psp_b"><code>featureA</code> 工作之后的提交历史</a></p>
+<p>这样会重写你的历史，现在看起来像是 <a href="{{< relurl "book/zh/v2/ch00/psp_b" >}}"><code>featureA</code> 工作之后的提交历史</a></p>
 </div>
 <div id="psp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="`featureA` 工作之后的提交历史。">
+<img src="{{< relurl "book/zh/v2/images/public-small-2.png" >}}" alt="`featureA` 工作之后的提交历史。">
 </div>
 <div class="title">Figure 71. <code>featureA</code> 工作之后的提交历史</div>
 </div>
@@ -804,7 +804,7 @@ $ git push myfork featureBv2</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="`featureBv2` 工作之后的提交历史。">
+<img src="{{< relurl "book/zh/v2/images/public-small-3.png" >}}" alt="`featureBv2` 工作之后的提交历史。">
 </div>
 <div class="title">Figure 72. <code>featureBv2</code> 工作之后的提交历史</div>
 </div>

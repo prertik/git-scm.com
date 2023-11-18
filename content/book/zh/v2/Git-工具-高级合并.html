@@ -36,7 +36,7 @@ Git 的哲学是聪明地决定无歧义的合并方案，但是如果有冲突�
 <div class="sect3">
 <h3 id="_合并冲突">合并冲突</h3>
 <div class="paragraph">
-<p>我们在 <a href="ch00/_basic_merge_conflicts">遇到冲突时的分支合并</a> 介绍了解决合并冲突的一些基础知识，
+<p>我们在 <a href="{{< relurl "book/zh/v2/ch00/_basic_merge_conflicts" >}}">遇到冲突时的分支合并</a> 介绍了解决合并冲突的一些基础知识，
 对于更复杂的冲突，Git 提供了几个工具来帮助你指出将会发生什么以及如何更好地处理冲突。</p>
 </div>
 <div class="paragraph">
@@ -477,7 +477,7 @@ hello()</code></pre>
 </div>
 <div class="paragraph">
 <p>为了得到此次合并中包含的每一个分支的所有独立提交的列表，
-我们可以使用之前在 <a href="ch00/_triple_dot">三点</a> 学习的“三点”语法。</p>
+我们可以使用之前在 <a href="{{< relurl "book/zh/v2/ch00/_triple_dot" >}}">三点</a> 学习的“三点”语法。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -623,7 +623,7 @@ index 0399cd5,59727f0..e1d0799
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="意外的合并提交">
+<img src="{{< relurl "book/zh/v2/images/undomerge-start.png" >}}" alt="意外的合并提交">
 </div>
 <div class="title">Figure 138. 意外的合并提交</div>
 </div>
@@ -638,12 +638,12 @@ index 0399cd5,59727f0..e1d0799
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="在 `git reset --hard HEAD~` 之后的历史">
+<img src="{{< relurl "book/zh/v2/images/undomerge-reset.png" >}}" alt="在 `git reset --hard HEAD~` 之后的历史">
 </div>
 <div class="title">Figure 139. 在 <code>git reset --hard HEAD~</code> 之后的历史</div>
 </div>
 <div class="paragraph">
-<p>我们之前在 <a href="ch00/_git_reset">重置揭密</a> 已经介绍了 <code>reset</code>，所以现在指出这里发生了什么并不是很困难。
+<p>我们之前在 <a href="{{< relurl "book/zh/v2/ch00/_git_reset" >}}">重置揭密</a> 已经介绍了 <code>reset</code>，所以现在指出这里发生了什么并不是很困难。
 让我们快速复习下：<code>reset --hard</code> 通常会经历三步：</p>
 </div>
 <div class="olist arabic">
@@ -662,7 +662,7 @@ index 0399cd5,59727f0..e1d0799
 </div>
 <div class="paragraph">
 <p>这个方法的缺点是它会重写历史，在一个共享的仓库中这会造成问题的。
-查阅 <a href="ch00/_rebase_peril">变基的风险</a> 来了解更多可能发生的事情；
+查阅 <a href="{{< relurl "book/zh/v2/ch00/_rebase_peril" >}}">变基的风险</a> 来了解更多可能发生的事情；
 用简单的话说就是如果其他人已经有你将要重写的提交，你应当避免使用 <code>reset</code>。
 如果有任何其他提交在合并之后创建了，那么这个方法也会无效；移动引用实际上会丢失那些改动。</p>
 </div>
@@ -689,7 +689,7 @@ Git 称这个操作为“还原”，在这个特定的场景下，你可以像�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="在 `git revert -m 1` 后的历史">
+<img src="{{< relurl "book/zh/v2/images/undomerge-revert.png" >}}" alt="在 `git revert -m 1` 后的历史">
 </div>
 <div class="title">Figure 140. 在 <code>git revert -m 1</code> 后的历史</div>
 </div>
@@ -709,7 +709,7 @@ Already up-to-date.</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="含有坏掉合并的历史">
+<img src="{{< relurl "book/zh/v2/images/undomerge-revert2.png" >}}" alt="含有坏掉合并的历史">
 </div>
 <div class="title">Figure 141. 含有坏掉合并的历史</div>
 </div>
@@ -725,7 +725,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="在重新合并一个还原合并后的历史">
+<img src="{{< relurl "book/zh/v2/images/undomerge-revert3.png" >}}" alt="在重新合并一个还原合并后的历史">
 </div>
 <div class="title">Figure 142. 在重新合并一个还原合并后的历史</div>
 </div>
@@ -877,7 +877,7 @@ README</code></pre>
 <div class="paragraph">
 <p>在这个例子中，我们希望将 Rack 项目拉到 <code>master</code> 项目中作为一个子目录。
 我们可以在 Git 中执行 <code>git read-tree</code> 来实现。
-你可以在 <a href="ch00/ch10-git-internals">Git 内部原理</a> 中查看更多 <code>read-tree</code> 的相关信息，现在你只需要知道它会读取一个分支的根目录树到当前的暂存区和工作目录里。
+你可以在 <a href="{{< relurl "book/zh/v2/ch00/ch10-git-internals" >}}">Git 内部原理</a> 中查看更多 <code>read-tree</code> 的相关信息，现在你只需要知道它会读取一个分支的根目录树到当前的暂存区和工作目录里。
 先切回你的 <code>master</code> 分支，将 <code>rack_back</code> 分支拉取到我们项目的 <code>master</code> 分支中的 <code>rack</code> 子目录。</p>
 </div>
 <div class="listingblock">
@@ -917,7 +917,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 </div>
 <div class="paragraph">
 <p>这给我们提供了一种类似子模块工作流的工作方式，但是它并不需要用到子模块
-（有关子模块的内容我们会在 <a href="ch00/_git_submodules">子模块</a> 中介绍）。
+（有关子模块的内容我们会在 <a href="{{< relurl "book/zh/v2/ch00/_git_submodules" >}}">子模块</a> 中介绍）。
 我们可以在自己的仓库中保持一些和其他项目相关的分支，偶尔使用子树合并将它们合并到我们的项目中。
 某些时候这种方式很有用，例如当所有的代码都提交到一个地方的时候。
 然而，它同时也有缺点，它更加复杂且更容易让人犯错，例如重复合并改动或者不小心将分支提交到一个无关的仓库上去。</p>

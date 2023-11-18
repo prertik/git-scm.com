@@ -30,7 +30,7 @@ Git 处理分支的方式可谓是难以置信的轻量，创建新分支这一�
 <p>为了真正理解 Git 处理分支的方式，我们需要回顾一下 Git 是如何保存数据的。</p>
 </div>
 <div class="paragraph">
-<p>或许你还记得 <a href="ch00/ch01-getting-started">起步</a> 的内容，
+<p>或许你还记得 <a href="{{< relurl "book/zh/v2/ch00/ch01-getting-started" >}}">起步</a> 的内容，
 Git 保存的不是文件的变化或者差异，而是一系列不同时刻的 <strong>快照</strong> 。</p>
 </div>
 <div class="paragraph">
@@ -42,7 +42,7 @@ Git 保存的不是文件的变化或者差异，而是一系列不同时刻的 
 </div>
 <div class="paragraph">
 <p>为了更加形象地说明，我们假设现在有一个工作目录，里面包含了三个将要被暂存和提交的文件。
-暂存操作会为每一个文件计算校验和（使用我们在 <a href="ch00/ch01-getting-started">起步</a>
+暂存操作会为每一个文件计算校验和（使用我们在 <a href="{{< relurl "book/zh/v2/ch00/ch01-getting-started" >}}">起步</a>
 中提到的 SHA-1 哈希算法），然后会把当前版本的文件快照保存到 Git 仓库中
 （Git 使用 <em>blob</em> 对象来保存它们），最终将校验和加入到暂存区域等待提交：</p>
 </div>
@@ -64,7 +64,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="首次提交对象及其树结构。">
+<img src="{{< relurl "book/zh/v2/images/commit-and-tree.png" >}}" alt="首次提交对象及其树结构。">
 </div>
 <div class="title">Figure 9. 首次提交对象及其树结构</div>
 </div>
@@ -73,7 +73,7 @@ $ git commit -m 'The initial commit of my project'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="提交对象及其父对象。">
+<img src="{{< relurl "book/zh/v2/images/commits-and-parents.png" >}}" alt="提交对象及其父对象。">
 </div>
 <div class="title">Figure 10. 提交对象及其父对象</div>
 </div>
@@ -101,7 +101,7 @@ Git 的默认分支名字是 <code>master</code>。
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="分支及其提交历史。">
+<img src="{{< relurl "book/zh/v2/images/branch-and-history.png" >}}" alt="分支及其提交历史。">
 </div>
 <div class="title">Figure 11. 分支及其提交历史</div>
 </div>
@@ -124,7 +124,7 @@ Git 是怎么创建新分支的呢？
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="两个指向相同提交历史的分支。">
+<img src="{{< relurl "book/zh/v2/images/two-branches.png" >}}" alt="两个指向相同提交历史的分支。">
 </div>
 <div class="title">Figure 12. 两个指向相同提交历史的分支</div>
 </div>
@@ -138,7 +138,7 @@ Git 是怎么创建新分支的呢？
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD 指向当前所在的分支。">
+<img src="{{< relurl "book/zh/v2/images/head-to-master.png" >}}" alt="HEAD 指向当前所在的分支。">
 </div>
 <div class="title">Figure 13. HEAD 指向当前所在的分支</div>
 </div>
@@ -175,7 +175,7 @@ f30ab (HEAD -&gt; master, testing) add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD 指向当前所在的分支。">
+<img src="{{< relurl "book/zh/v2/images/head-to-testing.png" >}}" alt="HEAD 指向当前所在的分支。">
 </div>
 <div class="title">Figure 14. HEAD 指向当前所在的分支</div>
 </div>
@@ -191,7 +191,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="HEAD 分支随着提交操作自动向前移动。">
+<img src="{{< relurl "book/zh/v2/images/advance-testing.png" >}}" alt="HEAD 分支随着提交操作自动向前移动。">
 </div>
 <div class="title">Figure 15. HEAD 分支随着提交操作自动向前移动</div>
 </div>
@@ -206,7 +206,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="检出时 HEAD 随之移动。">
+<img src="{{< relurl "book/zh/v2/images/checkout-master.png" >}}" alt="检出时 HEAD 随之移动。">
 </div>
 <div class="title">Figure 16. 检出时 HEAD 随之移动</div>
 </div>
@@ -243,14 +243,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>现在，这个项目的提交历史已经产生了分叉（参见 <a href="ch00/divergent_history">项目分叉历史</a>）。
+<p>现在，这个项目的提交历史已经产生了分叉（参见 <a href="{{< relurl "book/zh/v2/ch00/divergent_history" >}}">项目分叉历史</a>）。
 因为刚才你创建了一个新分支，并切换过去进行了一些工作，随后又切换回 master 分支进行了另外一些工作。
 上述两次改动针对的是不同分支：你可以在不同分支间不断地来回切换和工作，并在时机成熟时将它们合并起来。
 而所有这些工作，你需要的命令只有 <code>branch</code>、<code>checkout</code> 和 <code>commit</code>。</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="项目分叉历史。">
+<img src="{{< relurl "book/zh/v2/images/advance-master.png" >}}" alt="项目分叉历史。">
 </div>
 <div class="title">Figure 17. 项目分叉历史</div>
 </div>

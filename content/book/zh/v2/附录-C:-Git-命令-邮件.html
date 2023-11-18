@@ -30,7 +30,7 @@ url: book/zh/v2/附录-C:-Git-命令-邮件
 它跟补丁命令做了差不多的工作，但还是有一些小小的差别。</p>
 </div>
 <div class="paragraph">
-<p>我们在 <a href="ch00/_patches_from_email">应用来自邮件的补丁</a> 一节中演示了它的使用及什么环境下你可能会用到它。</p>
+<p>我们在 <a href="{{< relurl "book/zh/v2/ch00/_patches_from_email" >}}">应用来自邮件的补丁</a> 一节中演示了它的使用及什么环境下你可能会用到它。</p>
 </div>
 </div>
 <div class="sect3">
@@ -40,13 +40,13 @@ url: book/zh/v2/附录-C:-Git-命令-邮件
 这对于通过邮件接受补丁并将他们轻松地应用到你的项目中很有用。</p>
 </div>
 <div class="paragraph">
-<p>我们在 <a href="ch00/_git_am">使用 <code>am</code> 命令应用补丁</a> 命令中提到了它的用法及工作流，包括使用 <code>--resolved</code>、<code>-i</code> 及 <code>-3</code> 选项。</p>
+<p>我们在 <a href="{{< relurl "book/zh/v2/ch00/_git_am" >}}">使用 <code>am</code> 命令应用补丁</a> 命令中提到了它的用法及工作流，包括使用 <code>--resolved</code>、<code>-i</code> 及 <code>-3</code> 选项。</p>
 </div>
 <div class="paragraph">
-<p>我们在 <a href="ch00/_email_hooks">电子邮件工作流钩子</a> 也提到了几条 hooks，你可以用来辅助与 <code>git am</code> 相关工作流。</p>
+<p>我们在 <a href="{{< relurl "book/zh/v2/ch00/_email_hooks" >}}">电子邮件工作流钩子</a> 也提到了几条 hooks，你可以用来辅助与 <code>git am</code> 相关工作流。</p>
 </div>
 <div class="paragraph">
-<p>在 <a href="ch00/_email_notifications">邮件通知</a> 一节中我们也将用此命令来应用 格式化的 GitHub 的推送请求的变更。</p>
+<p>在 <a href="{{< relurl "book/zh/v2/ch00/_email_notifications" >}}">邮件通知</a> 一节中我们也将用此命令来应用 格式化的 GitHub 的推送请求的变更。</p>
 </div>
 </div>
 <div class="sect3">
@@ -55,14 +55,14 @@ url: book/zh/v2/附录-C:-Git-命令-邮件
 <p><code>git format-patch</code> 命令用来以 mbox 的格式来生成一系列的补丁以便你可以发送到一个邮件列表中。</p>
 </div>
 <div class="paragraph">
-<p>我们在 <a href="ch00/_project_over_email">通过邮件的公开项目</a> 一节中研究了一个使用 <code>git format-patch</code> 工具为一个项目做贡献的示例。</p>
+<p>我们在 <a href="{{< relurl "book/zh/v2/ch00/_project_over_email" >}}">通过邮件的公开项目</a> 一节中研究了一个使用 <code>git format-patch</code> 工具为一个项目做贡献的示例。</p>
 </div>
 </div>
 <div class="sect3">
 <h3 id="_git_imap_send">git imap-send</h3>
 <div class="paragraph">
 <p><code>git imap-send</code> 将一个由 <code>git format-patch</code> 生成的邮箱上传至 IMAP 草稿文件夹。
-我们在 <a href="ch00/_project_over_email">通过邮件的公开项目</a> 一节中见过一个通过使用 <code>git imap-send</code> 工具向一个项目发送补丁进行贡献的例子。</p>
+我们在 <a href="{{< relurl "book/zh/v2/ch00/_project_over_email" >}}">通过邮件的公开项目</a> 一节中见过一个通过使用 <code>git imap-send</code> 工具向一个项目发送补丁进行贡献的例子。</p>
 </div>
 </div>
 <div class="sect3">
@@ -71,7 +71,7 @@ url: book/zh/v2/附录-C:-Git-命令-邮件
 <p><code>git send-mail</code> 命令用来通过邮件发送那些使用 <code>git format-patch</code> 生成的补丁。</p>
 </div>
 <div class="paragraph">
-<p>我们在 <a href="ch00/_project_over_email">通过邮件的公开项目</a> 一节中研究了一个使用 <code>git send-email</code> 工具发送补丁来为一个项目做贡献的示例。</p>
+<p>我们在 <a href="{{< relurl "book/zh/v2/ch00/_project_over_email" >}}">通过邮件的公开项目</a> 一节中研究了一个使用 <code>git send-email</code> 工具发送补丁来为一个项目做贡献的示例。</p>
 </div>
 </div>
 <div class="sect3">
@@ -81,7 +81,7 @@ url: book/zh/v2/附录-C:-Git-命令-邮件
 如果你在公共服务器上有一个分支，并且想让别人知道如何集成这些变更，而不用通过邮件发送补丁，你就可以执行此命令的输出发送给这个你想拉取变更的人。</p>
 </div>
 <div class="paragraph">
-<p>我们在 <a href="ch00/_public_project">派生的公开项目</a> 一节中演示了如何使用 <code>git request-pull</code> 来生成一个推送消息。</p>
+<p>我们在 <a href="{{< relurl "book/zh/v2/ch00/_public_project" >}}">派生的公开项目</a> 一节中演示了如何使用 <code>git request-pull</code> 来生成一个推送消息。</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

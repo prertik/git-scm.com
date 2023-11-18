@@ -58,7 +58,7 @@ git_repository_free(repo);</code></pre>
 另外还有 <code>git_repository_open_ext</code> ，它包括了带选项的搜索， <code>git_clone</code> 及其同类可以用来做远程版本库的本地克隆， <code>git_repository_init</code> 则可以创建一个全新的版本库。</p>
 </div>
 <div class="paragraph">
-<p>第二段代码使用了一种 rev-parse 语法（要了解更多，请看 <a href="ch00/_branch_references">分支引用</a> ）来得到 HEAD 真正指向的提交。
+<p>第二段代码使用了一种 rev-parse 语法（要了解更多，请看 <a href="{{< relurl "book/zh/v2/ch00/_branch_references" >}}">分支引用</a> ）来得到 HEAD 真正指向的提交。
 返回类型是一个 <code>git_object</code> 指针，它指代位于版本库里的 Git 对象数据库中的某个东西。
 <code>git_object</code> 实际上是几种不同的对象的“父”类型，每个“子”类型的内存布局和 <code>git_object</code> 是一样的，所以你能安全地把它们转换为正确的类型。
 在上面的例子中， <code>git_object_type(commit)</code> 会返回 <code>GIT_OBJ_COMMIT</code> ，所以转换成 <code>git_commit</code> 指针是安全的。</p>
@@ -164,7 +164,7 @@ commit = repo.lookup(commit_id) # <b class="conum">(8)</b></code></pre>
 </div>
 <div class="paragraph">
 <p>Ruby 的代码很好很简洁，另一方面因为 Libgit2 做了大量工作，所以代码运行起来其实速度也不赖。
-如果你不是一个 Ruby 程序员，我们在 <a href="ch00/_libgit2_bindings">其它绑定</a> 有提到其它的一些绑定。</p>
+如果你不是一个 Ruby 程序员，我们在 <a href="{{< relurl "book/zh/v2/ch00/_libgit2_bindings" >}}">其它绑定</a> 有提到其它的一些绑定。</p>
 </div>
 <div class="sect3">
 <h3 id="_高级功能">高级功能</h3>

@@ -30,7 +30,7 @@ title: Git - Fusión Avanzada
 <div class="sect3">
 <h3 id="_conflictos_de_fusión">Conflictos de Fusión</h3>
 <div class="paragraph">
-<p>Si bien cubrimos algunos conceptos básicos para resolver conflictos de fusión en <a href="ch00/r_basic_merge_conflicts">Principales Conflictos que Pueden Surgir en las Fusiones</a>, para conflictos más complejos, Git proporciona algunas herramientas para ayudarlo a descubrir qué está sucediendo y cómo lidiar mejor con el conflicto.</p>
+<p>Si bien cubrimos algunos conceptos básicos para resolver conflictos de fusión en <a href="{{< relurl "book/es/v2/ch00/r_basic_merge_conflicts" >}}">Principales Conflictos que Pueden Surgir en las Fusiones</a>, para conflictos más complejos, Git proporciona algunas herramientas para ayudarlo a descubrir qué está sucediendo y cómo lidiar mejor con el conflicto.</p>
 </div>
 <div class="paragraph">
 <p>En primer lugar, si es posible, intente asegurarse de que su directorio de trabajo esté limpio antes de realizar una fusión que pueda tener conflictos. Si tiene un trabajo en progreso, hágale commit a una rama temporal o stash. Esto hace que pueda deshacer <strong>cualquier cosa</strong> que intente aquí. Si tiene cambios no guardados en su directorio de trabajo cuando intenta fusionarlos, algunos de estos consejos pueden ayudarlo a perder ese trabajo.</p>
@@ -430,7 +430,7 @@ hello()</code></pre>
 <p>Otra herramienta útil al resolver conflictos de fusión es <code>git log</code>. Esto puede ayudarle a tener contexto de lo que pudo haber contribuido a los conflictos. Revisar un poco el historial para recordar por qué dos líneas de desarrollo estaban tocando el mismo código de área, puede ser muy útil algunas veces.</p>
 </div>
 <div class="paragraph">
-<p>Para obtener una lista completa de “commit” únicos que fueron incluidos en cualquiera de las ramas involucradas en esta fusión, podemos usar la sintaxis “triple dot” (triple punto) que aprendimos en <a href="ch00/r_triple_dot">Tres puntos</a>.</p>
+<p>Para obtener una lista completa de “commit” únicos que fueron incluidos en cualquiera de las ramas involucradas en esta fusión, podemos usar la sintaxis “triple dot” (triple punto) que aprendimos en <a href="{{< relurl "book/es/v2/ch00/r_triple_dot" >}}">Tres puntos</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -567,7 +567,7 @@ Digamos que comenzó a trabajar en una rama temática accidentalmente fusionada 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="Accidental merge commit.">
+<img src="{{< relurl "book/es/v2/images/undomerge-start.png" >}}" alt="Accidental merge commit.">
 </div>
 <div class="title">Figura 138. Accidental merge commit</div>
 </div>
@@ -582,13 +582,13 @@ En la mayoría de los casos si sigue al errante <code>git merge</code> con <code
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="History after `git reset --hard HEAD~`.">
+<img src="{{< relurl "book/es/v2/images/undomerge-reset.png" >}}" alt="History after `git reset --hard HEAD~`.">
 </div>
 <div class="title">Figura 139. History after <code>git reset --hard HEAD~</code>
 </div>
 </div>
 <div class="paragraph">
-<p>Ya vimos <code>reset</code> de nuevo en <a href="ch00/r_git_reset">Reiniciar Desmitificado</a>, así que no debería ser muy difícil averiguar lo que está sucediendo.
+<p>Ya vimos <code>reset</code> de nuevo en <a href="{{< relurl "book/es/v2/ch00/r_git_reset" >}}">Reiniciar Desmitificado</a>, así que no debería ser muy difícil averiguar lo que está sucediendo.
 Aquí un repaso rápido: <code>reset --hard</code> usualmente va a través de tres pasos:</p>
 </div>
 <div class="olist arabic">
@@ -607,7 +607,7 @@ En este caso, se quiere mover la <code>principal`a donde se encontraba antes el 
 </div>
 <div class="paragraph">
 <p>La desventaja de este enfoque es que se reescribirá el historial, lo cual puede ser problemático con un depósito compartido.
-Revise <a href="ch00/r_rebase_peril">Los Peligros de Reorganizar</a> para saber más de lo que puede suceder; la versión corta es que, si otras personas tienen los compromisos que está reescribiendo, probablemente debería evitar <code>resetear</code>.
+Revise <a href="{{< relurl "book/es/v2/ch00/r_rebase_peril" >}}">Los Peligros de Reorganizar</a> para saber más de lo que puede suceder; la versión corta es que, si otras personas tienen los compromisos que está reescribiendo, probablemente debería evitar <code>resetear</code>.
 Este enfoque tampoco funcionará si cualquiera de los otros compromisos han sido creados desde la fusión; mover los refs efectivamente perdería esos cambios.</p>
 </div>
 </div>
@@ -633,7 +633,7 @@ En este caso, se quiere deshacer todos los cambios introducidos por el fusionami
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="History after `git revert -m 1`.">
+<img src="{{< relurl "book/es/v2/images/undomerge-revert.png" >}}" alt="History after `git revert -m 1`.">
 </div>
 <div class="title">Figura 140. History after <code>git revert -m 1</code>
 </div>
@@ -654,7 +654,7 @@ Que es peor, si añade trabajo a <code>topic</code> y fusiona otra vez, Git solo
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="History with a bad merge.">
+<img src="{{< relurl "book/es/v2/images/undomerge-revert2.png" >}}" alt="History with a bad merge.">
 </div>
 <div class="title">Figura 141. History with a bad merge</div>
 </div>
@@ -670,7 +670,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="History after re-merging a reverted merge.">
+<img src="{{< relurl "book/es/v2/images/undomerge-revert3.png" >}}" alt="History after re-merging a reverted merge.">
 </div>
 <div class="title">Figura 142. History after re-merging a reverted merge</div>
 </div>
@@ -804,7 +804,7 @@ README</code></pre>
 <div class="paragraph">
 <p>En este caso, queremos integrar el proyecto Rack a nuestro proyecto <code>master</code> como un subdirectorio.
 Podemos hacer eso en Git con <code>git read-tree</code>.
-Aprenderá más sobre <code>read-tree</code> y sus amigos en <a href="ch00/ch10-git-internals">[ch10-git-internals]</a>, pero por ahora sepa que éste interpreta el árbol raíz de una <em>branch</em> en su <em>'área de staging</em> y <em>directorio de trabajo</em>.
+Aprenderá más sobre <code>read-tree</code> y sus amigos en <a href="{{< relurl "book/es/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a>, pero por ahora sepa que éste interpreta el árbol raíz de una <em>branch</em> en su <em>'área de staging</em> y <em>directorio de trabajo</em>.
 Sólo cambiamos de vuelta a su <em>branch</em> <code>master</code>, e integramos la <em>branch</em> <code>rack_branch</code> al subdirectorio <code>rack</code> de nuestra <em>branch</em> <code>master</code> de nuestro proyecto principal:</p>
 </div>
 <div class="listingblock">
@@ -840,7 +840,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 También puede hacer lo opuesto - hacer cambios en el subdirectorio <code>rack</code> de su <code>master branch</code> y luego convergerlos a su <em>branch</em> <code>rack_branch</code> más adelante para entregarlos a los mantenedores o empujarlos río arriba.</p>
 </div>
 <div class="paragraph">
-<p>Esto nos deja una manera de tener un flujo de trabajo algo similar al flujo de trabajo de submódulo sin utilizar submódulos (de los cuales hablamos en <a href="ch00/r_git_submodules">Submódulos</a>). Podemos mantener <em>branchs</em> con otros proyectos relacionados en nuestro repositorio y convergerlos tipo subárbol a nuestro proyecto ocasionalmente. Esto es bueno por ciertas razones, por ejemplo, todo el códido se encomienda a un único lugar. Sin embargo, tiene el defecto de ser un poco más complejo y facilita el cometer errores al reintegrar cambios o empujar accidentalmente una <em>branch</em> a un repositorio con el que no guarda relación.</p>
+<p>Esto nos deja una manera de tener un flujo de trabajo algo similar al flujo de trabajo de submódulo sin utilizar submódulos (de los cuales hablamos en <a href="{{< relurl "book/es/v2/ch00/r_git_submodules" >}}">Submódulos</a>). Podemos mantener <em>branchs</em> con otros proyectos relacionados en nuestro repositorio y convergerlos tipo subárbol a nuestro proyecto ocasionalmente. Esto es bueno por ciertas razones, por ejemplo, todo el códido se encomienda a un único lugar. Sin embargo, tiene el defecto de ser un poco más complejo y facilita el cometer errores al reintegrar cambios o empujar accidentalmente una <em>branch</em> a un repositorio con el que no guarda relación.</p>
 </div>
 <div class="paragraph">
 <p>Otra particularidad es que para diferenciar entre lo que tiene en su subdirectorio <code>rack</code> y el código en su <em>branch</em> <code>rack_branch</code> - para ver si necesita convergerlos - no puede usar el comando <code>diff</code> normal.

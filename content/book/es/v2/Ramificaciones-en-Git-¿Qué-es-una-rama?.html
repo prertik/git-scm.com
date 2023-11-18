@@ -30,7 +30,7 @@ Entender y manejar esta opción te proporciona una poderosa y exclusiva herramie
 <p>Para entender realmente cómo ramifica Git, previamente hemos de examinar la forma en que almacena sus datos.</p>
 </div>
 <div class="paragraph">
-<p>Recordando lo citado en <a href="ch00/ch01-introduction">[ch01-introduction]</a>, Git no los almacena de forma incremental (guardando solo diferencias), sino que los almacena como una serie de instantáneas (copias puntuales de los archivos completos, tal y como se encuentran en ese momento).</p>
+<p>Recordando lo citado en <a href="{{< relurl "book/es/v2/ch00/ch01-introduction" >}}">[ch01-introduction]</a>, Git no los almacena de forma incremental (guardando solo diferencias), sino que los almacena como una serie de instantáneas (copias puntuales de los archivos completos, tal y como se encuentran en ese momento).</p>
 </div>
 <div class="paragraph">
 <p>En cada confirmación de cambios (commit), Git almacena una instantánea de tu trabajo preparado.
@@ -38,7 +38,7 @@ Dicha instantánea contiene además unos metadatos con el autor y el mensaje exp
 </div>
 <div class="paragraph">
 <p>Para ilustrar esto, vamos a suponer, por ejemplo, que tienes una carpeta con tres archivos, que preparas (stage) todos ellos y los confirmas (commit).
-Al preparar los archivos, Git realiza una suma de control de cada uno de ellos (un resumen SHA-1, tal y como se mencionaba en <a href="ch00/ch01-introduction">[ch01-introduction]</a>), almacena una copia de cada uno en el repositorio (estas copias se denominan "blobs"), y guarda cada suma de control en el área de preparación (staging area):</p>
+Al preparar los archivos, Git realiza una suma de control de cada uno de ellos (un resumen SHA-1, tal y como se mencionaba en <a href="{{< relurl "book/es/v2/ch00/ch01-introduction" >}}">[ch01-introduction]</a>), almacena una copia de cada uno en el repositorio (estas copias se denominan "blobs"), y guarda cada suma de control en el área de preparación (staging area):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ Después, Git crea un objeto de confirmación con los metadatos pertinentes y un
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Una confirmación y sus árboles.">
+<img src="{{< relurl "book/es/v2/images/commit-and-tree.png" >}}" alt="Una confirmación y sus árboles.">
 </div>
 <div class="title">Figura 9. Una confirmación y sus árboles</div>
 </div>
@@ -64,7 +64,7 @@ Después, Git crea un objeto de confirmación con los metadatos pertinentes y un
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Confirmaciones y sus predecesoras.">
+<img src="{{< relurl "book/es/v2/images/commits-and-parents.png" >}}" alt="Confirmaciones y sus predecesoras.">
 </div>
 <div class="title">Figura 10. Confirmaciones y sus predecesoras</div>
 </div>
@@ -92,7 +92,7 @@ La única razón por la cual aparece en casi todos los repositorios es porque es
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="Una rama y su historial de confirmaciones.">
+<img src="{{< relurl "book/es/v2/images/branch-and-history.png" >}}" alt="Una rama y su historial de confirmaciones.">
 </div>
 <div class="title">Figura 11. Una rama y su historial de confirmaciones</div>
 </div>
@@ -115,7 +115,7 @@ Para ello, usarás el comando <code>git branch</code>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Dos ramas apuntando al mismo grupo de confirmaciones.">
+<img src="{{< relurl "book/es/v2/images/two-branches.png" >}}" alt="Dos ramas apuntando al mismo grupo de confirmaciones.">
 </div>
 <div class="title">Figura 12. Dos ramas apuntando al mismo grupo de confirmaciones</div>
 </div>
@@ -127,7 +127,7 @@ En Git, es simplemente el apuntador a la rama local en la que tú estés en ese 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="Apuntador HEAD a la rama donde estás actualmente.">
+<img src="{{< relurl "book/es/v2/images/head-to-master.png" >}}" alt="Apuntador HEAD a la rama donde estás actualmente.">
 </div>
 <div class="title">Figura 13. Apuntador HEAD a la rama donde estás actualmente</div>
 </div>
@@ -163,7 +163,7 @@ Hagamos una prueba, saltando a la rama <code>testing</code> recién creada:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="El apuntador HEAD apunta a la rama actual.">
+<img src="{{< relurl "book/es/v2/images/head-to-testing.png" >}}" alt="El apuntador HEAD apunta a la rama actual.">
 </div>
 <div class="title">Figura 14. El apuntador HEAD apunta a la rama actual</div>
 </div>
@@ -179,7 +179,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="La rama apuntada por HEAD avanza con cada confirmación de cambios.">
+<img src="{{< relurl "book/es/v2/images/advance-testing.png" >}}" alt="La rama apuntada por HEAD avanza con cada confirmación de cambios.">
 </div>
 <div class="title">Figura 15. La rama apuntada por HEAD avanza con cada confirmación de cambios</div>
 </div>
@@ -194,7 +194,7 @@ Volvamos ahora a la rama <code>master</code>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD apunta a otra rama cuando hacemos un salto.">
+<img src="{{< relurl "book/es/v2/images/checkout-master.png" >}}" alt="HEAD apunta a otra rama cuando hacemos un salto.">
 </div>
 <div class="title">Figura 16. HEAD apunta a otra rama cuando hacemos un salto</div>
 </div>
@@ -231,14 +231,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Ahora el historial de tu proyecto diverge (ver <a href="ch00/rdivergent_history">Los registros de las ramas divergen</a>).
+<p>Ahora el historial de tu proyecto diverge (ver <a href="{{< relurl "book/es/v2/ch00/rdivergent_history" >}}">Los registros de las ramas divergen</a>).
 Has creado una rama y saltado a ella, has trabajado sobre ella; has vuelto a la rama original, y has trabajado también sobre ella.
 Los cambios realizados en ambas sesiones de trabajo están aislados en ramas independientes: puedes saltar libremente de una a otra según estimes oportuno.
 Y todo ello simplemente con tres comandos: <code>git branch</code>, <code>git checkout</code> y <code>git commit</code>.</p>
 </div>
 <div id="rdivergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Los registros de las ramas divergen.">
+<img src="{{< relurl "book/es/v2/images/advance-master.png" >}}" alt="Los registros de las ramas divergen.">
 </div>
 <div class="title">Figura 17. Los registros de las ramas divergen</div>
 </div>

@@ -57,7 +57,7 @@ El tipo <code>git_repository</code> representa un identificador a un repositorio
 También está el <code>git_repository_open_ext</code> que incluye opciones para buscar, <code>git_clone</code> y compañía para hacer un clon local de un repositorio remoto, y <code>git_repository_init</code> para la creación de un repositorio completamente nuevo.</p>
 </div>
 <div class="paragraph">
-<p>El segundo fragmento de código utiliza la sintaxis rev-parse (ver <a href="ch00/r_branch_references">Referencias por rama</a> para más información) para obtener el commit al HEAD finalmente apunta.
+<p>El segundo fragmento de código utiliza la sintaxis rev-parse (ver <a href="{{< relurl "book/es/v2/ch00/r_branch_references" >}}">Referencias por rama</a> para más información) para obtener el commit al HEAD finalmente apunta.
 El tipo devuelto es un puntero <code>git_object</code>, lo que representa algo que existe en la base de datos de objetos de Git para un repositorio.
 <code>git_object</code> es en realidad un tipo <em>'padre</em>' de varios tipos diferentes de objetos; el diseño de memoria para cada uno de los tipos <em>'hijo</em>' es el mismo que para <code>git_object</code>, por lo que puedes hacer casting de forma segura hacia la derecha.
 En este caso, <code>git_object_type (commit)</code> devolvería <code>GIT_OBJ_COMMIT</code>, así que es seguro hacer casting a un puntero <code>git_commit</code>.</p>
@@ -163,7 +163,7 @@ commit = repo.lookup(commit_id) # <b class="conum">(8)</b></code></pre>
 </div>
 <div class="paragraph">
 <p>El código en Ruby es bonito y limpio, pero ya que Libgit2 está haciendo el trabajo pesado, este código se ejecutará bastante rápido, también.
-Si no eres un rubyista, tocamos algunos otros vínculos en <a href="ch00/r_libgit2_bindings">Otros Vínculos (Bindings)</a>.</p>
+Si no eres un rubyista, tocamos algunos otros vínculos en <a href="{{< relurl "book/es/v2/ch00/r_libgit2_bindings" >}}">Otros Vínculos (Bindings)</a>.</p>
 </div>
 <div class="sect3">
 <h3 id="_funcionalidad_avanzada">Funcionalidad Avanzada</h3>

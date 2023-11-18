@@ -98,7 +98,7 @@ b1ec324 first commit</code></pre>
 <p>Primero necesitamos determinar el rango de confirmaciones que queremos incluir en la agrupación. No es como en los protocolos de la red donde figurará el mínimo de datos para transferir desde la red por nosotros, tendremos que hacer esto manualmente. Ahora simplemente puedes hacer la misma cosa y agrupar el repositorio entero, el que trabajará, pero es mejor sólo agrupar las diferencias – solamente las tres confirmaciones que hicimos localmente.</p>
 </div>
 <div class="paragraph">
-<p>Para hacer eso, tienes que calcular la diferencia. Como hemos descrito en <a href="ch00/r_commit_ranges">Rangos de Commits</a>, Puedes especificar el rango de confirmaciones en un numero de caminos. Para obtener las tres confirmaciones que tenemos en nuestra rama maestra que no estaban en la rama que copiamos originalmente, podemos usar algo como <code>origin/master..master</code> o <code>master ^origin/master</code>. Puedes probar esto con el comando <code>log</code>.</p>
+<p>Para hacer eso, tienes que calcular la diferencia. Como hemos descrito en <a href="{{< relurl "book/es/v2/ch00/r_commit_ranges" >}}">Rangos de Commits</a>, Puedes especificar el rango de confirmaciones en un numero de caminos. Para obtener las tres confirmaciones que tenemos en nuestra rama maestra que no estaban en la rama que copiamos originalmente, podemos usar algo como <code>origin/master..master</code> o <code>master ^origin/master</code>. Puedes probar esto con el comando <code>log</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">

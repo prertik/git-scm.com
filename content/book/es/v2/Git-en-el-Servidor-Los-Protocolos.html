@@ -77,7 +77,7 @@ eficiente. La única razón que puedes tener para indicar expresamente el prefij
 <em>file://</em> puede ser el querer una copia limpia del repositorio, descartando
 referencias u objetos superfluos. Esto sucede normalmente, tras haberlo
 importado desde otro sistema de control de versiones o algo similar (ver
-<a href="ch00/ch10-git-internals">[ch10-git-internals]</a> sobre tareas de mantenimiento). Habitualmente, usaremos el camino (path) normal por ser casi siempre más rápido.</p>
+<a href="{{< relurl "book/es/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a> sobre tareas de mantenimiento). Habitualmente, usaremos el camino (path) normal por ser casi siempre más rápido.</p>
 </div>
 <div class="paragraph">
 <p>Para añadir un repositorio local a un proyecto Git existente, puedes usar algo
@@ -101,7 +101,7 @@ tienes un sistema de archivo compartido que todo el equipo pueda usar, preparar
 un repositorio es muy sencillo. Simplemente pones el repositorio básico en algún
 lugar donde todos tengan acceso a él y ajustas los permisos de lectura/escritura
 según proceda, tal y como lo harías para preparar cualquier otra carpeta
-compartida. En la próxima sección, <a href="ch00/r_git_on_the_server">Configurando Git en un servidor</a>, veremos cómo exportar
+compartida. En la próxima sección, <a href="{{< relurl "book/es/v2/ch00/r_git_on_the_server" >}}">Configurando Git en un servidor</a>, veremos cómo exportar
 un repositorio básico para conseguir esto.</p>
 </div>
 <div class="paragraph">
@@ -175,7 +175,7 @@ que usaríamos para clonar y, si tenemos permisos, para enviar cambios.</p>
 <div class="paragraph">
 <p>
 Si el servidor no dispone del protocolo HTTP “Inteligente”, el cliente de Git intentará con el protocolo clásico HTTP que podemos llamar HTTP “Tonto”. Este protocolo espera obtener el repositorio Git a través de un servidor web como si accediera a archivos normales. Lo bonito de este protocolo es la simplicidad para configurarlo. Básicamente, todo lo que tenemos que hacer es poner el repositorio Git bajo el directorio raíz de documentos HTTP y especificar un punto
-de enganche (hook) de <code>post-update</code> (véase <a href="ch00/r_git_hooks">Puntos de enganche en Git</a>).
+de enganche (hook) de <code>post-update</code> (véase <a href="{{< relurl "book/es/v2/ch00/r_git_hooks" >}}">Puntos de enganche en Git</a>).
 Desde ese momento, cualquiera con acceso al servidor web donde se publique el repositorio podrá también clonarlo. Para permitir acceso de lectura con HTTP, debes hacer algo similar a lo siguiente:</p>
 </div>
 <div class="listingblock">
@@ -205,7 +205,7 @@ Este comando se ejecuta cuando se envían cambios (push) al repositorio
 habitual en configuraciones Apache, pero se puede usar cualquier servidor web
 estático. Basta con que se ponga el repositorio básico (bare) en la carpeta
 correspondiente. Los datos de Git son servidos como archivos estáticos simples
-(véase <a href="ch00/ch10-git-internals">[ch10-git-internals]</a> para saber exactamente cómo se sirven).</p>
+(véase <a href="{{< relurl "book/es/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a> para saber exactamente cómo se sirven).</p>
 </div>
 <div class="paragraph">
 <p>Por lo general tendremos que elegir servirlos en lectura/escritura con el servidor
@@ -253,7 +253,7 @@ de otros protocolos.</p>
 credenciales cada vez que se hace puede resultar más complicado que usar
 claves SSH. Hay, sin embargo, diversas utilidades de cacheo de credenciales, como
 Keychain en OSX o Credential Manager en Windows; haciendo esto menos incómodo.
-Lee <a href="ch00/r_credential_caching">Almacenamiento de credenciales</a> para ver cómo configurar el cacheo seguro de
+Lee <a href="{{< relurl "book/es/v2/ch00/r_credential_caching" >}}">Almacenamiento de credenciales</a> para ver cómo configurar el cacheo seguro de
 contraseñas HTTP en tu sistema.</p>
 </div>
 </div>

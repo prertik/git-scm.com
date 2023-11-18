@@ -361,17 +361,17 @@ Tienes varias opciones y vamos a ver algunas de ellas.</p>
 Un flujo de trabajo sencillo integra tu trabajo en tu rama <code>master</code>.
 En este escenario, tienes una rama <code>master</code> que contiene básicamente código estable.
 Cuando tienes trabajo propio en una rama puntual o trabajo aportado por algún colaborador que ya has verificado, lo integras en tu rama <code>master</code>, borras la rama puntual y continúas el proceso.
-Si tenemos un repositorio con trabajo en dos ramas llamadas <code>ruby_client</code> y <code>php_client</code>, tal y como se muestra en <a href="ch00/rmerwf_a">Historial con varias ramas puntuales.</a> e integramos primero <code>ruby_client</code> y luego <code>php_client</code>, entonces tu historial terminará con este aspecto <a href="ch00/rmerwf_b">Tras integrar una rama puntual.</a>.</p>
+Si tenemos un repositorio con trabajo en dos ramas llamadas <code>ruby_client</code> y <code>php_client</code>, tal y como se muestra en <a href="{{< relurl "book/es/v2/ch00/rmerwf_a" >}}">Historial con varias ramas puntuales.</a> e integramos primero <code>ruby_client</code> y luego <code>php_client</code>, entonces tu historial terminará con este aspecto <a href="{{< relurl "book/es/v2/ch00/rmerwf_b" >}}">Tras integrar una rama puntual.</a>.</p>
 </div>
 <div id="rmerwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Historial con varias ramas puntuales.">
+<img src="{{< relurl "book/es/v2/images/merging-workflows-1.png" >}}" alt="Historial con varias ramas puntuales.">
 </div>
 <div class="title">Figura 73. Historial con varias ramas puntuales.</div>
 </div>
 <div id="rmerwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Tras integrar una rama puntual.">
+<img src="{{< relurl "book/es/v2/images/merging-workflows-2.png" >}}" alt="Tras integrar una rama puntual.">
 </div>
 <div class="title">Figura 74. Tras integrar una rama puntual.</div>
 </div>
@@ -382,23 +382,23 @@ Si tenemos un repositorio con trabajo en dos ramas llamadas <code>ruby_client</c
 <p>Si tienes un proyecto más importante, podrías preferir usar un ciclo de integración en dos fases.
 En este escenario, tienes dos ramas de largo recorrido, <code>master</code> y <code>develop</code>, y decides que la rama <code>master</code> sólo se actualiza cuando se llega a una versión muy estable y todo el código nuevo está integrado en la rama <code>develop</code>.
 Ambas ramas se envían habitualmente al repositorio público.
-Cada vez que tengas una nueva rama puntual para integrar en (<a href="ch00/rmerwf_c">Antes de integrar una rama puntual.</a>), primero la fusionas con la rama <code>develop</code> (<a href="ch00/rmerwf_d">Tras integrar una rama puntual.</a>); luego, tras etiquetar la versión, avanzas la rama <code>master</code> hasta el punto donde se encuentre la ahora estable rama <code>develop</code> (<a href="ch00/rmerwf_e">Tras el lanzamiento de una rama puntual.</a>).</p>
+Cada vez que tengas una nueva rama puntual para integrar en (<a href="{{< relurl "book/es/v2/ch00/rmerwf_c" >}}">Antes de integrar una rama puntual.</a>), primero la fusionas con la rama <code>develop</code> (<a href="{{< relurl "book/es/v2/ch00/rmerwf_d" >}}">Tras integrar una rama puntual.</a>); luego, tras etiquetar la versión, avanzas la rama <code>master</code> hasta el punto donde se encuentre la ahora estable rama <code>develop</code> (<a href="{{< relurl "book/es/v2/ch00/rmerwf_e" >}}">Tras el lanzamiento de una rama puntual.</a>).</p>
 </div>
 <div id="rmerwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Antes de integrar una rama puntual.">
+<img src="{{< relurl "book/es/v2/images/merging-workflows-3.png" >}}" alt="Antes de integrar una rama puntual.">
 </div>
 <div class="title">Figura 75. Antes de integrar una rama puntual.</div>
 </div>
 <div id="rmerwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Tras integrar una rama puntual.">
+<img src="{{< relurl "book/es/v2/images/merging-workflows-4.png" >}}" alt="Tras integrar una rama puntual.">
 </div>
 <div class="title">Figura 76. Tras integrar una rama puntual.</div>
 </div>
 <div id="rmerwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Tras el lanzamiento de una rama puntual.">
+<img src="{{< relurl "book/es/v2/images/merging-workflows-5.png" >}}" alt="Tras el lanzamiento de una rama puntual.">
 </div>
 <div class="title">Figura 77. Tras el lanzamiento de una rama puntual.</div>
 </div>
@@ -413,13 +413,13 @@ Entonces, cuando el código de esa rama sea estable y pase las pruebas, lo puede
 <div class="paragraph">
 <p>
 El proyecto Git tiene cuatro ramas de largo recorrido: <code>master</code>, <code>next</code>, y <code>pu</code> (proposed updates, actualizaciones propuestas) para trabajos nuevos, y <code>maint</code> para trabajos de mantenimiento de versiones anteriores.
-Cuando los colaboradores introducen nuevos trabajos, se recopilan en ramas puntuales en el repositorio del responsable de mantenimiento, de manera similar a la que se ha descrito (ver <a href="ch00/rmerwf_f">Gestionando un conjunto complejo de ramas puntuales paralelas.</a>).
+Cuando los colaboradores introducen nuevos trabajos, se recopilan en ramas puntuales en el repositorio del responsable de mantenimiento, de manera similar a la que se ha descrito (ver <a href="{{< relurl "book/es/v2/ch00/rmerwf_f" >}}">Gestionando un conjunto complejo de ramas puntuales paralelas.</a>).
 En este punto, los nuevos trabajos se evalúan para decidir si son seguros y si están listos para los usuarios o si por el contrario necesitan más trabajo.
 Si son seguros, se integran en la rama <code>next</code>, y se envía dicha rama al repositorio público para que todo el mundo pueda probar las nuevas funcionalidades ya integradas.</p>
 </div>
 <div id="rmerwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Gestionando un conjunto complejo de ramas puntuales paralelas.">
+<img src="{{< relurl "book/es/v2/images/large-merges-1.png" >}}" alt="Gestionando un conjunto complejo de ramas puntuales paralelas.">
 </div>
 <div class="title">Figura 78. Gestionando un conjunto complejo de ramas puntuales paralelas.</div>
 </div>
@@ -430,7 +430,7 @@ Esto significa que la rama <code>master</code> casi siempre avanza, <code>next</
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Fusionando ramas puntuales en ramas de integración de largo recorrido.">
+<img src="{{< relurl "book/es/v2/images/large-merges-2.png" >}}" alt="Fusionando ramas puntuales en ramas de integración de largo recorrido.">
 </div>
 <div class="title">Figura 79. Fusionando ramas puntuales en ramas de integración de largo recorrido.</div>
 </div>
@@ -458,7 +458,7 @@ Por ejemplo, imagina que tienes un proyecto como éste:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Ejemplo de historial" width="antes de entresacar.">
+<img src="{{< relurl "book/es/v2/images/rebasing-1.png" >}}" alt="Ejemplo de historial" width="antes de entresacar.">
 </div>
 <div class="title">Figura 80. Ejemplo de historial, antes de entresacar.</div>
 </div>
@@ -479,7 +479,7 @@ Ahora tu historial queda así:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Historial tras entresacar un commit de una rama puntual.">
+<img src="{{< relurl "book/es/v2/images/rebasing-2.png" >}}" alt="Historial tras entresacar un commit de una rama puntual.">
 </div>
 <div class="title">Figura 81. Historial tras entresacar un commit de una rama puntual.</div>
 </div>
@@ -512,7 +512,7 @@ El parámetro de configuración es <code>rerere.enabled</code> y es bastante út
 <div class="paragraph">
 <p>Si fuera necesario, puedes interactuar con la caché de “rerere” usando el comando <code>git rerere</code>.
 Cuando se invoca sin ningún parámetro adicional, Git comprueba su base de datos de resoluciones en busca de coincidencias con cualquier conflicto durante la integración actual e intenta resolverlo (aunque se hace automáticamente en caso de que <code>rerere.enabled</code> sea <code>true</code>).
-También existen subcomandos para ver qué se grabará, para eliminar de la caché una resolución específica y para limpiar completamante la caché. Veremos más detalles sobre “rerere” en <a href="ch00/r_rerere">Rerere</a>.</p>
+También existen subcomandos para ver qué se grabará, para eliminar de la caché una resolución específica y para limpiar completamante la caché. Veremos más detalles sobre “rerere” en <a href="{{< relurl "book/es/v2/ch00/r_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -521,7 +521,7 @@ También existen subcomandos para ver qué se grabará, para eliminar de la cach
 <div class="paragraph">
 <p>
 Cuando decides lanzar una versión, probablemente quieras etiquetarla para poder generarla más adelante en cualquier momento.
-Puedes crear una nueva etiqueta siguiendo los pasos descritos en <a href="ch00/ch02-git-basics">[ch02-git-basics]</a>.
+Puedes crear una nueva etiqueta siguiendo los pasos descritos en <a href="{{< relurl "book/es/v2/ch00/ch02-git-basics" >}}">[ch02-git-basics]</a>.
 Si decides firmar la etiqueta como responsable de mantenimiento, el etiquetado sería algo así:</p>
 </div>
 <div class="listingblock">

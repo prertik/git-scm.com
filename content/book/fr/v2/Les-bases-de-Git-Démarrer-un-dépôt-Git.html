@@ -79,7 +79,7 @@ Si vous ne l’avez jamais fait, cela se présente de différentes manières sel
 <div class="paragraph">
 <p>Cela crée un nouveau sous-répertoire nommé <code>.git</code> qui contient tous les fichiers nécessaires au dépôt — un squelette de dépôt Git.
 Pour l’instant, aucun fichier n’est encore versionné.
-(Cf. <a href="ch00/ch10-git-internals">Les tripes de Git</a> pour plus d’information sur les fichiers contenus dans le répertoire <code>.git</code> que vous venez de créer.)</p>
+(Cf. <a href="{{< relurl "book/fr/v2/ch00/ch10-git-internals" >}}">Les tripes de Git</a> pour plus d’information sur les fichiers contenus dans le répertoire <code>.git</code> que vous venez de créer.)</p>
 </div>
 <div class="paragraph">
 <p>Si vous souhaitez démarrer le contrôle de version sur des fichiers existants (par opposition à un répertoire vide), vous devrez probablement suivre ces fichiers et faire un commit initial.
@@ -104,7 +104,7 @@ $ git commit -m 'initial project version'</code></pre>
 Si vous êtes familier avec d’autres systèmes de gestion de version tels que Subversion, vous noterez que la commande est <code>clone</code> et non <code>checkout</code>.
 C’est une distinction importante — Git reçoit une copie de quasiment toutes les données dont le serveur dispose.
 Toutes les versions de tous les fichiers pour l’historique du projet sont téléchargées quand vous lancez <code>git clone</code>.
-En fait, si le disque du serveur se corrompt, vous pouvez utiliser n’importe quel clone pour remettre le serveur dans l’état où il était au moment du clonage (vous pourriez perdre quelques paramètres du serveur, mais toutes les données sous gestion de version seraient récupérées — cf. <a href="ch00/s_git_on_the_server">Installation de Git sur un serveur</a> pour de plus amples détails).</p>
+En fait, si le disque du serveur se corrompt, vous pouvez utiliser n’importe quel clone pour remettre le serveur dans l’état où il était au moment du clonage (vous pourriez perdre quelques paramètres du serveur, mais toutes les données sous gestion de version seraient récupérées — cf. <a href="{{< relurl "book/fr/v2/ch00/s_git_on_the_server" >}}">Installation de Git sur un serveur</a> pour de plus amples détails).</p>
 </div>
 <div class="paragraph">
 <p>Vous clonez un dépôt avec <code>git clone [url]</code>.
@@ -133,7 +133,7 @@ Si vous examinez le nouveau répertoire <code>libgit2</code>, vous y verrez les 
 <div class="paragraph">
 <p>Git dispose de différents protocoles de transfert que vous pouvez utiliser.
 L’exemple précédent utilise le protocole <code>https://</code>, mais vous pouvez aussi voir <code>git://</code> ou <code>utilisateur@serveur:/chemin.git</code>, qui utilise le protocole de transfert SSH.
-<a href="ch00/s_git_on_the_server">Installation de Git sur un serveur</a> introduit toutes les options disponibles pour mettre en place un serveur Git, ainsi que leurs avantages et inconvénients.</p>
+<a href="{{< relurl "book/fr/v2/ch00/s_git_on_the_server" >}}">Installation de Git sur un serveur</a> introduit toutes les options disponibles pour mettre en place un serveur Git, ainsi que leurs avantages et inconvénients.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

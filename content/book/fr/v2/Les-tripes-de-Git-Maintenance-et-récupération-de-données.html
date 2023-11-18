@@ -124,7 +124,7 @@ Le problème est de trouver ce SHA, ce n’est pas comme si vous l’aviez mémo
 <p>Souvent, la manière la plus rapide est d’utiliser l’outil <code>git reflog</code>.
 Pendant que vous travaillez, Git enregistre l’emplacement de votre HEAD chaque fois que vous le changez.
 À chaque <em>commit</em> ou commutation de branche, le journal des références (<em>reflog</em>) est mis à jour.
-Le journal des références est aussi mis à jour par la commande <code>git update-ref</code>, ce qui est une autre raison de l’utiliser plutôt que de simplement écrire votre valeur SHA dans vos fichiers de références, comme mentionné dans la section <a href="ch00/s_git_refs">Références Git</a> plus haut dans ce chapitre.
+Le journal des références est aussi mis à jour par la commande <code>git update-ref</code>, ce qui est une autre raison de l’utiliser plutôt que de simplement écrire votre valeur SHA dans vos fichiers de références, comme mentionné dans la section <a href="{{< relurl "book/fr/v2/ch00/s_git_refs" >}}">Références Git</a> plus haut dans ce chapitre.
 Vous pouvez voir où vous étiez à n’importe quel moment en exécutant <code>git reflog</code> :</p>
 </div>
 <div class="listingblock">
@@ -310,7 +310,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>Le gros objet est à la fin : 5 Mio.
-Pour trouver quel fichier c’est, vous allez utiliser la commande <code>rev-list</code>, que vous avez utilisée brièvement dans <a href="ch00/s_enforcing_commit_message_format">Application d’une politique de format du message de validation</a>.
+Pour trouver quel fichier c’est, vous allez utiliser la commande <code>rev-list</code>, que vous avez utilisée brièvement dans <a href="{{< relurl "book/fr/v2/ch00/s_enforcing_commit_message_format" >}}">Application d’une politique de format du message de validation</a>.
 Si vous mettez l’option <code>--objects</code> à <code>rev-list</code>, elle listera tous les SHA des <em>commits</em> et des blobs avec le chemin du fichier associé.
 Vous pouvez utiliser cette commande pour trouver le nom de votre blob :</p>
 </div>
@@ -333,7 +333,7 @@ dadf725 oops - removed large tarball
 </div>
 <div class="paragraph">
 <p>Vous devez réécrire tous les <em>commits</em> en descendant depuis <code>7b30847</code> pour supprimer totalement ce fichier de votre historique Git.
-Pour cela, utilisez <code>filter-branch</code>, que vous avez utilisée dans le chapitre <a href="ch00/s_rewriting_history">Réécrire l’historique</a> :</p>
+Pour cela, utilisez <code>filter-branch</code>, que vous avez utilisée dans le chapitre <a href="{{< relurl "book/fr/v2/ch00/s_rewriting_history" >}}">Réécrire l’historique</a> :</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -345,7 +345,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>L’option <code>--index-filter</code> est similaire à l’option <code>--tree-filter</code> utilisée dans le chapitre <a href="ch00/s_rewriting_history">Réécrire l’historique</a>, sauf qu’au lieu de modifier les fichiers sur le disque, vous modifiez votre index.</p>
+<p>L’option <code>--index-filter</code> est similaire à l’option <code>--tree-filter</code> utilisée dans le chapitre <a href="{{< relurl "book/fr/v2/ch00/s_rewriting_history" >}}">Réécrire l’historique</a>, sauf qu’au lieu de modifier les fichiers sur le disque, vous modifiez votre index.</p>
 </div>
 <div class="paragraph">
 <p>Plutôt que de supprimer un fichier spécifique avec une commande comme <code>rm file</code>, vous devez le supprimer avec <code>git rm --cached</code> ; vous devez le supprimer de l’index, pas du disque.

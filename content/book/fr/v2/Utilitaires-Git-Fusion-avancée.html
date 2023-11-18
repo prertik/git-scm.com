@@ -35,7 +35,7 @@ Nous traiterons aussi quelques types de fusions différents, non-standard, ainsi
 <div class="sect3">
 <h3 id="_conflits_de_fusion">Conflits de fusion</h3>
 <div class="paragraph">
-<p>Bien que nous avons couvert les bases de la résolution de conflits dans <a href="ch00/s_basic_merge_conflicts">Conflits de fusions (<em>Merge conflicts</em>)</a>, pour des conflits plus complexes, Git fournit quelques outils pour vous aider à vous y retrouver et à mieux gérer les conflits.</p>
+<p>Bien que nous avons couvert les bases de la résolution de conflits dans <a href="{{< relurl "book/fr/v2/ch00/s_basic_merge_conflicts" >}}">Conflits de fusions (<em>Merge conflicts</em>)</a>, pour des conflits plus complexes, Git fournit quelques outils pour vous aider à vous y retrouver et à mieux gérer les conflits.</p>
 </div>
 <div class="paragraph">
 <p>Premièrement, si c’est seulement possible, essayer de démarrer d’un répertoire de travail propre avant de commencer une fusion qui pourrait engendrer des conflits.
@@ -469,7 +469,7 @@ Cela peut vous aider à obtenir du contexte ce qui a contribué aux conflits.
 Parcourir un petit morceau de l’historique pour se rappeler pourquoi deux lignes de développement ont touché au même endroit dans le code peut s’avérer quelque fois très utile.</p>
 </div>
 <div class="paragraph">
-<p>Pour obtenir une liste complète de tous les <em>commits</em> uniques qui ont été introduits dans chaque branche impliquée dans la fusion, nous pouvons utiliser la syntaxe « triple point » que nous avons apprise dans <a href="ch00/s_triple_dot">Triple point</a>.</p>
+<p>Pour obtenir une liste complète de tous les <em>commits</em> uniques qui ont été introduits dans chaque branche impliquée dans la fusion, nous pouvons utiliser la syntaxe « triple point » que nous avons apprise dans <a href="{{< relurl "book/fr/v2/ch00/s_triple_dot" >}}">Triple point</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -614,7 +614,7 @@ Supposons que vous avez commencé à travailler sur une branche thématique, que
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="_Commit_ de fusion accidentel">
+<img src="{{< relurl "book/fr/v2/images/undomerge-start.png" >}}" alt="_Commit_ de fusion accidentel">
 </div>
 <div class="title">Figure 137. <em>Commit</em> de fusion accidentel</div>
 </div>
@@ -629,13 +629,13 @@ La plupart du temps, en faisant suivre le <code>git merge</code> malencontreux p
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="Historique après `git reset --hard HEAD~`">
+<img src="{{< relurl "book/fr/v2/images/undomerge-reset.png" >}}" alt="Historique après `git reset --hard HEAD~`">
 </div>
 <div class="title">Figure 138. Historique après <code>git reset --hard HEAD~</code>
 </div>
 </div>
 <div class="paragraph">
-<p>Nous avons détaillé <code>reset</code> dans <a href="ch00/s_git_reset">Reset démystifié</a> et il ne devrait pas être très difficile de comprendre ce résultat.
+<p>Nous avons détaillé <code>reset</code> dans <a href="{{< relurl "book/fr/v2/ch00/s_git_reset" >}}">Reset démystifié</a> et il ne devrait pas être très difficile de comprendre ce résultat.
 Voici néanmoins un petit rappel : <code>reset --hard</code> réalise généralement trois étapes :</p>
 </div>
 <div class="olist arabic">
@@ -653,7 +653,7 @@ Voici néanmoins un petit rappel : <code>reset --hard</code> réalise général
 </div>
 <div class="paragraph">
 <p>Le défaut de cette approche est qu’elle ré-écrit l’historique, ce qui peut être problématique avec un dépôt partagé.
-Reportez-vous à <a href="ch00/s_rebase_peril">Les dangers du rebasage</a> pour plus d’information ; en résumé si d’autres personnes ont déjà les <em>commits</em> que vous ré-écrivez, il vaudrait mieux éviter un <code>reset</code>.
+Reportez-vous à <a href="{{< relurl "book/fr/v2/ch00/s_rebase_peril" >}}">Les dangers du rebasage</a> pour plus d’information ; en résumé si d’autres personnes ont déjà les <em>commits</em> que vous ré-écrivez, il vaudrait mieux éviter un <code>reset</code>.
 Cette approche ne fonctionnera pas non plus si d’autres <em>commits</em> ont été créés depuis la fusion ; déplacer les références des branches éliminera effectivement ces modifications.</p>
 </div>
 </div>
@@ -680,7 +680,7 @@ Dans ce cas, nous souhaitons défaire toutes les modifications introduites dans 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="Historique après `git revert -m 1`">
+<img src="{{< relurl "book/fr/v2/images/undomerge-revert.png" >}}" alt="Historique après `git revert -m 1`">
 </div>
 <div class="title">Figure 139. Historique après <code>git revert -m 1</code>
 </div>
@@ -701,7 +701,7 @@ Pire encore, si vous ajoutez du travail à <code>topic</code> et re-fusionnez, G
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="Historique avec une mauvaise fusion">
+<img src="{{< relurl "book/fr/v2/images/undomerge-revert2.png" >}}" alt="Historique avec une mauvaise fusion">
 </div>
 <div class="title">Figure 140. Historique avec une mauvaise fusion</div>
 </div>
@@ -717,7 +717,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="Historique après re-fusion de la fusion annulée">
+<img src="{{< relurl "book/fr/v2/images/undomerge-revert3.png" >}}" alt="Historique après re-fusion de la fusion annulée">
 </div>
 <div class="title">Figure 141. Historique après re-fusion de la fusion annulée</div>
 </div>
@@ -864,7 +864,7 @@ C’est inhabituel, parce que c’est rarement utile, mais c’est assez facile 
 <div class="paragraph">
 <p>Dans notre cas, nous voulons tirer le projet Rack dans notre projet <code>master</code> en tant que sous-dossier.
 Nous pouvons faire cela dans Git avec la commande <code>git read-tree</code>.
-Vous en apprendrez plus sur <code>read-tree</code> et ses amis dans <a href="ch00/ch10-git-internals">Les tripes de Git</a>, mais pour l’instant sachez qu’elle lit l’arborescence d’une branche dans votre index courant et dans le répertoire de travail.
+Vous en apprendrez plus sur <code>read-tree</code> et ses amis dans <a href="{{< relurl "book/fr/v2/ch00/ch10-git-internals" >}}">Les tripes de Git</a>, mais pour l’instant sachez qu’elle lit l’arborescence d’une branche dans votre index courant et dans le répertoire de travail.
 Nous venons de rebasculer dans notre branche <code>master</code>, et nous tirons la branche <code>rack_branch</code> dans le sous-dossier <code>rack</code> de notre branche <code>master</code> de notre projet principal :</p>
 </div>
 <div class="listingblock">
@@ -901,7 +901,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 Vous pouvez aussi faire l’inverse – faire les modifications dans le sous-dossier <code>rack</code> de votre branche <code>master</code> et ensuite les fusionner plus tard dans votre branche <code>rack_branch</code> pour les soumettre aux mainteneurs ou les pousser en amont.</p>
 </div>
 <div class="paragraph">
-<p>Ceci nous donne un moyen d’avoir un flux de travail quelque peu similaire au flux de travail des sous-modules sans utiliser les sous-modules (que nous couvrirons dans <a href="ch00/s_git_submodules">Sous-modules</a>).
+<p>Ceci nous donne un moyen d’avoir un flux de travail quelque peu similaire au flux de travail des sous-modules sans utiliser les sous-modules (que nous couvrirons dans <a href="{{< relurl "book/fr/v2/ch00/s_git_submodules" >}}">Sous-modules</a>).
 Nous pouvons garder dans notre dépôt des branches avec d’autres projets liés et les fusionner façon sous-arbre dans notre projet occasionnellement.
 C’est bien par certains côtés ; par exemple tout le code est validé à un seul endroit.
 Cependant, cela a d’autres défauts comme le fait que c’est un petit peu plus complexe et c’est plus facile de faire des erreurs en réintégrant les modifications ou en poussant accidentellement une branche dans un dépôt qui n’a rien à voir.</p>

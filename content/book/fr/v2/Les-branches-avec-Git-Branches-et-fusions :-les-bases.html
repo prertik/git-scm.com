@@ -64,7 +64,7 @@ Commençons par supposer que vous travaillez sur votre projet et avez déjà que
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Historique de _commits_ simple">
+<img src="{{< relurl "book/fr/v2/images/basic-branching-1.png" >}}" alt="Historique de _commits_ simple">
 </div>
 <div class="title">Figure 18. Historique de <em>commits</em> simple</div>
 </div>
@@ -89,7 +89,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Création d’un nouveau pointeur de branche">
+<img src="{{< relurl "book/fr/v2/images/basic-branching-2.png" >}}" alt="Création d’un nouveau pointeur de branche">
 </div>
 <div class="title">Figure 19. Création d’un nouveau pointeur de branche</div>
 </div>
@@ -105,7 +105,7 @@ $ git commit -a -m "ajout d'un pied de page [problème 53]"</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="La branche iss53 a avancé avec votre travail">
+<img src="{{< relurl "book/fr/v2/images/basic-branching-3.png" >}}" alt="La branche iss53 a avancé avec votre travail">
 </div>
 <div class="title">Figure 20. La branche iss53 a avancé avec votre travail</div>
 </div>
@@ -117,7 +117,7 @@ Tout ce que vous avez à faire, c’est simplement de rebasculer sur la branche 
 <div class="paragraph">
 <p>Cependant, avant de le faire, notez que si votre copie de travail ou votre zone d’index contiennent des modifications non validées qui sont en conflit avec la branche que vous extrayez, Git ne vous laissera pas changer de branche.
 Le mieux est d’avoir votre copie de travail propre au moment de changer de branche.
-Il y a des moyens de contourner ceci (précisément par le remisage et l’amendement de <em>commit</em>) dont nous parlerons plus loin, au chapitre <a href="ch00/s_git_stashing">Remisage et nettoyage</a>.
+Il y a des moyens de contourner ceci (précisément par le remisage et l’amendement de <em>commit</em>) dont nous parlerons plus loin, au chapitre <a href="{{< relurl "book/fr/v2/ch00/s_git_stashing" >}}">Remisage et nettoyage</a>.
 Pour l’instant, nous supposons que vous avez validé tous vos changements et que vous pouvez donc rebasculer vers votre branche <code>master</code> :</p>
 </div>
 <div class="listingblock">
@@ -147,7 +147,7 @@ $ git commit -a -m "correction de l'adresse email incorrecte"
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="Branche de correctif basée sur `master`">
+<img src="{{< relurl "book/fr/v2/images/basic-branching-4.png" >}}" alt="Branche de correctif basée sur `master`">
 </div>
 <div class="title">Figure 21. Branche de correctif basée sur <code>master</code>
 </div>
@@ -176,7 +176,7 @@ Autrement dit, lorsque l’on cherche à fusionner un <em>commit</em> qui peut �
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="Avancement du pointeur de `master` sur `hotfix`">
+<img src="{{< relurl "book/fr/v2/images/basic-branching-5.png" >}}" alt="Avancement du pointeur de `master` sur `hotfix`">
 </div>
 <div class="title">Figure 22. Avancement du pointeur de <code>master</code> sur <code>hotfix</code>
 </div>
@@ -207,7 +207,7 @@ $ git commit -a -m 'Nouveau pied de page terminé [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="Le travail continue sur `iss53`">
+<img src="{{< relurl "book/fr/v2/images/basic-branching-6.png" >}}" alt="Le travail continue sur `iss53`">
 </div>
 <div class="title">Figure 23. Le travail continue sur <code>iss53</code>
 </div>
@@ -242,7 +242,7 @@ Dans ce cas, Git réalise une simple fusion à trois sources (<em>three-way merg
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Trois instantanés utilisés dans une fusion classique">
+<img src="{{< relurl "book/fr/v2/images/basic-merging-1.png" >}}" alt="Trois instantanés utilisés dans une fusion classique">
 </div>
 <div class="title">Figure 24. Trois instantanés utilisés dans une fusion classique</div>
 </div>
@@ -252,7 +252,7 @@ On appelle ceci un <em>commit</em> de fusion (<em>merge commit</em>) qui est sp�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Un _commit_ de fusion">
+<img src="{{< relurl "book/fr/v2/images/basic-merging-2.png" >}}" alt="Un _commit_ de fusion">
 </div>
 <div class="title">Figure 25. Un <em>commit</em> de fusion</div>
 </div>
@@ -367,7 +367,7 @@ Entrez simplement le nom de l’outil que vous préféreriez utiliser.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Si vous avez besoin d’outils plus avancés pour résoudre des conflits complexes, vous trouverez davantage d’informations au chapitre <a href="ch00/s_advanced_merging">Fusion avancée</a>.</p>
+<p>Si vous avez besoin d’outils plus avancés pour résoudre des conflits complexes, vous trouverez davantage d’informations au chapitre <a href="{{< relurl "book/fr/v2/ch00/s_advanced_merging" >}}">Fusion avancée</a>.</p>
 </div>
 </td>
 </tr>

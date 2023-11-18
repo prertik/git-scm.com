@@ -64,7 +64,7 @@ Par exemple, pour cloner un dépôt local, vous pouvez lancer ceci :</p>
 <p>Git opère légèrement différemment si vous spécifiez explicitement le protocole <code>file://</code> au début de l’URL.
 Si vous spécifiez simplement le chemin et si la destination se trouve sur le même système de fichiers, Git tente d’utiliser des liens physiques pour les fichiers communs.
 Si vous spécifiez le protocole <code>file://</code>, Git lance un processus d’accès à travers le réseau, ce qui est généralement moins efficace.
-La raison d’utiliser spécifiquement le préfixe <code>file://</code> est la volonté d’obtenir une copie propre du dépôt, sans aucune référence ou aucun objet supplémentaire qui pourraient résulter d’un import depuis un autre système de gestion de version ou d’une action similaire (voir chapitre <a href="ch00/ch10-git-internals">Les tripes de Git</a> pour les tâches de maintenance).
+La raison d’utiliser spécifiquement le préfixe <code>file://</code> est la volonté d’obtenir une copie propre du dépôt, sans aucune référence ou aucun objet supplémentaire qui pourraient résulter d’un import depuis un autre système de gestion de version ou d’une action similaire (voir chapitre <a href="{{< relurl "book/fr/v2/ch00/ch10-git-internals" >}}">Les tripes de Git</a> pour les tâches de maintenance).
 Nous utiliserons les chemins normaux par la suite car c’est la méthode la plus efficace.</p>
 </div>
 <div class="paragraph">
@@ -84,7 +84,7 @@ Nous utiliserons les chemins normaux par la suite car c’est la méthode la plu
 <p>Les avantages des dépôts accessibles sur le système de fichiers sont qu’ils sont simples et qu’ils utilisent les permissions du système de fichiers.
 Si vous avez déjà un montage partagé auquel toute votre équipe a accès, déployer un dépôt est extrêmement facile.
 Vous placez la copie du dépôt nu à un endroit accessible de tous et positionnez correctement les droits de lecture/écriture de la même manière que pour tout autre partage.
-Nous aborderons la méthode pour exporter une copie de dépôt nu à cette fin dans la section suivante <a href="ch00/s_git_on_the_server">Installation de Git sur un serveur</a>.</p>
+Nous aborderons la méthode pour exporter une copie de dépôt nu à cette fin dans la section suivante <a href="{{< relurl "book/fr/v2/ch00/s_git_on_the_server" >}}">Installation de Git sur un serveur</a>.</p>
 </div>
 <div class="paragraph">
 <p>C’est un choix satisfaisant pour partager rapidement le travail.
@@ -141,7 +141,7 @@ De même pour les accès en lecture.</p>
 Si le serveur ne répond pas avec un service Git HTTP intelligent, le client Git essayera de se rabattre sur le protocole HTTP « idiot ».
 Le protocole idiot consiste à servir le dépôt Git nu comme des fichiers normaux sur un serveur web.
 La beauté du protocole idiot réside dans sa simplicité de mise en place.
-Tout ce que vous avez à faire, c’est de copier les fichiers de votre dépôt nu sous la racine de documents HTTP et de positionner un crochet (<strong>hook</strong>) <code>post-update</code> spécifique, et c’est tout (voir <a href="ch00/s_git_hooks">Crochets Git</a>).
+Tout ce que vous avez à faire, c’est de copier les fichiers de votre dépôt nu sous la racine de documents HTTP et de positionner un crochet (<strong>hook</strong>) <code>post-update</code> spécifique, et c’est tout (voir <a href="{{< relurl "book/fr/v2/ch00/s_git_hooks" >}}">Crochets Git</a>).
 Dès ce moment, tous ceux qui peuvent accéder au serveur web sur lequel vous avez déposé votre dépôt peuvent le cloner.
 Pour permettre un accès en lecture seule à votre dépôt via HTTP, faites quelque chose comme :</p>
 </div>
@@ -167,7 +167,7 @@ Ensuite, les autres personnes peuvent cloner via quelque chose comme :</p>
 </div>
 <div class="paragraph">
 <p>Dans ce cas particulier, nous utilisons le chemin <code>/var/www/htdocs</code> qui est le plus commun pour une configuration Apache, mais vous pouvez utiliser n’importe quel serveur web statique – placez juste les dépôts nus dans son chemin.
-Les données Git sont servies comme de simples fichiers statiques (voir <a href="ch00/ch10-git-internals">Les tripes de Git</a> pour la manière exacte dont elles sont servies).</p>
+Les données Git sont servies comme de simples fichiers statiques (voir <a href="{{< relurl "book/fr/v2/ch00/ch10-git-internals" >}}">Les tripes de Git</a> pour la manière exacte dont elles sont servies).</p>
 </div>
 <div class="paragraph">
 <p>Généralement, vous choisirez soit de lancer un serveur HTTP intelligent avec des droits en lecture/écriture ou de fournir simplement les fichiers en lecture seule par le protocole idiot.
@@ -202,7 +202,7 @@ Mis à part cela, les autres protocoles ont peu d’avantages sur le protocole H
 <div class="paragraph">
 <p>Si vous utilisez HTTP pour pousser de manière authentifiée, fournir vos information d’authentification est parfois plus compliqué qu’utiliser des clés sur SSH.
 Il existe cependant des outils de mise en cache d’informations d’authentification, comme Keychain sur OSX et Credential Manager sur Windows pour rendre cela indolore.
-Reportez-vous à <a href="ch00/s_credential_caching">Stockage des identifiants</a> pour voir comment configurer la mise en cache des mots de passe HTTP sur votre système.</p>
+Reportez-vous à <a href="{{< relurl "book/fr/v2/ch00/s_credential_caching" >}}">Stockage des identifiants</a> pour voir comment configurer la mise en cache des mots de passe HTTP sur votre système.</p>
 </div>
 </div>
 </div>

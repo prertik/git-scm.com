@@ -99,7 +99,7 @@ origin    git@github.com:mojombo/grit.git (push)</code></pre>
 Nous pouvons de plus avoir les permissions en poussée sur certain d’entre eux, bien qu’on ne puisse pas le dire ici.</p>
 </div>
 <div class="paragraph">
-<p>Notez que ces dépôts distants sont accessibles au moyen de différents protocoles ; nous traiterons des protocoles au chapitre <a href="ch00/s_git_on_the_server">Installation de Git sur un serveur</a>.</p>
+<p>Notez que ces dépôts distants sont accessibles au moyen de différents protocoles ; nous traiterons des protocoles au chapitre <a href="{{< relurl "book/fr/v2/ch00/s_git_on_the_server" >}}">Installation de Git sur un serveur</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -138,7 +138,7 @@ Depuis https://github.com/paulboone/ticgit
 </div>
 <div class="paragraph">
 <p>La branche <code>master</code> de Paul est accessible localement en tant que <code>pb/master</code> — vous pouvez la fusionner dans une de vos propres branches, ou vous pouvez extraire une branche localement si vous souhaitez l’inspecter.
-Nous traiterons plus en détail de la nature des branches et de leur utilisation au chapitre <a href="ch00/ch03-git-branching">Les branches avec Git</a>.</p>
+Nous traiterons plus en détail de la nature des branches et de leur utilisation au chapitre <a href="{{< relurl "book/fr/v2/ch00/ch03-git-branching" >}}">Les branches avec Git</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -163,7 +163,7 @@ Vous devez volontairement fusionner ses modifications distantes dans votre trava
 </div>
 <div class="paragraph">
 <p>Si vous avez créé une branche pour suivre l’évolution d’une branche distante (cf.
-la section suivante et le chapitre <a href="ch00/ch03-git-branching">Les branches avec Git</a> pour plus d’information), vous pouvez utiliser la commande <code>git pull</code> qui récupère et fusionne automatiquement une branche distante dans votre branche locale.
+la section suivante et le chapitre <a href="{{< relurl "book/fr/v2/ch00/ch03-git-branching" >}}">Les branches avec Git</a> pour plus d’information), vous pouvez utiliser la commande <code>git pull</code> qui récupère et fusionne automatiquement une branche distante dans votre branche locale.
 Ce comportement peut correspondre à une méthode de travail plus confortable, sachant que par défaut la commande <code>git clone</code> paramètre votre branche locale pour qu’elle suive la branche <code>master</code> du dépôt que vous avez cloné (en supposant que le dépôt distant ait une branche <code>master</code>).
 Lancer <code>git pull</code> récupère généralement les données depuis le serveur qui a été initialement cloné et essaie de les fusionner dans votre branche de travail actuel.</p>
 </div>
@@ -207,7 +207,7 @@ Si vous souhaitez pousser votre branche <code>master</code> vers le serveur <cod
 <p>Cette commande ne fonctionne que si vous avez cloné depuis un serveur sur lequel vous avez des droits d’accès en écriture et si personne n’a poussé dans l’intervalle.
 Si vous et quelqu’un d’autre clonez un dépôt au même moment et que cette autre personne pousse ses modifications et qu’après vous tentez de pousser les vôtres, votre poussée sera rejetée à juste titre.
 Vous devrez tout d’abord tirer les modifications de l’autre personne et les fusionner avec les vôtres avant de pouvoir pousser.
-Référez-vous au chapitre <a href="ch00/ch03-git-branching">Les branches avec Git</a> pour de plus amples informations sur les techniques pour pousser vers un serveur distant.</p>
+Référez-vous au chapitre <a href="{{< relurl "book/fr/v2/ch00/ch03-git-branching" >}}">Les branches avec Git</a> pour de plus amples informations sur les techniques pour pousser vers un serveur distant.</p>
 </div>
 </div>
 <div class="sect3">

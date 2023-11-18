@@ -30,7 +30,7 @@ Bien comprendre et maîtriser cette fonctionnalité vous permettra de faire de G
 <p>Pour réellement comprendre la manière dont Git gère les branches, nous devons revenir en arrière et examiner de plus près comment Git stocke ses données.</p>
 </div>
 <div class="paragraph">
-<p>Si vous vous souvenez bien du chapitre <a href="ch00/ch01-getting-started">Démarrage rapide</a>, Git ne stocke pas ses données comme une série de modifications ou de différences successives mais plutôt comme une série d’instantanés (appelés <em>snapshots</em>).</p>
+<p>Si vous vous souvenez bien du chapitre <a href="{{< relurl "book/fr/v2/ch00/ch01-getting-started" >}}">Démarrage rapide</a>, Git ne stocke pas ses données comme une série de modifications ou de différences successives mais plutôt comme une série d’instantanés (appelés <em>snapshots</em>).</p>
 </div>
 <div class="paragraph">
 <p>Lorsque vous faites un commit, Git stocke un objet <em>commit</em> qui contient un pointeur vers l’instantané (<em>snapshot</em>) du contenu que vous avez indexé.
@@ -38,7 +38,7 @@ Cet objet contient également les noms et prénoms de l’auteur, le message que
 </div>
 <div class="paragraph">
 <p>Pour visualiser ce concept, supposons que vous avez un répertoire contenant trois fichiers que vous indexez puis validez.
-L’indexation des fichiers calcule une empreinte (<em>checksum</em>) pour chacun (via la fonction de hachage SHA-1 mentionnée au chapitre <a href="ch00/ch01-getting-started">Démarrage rapide</a>), stocke cette version du fichier dans le dépôt Git (Git les nomme <em>blobs</em>) et ajoute cette empreinte à la zone d’index (<em>staging area</em>) :</p>
+L’indexation des fichiers calcule une empreinte (<em>checksum</em>) pour chacun (via la fonction de hachage SHA-1 mentionnée au chapitre <a href="{{< relurl "book/fr/v2/ch00/ch01-getting-started" >}}">Démarrage rapide</a>), stocke cette version du fichier dans le dépôt Git (Git les nomme <em>blobs</em>) et ajoute cette empreinte à la zone d’index (<em>staging area</em>) :</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -56,7 +56,7 @@ un <em>blob</em> pour le contenu de chacun de vos trois fichiers, un arbre (<em>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Un commit et son arbre">
+<img src="{{< relurl "book/fr/v2/images/commit-and-tree.png" >}}" alt="Un commit et son arbre">
 </div>
 <div class="title">Figure 9. Un commit et son arbre</div>
 </div>
@@ -65,7 +65,7 @@ un <em>blob</em> pour le contenu de chacun de vos trois fichiers, un arbre (<em>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Commits et leurs parents">
+<img src="{{< relurl "book/fr/v2/images/commits-and-parents.png" >}}" alt="Commits et leurs parents">
 </div>
 <div class="title">Figure 10. Commits et leurs parents</div>
 </div>
@@ -93,7 +93,7 @@ La seule raison pour laquelle chaque dépôt en a une est que la commande <code>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="Une branche et l’historique de ses _commits_">
+<img src="{{< relurl "book/fr/v2/images/branch-and-history.png" >}}" alt="Une branche et l’historique de ses _commits_">
 </div>
 <div class="title">Figure 11. Une branche et l’historique de ses <em>commits</em>
 </div>
@@ -117,7 +117,7 @@ Vous utilisez pour cela la commande <code>git branch</code> : </p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Deux branches pointant vers la même série de _commits_">
+<img src="{{< relurl "book/fr/v2/images/two-branches.png" >}}" alt="Deux branches pointant vers la même série de _commits_">
 </div>
 <div class="title">Figure 12. Deux branches pointant vers la même série de <em>commits</em>
 </div>
@@ -132,7 +132,7 @@ En effet, la commande <code>git branch</code> n’a fait que créer une nouvelle
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD pointant vers une branche">
+<img src="{{< relurl "book/fr/v2/images/head-to-master.png" >}}" alt="HEAD pointant vers une branche">
 </div>
 <div class="title">Figure 13. HEAD pointant vers une branche</div>
 </div>
@@ -169,7 +169,7 @@ Basculons sur la nouvelle branche <code>testing</code> :</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD pointe vers la branche courante">
+<img src="{{< relurl "book/fr/v2/images/head-to-testing.png" >}}" alt="HEAD pointe vers la branche courante">
 </div>
 <div class="title">Figure 14. HEAD pointe vers la branche courante</div>
 </div>
@@ -185,7 +185,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="La branche HEAD avance à chaque _commit_">
+<img src="{{< relurl "book/fr/v2/images/advance-testing.png" >}}" alt="La branche HEAD avance à chaque _commit_">
 </div>
 <div class="title">Figure 15. La branche HEAD avance à chaque <em>commit</em>
 </div>
@@ -225,7 +225,7 @@ Pour afficher toutes les branches, ajoutez l’option <code>--all</code> à la c
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD est déplacé lors d’un _checkout_">
+<img src="{{< relurl "book/fr/v2/images/checkout-master.png" >}}" alt="HEAD est déplacé lors d’un _checkout_">
 </div>
 <div class="title">Figure 16. HEAD est déplacé lors d’un <em>checkout</em>
 </div>
@@ -263,14 +263,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Maintenant, l’historique du projet a divergé (voir <a href="ch00/divergent_history">Divergence d’historique</a>).
+<p>Maintenant, l’historique du projet a divergé (voir <a href="{{< relurl "book/fr/v2/ch00/divergent_history" >}}">Divergence d’historique</a>).
 Vous avez créé une branche et basculé dessus, y avez réalisé des modifications, puis vous avez rebasculé sur la branche principale et réalisé d’autres modifications.
 Ces deux modifications sont isolées dans des branches séparées : vous pouvez basculer d’une branche à l’autre et les fusionner quand vous êtes prêt.
 Et vous avez fait tout ceci avec de simples commandes : <code>branch</code>, <code>checkout</code> et <code>commit</code>.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Divergence d’historique">
+<img src="{{< relurl "book/fr/v2/images/advance-master.png" >}}" alt="Divergence d’historique">
 </div>
 <div class="title">Figure 17. Divergence d’historique</div>
 </div>

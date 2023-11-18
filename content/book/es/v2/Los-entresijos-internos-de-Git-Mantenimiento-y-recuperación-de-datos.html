@@ -124,7 +124,7 @@ El problema es cómo localizarla, --porque, ¿no te la sabrás de memoria, no?--
 <p>El método más rápido para conseguirlo suele ser utilizar una herramienta denominada <code>git reflog</code>.
 Según trabajas, Git suele guardar un silencioso registro de donde está HEAD en cada momento.
 Cada vez que confirmas cambios o cambias de rama, el registro (reflog) es actualizado.
-El registro reflog se actualiza incluso cuando utilizas el comando <code>git update-ref</code>, siendo ésta otra de las razones por las que es recomendable utilizar ese comando en lugar de escribir manualmente los valores SHA-1 en los archivos de referencia, tal y como hemos visto en <a href="ch00/r_git_refs">Referencias Git</a>.
+El registro reflog se actualiza incluso cuando utilizas el comando <code>git update-ref</code>, siendo ésta otra de las razones por las que es recomendable utilizar ese comando en lugar de escribir manualmente los valores SHA-1 en los archivos de referencia, tal y como hemos visto en <a href="{{< relurl "book/es/v2/ch00/r_git_refs" >}}">Referencias Git</a>.
 Con el comando <code>git reflog</code> puedes revisar donde has estado en cualquier momento pasado:</p>
 </div>
 <div class="listingblock">
@@ -309,7 +309,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>El archivo enorme es el último: 5MB.
-Para concretar cual es el archivo, puedes utilizar el comando <code>rev-list</code> que ya vimos brevemente en <a href="ch00/r_enforcing_commit_message_format">Obligando a utilizar un formato específico en el mensaje de commit</a>.
+Para concretar cual es el archivo, puedes utilizar el comando <code>rev-list</code> que ya vimos brevemente en <a href="{{< relurl "book/es/v2/ch00/r_enforcing_commit_message_format" >}}">Obligando a utilizar un formato específico en el mensaje de commit</a>.
 Con la opción <code>--objects</code>, obtendrás la lista de todas las SHA-1s de todas las confirmaciones de cambio, junto a las SHA-1s de los objetos binarios y las ubicaciones (paths) de cada uno de ellos.
 Puedes usar esta información para localizar el nombre del objeto binario:</p>
 </div>
@@ -332,7 +332,7 @@ dadf725 oops - removed large tarball
 </div>
 <div class="paragraph">
 <p>Para borrar realmente ese archivo de tu historial Git, has de reescribir todas las confirmaciones de cambio desde <code>7b30847</code>.
-Y, para ello, puedes emplear el comando <code>filter-branch</code> que se vió en <a href="ch00/r_rewriting_history">Reescribiendo la Historia</a>:</p>
+Y, para ello, puedes emplear el comando <code>filter-branch</code> que se vió en <a href="{{< relurl "book/es/v2/ch00/r_rewriting_history" >}}">Reescribiendo la Historia</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -344,7 +344,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>La opción <code>--index-filter</code> es similar a la <code>--tree-filter</code> vista en <a href="ch00/r_rewriting_history">Reescribiendo la Historia</a>, pero, en lugar de modificar archivos activados (checked out) en el disco, se modifica el área de preparación (staging area) o índice.
+<p>La opción <code>--index-filter</code> es similar a la <code>--tree-filter</code> vista en <a href="{{< relurl "book/es/v2/ch00/r_rewriting_history" >}}">Reescribiendo la Historia</a>, pero, en lugar de modificar archivos activados (checked out) en el disco, se modifica el área de preparación (staging area) o índice.
 En lugar de borrar un archivo concreto con una orden tal como <code>rm archivo</code>, has de borrarlo con <code>git rm --cached</code> (es decir, tienes que borrarlo del índice, en lugar de del disco).
 Con eso conseguimos aumentar la velocidad, ya que el proceso es mucho más rápido, porque Git no ha de activar cada revisión a disco antes de procesar tu filtro.
 Aunque también puedes hacer lo mismo con la opción`--tree-filter`, si así lo prefieres.

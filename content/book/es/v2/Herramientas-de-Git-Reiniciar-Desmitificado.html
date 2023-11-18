@@ -142,7 +142,7 @@ Piensa en el Directorio de Trabajo como una <strong>caja de arena</strong>, dond
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-workflow.png" >}}" alt="reset workflow">
+<img src="{{< relurl "book/es/v2/images/reset-workflow.png" >}}" alt="reset workflow">
 </div>
 </div>
 <div class="paragraph">
@@ -152,7 +152,7 @@ Ahora ejecutamos <code>git init</code>, que creará un repositorio Git con una r
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex1.png" >}}" alt="reset ex1">
+<img src="{{< relurl "book/es/v2/images/reset-ex1.png" >}}" alt="reset ex1">
 </div>
 </div>
 <div class="paragraph">
@@ -163,7 +163,7 @@ Ahora ejecutamos <code>git init</code>, que creará un repositorio Git con una r
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex2.png" >}}" alt="reset ex2">
+<img src="{{< relurl "book/es/v2/images/reset-ex2.png" >}}" alt="reset ex2">
 </div>
 </div>
 <div class="paragraph">
@@ -171,7 +171,7 @@ Ahora ejecutamos <code>git init</code>, que creará un repositorio Git con una r
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex3.png" >}}" alt="reset ex3">
+<img src="{{< relurl "book/es/v2/images/reset-ex3.png" >}}" alt="reset ex3">
 </div>
 </div>
 <div class="paragraph">
@@ -184,7 +184,7 @@ Llamemos a esto <strong>v2</strong> del archivo, y lo indicamos en rojo.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex4.png" >}}" alt="reset ex4">
+<img src="{{< relurl "book/es/v2/images/reset-ex4.png" >}}" alt="reset ex4">
 </div>
 </div>
 <div class="paragraph">
@@ -193,7 +193,7 @@ A continuación, ejecutamos <code>git add</code> para ubicarlo en nuestro índic
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex5.png" >}}" alt="reset ex5">
+<img src="{{< relurl "book/es/v2/images/reset-ex5.png" >}}" alt="reset ex5">
 </div>
 </div>
 <div class="paragraph">
@@ -203,7 +203,7 @@ Finalmente, ejecutamos <code>git commit</code> para finalizar el “commit”.</
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-ex6.png" >}}" alt="reset ex6">
+<img src="{{< relurl "book/es/v2/images/reset-ex6.png" >}}" alt="reset ex6">
 </div>
 </div>
 <div class="paragraph">
@@ -224,7 +224,7 @@ Cuando verifica una rama, eso cambia <strong>HEAD</strong> para que apunte a la 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-start.png" >}}" alt="reset start">
+<img src="{{< relurl "book/es/v2/images/reset-start.png" >}}" alt="reset start">
 </div>
 </div>
 <div class="paragraph">
@@ -240,7 +240,7 @@ Esto significa que si HEAD está configurado en la rama <code>master</code> (es 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-soft.png" >}}" alt="reset soft">
+<img src="{{< relurl "book/es/v2/images/reset-soft.png" >}}" alt="reset soft">
 </div>
 </div>
 <div class="paragraph">
@@ -251,7 +251,7 @@ Con <code>reset --soft</code>, simplemente se detendrá allí.</p>
 <p>Ahora tómate un segundo para mirar ese diagrama y darte cuenta de lo que sucedió: esencialmente deshizo el último comando <code>git commit</code>.
 Cuando ejecutas <code>git commit</code>, Git crea una nueva confirmación y mueve la rama a la que apunta <strong>HEAD</strong>.
 Cuando haces <code>reset</code> de vuelta a <code>HEAD~</code> (el padre de <strong>HEAD</strong>), está volviendo a colocar la rama donde estaba, sin cambiar el <strong>Índice</strong> o el Directorio de Trabajo.
-Ahora puedes actualizar el <strong>Índice</strong> y ejecutar <code>git commit</code> nuevamente para lograr lo que <code>git commit --amend</code> hubiera hecho (ver <a href="ch00/r_git_amend">Cambiando la última confirmación</a>).</p>
+Ahora puedes actualizar el <strong>Índice</strong> y ejecutar <code>git commit</code> nuevamente para lograr lo que <code>git commit --amend</code> hubiera hecho (ver <a href="{{< relurl "book/es/v2/ch00/r_git_amend" >}}">Cambiando la última confirmación</a>).</p>
 </div>
 </div>
 <div class="sect4">
@@ -264,7 +264,7 @@ Ahora puedes actualizar el <strong>Índice</strong> y ejecutar <code>git commit<
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-mixed.png" >}}" alt="reset mixed">
+<img src="{{< relurl "book/es/v2/images/reset-mixed.png" >}}" alt="reset mixed">
 </div>
 </div>
 <div class="paragraph">
@@ -284,7 +284,7 @@ Si usas la opción <code>--hard</code>, continuará en esta etapa.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-hard.png" >}}" alt="reset hard">
+<img src="{{< relurl "book/es/v2/images/reset-hard.png" >}}" alt="reset hard">
 </div>
 </div>
 <div class="paragraph">
@@ -344,7 +344,7 @@ Este formulario (ya que no especificó un commit SHA-1 o una rama, y no especifi
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path1.png" >}}" alt="reset path1">
+<img src="{{< relurl "book/es/v2/images/reset-path1.png" >}}" alt="reset path1">
 </div>
 </div>
 <div class="paragraph">
@@ -353,12 +353,12 @@ Si miramos el diagrama para ese comando y pensamos en lo que hace <code>git add<
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path2.png" >}}" alt="reset path2">
+<img src="{{< relurl "book/es/v2/images/reset-path2.png" >}}" alt="reset path2">
 </div>
 </div>
 <div class="paragraph">
 <p>Esta es la razón por la cual el resultado del comando <code>git status</code> sugiere que ejecute esto para descentralizar un archivo.
-(Consulte <a href="ch00/r_unstaging">Deshacer un Archivo Preparado</a> para más sobre esto).</p>
+(Consulte <a href="{{< relurl "book/es/v2/ch00/r_unstaging" >}}">Deshacer un Archivo Preparado</a> para más sobre esto).</p>
 </div>
 <div class="paragraph">
 <p>Igualmente podríamos no permitir que Git suponga que queríamos “extraer los datos de HEAD” especificando un “commit” específico para extraer esa versión del archivo.
@@ -366,7 +366,7 @@ Simplemente ejecutaríamos algo como <code>git reset eb43bf file.txt</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-path3.png" >}}" alt="reset path3">
+<img src="{{< relurl "book/es/v2/images/reset-path3.png" >}}" alt="reset path3">
 </div>
 </div>
 <div class="paragraph">
@@ -386,7 +386,7 @@ Por lo tanto, puede hacer <em>unstage</em> o revertir el contenido de forma sele
 <div class="paragraph">
 <p>Supongamos que tienes una serie de confirmaciones con mensajes como “oops.”, “WIP” y “se olvidó de este archivo”.
 Puedes usar <code>reset</code> para aplastarlos rápida y fácilmente en una sola confirmación que lo hace ver realmente inteligente.
-(<a href="ch00/_aplastando">Aplastando</a> muestra otra forma de hacerlo, pero en este ejemplo es más simple usar <code>reset</code>.)</p>
+(<a href="{{< relurl "book/es/v2/ch00/_aplastando" >}}">Aplastando</a> muestra otra forma de hacerlo, pero en este ejemplo es más simple usar <code>reset</code>.)</p>
 </div>
 <div class="paragraph">
 <p>Supongamos que tiene un proyecto en el que el primer “commit” tiene un archivo, el segundo “commit” agregó un nuevo archivo y cambió el primero, y el tercer “commit” cambió el primer archivo otra vez.
@@ -394,7 +394,7 @@ El segundo “commit” fue un trabajo en progreso y quieres aplastarlo.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r1.png" >}}" alt="reset squash r1">
+<img src="{{< relurl "book/es/v2/images/reset-squash-r1.png" >}}" alt="reset squash r1">
 </div>
 </div>
 <div class="paragraph">
@@ -402,7 +402,7 @@ El segundo “commit” fue un trabajo en progreso y quieres aplastarlo.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r2.png" >}}" alt="reset squash r2">
+<img src="{{< relurl "book/es/v2/images/reset-squash-r2.png" >}}" alt="reset squash r2">
 </div>
 </div>
 <div class="paragraph">
@@ -410,7 +410,7 @@ El segundo “commit” fue un trabajo en progreso y quieres aplastarlo.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-squash-r3.png" >}}" alt="reset squash r3">
+<img src="{{< relurl "book/es/v2/images/reset-squash-r3.png" >}}" alt="reset squash r3">
 </div>
 </div>
 <div class="paragraph">
@@ -449,7 +449,7 @@ Si en cambio ejecutamos <code>git checkout master</code>, <code>develop</code> n
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reset-checkout.png" >}}" alt="reset checkout">
+<img src="{{< relurl "book/es/v2/images/reset-checkout.png" >}}" alt="reset checkout">
 </div>
 </div>
 </div>

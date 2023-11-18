@@ -28,7 +28,7 @@ title: Git - Fundamentos de Git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/deltas.png" >}}" alt="Storing data as changes to a base version of each file.">
+<img src="{{< relurl "book/es/v2/images/deltas.png" >}}" alt="Storing data as changes to a base version of each file.">
 </div>
 <div class="title">Figura 4. Almacenamiento de datos como cambios en una versión de la base de cada archivo.</div>
 </div>
@@ -37,12 +37,12 @@ title: Git - Fundamentos de Git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/snapshots.png" >}}" alt="Git stores data as snapshots of the project over time.">
+<img src="{{< relurl "book/es/v2/images/snapshots.png" >}}" alt="Git stores data as snapshots of the project over time.">
 </div>
 <div class="title">Figura 5. Almacenamiento de datos como instantáneas del proyecto a través del tiempo.</div>
 </div>
 <div class="paragraph">
-<p>Esta es una diferencia importante entre Git y prácticamente todos los demás VCS.  Hace que Git reconsidere casi todos los aspectos del control de versiones que muchos de los demás sistemas copiaron de la generación anterior.  Esto hace que Git se parezca más a un sistema de archivos miniatura con algunas herramientas tremendamente poderosas desarrolladas sobre él, que a un VCS.  Exploraremos algunos de los beneficios que obtienes al modelar tus datos de esta manera cuando veamos ramificación (branching) en Git en el (véase <a href="ch00/ch03-git-branching">[ch03-git-branching]</a>).</p>
+<p>Esta es una diferencia importante entre Git y prácticamente todos los demás VCS.  Hace que Git reconsidere casi todos los aspectos del control de versiones que muchos de los demás sistemas copiaron de la generación anterior.  Esto hace que Git se parezca más a un sistema de archivos miniatura con algunas herramientas tremendamente poderosas desarrolladas sobre él, que a un VCS.  Exploraremos algunos de los beneficios que obtienes al modelar tus datos de esta manera cuando veamos ramificación (branching) en Git en el (véase <a href="{{< relurl "book/es/v2/ch00/ch03-git-branching" >}}">[ch03-git-branching]</a>).</p>
 </div>
 </div>
 <div class="sect3">
@@ -80,7 +80,7 @@ title: Git - Fundamentos de Git
 <p>Cuando realizas acciones en Git, casi todas ellas sólo añaden información a la base de datos de Git.  Es muy difícil conseguir que el sistema haga algo que no se pueda enmendar, o que de algún modo borre información.  Como en cualquier VCS, puedes perder o estropear cambios que no has confirmado todavía.  Pero después de confirmar una copia instantánea en Git es muy difícil perderla, especialmente si envías tu base de datos a otro repositorio con regularidad.</p>
 </div>
 <div class="paragraph">
-<p>Esto hace que usar Git sea un placer, porque sabemos que podemos experimentar sin peligro de estropear gravemente las cosas.  Para un análisis más exhaustivo de cómo almacena Git su información y cómo puedes recuperar datos aparentemente perdidos, ver <a href="ch00/r_undoing">Deshacer Cosas</a>.</p>
+<p>Esto hace que usar Git sea un placer, porque sabemos que podemos experimentar sin peligro de estropear gravemente las cosas.  Para un análisis más exhaustivo de cómo almacena Git su información y cómo puedes recuperar datos aparentemente perdidos, ver <a href="{{< relurl "book/es/v2/ch00/r_undoing" >}}">Deshacer Cosas</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -93,7 +93,7 @@ title: Git - Fundamentos de Git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/areas.png" >}}" alt="Working directory, staging area, and Git directory.">
+<img src="{{< relurl "book/es/v2/images/areas.png" >}}" alt="Working directory, staging area, and Git directory.">
 </div>
 <div class="title">Figura 6. Directorio de trabajo, área de almacenamiento y el directorio Git.</div>
 </div>
@@ -123,7 +123,7 @@ title: Git - Fundamentos de Git
 </ol>
 </div>
 <div class="paragraph">
-<p>Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (committed).  Si ha sufrido cambios desde que se obtuvo del repositorio, pero ha sido añadida al área de preparación, está preparada (staged).  Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado, está modificada (modified).  En <a href="ch00/ch02-git-basics">[ch02-git-basics]</a> aprenderás más acerca de estos estados y de cómo puedes aprovecharlos o saltarte toda la parte de preparación.</p>
+<p>Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (committed).  Si ha sufrido cambios desde que se obtuvo del repositorio, pero ha sido añadida al área de preparación, está preparada (staged).  Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado, está modificada (modified).  En <a href="{{< relurl "book/es/v2/ch00/ch02-git-basics" >}}">[ch02-git-basics]</a> aprenderás más acerca de estos estados y de cómo puedes aprovecharlos o saltarte toda la parte de preparación.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

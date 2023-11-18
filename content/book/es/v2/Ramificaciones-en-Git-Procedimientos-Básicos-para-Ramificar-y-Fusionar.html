@@ -62,7 +62,7 @@ Imagina que estas trabajando en un proyecto y tienes un par de confirmaciones (c
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Un registro de confirmaciones corto y sencillo.">
+<img src="{{< relurl "book/es/v2/images/basic-branching-1.png" >}}" alt="Un registro de confirmaciones corto y sencillo.">
 </div>
 <div class="title">Figura 18. Un registro de confirmaciones corto y sencillo</div>
 </div>
@@ -87,7 +87,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Crear un apuntador a la rama nueva.">
+<img src="{{< relurl "book/es/v2/images/basic-branching-2.png" >}}" alt="Crear un apuntador a la rama nueva.">
 </div>
 <div class="title">Figura 19. Crear un apuntador a la rama nueva</div>
 </div>
@@ -103,7 +103,7 @@ $ git commit -a -m 'added a new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="La rama `iss53` ha avanzado con tu trabajo.">
+<img src="{{< relurl "book/es/v2/images/basic-branching-3.png" >}}" alt="La rama `iss53` ha avanzado con tu trabajo.">
 </div>
 <div class="title">Figura 20. La rama <code>iss53</code> ha avanzado con tu trabajo</div>
 </div>
@@ -115,7 +115,7 @@ Basta con saltar de nuevo a la rama <code>master</code> y continuar trabajando a
 <div class="paragraph">
 <p>Pero, antes de poder hacer eso, hemos de tomar en cuenta que si tenemos cambios aún no confirmados en el directorio de trabajo o en el área de preparación, Git no nos permitirá saltar a otra rama con la que podríamos tener conflictos.
 Lo mejor es tener siempre un estado de trabajo limpio y despejado antes de saltar entre ramas.
-Y, para ello, tenemos algunos procedimientos (stash y corregir confirmaciones), que vamos a ver más adelante en <a href="ch00/r_git_stashing">Guardado rápido y Limpieza</a>.
+Y, para ello, tenemos algunos procedimientos (stash y corregir confirmaciones), que vamos a ver más adelante en <a href="{{< relurl "book/es/v2/ch00/r_git_stashing" >}}">Guardado rápido y Limpieza</a>.
 Por ahora, como tenemos confirmados todos los cambios, podemos saltar a la rama <code>master</code> sin problemas:</p>
 </div>
 <div class="listingblock">
@@ -145,7 +145,7 @@ $ git commit -a -m 'fixed the broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="Rama `hotfix` basada en la rama `master` original.">
+<img src="{{< relurl "book/es/v2/images/basic-branching-4.png" >}}" alt="Rama `hotfix` basada en la rama `master` original.">
 </div>
 <div class="title">Figura 21. Rama <code>hotfix</code> basada en la rama <code>master</code> original</div>
 </div>
@@ -173,7 +173,7 @@ Dicho de otro modo: cuando intentas fusionar una confirmación con otra confirma
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="Tras la fusión (merge)" width="la rama `master` apunta al mismo sitio que la rama `hotfix`.">
+<img src="{{< relurl "book/es/v2/images/basic-branching-5.png" >}}" alt="Tras la fusión (merge)" width="la rama `master` apunta al mismo sitio que la rama `hotfix`.">
 </div>
 <div class="title">Figura 22. Tras la fusión (merge), la rama <code>master</code> apunta al mismo sitio que la rama <code>hotfix</code>.</div>
 </div>
@@ -203,7 +203,7 @@ $ git commit -a -m 'finished the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="La rama `iss53` puede avanzar independientemente.">
+<img src="{{< relurl "book/es/v2/images/basic-branching-6.png" >}}" alt="La rama `iss53` puede avanzar independientemente.">
 </div>
 <div class="title">Figura 23. La rama <code>iss53</code> puede avanzar independientemente</div>
 </div>
@@ -238,7 +238,7 @@ Git realizará una fusión a tres bandas, utilizando las dos instantáneas apunt
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Git identifica automáticamente el mejor ancestro común para realizar la fusión de las rama.">
+<img src="{{< relurl "book/es/v2/images/basic-merging-1.png" >}}" alt="Git identifica automáticamente el mejor ancestro común para realizar la fusión de las rama.">
 </div>
 <div class="title">Figura 24. Git identifica automáticamente el mejor ancestro común para realizar la fusión de las ramas</div>
 </div>
@@ -248,7 +248,7 @@ Nos referimos a este proceso como "fusión confirmada" y su particularidad es qu
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Git crea automáticamente una nueva confirmación para la fusió.">
+<img src="{{< relurl "book/es/v2/images/basic-merging-2.png" >}}" alt="Git crea automáticamente una nueva confirmación para la fusió.">
 </div>
 <div class="title">Figura 25. Git crea automáticamente una nueva confirmación para la fusión</div>
 </div>
@@ -365,7 +365,7 @@ Hit return to start merge resolution tool (opendiff):</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Si necesitas herramientas más avanzadas para resolver conflictos de fusión más complicados, revisa la sección de fusionado en <a href="ch00/r_advanced_merging">Fusión Avanzada</a>.</p>
+<p>Si necesitas herramientas más avanzadas para resolver conflictos de fusión más complicados, revisa la sección de fusionado en <a href="{{< relurl "book/es/v2/ch00/r_advanced_merging" >}}">Fusión Avanzada</a>.</p>
 </div>
 </td>
 </tr>

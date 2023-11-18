@@ -473,7 +473,7 @@ El siguiente comando hará lo siguiente:</p>
 Si su sistema no es uno de los arriba mencionados, usted debe buscar un importador online - importadores de calidad están disponibles para muchos otros sistemas, incluido el CVS, Clear Case, Visual Source Safe, incluso un directorio de archivos.
 Si ninguna de estas herramientas funciona para usted, tiene una herramienta más obsoleta o necesita un método de importación más personalizado, debería usar ‘git fast-import’..
 Este comando lee instrucciones simples de stdin para escribir datos Git específicos.
-Es mucho más fácil crear objetos Git de esta manera que ejecutar los comandos raw Git o intentar escribir los objetos raw (ver <a href="ch00/ch10-git-internals">[ch10-git-internals]</a> para más información).
+Es mucho más fácil crear objetos Git de esta manera que ejecutar los comandos raw Git o intentar escribir los objetos raw (ver <a href="{{< relurl "book/es/v2/ch00/ch10-git-internals" >}}">[ch10-git-internals]</a> para más información).
 De esta manera, puede escribir un script de importación que lee la documentación necesaria del sistema desde el que está cargando e imprime instrucciones directas a stdout.
 A continuación, puede ejecutar este programa y canalizar su resultado mediante `git fast-import</p>
 </div>
@@ -499,7 +499,7 @@ Todo lo que tienes por hacer es indicarle a `fast-import`qué son las snapshots 
 Su estrategia será para ir a través de snapshots Uno a la vez y crear commits con el contenido de cada directorio, vinculando cada commit al anterior.</p>
 </div>
 <div class="paragraph">
-<p>Como hicimos en <a href="ch00/r_an_example_git_enforced_policy">Un ejemplo de implantación de una determinada política en Git</a>, scribiremos esto en Ruby, porque es con lo que generalmente trabajamos y tiende a ser fácilmente legible.Usted puede escribir este ejemplo con bastante facilidad en cualquier elemento con el que esté familiarizado - sólo tiene que escribir la información apropiada a "stdout"., si se está ejecutando en Windows, esto significa que usted tendrá que tener especial cuidado de no introducir  porte devoluciones al final de sus líneas - Importación rápida de git es muy particular acerca de que sólo quieren saltos de línea (LF) salto de línea  (CRLF) usando windows.</p>
+<p>Como hicimos en <a href="{{< relurl "book/es/v2/ch00/r_an_example_git_enforced_policy" >}}">Un ejemplo de implantación de una determinada política en Git</a>, scribiremos esto en Ruby, porque es con lo que generalmente trabajamos y tiende a ser fácilmente legible.Usted puede escribir este ejemplo con bastante facilidad en cualquier elemento con el que esté familiarizado - sólo tiene que escribir la información apropiada a "stdout"., si se está ejecutando en Windows, esto significa que usted tendrá que tener especial cuidado de no introducir  porte devoluciones al final de sus líneas - Importación rápida de git es muy particular acerca de que sólo quieren saltos de línea (LF) salto de línea  (CRLF) usando windows.</p>
 </div>
 <div class="paragraph">
 <p>Para empezar, cambiará al directorio de destino e identificará cada subdirectorio, cada uno de los cuales es snapshot que desea importar como un commit.

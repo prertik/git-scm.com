@@ -35,7 +35,7 @@ We’ll also cover some of the different, non-standard types of merges you can d
 <div class="sect3">
 <h3 id="_merge_conflicts">Merge Conflicts</h3>
 <div class="paragraph">
-<p>While we covered some basics on resolving merge conflicts in <a href="ch00/_basic_merge_conflicts">Grundläggande sammanslagninskonflikter</a>, for more complex conflicts, Git provides a few tools to help you figure out what’s going on and how to better deal with the conflict.</p>
+<p>While we covered some basics on resolving merge conflicts in <a href="{{< relurl "book/sv/v2/ch00/_basic_merge_conflicts" >}}">Grundläggande sammanslagninskonflikter</a>, for more complex conflicts, Git provides a few tools to help you figure out what’s going on and how to better deal with the conflict.</p>
 </div>
 <div class="paragraph">
 <p>First of all, if at all possible, try to make sure your working directory is clean before doing a merge that may have conflicts.
@@ -468,7 +468,7 @@ This can help you get context on what may have contributed to the conflicts.
 Reviewing a little bit of history to remember why two lines of development were touching the same area of code can be really helpful sometimes.</p>
 </div>
 <div class="paragraph">
-<p>To get a full list of all of the unique commits that were included in either branch involved in this merge, we can use the “triple dot” syntax that we learned in <a href="ch00/_triple_dot">Triple Dot</a>.</p>
+<p>To get a full list of all of the unique commits that were included in either branch involved in this merge, we can use the “triple dot” syntax that we learned in <a href="{{< relurl "book/sv/v2/ch00/_triple_dot" >}}">Triple Dot</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -612,7 +612,7 @@ Let’s say you started work on a topic branch, accidentally merged it into <cod
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="Accidental merge commit.">
+<img src="{{< relurl "book/sv/v2/images/undomerge-start.png" >}}" alt="Accidental merge commit.">
 </div>
 <div class="title">Figur 138. Accidental merge commit</div>
 </div>
@@ -627,13 +627,13 @@ In most cases, if you follow the errant <code>git merge</code> with <code>git re
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="History after `git reset --hard HEAD~`.">
+<img src="{{< relurl "book/sv/v2/images/undomerge-reset.png" >}}" alt="History after `git reset --hard HEAD~`.">
 </div>
 <div class="title">Figur 139. History after <code>git reset --hard HEAD~</code>
 </div>
 </div>
 <div class="paragraph">
-<p>We covered <code>reset</code> back in <a href="ch00/_git_reset">Reset Demystified</a>, so it shouldn’t be too hard to figure out what’s going on here.
+<p>We covered <code>reset</code> back in <a href="{{< relurl "book/sv/v2/ch00/_git_reset" >}}">Reset Demystified</a>, so it shouldn’t be too hard to figure out what’s going on here.
 Here’s a quick refresher: <code>reset --hard</code> usually goes through three steps:</p>
 </div>
 <div class="olist arabic">
@@ -652,7 +652,7 @@ In this case, we want to move <code>master</code> to where it was before the mer
 </div>
 <div class="paragraph">
 <p>The downside of this approach is that it’s rewriting history, which can be problematic with a shared repository.
-Check out <a href="ch00/_rebase_peril">Farorna med grenflyttar</a> for more on what can happen; the short version is that if other people have the commits you’re rewriting, you should probably avoid <code>reset</code>.
+Check out <a href="{{< relurl "book/sv/v2/ch00/_rebase_peril" >}}">Farorna med grenflyttar</a> for more on what can happen; the short version is that if other people have the commits you’re rewriting, you should probably avoid <code>reset</code>.
 This approach also won’t work if any other commits have been created since the merge; moving the refs would effectively lose those changes.</p>
 </div>
 </div>
@@ -678,7 +678,7 @@ In this case, we want to undo all the changes introduced by merging in parent #2
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="History after `git revert -m 1`.">
+<img src="{{< relurl "book/sv/v2/images/undomerge-revert.png" >}}" alt="History after `git revert -m 1`.">
 </div>
 <div class="title">Figur 140. History after <code>git revert -m 1</code>
 </div>
@@ -699,7 +699,7 @@ What’s worse, if you add work to <code>topic</code> and merge again, Git will 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="History with a bad merge.">
+<img src="{{< relurl "book/sv/v2/images/undomerge-revert2.png" >}}" alt="History with a bad merge.">
 </div>
 <div class="title">Figur 141. History with a bad merge</div>
 </div>
@@ -715,7 +715,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="History after re-merging a reverted merge.">
+<img src="{{< relurl "book/sv/v2/images/undomerge-revert3.png" >}}" alt="History after re-merging a reverted merge.">
 </div>
 <div class="title">Figur 142. History after re-merging a reverted merge</div>
 </div>
@@ -863,7 +863,7 @@ It’s not common, because it’s rarely helpful, but it’s fairly easy to have
 <div class="paragraph">
 <p>In this case, we want to pull the Rack project into our <code>master</code> project as a subdirectory.
 We can do that in Git with <code>git read-tree</code>.
-You’ll learn more about <code>read-tree</code> and its friends in <a href="ch00/ch10-git-internals">Git Internals</a>, but for now know that it reads the root tree of one branch into your current staging area and working directory.
+You’ll learn more about <code>read-tree</code> and its friends in <a href="{{< relurl "book/sv/v2/ch00/ch10-git-internals" >}}">Git Internals</a>, but for now know that it reads the root tree of one branch into your current staging area and working directory.
 We just switched back to your <code>master</code> branch, and we pull the <code>rack_branch</code> branch into the <code>rack</code> subdirectory of our <code>master</code> branch of our main project:</p>
 </div>
 <div class="listingblock">
@@ -900,7 +900,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 You can also do the opposite – make changes in the <code>rack</code> subdirectory of your master branch and then merge them into your <code>rack_branch</code> branch later to submit them to the maintainers or push them upstream.</p>
 </div>
 <div class="paragraph">
-<p>This gives us a way to have a workflow somewhat similar to the submodule workflow without using submodules (which we will cover in <a href="ch00/_git_submodules">Submodules</a>).
+<p>This gives us a way to have a workflow somewhat similar to the submodule workflow without using submodules (which we will cover in <a href="{{< relurl "book/sv/v2/ch00/_git_submodules" >}}">Submodules</a>).
 We can keep branches with other related projects in our repository and subtree merge them into our project occasionally.
 It is nice in some ways, for example all the code is committed to a single place.
 However, it has other drawbacks in that it’s a bit more complex and easier to make mistakes in reintegrating changes or accidentally pushing a branch into an unrelated repository.</p>

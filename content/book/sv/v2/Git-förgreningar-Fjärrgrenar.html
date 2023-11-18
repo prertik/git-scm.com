@@ -59,7 +59,7 @@ Om du kör <code>git clone -o booyah</code> istället kommer du ha <code>booyah/
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Server and local repositories after cloning.">
+<img src="{{< relurl "book/sv/v2/images/remote-branches-1.png" >}}" alt="Server and local repositories after cloning.">
 </div>
 <div class="title">Figur 30. Server och lokala förvar efter kloning</div>
 </div>
@@ -69,7 +69,7 @@ Och så länge du inte kommunicerar med din server kommer din <code>origin/maste
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Local and remote work can diverge.">
+<img src="{{< relurl "book/sv/v2/images/remote-branches-2.png" >}}" alt="Local and remote work can diverge.">
 </div>
 <div class="title">Figur 31. Lokalt arbete och fjärrarbete kan divergera</div>
 </div>
@@ -79,19 +79,19 @@ Kommandont kontrollerar vilken server som “origin” är (i detta fallet är d
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` updates your remote references.">
+<img src="{{< relurl "book/sv/v2/images/remote-branches-3.png" >}}" alt="`git fetch` updates your remote references.">
 </div>
 <div class="title">Figur 32. <code>git fetch</code> uppdaterar dina fjärrspårade grenar</div>
 </div>
 <div class="paragraph">
 <p>För att demonstrera att ha flera fjärrservrar och vad fjärrgrenar för dessa fjärrprojekten ser ut som, antag att du har ytterligare en intern Gitserver som bara används för utveckling av ett av era sprintteam.
 Denna server finns på ``git.team1.ourcompany.com`.
-Du kan lägga till en ny fjärreferens till projektet du nu jobbar på genom att köra kommandopt <code>git remote add</code> som vi behandlade i <a href="ch00/ch02-git-basics-chapter">Grunder i Git</a>.
+Du kan lägga till en ny fjärreferens till projektet du nu jobbar på genom att köra kommandopt <code>git remote add</code> som vi behandlade i <a href="{{< relurl "book/sv/v2/ch00/ch02-git-basics-chapter" >}}">Grunder i Git</a>.
 Benämn denna server <code>teamone</code> som kommer vara ditt smeknamn för sökvägen.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Adding another server as a remote.">
+<img src="{{< relurl "book/sv/v2/images/remote-branches-4.png" >}}" alt="Adding another server as a remote.">
 </div>
 <div class="title">Figur 33. Lägga till ytterligare en server som ett fjärrförvar</div>
 </div>
@@ -101,7 +101,7 @@ Eftersom den servern har ett delmängd av datan din <code>origin</code>-server h
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch for `teamone/master`.">
+<img src="{{< relurl "book/sv/v2/images/remote-branches-5.png" >}}" alt="Remote tracking branch for `teamone/master`.">
 </div>
 <div class="title">Figur 34. Fjärrspårad gren för <code>teamone/master</code>
 </div>
@@ -133,7 +133,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Detta är lite av en genväg.
 Git expanderar automatiskt grennamnet <code>serverfix</code> till <code>refs/heades/serferfix:refs/heads/serverfix</code>, som betyder “Ta min lokala gren serverfix och publicera den genom att uppdatera fjärrförvarets serverfix-gren.”
-Vi kommer gå igenom <code>refs/heads/</code>-delen i detalj i <a href="ch00/ch10-git-internals">Git Internals</a>, men i allmänhet kan du strunta i det.
+Vi kommer gå igenom <code>refs/heads/</code>-delen i detalj i <a href="{{< relurl "book/sv/v2/ch00/ch10-git-internals" >}}">Git Internals</a>, men i allmänhet kan du strunta i det.
 Du kan också köra <code>git push origin serverfix:serverfix</code>, som gör samma sak — den säger “Ta min serverfix-gren och gör den till fjärrförvarets serverfix-gren.”
 Du kan använda detta formatet för att publicera en lokal gren till en fjärrgren som heter något annat.
 Om du inte vill att den skall kallas <code>serverfix</code> på servern, kan du istället köra <code>git push origin serverfix:grymgren</code> för att publicera din lokala gren <code>serverfix</code> under namnet <code>grymgren</code> på servern.</p>
@@ -155,7 +155,7 @@ Som standard kommer den begära informationen via terminalen så att servern kan
 Det enklaste är att datorn håller informationen i minnet några minuter, vilket lätt kan konfigureras genom att köra <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>För mer information om de olika möjligheterna att temporärt spara legitimationsinformation, se <a href="ch00/_credential_caching">Credential Storage</a>.</p>
+<p>För mer information om de olika möjligheterna att temporärt spara legitimationsinformation, se <a href="{{< relurl "book/sv/v2/ch00/_credential_caching" >}}">Credential Storage</a>.</p>
 </div>
 </td>
 </tr>

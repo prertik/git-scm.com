@@ -33,16 +33,16 @@ When the <code>git commit</code> command is run, by default it only looks at thi
 We’ll quickly cover some of the unique uses that can be found.</p>
 </div>
 <div class="paragraph">
-<p>We first introduce and explain <code>git add</code> in detail in <a href="ch00/_tracking_files">Spåra nya filer</a>.</p>
+<p>We first introduce and explain <code>git add</code> in detail in <a href="{{< relurl "book/sv/v2/ch00/_tracking_files" >}}">Spåra nya filer</a>.</p>
 </div>
 <div class="paragraph">
-<p>We mention how to use it to resolve merge conflicts in <a href="ch00/_basic_merge_conflicts">Grundläggande sammanslagninskonflikter</a>.</p>
+<p>We mention how to use it to resolve merge conflicts in <a href="{{< relurl "book/sv/v2/ch00/_basic_merge_conflicts" >}}">Grundläggande sammanslagninskonflikter</a>.</p>
 </div>
 <div class="paragraph">
-<p>We go over using it to interactively stage only specific parts of a modified file in <a href="ch00/_interactive_staging">Interactive Staging</a>.</p>
+<p>We go over using it to interactively stage only specific parts of a modified file in <a href="{{< relurl "book/sv/v2/ch00/_interactive_staging" >}}">Interactive Staging</a>.</p>
 </div>
 <div class="paragraph">
-<p>Finally, we emulate it at a low level in <a href="ch00/_tree_objects">Tree Objects</a>, so you can get an idea of what it’s doing behind the scenes.</p>
+<p>Finally, we emulate it at a low level in <a href="{{< relurl "book/sv/v2/ch00/_tree_objects" >}}">Tree Objects</a>, so you can get an idea of what it’s doing behind the scenes.</p>
 </div>
 </div>
 <div class="sect3">
@@ -53,7 +53,7 @@ Which files are modified and unstaged and which are staged but not yet committed
 In its normal form, it also will show you some basic hints on how to move files between these stages.</p>
 </div>
 <div class="paragraph">
-<p>We first cover <code>status</code> in <a href="ch00/_checking_status">Kontrollera status på dina filer</a>, both in its basic and simplified forms.
+<p>We first cover <code>status</code> in <a href="{{< relurl "book/sv/v2/ch00/_checking_status" >}}">Kontrollera status på dina filer</a>, both in its basic and simplified forms.
 While we use it throughout the book, pretty much everything you can do with the <code>git status</code> command is covered there.</p>
 </div>
 </div>
@@ -64,19 +64,19 @@ While we use it throughout the book, pretty much everything you can do with the 
 This could be the difference between your working environment and your staging area (<code>git diff</code> by itself), between your staging area and your last commit (<code>git diff --staged</code>), or between two commits (<code>git diff master branchB</code>).</p>
 </div>
 <div class="paragraph">
-<p>We first look at the basic uses of <code>git diff</code> in <a href="ch00/_git_diff_staged">Visa dina förberedda och oförberedda ändringar</a>, where we show how to see what changes are staged and which are not yet staged.</p>
+<p>We first look at the basic uses of <code>git diff</code> in <a href="{{< relurl "book/sv/v2/ch00/_git_diff_staged" >}}">Visa dina förberedda och oförberedda ändringar</a>, where we show how to see what changes are staged and which are not yet staged.</p>
 </div>
 <div class="paragraph">
-<p>We use it to look for possible whitespace issues before committing with the <code>--check</code> option in <a href="ch00/_commit_guidelines">Commit Guidelines</a>.</p>
+<p>We use it to look for possible whitespace issues before committing with the <code>--check</code> option in <a href="{{< relurl "book/sv/v2/ch00/_commit_guidelines" >}}">Commit Guidelines</a>.</p>
 </div>
 <div class="paragraph">
-<p>We see how to check the differences between branches more effectively with the <code>git diff A...B</code> syntax in <a href="ch00/_what_is_introduced">Determining What Is Introduced</a>.</p>
+<p>We see how to check the differences between branches more effectively with the <code>git diff A...B</code> syntax in <a href="{{< relurl "book/sv/v2/ch00/_what_is_introduced" >}}">Determining What Is Introduced</a>.</p>
 </div>
 <div class="paragraph">
-<p>We use it to filter out whitespace differences with <code>-b</code> and how to compare different stages of conflicted files with <code>--theirs</code>, <code>--ours</code> and <code>--base</code> in <a href="ch00/_advanced_merging">Advanced Merging</a>.</p>
+<p>We use it to filter out whitespace differences with <code>-b</code> and how to compare different stages of conflicted files with <code>--theirs</code>, <code>--ours</code> and <code>--base</code> in <a href="{{< relurl "book/sv/v2/ch00/_advanced_merging" >}}">Advanced Merging</a>.</p>
 </div>
 <div class="paragraph">
-<p>Finally, we use it to effectively compare submodule changes with <code>--submodule</code> in <a href="ch00/_starting_submodules">Starting with Submodules</a>.</p>
+<p>Finally, we use it to effectively compare submodule changes with <code>--submodule</code> in <a href="{{< relurl "book/sv/v2/ch00/_starting_submodules" >}}">Starting with Submodules</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -85,7 +85,7 @@ This could be the difference between your working environment and your staging a
 <p>The <code>git difftool</code> command simply launches an external tool to show you the difference between two trees in case you want to use something other than the built in <code>git diff</code> command.</p>
 </div>
 <div class="paragraph">
-<p>We only briefly mention this in <a href="ch00/_git_diff_staged">Visa dina förberedda och oförberedda ändringar</a>.</p>
+<p>We only briefly mention this in <a href="{{< relurl "book/sv/v2/ch00/_git_diff_staged" >}}">Visa dina förberedda och oförberedda ändringar</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -94,20 +94,20 @@ This could be the difference between your working environment and your staging a
 <p>The <code>git commit</code> command takes all the file contents that have been staged with <code>git add</code> and records a new permanent snapshot in the database and then moves the branch pointer on the current branch up to it.</p>
 </div>
 <div class="paragraph">
-<p>We first cover the basics of committing in <a href="ch00/_committing_changes">Spara dina ändringar</a>.
+<p>We first cover the basics of committing in <a href="{{< relurl "book/sv/v2/ch00/_committing_changes" >}}">Spara dina ändringar</a>.
 There we also demonstrate how to use the <code>-a</code> flag to skip the <code>git add</code> step in daily workflows and how to use the <code>-m</code> flag to pass a commit message in on the command line instead of firing up an editor.</p>
 </div>
 <div class="paragraph">
-<p>In <a href="ch00/_undoing">Ångra saker</a> we cover using the <code>--amend</code> option to redo the most recent commit.</p>
+<p>In <a href="{{< relurl "book/sv/v2/ch00/_undoing" >}}">Ångra saker</a> we cover using the <code>--amend</code> option to redo the most recent commit.</p>
 </div>
 <div class="paragraph">
-<p>In <a href="ch00/_git_branches_overview">Grenar i ett nötskal</a>, we go into much more detail about what <code>git commit</code> does and why it does it like that.</p>
+<p>In <a href="{{< relurl "book/sv/v2/ch00/_git_branches_overview" >}}">Grenar i ett nötskal</a>, we go into much more detail about what <code>git commit</code> does and why it does it like that.</p>
 </div>
 <div class="paragraph">
-<p>We looked at how to sign commits cryptographically with the <code>-S</code> flag in <a href="ch00/_signing_commits">Signing Commits</a>.</p>
+<p>We looked at how to sign commits cryptographically with the <code>-S</code> flag in <a href="{{< relurl "book/sv/v2/ch00/_signing_commits" >}}">Signing Commits</a>.</p>
 </div>
 <div class="paragraph">
-<p>Finally, we take a look at what the <code>git commit</code> command does in the background and how it’s actually implemented in <a href="ch00/_git_commit_objects">Commit Objects</a>.</p>
+<p>Finally, we take a look at what the <code>git commit</code> command does in the background and how it’s actually implemented in <a href="{{< relurl "book/sv/v2/ch00/_git_commit_objects" >}}">Commit Objects</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -118,13 +118,13 @@ It moves around the <code>HEAD</code> pointer and optionally changes the <code>i
 This final option makes it possible for this command to lose your work if used incorrectly, so make sure you understand it before using it.</p>
 </div>
 <div class="paragraph">
-<p>We first effectively cover the simplest use of <code>git reset</code> in <a href="ch00/_unstaging">Ångra en preparerad fil</a>, where we use it to unstage a file we had run <code>git add</code> on.</p>
+<p>We first effectively cover the simplest use of <code>git reset</code> in <a href="{{< relurl "book/sv/v2/ch00/_unstaging" >}}">Ångra en preparerad fil</a>, where we use it to unstage a file we had run <code>git add</code> on.</p>
 </div>
 <div class="paragraph">
-<p>We then cover it in quite some detail in <a href="ch00/_git_reset">Reset Demystified</a>, which is entirely devoted to explaining this command.</p>
+<p>We then cover it in quite some detail in <a href="{{< relurl "book/sv/v2/ch00/_git_reset" >}}">Reset Demystified</a>, which is entirely devoted to explaining this command.</p>
 </div>
 <div class="paragraph">
-<p>We use <code>git reset --hard</code> to abort a merge in <a href="ch00/_abort_merge">Aborting a Merge</a>, where we also use <code>git merge --abort</code>, which is a bit of a wrapper for the <code>git reset</code> command.</p>
+<p>We use <code>git reset --hard</code> to abort a merge in <a href="{{< relurl "book/sv/v2/ch00/_abort_merge" >}}">Aborting a Merge</a>, where we also use <code>git merge --abort</code>, which is a bit of a wrapper for the <code>git reset</code> command.</p>
 </div>
 </div>
 <div class="sect3">
@@ -134,10 +134,10 @@ This final option makes it possible for this command to lose your work if used i
 It is similar to <code>git add</code> in that it stages a removal of a file for the next commit.</p>
 </div>
 <div class="paragraph">
-<p>We cover the <code>git rm</code> command in some detail in <a href="ch00/_removing_files">Ta bort filer</a>, including recursively removing files and only removing files from the staging area but leaving them in the working directory with <code>--cached</code>.</p>
+<p>We cover the <code>git rm</code> command in some detail in <a href="{{< relurl "book/sv/v2/ch00/_removing_files" >}}">Ta bort filer</a>, including recursively removing files and only removing files from the staging area but leaving them in the working directory with <code>--cached</code>.</p>
 </div>
 <div class="paragraph">
-<p>The only other differing use of <code>git rm</code> in the book is in <a href="ch00/_removing_objects">Removing Objects</a> where we briefly use and explain the <code>--ignore-unmatch</code> when running <code>git filter-branch</code>, which simply makes it not error out when the file we are trying to remove doesn’t exist.
+<p>The only other differing use of <code>git rm</code> in the book is in <a href="{{< relurl "book/sv/v2/ch00/_removing_objects" >}}">Removing Objects</a> where we briefly use and explain the <code>--ignore-unmatch</code> when running <code>git filter-branch</code>, which simply makes it not error out when the file we are trying to remove doesn’t exist.
 This can be useful for scripting purposes.</p>
 </div>
 </div>
@@ -147,7 +147,7 @@ This can be useful for scripting purposes.</p>
 <p>The <code>git mv</code> command is a thin convenience command to move a file and then run <code>git add</code> on the new file and <code>git rm</code> on the old file.</p>
 </div>
 <div class="paragraph">
-<p>We only briefly mention this command in <a href="ch00/_git_mv">Flytta filer</a>.</p>
+<p>We only briefly mention this command in <a href="{{< relurl "book/sv/v2/ch00/_git_mv" >}}">Flytta filer</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -157,7 +157,7 @@ This can be useful for scripting purposes.</p>
 This could include removing temporary build artifacts or merge conflict files.</p>
 </div>
 <div class="paragraph">
-<p>We cover many of the options and scenarios in which you might used the clean command in <a href="ch00/_git_clean">Cleaning your Working Directory</a>.</p>
+<p>We cover many of the options and scenarios in which you might used the clean command in <a href="{{< relurl "book/sv/v2/ch00/_git_clean" >}}">Cleaning your Working Directory</a>.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

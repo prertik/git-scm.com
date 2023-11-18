@@ -26,11 +26,11 @@ I detta avsnitt kokker du får lära dig vad en grenflytt är, hur man gör det 
 <div class="sect3">
 <h3 id="_den_grundläggande_grenflytten">Den grundläggande grenflytten</h3>
 <div class="paragraph">
-<p>Om du går tillbaks till ett tidigare exempel från <a href="ch00/_basic_merging">Grundläggande sammanslagning</a>, kan du se att du divergerade ditt arbete och gjorde versioner på två olika grenar.</p>
+<p>Om du går tillbaks till ett tidigare exempel från <a href="{{< relurl "book/sv/v2/ch00/_basic_merging" >}}">Grundläggande sammanslagning</a>, kan du se att du divergerade ditt arbete och gjorde versioner på två olika grenar.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Enkel divergent historik.">
+<img src="{{< relurl "book/sv/v2/images/basic-rebase-1.png" >}}" alt="Enkel divergent historik.">
 </div>
 <div class="title">Figur 35. Enkel divergent historik</div>
 </div>
@@ -40,7 +40,7 @@ Den genomför en trevägssammanslagning mellan de två senaste ögonblicksbilder
 </div>
 <div id="rebasing-merging-example" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Sammanslagning för att integrera divergerad versionshistorik.">
+<img src="{{< relurl "book/sv/v2/images/basic-rebase-2.png" >}}" alt="Sammanslagning för att integrera divergerad versionshistorik.">
 </div>
 <div class="title">Figur 36. Sammanslagning för att integrera divergerad versionshistorik</div>
 </div>
@@ -65,7 +65,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="Flytta ändringarna som introducerats i `C4` på toppen av `C3`.">
+<img src="{{< relurl "book/sv/v2/images/basic-rebase-3.png" >}}" alt="Flytta ändringarna som introducerats i `C4` på toppen av `C3`.">
 </div>
 <div class="title">Figur 37. Flytta ändringarna som introducerats i <code>C4</code> på toppen av <code>C3</code>
 </div>
@@ -81,12 +81,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Snabbspolning av master-grenen.">
+<img src="{{< relurl "book/sv/v2/images/basic-rebase-4.png" >}}" alt="Snabbspolning av master-grenen.">
 </div>
 <div class="title">Figur 38. Snabbspolning av master-grenen</div>
 </div>
 <div class="paragraph">
-<p>Ögonblicksbilden som <code>C4'</code> pekar på är exakt samma som den som <code>C5</code> pekade på i <a href="ch00/rebasing-merging-example">the merge example</a>.
+<p>Ögonblicksbilden som <code>C4'</code> pekar på är exakt samma som den som <code>C5</code> pekade på i <a href="{{< relurl "book/sv/v2/ch00/rebasing-merging-example" >}}">the merge example</a>.
 Det finns ingen skillnad i slutprodukten av integrationen, men att flytta grenen gör att historiken blir renare.
 Om du undersöker historiken av en flyttad gren kommer den vara linjär: det verkar som att allt arbete har skett sekvensiellt, trots att det egentligen skedde parallellt.</p>
 </div>
@@ -104,14 +104,14 @@ Grenflytt spelar upp ändringarna från en arbetshistorik på toppen av en annan
 <h3 id="_mer_intressanta_grenflyttar">Mer intressanta grenflyttar</h3>
 <div class="paragraph">
 <p>Du kan också spela upp din historik på något annat än den ursprungliga basgrenen.
-Ta en historik som <a href="ch00/rbdiag_e">Historik med en gren från en annan gren</a>, till exempel.
+Ta en historik som <a href="{{< relurl "book/sv/v2/ch00/rbdiag_e" >}}">Historik med en gren från en annan gren</a>, till exempel.
 Du gjorde en gren (<code>server</code>) för att lägga till lite serverfunktionalitet till ditt projekt och skapade en ny version.
 Därefter gjorde du en gren från denna för att göra motsvarande ändringar hos klienten (<code>client</code>) och gjorde några nya versioner.
 Slutligen gick du tillvaks till din servergren och gjorde några fler versioner.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="Historik med en gren från en annan gren.">
+<img src="{{< relurl "book/sv/v2/images/interesting-rebase-1.png" >}}" alt="Historik med en gren från en annan gren.">
 </div>
 <div class="title">Figur 39. Historik med en gren från en annan gren</div>
 </div>
@@ -130,12 +130,12 @@ Det är lite komplext, men resultatet är rätt häftigt.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Flytta en gren från en annan gren.">
+<img src="{{< relurl "book/sv/v2/images/interesting-rebase-2.png" >}}" alt="Flytta en gren från en annan gren.">
 </div>
 <div class="title">Figur 40. Flytta en gren från en annan gren</div>
 </div>
 <div class="paragraph">
-<p>Nu kan du snabbspola din <code>master</code> gren (se <a href="ch00/rbdiag_g">Snabbspola din master-gren till att inkludera klientgrenens ändringar</a>):</p>
+<p>Nu kan du snabbspola din <code>master</code> gren (se <a href="{{< relurl "book/sv/v2/ch00/rbdiag_g" >}}">Snabbspola din master-gren till att inkludera klientgrenens ändringar</a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -145,7 +145,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Snabbspola din master-gren till att inkludera klientgrenens ändringar.">
+<img src="{{< relurl "book/sv/v2/images/interesting-rebase-3.png" >}}" alt="Snabbspola din master-gren till att inkludera klientgrenens ändringar.">
 </div>
 <div class="title">Figur 41. Snabbspola din master-gren till att inkludera klientgrenens ändringar</div>
 </div>
@@ -159,11 +159,11 @@ Du kan spela upp servergrenen på <code>master</code> grenen utan att behöva ch
 </div>
 </div>
 <div class="paragraph">
-<p>Detta spelar upp ditt arbete i <code>server</code> ovan på ditt arbete i <code>master</code>, som synes i <a href="ch00/rbdiag_h">Flytta din servergren til toppen av din mastergren</a>.</p>
+<p>Detta spelar upp ditt arbete i <code>server</code> ovan på ditt arbete i <code>master</code>, som synes i <a href="{{< relurl "book/sv/v2/ch00/rbdiag_h" >}}">Flytta din servergren til toppen av din mastergren</a>.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Flytta din servergren til toppen av din mastergren.">
+<img src="{{< relurl "book/sv/v2/images/interesting-rebase-4.png" >}}" alt="Flytta din servergren til toppen av din mastergren.">
 </div>
 <div class="title">Figur 42. Flytta din servergren til toppen av din mastergren</div>
 </div>
@@ -177,7 +177,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Du kan ta bort grenarna <code>client</code> och <code>server</code> eftersom allt arbete är integrerat, vilket ger dig en historik för denna process likt <a href="ch00/rbdiag_i">Slutlig versionshistorik</a>:</p>
+<p>Du kan ta bort grenarna <code>client</code> och <code>server</code> eftersom allt arbete är integrerat, vilket ger dig en historik för denna process likt <a href="{{< relurl "book/sv/v2/ch00/rbdiag_i" >}}">Slutlig versionshistorik</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -187,7 +187,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Slutlig versionshistorik.">
+<img src="{{< relurl "book/sv/v2/images/interesting-rebase-5.png" >}}" alt="Slutlig versionshistorik.">
 </div>
 <div class="title">Figur 43. Slutlig versionshistorik</div>
 </div>
@@ -216,7 +216,7 @@ Din versionshistorik ser ut såhär:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Klona ett repo och gör lite jobb på det.">
+<img src="{{< relurl "book/sv/v2/images/perils-of-rebasing-1.png" >}}" alt="Klona ett repo och gör lite jobb på det.">
 </div>
 <div class="title">Figur 44. Klona ett repo och gör lite jobb på det</div>
 </div>
@@ -226,7 +226,7 @@ Du hämtar det och slår ihop fjärrgrenen in i ditt arbete vilket gör att din 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Hämta fler versioner och slå ihop ändringarna i ditt arbete.">
+<img src="{{< relurl "book/sv/v2/images/perils-of-rebasing-2.png" >}}" alt="Hämta fler versioner och slå ihop ändringarna i ditt arbete.">
 </div>
 <div class="title">Figur 45. Hämta fler versioner och slå ihop ändringarna i ditt arbete</div>
 </div>
@@ -236,7 +236,7 @@ Du hämtar sedan från den server, och får hem de nya versionerna.</p>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Någon publicerar omskriven historik, och överger versioner på vilka du baserat arbete.">
+<img src="{{< relurl "book/sv/v2/images/perils-of-rebasing-3.png" >}}" alt="Någon publicerar omskriven historik, och överger versioner på vilka du baserat arbete.">
 </div>
 <div class="title">Figur 46. Någon publicerar omskriven historik, och överger versioner på vilka du baserat arbete</div>
 </div>
@@ -246,7 +246,7 @@ Om du gör <code>git pull</code> kommer du skapa en sammanslagningsversion som i
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="Du integrerar samma arbete igen i en ny sammanslagningsversion.">
+<img src="{{< relurl "book/sv/v2/images/perils-of-rebasing-4.png" >}}" alt="Du integrerar samma arbete igen i en ny sammanslagningsversion.">
 </div>
 <div class="title">Figur 47. Du integrerar samma arbete igen i en ny sammanslagningsversion</div>
 </div>
@@ -270,7 +270,7 @@ Denna kallas för “patch-id”.</p>
 <p>Om du hämtar hem arbete som var omskrivet och gör en egen omskrivning på toppen av versionerna från din kollega, kan Git ofta lista ut vad som är unikt ditt och och applicera dina ändringar ovanpå den nya grenen.</p>
 </div>
 <div class="paragraph">
-<p>Till exempel, i föregående scenario, om du istället för att slå ihop ändringarna vid <a href="ch00/_pre_merge_rebase_work">Någon publicerar omskriven historik, och överger versioner på vilka du baserat arbete</a> och kör <code>git rebase teamone/master</code>, kommer Git att:</p>
+<p>Till exempel, i föregående scenario, om du istället för att slå ihop ändringarna vid <a href="{{< relurl "book/sv/v2/ch00/_pre_merge_rebase_work" >}}">Någon publicerar omskriven historik, och överger versioner på vilka du baserat arbete</a> och kör <code>git rebase teamone/master</code>, kommer Git att:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -289,11 +289,11 @@ Denna kallas för “patch-id”.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Så istället för resultatet i <a href="ch00/_merge_rebase_work">Du integrerar samma arbete igen i en ny sammanslagningsversion</a> kommer vi få ett slutligt resultat liknande <a href="ch00/_rebase_rebase_work">Grenflytt till toppen av en tvingande publicering av omskriven historik</a>.</p>
+<p>Så istället för resultatet i <a href="{{< relurl "book/sv/v2/ch00/_merge_rebase_work" >}}">Du integrerar samma arbete igen i en ny sammanslagningsversion</a> kommer vi få ett slutligt resultat liknande <a href="{{< relurl "book/sv/v2/ch00/_rebase_rebase_work" >}}">Grenflytt till toppen av en tvingande publicering av omskriven historik</a>.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Grenflytt till toppen av en tvingande publicering av omskriven historik.">
+<img src="{{< relurl "book/sv/v2/images/perils-of-rebasing-5.png" >}}" alt="Grenflytt till toppen av en tvingande publicering av omskriven historik.">
 </div>
 <div class="title">Figur 48. Grenflytt till toppen av en tvingande publicering av omskriven historik</div>
 </div>

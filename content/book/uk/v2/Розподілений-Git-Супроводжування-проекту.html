@@ -370,17 +370,17 @@ $ git diff 36c7db</code></pre>
 Коли зʼявляється робота в тематичній гілці, яку ви вважаєте завершеною, чи хтось інший запропонував та ви перевірили, ви зливаєте її до гілки <code>master</code>, вилучаєте цю щойно залиту тематичну гілку, та повторюєте це все знову.</p>
 </div>
 <div class="paragraph">
-<p>Наприклад, якщо в нас є репозиторій з роботою в двох гілках під назвами <code>ruby_client</code> та <code>php_client</code>, що мають вигляд <a href="ch00/merwf_a">Історія з декількома тематичними гілками.</a>, та ми зіллємо <code>ruby_client</code>, а потім <code>php_client</code>, то наша історія в результаті виглядатиме як <a href="ch00/merwf_b">Після злиття тематичної гілки.</a>.</p>
+<p>Наприклад, якщо в нас є репозиторій з роботою в двох гілках під назвами <code>ruby_client</code> та <code>php_client</code>, що мають вигляд <a href="{{< relurl "book/uk/v2/ch00/merwf_a" >}}">Історія з декількома тематичними гілками.</a>, та ми зіллємо <code>ruby_client</code>, а потім <code>php_client</code>, то наша історія в результаті виглядатиме як <a href="{{< relurl "book/uk/v2/ch00/merwf_b" >}}">Після злиття тематичної гілки.</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Історія з декількома тематичними гілками.">
+<img src="{{< relurl "book/uk/v2/images/merging-workflows-1.png" >}}" alt="Історія з декількома тематичними гілками.">
 </div>
 <div class="title">Рисунок 72. Історія з декількома тематичними гілками.</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Після злиття тематичної гілки.">
+<img src="{{< relurl "book/uk/v2/images/merging-workflows-2.png" >}}" alt="Після злиття тематичної гілки.">
 </div>
 <div class="title">Рисунок 73. Після злиття тематичної гілки.</div>
 </div>
@@ -391,23 +391,23 @@ $ git diff 36c7db</code></pre>
 <p>Якщо у вас достатньо важливий проект, то можна скористатися двофазним циклом зливання.
 У цьому сценарії, у вас є дві довгострокові гілки: <code>master</code> та <code>develop</code>. Ви домовляєтесь оновлювати <code>master</code> лише коли зʼявляється дуже стабільна версія, а весь новий код інтегрується до гілки <code>develop</code>.
 Ви регулярно надсилаєте зміни до обох цих гілок до публічного сховища.
-Щоразу, коли виникає готова до злиття тематична гілка (<a href="ch00/merwf_c">Перед злиттям тематичної гілки.</a>), ви зливаєте її до <code>develop</code> (<a href="ch00/merwf_d">Після злиття тематичної гілки.</a>); потім, коли ви створите теґ перевіреної версії, то перемотуєте вперед <code>master</code> до останнього коміту тепер стабільного <code>develop</code> (<a href="ch00/merwf_e">Після випуску проекту.</a>).</p>
+Щоразу, коли виникає готова до злиття тематична гілка (<a href="{{< relurl "book/uk/v2/ch00/merwf_c" >}}">Перед злиттям тематичної гілки.</a>), ви зливаєте її до <code>develop</code> (<a href="{{< relurl "book/uk/v2/ch00/merwf_d" >}}">Після злиття тематичної гілки.</a>); потім, коли ви створите теґ перевіреної версії, то перемотуєте вперед <code>master</code> до останнього коміту тепер стабільного <code>develop</code> (<a href="{{< relurl "book/uk/v2/ch00/merwf_e" >}}">Після випуску проекту.</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Перед злиттям тематичної гілки.">
+<img src="{{< relurl "book/uk/v2/images/merging-workflows-3.png" >}}" alt="Перед злиттям тематичної гілки.">
 </div>
 <div class="title">Рисунок 74. Перед злиттям тематичної гілки.</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Після злиття тематичної гілки.">
+<img src="{{< relurl "book/uk/v2/images/merging-workflows-4.png" >}}" alt="Після злиття тематичної гілки.">
 </div>
 <div class="title">Рисунок 75. Після злиття тематичної гілки.</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Після випуску проекту.">
+<img src="{{< relurl "book/uk/v2/images/merging-workflows-5.png" >}}" alt="Після випуску проекту.">
 </div>
 <div class="title">Рисунок 76. Після випуску проекту.</div>
 </div>
@@ -422,13 +422,13 @@ $ git diff 36c7db</code></pre>
 <div class="paragraph">
 <p>
 Проект Git має чотири довгострокових гілки: <code>master</code>, <code>next</code> та <code>pu</code> (proposed updates — пропоновані оновлення) для нової роботи, та <code>main</code> для виправлень старших версій.
-Коли учасники впроваджують щось нове, воно накопичується в тематичних гілках у сховищі супроводжувача — схоже на вищеописані методи (дивіться <a href="ch00/merwf_f">Керування складною послідовністю паралельних доданих тематичних гілок.</a>).
+Коли учасники впроваджують щось нове, воно накопичується в тематичних гілках у сховищі супроводжувача — схоже на вищеописані методи (дивіться <a href="{{< relurl "book/uk/v2/ch00/merwf_f" >}}">Керування складною послідовністю паралельних доданих тематичних гілок.</a>).
 Потім тематичні гілки перевіряють, щоб визначити, чи вони є безпечними та готовими для використання, чи треба ще над ними працювати.
 Якщо вони безпечні, їх зливають до <code>next</code>, і цю гілку надсилають до сервера, аби всі могли спробувати злити тематичні гілки разом.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Керування складною послідовністю паралельних доданих тематичних гілок.">
+<img src="{{< relurl "book/uk/v2/images/large-merges-1.png" >}}" alt="Керування складною послідовністю паралельних доданих тематичних гілок.">
 </div>
 <div class="title">Рисунок 77. Керування складною послідовністю паралельних доданих тематичних гілок.</div>
 </div>
@@ -440,7 +440,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Зливання доданих тематичних гілок до довготривалих інтеграційних гілок.">
+<img src="{{< relurl "book/uk/v2/images/large-merges-2.png" >}}" alt="Зливання доданих тематичних гілок до довготривалих інтеграційних гілок.">
 </div>
 <div class="title">Рисунок 78. Зливання доданих тематичних гілок до довготривалих інтеграційних гілок.</div>
 </div>
@@ -469,7 +469,7 @@ $ git diff 36c7db</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Приклад історії перед висмикуванням.">
+<img src="{{< relurl "book/uk/v2/images/rebasing-1.png" >}}" alt="Приклад історії перед висмикуванням.">
 </div>
 <div class="title">Рисунок 79. Приклад історії перед висмикуванням.</div>
 </div>
@@ -490,7 +490,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Історія після висмикування коміту з тематичної гілки.">
+<img src="{{< relurl "book/uk/v2/images/rebasing-2.png" >}}" alt="Історія після висмикування коміту з тематичної гілки.">
 </div>
 <div class="title">Рисунок 80. Історія після висмикування коміту з тематичної гілки.</div>
 </div>
@@ -524,7 +524,7 @@ Finished one cherry-pick.
 <p>Якщо потрібно, ви можете взаємодіяти з памʼяттю rerere за допомогою команди <code>git rerere</code>.
 Якщо викликати окремо, Git перевіряє базу даних розвʼязань та намагається знайти збіг з будь-яким поточним конфліктом злиття та розвʼязує їх (хоча це здійснюється автоматично, якщо <code>rerere.enabled</code> встановлено в <code>true</code>).
 Також існують підкоманди, для перегляду того, що буде записано, для стирання окремого розвʼязання з памʼяті, та щоб очистити всю памʼять.
-Ми розглянемо rerere докладніше в <a href="ch00/ref_rerere">Rerere</a>.</p>
+Ми розглянемо rerere докладніше в <a href="{{< relurl "book/uk/v2/ch00/ref_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -533,7 +533,7 @@ Finished one cherry-pick.
 <div class="paragraph">
 <p>
 Коли ви вирішили випустити видання, ви, вірогідно, забажаєте створити теґ, щоб мати можливість відтворити його після того.
-Як ви можете створити новий теґ, розказано в <a href="ch00/ch02-git-basics-chapter">Основи Git</a>.
+Як ви можете створити новий теґ, розказано в <a href="{{< relurl "book/uk/v2/ch00/ch02-git-basics-chapter" >}}">Основи Git</a>.
 Якщо ви, як супроводжувач, вирішите підписати теґ, процес може виглядати приблизно так:</p>
 </div>
 <div class="listingblock">

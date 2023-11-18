@@ -60,7 +60,7 @@ Si vous lancez à la place <code>git clone -o booyah</code>, votre branche de su
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Dépôts dstant et local après un clonage">
+<img src="{{< relurl "book/fr/v2/images/remote-branches-1.png" >}}" alt="Dépôts dstant et local après un clonage">
 </div>
 <div class="title">Figure 30. Dépôts distant et local après un clonage</div>
 </div>
@@ -70,7 +70,7 @@ Tant que vous restez sans contact avec votre serveur distant, votre pointeur ver
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Les travaux locaux et distants peuvent diverger">
+<img src="{{< relurl "book/fr/v2/images/remote-branches-2.png" >}}" alt="Les travaux locaux et distants peuvent diverger">
 </div>
 <div class="title">Figure 31. Les travaux locaux et distants peuvent diverger</div>
 </div>
@@ -80,19 +80,19 @@ Cette commande recherche le serveur hébergeant <code>origin</code> (dans notre 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` met à jour vos références de suivi à distance">
+<img src="{{< relurl "book/fr/v2/images/remote-branches-3.png" >}}" alt="`git fetch` met à jour vos références de suivi à distance">
 </div>
 <div class="title">Figure 32. <code>git fetch</code> met à jour vos branches de suivi à distance</div>
 </div>
 <div class="paragraph">
 <p>Pour démontrer l’usage de multiples serveurs distants et le fonctionnement des branches de suivi à distance pour ces projets distants, supposons que vous avez un autre serveur Git interne qui n’est utilisé que par une équipe de développeurs.
 Ce serveur se trouve sur <code>git.equipe1.notresociete.com</code>.
-Vous pouvez l’ajouter aux références distantes de votre projet en lançant la commande <code>git remote add</code> comme nous l’avons décrit au chapitre <a href="ch00/ch02-git-basics-chapter">Les bases de Git</a>.
+Vous pouvez l’ajouter aux références distantes de votre projet en lançant la commande <code>git remote add</code> comme nous l’avons décrit au chapitre <a href="{{< relurl "book/fr/v2/ch00/ch02-git-basics-chapter" >}}">Les bases de Git</a>.
 Nommez ce serveur distant <code>equipeun</code> qui sera le raccourci pour l’URL complète.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Ajout d’un nouveau serveur en tant que référence distante">
+<img src="{{< relurl "book/fr/v2/images/remote-branches-4.png" >}}" alt="Ajout d’un nouveau serveur en tant que référence distante">
 </div>
 <div class="title">Figure 33. Ajout d’un nouveau serveur en tant que référence distante</div>
 </div>
@@ -102,7 +102,7 @@ Comme ce serveur contient déjà un sous-ensemble des données du serveur <code>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Branche de suivi à distance pour `equipeun/master`">
+<img src="{{< relurl "book/fr/v2/images/remote-branches-5.png" >}}" alt="Branche de suivi à distance pour `equipeun/master`">
 </div>
 <div class="title">Figure 34. Branche de suivi à distance <code>equipeun/master</code>
 </div>
@@ -134,7 +134,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Il s’agit en quelque sorte d’un raccourci.
 Git développe automatiquement le nom de branche <code>correctionserveur</code> en <code>refs/heads/correctionserveur:refs/heads/correctionserveur</code>, ce qui signifie "Prendre ma branche locale <code>correctionserveur</code> et la pousser pour mettre à jour la branche distante <code>correctionserveur`".
-Nous traiterons plus en détail la partie `refs/heads/</code> au chapitre <a href="ch00/ch10-git-internals">Les tripes de Git</a> mais généralement, vous pouvez l’oublier.
+Nous traiterons plus en détail la partie `refs/heads/</code> au chapitre <a href="{{< relurl "book/fr/v2/ch00/ch10-git-internals" >}}">Les tripes de Git</a> mais généralement, vous pouvez l’oublier.
 Vous pouvez aussi lancer <code>git push origin correctionserveur:correctionserveur</code>, qui réalise la même chose — ce qui signifie « Prendre ma branche <code>correctionserveur</code> et en faire la branche <code>correctionserveur</code> distante ».
 Vous pouvez utiliser ce format pour pousser une branche locale vers une branche distante nommée différemment.
 Si vous ne souhaitez pas l’appeler <code>correctionserveur</code> sur le serveur distant, vous pouvez lancer à la place <code>git push origin correctionserveur:branchegeniale</code> pour pousser votre branche locale <code>correctionserveur</code> sur la branche <code>branchegeniale</code> sur le dépôt distant.</p>
@@ -156,7 +156,7 @@ Par défaut, vous devez entrer ces informations sur votre terminal et le serveur
 Son fonctionnement le plus simple consiste à garder ces informations en mémoire pour quelques minutes mais vous pouvez configurer ce délai en lançant la commande <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>Pour davantage d’informations sur les différentes options de cache d’identification disponibles, vous pouvez vous référer au chapitre <a href="ch00/s_credential_caching">Stockage des identifiants</a>.</p>
+<p>Pour davantage d’informations sur les différentes options de cache d’identification disponibles, vous pouvez vous référer au chapitre <a href="{{< relurl "book/fr/v2/ch00/s_credential_caching" >}}">Stockage des identifiants</a>.</p>
 </div>
 </td>
 </tr>

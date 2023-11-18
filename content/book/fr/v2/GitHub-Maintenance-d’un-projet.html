@@ -25,17 +25,17 @@ title: Git - Maintenance d’un projet
 <h3 id="_création_dun_nouveau_dépôt">Création d’un nouveau dépôt</h3>
 <div class="paragraph">
 <p>Créons un nouveau dépôt pour permettre le partage du code de notre projet avec d’autres.
-Commencez par cliquer sur le bouton « New repository » (nouveau dépôt) sur le côté droit de votre tableau de bord ou sur le bouton <code>+</code> dans la barre d’outils du haut à côté de votre nom d’utilisateur comme sur la figure <a href="ch00/s_new_repo_dropdown">La liste déroulante « New repository » (nouveau dépôt)</a>.</p>
+Commencez par cliquer sur le bouton « New repository » (nouveau dépôt) sur le côté droit de votre tableau de bord ou sur le bouton <code>+</code> dans la barre d’outils du haut à côté de votre nom d’utilisateur comme sur la figure <a href="{{< relurl "book/fr/v2/ch00/s_new_repo_dropdown" >}}">La liste déroulante « New repository » (nouveau dépôt)</a>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/newrepo.png" >}}" alt="La zone « Your repositories »">
+<img src="{{< relurl "book/fr/v2/images/newrepo.png" >}}" alt="La zone « Your repositories »">
 </div>
 <div class="title">Figure 109. La zone « Your repositories » (vos dépôts)</div>
 </div>
 <div id="s_new_repo_dropdown" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/new-repo.png" >}}" alt="La liste déroulante « new repository »">
+<img src="{{< relurl "book/fr/v2/images/new-repo.png" >}}" alt="La liste déroulante « new repository »">
 </div>
 <div class="title">Figure 110. La liste déroulante « New repository » (nouveau dépôt)</div>
 </div>
@@ -44,7 +44,7 @@ Commencez par cliquer sur le bouton « New repository » (nouveau dépôt) sur
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/newrepoform.png" >}}" alt="Le formulaire « new repository »">
+<img src="{{< relurl "book/fr/v2/images/newrepoform.png" >}}" alt="Le formulaire « new repository »">
 </div>
 <div class="title">Figure 111. Le formulaire « new repository » (nouveau dépôt)</div>
 </div>
@@ -54,7 +54,7 @@ Pour l’instant, cliquez juste sur le bouton « Create Repository » (créer 
 </div>
 <div class="paragraph">
 <p>Puisque vous n’avez pas encore de code, GitHub vous affiche des instructions sur la façon de créer un tout nouveau dépôt Git ou de se connecter à un projet Git existant.
-Nous ne détaillerons pas cela ici ; si vous avez besoin d’un rappel, vérifiez <a href="ch00/ch02-git-basics-chapter">Les bases de Git</a>.</p>
+Nous ne détaillerons pas cela ici ; si vous avez besoin d’un rappel, vérifiez <a href="{{< relurl "book/fr/v2/ch00/ch02-git-basics-chapter" >}}">Les bases de Git</a>.</p>
 </div>
 <div class="paragraph">
 <p>Maintenant que votre projet est hébergé sur GitHub, vous pouvez donner l’URL à toutes les personnes avec lesquelles vous voulez partager votre projet.
@@ -90,7 +90,7 @@ En faisant cela, vous leur donnez un accès en poussée ce qui signifie qu’ils
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/reposettingslink.png" >}}" alt="Le lien des paramètres (Settings) du dépôt.">
+<img src="{{< relurl "book/fr/v2/images/reposettingslink.png" >}}" alt="Le lien des paramètres (Settings) du dépôt.">
 </div>
 <div class="title">Figure 112. Le lien des paramètres (Settings) du dépôt.</div>
 </div>
@@ -101,7 +101,7 @@ Si vous devez révoquer leur accès, il suffit de cliquer sur le « X » à dr
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/collaborators.png" >}}" alt="La boîte des collaborateurs du dépôt.">
+<img src="{{< relurl "book/fr/v2/images/collaborators.png" >}}" alt="La boîte des collaborateurs du dépôt.">
 </div>
 <div class="title">Figure 113. Les collaborateurs du dépôt.</div>
 </div>
@@ -122,11 +122,11 @@ La seule différence est que celles d’un clone proviennent souvent de personne
 <h4 id="s_email_notifications">Notifications par courriel</h4>
 <div class="paragraph">
 <p>Quelqu’un se connecte et fait une modification à votre programme et vous envoie une requête de tirage.
-Vous devriez recevoir un courriel vous informant de cette nouvelle requête de tirage et ressemblant à celui sur la figure <a href="ch00/s_email_pr">Notification par courriel d’une nouvelle requête de tirage.</a>.</p>
+Vous devriez recevoir un courriel vous informant de cette nouvelle requête de tirage et ressemblant à celui sur la figure <a href="{{< relurl "book/fr/v2/ch00/s_email_pr" >}}">Notification par courriel d’une nouvelle requête de tirage.</a>.</p>
 </div>
 <div id="s_email_pr" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-01-email.png" >}}" alt="Notification par courriel d’une requête de tirage">
+<img src="{{< relurl "book/fr/v2/images/maint-01-email.png" >}}" alt="Notification par courriel d’une requête de tirage">
 </div>
 <div class="title">Figure 114. Notification par courriel d’une nouvelle requête de tirage.</div>
 </div>
@@ -137,7 +137,7 @@ Il vous donne un lien vers la requête de tirage sur GitHub et il vous fournit �
 </div>
 <div class="paragraph">
 <p>Remarquez la ligne <code>git pull &lt;url&gt; patch-1</code>, il s’agit d’une manière simple de fusionner une branche distante sans avoir à ajouter un dépôt distant.
-Nous avons déjà vu rapidement cela dans <a href="ch00/s_checking_out_remotes">Vérification des branches distantes</a>.
+Nous avons déjà vu rapidement cela dans <a href="{{< relurl "book/fr/v2/ch00/s_checking_out_remotes" >}}">Vérification des branches distantes</a>.
 Si vous voulez, vous pouvez créer une branche thématique et basculer vers celle-ci puis lancer cette commande pour fusionner les modifications de cette requête de tirage.</p>
 </div>
 <div class="paragraph">
@@ -153,7 +153,7 @@ Vous pourriez techniquement fusionner le travail contenu dans la requête de tir
 <div class="sect4">
 <h4 id="_collaboration_à_une_requête_de_tirage">Collaboration à une requête de tirage</h4>
 <div class="paragraph">
-<p>Comme déjà traité dans la section <a href="ch00/s_github_flow">Processus GitHub</a>, vous pouvez maintenant commencer une conversation avec la personne qui a ouvert la requête de tirage.
+<p>Comme déjà traité dans la section <a href="{{< relurl "book/fr/v2/ch00/s_github_flow" >}}">Processus GitHub</a>, vous pouvez maintenant commencer une conversation avec la personne qui a ouvert la requête de tirage.
 Vous pouvez commenter certaines lignes de code, commenter des soumissions complètes ou commenter la requête de tirage elle-même en utilisant les outils Markdown, saveur GitHub un peu partout.</p>
 </div>
 <div class="paragraph">
@@ -162,7 +162,7 @@ Celles-ci possèdent un lien vers la requête de tirage dans laquelle l’activi
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-03-email-resp.png" >}}" alt="Réponse par courriel">
+<img src="{{< relurl "book/fr/v2/images/maint-03-email-resp.png" >}}" alt="Réponse par courriel">
 </div>
 <div class="title">Figure 115. Les réponses aux courriels sont incorporées dans le fil de discussion.</div>
 </div>
@@ -173,11 +173,11 @@ Celles-ci possèdent un lien vers la requête de tirage dans laquelle l’activi
 <p>Si la fusion est triviale, vous pouvez également cliquer sur le bouton « Merge » (fusionner) sur le site GitHub.
 Une fusion sans avance rapide (non-fast-forward) sera réalisée ce qui créera une soumission de fusion (<em>merge commit</em>) même si une fusion en avance rapide (fast-forward) était possible.
 Cela signifie que dans tous les cas, à chaque fois que vous cliquez sur le bouton « Merge », un commit de fusion est créé.
-Comme vous pouvez le voir sur <a href="ch00/s_merge_button">Bouton « Merge » et instructions pour la fusion manuelle d’une requête de tirage.</a>, GitHub vous donne toutes ces informations si vous cliquez sur le lien descriptif.</p>
+Comme vous pouvez le voir sur <a href="{{< relurl "book/fr/v2/ch00/s_merge_button" >}}">Bouton « Merge » et instructions pour la fusion manuelle d’une requête de tirage.</a>, GitHub vous donne toutes ces informations si vous cliquez sur le lien descriptif.</p>
 </div>
 <div id="s_merge_button" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-02-merge.png" >}}" alt="Bouton « Merge »">
+<img src="{{< relurl "book/fr/v2/images/maint-02-merge.png" >}}" alt="Bouton « Merge »">
 </div>
 <div class="title">Figure 116. Bouton « Merge » et instructions pour la fusion manuelle d’une requête de tirage.</div>
 </div>
@@ -189,14 +189,14 @@ Comme vous pouvez le voir sur <a href="ch00/s_merge_button">Bouton « Merge »
 <h4 id="s_pr_refs">Références aux requêtes de tirage</h4>
 <div class="paragraph">
 <p>Si vous gérez <strong>beaucoup</strong> de requêtes de tirage et que vous ne voulez pas ajouter une série de dépôts distants ou faire des tirages isolés à chaque fois, GitHub vous permet une astuce.
-C’est toutefois une astuce avancée et nous irons un peu plus dans les détails à la section <a href="ch00/s_refspec">La <em>refspec</em></a> mais cela peut être assez utile dès maintenant.</p>
+C’est toutefois une astuce avancée et nous irons un peu plus dans les détails à la section <a href="{{< relurl "book/fr/v2/ch00/s_refspec" >}}">La <em>refspec</em></a> mais cela peut être assez utile dès maintenant.</p>
 </div>
 <div class="paragraph">
 <p>GitHub traite en réalité les branches de requête de tirage d’un dépôt comme une sorte de pseudo-branches sur le serveur.
 Par défaut, vous ne les obtenez pas lorsque vous clonez mais elles sont présentes de façon cachée et vous pouvez y accéder assez facilement.</p>
 </div>
 <div class="paragraph">
-<p>Pour le montrer, nous allons utiliser une commande bas niveau (souvent appelée commande de « plomberie » dont nous parlerons un peu plus dans la section <a href="ch00/s_plumbing_porcelain">Plomberie et porcelaine</a>) qui s’appelle <code>ls-remote</code>.
+<p>Pour le montrer, nous allons utiliser une commande bas niveau (souvent appelée commande de « plomberie » dont nous parlerons un peu plus dans la section <a href="{{< relurl "book/fr/v2/ch00/s_plumbing_porcelain" >}}">Plomberie et porcelaine</a>) qui s’appelle <code>ls-remote</code>.
 Cette commande n’est en général pas utilisée dans les opérations quotidiennes mais elle est utile pour afficher les références présentes sur le serveur.</p>
 </div>
 <div class="paragraph">
@@ -316,7 +316,7 @@ Si vous cliquez sur le bouton « Edit » (modifier) à droite de cette boîte,
 </div>
 <div id="s_pr_targets" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-04-target.png" >}}" alt="Cibles d’une requête">
+<img src="{{< relurl "book/fr/v2/images/maint-04-target.png" >}}" alt="Cibles d’une requête">
 </div>
 <div class="title">Figure 117. Modification manuelle du clone cible et de la branche de la requête de tirage.</div>
 </div>
@@ -335,7 +335,7 @@ Si vous cliquez sur le bouton « Edit » (modifier) à droite de cette boîte,
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-05-mentions.png" >}}" alt="Mentions">
+<img src="{{< relurl "book/fr/v2/images/maint-05-mentions.png" >}}" alt="Mentions">
 </div>
 <div class="title">Figure 118. Saisissez @ pour faire référence à quelqu’un.</div>
 </div>
@@ -354,7 +354,7 @@ Si vous ne souhaitez plus recevoir de notifications, cliquez sur le bouton « U
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-06-unsubscribe.png" >}}" alt="Désinscription">
+<img src="{{< relurl "book/fr/v2/images/maint-06-unsubscribe.png" >}}" alt="Désinscription">
 </div>
 <div class="title">Figure 119. Désinscription d’une anomalie ou d’une requête de tirage.</div>
 </div>
@@ -366,7 +366,7 @@ Si vous allez dans l’onglet « Notification center » (centre de notificatio
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-07-notifications.png" >}}" alt="Centre de notification.">
+<img src="{{< relurl "book/fr/v2/images/maint-07-notifications.png" >}}" alt="Centre de notification.">
 </div>
 <div class="title">Figure 120. Options du centre de notification.</div>
 </div>
@@ -377,11 +377,11 @@ Si vous allez dans l’onglet « Notification center » (centre de notificatio
 <h6 id="_notifications_web">Notifications Web</h6>
 <div class="paragraph">
 <p>Les notifications Web n’existent que sur GitHub et vous ne pouvez les visionner que sur GitHub.
-Si vous avez sélectionné cette option dans vos préférences et qu’une notification vous est envoyée, un petit point bleu apparaît sur votre icône des notifications en haut de l’écran comme sur la figure <a href="ch00/s_not_center">Centre de notification.</a>.</p>
+Si vous avez sélectionné cette option dans vos préférences et qu’une notification vous est envoyée, un petit point bleu apparaît sur votre icône des notifications en haut de l’écran comme sur la figure <a href="{{< relurl "book/fr/v2/ch00/s_not_center" >}}">Centre de notification.</a>.</p>
 </div>
 <div id="s_not_center" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-08-notifications-page.png" >}}" alt="Centre de notification.">
+<img src="{{< relurl "book/fr/v2/images/maint-08-notifications-page.png" >}}" alt="Centre de notification.">
 </div>
 <div class="title">Figure 121. Centre de notification.</div>
 </div>
@@ -401,14 +401,14 @@ Beaucoup d’utilisateurs de GitHub très actifs arrêtent tout simplement compl
 <div class="paragraph">
 <p>Les notifications par courriel sont l’autre façon de gérer les notifications provenant de GitHub.
 Si vous les avez activées, vous recevrez des courriels pour chaque notification.
-Nous avons vu des exemples concernant cela sur les figures <a href="ch00/s_email_notification">Commentaires notifiés par courriel</a> et <a href="ch00/s_email_pr">Notification par courriel d’une nouvelle requête de tirage.</a>.
+Nous avons vu des exemples concernant cela sur les figures <a href="{{< relurl "book/fr/v2/ch00/s_email_notification" >}}">Commentaires notifiés par courriel</a> et <a href="{{< relurl "book/fr/v2/ch00/s_email_pr" >}}">Notification par courriel d’une nouvelle requête de tirage.</a>.
 Ces courriels peuvent être également suivis correctement ce qui est bien agréable si vous utilisez un client de messagerie qui suit les fils de discussion.</p>
 </div>
 <div class="paragraph">
 <p>Un assez grand nombre de métadonnées sont incluses dans les entêtes des courriels que GitHub vous envoie ce qui peut vraiment vous aider à configurer des filtres et des règles personnalisés.</p>
 </div>
 <div class="paragraph">
-<p>Par exemple si nous observons les entêtes complets du courriel envoyé à Tony dans le courriel de la figure <a href="ch00/s_email_pr">Notification par courriel d’une nouvelle requête de tirage.</a>, nous voyons que les informations suivantes sont envoyées :</p>
+<p>Par exemple si nous observons les entêtes complets du courriel envoyé à Tony dans le courriel de la figure <a href="{{< relurl "book/fr/v2/ch00/s_email_pr" >}}">Notification par courriel d’une nouvelle requête de tirage.</a>, nous voyons que les informations suivantes sont envoyées :</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -482,11 +482,11 @@ Il contient habituellement des choses comme :</p>
 <h3 id="_contributing">CONTRIBUTING</h3>
 <div class="paragraph">
 <p>L’autre fichier spécial que GitHub reconnaît est le fichier <code>CONTRIBUTING</code>.
-Si vous possédez un fichier nommé <code>CONTRIBUTING</code>, peu importe son extension, GitHub affichera la figure <a href="ch00/s_contrib_file">Ouverture d’une requête de tirage si un fichier CONTRIBUTING existe.</a> lorsque quelqu’un commence à ouvrir une requête de tirage.</p>
+Si vous possédez un fichier nommé <code>CONTRIBUTING</code>, peu importe son extension, GitHub affichera la figure <a href="{{< relurl "book/fr/v2/ch00/s_contrib_file" >}}">Ouverture d’une requête de tirage si un fichier CONTRIBUTING existe.</a> lorsque quelqu’un commence à ouvrir une requête de tirage.</p>
 </div>
 <div id="s_contrib_file" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-09-contrib.png" >}}" alt="Notification du fichier CONTRIBUTING">
+<img src="{{< relurl "book/fr/v2/images/maint-09-contrib.png" >}}" alt="Notification du fichier CONTRIBUTING">
 </div>
 <div class="title">Figure 122. Ouverture d’une requête de tirage si un fichier CONTRIBUTING existe.</div>
 </div>
@@ -507,7 +507,7 @@ De cette façon, les gens peuvent vraiment lire les recommandations avant d’ou
 </div>
 <div id="s_default_branch" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-10-default-branch.png" >}}" alt="Branche par défaut">
+<img src="{{< relurl "book/fr/v2/images/maint-10-default-branch.png" >}}" alt="Branche par défaut">
 </div>
 <div class="title">Figure 123. Modification de la branche par défaut pour un projet.</div>
 </div>
@@ -522,7 +522,7 @@ De cette façon, les gens peuvent vraiment lire les recommandations avant d’ou
 </div>
 <div id="s_transfer_project" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/maint-11-transfer.png" >}}" alt="Transfert">
+<img src="{{< relurl "book/fr/v2/images/maint-11-transfer.png" >}}" alt="Transfert">
 </div>
 <div class="title">Figure 124. Transfert d’un projet vers un autre utilisateur GitHub ou une organisation.</div>
 </div>

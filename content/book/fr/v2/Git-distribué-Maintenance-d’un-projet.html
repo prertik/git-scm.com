@@ -374,17 +374,17 @@ Vous avez de nombreux choix et je vais en traiter quelques-uns.</p>
 Un mode simple fusionne votre travail dans la branche <code>master</code>.
 Dans ce scénario, vous avez une branche <code>master</code> qui contient le code stable.
 Quand vous avez des modifications prêtes dans une branche thématique, vous la fusionnez dans votre branche <code>master</code> puis effacez la branche thématique, et ainsi de suite.
-Si vous avez un dépôt contenant deux branches nommées <code>ruby_client</code> et <code>php_client</code> qui ressemble à <a href="ch00/merwf_a">Historique avec quelques branches thématiques.</a> et que vous fusionnez <code>ruby_client</code> en premier, suivi de <code>php_client</code>, alors votre historique ressemblera à la fin à <a href="ch00/merwf_b">Après fusion des branches thématiques.</a>.</p>
+Si vous avez un dépôt contenant deux branches nommées <code>ruby_client</code> et <code>php_client</code> qui ressemble à <a href="{{< relurl "book/fr/v2/ch00/merwf_a" >}}">Historique avec quelques branches thématiques.</a> et que vous fusionnez <code>ruby_client</code> en premier, suivi de <code>php_client</code>, alors votre historique ressemblera à la fin à <a href="{{< relurl "book/fr/v2/ch00/merwf_b" >}}">Après fusion des branches thématiques.</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Historique avec quelques branches thématiques.">
+<img src="{{< relurl "book/fr/v2/images/merging-workflows-1.png" >}}" alt="Historique avec quelques branches thématiques.">
 </div>
 <div class="title">Figure 72. Historique avec quelques branches thématiques.</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Après fusion des branches thématiques.">
+<img src="{{< relurl "book/fr/v2/images/merging-workflows-2.png" >}}" alt="Après fusion des branches thématiques.">
 </div>
 <div class="title">Figure 73. Après fusion des branches thématiques.</div>
 </div>
@@ -395,24 +395,24 @@ Si vous avez un dépôt contenant deux branches nommées <code>ruby_client</code
 <p>Si vous avez plus de développeurs ou un projet plus important, vous souhaiterez probablement utiliser un cycle de fusion à deux étapes.
 Dans ce scénario, vous avez deux branches au long cours, <code>master</code> et <code>develop</code>, dans lequel vous déterminez que <code>master</code> est mis à jour seulement lors d’une version vraiment stable et tout le nouveau code est intégré dans la branche <code>develop</code>.
 Vous poussez régulièrement ces deux branches sur le dépôt public.
-Chaque fois que vous avez une nouvelle branche thématique à fusionner (<a href="ch00/merwf_c">Avant la fusion d’une branche thématique.</a>), vous la fusionnez dans <code>develop</code> (<a href="ch00/merwf_d">Après la fusion d’une branche thématique.</a>).
-Puis, lorsque vous étiquetez une version majeure, vous mettez <code>master</code> à niveau avec l’état stable de <code>develop</code> en avance rapide (<a href="ch00/merwf_e">Après une publication d’une branche thématique.</a>).</p>
+Chaque fois que vous avez une nouvelle branche thématique à fusionner (<a href="{{< relurl "book/fr/v2/ch00/merwf_c" >}}">Avant la fusion d’une branche thématique.</a>), vous la fusionnez dans <code>develop</code> (<a href="{{< relurl "book/fr/v2/ch00/merwf_d" >}}">Après la fusion d’une branche thématique.</a>).
+Puis, lorsque vous étiquetez une version majeure, vous mettez <code>master</code> à niveau avec l’état stable de <code>develop</code> en avance rapide (<a href="{{< relurl "book/fr/v2/ch00/merwf_e" >}}">Après une publication d’une branche thématique.</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Avant la fusion d’une branche thématique.">
+<img src="{{< relurl "book/fr/v2/images/merging-workflows-3.png" >}}" alt="Avant la fusion d’une branche thématique.">
 </div>
 <div class="title">Figure 74. Avant la fusion d’une branche thématique.</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Après la fusion d’une branche thématique.">
+<img src="{{< relurl "book/fr/v2/images/merging-workflows-4.png" >}}" alt="Après la fusion d’une branche thématique.">
 </div>
 <div class="title">Figure 75. Après la fusion d’une branche thématique.</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Après une publication d’une branche thématique.">
+<img src="{{< relurl "book/fr/v2/images/merging-workflows-5.png" >}}" alt="Après une publication d’une branche thématique.">
 </div>
 <div class="title">Figure 76. Après une publication d’une branche thématique.</div>
 </div>
@@ -430,13 +430,13 @@ Quand cela s’est avéré stable pendant un certain temps, vous mettez à jour 
 <div class="paragraph">
 <p>
 Le projet Git dispose de quatre branches au long cours : <code>master</code>, <code>next</code>, <code>pu</code> (<em>proposed updates</em> : propositions) pour les nouveaux travaux et <code>maint</code> pour les backports de maintenance.
-Quand une nouvelle contribution est proposée, elle est collectée dans des branches thématiques dans le dépôt du mainteneur d’une manière similaire à ce que j’ai décrit (<a href="ch00/merwf_f">Série complexe de branches thématiques contribuées en parallèle.</a>).
+Quand une nouvelle contribution est proposée, elle est collectée dans des branches thématiques dans le dépôt du mainteneur d’une manière similaire à ce que j’ai décrit (<a href="{{< relurl "book/fr/v2/ch00/merwf_f" >}}">Série complexe de branches thématiques contribuées en parallèle.</a>).
 À ce point, les fonctionnalités sont évaluées pour déterminer si elles sont stables et prêtes à être consommées ou si elles nécessitent un peaufinage.
 Si elles sont stables, elles sont fusionnées dans <code>next</code> et cette branche est poussée sur le serveur public pour que tout le monde puisse essayer les fonctionnalités intégrées ensemble.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Série complexe de branches thématiques contribuées en parallèle.">
+<img src="{{< relurl "book/fr/v2/images/large-merges-1.png" >}}" alt="Série complexe de branches thématiques contribuées en parallèle.">
 </div>
 <div class="title">Figure 77. Série complexe de branches thématiques contribuées en parallèle.</div>
 </div>
@@ -447,7 +447,7 @@ Cela signifie que <code>master</code> évolue quasiment toujours en mode avance 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Fusion des branches thématiques dans les branches à long terme.">
+<img src="{{< relurl "book/fr/v2/images/large-merges-2.png" >}}" alt="Fusion des branches thématiques dans les branches à long terme.">
 </div>
 <div class="title">Figure 78. Fusion des branches thématiques dans les branches à long terme.</div>
 </div>
@@ -477,7 +477,7 @@ Par exemple, supposons que vous ayez un projet ressemblant à ceci :</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Historique d’exemple avant une sélection.">
+<img src="{{< relurl "book/fr/v2/images/rebasing-1.png" >}}" alt="Historique d’exemple avant une sélection.">
 </div>
 <div class="title">Figure 79. Historique d’exemple avant une sélection.</div>
 </div>
@@ -498,7 +498,7 @@ Finished one cherry-pick.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Historique après sélection d’un _commit_ dans une branche thématique.">
+<img src="{{< relurl "book/fr/v2/images/rebasing-2.png" >}}" alt="Historique après sélection d’un _commit_ dans une branche thématique.">
 </div>
 <div class="title">Figure 80. Historique après sélection d’un <em>commit</em> dans une branche thématique.</div>
 </div>
@@ -532,7 +532,7 @@ L’étape de configuration est <code>rerere.enabled</code> qui active la foncti
 <p>Si besoin, vous pouvez interagir avec le cache rerere au moyen de la commande <code>git rerere</code>.
 Quand elle est invoquée telle quelle, Git vérifie sa base de données de résolutions et essaie de trouver une correspondance avec les conflits en cours et les résout (bien que ce soit automatique si <code>rerere.enabled</code> est à <code>true</code>).
 Il existe aussi des sous-commandes permettant de voir ce qui sera enregistré, d’effacer du cache une résolution spécifique ou d’effacer entièrement le cache.
-rerere est traité plus en détail dans <a href="ch00/s_sect_rerere">Rerere</a>.</p>
+rerere est traité plus en détail dans <a href="{{< relurl "book/fr/v2/ch00/s_sect_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -541,7 +541,7 @@ rerere est traité plus en détail dans <a href="ch00/s_sect_rerere">Rerere</a>.
 <div class="paragraph">
 <p>
 Quand vous décidez de créer une publication de votre projet, vous souhaiterez probablement étiqueter le projet pour pouvoir recréer cette version dans le futur.
-Vous pouvez créer une nouvelle étiquette (<em>tag</em>) telle que décrite dans <a href="ch00/ch02-git-basics-chapter">Les bases de Git</a>.
+Vous pouvez créer une nouvelle étiquette (<em>tag</em>) telle que décrite dans <a href="{{< relurl "book/fr/v2/ch00/ch02-git-basics-chapter" >}}">Les bases de Git</a>.
 Si vous décidez de signer l’étiquette en tant que mainteneur, la commande ressemblera à ceci :</p>
 </div>
 <div class="listingblock">

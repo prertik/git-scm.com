@@ -468,7 +468,7 @@ Date:   Tue Jul 7 01:35:51 2009 -0800
 Si votre système n’est pas un de ceux ci-dessus, vous devriez chercher un importateur en ligne – des importateurs de qualité sont disponibles pour plein d’autres systèmes, incluant CVS, Clear Case, Visual Source Safe, même un dossier d’archives.
 Si aucun de ces outils ne fonctionne pour vous, vous avez un outil plus obscur, ou alors vous avez besoin d’un procédé d’importation personnalisé, vous devriez utiliser <code>git fast-import</code>.
 Cette commande lit des instructions simples depuis l’entrée standard pour écrire des données Git spécifiques.
-Il est bien plus facile de créer des objets Git de cette façon que de lancer des commandes Git brutes ou que d’essayer d’écrire les objets bruts (voir <a href="ch00/ch10-git-internals">Les tripes de Git</a> pour plus d’informations).
+Il est bien plus facile de créer des objets Git de cette façon que de lancer des commandes Git brutes ou que d’essayer d’écrire les objets bruts (voir <a href="{{< relurl "book/fr/v2/ch00/ch10-git-internals" >}}">Les tripes de Git</a> pour plus d’informations).
 De cette façon, vous pouvez écrire un script d’importation qui lit l’information nécessaire hors du système duquel vous importez et qui affiche les instructions directement dans la sortie standard.
 Vous pouvez alors lancer ce programme et envoyer sa sortie à travers un tube dans <code>git fast-import</code>.</p>
 </div>
@@ -494,7 +494,7 @@ Tout ce que vous avez à faire est de dire à <code>fast-import</code> ce que so
 Votre stratégie sera d’explorer les instantanés un à un et créer les <em>commits</em> avec les contenus dans chaque dossier, en liant chaque <em>commit</em> avec le précédent.</p>
 </div>
 <div class="paragraph">
-<p>Comme nous l’avons fait dans <a href="ch00/s_an_example_git_enforced_policy">Exemple de politique gérée par Git</a>, nous écrirons ceci en Ruby, parce que c’est ce avec quoi nous travaillons généralement et ça a tendance à être facile à lire.
+<p>Comme nous l’avons fait dans <a href="{{< relurl "book/fr/v2/ch00/s_an_example_git_enforced_policy" >}}">Exemple de politique gérée par Git</a>, nous écrirons ceci en Ruby, parce que c’est ce avec quoi nous travaillons généralement et ça a tendance à être facile à lire.
 Vous pouvez écrire cet exemple assez facilement avec n’importe quel langage de programmation auquel vous êtes familier – il faut seulement afficher l’information appropriée dans <code>stdout</code>.
 Et, si vous travaillez sous Windows, cela signifie que vous devrez prendre un soin particulier à ne pas introduire de retour chariot (carriage return, CR) à la fin de vos lignes – <code>git fast-import</code> est très exigeant ; il accepte seulement la fin de ligne (Line Feed, LF) et pas le retour chariot fin de ligne (CRLF) que Windows utilise.</p>
 </div>

@@ -30,7 +30,7 @@ Att förstå och behärska denna teknik ger dig ett kraftfullt och unikt verktyg
 <p>För att verligen förstå hur Git använder grenar måste vi ta ett steg tillbaka och undersöka hur Git sparar data.</p>
 </div>
 <div class="paragraph">
-<p>Som du kanske kommer ihåg från <a href="ch00/ch01-getting-started">Kom igång</a> så sparar Git inte data som en serie ändringar eller skillnader, utan istället som en serie <em>ögonblicksbilder</em>.</p>
+<p>Som du kanske kommer ihåg från <a href="{{< relurl "book/sv/v2/ch00/ch01-getting-started" >}}">Kom igång</a> så sparar Git inte data som en serie ändringar eller skillnader, utan istället som en serie <em>ögonblicksbilder</em>.</p>
 </div>
 <div class="paragraph">
 <p>När du skapar en version, skapar Git ett versionsobjekt som innehåller en pekare till ögonblicksbilden av innehållet du förberett för ändringen.
@@ -38,7 +38,7 @@ Detta objektet innehåller författarens namn och e-postadress, meddelandet som 
 </div>
 <div class="paragraph">
 <p>För att visualisera detta, anta att du har en mapp som innehåller tre filer. Du preparerar alla och därefter skapar din version.
-När du preparerar filerna beräknas en checksumma för varje fil (SHA-1 kontrollsumman som vi nämnt tidigare i <a href="ch00/ch01-getting-started">Kom igång</a>), lagrar versionen av filen i Git-förvaret (Git refererar till dem som <em>blobbar</em>), och lägger till kontrollsumman till prepareringsytan:</p>
+När du preparerar filerna beräknas en checksumma för varje fil (SHA-1 kontrollsumman som vi nämnt tidigare i <a href="{{< relurl "book/sv/v2/ch00/ch01-getting-started" >}}">Kom igång</a>), lagrar versionen av filen i Git-förvaret (Git refererar till dem som <em>blobbar</em>), och lägger till kontrollsumman till prepareringsytan:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ Git skapar sedan ett versionsobjekt som har metadata och en pekare till rotkatal
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
+<img src="{{< relurl "book/sv/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
 </div>
 <div class="title">Figur 9. En version och dess träd.</div>
 </div>
@@ -64,7 +64,7 @@ Git skapar sedan ett versionsobjekt som har metadata och en pekare till rotkatal
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
+<img src="{{< relurl "book/sv/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
 </div>
 <div class="title">Figur 10. Versioner och deras föräldrar</div>
 </div>
@@ -92,7 +92,7 @@ Enda anledningen att nästan alla förvar har en, är för att kommandot <code>g
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
+<img src="{{< relurl "book/sv/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
 </div>
 <div class="title">Figur 11. En gren och dess versionshistorik.</div>
 </div>
@@ -115,7 +115,7 @@ Du kan göra detta med kommandot <code>git branch</code>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
+<img src="{{< relurl "book/sv/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
 </div>
 <div class="title">Figur 12. Två grenar pekar på samma serie av versioner</div>
 </div>
@@ -129,7 +129,7 @@ Kommandot <code>git branch</code> <em>skapade</em> bara en ny gren — den b
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
+<img src="{{< relurl "book/sv/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
 </div>
 <div class="title">Figur 13. HEAD pekar på en gren</div>
 </div>
@@ -166,7 +166,7 @@ Låt oss byta till den nya grenen <code>testing</code>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
+<img src="{{< relurl "book/sv/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
 </div>
 <div class="title">Figur 14. HEAD pekar på aktuell gren</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
+<img src="{{< relurl "book/sv/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
 </div>
 <div class="title">Figur 15. Grenen som HEAD pekar på flyttar fram när en version sparas</div>
 </div>
@@ -197,7 +197,7 @@ Låt oss gå tillbaks till <code>master</code>-grenen:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
+<img src="{{< relurl "book/sv/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
 </div>
 <div class="title">Figur 16. HEAD flyttar när du gör checkout</div>
 </div>
@@ -234,14 +234,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Nu har din projekthistorik divergerat (se <a href="ch00/divergent_history">Divergent historik</a>).
+<p>Nu har din projekthistorik divergerat (se <a href="{{< relurl "book/sv/v2/ch00/divergent_history" >}}">Divergent historik</a>).
 Du skapade och bytte till en gren, gjorde lite arbete på den, och sedan bytte du tillbaks till ditt huvudspår och gjorde lite annat arbete.
 Båda ändringarna är isolerade i olika grenar: du kan byta fram och tillbaka mellan grenarna och slå ihop dem när du är redo.
 Allt detta gjorde du med några enkla kommandon; <code>branch</code>, <code>checkout</code> och <code>commit</code>.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Divergent history.">
+<img src="{{< relurl "book/sv/v2/images/advance-master.png" >}}" alt="Divergent history.">
 </div>
 <div class="title">Figur 17. Divergent historik</div>
 </div>

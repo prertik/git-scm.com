@@ -79,7 +79,7 @@ Det ser lite olika ut beroende på vilket operativsystem du använder:</p>
 <div class="paragraph">
 <p>Detta skapar en ny underkatalog som heter <code>.git</code> som innehåller alla nödvändiga filer — ett skelett för Git-förvaret.
 Ännu så länge är inget i ditt projekt spårat.
-(Se <a href="ch00/ch10-git-internals">Git Internals</a> för mer information om exakt vilka filer som finns i <code>.git</code> katalogen du nyss skapade.)</p>
+(Se <a href="{{< relurl "book/sv/v2/ch00/ch10-git-internals" >}}">Git Internals</a> för mer information om exakt vilka filer som finns i <code>.git</code> katalogen du nyss skapade.)</p>
 </div>
 <div class="paragraph">
 <p>Om du vill börja versionshantera existerande filer (till skillnad från en tom mapp), skall du förmodligen spåra filerna och göra en första version.
@@ -104,7 +104,7 @@ Nu har du ett Git-förvar med spårade filer och en första version (commit).</p
 Om du känner till andra versionshanteringssystem som t.ex. Subversion, kommer du notera att kommandot är "clone" och inte "checkout".
 Det finns en viktig distinktion — istället av att få en arbetskopia, får Git en fullständig kopia av i princip all data som servern har.
 Varje version av filen för hela projektets historia hämtas normalt när du kör <code>git clone</code>.
-Ifall serverns disk blir korrupt kan du i själva verket ofta använda nästan vilken klon som helst på någon klient för att återskapa all information som servern hade då förvaret klonades (man kan förlora några krokar på serversidan och liknande, men all versionshanterad data kommer att finnas — se <a href="ch00/_getting_git_on_a_server">Skaffa Git på en server</a> för mer detaljer).</p>
+Ifall serverns disk blir korrupt kan du i själva verket ofta använda nästan vilken klon som helst på någon klient för att återskapa all information som servern hade då förvaret klonades (man kan förlora några krokar på serversidan och liknande, men all versionshanterad data kommer att finnas — se <a href="{{< relurl "book/sv/v2/ch00/_getting_git_on_a_server" >}}">Skaffa Git på en server</a> för mer detaljer).</p>
 </div>
 <div class="paragraph">
 <p>Du klonar ett förvar med <code>git clone &lt;url&gt;</code>.
@@ -133,7 +133,7 @@ Om du går ner i <code>libgit2</code>-mappen som nyss skapades kommer du se proj
 <div class="paragraph">
 <p>Git har ett flertal olika överföringsprotokoll du kan använda.
 Det föregående exemplet använder <code>https://</code>-protokollet men du kan också hitta <code>git://</code> och <code>användare@server:sökväg/till/förvar.git</code>, som använder överföringsprotokollet SSH.
-<a href="ch00/_getting_git_on_a_server">Skaffa Git på en server</a> kommer introducera alla tillgängliga val som servern kan konfigurara för att komma åt dit Git-förvar, samt för- och nackdelarna med de olika valen.</p>
+<a href="{{< relurl "book/sv/v2/ch00/_getting_git_on_a_server" >}}">Skaffa Git på en server</a> kommer introducera alla tillgängliga val som servern kan konfigurara för att komma åt dit Git-förvar, samt för- och nackdelarna med de olika valen.</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

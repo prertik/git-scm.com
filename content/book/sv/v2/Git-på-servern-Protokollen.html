@@ -64,7 +64,7 @@ Till exempel, för att klona ett lokalt repo kan du göra något i stil med:</p>
 <p>Git jobbar något olika om du explicit specificerar <code>file://</code> i början av URL:en.
 Om du bara specificerar sökvägen, kommer Git att försöka använda hårda länkar eller att direkt kopiera filerna som behövs.
 Om du specificerar <code>file://</code>, kommer Git att starta den process som den normalt användef för att överföra data över nätverk, vilken generellt är midre effektiv.
-Huvudanledningen att specificera prefixet <code>file://</code> är oim du vill ha en ren kopia av repot med irrelevanta referenser eller objekt som lämnats kvar — normalt efter import från ett annat versionshanteringssystem eller liknande (se <a href="ch00/ch10-git-internals">Git Internals</a> för underhållsuppgifter).
+Huvudanledningen att specificera prefixet <code>file://</code> är oim du vill ha en ren kopia av repot med irrelevanta referenser eller objekt som lämnats kvar — normalt efter import från ett annat versionshanteringssystem eller liknande (se <a href="{{< relurl "book/sv/v2/ch00/ch10-git-internals" >}}">Git Internals</a> för underhållsuppgifter).
 Vi använder vanliga sökvägar här eftersom det nästan alltid går fortare.</p>
 </div>
 <div class="paragraph">
@@ -84,7 +84,7 @@ Vi använder vanliga sökvägar här eftersom det nästan alltid går fortare.</
 <p>Fördelarna med filbaserade repon är att de är enkla och använder existerande filrättigheter och nätverksåtkomst.
 Om du redan har ett delat filsystem till vilket hela teamet har åtkomst är det väldigt enkelt att sätta upp ett repo.
 Du lägger den bara repokopian någonstans dit alla har delad åtkomst och sätter läs- och skrivrättigheter som du skulle gjort för vilken annan delad mapp som helst.
-Vi diskuterar hur man exporterar en bar repokopia för detta ändamål i <a href="ch00/_getting_git_on_a_server">Skaffa Git på en server</a>.</p>
+Vi diskuterar hur man exporterar en bar repokopia för detta ändamål i <a href="{{< relurl "book/sv/v2/ch00/_getting_git_on_a_server" >}}">Skaffa Git på en server</a>.</p>
 </div>
 <div class="paragraph">
 <p>Detta är också ett trevligt alternativ för att snabbt hämta arbete från någon annans arbetsrepo.
@@ -141,7 +141,7 @@ Detsamma gäller för läsåtkomst.</p>
 Om server inte svarar med med en Smart HTTP Git tjänst, kommer Gitklienten att försöka falla tillbaka till det enklare <em>dumma</em> HTTP.
 Det dumma protokollet förväntar sig att det bara Gitrepot kommer att sändas som normala filer från webservern.
 Det fina i kråksången med Dum HTTP är enkelheten att konfigurera det.
-I praktiken behöver du du bara lägga ditt Gitrepo under di dokumentroten för din HTTP-server och konfigurera en specifik <code>post-update</code> krok, och du är klar (se <a href="ch00/_git_hooks">Git Hooks</a>).
+I praktiken behöver du du bara lägga ditt Gitrepo under di dokumentroten för din HTTP-server och konfigurera en specifik <code>post-update</code> krok, och du är klar (se <a href="{{< relurl "book/sv/v2/ch00/_git_hooks" >}}">Git Hooks</a>).
 När du gjort det, kan alla med åtkomst till din webserver dit du lade ditt repo också klona det.
 För att tillåta läsrättigheter för ditt repo över HTTP, gör något i stil med detta:</p>
 </div>
@@ -166,7 +166,7 @@ Detta kommando körs när du skickar till detta repo (kanske via SSH), då kan a
 </div>
 <div class="paragraph">
 <p>I detta specifika fallet använder vi sökvägen <code>var/www/htdocs</code> som är vanlig för Apachekonfigurationer, men du kan använda vilken statisk webserver som helst — lägg bara det bara repot på dess plats.
-Gitdata skickas som vanliga statiska filer (se kapitlet <a href="ch00/ch10-git-internals">Git Internals</a> för detaljer kring exakt hur det går till).</p>
+Gitdata skickas som vanliga statiska filer (se kapitlet <a href="{{< relurl "book/sv/v2/ch00/ch10-git-internals" >}}">Git Internals</a> för detaljer kring exakt hur det går till).</p>
 </div>
 <div class="paragraph">
 <p>I gemen väljer du enkom att köra en Smart HTTP server med läs- och skrivrättigheter eller bara tillgängliggöra filerna för läsning via dum HTTP.
@@ -200,7 +200,7 @@ Utöver det finns det väldigt få fördelar som andra protokoll har över Smart
 <div class="paragraph">
 <p>Om du använder HTTP för autentisering vid skickande av data är det ibland mer komplicerat att ange dina inloggningsuppgifter än att använda nycklar över SSH.
 Det finns dock flera verktyg som sparar inloggningsuppgifter, inklusive Keychain på macOS och Credential Manager på Windows, för att göra detta ganska smärtfritt.
-Läs <a href="ch00/_credential_caching">Credential Storage</a> för att se hur du kan konfigurera säkra sätt att spara inloggningsuggifter för HTTP på ditt system.</p>
+Läs <a href="{{< relurl "book/sv/v2/ch00/_credential_caching" >}}">Credential Storage</a> för att se hur du kan konfigurera säkra sätt att spara inloggningsuggifter för HTTP på ditt system.</p>
 </div>
 </div>
 </div>

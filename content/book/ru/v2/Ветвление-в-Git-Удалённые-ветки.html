@@ -59,7 +59,7 @@ Git также создаст вам локальную ветку <code>master<
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Серверный и локальный репозитории после клонирования">
+<img src="{{< relurl "book/ru/v2/images/remote-branches-1.png" >}}" alt="Серверный и локальный репозитории после клонирования">
 </div>
 <div class="title">Рисунок 30. Серверный и локальный репозитории после клонирования</div>
 </div>
@@ -69,7 +69,7 @@ Git также создаст вам локальную ветку <code>master<
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Локальная и удалённая работа может расходиться">
+<img src="{{< relurl "book/ru/v2/images/remote-branches-2.png" >}}" alt="Локальная и удалённая работа может расходиться">
 </div>
 <div class="title">Рисунок 31. Локальная и удалённая работа может расходиться</div>
 </div>
@@ -79,19 +79,19 @@ Git также создаст вам локальную ветку <code>master<
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` обновляет ветки слежения">
+<img src="{{< relurl "book/ru/v2/images/remote-branches-3.png" >}}" alt="`git fetch` обновляет ветки слежения">
 </div>
 <div class="title">Рисунок 32. <code>git fetch</code> обновляет ветки слежения</div>
 </div>
 <div class="paragraph">
 <p>Чтобы продемонстрировать, как будут выглядеть удалённые ветки в ситуации с несколькими удалёнными серверами, предположим, что у вас есть ещё один внутренний Git-сервер, который используется для разработки только одной из ваших команд разработчиков.
 Этот сервер находится на <code>git.team1.ourcompany.com</code>.
-Вы можете добавить его в качестве новой удалённой ссылки для текущего проекта с помощью команды <code>git remote add</code>, как было описано в главе <a href="ch00/ch02-git-basics-chapter">Основы Git</a>.
+Вы можете добавить его в качестве новой удалённой ссылки для текущего проекта с помощью команды <code>git remote add</code>, как было описано в главе <a href="{{< relurl "book/ru/v2/ch00/ch02-git-basics-chapter" >}}">Основы Git</a>.
 Назовите этот удалённый сервер <code>teamone</code> — это имя будет сокращением вместо полного URL.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Добавление ещё одного сервера в качестве удалённой ветки">
+<img src="{{< relurl "book/ru/v2/images/remote-branches-4.png" >}}" alt="Добавление ещё одного сервера в качестве удалённой ветки">
 </div>
 <div class="title">Рисунок 33. Добавление ещё одного сервера в качестве удалённой ветки</div>
 </div>
@@ -101,7 +101,7 @@ Git также создаст вам локальную ветку <code>master<
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Ветка слежения `teamone/master`">
+<img src="{{< relurl "book/ru/v2/images/remote-branches-5.png" >}}" alt="Ветка слежения `teamone/master`">
 </div>
 <div class="title">Рисунок 34. Ветка слежения <code>teamone/master</code>
 </div>
@@ -133,7 +133,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>Это в некотором роде сокращение.
 Git автоматически разворачивает имя ветки <code>serverfix</code> до <code>refs/heads/serverfix:refs/heads/serverfix</code>, что означает «возьми мою локальную ветку <code>serverfix</code> и обнови ей удалённую ветку <code>serverfix</code>».
-Мы подробно рассмотрим часть с <code>refs/heads/</code> в главе <a href="ch00/ch10-git-internals">Git изнутри</a>, но обычно её можно пропустить.
+Мы подробно рассмотрим часть с <code>refs/heads/</code> в главе <a href="{{< relurl "book/ru/v2/ch00/ch10-git-internals" >}}">Git изнутри</a>, но обычно её можно пропустить.
 Вы также можете выполнить <code>git push origin serverfix:serverfix</code> — произойдёт то же самое — здесь говорится «возьми мою ветку <code>serverfix</code> и сделай её удалённой веткой <code>serverfix</code>».
 Можно использовать этот формат для отправки локальной ветки в удалённую ветку с другим именем.
 Если вы не хотите, чтобы на удалённом сервере ветка называлась <code>serverfix</code>, то вместо предыдущей команды выполните <code>git push origin serverfix:awesomebranch</code>, которая отправит локальную ветку <code>serverfix</code> в ветку <code>awesomebranch</code> удалённого репозитория.</p>
@@ -155,7 +155,7 @@ Git автоматически разворачивает имя ветки <cod
 Проще всего держать их в памяти несколько минут, это легко настроить с помощью команды <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>Для получения более подробной информации о различных вариантах кэша учётных данных обратитесь к разделу <a href="ch00/r_credential_caching">Хранилище учётных данных</a>.</p>
+<p>Для получения более подробной информации о различных вариантах кэша учётных данных обратитесь к разделу <a href="{{< relurl "book/ru/v2/ch00/r_credential_caching" >}}">Хранилище учётных данных</a>.</p>
 </div>
 </td>
 </tr>

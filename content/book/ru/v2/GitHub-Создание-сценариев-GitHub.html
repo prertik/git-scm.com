@@ -35,11 +35,11 @@ title: Git - Создание сценариев GitHub
 <div class="paragraph">
 <p>Сначала мы рассмотрим сервисы.
 Интеграцию хуков и сервисов можно найти в разделе «Настройки» («Settings») вашего репозитория, где ранее мы рассматривали возможность добавления соавторов и изменения ветки вашего проекта по умолчанию.
-На вкладке «Вебхуки и сервисы» («Webhooks and Services») вы увидите что-то вроде <a href="ch00/r_services_hooks">Раздел настройки сервисов и хуков</a>.</p>
+На вкладке «Вебхуки и сервисы» («Webhooks and Services») вы увидите что-то вроде <a href="{{< relurl "book/ru/v2/ch00/r_services_hooks" >}}">Раздел настройки сервисов и хуков</a>.</p>
 </div>
 <div id="r_services_hooks" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-01-services.png" >}}" alt="Services and hooks">
+<img src="{{< relurl "book/ru/v2/images/scripting-01-services.png" >}}" alt="Services and hooks">
 </div>
 <div class="title">Рисунок 129. Раздел настройки сервисов и хуков</div>
 </div>
@@ -47,11 +47,11 @@ title: Git - Создание сценариев GitHub
 <p>Вы можете выбирать из десятков сервисов, большинство из которых интегрируются в другие коммерческие системы и системы с открытым исходным кодом.
 Большинство из них предназначены для сервисов непрерывной интеграции, систем отслеживания ошибок и проблем, систем чатов и систем документации.
 Мы рассмотрим настройку очень простого хука электронной почты.
-Если вы выберете «email» в раскрывающемся списке «Добавить сервис» («Add Service»), вы получите экран конфигурации, например <a href="ch00/r_service_config">Конфигурация службы электронной почты</a>.</p>
+Если вы выберете «email» в раскрывающемся списке «Добавить сервис» («Add Service»), вы получите экран конфигурации, например <a href="{{< relurl "book/ru/v2/ch00/r_service_config" >}}">Конфигурация службы электронной почты</a>.</p>
 </div>
 <div id="r_service_config" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-02-email-service.png" >}}" alt="Email service">
+<img src="{{< relurl "book/ru/v2/images/scripting-02-email-service.png" >}}" alt="Email service">
 </div>
 <div class="title">Рисунок 130. Конфигурация службы электронной почты</div>
 </div>
@@ -75,12 +75,12 @@ title: Git - Создание сценариев GitHub
 <p>Как правило, это работает так: вы можете настроить небольшой веб-сервис для прослушивания полезных данных хука GitHub, а затем что-то делать с данными, когда они будут получены.</p>
 </div>
 <div class="paragraph">
-<p>Чтобы включить хук, вы нажимаете кнопку «Добавить вебхук» («Add webhook») в <a href="ch00/r_services_hooks">Раздел настройки сервисов и хуков</a>.
-Это приведет вас на страницу, которая выглядит как <a href="ch00/r_web_hook">Конфигурация вебхука</a>.</p>
+<p>Чтобы включить хук, вы нажимаете кнопку «Добавить вебхук» («Add webhook») в <a href="{{< relurl "book/ru/v2/ch00/r_services_hooks" >}}">Раздел настройки сервисов и хуков</a>.
+Это приведет вас на страницу, которая выглядит как <a href="{{< relurl "book/ru/v2/ch00/r_web_hook" >}}">Конфигурация вебхука</a>.</p>
 </div>
 <div id="r_web_hook" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-03-webhook.png" >}}" alt="Web hook">
+<img src="{{< relurl "book/ru/v2/images/scripting-03-webhook.png" >}}" alt="Web hook">
 </div>
 <div class="title">Рисунок 131. Конфигурация вебхука</div>
 </div>
@@ -143,7 +143,7 @@ end</code></pre>
 </div>
 <div id="r_web_hook_debug" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-04-webhook-debug.png" >}}" alt="Webhook debug">
+<img src="{{< relurl "book/ru/v2/images/scripting-04-webhook-debug.png" >}}" alt="Webhook debug">
 </div>
 <div class="title">Рисунок 132. Информация об отладке вебхуков</div>
 </div>
@@ -229,7 +229,7 @@ hs_err_pid*
 </div>
 <div id="r_access_token" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-05-access-token.png" >}}" alt="Access Token">
+<img src="{{< relurl "book/ru/v2/images/scripting-05-access-token.png" >}}" alt="Access Token">
 </div>
 <div class="title">Рисунок 133. Сгенерируйте токен доступа на вкладке «Приложения» («Applications») на странице настроек</div>
 </div>
@@ -275,11 +275,11 @@ hs_err_pid*
 </div>
 </div>
 <div class="paragraph">
-<p>Теперь, если вы перейдёте к этой проблеме, вы увидите комментарий, который мы только что успешно разместили, например <a href="ch00/r_api_comment">Комментарий, отправленный из GitHub API</a>.</p>
+<p>Теперь, если вы перейдёте к этой проблеме, вы увидите комментарий, который мы только что успешно разместили, например <a href="{{< relurl "book/ru/v2/ch00/r_api_comment" >}}">Комментарий, отправленный из GitHub API</a>.</p>
 </div>
 <div id="r_api_comment" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-06-comment.png" >}}" alt="API Comment">
+<img src="{{< relurl "book/ru/v2/images/scripting-06-comment.png" >}}" alt="API Comment">
 </div>
 <div class="title">Рисунок 134. Комментарий, отправленный из GitHub API</div>
 </div>
@@ -352,11 +352,11 @@ end</code></pre>
 Например, сервис тестирования может предоставить статус, а сервис проверки, подобная этой, также может предоставить статус — поле «контекст» — это то, как они различаются.</p>
 </div>
 <div class="paragraph">
-<p>Если кто-то откроет новый запрос на слияние на GitHub и этот хук настроен, вы можете увидеть что-то вроде <a href="ch00/r_commit_status">Статус коммита через API</a>.</p>
+<p>Если кто-то откроет новый запрос на слияние на GitHub и этот хук настроен, вы можете увидеть что-то вроде <a href="{{< relurl "book/ru/v2/ch00/r_commit_status" >}}">Статус коммита через API</a>.</p>
 </div>
 <div id="r_commit_status" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-07-status.png" >}}" alt="Commit status">
+<img src="{{< relurl "book/ru/v2/images/scripting-07-status.png" >}}" alt="Commit status">
 </div>
 <div class="title">Рисунок 135. Статус коммита через API</div>
 </div>

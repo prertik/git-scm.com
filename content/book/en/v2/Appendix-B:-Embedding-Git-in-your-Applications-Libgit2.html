@@ -58,7 +58,7 @@ This is the simplest method, for when you know the exact path to a repository’
 There’s also the <code>git_repository_open_ext</code> which includes options for searching, <code>git_clone</code> and friends for making a local clone of a remote repository, and <code>git_repository_init</code> for creating an entirely new repository.</p>
 </div>
 <div class="paragraph">
-<p>The second chunk of code uses rev-parse syntax (see <a href="ch00/_branch_references">Branch References</a> for more on this) to get the commit that HEAD eventually points to.
+<p>The second chunk of code uses rev-parse syntax (see <a href="{{< relurl "book/en/v2/ch00/_branch_references" >}}">Branch References</a> for more on this) to get the commit that HEAD eventually points to.
 The type returned is a <code>git_object</code> pointer, which represents something that exists in the Git object database for a repository.
 <code>git_object</code> is actually a “parent” type for several different kinds of objects; the memory layout for each of the “child” types is the same as for <code>git_object</code>, so you can safely cast to the right one.
 In this case, <code>git_object_type(commit)</code> would return <code>GIT_OBJ_COMMIT</code>, so it’s safe to cast to a <code>git_commit</code> pointer.</p>
@@ -164,7 +164,7 @@ This uses the tip of HEAD for the single parent.</p>
 </div>
 <div class="paragraph">
 <p>The Ruby code is nice and clean, but since Libgit2 is doing the heavy lifting, this code will run pretty fast, too.
-If you’re not a rubyist, we touch on some other bindings in <a href="ch00/_libgit2_bindings">Other Bindings</a>.</p>
+If you’re not a rubyist, we touch on some other bindings in <a href="{{< relurl "book/en/v2/ch00/_libgit2_bindings" >}}">Other Bindings</a>.</p>
 </div>
 <div class="sect3">
 <h3 id="_advanced_functionality">Advanced Functionality</h3>

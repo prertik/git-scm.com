@@ -264,7 +264,7 @@ With <code>reset --soft</code>, it will simply stop there.</p>
 <p>Now take a second to look at that diagram and realize what happened: it essentially undid the last <code>git commit</code> command.
 When you run <code>git commit</code>, Git creates a new commit and moves the branch that HEAD points to up to it.
 When you <code>reset</code> back to <code>HEAD~</code> (the parent of HEAD), you are moving the branch back to where it was, without changing the index or working directory.
-You could now update the index and run <code>git commit</code> again to accomplish what <code>git commit --amend</code> would have done (see <a href="ch00/_git_amend">Changing the Last Commit</a>).</p>
+You could now update the index and run <code>git commit</code> again to accomplish what <code>git commit --amend</code> would have done (see <a href="{{< relurl "book/en/v2/ch00/_git_amend" >}}">Changing the Last Commit</a>).</p>
 </div>
 </div>
 <div class="sect4">
@@ -374,7 +374,7 @@ If we look at the diagram for that command and think about what <code>git add</c
 <div class="title">Figure 149. Staging file to index</div>
 </div>
 <div class="paragraph">
-<p>This is why the output of the <code>git status</code> command suggests that you run this to unstage a file (see <a href="ch00/_unstaging">Unstaging a Staged File</a> for more on this).</p>
+<p>This is why the output of the <code>git status</code> command suggests that you run this to unstage a file (see <a href="{{< relurl "book/en/v2/ch00/_unstaging" >}}">Unstaging a Staged File</a> for more on this).</p>
 </div>
 <div class="paragraph">
 <p>We could just as easily not let Git assume we meant “pull the data from HEAD” by specifying a specific commit to pull that file version from.
@@ -403,7 +403,7 @@ So you can selectively unstage or revert content.</p>
 <div class="paragraph">
 <p>Say you have a series of commits with messages like “oops.”, “WIP” and “forgot this file”.
 You can use <code>reset</code> to quickly and easily squash them into a single commit that makes you look really smart.
-<a href="ch00/_squashing">Squashing Commits</a> shows another way to do this, but in this example it’s simpler to use <code>reset</code>.</p>
+<a href="{{< relurl "book/en/v2/ch00/_squashing" >}}">Squashing Commits</a> shows another way to do this, but in this example it’s simpler to use <code>reset</code>.</p>
 </div>
 <div class="paragraph">
 <p>Let’s say you have a project where the first commit has one file, the second commit added a new file and changed the first, and the third commit changed the first file again.

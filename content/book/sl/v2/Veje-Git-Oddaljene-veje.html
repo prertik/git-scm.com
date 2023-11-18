@@ -59,7 +59,7 @@ Medtem ko je »master« privzeto ime za začetno vejo, ko poženete <code>git in
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-1.png" >}}" alt="Strežniški in lokalni repozitorij po kloniranju">
+<img src="{{< relurl "book/sl/v2/images/remote-branches-1.png" >}}" alt="Strežniški in lokalni repozitorij po kloniranju">
 </div>
 <div class="title">Slika 30. Strežniški in lokalni repozitorij po kloniranju</div>
 </div>
@@ -69,7 +69,7 @@ Tudi, dokler ostanete izven povezave z vašim strežnikom <code>origin</code>, s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-2.png" >}}" alt="Lokalno in oddaljeno delo se lahko razlikuje">
+<img src="{{< relurl "book/sl/v2/images/remote-branches-2.png" >}}" alt="Lokalno in oddaljeno delo se lahko razlikuje">
 </div>
 <div class="title">Slika 31. Lokalno in oddaljeno delo se lahko razlikuje</div>
 </div>
@@ -79,19 +79,19 @@ Ta ukaz poišče strežnik, kjer je »origin« (v tem primeru je <code>git.ourco
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-3.png" >}}" alt="`git fetch` posodobi vaše veje s sledenjem na daljavo">
+<img src="{{< relurl "book/sl/v2/images/remote-branches-3.png" >}}" alt="`git fetch` posodobi vaše veje s sledenjem na daljavo">
 </div>
 <div class="title">Slika 32. <code>git fetch</code> posodobi vaše veje s sledenjem na daljavo</div>
 </div>
 <div class="paragraph">
 <p>Za demonstracijo imetja večih oddaljenih strežnikov in kako so oddaljene veje za te oddaljene projekte videti, predpostavimo, da imate drug interni strežnik Git, ki je uporabljen samo za razvoj s strani ene vaših šprintnih ekip (angl. <em>sprint teams</em>).
 Ta strežnik je na <code>git.team1.ourcompany.com</code>.
-Lahko ga dodate kot novo oddaljeno referenco k projektu, kjer trenutno delate, s pogonom ukaza <code>git remote add</code>, kot smo pokrili v <a href="ch00/ch02-git-basics-chapter">Osnove Git</a>.
+Lahko ga dodate kot novo oddaljeno referenco k projektu, kjer trenutno delate, s pogonom ukaza <code>git remote add</code>, kot smo pokrili v <a href="{{< relurl "book/sl/v2/ch00/ch02-git-basics-chapter" >}}">Osnove Git</a>.
 Poimenujte to daljavo <code>teamone</code>, ki bo vaše kratko ime za ta celotni URL.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-4.png" >}}" alt="Dodajanje novega strežnika kot daljave">
+<img src="{{< relurl "book/sl/v2/images/remote-branches-4.png" >}}" alt="Dodajanje novega strežnika kot daljave">
 </div>
 <div class="title">Slika 33. Dodajanje novega strežnika kot daljave</div>
 </div>
@@ -101,7 +101,7 @@ Ker ima ta strežnik podnabor podatkov, ki jih ima sedaj vaš strežnik <code>or
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/remote-branches-5.png" >}}" alt="Veja s sledenjem daljave za `teamone/master`">
+<img src="{{< relurl "book/sl/v2/images/remote-branches-5.png" >}}" alt="Veja s sledenjem daljave za `teamone/master`">
 </div>
 <div class="title">Slika 34. Veja s sledenjem daljave za <code>teamone/master</code>
 </div>
@@ -133,7 +133,7 @@ To https://github.com/schacon/simplegit
 <div class="paragraph">
 <p>To je nekakšna bližnjica.
 Git avtomatično razširi ime veje <code>serverfix</code> v <code>refs/heads/serverfix:refs/heads/serverfix</code>, kar pomeni, »Vzemi mojo lokalno vejo <code>serverfix</code> in jo potisni, da se posodobi oddaljena veja <code>serverfix</code>«.
-Podrobneje bomo šli skozi del <code>refs/heads/</code> v poglavju <a href="ch00/ch10-git-internals">Notranjost Gita</a>, vendar v splošnem lahko to izpustite.
+Podrobneje bomo šli skozi del <code>refs/heads/</code> v poglavju <a href="{{< relurl "book/sl/v2/ch00/ch10-git-internals" >}}">Notranjost Gita</a>, vendar v splošnem lahko to izpustite.
 Lahko naredite tudi <code>git push origin serverfix:serverfix</code>, kar naredi isto stvar — pravi »Vzemi mojo vejo <code>serverfix</code> in jo naredi oddaljeno vejo <code>serverfix</code>«.
 To obliko lahko uporabite za potiskanje lokalne veje na oddaljeno vejo, ki je poimenovana drugače.
 Če ne želite, da se na daljavi imenuje <code>serverfix</code>, lahko namesto tega poženete <code>git push origin serverfix:awesomebranch</code>, da potisnete vašo lokalno vejo <code>serverfix</code> na vejo <code>awesomebranch</code> na oddaljenem projektu.</p>
@@ -155,7 +155,7 @@ Privzeto vas bo vprašal za te informacije v terminalu, tako da strežnik lahko 
 Najenostavnejše ga je samo obdržati v spominu za nekaj minut, kar lahko enostavno nastavite s pogonom <code>git config --global credential.helper cache</code>.</p>
 </div>
 <div class="paragraph">
-<p>Za več informacij o različnih možnostih predpomnjenja poverilnic, ki so na voljo, glejte razdelek <a href="ch00/_credential_caching">Shramba poverilnic</a>.</p>
+<p>Za več informacij o različnih možnostih predpomnjenja poverilnic, ki so na voljo, glejte razdelek <a href="{{< relurl "book/sl/v2/ch00/_credential_caching" >}}">Shramba poverilnic</a>.</p>
 </div>
 </td>
 </tr>

@@ -35,7 +35,7 @@ Pokrili bomo tudi nekatere različne, nestandardne vrste združevanja ter videli
 <div class="sect3">
 <h3 id="_konflikti_združevanja">Konflikti združevanja</h3>
 <div class="paragraph">
-<p>Medtem ko smo v razdelku <a href="ch00/_basic_merge_conflicts">Konflikti osnovnega združevanja</a> predstavili nekaj osnov reševanja konfliktov med združevanjem, Git ponuja nekaj orodij za pomoč pri reševanju bolj zapletenih konfliktov.</p>
+<p>Medtem ko smo v razdelku <a href="{{< relurl "book/sl/v2/ch00/_basic_merge_conflicts" >}}">Konflikti osnovnega združevanja</a> predstavili nekaj osnov reševanja konfliktov med združevanjem, Git ponuja nekaj orodij za pomoč pri reševanju bolj zapletenih konfliktov.</p>
 </div>
 <div class="paragraph">
 <p>Preden opravite združevanje, ki bi lahko povzročilo konflikte, poskusite najprej poskrbeti, da je delovni imenik čist.
@@ -468,7 +468,7 @@ To vam lahko pomaga dobiti kontekst o tem, kaj je lahko prispevalo h konfliktom.
 Včasih lahko zelo pomaga pregledati nekaj zgodovine, da se spomnite, zakaj sta se dve vrstici razvoja dotaknili istega dela kode.</p>
 </div>
 <div class="paragraph">
-<p>Če želimo dobiti popoln seznam vseh edinstvenih potrditev, ki so bile vključene v katerokoli vejo, ki sodeluje pri tem združevanju, lahko uporabimo sintakso »trojne pike«, ki smo se je naučili v <a href="ch00/_triple_dot">Trojna pika</a>.</p>
+<p>Če želimo dobiti popoln seznam vseh edinstvenih potrditev, ki so bile vključene v katerokoli vejo, ki sodeluje pri tem združevanju, lahko uporabimo sintakso »trojne pike«, ki smo se je naučili v <a href="{{< relurl "book/sl/v2/ch00/_triple_dot" >}}">Trojna pika</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -612,7 +612,7 @@ Recimo, da ste začeli delati na tematski veji, jo po nesreči združili v <code
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-start.png" >}}" alt="Nenamerna potrditev združitve">
+<img src="{{< relurl "book/sl/v2/images/undomerge-start.png" >}}" alt="Nenamerna potrditev združitve">
 </div>
 <div class="title">Slika 155. Nenamerna potrditev združitve</div>
 </div>
@@ -627,13 +627,13 @@ V večini primerov bo sledenje nepravilnemu ukazu <code>git merge</code> z <code
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-reset.png" >}}" alt="Zgodovina po `git reset --hard HEAD~`">
+<img src="{{< relurl "book/sl/v2/images/undomerge-reset.png" >}}" alt="Zgodovina po `git reset --hard HEAD~`">
 </div>
 <div class="title">Slika 156. Zgodovina po <code>git reset --hard HEAD~</code>
 </div>
 </div>
 <div class="paragraph">
-<p><code>reset</code> smo pokrili v razdelku <a href="ch00/_git_reset">Demistifikacija ponastavitve</a>, zato ne bi smelo biti pretežko razumeti, kaj se tu dogaja.
+<p><code>reset</code> smo pokrili v razdelku <a href="{{< relurl "book/sl/v2/ch00/_git_reset" >}}">Demistifikacija ponastavitve</a>, zato ne bi smelo biti pretežko razumeti, kaj se tu dogaja.
 Tukaj je hitra osvežitev: <code>reset --hard</code> običajno opravi tri korake:</p>
 </div>
 <div class="olist arabic">
@@ -652,7 +652,7 @@ V tem primeru želimo premakniti <code>master</code> tja, kjer je bila pred potr
 </div>
 <div class="paragraph">
 <p>Slaba stran tega pristopa je, da se prepisuje zgodovina, kar lahko predstavlja težave z deljenim repozitorijem.
-Preverite <a href="ch00/_rebase_peril">Nevarnosti ponovnega baziranja</a> za več o tem, kaj se lahko zgodi; na kratko, če imajo druge osebe potrditve, ki jih prepisujete, se je treba izogibati uporabi <code>reset</code>.
+Preverite <a href="{{< relurl "book/sl/v2/ch00/_rebase_peril" >}}">Nevarnosti ponovnega baziranja</a> za več o tem, kaj se lahko zgodi; na kratko, če imajo druge osebe potrditve, ki jih prepisujete, se je treba izogibati uporabi <code>reset</code>.
 Ta pristop prav tako ne bo deloval, če so bile ustvarjene druge potrditve od časa združitve; premikanje referenc bi dejansko izgubilo te spremembe.</p>
 </div>
 </div>
@@ -678,7 +678,7 @@ V tem primeru želimo razveljaviti vse spremembe, ki jih je uvedla združitev dr
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert.png" >}}" alt="Zgodovina po `git revert -m 1`">
+<img src="{{< relurl "book/sl/v2/images/undomerge-revert.png" >}}" alt="Zgodovina po `git revert -m 1`">
 </div>
 <div class="title">Slika 157. Zgodovina po <code>git revert -m 1</code>
 </div>
@@ -699,7 +699,7 @@ Kar je še huje, če dodate delo v <code>topic</code> in znova združite, bo Git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert2.png" >}}" alt="Zgodovina s slabo združitvijo">
+<img src="{{< relurl "book/sl/v2/images/undomerge-revert2.png" >}}" alt="Zgodovina s slabo združitvijo">
 </div>
 <div class="title">Slika 158. Zgodovina s slabo združitvijo</div>
 </div>
@@ -715,7 +715,7 @@ $ git merge topic</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/undomerge-revert3.png" >}}" alt="Zgodovina po ponovni združitvi preklicane združitve">
+<img src="{{< relurl "book/sl/v2/images/undomerge-revert3.png" >}}" alt="Zgodovina po ponovni združitvi preklicane združitve">
 </div>
 <div class="title">Slika 159. Zgodovina po ponovni združitvi preklicane združitve</div>
 </div>
@@ -863,7 +863,7 @@ Ni pogosto, saj je redkokdaj koristno, vendar je precej enostavno imeti veje, ki
 <div class="paragraph">
 <p>V tem primeru želimo povleči projekt Rack v naš projekt <code>master</code> kot poddirektorij.
 To lahko naredimo v Gitu z <code>git read-tree</code>.
-Več o <code>read-tree</code> in njegovih prijateljih se boste naučili v <a href="ch00/ch10-git-internals">Notranjost Gita</a>, vendar za sedaj vedite, da prebere vrh drevesa ene veje v vaše trenutno področje priprave in delovni direktorij.
+Več o <code>read-tree</code> in njegovih prijateljih se boste naučili v <a href="{{< relurl "book/sl/v2/ch00/ch10-git-internals" >}}">Notranjost Gita</a>, vendar za sedaj vedite, da prebere vrh drevesa ene veje v vaše trenutno področje priprave in delovni direktorij.
 Smo ravno preklopili nazaj na vašo vejo <code>master</code> in povlečemo vejo <code>rack_branch</code> v poddirektorij <code>rack</code> naše veje <code>master</code> našega glavnega projekta:</p>
 </div>
 <div class="listingblock">
@@ -900,7 +900,7 @@ Automatic merge went well; stopped before committing as requested</code></pre>
 Lahko naredite tudi nasprotno — naredite spremembe v poddirektoriju <code>rack</code> vaše veje <code>master</code> in jih nato kasneje združite v vašo vejo <code>rack_branch</code>, da jih pošljete vzdrževalcem ali potisnete navzgor.</p>
 </div>
 <div class="paragraph">
-<p>To nam da način, da imamo potek dela, ki je nekako podoben tistemu s podmoduli, le brez uporabe podmudolov (kar bomo pokrili v <a href="ch00/_git_submodules">Podmoduli</a>).
+<p>To nam da način, da imamo potek dela, ki je nekako podoben tistemu s podmoduli, le brez uporabe podmudolov (kar bomo pokrili v <a href="{{< relurl "book/sl/v2/ch00/_git_submodules" >}}">Podmoduli</a>).
 Obdržimo lahko veje z ostalimi povezanimi projekti v svojem repozitoriju in jih občasno poddrevesno združimo v svoj projekt.
 Na neki način je dobro, na primer, da je vsa koda potrjena na enem mestu.
 Vendar ima ostale slabosti v tem, da je malo bolj kompleksno in hitro se naredi napake pri ponovnem integriranju sprememb, ali pa se po nesreči potisne veja v nepovezani repozitorij.</p>

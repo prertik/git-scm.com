@@ -371,17 +371,17 @@ V tem scenariju imate vejo <code>master</code>, ki vsebuje v bistvu stabilno kod
 Ko imate delo v tematski veji, za katerega menite, da ste ga dokončali, ali delo, ki ga je prispeval nekdo drug in ste ga preverili, ga združite v vašo vejo <code>master</code>, izbrišete tematsko vejo, ki ste jo ravno združili, ter ponovite.</p>
 </div>
 <div class="paragraph">
-<p>Na primer, če imamo repozitorij z delom v dveh vejah imenovanih <code>ruby_client</code> in <code>php_client</code>, ki je videti kot na sliki <a href="ch00/merwf_a">Zgodovina z več tematskimi vejami</a>, in združimo <code>ruby_client</code>, nato pa še <code>php_client</code>, bo vaša zgodovina videti kot na sliki <a href="ch00/merwf_b">Po združitvi tematske veje</a>.</p>
+<p>Na primer, če imamo repozitorij z delom v dveh vejah imenovanih <code>ruby_client</code> in <code>php_client</code>, ki je videti kot na sliki <a href="{{< relurl "book/sl/v2/ch00/merwf_a" >}}">Zgodovina z več tematskimi vejami</a>, in združimo <code>ruby_client</code>, nato pa še <code>php_client</code>, bo vaša zgodovina videti kot na sliki <a href="{{< relurl "book/sl/v2/ch00/merwf_b" >}}">Po združitvi tematske veje</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Zgodovina z več tematskimi vejami">
+<img src="{{< relurl "book/sl/v2/images/merging-workflows-1.png" >}}" alt="Zgodovina z več tematskimi vejami">
 </div>
 <div class="title">Slika 72. Zgodovina z več tematskimi vejami</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Po združitvi tematske veje">
+<img src="{{< relurl "book/sl/v2/images/merging-workflows-2.png" >}}" alt="Po združitvi tematske veje">
 </div>
 <div class="title">Slika 73. Po združitvi tematske veje</div>
 </div>
@@ -392,23 +392,23 @@ Ko imate delo v tematski veji, za katerega menite, da ste ga dokončali, ali del
 <p>Če imate pomembnejši projekt, bi morda želeli uporabiti dvofazni postopek združevanja.
 V tem scenariju imate dve dolgotrajni veji, <code>master</code> in <code>develop</code>, pri katerih določite, da se <code>master</code> posodobi le, ko je izdana zelo stabilna različica in se vsa nova koda integrira v vejo <code>develop</code>.
 Občasno obe veji potisnete v javni repozitorij.
-Vsakič, ko želite združiti novo tematsko vejo (slika <a href="ch00/merwf_c">Pred združitvijo tematske veje</a>), jo združite v vejo <code>develop</code> (slika <a href="ch00/merwf_d">Po združitvi tematske veje</a>); nato, ko označite izdajo, <code>master</code> hitro posodobite do stabilne točke, kjer je trenutna veja <code>develop</code> (slika <a href="ch00/merwf_e">Po objavi projekta</a>).</p>
+Vsakič, ko želite združiti novo tematsko vejo (slika <a href="{{< relurl "book/sl/v2/ch00/merwf_c" >}}">Pred združitvijo tematske veje</a>), jo združite v vejo <code>develop</code> (slika <a href="{{< relurl "book/sl/v2/ch00/merwf_d" >}}">Po združitvi tematske veje</a>); nato, ko označite izdajo, <code>master</code> hitro posodobite do stabilne točke, kjer je trenutna veja <code>develop</code> (slika <a href="{{< relurl "book/sl/v2/ch00/merwf_e" >}}">Po objavi projekta</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Pred združitvijo tematske veje">
+<img src="{{< relurl "book/sl/v2/images/merging-workflows-3.png" >}}" alt="Pred združitvijo tematske veje">
 </div>
 <div class="title">Slika 74. Pred združitvijo tematske veje</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Po združitvi tematske veje">
+<img src="{{< relurl "book/sl/v2/images/merging-workflows-4.png" >}}" alt="Po združitvi tematske veje">
 </div>
 <div class="title">Slika 75. Po združitvi tematske veje</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Po objavi projekta">
+<img src="{{< relurl "book/sl/v2/images/merging-workflows-5.png" >}}" alt="Po objavi projekta">
 </div>
 <div class="title">Slika 76. Po objavi projekta</div>
 </div>
@@ -423,13 +423,13 @@ Nato, ko je koda na tej veji stabilna in uspešno preide teste, jo združite v v
 <div class="paragraph">
 <p>
 Projekt Git ima štiri dolgotrajne veje: <code>master</code>, <code>next</code> in <code>seen</code> (prej <code>pu</code> — predlagane posodobitve — angl. <em>proposed updates</em>) za novo delo in <code>maint</code> za vzdrževanje posodobitev.
-Ko prispe novo delo s strani sodelavcev, se zbere v tematskih vejah v repozitoriju vzdrževalca na način, podoben temu, kar smo opisali (glejte sliko <a href="ch00/merwf_f">Upravljanje kompleksne serije vzporednih prispevanih tematskih vej</a>).
+Ko prispe novo delo s strani sodelavcev, se zbere v tematskih vejah v repozitoriju vzdrževalca na način, podoben temu, kar smo opisali (glejte sliko <a href="{{< relurl "book/sl/v2/ch00/merwf_f" >}}">Upravljanje kompleksne serije vzporednih prispevanih tematskih vej</a>).
 V tej fazi se ocenijo tematske veje, da se ugotovi, ali so varne in pripravljene za uporabo, ali potrebujejo še več dela.
 Če so varne, se vgradijo v <code>next</code> in ta veja se objavi, tako da lahko vsi preizkusijo teme, integrirane skupaj.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Upravljanje kompleksne serije vzporednih prispevanih tematskih vej">
+<img src="{{< relurl "book/sl/v2/images/large-merges-1.png" >}}" alt="Upravljanje kompleksne serije vzporednih prispevanih tematskih vej">
 </div>
 <div class="title">Slika 77. Upravljanje kompleksne serije vzporednih prispevanih tematskih vej</div>
 </div>
@@ -441,7 +441,7 @@ To pomeni, da se <code>master</code> skoraj vedno premika naprej, <code>next</co
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Združevanje prispevanih tematskih vej v dolgotrajne integracijske veje">
+<img src="{{< relurl "book/sl/v2/images/large-merges-2.png" >}}" alt="Združevanje prispevanih tematskih vej v dolgotrajne integracijske veje">
 </div>
 <div class="title">Slika 78. Združevanje prispevanih tematskih vej v dolgotrajne integracijske veje</div>
 </div>
@@ -471,7 +471,7 @@ Na primer, recimo, da imate projekt, ki je videti tako:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Primer zgodovine pred izbiro najboljšega">
+<img src="{{< relurl "book/sl/v2/images/rebasing-1.png" >}}" alt="Primer zgodovine pred izbiro najboljšega">
 </div>
 <div class="title">Slika 79. Primer zgodovine pred izbiro najboljšega</div>
 </div>
@@ -492,7 +492,7 @@ Sedaj je vaša zgodovina videti takole:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Zgodovina po izbiri najboljše potrditve iz tematske veje">
+<img src="{{< relurl "book/sl/v2/images/rebasing-2.png" >}}" alt="Zgodovina po izbiri najboljše potrditve iz tematske veje">
 </div>
 <div class="title">Slika 80. Zgodovina po izbiri najboljše potrditve iz tematske veje</div>
 </div>
@@ -526,7 +526,7 @@ Konfiguracijska nastavitev je <code>rerere.enabled</code> in je dovolj priročna
 <p>Če je treba, lahko z ukazom <code>git rerere</code> interaktivno upravljate s predpomnilnikom rerere.
 Ko se uporabi samostojno, Git preveri svojo bazo rešitev in poskuša najti ujemanje z morebitnimi trenutnimi konflikti ob združevanju in jih reši (če je <code>rerere.enabled</code> nastavljeno na <code>true</code>, se to izvede samodejno).
 Obstajajo tudi podukazi, s katerimi lahko vidite, kaj bo zabeleženo, izbrišete določeno rešitev iz predpomnilnika ali počistite celoten predpomnilnik.
-Rerere bomo podrobneje obravnavali v <a href="ch00/ref_rerere">Rerere</a>.</p>
+Rerere bomo podrobneje obravnavali v <a href="{{< relurl "book/sl/v2/ch00/ref_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -535,7 +535,7 @@ Rerere bomo podrobneje obravnavali v <a href="ch00/ref_rerere">Rerere</a>.</p>
 <div class="paragraph">
 <p>
 Ko se odločite za izdajo, boste verjetno želeli dodeliti oznako, da boste lahko to izdajo ustvarili kadarkoli v prihodnosti.
-Novo oznako lahko ustvarite, kot je opisano v poglavju <a href="ch00/ch02-git-basics-chapter">Osnove Git</a>.
+Novo oznako lahko ustvarite, kot je opisano v poglavju <a href="{{< relurl "book/sl/v2/ch00/ch02-git-basics-chapter" >}}">Osnove Git</a>.
 Če se odločite podpisati oznako kot vzdrževalec, je lahko postopek označevanja videti nekako takole:</p>
 </div>
 <div class="listingblock">

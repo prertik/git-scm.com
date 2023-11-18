@@ -64,7 +64,7 @@ Na primer, da klonirate lokalni repozitorij, lahko poženete nekaj takega:</p>
 <p>Git operira malenkost drugače, če izrecno določite <code>file://</code> na začetku URL-ja.
 Če določite samo pot, Git poskuša uporabiti trde povezave ali pa neposredno kopira datoteke, ki jih potrebuje.
 Če določite <code>file://</code>, Git požene proces, ki ga običajno uporablja za prenos datotek podatkov preko omrežja, kar je v splošnem veliko manj učinkovita metoda.
-Glavni razlog za določanje predpone <code>file://</code> je, da želite čisto kopijo repozitorija z izpuščenimi neznanimi referencami ali objekti — v splošnem po uvozu iz drugega sistema nadzora različic ali česa podobnega (glejte poglavje <a href="ch00/ch10-git-internals">Notranjost Gita</a> za opravila vzdrževanja).
+Glavni razlog za določanje predpone <code>file://</code> je, da želite čisto kopijo repozitorija z izpuščenimi neznanimi referencami ali objekti — v splošnem po uvozu iz drugega sistema nadzora različic ali česa podobnega (glejte poglavje <a href="{{< relurl "book/sl/v2/ch00/ch10-git-internals" >}}">Notranjost Gita</a> za opravila vzdrževanja).
 Tu bomo uporabili običajno pot, saj je to skoraj vedno hitrejše.</p>
 </div>
 <div class="paragraph">
@@ -84,7 +84,7 @@ Tu bomo uporabili običajno pot, saj je to skoraj vedno hitrejše.</p>
 <p>Prednosti datotečno osnovanih repozitorijev so, da so enostavni in da uporabljajo obstoječe pravice datotek in dostopa omrežja.
 Če že imate deljeni datotečni sistem, do katerega ima dostop celotna ekipa, je nastavitev repozitorija zelo enostavna.
 Prilepite golo kopijo repozitorija nekam, kjer ima vsakdo deljeni dostop in nastavite pravice pisanja/branja, kakor bi to naredili za katerikoli drugi deljeni direktorij.
-S tem namenom bomo v razdelku <a href="ch00/_getting_git_on_a_server">Pridobitev Gita na strežniku</a> govorili, kako izvoziti golo kopijo repozitorija.</p>
+S tem namenom bomo v razdelku <a href="{{< relurl "book/sl/v2/ch00/_getting_git_on_a_server" >}}">Pridobitev Gita na strežniku</a> govorili, kako izvoziti golo kopijo repozitorija.</p>
 </div>
 <div class="paragraph">
 <p>To je tudi dobra možnost za hitro prijetje dela iz delovnega repozitorija nekoga drugega.
@@ -141,7 +141,7 @@ Enako velja za bralni dostop.</p>
 Če se strežnik ne odzove s pametno storitvijo Git HTTP, se bo odjemalec Git poskušal vrniti k enostavnejšemu <em>neumnemu</em> (angl. <em>dumb</em>) protokolu HTTP.
 Neumni protokol pričakuje, da je goli repozitorij Git ponujen kot običajne datoteke s spletnega strežnika.
 Lepota neumnega protokola HTTP je enostavnost nastavitve.
-V osnovi je vse, kar morate narediti, dati goli repozitorij Git pod vaš vrhnji dokumentni direktorij HTTP in nastaviti določeno kljuko <code>post-update</code> ter ste zaključili (glejte razdelek <a href="ch00/_git_hooks">Kljuke Git</a>).
+V osnovi je vse, kar morate narediti, dati goli repozitorij Git pod vaš vrhnji dokumentni direktorij HTTP in nastaviti določeno kljuko <code>post-update</code> ter ste zaključili (glejte razdelek <a href="{{< relurl "book/sl/v2/ch00/_git_hooks" >}}">Kljuke Git</a>).
 Na tej točki kdorkoli, ki lahko dostopa do spletnega strežnika, pod katerim ste dali repozitorij, lahko tudi klonira vaš repozitorij.
 Da omogočite bralni dostop do svojega repozitorija preko HTTP, naredite nekaj takega:</p>
 </div>
@@ -166,7 +166,7 @@ Ta ukaz se izvede, ko potisnete v ta repozitorij (morda preko SSH); nato lahko o
 </div>
 <div class="paragraph">
 <p>V tem določenem primeru uporabljamo pot <code>/var/www/htdocs</code>, ki je pogosta za nastavitve Apache, vendar lahko uporabite katerikoli statični spletni strežnik — v njegovo pot samo podajte goli repozitorij.
-Podatki Git so ponujeni kot osnovne statične datoteke (za podrobnosti, kako točno je strežen, glejte poglavje <a href="ch00/ch10-git-internals">Notranjost Gita</a>).</p>
+Podatki Git so ponujeni kot osnovne statične datoteke (za podrobnosti, kako točno je strežen, glejte poglavje <a href="{{< relurl "book/sl/v2/ch00/ch10-git-internals" >}}">Notranjost Gita</a>).</p>
 </div>
 <div class="paragraph">
 <p>V splošnem bi izbrali, da se poganja bralno/pisalni strežnik s pametnim HTTP, ali pa imate datoteke enostavno dostopne samo za branje v neumnem načinu.
@@ -200,7 +200,7 @@ Razen tega je zelo malo prednosti, ki jih imajo ostali protokoli pred pametnim p
 <div class="paragraph">
 <p>Če uporabljate HTTP za overjeno potiskanje, je zagotavljanje vaših poverilnic včasih bolj komplicirano kot uporaba ključev preko SSH.
 Vendar na voljo je kar nekaj orodij predpomnjenja poverilnic, ki jih lahko uporabite, vključno s Keychain na sistemu macOS in Credential Manager na sistemu Windows, kar naredi to precej neboleče.
-Preberite razdelek <a href="ch00/_credential_caching">Shramba poverilnic</a>, da si pogledate, kako nastaviti varno predpomnjenje gesel HTTP na vašem sistemu.</p>
+Preberite razdelek <a href="{{< relurl "book/sl/v2/ch00/_credential_caching" >}}">Shramba poverilnic</a>, da si pogledate, kako nastaviti varno predpomnjenje gesel HTTP na vašem sistemu.</p>
 </div>
 </div>
 </div>

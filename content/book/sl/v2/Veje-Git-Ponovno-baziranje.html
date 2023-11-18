@@ -26,11 +26,11 @@ V tem razdelku se boste naučili, kaj je ponovno baziranje, kako ga narediti, za
 <div class="sect3">
 <h3 id="_osnovno_ponovno_baziranje">Osnovno ponovno baziranje</h3>
 <div class="paragraph">
-<p>Če se vrnete na prejšnji primer iz razdelka <a href="ch00/_basic_merging">Osnovno združevanje</a>, lahko vidite, da ste se oddaljili od svojega dela in naredili potrditve na dveh različnih vejah.</p>
+<p>Če se vrnete na prejšnji primer iz razdelka <a href="{{< relurl "book/sl/v2/ch00/_basic_merging" >}}">Osnovno združevanje</a>, lahko vidite, da ste se oddaljili od svojega dela in naredili potrditve na dveh različnih vejah.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Enostavna različna zgodovina">
+<img src="{{< relurl "book/sl/v2/images/basic-rebase-1.png" >}}" alt="Enostavna različna zgodovina">
 </div>
 <div class="title">Slika 35. Enostavna različna zgodovina</div>
 </div>
@@ -40,7 +40,7 @@ Izvede tri-načinsko združevanje med dvema zadnjima posnetkoma vej (<code>C3</c
 </div>
 <div id="rebasing-merging-example" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Združitev za integracijo zgodovine različnega dela">
+<img src="{{< relurl "book/sl/v2/images/basic-rebase-2.png" >}}" alt="Združitev za integracijo zgodovine različnega dela">
 </div>
 <div class="title">Slika 36. Združitev za integracijo zgodovine različnega dela</div>
 </div>
@@ -65,7 +65,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="Ponovno baziranje spremembe uvedene v `C4` na `C3`">
+<img src="{{< relurl "book/sl/v2/images/basic-rebase-3.png" >}}" alt="Ponovno baziranje spremembe uvedene v `C4` na `C3`">
 </div>
 <div class="title">Slika 37. Ponovno baziranje spremembe uvedene v <code>C4</code> na <code>C3</code>
 </div>
@@ -81,13 +81,13 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Hitro previjanje naprej veje `master`">
+<img src="{{< relurl "book/sl/v2/images/basic-rebase-4.png" >}}" alt="Hitro previjanje naprej veje `master`">
 </div>
 <div class="title">Slika 38. Hitro previjanje naprej veje <code>master</code>
 </div>
 </div>
 <div class="paragraph">
-<p>Sedaj je posnetek, na katerega kaže <code>C4</code>, točno tak kot tisti, ki je bil pokazan na <code>C5</code> v primeru <a href="ch00/rebasing-merging-example">združitve potrjevanja</a>.
+<p>Sedaj je posnetek, na katerega kaže <code>C4</code>, točno tak kot tisti, ki je bil pokazan na <code>C5</code> v primeru <a href="{{< relurl "book/sl/v2/ch00/rebasing-merging-example" >}}">združitve potrjevanja</a>.
 Ni razlike v končnem produktu integracije, vendar ponovno baziranje naredi zgodovino čistejšo.
 Če primerjate dnevnik ponovno bazirane veje, je videti kot linearna zgodovina: videti je, kot da se je vse delo zgodilo v serijah, tudi ko se je prvotno zgodilo vzporedno.</p>
 </div>
@@ -105,14 +105,14 @@ Ponovno baziranje ponovno predvaja spremembe iz ene vrstice dela v drugo v vrstn
 <h3 id="_bolj_zanimivo_ponovno_baziranje">Bolj zanimivo ponovno baziranje</h3>
 <div class="paragraph">
 <p>Svoje ponovno baziranje lahko ponovno predvajate tudi na nečem drugem od ciljne veje ponovnega baziranja.
-Za primer vzemimo zgodovino, kot je na sliki <a href="ch00/rbdiag_e">Zgodovina s tematsko vejo na osnovi druge tematske veje</a>.
+Za primer vzemimo zgodovino, kot je na sliki <a href="{{< relurl "book/sl/v2/ch00/rbdiag_e" >}}">Zgodovina s tematsko vejo na osnovi druge tematske veje</a>.
 Naredili ste tematsko vejo (<code>server</code>), da ste svojemu projektu dodali nekaj funkcionalnosti strežniške strani, in naredili ste potrditev.
 Nato ste od tam naredili razvejanje (<code>client</code>), da ste naredili spremembe na strani odjemalca in naredili nekaj potrditev.
 Na koncu ste šli nazaj na vašo vejo <code>server</code> in naredili še nekaj potrditev.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="Zgodovina s tematsko vejo na osnovi druge tematske veje">
+<img src="{{< relurl "book/sl/v2/images/interesting-rebase-1.png" >}}" alt="Zgodovina s tematsko vejo na osnovi druge tematske veje">
 </div>
 <div class="title">Slika 39. Zgodovina s tematsko vejo na osnovi druge tematske veje</div>
 </div>
@@ -131,12 +131,12 @@ Je nekoliko bolj kompleksno, vendar rezultat je precej dober.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Ponovno baziranje tematske veje na osnovi druge tematske veje">
+<img src="{{< relurl "book/sl/v2/images/interesting-rebase-2.png" >}}" alt="Ponovno baziranje tematske veje na osnovi druge tematske veje">
 </div>
 <div class="title">Slika 40. Ponovno baziranje tematske veje na osnovi druge tematske veje</div>
 </div>
 <div class="paragraph">
-<p>Sedaj lahko naredite hitro previjanje naprej (angl. <em>fast-forward</em>) na vaši veji <code>master</code> (glejte sliko <a href="ch00/rbdiag_g">Hitro previjanje naprej vaše veje <code>master</code>, da vključuje spremembe veje <code>client</code></a>):</p>
+<p>Sedaj lahko naredite hitro previjanje naprej (angl. <em>fast-forward</em>) na vaši veji <code>master</code> (glejte sliko <a href="{{< relurl "book/sl/v2/ch00/rbdiag_g" >}}">Hitro previjanje naprej vaše veje <code>master</code>, da vključuje spremembe veje <code>client</code></a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -146,7 +146,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Hitro previjanje naprej vaše veje `master`, da vključuje spremembe veje `client`">
+<img src="{{< relurl "book/sl/v2/images/interesting-rebase-3.png" >}}" alt="Hitro previjanje naprej vaše veje `master`, da vključuje spremembe veje `client`">
 </div>
 <div class="title">Slika 41. Hitro previjanje naprej vaše veje <code>master</code>, da vključuje spremembe veje <code>client</code>
 </div>
@@ -161,11 +161,11 @@ Ponovno baziranje lahko naredite na veji <code>server</code> glede na vejo <code
 </div>
 </div>
 <div class="paragraph">
-<p>To ponovno predvaja vaše delo <code>server</code> na vrhu vašega dela <code>master</code>, kot je prikazano na sliki <a href="ch00/rbdiag_h">Ponovno baziranje vaše veje <code>server</code> na vrhu vaše veje <code>master</code></a>.</p>
+<p>To ponovno predvaja vaše delo <code>server</code> na vrhu vašega dela <code>master</code>, kot je prikazano na sliki <a href="{{< relurl "book/sl/v2/ch00/rbdiag_h" >}}">Ponovno baziranje vaše veje <code>server</code> na vrhu vaše veje <code>master</code></a>.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Ponovno baziranje vaše veje `server` na vrhu vaše veje `master`">
+<img src="{{< relurl "book/sl/v2/images/interesting-rebase-4.png" >}}" alt="Ponovno baziranje vaše veje `server` na vrhu vaše veje `master`">
 </div>
 <div class="title">Slika 42. Ponovno baziranje vaše veje <code>server</code> na vrhu vaše veje <code>master</code>
 </div>
@@ -180,7 +180,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Veji <code>client</code> in <code>server</code> lahko odstranite, ker je celotno delo integrirano in ju ne potrebujete več, kar pusti vašo zgodovino za ta celoten proces, da je videti kot na sliki <a href="ch00/rbdiag_i">Končna zgodovina potrditev</a>:</p>
+<p>Veji <code>client</code> in <code>server</code> lahko odstranite, ker je celotno delo integrirano in ju ne potrebujete več, kar pusti vašo zgodovino za ta celoten proces, da je videti kot na sliki <a href="{{< relurl "book/sl/v2/ch00/rbdiag_i" >}}">Končna zgodovina potrditev</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -190,7 +190,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Končna zgodovina potrditev">
+<img src="{{< relurl "book/sl/v2/images/interesting-rebase-5.png" >}}" alt="Končna zgodovina potrditev">
 </div>
 <div class="title">Slika 43. Končna zgodovina potrditev</div>
 </div>
@@ -219,7 +219,7 @@ Vaša zgodovina potrditev je videti takole:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Klonirajte repozitorij in bazirajte nekaj dela na njem">
+<img src="{{< relurl "book/sl/v2/images/perils-of-rebasing-1.png" >}}" alt="Klonirajte repozitorij in bazirajte nekaj dela na njem">
 </div>
 <div class="title">Slika 44. Klonirajte repozitorij in bazirajte nekaj dela na njem</div>
 </div>
@@ -229,7 +229,7 @@ Prenesete in združite novo oddaljeno vejo v svoje delo, kar naredi, da vaša zg
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Prenesite več potrditev in jih združite v svoje delo">
+<img src="{{< relurl "book/sl/v2/images/perils-of-rebasing-2.png" >}}" alt="Prenesite več potrditev in jih združite v svoje delo">
 </div>
 <div class="title">Slika 45. Prenesite več potrditev in jih združite v svoje delo</div>
 </div>
@@ -239,7 +239,7 @@ Nato prenesete iz tega strežnika in dobite nove potrditve.</p>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Nekdo potisne ponovno bazirane potrditve in opusti potrditve, na katerih ste vi osnovali delo">
+<img src="{{< relurl "book/sl/v2/images/perils-of-rebasing-3.png" >}}" alt="Nekdo potisne ponovno bazirane potrditve in opusti potrditve, na katerih ste vi osnovali delo">
 </div>
 <div class="title">Slika 46. Nekdo potisne ponovno bazirane potrditve in opusti potrditve, na katerih ste vi osnovali delo</div>
 </div>
@@ -249,7 +249,7 @@ Nato prenesete iz tega strežnika in dobite nove potrditve.</p>
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="Ponovno združite isto delo v novo potrditev združevanja">
+<img src="{{< relurl "book/sl/v2/images/perils-of-rebasing-4.png" >}}" alt="Ponovno združite isto delo v novo potrditev združevanja">
 </div>
 <div class="title">Slika 47. Ponovno združite isto delo v novo potrditev združevanja</div>
 </div>
@@ -273,7 +273,7 @@ To se imenuje »patch-id«.</p>
 <p>Če povlečete delo, ki je bilo prepisano in osnovano na vrhu nove potrditve vašega partnerja, lahko Git tudi pogostokrat uspešno ugotovi, kaj je unikatno vaše, in to uporabi nazaj na vrhu nove veje.</p>
 </div>
 <div class="paragraph">
-<p>Na primer, če v prejšnjem scenariju, namesto da delamo združevanje, ko smo na primeru iz slike <a href="ch00/_pre_merge_rebase_work">Nekdo potisne ponovno bazirane potrditve in opusti potrditve, na katerih ste vi osnovali delo</a>, poženemo <code>git rebase teamone/master</code>, bo Git:</p>
+<p>Na primer, če v prejšnjem scenariju, namesto da delamo združevanje, ko smo na primeru iz slike <a href="{{< relurl "book/sl/v2/ch00/_pre_merge_rebase_work" >}}">Nekdo potisne ponovno bazirane potrditve in opusti potrditve, na katerih ste vi osnovali delo</a>, poženemo <code>git rebase teamone/master</code>, bo Git:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -292,11 +292,11 @@ To se imenuje »patch-id«.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Torej namesto rezultata, ki ga vidimo na sliki <a href="ch00/_merge_rebase_work">Ponovno združite isto delo v novo potrditev združevanja</a>, bi dobili nekaj bolj takega, kot je na sliki <a href="ch00/_rebase_rebase_work">Ponovno baziranje na osnovi prisilno potisnjenega ponovno baziranega dela</a>.</p>
+<p>Torej namesto rezultata, ki ga vidimo na sliki <a href="{{< relurl "book/sl/v2/ch00/_merge_rebase_work" >}}">Ponovno združite isto delo v novo potrditev združevanja</a>, bi dobili nekaj bolj takega, kot je na sliki <a href="{{< relurl "book/sl/v2/ch00/_rebase_rebase_work" >}}">Ponovno baziranje na osnovi prisilno potisnjenega ponovno baziranega dela</a>.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Ponovno baziranje na osnovi prisilno potisnjenega ponovno baziranega dela">
+<img src="{{< relurl "book/sl/v2/images/perils-of-rebasing-5.png" >}}" alt="Ponovno baziranje na osnovi prisilno potisnjenega ponovno baziranega dela">
 </div>
 <div class="title">Slika 48. Ponovno baziranje na osnovi prisilno potisnjenega ponovno baziranega dela</div>
 </div>

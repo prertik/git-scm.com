@@ -66,7 +66,7 @@ Git fornece uma maneira fácil de checar isto — antes de você fazer um co
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/git-diff-check.png" >}}" alt="Output of `git diff --check`">
+<img src="{{< relurl "book/pt-br/v2/images/git-diff-check.png" >}}" alt="Output of `git diff --check`">
 </div>
 <div class="title">Figure 57. Resultado de <code>git diff --check</code>
 </div>
@@ -78,12 +78,12 @@ Git fornece uma maneira fácil de checar isto — antes de você fazer um co
 <p>Depois tente fazer cada commit como um conjunto lógico de mudanças.
 Se possível, tente digerir suas modificações — não programe o final de semana inteiro em cinco diferentes problemas e então publique tudo em um commit massivo na segunda-feira.
 Mesmo que você não publique durante o fim de semana, use a área de stage na segunda-feira para dividir seu trabalho em ao menos um commit por assunto, com uma mensagem útil em cada commit.
-Se algumas alterações modificarem o mesmo arquivo, tente executar <code>git add --patch</code> para colocar na área de stage os arquivos parcialmente (explicado em detalhes em <a href="ch00/r_interactive_staging">Interactive Staging</a>).
+Se algumas alterações modificarem o mesmo arquivo, tente executar <code>git add --patch</code> para colocar na área de stage os arquivos parcialmente (explicado em detalhes em <a href="{{< relurl "book/pt-br/v2/ch00/r_interactive_staging" >}}">Interactive Staging</a>).
 O retrato do projeto no final do branch é idêntico você fazendo um commit ou cinco, desde que todas as mudanças forem eventualmente adicionadas, então tente fazer as coisas mais fáceis para seus colegas desenvolvedores quando eles tiverem que revisar suas mudanças.</p>
 </div>
 <div class="paragraph">
 <p>Esta abordagem também facilita retirar ou reverter uma das alterações se você precisar depois.
-<a href="ch00/r_rewriting_history">Rewriting History</a> descreve vários truques úteis do Git para reescrever o histórico e colocar interativamente arquivos na área de stage — utilize estas ferramentas para criar um histórico limpo e compreensível antes de enviar o trabalho para alguém.</p>
+<a href="{{< relurl "book/pt-br/v2/ch00/r_rewriting_history" >}}">Rewriting History</a> descreve vários truques úteis do Git para reescrever o histórico e colocar interativamente arquivos na área de stage — utilize estas ferramentas para criar um histórico limpo e compreensível antes de enviar o trabalho para alguém.</p>
 </div>
 <div class="paragraph">
 <p>A última coisa para ter em mente é a mensagem do commit.
@@ -237,7 +237,7 @@ From john@githost:simplegit
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-1.png" >}}" alt="John’s divergent history">
+<img src="{{< relurl "book/pt-br/v2/images/small-team-1.png" >}}" alt="John’s divergent history">
 </div>
 <div class="title">Figure 58. Histórico divergente do John</div>
 </div>
@@ -257,7 +257,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-2.png" >}}" alt="John’s repository after merging `origin/master`">
+<img src="{{< relurl "book/pt-br/v2/images/small-team-2.png" >}}" alt="John’s repository after merging `origin/master`">
 </div>
 <div class="title">Figure 59. Repositório do John depois de mesclar <code>origin/master</code>
 </div>
@@ -278,7 +278,7 @@ To john@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-3.png" >}}" alt="John’s history after pushing to the `origin` server">
+<img src="{{< relurl "book/pt-br/v2/images/small-team-3.png" >}}" alt="John’s history after pushing to the `origin` server">
 </div>
 <div class="title">Figure 60. Histórico do John depois de publicar no servidor <code>origin</code>
 </div>
@@ -289,7 +289,7 @@ Ela ainda não buscou as alterações do John, então o histórico de commites d
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-4.png" >}}" alt="Jessica’s topic branch">
+<img src="{{< relurl "book/pt-br/v2/images/small-team-4.png" >}}" alt="Jessica’s topic branch">
 </div>
 <div class="title">Figure 61. Branch atual da Jessica</div>
 </div>
@@ -311,7 +311,7 @@ O histórico da Jessica agora fica assim:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-5.png" >}}" alt="Jessica’s history after fetching John’s changes">
+<img src="{{< relurl "book/pt-br/v2/images/small-team-5.png" >}}" alt="Jessica’s history after fetching John’s changes">
 </div>
 <div class="title">Figure 62. Histórico da Jessica depois de buscar as mudanças do John</div>
 </div>
@@ -331,7 +331,7 @@ Date:   Fri May 29 16:01:27 2009 -0700
 </div>
 <div class="paragraph">
 <p>A sintaxe <code>issue54..origin/master</code> é um filtro de log que pede ao Git mostrar apenas estes commites que estão no branch seguinte (neste caso <code>origin/master</code>) e não estão no primeiro branch (neste caso <code>issue54</code>).
-Iremos cobrir esta sintaxe em detalhes em <a href="ch00/r_commit_ranges">Commit Ranges</a>.</p>
+Iremos cobrir esta sintaxe em detalhes em <a href="{{< relurl "book/pt-br/v2/ch00/r_commit_ranges" >}}">Commit Ranges</a>.</p>
 </div>
 <div class="paragraph">
 <p>Do resultado acima, podemos ver que há um único commit que John fez e Jessica não mesclou no trabalho local dela.
@@ -383,7 +383,7 @@ Merge made by the 'recursive' strategy.
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-6.png" >}}" alt="Jessica’s history after merging John’s changes">
+<img src="{{< relurl "book/pt-br/v2/images/small-team-6.png" >}}" alt="Jessica’s history after merging John’s changes">
 </div>
 <div class="title">Figure 63. Histórico de Jessica	depois de integrar com as alterações de John</div>
 </div>
@@ -403,7 +403,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-7.png" >}}" alt="Jessica’s history after pushing all changes back to the server">
+<img src="{{< relurl "book/pt-br/v2/images/small-team-7.png" >}}" alt="Jessica’s history after pushing all changes back to the server">
 </div>
 <div class="title">Figure 64. Histórico de Jessica depois de publicar todas alterações no servidor</div>
 </div>
@@ -415,7 +415,7 @@ A sequência comum é mais ou menos assim:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/small-team-flow.png" >}}" alt="General sequence of events for a simple multiple-developer Git workflow">
+<img src="{{< relurl "book/pt-br/v2/images/small-team-flow.png" >}}" alt="General sequence of events for a simple multiple-developer Git workflow">
 </div>
 <div class="title">Figure 65. Sequência comum de eventos para um fluxo de trabalho simples no Git com múltiplos desenvolvedores</div>
 </div>
@@ -493,7 +493,7 @@ $ git commit -am 'Adicionar ls-files'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-1.png" >}}" alt="Jessica’s initial commit history">
+<img src="{{< relurl "book/pt-br/v2/images/managed-team-1.png" >}}" alt="Jessica’s initial commit history">
 </div>
 <div class="title">Figure 66. Histórico do commit inical de Jessica</div>
 </div>
@@ -536,7 +536,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="paragraph">
 <p>Isto é chamado de <em>refspec</em>.
-Veja <a href="ch00/r_refspec">The Refspec</a> para uma discussão mais detalhada sobre os refspecs do Git e as diferentes coisas que você pode fazer com eles.
+Veja <a href="{{< relurl "book/pt-br/v2/ch00/r_refspec" >}}">The Refspec</a> para uma discussão mais detalhada sobre os refspecs do Git e as diferentes coisas que você pode fazer com eles.
 Também perceba a flag <code>-u</code>; isto é abreviação de <code>--set-upstream</code>, que configura os branches para facilitar publicar e baixar depois.</p>
 </div>
 <div class="paragraph">
@@ -597,7 +597,7 @@ To jessica@githost:simplegit.git
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-2.png" >}}" alt="Jessica’s history after committing on a feature branch">
+<img src="{{< relurl "book/pt-br/v2/images/managed-team-2.png" >}}" alt="Jessica’s history after committing on a feature branch">
 </div>
 <div class="title">Figure 67. Histórico da Jessica depois dos commites em um branch de componentes</div>
 </div>
@@ -607,7 +607,7 @@ Depois dos coordenadores mesclarem estes branches no código principal, um <em>f
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-3.png" >}}" alt="Jessica’s history after merging both her topic branches">
+<img src="{{< relurl "book/pt-br/v2/images/managed-team-3.png" >}}" alt="Jessica’s history after merging both her topic branches">
 </div>
 <div class="title">Figure 68. Histórico da Jessica depois de integrar ambos seus branches</div>
 </div>
@@ -618,7 +618,7 @@ A sequência do fluxo de trabalho que você viu aqui é parecida com isto:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/managed-team-flow.png" >}}" alt="Basic sequence of this managed-team workflow">
+<img src="{{< relurl "book/pt-br/v2/images/managed-team-flow.png" >}}" alt="Basic sequence of this managed-team workflow">
 </div>
 <div class="title">Figure 69. Sequencia básica deste fluxo de trabalho coordenado</div>
 </div>
@@ -656,7 +656,7 @@ $ git commit</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Você pode querer usar <code>rebase -i</code> para resumir seu trabalho a um único commit, ou rearranjar o trabalho em commites que deixarão o trabalho mais fácil para os mantenedores revisarem — veja <a href="ch00/r_rewriting_history">Rewriting History</a> para mais informações sobre rebase interativo.</p>
+<p>Você pode querer usar <code>rebase -i</code> para resumir seu trabalho a um único commit, ou rearranjar o trabalho em commites que deixarão o trabalho mais fácil para os mantenedores revisarem — veja <a href="{{< relurl "book/pt-br/v2/ch00/r_rewriting_history" >}}">Rewriting History</a> para mais informações sobre rebase interativo.</p>
 </div>
 </td>
 </tr>
@@ -674,7 +674,7 @@ Você precisa então adicionar a URL deste repositório como um novo repositóri
 <div class="paragraph">
 <p>Você então precisa publicar seu trabalho neste repositório.
 É mais fácil publicar o branch em que você está trabalhando no seu repositório fork, ao invés de mesclar este trabalho no seu branch <code>master</code> e publicar assim.
-A razão é que se o seu trabalho não for aceito ou for selecionado a dedo (<em>cherry-pick</em>), você não tem que voltar seu branch <code>master</code> (a operação do Git <code>cherry-pick</code> é vista em mais detalhes em <a href="ch00/r_rebase_cherry_pick">Rebasing and Cherry-Picking Workflows</a>).
+A razão é que se o seu trabalho não for aceito ou for selecionado a dedo (<em>cherry-pick</em>), você não tem que voltar seu branch <code>master</code> (a operação do Git <code>cherry-pick</code> é vista em mais detalhes em <a href="{{< relurl "book/pt-br/v2/ch00/r_rebase_cherry_pick" >}}">Rebasing and Cherry-Picking Workflows</a>).
 Se os mantenedores executarem um <code>merge</code>, <code>rebase</code> ou <code>cherry-pick</code> no seu trabalho, você irá eventualmente receber seu trabalho de novo através do repositório deles de qualquer jeito.</p>
 </div>
 <div class="paragraph">
@@ -688,7 +688,7 @@ Se os mantenedores executarem um <code>merge</code>, <code>rebase</code> ou <cod
 <div class="paragraph">
 <p>
 Uma vez que seu trabalho tenha sido publicado no repositório do seu fork, você deve notificar os mantenedores do projeto original que você tem trabalho que gostaria que eles incorporassem no código.
-Isto é comumente chamado de <em>pull request</em>, e você tipicamente gera esta requisição ou através do website — GitHub tem seu próprio mecanismo de “Pull Request” que iremos abordar em <mark><a href="ch00/ch06-github">[ch06-github]</a></mark> — ou você pode executar o comando <code>git request-pull</code> e mandar um email com o resultado para o mantenedor do projeto manualmente.</p>
+Isto é comumente chamado de <em>pull request</em>, e você tipicamente gera esta requisição ou através do website — GitHub tem seu próprio mecanismo de “Pull Request” que iremos abordar em <mark><a href="{{< relurl "book/pt-br/v2/ch00/ch06-github" >}}">[ch06-github]</a></mark> — ou você pode executar o comando <code>git request-pull</code> e mandar um email com o resultado para o mantenedor do projeto manualmente.</p>
 </div>
 <div class="paragraph">
 <p>O comando <code>git request-pull</code> pega o branch base no qual você quer o seu branch atual publicado e a URL do repositório Git de onde você vai buscar, e produz um resumo de todas as mudanças que você está tentando publicar.
@@ -737,7 +737,7 @@ $ git fetch origin</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-1.png" >}}" alt="Initial commit history with `featureB` work">
+<img src="{{< relurl "book/pt-br/v2/images/public-small-1.png" >}}" alt="Initial commit history with `featureB` work">
 </div>
 <div class="title">Figure 70. Histórico de commites inicial com o trabalho <code>featureB</code>
 </div>
@@ -754,11 +754,11 @@ $ git push -f meufork featureA</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Isto reescreve seu histórico que agora fica assim <a href="ch00/psp_b">Histórico de commites depois do trabalho em <code>featureA</code></a>.</p>
+<p>Isto reescreve seu histórico que agora fica assim <a href="{{< relurl "book/pt-br/v2/ch00/psp_b" >}}">Histórico de commites depois do trabalho em <code>featureA</code></a>.</p>
 </div>
 <div id="psp_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-2.png" >}}" alt="Commit history after `featureA` work">
+<img src="{{< relurl "book/pt-br/v2/images/public-small-2.png" >}}" alt="Commit history after `featureA` work">
 </div>
 <div class="title">Figure 71. Histórico de commites depois do trabalho em <code>featureA</code>
 </div>
@@ -794,7 +794,7 @@ A opção <code>--no-commit</code> também pode ser útil para atrasar a integra
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/public-small-3.png" >}}" alt="Commit history after `featureBv2` work">
+<img src="{{< relurl "book/pt-br/v2/images/public-small-3.png" >}}" alt="Commit history after `featureBv2` work">
 </div>
 <div class="title">Figure 72. Histórico de commit depois do trabalho em <code>featureBv2</code>
 </div>

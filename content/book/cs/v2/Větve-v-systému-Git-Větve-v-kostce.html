@@ -30,7 +30,7 @@ Pochopení a zvládnutí tohoto rysu vám dává do rukou výkonný a jedinečn�
 <p>Abychom skutečně pochopili, jak v Gitu funguje větvení, musíme poodstoupit a podívat se, jak Git ukládá data.</p>
 </div>
 <div class="paragraph">
-<p>Jak si možná vzpomínáte z kapitoly <a href="ch00/_getting_started">Úvod</a>, Git neukládá data jako sérii změn nebo rozdílů, ale jako sérii snímků.</p>
+<p>Jak si možná vzpomínáte z kapitoly <a href="{{< relurl "book/cs/v2/ch00/_getting_started" >}}">Úvod</a>, Git neukládá data jako sérii změn nebo rozdílů, ale jako sérii snímků.</p>
 </div>
 <div class="paragraph">
 <p>Když zapíšete revizi, uloží Git objekt revize (commit object), který obsahuje odkaz na snímek obsahu, který jste připravili k zapsání.
@@ -38,7 +38,7 @@ Tento objekt obsahuje také jméno a e-mail autora, zprávu, kterou jste napsali
 </div>
 <div class="paragraph">
 <p>Pro ilustraci předpokládejme, že máte adresář s třemi soubory, které připravíte k zapsání a následně zapíšete.
-Při přípravě souborů k zapsání je pro každý z nich vypočítán kontrolní součet (o otisku SHA-1 jsme se zmínili v kapitole <a href="ch00/_getting_started">Úvod</a>), daná verze souborů se uloží v repozitáři Gitu (Git jim říká bloby <sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="ch00/_footnotedef_10" title="View footnote.">10</a>]</sup>) a přidá jejich kontrolní součet do oblasti připravených změn:</p>
+Při přípravě souborů k zapsání je pro každý z nich vypočítán kontrolní součet (o otisku SHA-1 jsme se zmínili v kapitole <a href="{{< relurl "book/cs/v2/ch00/_getting_started" >}}">Úvod</a>), daná verze souborů se uloží v repozitáři Gitu (Git jim říká bloby <sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_10" >}}" title="View footnote.">10</a>]</sup>) a přidá jejich kontrolní součet do oblasti připravených změn:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ Poté Git vytvoří objekt revize (commit) s metadaty a s ukazatelem na kořen s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="Objekt revize a jeho strom.">
+<img src="{{< relurl "book/cs/v2/images/commit-and-tree.png" >}}" alt="Objekt revize a jeho strom.">
 </div>
 <div class="title">Figure 9. Objekt revize a jeho strom</div>
 </div>
@@ -64,7 +64,7 @@ Poté Git vytvoří objekt revize (commit) s metadaty a s ukazatelem na kořen s
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Objekty revize a jejich rodiče.">
+<img src="{{< relurl "book/cs/v2/images/commits-and-parents.png" >}}" alt="Objekty revize a jejich rodiče.">
 </div>
 <div class="title">Figure 10. Objekty revize a jejich rodiče</div>
 </div>
@@ -92,7 +92,7 @@ Jediným důvodem, proč ji najdete skoro v každém repozitáři, je to, že ji
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="Větev a historie jejích objektů revize.">
+<img src="{{< relurl "book/cs/v2/images/branch-and-history.png" >}}" alt="Větev a historie jejích objektů revize.">
 </div>
 <div class="title">Figure 11. Větev a historie jejích objektů revize</div>
 </div>
@@ -115,7 +115,7 @@ Učiníte tak příkazem <code>git branch</code>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Dvě větve ukazují na stejnou sérii objektů revize.">
+<img src="{{< relurl "book/cs/v2/images/two-branches.png" >}}" alt="Dvě větve ukazují na stejnou sérii objektů revize.">
 </div>
 <div class="title">Figure 12. Dvě větve ukazují na stejnou sérii objektů revize</div>
 </div>
@@ -129,7 +129,7 @@ Příkaz <code>git branch</code> pouze <em>vytvořil</em> novou větev — n
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD ukazující na větev.">
+<img src="{{< relurl "book/cs/v2/images/head-to-master.png" >}}" alt="HEAD ukazující na větev.">
 </div>
 <div class="title">Figure 13. HEAD ukazující na větev</div>
 </div>
@@ -166,7 +166,7 @@ Přepněme se na novou větev <code>testing</code>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD ukazuje na aktuální větev.">
+<img src="{{< relurl "book/cs/v2/images/head-to-testing.png" >}}" alt="HEAD ukazuje na aktuální větev.">
 </div>
 <div class="title">Figure 14. HEAD ukazuje na aktuální větev</div>
 </div>
@@ -182,7 +182,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="Větev HEAD se při zápisu revize posune vpřed.">
+<img src="{{< relurl "book/cs/v2/images/advance-testing.png" >}}" alt="Větev HEAD se při zápisu revize posune vpřed.">
 </div>
 <div class="title">Figure 15. Větev HEAD se při zápisu revize posune vpřed</div>
 </div>
@@ -197,7 +197,7 @@ Přepněme zpět na větev <code>master</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="Při checkout se HEAD přesune.">
+<img src="{{< relurl "book/cs/v2/images/checkout-master.png" >}}" alt="Při checkout se HEAD přesune.">
 </div>
 <div class="title">Figure 16. Při checkout se HEAD přesune</div>
 </div>
@@ -234,14 +234,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Nyní se historie vašeho projektu rozdělila (viz obrázek <a href="ch00/divergent_history">Rozbíhající se historie</a>).
+<p>Nyní se historie vašeho projektu rozdělila (viz obrázek <a href="{{< relurl "book/cs/v2/ch00/divergent_history" >}}">Rozbíhající se historie</a>).
 Vytvořili jste novou větev, přepnuli se na ni, provedli změny a poté jste přepnuli zpět na hlavní větev, v níž jste provedli další změny.
 Oboje tyto změny jsou oddělené na samostatných větvích. Můžete mezi nimi přepínat tam a zpět, a až uznáte za vhodné, můžete je sloučit.
 To vše jste provedli pomocí jednoduchých příkazů <code>branch</code>, <code>checkout</code> a <code>commit</code>.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Rozbíhající se historie.">
+<img src="{{< relurl "book/cs/v2/images/advance-master.png" >}}" alt="Rozbíhající se historie.">
 </div>
 <div class="title">Figure 17. Rozbíhající se historie</div>
 </div>

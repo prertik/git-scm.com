@@ -361,17 +361,17 @@ Můžete si vybrat z řady možností, takže se na pár z nich podíváme.</p>
 Jeden z jednoduchých pracovních postupů používá začleňování vaší práce do vaší větve <code>master</code>.
 V tomto scénáři máte svou větev <code>master</code>, která obsahuje v podstatě stabilní kód.
 Pokud mátě v tématické větvi nějakou práci, kterou jste vytvořili sami, nebo kterou přispěl někdo jiný a vy jste ji ověřovali, začleníte ji do své větve <code>master</code> (merge), odstraníte tématickou větev a pokračujete dál.
-Máme-li repozitář s prací ve dvou větvích pojmenovaných <code>ruby_client</code> a <code>php_client</code>, který vypadá jako na obrázku <a href="ch00/merwf_a">Historie s několika tématickými větvemi.</a>, a začleníme nejprve větev <code>ruby_client</code> a poté <code>php_client</code>, bude naše historie vypadat jako na obrázku <a href="ch00/merwf_b">Po začlenění tématické větve.</a>.</p>
+Máme-li repozitář s prací ve dvou větvích pojmenovaných <code>ruby_client</code> a <code>php_client</code>, který vypadá jako na obrázku <a href="{{< relurl "book/cs/v2/ch00/merwf_a" >}}">Historie s několika tématickými větvemi.</a>, a začleníme nejprve větev <code>ruby_client</code> a poté <code>php_client</code>, bude naše historie vypadat jako na obrázku <a href="{{< relurl "book/cs/v2/ch00/merwf_b" >}}">Po začlenění tématické větve.</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Historie s několika tématickými větvemi.">
+<img src="{{< relurl "book/cs/v2/images/merging-workflows-1.png" >}}" alt="Historie s několika tématickými větvemi.">
 </div>
 <div class="title">Figure 73. Historie s několika tématickými větvemi.</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Po začlenění tématické větve.">
+<img src="{{< relurl "book/cs/v2/images/merging-workflows-2.png" >}}" alt="Po začlenění tématické větve.">
 </div>
 <div class="title">Figure 74. Po začlenění tématické větve.</div>
 </div>
@@ -379,26 +379,26 @@ Máme-li repozitář s prací ve dvou větvích pojmenovaných <code>ruby_client
 <p>Jde nejspíš o nejjednodušší pracovní postup, ale může vést k problémům v případě, že se použije pro větší nebo stabilnější projekty, u kterých chcete být při vkládání nových věcí opravdu opatrní.</p>
 </div>
 <div class="paragraph">
-<p>U důležitějších projektů asi budete chtít použít dvoufázový cyklus slučování<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="ch00/_footnotedef_18" title="View footnote.">18</a>]</sup>.
+<p>U důležitějších projektů asi budete chtít použít dvoufázový cyklus slučování<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_18" >}}" title="View footnote.">18</a>]</sup>.
 V tomto scénáři máte dvě větve s dlouhou životností: hlavní větev <code>master</code> a větev <code>develop</code>. Určíte, že větev <code>master</code> bude aktualizována, pouze když je k dispozici velmi stabilní verze. Veškerý nový kód je integrován do větve <code>develop</code>.
 Obě tyto větve pravidelně odesíláte do veřejného repozitáře.
-Pokaždé, když máte novou tématickou větev nachystanou k začlenění (obrázek <a href="ch00/merwf_c">Před začleněním tématické větve.</a>), začleníte ji do větve <code>develop</code> (obrázek <a href="ch00/merwf_d">Po začlenění tématické větve.</a>), označíte vydání (tag) a poté posunete větev <code>master</code> rychle vpřed do místa, kde je nyní větev <code>develop</code> stabilní (obrázek <a href="ch00/merwf_e">Po vydání nové verze projektu.</a>).</p>
+Pokaždé, když máte novou tématickou větev nachystanou k začlenění (obrázek <a href="{{< relurl "book/cs/v2/ch00/merwf_c" >}}">Před začleněním tématické větve.</a>), začleníte ji do větve <code>develop</code> (obrázek <a href="{{< relurl "book/cs/v2/ch00/merwf_d" >}}">Po začlenění tématické větve.</a>), označíte vydání (tag) a poté posunete větev <code>master</code> rychle vpřed do místa, kde je nyní větev <code>develop</code> stabilní (obrázek <a href="{{< relurl "book/cs/v2/ch00/merwf_e" >}}">Po vydání nové verze projektu.</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Před začleněním tématické větve.">
+<img src="{{< relurl "book/cs/v2/images/merging-workflows-3.png" >}}" alt="Před začleněním tématické větve.">
 </div>
 <div class="title">Figure 75. Před začleněním tématické větve.</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Po začlenění tématické větve.">
+<img src="{{< relurl "book/cs/v2/images/merging-workflows-4.png" >}}" alt="Po začlenění tématické větve.">
 </div>
 <div class="title">Figure 76. Po začlenění tématické větve.</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Po vydání nové verze projektu.">
+<img src="{{< relurl "book/cs/v2/images/merging-workflows-5.png" >}}" alt="Po vydání nové verze projektu.">
 </div>
 <div class="title">Figure 77. Po vydání nové verze projektu.</div>
 </div>
@@ -413,13 +413,13 @@ Teprve pokud je kód v této větvi stabilní a projde testováním, začleníte
 <div class="paragraph">
 <p>
 Váš gitový projekt má čtyři větve s dlouhou životností: <code>master</code>, <code>next</code> a <code>pu</code> (proposed updates, čili navrhované úpravy) pro novou práci a <code>maint</code> pro přenos oprav z novějších verzí do starších (maintenance backports).
-Pokud přispěvatelé vytvoří novou práci, je shromažďována v tématických větvích v repozitáři správce podobným způsobem, jaký jsme popsali dříve (viz obrázek <a href="ch00/merwf_f">Správa komplexní série paralelně zpracovávaných příspěvků v tématických větvích.</a>).
+Pokud přispěvatelé vytvoří novou práci, je shromažďována v tématických větvích v repozitáři správce podobným způsobem, jaký jsme popsali dříve (viz obrázek <a href="{{< relurl "book/cs/v2/ch00/merwf_f" >}}">Správa komplexní série paralelně zpracovávaných příspěvků v tématických větvích.</a>).
 V této fázi jsou náměty vyhodnoceny a určí se, zda jsou bezpečné a zralé k použití, nebo zda potřebují dopracovat.
 Pokud jsou bezpečné, jsou začleněny do  větve <code>next</code> a ta je odeslána do sdíleného repozitáře, aby si všichni mohli vyzkoušet výsledek jejich integrace.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Správa komplexní série paralelně zpracovávaných příspěvků v tématických větvích.">
+<img src="{{< relurl "book/cs/v2/images/large-merges-1.png" >}}" alt="Správa komplexní série paralelně zpracovávaných příspěvků v tématických větvích.">
 </div>
 <div class="title">Figure 78. Správa komplexní série paralelně zpracovávaných příspěvků v tématických větvích.</div>
 </div>
@@ -430,7 +430,7 @@ To znamená, že se větev <code>master</code> téměř vždy posouvá vpřed, v
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Začlenění tématických větví s příspěvky do integračních větví s dlouhou životností.">
+<img src="{{< relurl "book/cs/v2/images/large-merges-2.png" >}}" alt="Začlenění tématických větví s příspěvky do integračních větví s dlouhou životností.">
 </div>
 <div class="title">Figure 79. Začlenění tématických větví s příspěvky do integračních větví s dlouhou životností.</div>
 </div>
@@ -450,7 +450,7 @@ Pokud vše funguje, můžete větev <code>master</code> posunout rychle vpřed a
 </div>
 <div class="paragraph">
 <p>
-Druhým způsobem, jak přesunout práci z jedné větve do druhé, je tzv. částečné převzetí (angl. cherry picking<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="ch00/_footnotedef_19" title="View footnote.">19</a>]</sup>).
+Druhým způsobem, jak přesunout práci z jedné větve do druhé, je tzv. částečné převzetí (angl. cherry picking<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_19" >}}" title="View footnote.">19</a>]</sup>).
 Částečné převzetí lze v systému Git přirovnat k přeskládání jediného objektu revize.
 Vezme se záplata, která byla provedena v dané revizi, a zkusí se znovu aplikovat na větev, na níž se právě nacházíte.
 Využijete to v situaci, kdy tématická větev obsahuje několik revizí a chcete integrovat pouze jednu z nich, nebo když máte v tématické větvi jediný objekt revize a dáváte přednost použití <code>cherry-pick</code> před provedením <code>rebase</code>.
@@ -458,7 +458,7 @@ Dejme tomu, že máte projekt, který vypadá nějak takto:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Příklad historie před provedením cherry-pick.">
+<img src="{{< relurl "book/cs/v2/images/rebasing-1.png" >}}" alt="Příklad historie před provedením cherry-pick.">
 </div>
 <div class="title">Figure 80. Příklad historie před provedením cherry-pick.</div>
 </div>
@@ -479,7 +479,7 @@ Vaše historie teď vypadá nějak takto:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Historie po částečném převzetí revize z tématické větve.">
+<img src="{{< relurl "book/cs/v2/images/rebasing-2.png" >}}" alt="Historie po částečném převzetí revize z tématické větve.">
 </div>
 <div class="title">Figure 81. Historie po částečném převzetí revize z tématické větve.</div>
 </div>
@@ -513,7 +513,7 @@ Konfigurační nastavení se jmenuje <code>rerere.enabled</code> a je dost šiko
 <p>V případě potřeby můžete s mezipamětí pro rerere pracovat pomocí příkazu <code>git rerere</code>.
 Pokud je vyvolán bez parametru, prochází Git svou databázi řešení a pokouší se najít shodu s konflikty při aktuální operaci slučování a vyřešit je (i když při nastavení <code>rerere.enabled</code> na hodnotu <code>true</code> se to dělá automaticky).
 Existují i varianty příkazu pro případy, kdy chceme zobrazit, co se bude zaznamenávat, když chceme odstranit určité řešení z mezipaměti a když chceme celou mezipaměť vymazat.
-Příkazem <code>rerere</code> se budeme podrobněji zabývat v podkapitole <a href="ch00/_rerere">Rerere</a>.</p>
+Příkazem <code>rerere</code> se budeme podrobněji zabývat v podkapitole <a href="{{< relurl "book/cs/v2/ch00/_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -522,7 +522,7 @@ Příkazem <code>rerere</code> se budeme podrobněji zabývat v podkapitole <a h
 <div class="paragraph">
 <p>
 Když jste se rozhodli vydat určitou verzi, pravděpodobně ji budete chtít označit, abyste mohli toto vydání v kterémkoli okamžiku v budoucnosti obnovit.
-Novou značku můžete vytvořit způsobem, který jsme probrali v kapitole <a href="ch00/_git_basics_chapter">Základy práce se systémem Git</a>.
+Novou značku můžete vytvořit způsobem, který jsme probrali v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_basics_chapter" >}}">Základy práce se systémem Git</a>.
 Pokud se rozhodnete značku podepsat jako správce, bude označení probíhat takto:</p>
 </div>
 <div class="listingblock">
@@ -583,7 +583,7 @@ Pokud navíc zadáte do zprávy značky další instrukce k jejímu ověření, 
 <h3 id="_build_number">Vygenerování čísla sestavení</h3>
 <div class="paragraph">
 <p>
-Git nepoužívá pro jednotlivé revize monotónně rostoucí čísla jako „v123“ nebo něco podobného. Pokud chcete získat čitelnou podobu jména revize, můžete pro daný objekt revize spustit příkaz <code>git describe</code><sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="ch00/_footnotedef_20" title="View footnote.">20</a>]</sup>.
+Git nepoužívá pro jednotlivé revize monotónně rostoucí čísla jako „v123“ nebo něco podobného. Pokud chcete získat čitelnou podobu jména revize, můžete pro daný objekt revize spustit příkaz <code>git describe</code><sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_20" >}}" title="View footnote.">20</a>]</sup>.
 Git vám vrátí název nejbližší značky, který doplní počtem revizí za touto značkou a částečnou hodnotou SHA-1 popisovaného objektu revize:</p>
 </div>
 <div class="listingblock">
@@ -609,7 +609,7 @@ Například jádro Linuxu nyní přešlo z 8 na 10 znaků SHA-1, aby byla zajiš
 <p>
 Nyní budete chtít sestavení vydat.
 Jednou z věcí, kterou budete chtít udělat, je vytvoření archivu nejnovějšího snímku vašeho kódu pro všechny nebohé duše, které Git nepoužívají.
-Příkaz pro vytvoření archivu zní <code>git archive</code><sup class="footnote">[<a id="_footnoteref_21" class="footnote" href="ch00/_footnotedef_21" title="View footnote.">21</a>]</sup>:</p>
+Příkaz pro vytvoření archivu zní <code>git archive</code><sup class="footnote">[<a id="_footnoteref_21" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_21" >}}" title="View footnote.">21</a>]</sup>:</p>
 </div>
 <div class="listingblock">
 <div class="content">

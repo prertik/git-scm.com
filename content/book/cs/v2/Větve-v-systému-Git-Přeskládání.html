@@ -26,11 +26,11 @@ V této podkapitole se dozvíte, co to přeskládání je, jak se provádí, pro
 <div class="sect3">
 <h3 id="_základní_přeskládání">Základní přeskládání</h3>
 <div class="paragraph">
-<p>Pokud se vrátíte k dřívějšímu příkladu v <a href="ch00/_basic_merging">Základní slučování</a>, vidíte, že jste se při práci odchýlili a vznikly objekty revize ve dvou různých větvích.</p>
+<p>Pokud se vrátíte k dřívějšímu příkladu v <a href="{{< relurl "book/cs/v2/ch00/_basic_merging" >}}">Základní slučování</a>, vidíte, že jste se při práci odchýlili a vznikly objekty revize ve dvou různých větvích.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Jednoduché rozvětvení historie.">
+<img src="{{< relurl "book/cs/v2/images/basic-rebase-1.png" >}}" alt="Jednoduché rozvětvení historie.">
 </div>
 <div class="title">Figure 35. Jednoduché rozvětvení historie</div>
 </div>
@@ -40,7 +40,7 @@ Ten provede třícestné sloučení mezi dvěma posledními snímky (C3 a C4) a 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Spojení rozvětvené historie sloučením.">
+<img src="{{< relurl "book/cs/v2/images/basic-rebase-2.png" >}}" alt="Spojení rozvětvené historie sloučením.">
 </div>
 <div class="title">Figure 36. Spojení rozvětvené historie sloučením</div>
 </div>
@@ -65,7 +65,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="Přeskládání změn vzniklých v `C4` na `C3`.">
+<img src="{{< relurl "book/cs/v2/images/basic-rebase-3.png" >}}" alt="Přeskládání změn vzniklých v `C4` na `C3`.">
 </div>
 <div class="title">Figure 37. Přeskládání změn vzniklých v <code>C4</code> na <code>C3</code>
 </div>
@@ -81,7 +81,7 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="Posunutí větve `master` rychle vpřed.">
+<img src="{{< relurl "book/cs/v2/images/basic-rebase-4.png" >}}" alt="Posunutí větve `master` rychle vpřed.">
 </div>
 <div class="title">Figure 38. Posunutí větve <code>master</code> rychle vpřed</div>
 </div>
@@ -104,14 +104,14 @@ Přeskládání provede změny z jedné řady prací na jinou, a to v pořadí, 
 <h3 id="_zajímavější_možnosti_přeskládání">Zajímavější možnosti přeskládání</h3>
 <div class="paragraph">
 <p>Posloupnost změn můžete aplikovat i na něco jiného než na cílovou větev pro přeskládání.
-Vezměme si například historii na obrázku <a href="ch00/rbdiag_e">Historie s tématickou větví vytvořenou z jiné tématické větve</a>.
+Vezměme si například historii na obrázku <a href="{{< relurl "book/cs/v2/ch00/rbdiag_e" >}}">Historie s tématickou větví vytvořenou z jiné tématické větve</a>.
 Vytvořili jste novou tématickou větev (<code>server</code>), abyste v ní do projektu přidali novou funkčnost na straně serveru, a zapsali jste revizi.
 Poté jste se odvětvili, abyste učinili změny na straně klienta (<code>client</code>), a provedli jste několik zápisů.
 Nakonec jste se vrátili na větev <code>server</code> a zapsali dalších pár objektů revize.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="Historie s tématickou větví vytvořenou z jiné tématické větve.">
+<img src="{{< relurl "book/cs/v2/images/interesting-rebase-1.png" >}}" alt="Historie s tématickou větví vytvořenou z jiné tématické větve.">
 </div>
 <div class="title">Figure 39. Historie s tématickou větví vytvořenou z jiné tématické větve</div>
 </div>
@@ -129,12 +129,12 @@ Můžete vzít změny na větvi <code>client</code>, které nejsou na větvi <co
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Přeskládání tématické větve vzniklé odvětvením z jiné tématické větve.">
+<img src="{{< relurl "book/cs/v2/images/interesting-rebase-2.png" >}}" alt="Přeskládání tématické větve vzniklé odvětvením z jiné tématické větve.">
 </div>
 <div class="title">Figure 40. Přeskládání tématické větve vzniklé odvětvením z jiné tématické větve</div>
 </div>
 <div class="paragraph">
-<p>Teď můžete větev <code>master</code> posunout „rychle vpřed“ (viz <a href="ch00/rbdiag_g">obrázek</a>):</p>
+<p>Teď můžete větev <code>master</code> posunout „rychle vpřed“ (viz <a href="{{< relurl "book/cs/v2/ch00/rbdiag_g" >}}">obrázek</a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -144,7 +144,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Přidání změn z větve `client` posunutím větve `master` „rychle vpřed“.">
+<img src="{{< relurl "book/cs/v2/images/interesting-rebase-3.png" >}}" alt="Přidání změn z větve `client` posunutím větve `master` „rychle vpřed“.">
 </div>
 <div class="title">Figure 41. Přidání změn z větve <code>client</code> posunutím větve <code>master</code> „rychle vpřed“</div>
 </div>
@@ -158,11 +158,11 @@ Větev <code>server</code> můžete přeskládat na větev <code>master</code>�
 </div>
 </div>
 <div class="paragraph">
-<p>Příkaz přehraje práci z větve <code>server</code> k práci ve větvi <code>master</code> — viz <a href="ch00/rbdiag_h">obrázek</a>.</p>
+<p>Příkaz přehraje práci z větve <code>server</code> k práci ve větvi <code>master</code> — viz <a href="{{< relurl "book/cs/v2/ch00/rbdiag_h" >}}">obrázek</a>.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Přeskládání větve `server` na vrchol větve `master`.">
+<img src="{{< relurl "book/cs/v2/images/interesting-rebase-4.png" >}}" alt="Přeskládání větve `server` na vrchol větve `master`.">
 </div>
 <div class="title">Figure 42. Přeskládání větve <code>server</code> na vrchol větve <code>master</code>
 </div>
@@ -177,7 +177,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Větve <code>client</code> a <code>server</code> můžete smazat, protože všechna práce z nich je integrována a tyto větve už nebudete potřebovat. Historie celého procesu bude vypadat jako na obrázku <a href="ch00/rbdiag_i">Historie poslední revize</a>:</p>
+<p>Větve <code>client</code> a <code>server</code> můžete smazat, protože všechna práce z nich je integrována a tyto větve už nebudete potřebovat. Historie celého procesu bude vypadat jako na obrázku <a href="{{< relurl "book/cs/v2/ch00/rbdiag_i" >}}">Historie poslední revize</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -187,7 +187,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Historie poslední revize.">
+<img src="{{< relurl "book/cs/v2/images/interesting-rebase-5.png" >}}" alt="Historie poslední revize.">
 </div>
 <div class="title">Figure 43. Historie poslední revize</div>
 </div>
@@ -216,7 +216,7 @@ Historie revizí bude vypadat nějak takto:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Naklonování repozitáře a provedení změn.">
+<img src="{{< relurl "book/cs/v2/images/perils-of-rebasing-1.png" >}}" alt="Naklonování repozitáře a provedení změn.">
 </div>
 <div class="title">Figure 44. Naklonování repozitáře a provedení změn</div>
 </div>
@@ -226,7 +226,7 @@ Vy tyto změny vyzvednete a začleníte novou vzdálenou větev do své práce�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Vyzvednutí (fetch) bodů zápisu a jejich začlenění (merge) do vaší práce.">
+<img src="{{< relurl "book/cs/v2/images/perils-of-rebasing-2.png" >}}" alt="Vyzvednutí (fetch) bodů zápisu a jejich začlenění (merge) do vaší práce.">
 </div>
 <div class="title">Figure 45. Vyzvednutí (fetch) bodů zápisu a jejich začlenění (merge) do vaší práce</div>
 </div>
@@ -236,7 +236,7 @@ Vy poté znovu vyzvednete data ze serveru (fetch), čímž získáte nové objek
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Někdo odešle přeskládané objekty revize a zahodí ty, z kterých jste při své práci vycházeli.">
+<img src="{{< relurl "book/cs/v2/images/perils-of-rebasing-3.png" >}}" alt="Někdo odešle přeskládané objekty revize a zahodí ty, z kterých jste při své práci vycházeli.">
 </div>
 <div class="title">Figure 46. Někdo odešle přeskládané objekty revize a zahodí ty, z kterých jste při své práci vycházeli</div>
 </div>
@@ -246,7 +246,7 @@ Pokud provedete <code>git pull</code>, vytvoříte bod sloučení (merge commit)
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="Opakované začlenění stejné práce do nového bodu sloučení.">
+<img src="{{< relurl "book/cs/v2/images/perils-of-rebasing-4.png" >}}" alt="Opakované začlenění stejné práce do nového bodu sloučení.">
 </div>
 <div class="title">Figure 47. Opakované začlenění stejné práce do nového bodu sloučení</div>
 </div>
@@ -270,7 +270,7 @@ Jmenuje se to „patch-id“ (doslova „identifikace záplaty“).</p>
 <p>Pokud si stáhnete práci, která byla přepsána a nad těmito novými objekty revize od spolupracovníka provedete přeskládání, umí často Git úspěšně zjistit, co pochází určitě od vás a aplikovat to na vrchol nové větve.</p>
 </div>
 <div class="paragraph">
-<p>Tak například, pokud se při předchozím scénáři nacházíme v situaci na obrázku <a href="ch00/_pre_merge_rebase_work">Někdo odešle přeskládané objekty revize a zahodí ty, z kterých jste při své práci vycházeli</a> a místo provedení sloučení (merge) spustíme <code>git rebase teamone/master</code>, provede Git následující:</p>
+<p>Tak například, pokud se při předchozím scénáři nacházíme v situaci na obrázku <a href="{{< relurl "book/cs/v2/ch00/_pre_merge_rebase_work" >}}">Někdo odešle přeskládané objekty revize a zahodí ty, z kterých jste při své práci vycházeli</a> a místo provedení sloučení (merge) spustíme <code>git rebase teamone/master</code>, provede Git následující:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -289,11 +289,11 @@ Jmenuje se to „patch-id“ (doslova „identifikace záplaty“).</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Takže místo výsledku z obrázku <a href="ch00/_merge_rebase_work">Opakované začlenění stejné práce do nového bodu sloučení</a>, skončíme s něčím, co odpovídá spíše obrázku <a href="ch00/_rebase_rebase_work">Přeskládání nad vynuceně odeslaným výsledkem přeskládání</a>.</p>
+<p>Takže místo výsledku z obrázku <a href="{{< relurl "book/cs/v2/ch00/_merge_rebase_work" >}}">Opakované začlenění stejné práce do nového bodu sloučení</a>, skončíme s něčím, co odpovídá spíše obrázku <a href="{{< relurl "book/cs/v2/ch00/_rebase_rebase_work" >}}">Přeskládání nad vynuceně odeslaným výsledkem přeskládání</a>.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Přeskládání nad vynuceně odeslaným výsledkem přeskládání.">
+<img src="{{< relurl "book/cs/v2/images/perils-of-rebasing-5.png" >}}" alt="Přeskládání nad vynuceně odeslaným výsledkem přeskládání.">
 </div>
 <div class="title">Figure 48. Přeskládání nad vynuceně odeslaným výsledkem přeskládání</div>
 </div>

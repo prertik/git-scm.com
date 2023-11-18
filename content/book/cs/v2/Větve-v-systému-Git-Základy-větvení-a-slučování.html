@@ -63,7 +63,7 @@ Provedete následující:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-1.png" >}}" alt="Jednoduchá historie revizí.">
+<img src="{{< relurl "book/cs/v2/images/basic-branching-1.png" >}}" alt="Jednoduchá historie revizí.">
 </div>
 <div class="title">Figure 18. Jednoduchá historie revizí</div>
 </div>
@@ -88,7 +88,7 @@ $ git checkout iss53</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-2.png" >}}" alt="Vytvoření nového ukazatele větve.">
+<img src="{{< relurl "book/cs/v2/images/basic-branching-2.png" >}}" alt="Vytvoření nového ukazatele větve.">
 </div>
 <div class="title">Figure 19. Vytvoření nového ukazatele větve</div>
 </div>
@@ -104,7 +104,7 @@ $ git commit -a -m 'added a new footer [issue 53]'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-3.png" >}}" alt="Větev iss53 se při práci posunula vpřed.">
+<img src="{{< relurl "book/cs/v2/images/basic-branching-3.png" >}}" alt="Větev iss53 se při práci posunula vpřed.">
 </div>
 <div class="title">Figure 20. Větev iss53 se při práci posunula vpřed</div>
 </div>
@@ -116,7 +116,7 @@ Vše, co musíte udělat, je přepnout se zpět na větev <code>master</code>.</
 <div class="paragraph">
 <p>Ale než tak učiníte, všimněte si, že pokud máte v pracovním adresáři nebo v oblasti připravených změn nezapsané změny, které kolidují s větví, do které se přepínáte, Git vám přepnutí větví nedovolí.
 Nejlepší je, když máte při přepínání větví čistý pracovní stav.
-Existují způsoby, jak to obejít (konkrétně odložení (stashing) a úprava revize (commit amending)), těm se však budeme věnovat až později, v části <a href="ch00/_git_stashing">Stashing and Cleaning</a>.
+Existují způsoby, jak to obejít (konkrétně odložení (stashing) a úprava revize (commit amending)), těm se však budeme věnovat až později, v části <a href="{{< relurl "book/cs/v2/ch00/_git_stashing" >}}">Stashing and Cleaning</a>.
 Teď předpokládejme, že jste všechny změny zapsali, takže se můžete přepnout zpět do větve <code>master</code>:</p>
 </div>
 <div class="listingblock">
@@ -146,7 +146,7 @@ $ git commit -a -m 'fixed the broken email address'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-4.png" >}}" alt="Větev pro opravu je odvozená od `master`.">
+<img src="{{< relurl "book/cs/v2/images/basic-branching-4.png" >}}" alt="Větev pro opravu je odvozená od `master`.">
 </div>
 <div class="title">Figure 21. Větev pro opravu je odvozená od <code>master</code>
 </div>
@@ -175,7 +175,7 @@ Jinými slovy, pokud se snažíte sloučit jeden objekt revize s jiným, na kter
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-5.png" >}}" alt="Větev `master` se přesunula „rychle vpřed“ na `hotfix`.">
+<img src="{{< relurl "book/cs/v2/images/basic-branching-5.png" >}}" alt="Větev `master` se přesunula „rychle vpřed“ na `hotfix`.">
 </div>
 <div class="title">Figure 22. Větev <code>master</code> se přesunula „rychle vpřed“ na <code>hotfix</code>
 </div>
@@ -206,7 +206,7 @@ $ git commit -a -m 'finished the new footer [issue 53]'
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-branching-6.png" >}}" alt="Pokračuje práce na větvi `iss53`.">
+<img src="{{< relurl "book/cs/v2/images/basic-branching-6.png" >}}" alt="Pokračuje práce na větvi `iss53`.">
 </div>
 <div class="title">Figure 23. Pokračuje práce na větvi <code>iss53</code>
 </div>
@@ -242,7 +242,7 @@ Git v tomto případě provádí jednoduché třícestné sloučení, při kter�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-1.png" >}}" alt="Při typickém slučování se používají tři snímky.">
+<img src="{{< relurl "book/cs/v2/images/basic-merging-1.png" >}}" alt="Při typickém slučování se používají tři snímky.">
 </div>
 <div class="title">Figure 24. Při typickém slučování se používají tři snímky</div>
 </div>
@@ -252,7 +252,7 @@ Git v tomto případě provádí jednoduché třícestné sloučení, při kter�
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-merging-2.png" >}}" alt="Bod sloučení.">
+<img src="{{< relurl "book/cs/v2/images/basic-merging-2.png" >}}" alt="Bod sloučení.">
 </div>
 <div class="title">Figure 25. Bod sloučení</div>
 </div>
@@ -373,7 +373,7 @@ Hit return to start merge resolution tool (opendiff):</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Pokud pro řešení zapeklitých konfliktů potřebujete pokročilejší nástroje, podívejte se na podkapitolu <a href="ch00/_advanced_merging">Advanced Merging</a>, která se slučováním zabývá podrobněji.</p>
+<p>Pokud pro řešení zapeklitých konfliktů potřebujete pokročilejší nástroje, podívejte se na podkapitolu <a href="{{< relurl "book/cs/v2/ch00/_advanced_merging" >}}">Advanced Merging</a>, která se slučováním zabývá podrobněji.</p>
 </div>
 </td>
 </tr>

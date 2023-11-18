@@ -34,7 +34,7 @@ Změněné soubory připravíte k zapsání (stage) a následně všechny připr
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/lifecycle.png" >}}" alt="Cyklus stavů vašich souborů.">
+<img src="{{< relurl "book/cs/v2/images/lifecycle.png" >}}" alt="Cyklus stavů vašich souborů.">
 </div>
 <div class="title">Figure 8. Cyklus stavů vašich souborů.</div>
 </div>
@@ -57,7 +57,7 @@ nothing to commit, working directory clean</code></pre>
 Git také neví o žádných nesledovaných souborech, jinak by byly ve výčtu uvedeny.
 Příkaz vám dále sděluje, na jaké větvi (branch) se nacházíte, a informuje vás, že se neodchýlila od stejné větve na serveru.
 Prozatím budeme uvažovat, že jde o větev <code>master</code>, což je výchozí název (zatím se s tím nezatěžujte).
-V kapitole <a href="ch00/_git_branching">Větve v systému Git</a> se větvemi a referencemi budeme zabývat podrobně.</p>
+V kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_branching" >}}">Větve v systému Git</a> se větvemi a referencemi budeme zabývat podrobně.</p>
 </div>
 <div class="paragraph">
 <p>Řekněme, že nyní přidáte do projektu nový soubor, například soubor <code>README</code>.
@@ -489,7 +489,7 @@ Nejjednodušší způsob spočívá v provedení <code>git commit</code>:</p>
 </div>
 <div class="paragraph">
 <p>Po zadání příkazu se otevře vámi zvolený editor.
-(Ten je nastaven proměnnou prostředí <code>$EDITOR</code> vašeho shellu. Obvykle je to vim nebo emacs, ale příkazem <code>git config --global core.editor</code> můžete nastavit libovolný jiný — jak jsme viděli v kapitole <a href="ch00/_getting_started">Úvod</a>).</p>
+(Ten je nastaven proměnnou prostředí <code>$EDITOR</code> vašeho shellu. Obvykle je to vim nebo emacs, ale příkazem <code>git config --global core.editor</code> můžete nastavit libovolný jiný — jak jsme viděli v kapitole <a href="{{< relurl "book/cs/v2/ch00/_getting_started" >}}">Úvod</a>).</p>
 </div>
 <div class="paragraph">
 <p>Editor zobrazí následující text (tento příklad je z editoru Vim):</p>
@@ -612,7 +612,7 @@ Changes to be committed:
 </div>
 <div class="paragraph">
 <p>Při příštím zápisu (commit) už tam soubor neuvidíte a nebude se sledovat.
-Pokud už jste soubor upravili a už jste ho přidali do indexu, musíte odstranění vynutit přidáním volby <code>-f</code> <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="ch00/_footnotedef_6" title="View footnote.">6</a>]</sup>.
+Pokud už jste soubor upravili a už jste ho přidali do indexu, musíte odstranění vynutit přidáním volby <code>-f</code> <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_6" >}}" title="View footnote.">6</a>]</sup>.
 Jde o funkci zvyšující bezpečnost tím, že brání nechtěnému odstranění dat, která ještě nebyla zaznamenána do snímku, a proto by nemohla být Gitem obnovena.</p>
 </div>
 <div class="paragraph">

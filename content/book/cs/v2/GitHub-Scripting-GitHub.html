@@ -35,11 +35,11 @@ In this section we’ll cover how to use the GitHub hooks system and its API to 
 <div class="paragraph">
 <p>First we’ll take a look at Services.
 Both the Hooks and Services integrations can be found in the Settings section of your repository, where we previously looked at adding Collaborators and changing the default branch of your project.
-Under the “Webhooks and Services” tab you will see something like <a href="ch00/_services_hooks">Services and Hooks configuration section.</a>.</p>
+Under the “Webhooks and Services” tab you will see something like <a href="{{< relurl "book/cs/v2/ch00/_services_hooks" >}}">Services and Hooks configuration section.</a>.</p>
 </div>
 <div id="_services_hooks" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-01-services.png" >}}" alt="Services and hooks">
+<img src="{{< relurl "book/cs/v2/images/scripting-01-services.png" >}}" alt="Services and hooks">
 </div>
 <div class="title">Figure 130. Services and Hooks configuration section.</div>
 </div>
@@ -47,11 +47,11 @@ Under the “Webhooks and Services” tab you will see something like <a href="c
 <p>There are dozens of services you can choose from, most of them integrations into other commercial and open source systems.
 Most of them are for Continuous Integration services, bug and issue trackers, chat room systems and documentation systems.
 We’ll walk through setting up a very simple one, the Email hook.
-If you choose “email” from the “Add Service” dropdown, you’ll get a configuration screen like <a href="ch00/_service_config">Email service configuration.</a>.</p>
+If you choose “email” from the “Add Service” dropdown, you’ll get a configuration screen like <a href="{{< relurl "book/cs/v2/ch00/_service_config" >}}">Email service configuration.</a>.</p>
 </div>
 <div id="_service_config" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-02-email-service.png" >}}" alt="Email service">
+<img src="{{< relurl "book/cs/v2/images/scripting-02-email-service.png" >}}" alt="Email service">
 </div>
 <div class="title">Figure 131. Email service configuration.</div>
 </div>
@@ -75,12 +75,12 @@ You specify a URL and GitHub will post an HTTP payload to that URL on any event 
 <p>Generally the way this works is you can setup a small web service to listen for a GitHub hook payload and then do something with the data when it is received.</p>
 </div>
 <div class="paragraph">
-<p>To enable a hook, you click the “Add webhook” button in <a href="ch00/_services_hooks">Services and Hooks configuration section.</a>.
-This will bring you to a page that looks like <a href="ch00/_web_hook">Web hook configuration.</a>.</p>
+<p>To enable a hook, you click the “Add webhook” button in <a href="{{< relurl "book/cs/v2/ch00/_services_hooks" >}}">Services and Hooks configuration section.</a>.
+This will bring you to a page that looks like <a href="{{< relurl "book/cs/v2/ch00/_web_hook" >}}">Web hook configuration.</a>.</p>
 </div>
 <div id="_web_hook" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-03-webhook.png" >}}" alt="Web hook">
+<img src="{{< relurl "book/cs/v2/images/scripting-03-webhook.png" >}}" alt="Web hook">
 </div>
 <div class="title">Figure 132. Web hook configuration.</div>
 </div>
@@ -143,7 +143,7 @@ This makes it incredibly easy to test and debug your hooks.</p>
 </div>
 <div id="_web_hook_debug" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-04-webhook-debug.png" >}}" alt="Webhook debug">
+<img src="{{< relurl "book/cs/v2/images/scripting-04-webhook-debug.png" >}}" alt="Webhook debug">
 </div>
 <div class="title">Figure 133. Web hook debugging information.</div>
 </div>
@@ -228,7 +228,7 @@ You can generate this from the “Applications” tab of your settings page.</p>
 </div>
 <div id="_access_token" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-05-access-token.png" >}}" alt="Access Token">
+<img src="{{< relurl "book/cs/v2/images/scripting-05-access-token.png" >}}" alt="Access Token">
 </div>
 <div class="title">Figure 134. Generate your access token from the “Applications” tab of your settings page.</div>
 </div>
@@ -274,11 +274,11 @@ To do so we have to do an HTTP POST request to <code>repos/&lt;user&gt;/&lt;repo
 </div>
 </div>
 <div class="paragraph">
-<p>Now if you go to that issue, you can see the comment that we just successfully posted as in <a href="ch00/_api_comment">A comment posted from the GitHub API.</a>.</p>
+<p>Now if you go to that issue, you can see the comment that we just successfully posted as in <a href="{{< relurl "book/cs/v2/ch00/_api_comment" >}}">A comment posted from the GitHub API.</a>.</p>
 </div>
 <div id="_api_comment" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-06-comment.png" >}}" alt="API Comment">
+<img src="{{< relurl "book/cs/v2/images/scripting-06-comment.png" >}}" alt="API Comment">
 </div>
 <div class="title">Figure 135. A comment posted from the GitHub API.</div>
 </div>
@@ -351,11 +351,11 @@ In this web hook handler we look through each commit that was just pushed, we lo
 For example, a testing service may provide a status and a validation service like this may also provide a status — the “context” field is how they’re differentiated.</p>
 </div>
 <div class="paragraph">
-<p>If someone opens a new Pull Request on GitHub and this hook is set up, you may see something like <a href="ch00/_commit_status">Commit status via the API.</a>.</p>
+<p>If someone opens a new Pull Request on GitHub and this hook is set up, you may see something like <a href="{{< relurl "book/cs/v2/ch00/_commit_status" >}}">Commit status via the API.</a>.</p>
 </div>
 <div id="_commit_status" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-07-status.png" >}}" alt="Commit status">
+<img src="{{< relurl "book/cs/v2/images/scripting-07-status.png" >}}" alt="Commit status">
 </div>
 <div class="title">Figure 136. Commit status via the API.</div>
 </div>

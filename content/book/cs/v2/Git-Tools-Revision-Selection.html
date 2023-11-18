@@ -140,7 +140,7 @@ $ git show topic1</code></pre>
 </div>
 <div class="paragraph">
 <p>If you want to see which specific SHA-1 a branch points to, or if you want to see what any of these examples boils down to in terms of SHA-1s, you can use a Git plumbing tool called <code>rev-parse</code>.
-You can see <a href="ch00/_git_internals">Git Internals</a> for more information about plumbing tools; basically, <code>rev-parse</code> exists for lower-level operations and isn’t designed to be used in day-to-day operations.
+You can see <a href="{{< relurl "book/cs/v2/ch00/_git_internals" >}}">Git Internals</a> for more information about plumbing tools; basically, <code>rev-parse</code> exists for lower-level operations and isn’t designed to be used in day-to-day operations.
 Může se však hodit, až budete jednou potřebovat zjistit, co se doopravdy odehrává.
 Tehdy můžete na svou větev spustit příkaz <code>rev-parse</code>:</p>
 </div>
@@ -324,11 +324,11 @@ This is particularly useful for managing your branches – if you have a lot of 
 <div class="paragraph">
 <p>Nejčastěji se při označení intervalu používá dvojtečková syntaxe.
 Pomocí ní systému Git v podstatě říkáte, aby uvažoval celý interval revizí, které jsou dostupné z jedné revize, ale nejsou dostupné z jiné.
-For example, say you have a commit history that looks like <a href="ch00/double_dot">Example history for range selection.</a>.</p>
+For example, say you have a commit history that looks like <a href="{{< relurl "book/cs/v2/ch00/double_dot" >}}">Example history for range selection.</a>.</p>
 </div>
 <div id="double_dot" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/double-dot.png" >}}" alt="Example history for range selection.">
+<img src="{{< relurl "book/cs/v2/images/double-dot.png" >}}" alt="Example history for range selection.">
 </div>
 <div class="title">Figure 137. Example history for range selection.</div>
 </div>
@@ -403,7 +403,7 @@ $ git log refA refB --not refC</code></pre>
 <h4 id="_triple_dot">Triple Dot</h4>
 <div class="paragraph">
 <p>Poslední významnou syntaxí k určení intervalu je trojtečková syntaxe, která vybere všechny revize dostupné ve dvou referencích, ale ne v obou zároveň.
-Look back at the example commit history in <a href="ch00/double_dot">Example history for range selection.</a>.
+Look back at the example commit history in <a href="{{< relurl "book/cs/v2/ch00/double_dot" >}}">Example history for range selection.</a>.
 Chcete-li zjistit, co je ve větvi <code>master</code> nebo <code>experiment</code>, ale nechcete vidět jejich společné reference, zadejte příkaz:</p>
 </div>
 <div class="listingblock">

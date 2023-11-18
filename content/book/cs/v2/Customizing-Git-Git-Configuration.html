@@ -23,7 +23,7 @@ With these tools, it’s easy to get Git to work exactly the way you, your compa
 <h2 id="_git_config">Git Configuration</h2>
 <div class="paragraph">
 <p>
-As you briefly saw in <a href="ch00/_getting_started">Úvod</a>, you can specify Git configuration settings with the <code>git config</code> command.
+As you briefly saw in <a href="{{< relurl "book/cs/v2/ch00/_getting_started" >}}">Úvod</a>, you can specify Git configuration settings with the <code>git config</code> command.
 One of the first things you did was set up your name and email address:</p>
 </div>
 <div class="listingblock">
@@ -172,7 +172,7 @@ You can set it to <code>more</code> or to your favorite pager (by default, it’
 <h4 id="_user_signingkey"><code>user.signingkey</code></h4>
 <div class="paragraph">
 <p>
-If you’re making signed annotated tags (as discussed in <a href="ch00/_signing">Signing Your Work</a>), setting your GPG signing key as a configuration setting makes things easier.
+If you’re making signed annotated tags (as discussed in <a href="{{< relurl "book/cs/v2/ch00/_signing" >}}">Signing Your Work</a>), setting your GPG signing key as a configuration setting makes things easier.
 ID svého klíče nastavíte takto:</p>
 </div>
 <div class="listingblock">
@@ -193,7 +193,7 @@ ID svého klíče nastavíte takto:</p>
 <h4 id="_core_excludesfile"><code>core.excludesfile</code></h4>
 <div class="paragraph">
 <p>
-You can put patterns in your project’s <code>.gitignore</code> file to have Git not see them as untracked files or try to stage them when you run <code>git add</code> on them, as discussed in <a href="ch00/_ignoring">Ignorované soubory</a>.</p>
+You can put patterns in your project’s <code>.gitignore</code> file to have Git not see them as untracked files or try to stage them when you run <code>git add</code> on them, as discussed in <a href="{{< relurl "book/cs/v2/ch00/_ignoring" >}}">Ignorované soubory</a>.</p>
 </div>
 <div class="paragraph">
 <p>But sometimes you want to ignore certain files for all repositories that you work with.
@@ -398,7 +398,7 @@ $ git config --global diff.external extDiff</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/p4merge.png" >}}" alt="P4Merge.">
+<img src="{{< relurl "book/cs/v2/images/p4merge.png" >}}" alt="P4Merge.">
 </div>
 <div class="title">Figure 143. P4Merge.</div>
 </div>
@@ -613,7 +613,7 @@ To avoid this, set <code>receive.denyDeletes</code> to true:</p>
 <div class="paragraph">
 <p>This denies any deletion of branches or tags – no user can do it.
 Budete-li chtít odstranit vzdálenou větev, budete muset ručně smazat referenční soubory ze serveru.
-There are also more interesting ways to do this on a per-user basis via ACLs, as you’ll learn in <a href="ch00/_an_example_git_enforced_policy">An Example Git-Enforced Policy</a>.</p>
+There are also more interesting ways to do this on a per-user basis via ACLs, as you’ll learn in <a href="{{< relurl "book/cs/v2/ch00/_an_example_git_enforced_policy" >}}">An Example Git-Enforced Policy</a>.</p>
 </div>
 </div>
 </div>

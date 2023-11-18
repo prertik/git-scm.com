@@ -30,7 +30,7 @@ title: Git - Гранење објаснето
 <p>За да го разбереме начинот на кој Git прави разгранување, треба да направиме чекор назад и да испитаме како Git ги чува своите податоци.</p>
 </div>
 <div class="paragraph">
-<p>Како што можеби се сеќавате од <a href="ch00/ch01-getting-started">Почеток</a>, Git не ги зачувува податоците како серија на промени или разлики, туку наместо како серија на снимки.</p>
+<p>Како што можеби се сеќавате од <a href="{{< relurl "book/mk/v2/ch00/ch01-getting-started" >}}">Почеток</a>, Git не ги зачувува податоците како серија на промени или разлики, туку наместо како серија на снимки.</p>
 </div>
 <div class="paragraph">
 <p>Кога ќе направите залог, Git зачувува објект за извршување кој содржи покажувач кон моменталната слика на содржината што ја изведе.
@@ -38,7 +38,7 @@ title: Git - Гранење објаснето
 </div>
 <div class="paragraph">
 <p>За да го визуелизираме ова, да претпоставиме дека имате директориум во кој се наоѓаат три датотеки, и ги прикажувате сите и извршите.
-Поставувањето на датотеките пресметува контролна сума за секој од нив (SHA-1 hash споменавме во <a href="ch00/ch01-getting-started">Почеток</a>), ја зачувува таа верзија на датотеката во Git складиштето (Git ги нарекува како blobs), и додава таа проверка во областа на стоп:</p>
+Поставувањето на датотеките пресметува контролна сума за секој од нив (SHA-1 hash споменавме во <a href="{{< relurl "book/mk/v2/ch00/ch01-getting-started" >}}">Почеток</a>), ја зачувува таа верзија на датотеката во Git складиштето (Git ги нарекува како blobs), и додава таа проверка во областа на стоп:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -55,7 +55,7 @@ Git потоа создава објект за извршување кој ги
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
+<img src="{{< relurl "book/mk/v2/images/commit-and-tree.png" >}}" alt="A commit and its tree.">
 </div>
 <div class="title">Figure 9. A commit and its tree</div>
 </div>
@@ -64,7 +64,7 @@ Git потоа создава објект за извршување кој ги
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
+<img src="{{< relurl "book/mk/v2/images/commits-and-parents.png" >}}" alt="Commits and their parents.">
 </div>
 <div class="title">Figure 10. Commits and their parents</div>
 </div>
@@ -85,7 +85,7 @@ Git потоа создава објект за извршување кој ги
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
+<img src="{{< relurl "book/mk/v2/images/branch-and-history.png" >}}" alt="A branch and its commit history.">
 </div>
 <div class="title">Figure 11. A branch and its commit history</div>
 </div>
@@ -108,7 +108,7 @@ Git потоа создава објект за извршување кој ги
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
+<img src="{{< relurl "book/mk/v2/images/two-branches.png" >}}" alt="Two branches pointing into the same series of commits.">
 </div>
 <div class="title">Figure 12. Two branches pointing into the same series of commits</div>
 </div>
@@ -122,7 +122,7 @@ Git потоа создава објект за извршување кој ги
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
+<img src="{{< relurl "book/mk/v2/images/head-to-master.png" >}}" alt="HEAD pointing to a branch.">
 </div>
 <div class="title">Figure 13. HEAD pointing to a branch</div>
 </div>
@@ -159,7 +159,7 @@ f30ab (HEAD -&gt; master, testing) add feature #32 - ability to add new formats 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
+<img src="{{< relurl "book/mk/v2/images/head-to-testing.png" >}}" alt="HEAD points to the current branch.">
 </div>
 <div class="title">Figure 14. HEAD points to the current branch</div>
 </div>
@@ -175,7 +175,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
+<img src="{{< relurl "book/mk/v2/images/advance-testing.png" >}}" alt="The HEAD branch moves forward when a commit is made.">
 </div>
 <div class="title">Figure 15. The HEAD branch moves forward when a commit is made</div>
 </div>
@@ -190,7 +190,7 @@ $ git commit -a -m 'made a change'</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
+<img src="{{< relurl "book/mk/v2/images/checkout-master.png" >}}" alt="HEAD moves when you checkout.">
 </div>
 <div class="title">Figure 16. HEAD moves when you checkout</div>
 </div>
@@ -226,14 +226,14 @@ $ git commit -a -m 'made other changes'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Сега вашата историја на проектот се одвои (видете <a href="ch00/divergent_history">Divergent history</a>).
+<p>Сега вашата историја на проектот се одвои (видете <a href="{{< relurl "book/mk/v2/ch00/divergent_history" >}}">Divergent history</a>).
 Вие креиравте и се префрливте на гранка, дали некои работат на тоа, а потоа се вративте на вашата главна гранка и направивте друга работа.
 И двете од овие промени се изолирани во одделни гранки: може да се префрлите напред и назад помеѓу гранките и да ги споите заедно кога сте подготвени.
 И направи сето тоа со едноставни <code>branch</code>,` checkout` и <code>commit</code> команди.</p>
 </div>
 <div id="divergent_history" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/advance-master.png" >}}" alt="Divergent history.">
+<img src="{{< relurl "book/mk/v2/images/advance-master.png" >}}" alt="Divergent history.">
 </div>
 <div class="title">Figure 17. Divergent history</div>
 </div>

@@ -371,17 +371,17 @@ In dit scenario heb je een <code>master</code>-branch die feitelijk de stabiele 
 Als je werk in een topic branch hebt waaraan je gewerkt hebt, of dat iemand anders heeft bijgedragen en je hebt dat nagekeken, dan merge je het in de master branch, verwijdert de topic branch en herhaalt het proces.</p>
 </div>
 <div class="paragraph">
-<p>Bijvoorbeeld, als we een repository hebben met werk in twee branches genaamd <code>ruby_client</code> en <code>php_client</code>, wat eruit ziet zoals <a href="ch00/merwf_a">Historie met een aantal topic branches.</a> en mergen eerst <code>ruby_client</code> en daarna <code>php_client</code>, dan zal je historie er uit gaan zien zoals in <a href="ch00/merwf_b">Na het mergen van een topic branch.</a>.</p>
+<p>Bijvoorbeeld, als we een repository hebben met werk in twee branches genaamd <code>ruby_client</code> en <code>php_client</code>, wat eruit ziet zoals <a href="{{< relurl "book/nl/v2/ch00/merwf_a" >}}">Historie met een aantal topic branches.</a> en mergen eerst <code>ruby_client</code> en daarna <code>php_client</code>, dan zal je historie er uit gaan zien zoals in <a href="{{< relurl "book/nl/v2/ch00/merwf_b" >}}">Na het mergen van een topic branch.</a>.</p>
 </div>
 <div id="merwf_a" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-1.png" >}}" alt="Historie met een aantal topic branches.">
+<img src="{{< relurl "book/nl/v2/images/merging-workflows-1.png" >}}" alt="Historie met een aantal topic branches.">
 </div>
 <div class="title">Figuur 73. Historie met een aantal topic branches.</div>
 </div>
 <div id="merwf_b" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-2.png" >}}" alt="Na het mergen van een topic branch.">
+<img src="{{< relurl "book/nl/v2/images/merging-workflows-2.png" >}}" alt="Na het mergen van een topic branch.">
 </div>
 <div class="title">Figuur 74. Na het mergen van een topic branch.</div>
 </div>
@@ -392,23 +392,23 @@ Als je werk in een topic branch hebt waaraan je gewerkt hebt, of dat iemand ande
 <p>Als je belangrijkere projecten hebt, zou je kunnen denken aan een twee-fasen merge cyclus.
 In dit scenario heb je twee langlopende branches, <code>master</code> en <code>develop</code>, waarin je bepaalt dat <code>master</code> alleen wordt geupdate als een hele stabiele release wordt gemaakt en alle nieuwe code wordt geintegreerd in de <code>develop</code>-branch.
 Je pusht beide branches regelmatig naar de publieke repository.
-Elke keer heb je een nieuwe topic branch om in te mergen (<a href="ch00/merwf_c">Voor de merge van een topic branch.</a>), je merget deze in <code>develop</code> (<a href="ch00/merwf_d">Na de merge van een topic branch.</a>); daarna, als je een release tagt, fast-forward je <code>master</code> naar waar de nu stabiele <code>develop</code>-branch is (<a href="ch00/merwf_e">Na een project release.</a>).</p>
+Elke keer heb je een nieuwe topic branch om in te mergen (<a href="{{< relurl "book/nl/v2/ch00/merwf_c" >}}">Voor de merge van een topic branch.</a>), je merget deze in <code>develop</code> (<a href="{{< relurl "book/nl/v2/ch00/merwf_d" >}}">Na de merge van een topic branch.</a>); daarna, als je een release tagt, fast-forward je <code>master</code> naar waar de nu stabiele <code>develop</code>-branch is (<a href="{{< relurl "book/nl/v2/ch00/merwf_e" >}}">Na een project release.</a>).</p>
 </div>
 <div id="merwf_c" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-3.png" >}}" alt="Voor de merge van een topic branch.">
+<img src="{{< relurl "book/nl/v2/images/merging-workflows-3.png" >}}" alt="Voor de merge van een topic branch.">
 </div>
 <div class="title">Figuur 75. Voor de merge van een topic branch.</div>
 </div>
 <div id="merwf_d" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-4.png" >}}" alt="Na de merge van een topic branch.">
+<img src="{{< relurl "book/nl/v2/images/merging-workflows-4.png" >}}" alt="Na de merge van een topic branch.">
 </div>
 <div class="title">Figuur 76. Na de merge van een topic branch.</div>
 </div>
 <div id="merwf_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/merging-workflows-5.png" >}}" alt="Na een project release.">
+<img src="{{< relurl "book/nl/v2/images/merging-workflows-5.png" >}}" alt="Na een project release.">
 </div>
 <div class="title">Figuur 77. Na een project release.</div>
 </div>
@@ -423,13 +423,13 @@ Dan, als de code op die branch stabiel is en de tests passeert, kan je dit op de
 <div class="paragraph">
 <p>
 Het Git project heeft vier langlopende branches: <code>master</code>, <code>next</code>, en <code>pu</code> (proposed updates, voorgestelde wijzigingen) voor nieuw spul, en <code>maint</code> voor onderhoudswerk (maintenance backports).
-Als nieuw werk wordt geïntroduceerd door bijdragers, wordt het samengeraapt in topic branches in de repository van de beheerder op een manier die lijkt op wat we omschreven hebben (zie <a href="ch00/merwf_f">Een complexe reeks van parallelle bijgedragen topic branches beheren.</a>).
+Als nieuw werk wordt geïntroduceerd door bijdragers, wordt het samengeraapt in topic branches in de repository van de beheerder op een manier die lijkt op wat we omschreven hebben (zie <a href="{{< relurl "book/nl/v2/ch00/merwf_f" >}}">Een complexe reeks van parallelle bijgedragen topic branches beheren.</a>).
 Hier worden de topics geëvalueerd om te bepalen of ze veilig zijn en klaar voor verdere verwerking of dat ze nog wat werk nodig hebben.
 Als ze veilig zijn, worden ze in <code>next</code> gemerged, en wordt die branch gepusht zodat iedereen de geïntegreerde topics kan uitproberen.</p>
 </div>
 <div id="merwf_f" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-1.png" >}}" alt="Een complexe reeks van parallelle bijgedragen topic branches beheren.">
+<img src="{{< relurl "book/nl/v2/images/large-merges-1.png" >}}" alt="Een complexe reeks van parallelle bijgedragen topic branches beheren.">
 </div>
 <div class="title">Figuur 78. Een complexe reeks van parallelle bijgedragen topic branches beheren.</div>
 </div>
@@ -441,7 +441,7 @@ Dit betekent dat <code>master</code> vrijwel altijd vooruit beweegt, <code>next<
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/large-merges-2.png" >}}" alt="Bijgedragen topic branches mergen in langlopende integratie branches.">
+<img src="{{< relurl "book/nl/v2/images/large-merges-2.png" >}}" alt="Bijgedragen topic branches mergen in langlopende integratie branches.">
 </div>
 <div class="title">Figuur 79. Bijgedragen topic branches mergen in langlopende integratie branches.</div>
 </div>
@@ -471,7 +471,7 @@ Bijvoorbeeld, stel dat je een project hebt dat eruit ziet als dit:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-1.png" >}}" alt="Voorbeeld historie voor een cherry-pick.">
+<img src="{{< relurl "book/nl/v2/images/rebasing-1.png" >}}" alt="Voorbeeld historie voor een cherry-pick.">
 </div>
 <div class="title">Figuur 80. Voorbeeld historie voor een cherry-pick.</div>
 </div>
@@ -492,7 +492,7 @@ Nu ziet je historie er zo uit:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/rebasing-2.png" >}}" alt="Historie na het cherry-picken van een commit op een topic branch.">
+<img src="{{< relurl "book/nl/v2/images/rebasing-2.png" >}}" alt="Historie na het cherry-picken van een commit op een topic branch.">
 </div>
 <div class="title">Figuur 81. Historie na het cherry-picken van een commit op een topic branch.</div>
 </div>
@@ -526,7 +526,7 @@ De configuratie is een <code>rerere.enabled</code> instelling, en het is handig 
 <p>Als het nodig is kan je interacteren met de rerere cache met het <code>git rerere</code> commando.
 Als het op zich aangeroepen wordt, zal Git de database met oplossingen controleren en probeert een passende te vinden voor alle huidige merge conflicten en deze proberen op te lossen (alhoewel dit automatisch wordt gedaan als <code>rerere .enabled</code> op <code>true</code> is gezet).
 Er zijn ook sub-commando’s om te zien wat er opgeslagen gaat worden, om specifieke oplossingen uit de cache te verwijderen, en om de gehele cache te legen.
-We zullen rerere meer gedetailleerd behandelen in <a href="ch00/ref_rerere">Rerere</a>.</p>
+We zullen rerere meer gedetailleerd behandelen in <a href="{{< relurl "book/nl/v2/ch00/ref_rerere" >}}">Rerere</a>.</p>
 </div>
 </div>
 </div>
@@ -535,7 +535,7 @@ We zullen rerere meer gedetailleerd behandelen in <a href="ch00/ref_rerere">Rere
 <div class="paragraph">
 <p>
 Als je hebt besloten om een release te maken, zul je waarschijnlijk een tag willen aanmaken zodat je die release op elk moment in de toekomst opnieuw kunt maken.
-Je kunt een nieuwe tag maken zoals ik heb beschreven in <a href="ch00/ch02-git-basics-chapter">Git Basics</a>.
+Je kunt een nieuwe tag maken zoals ik heb beschreven in <a href="{{< relurl "book/nl/v2/ch00/ch02-git-basics-chapter" >}}">Git Basics</a>.
 Als je besluit om de tag als de beheerder te tekenen, dan ziet het taggen er wellicht zo uit:</p>
 </div>
 <div class="listingblock">

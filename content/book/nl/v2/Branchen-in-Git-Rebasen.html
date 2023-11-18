@@ -26,11 +26,11 @@ In deze paragraaf ga je leren wat rebasen is, hoe je dat moet doen, waarom het e
 <div class="sect3">
 <h3 id="_de_simpele_rebase">De simpele rebase</h3>
 <div class="paragraph">
-<p>Als je het eerdere voorbeeld van <a href="ch00/_basic_merging">Eenvoudig mergen (samenvoegen)</a> erop terugslaat, dan zul je zien dat je werk is uiteengelopen en dat je commits hebt gedaan op de twee verschillende branches.</p>
+<p>Als je het eerdere voorbeeld van <a href="{{< relurl "book/nl/v2/ch00/_basic_merging" >}}">Eenvoudig mergen (samenvoegen)</a> erop terugslaat, dan zul je zien dat je werk is uiteengelopen en dat je commits hebt gedaan op de twee verschillende branches.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="Eenvoudige uiteengelopen historie.">
+<img src="{{< relurl "book/nl/v2/images/basic-rebase-1.png" >}}" alt="Eenvoudige uiteengelopen historie.">
 </div>
 <div class="title">Figuur 35. Eenvoudige uiteengelopen historie</div>
 </div>
@@ -40,7 +40,7 @@ Het voert een drieweg-merge uit tussen de twee laatste snapshots van de branches
 </div>
 <div id="rebasing-merging-example" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="Mergen om uiteengelopen werk historie te integreren.">
+<img src="{{< relurl "book/nl/v2/images/basic-rebase-2.png" >}}" alt="Mergen om uiteengelopen werk historie te integreren.">
 </div>
 <div class="title">Figuur 36. Mergen om uiteengelopen werk historie te integreren</div>
 </div>
@@ -65,7 +65,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="De wijziging gemaakt in `C4` rebasen naar `C3`.">
+<img src="{{< relurl "book/nl/v2/images/basic-rebase-3.png" >}}" alt="De wijziging gemaakt in `C4` rebasen naar `C3`.">
 </div>
 <div class="title">Figuur 37. De wijziging gemaakt in <code>C4</code> rebasen naar <code>C3</code>
 </div>
@@ -81,12 +81,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="De master branch fast-forwarden.">
+<img src="{{< relurl "book/nl/v2/images/basic-rebase-4.png" >}}" alt="De master branch fast-forwarden.">
 </div>
 <div class="title">Figuur 38. De master branch fast-forwarden</div>
 </div>
 <div class="paragraph">
-<p>Nu is het snapshot waar <code>C4'</code> naar wijst precies dezelfde als degene waar <code>C5</code> naar wees in het <a href="ch00/rebasing-merging-example">merge voorbeeld</a>.
+<p>Nu is het snapshot waar <code>C4'</code> naar wijst precies dezelfde als degene waar <code>C5</code> naar wees in het <a href="{{< relurl "book/nl/v2/ch00/rebasing-merging-example" >}}">merge voorbeeld</a>.
 Er zit geen verschil in het eindresultaat van de integratie, maar rebasen zorgt voor een duidelijkere historie.
 Als je de log van een branch die gerebased is bekijkt, ziet het eruit als een lineaire historie: het lijkt alsof al het werk volgorderlijk is gebeurd, zelfs wanneer het in werkelijkheid parallel eraan gedaan is.</p>
 </div>
@@ -104,14 +104,14 @@ Rebasen speelt veranderingen van een werklijn opnieuw af op een andere, in de vo
 <h3 id="_interessantere_rebases">Interessantere rebases</h3>
 <div class="paragraph">
 <p>Je kunt je rebase ook opnieuw laten afspelen op iets anders dan de rebase doel branch.
-Pak een historie zoals in <a href="ch00/rbdiag_e">Een historie met een topic branch vanaf een andere topic branch</a>, bijvoorbeeld.
+Pak een historie zoals in <a href="{{< relurl "book/nl/v2/ch00/rbdiag_e" >}}">Een historie met een topic branch vanaf een andere topic branch</a>, bijvoorbeeld.
 Je hebt een topic branch afgesplitst (<code>server</code>) om wat server-kant functionaliteit toe te voegen aan je project en toen een keer gecommit.
 Daarna heb je daar vanaf gebranched om de client-kant wijzigingen te doen (<code>client</code>) en een paar keer gecommit.
 Als laatste, ben je teruggegaan naar je server branch en hebt nog een paar commits gedaan.</p>
 </div>
 <div id="rbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="Een historie met een topic branch vanaf een andere topic branch.">
+<img src="{{< relurl "book/nl/v2/images/interesting-rebase-1.png" >}}" alt="Een historie met een topic branch vanaf een andere topic branch.">
 </div>
 <div class="title">Figuur 39. Een historie met een topic branch vanaf een andere topic branch</div>
 </div>
@@ -130,12 +130,12 @@ Het is een beetje ingewikkeld, maar het resultaat is best wel gaaf.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="Een topic branch rebasen vanaf een andere topic branch.">
+<img src="{{< relurl "book/nl/v2/images/interesting-rebase-2.png" >}}" alt="Een topic branch rebasen vanaf een andere topic branch.">
 </div>
 <div class="title">Figuur 40. Een topic branch rebasen vanaf een andere topic branch</div>
 </div>
 <div class="paragraph">
-<p>Nu kun je een fast-forward doen van je <code>master</code>-branch (zie <a href="ch00/rbdiag_g">Je master branch fast-forwarden om de client branch wijzigingen mee te nemen</a>):</p>
+<p>Nu kun je een fast-forward doen van je <code>master</code>-branch (zie <a href="{{< relurl "book/nl/v2/ch00/rbdiag_g" >}}">Je master branch fast-forwarden om de client branch wijzigingen mee te nemen</a>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -145,7 +145,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="Je master branch fast-forwarden om de client branch wijzigingen mee te nemen.">
+<img src="{{< relurl "book/nl/v2/images/interesting-rebase-3.png" >}}" alt="Je master branch fast-forwarden om de client branch wijzigingen mee te nemen.">
 </div>
 <div class="title">Figuur 41. Je master branch fast-forwarden om de client branch wijzigingen mee te nemen</div>
 </div>
@@ -159,11 +159,11 @@ Je kunt de server branch rebasen op de master branch zonder het eerst te hoeven 
 </div>
 </div>
 <div class="paragraph">
-<p>Dit speelt het <code>server</code> werk opnieuw af op het <code>master</code> werk, zoals getoond in <a href="ch00/rbdiag_h">Je server branch op je master branch rebasen</a>.</p>
+<p>Dit speelt het <code>server</code> werk opnieuw af op het <code>master</code> werk, zoals getoond in <a href="{{< relurl "book/nl/v2/ch00/rbdiag_h" >}}">Je server branch op je master branch rebasen</a>.</p>
 </div>
 <div id="rbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="Je server branch op je master branch rebasen.">
+<img src="{{< relurl "book/nl/v2/images/interesting-rebase-4.png" >}}" alt="Je server branch op je master branch rebasen.">
 </div>
 <div class="title">Figuur 42. Je server branch op je master branch rebasen</div>
 </div>
@@ -177,7 +177,7 @@ $ git merge server</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Je kunt de <code>client</code> en <code>server</code>-branches verwijderen, omdat al het werk geïntegreerd is en je ze niet meer nodig hebt, en de historie voor het hele proces ziet eruit zoals in <a href="ch00/rbdiag_i">Uiteindelijke commit historie</a>:</p>
+<p>Je kunt de <code>client</code> en <code>server</code>-branches verwijderen, omdat al het werk geïntegreerd is en je ze niet meer nodig hebt, en de historie voor het hele proces ziet eruit zoals in <a href="{{< relurl "book/nl/v2/ch00/rbdiag_i" >}}">Uiteindelijke commit historie</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -187,7 +187,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="Uiteindelijke commit historie.">
+<img src="{{< relurl "book/nl/v2/images/interesting-rebase-5.png" >}}" alt="Uiteindelijke commit historie.">
 </div>
 <div class="title">Figuur 43. Uiteindelijke commit historie</div>
 </div>
@@ -216,7 +216,7 @@ Je commit-historie ziet eruit als volgt:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="Clone een repository, en baseer er wat werk op.">
+<img src="{{< relurl "book/nl/v2/images/perils-of-rebasing-1.png" >}}" alt="Clone een repository, en baseer er wat werk op.">
 </div>
 <div class="title">Figuur 44. Clone een repository, en baseer er wat werk op</div>
 </div>
@@ -226,7 +226,7 @@ Je fetcht dat en merget de nieuwe remote branch in jouw werk, zodat je historie 
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="Fetch meer commits, en merge ze in jouw werk.">
+<img src="{{< relurl "book/nl/v2/images/perils-of-rebasing-2.png" >}}" alt="Fetch meer commits, en merge ze in jouw werk.">
 </div>
 <div class="title">Figuur 45. Fetch meer commits, en merge ze in jouw werk</div>
 </div>
@@ -236,7 +236,7 @@ Je pullt daarna van die server, waarbij je de nieuwe commits binnen krijgt.</p>
 </div>
 <div id="_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="Iemand pusht gerebasede commits, daarbij commits buitenspel zettend waar jij werk op gebaseerd hebt.">
+<img src="{{< relurl "book/nl/v2/images/perils-of-rebasing-3.png" >}}" alt="Iemand pusht gerebasede commits, daarbij commits buitenspel zettend waar jij werk op gebaseerd hebt.">
 </div>
 <div class="title">Figuur 46. Iemand pusht gerebasede commits, daarbij commits buitenspel zettend waar jij werk op gebaseerd hebt</div>
 </div>
@@ -246,7 +246,7 @@ Als jij een <code>git pull</code> doet, ga je een commit merge maken waar beide 
 </div>
 <div id="_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="Je merget hetzelfde werk opnieuw in een nieuwe merge commit.">
+<img src="{{< relurl "book/nl/v2/images/perils-of-rebasing-4.png" >}}" alt="Je merget hetzelfde werk opnieuw in een nieuwe merge commit.">
 </div>
 <div class="title">Figuur 47. Je merget hetzelfde werk opnieuw in een nieuwe merge commit</div>
 </div>
@@ -270,7 +270,7 @@ Als iemand of een aantal mensen in jouw team met pushes wijzigingen hebben gefor
 <p>Als je werk pullt die was herschreven en deze rebased op de nieuwe commits van je partner, kan Git vaak succesvol uitvinden wat specifiek van jou is en deze opnieuw afspelen op de nieuwe branch.</p>
 </div>
 <div class="paragraph">
-<p>Bijvoorbeeld in het vorige scenario, als in plaats van een merge te doen we in een situatie zijn die beschreven is in <a href="ch00/_pre_merge_rebase_work">Iemand pusht gerebasede commits, daarbij commits buitenspel zettend waar jij werk op gebaseerd hebt</a> en we <code>git rebase teamone/master</code> aanroepen, zal Git:</p>
+<p>Bijvoorbeeld in het vorige scenario, als in plaats van een merge te doen we in een situatie zijn die beschreven is in <a href="{{< relurl "book/nl/v2/ch00/_pre_merge_rebase_work" >}}">Iemand pusht gerebasede commits, daarbij commits buitenspel zettend waar jij werk op gebaseerd hebt</a> en we <code>git rebase teamone/master</code> aanroepen, zal Git:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -289,11 +289,11 @@ Als iemand of een aantal mensen in jouw team met pushes wijzigingen hebben gefor
 </ul>
 </div>
 <div class="paragraph">
-<p>Dus in plaats van het resultaat dat we zien in <a href="ch00/_merge_rebase_work">Je merget hetzelfde werk opnieuw in een nieuwe merge commit</a>, zouden we eindigen met iets wat meer lijkt op <a href="ch00/_rebase_rebase_work">Rebase op een force-pushed rebase werk.</a>.</p>
+<p>Dus in plaats van het resultaat dat we zien in <a href="{{< relurl "book/nl/v2/ch00/_merge_rebase_work" >}}">Je merget hetzelfde werk opnieuw in een nieuwe merge commit</a>, zouden we eindigen met iets wat meer lijkt op <a href="{{< relurl "book/nl/v2/ch00/_rebase_rebase_work" >}}">Rebase op een force-pushed rebase werk.</a>.</p>
 </div>
 <div id="_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="Rebase op een force-pushed rebase werk.">
+<img src="{{< relurl "book/nl/v2/images/perils-of-rebasing-5.png" >}}" alt="Rebase op een force-pushed rebase werk.">
 </div>
 <div class="title">Figuur 48. Rebase op een force-pushed rebase werk.</div>
 </div>

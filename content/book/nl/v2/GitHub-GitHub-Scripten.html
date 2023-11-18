@@ -35,11 +35,11 @@ In deze paragraaf zullen we behandelen hoe het zgn. GitHub haken (hooks) en API 
 <div class="paragraph">
 <p>Eerst zullen we naar Services kijken.
 Zowel Hooks als Services integratie kunnen in het Settings gedeelte van je repository gevonden worden, waar we eerder naar gekeken hebben bij het toevoegen van medewerkers en het wijzigen van de standaard-branch van je project.
-Onder de “Webhooks and Services” tab zul je iets als <a href="ch00/_services_hooks">Services and Hooks configuratie deel.</a> zien.</p>
+Onder de “Webhooks and Services” tab zul je iets als <a href="{{< relurl "book/nl/v2/ch00/_services_hooks" >}}">Services and Hooks configuratie deel.</a> zien.</p>
 </div>
 <div id="_services_hooks" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-01-services.png" >}}" alt="Services en hooks">
+<img src="{{< relurl "book/nl/v2/images/scripting-01-services.png" >}}" alt="Services en hooks">
 </div>
 <div class="title">Figuur 130. Services and Hooks configuratie deel.</div>
 </div>
@@ -47,11 +47,11 @@ Onder de “Webhooks and Services” tab zul je iets als <a href="ch00/_services
 <p>Er zijn tientallen services waar je uit kunt kiezen, de meeste zijn integraties naar andere commerciele en open source systemen.
 De meeste daarvan zijn Continuous Integration services, bug en issue trackers, chat room systemen en documentatie systemen.
 We zullen je door het opzetten van een eenvoudige leiden: de Email-hook.
-Als je “email” kiest uit de “Add Service” dropdown, krijg je een configuratie scherm zoals <a href="ch00/_service_config">E-mail service configuratie.</a>.</p>
+Als je “email” kiest uit de “Add Service” dropdown, krijg je een configuratie scherm zoals <a href="{{< relurl "book/nl/v2/ch00/_service_config" >}}">E-mail service configuratie.</a>.</p>
 </div>
 <div id="_service_config" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-02-email-service.png" >}}" alt="E-mail service">
+<img src="{{< relurl "book/nl/v2/images/scripting-02-email-service.png" >}}" alt="E-mail service">
 </div>
 <div class="title">Figuur 131. E-mail service configuratie.</div>
 </div>
@@ -75,12 +75,12 @@ Je geeft een URL op en GitHub zal een HTTP payload posten op die URL bij elke ge
 <p>Hoe dit globaal werkt is dat je een kleine web service kunt opzetten die naar een GitHub hook payload luistert en dan iets met de gegevens doet als het is ontvangen.</p>
 </div>
 <div class="paragraph">
-<p>Om een hook aan te zetten, klik je de “Add webhook” knop in <a href="ch00/_services_hooks">Services and Hooks configuratie deel.</a>.
-Dit leidt je naar een pagina die eruit ziet als <a href="ch00/_web_hook">Web hook configuratie.</a>.</p>
+<p>Om een hook aan te zetten, klik je de “Add webhook” knop in <a href="{{< relurl "book/nl/v2/ch00/_services_hooks" >}}">Services and Hooks configuratie deel.</a>.
+Dit leidt je naar een pagina die eruit ziet als <a href="{{< relurl "book/nl/v2/ch00/_web_hook" >}}">Web hook configuratie.</a>.</p>
 </div>
 <div id="_web_hook" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-03-webhook.png" >}}" alt="Web hook">
+<img src="{{< relurl "book/nl/v2/images/scripting-03-webhook.png" >}}" alt="Web hook">
 </div>
 <div class="title">Figuur 132. Web hook configuratie.</div>
 </div>
@@ -143,7 +143,7 @@ Dit maakt het ongelofelijk eenvoudig om je hooks te testen en te debuggen.</p>
 </div>
 <div id="_web_hook_debug" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-04-webhook-debug.png" >}}" alt="Webhook debug">
+<img src="{{< relurl "book/nl/v2/images/scripting-04-webhook-debug.png" >}}" alt="Webhook debug">
 </div>
 <div class="title">Figuur 133. Web hook debug informatie.</div>
 </div>
@@ -229,7 +229,7 @@ Deze kan je genereren vanaf de “Applications” tab van je instellingen pagina
 </div>
 <div id="_access_token" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-05-access-token.png" >}}" alt="Access Token">
+<img src="{{< relurl "book/nl/v2/images/scripting-05-access-token.png" >}}" alt="Access Token">
 </div>
 <div class="title">Figuur 134. Genereer je access token vanaf de “Applications” tab op je instellingen pagina.</div>
 </div>
@@ -275,11 +275,11 @@ Om dit te doen moeten we een HTTP POST request op <code>repos/&lt;user&gt;/&lt;r
 </div>
 </div>
 <div class="paragraph">
-<p>Als je nu naar dat issue gaat, kan je de reactie zien dat we zojuist succesvol gepost hebben in <a href="ch00/_api_comment">Een commentaar gepost via de GitHub API.</a>.</p>
+<p>Als je nu naar dat issue gaat, kan je de reactie zien dat we zojuist succesvol gepost hebben in <a href="{{< relurl "book/nl/v2/ch00/_api_comment" >}}">Een commentaar gepost via de GitHub API.</a>.</p>
 </div>
 <div id="_api_comment" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-06-comment.png" >}}" alt="Reactie via API">
+<img src="{{< relurl "book/nl/v2/images/scripting-06-comment.png" >}}" alt="Reactie via API">
 </div>
 <div class="title">Figuur 135. Een commentaar gepost via de GitHub API.</div>
 </div>
@@ -352,11 +352,11 @@ In deze webhook-verwerker kijken we door elke commit die zojuist is gepusht, we 
 Bijvoorbeeld, een test-service kan een status aangeven en een validatie service zoals deze kan ook een status aangeven — het “context” veld maakt hierin het onderscheid.</p>
 </div>
 <div class="paragraph">
-<p>Als iemand een nieuwe Pull Request op GitHub opent en deze hook is opgezet, kan je iets zoals <a href="ch00/_commit_status">Commit status via de API.</a> zien.</p>
+<p>Als iemand een nieuwe Pull Request op GitHub opent en deze hook is opgezet, kan je iets zoals <a href="{{< relurl "book/nl/v2/ch00/_commit_status" >}}">Commit status via de API.</a> zien.</p>
 </div>
 <div id="_commit_status" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/scripting-07-status.png" >}}" alt="Commit status">
+<img src="{{< relurl "book/nl/v2/images/scripting-07-status.png" >}}" alt="Commit status">
 </div>
 <div class="title">Figuur 136. Commit status via de API.</div>
 </div>

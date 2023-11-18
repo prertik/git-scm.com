@@ -124,7 +124,7 @@ De truuk is het vinden van de SHA-1 van die laatste commit - we mogen aannemen d
 <p>Vaak is de snelste manier om een instrument genaamd <code>git reflog</code> te gebruiken.
 Als je aan het werk bent, houdt Git stilletjes bij wat je HEAD was elke keer als je het verandert.
 Elke keer als je commit, of branches wijzigt, wordt de reflog bijgewerkt.
-De reflog wordt ook bijgewerkt door het <code>git update-ref</code> commando, wat nog een reden is om dit te gebruiken in plaats van alleen de SHA-1 waarden naar je ref bestanden te schrijven, zoals we besproken hebben in <a href="ch00/_git_refs">Git Referenties</a>.
+De reflog wordt ook bijgewerkt door het <code>git update-ref</code> commando, wat nog een reden is om dit te gebruiken in plaats van alleen de SHA-1 waarden naar je ref bestanden te schrijven, zoals we besproken hebben in <a href="{{< relurl "book/nl/v2/ch00/_git_refs" >}}">Git Referenties</a>.
 Je kunt zien waar je op enig moment geweest bent door <code>git reflog</code> aan te roepen:</p>
 </div>
 <div class="listingblock">
@@ -307,7 +307,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>Het grote object staat onderaan: 5MB.
-Om uit te vinden welk bestand dit is, ga je het <code>rev-list</code> commando gebruiken, die je al eventjes gebruikt hebt in <a href="ch00/_enforcing_commit_message_format">Een specifiek commit-bericht formaat afdwingen</a>.
+Om uit te vinden welk bestand dit is, ga je het <code>rev-list</code> commando gebruiken, die je al eventjes gebruikt hebt in <a href="{{< relurl "book/nl/v2/ch00/_enforcing_commit_message_format" >}}">Een specifiek commit-bericht formaat afdwingen</a>.
 Als je <code>--objects</code> doorgeeft aan <code>rev-list</code>, laat het alle SHA-1s zien van commits en ook de blob SHA-1s met het bestandspad die ermee verbonden is.
 Je kunt dit gebruiken om de naam van jouw blob te vinden:</p>
 </div>
@@ -330,7 +330,7 @@ dadf725 oops - removed large tarball
 </div>
 <div class="paragraph">
 <p>Je moet alle commits herschrijven die stroomafwaarts van <code>7b30847</code> liggen om dit bestand volledig uit je Git historie te verwijderen.
-Om dit te doen, gebruik je <code>filter-branch</code>, die je gebruikt hebt in <a href="ch00/_rewriting_history">Geschiedenis herschrijven</a>:</p>
+Om dit te doen, gebruik je <code>filter-branch</code>, die je gebruikt hebt in <a href="{{< relurl "book/nl/v2/ch00/_rewriting_history" >}}">Geschiedenis herschrijven</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -342,7 +342,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>De <code>--index-filter</code> optie is gelijk aan de <code>--tree-filter</code> optie zoals gebruikt in <a href="ch00/_rewriting_history">Geschiedenis herschrijven</a>, behalve dat in plaats van een commando door te geven die bestanden wijzigt die op schijf zijn uitgecheckt, je elke keer het staging gebied of index wijzigt.</p>
+<p>De <code>--index-filter</code> optie is gelijk aan de <code>--tree-filter</code> optie zoals gebruikt in <a href="{{< relurl "book/nl/v2/ch00/_rewriting_history" >}}">Geschiedenis herschrijven</a>, behalve dat in plaats van een commando door te geven die bestanden wijzigt die op schijf zijn uitgecheckt, je elke keer het staging gebied of index wijzigt.</p>
 </div>
 <div class="paragraph">
 <p>In plaats van een specifiek bestand te verwijderen met iets als <code>rm file</code>, moet je het verwijderen met <code>git rm --cached</code> - je moet het van de index verwijderen, niet van schijf.

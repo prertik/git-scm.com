@@ -58,7 +58,7 @@ git_repository_free(repo);</code></pre>
 Съществува и <code>git_repository_open_ext</code>, където имаме опции за търсене, <code>git_clone</code> и подобни команди за правене на локално копие на отдалечено хранилище, както и <code>git_repository_init</code> за създаване на изцяло ново хранилище.</p>
 </div>
 <div class="paragraph">
-<p>Следващият елемент от кода използва rev-parse синтаксис (вижте <a href="ch00/_branch_references">Референции към клонове</a> за подробности) за да вземе къмита, към който сочи HEAD.
+<p>Следващият елемент от кода използва rev-parse синтаксис (вижте <a href="{{< relurl "book/bg/v2/ch00/_branch_references" >}}">Референции към клонове</a> за подробности) за да вземе къмита, към който сочи HEAD.
 Върнатият тип е <code>git_object</code> указател, който дава достъп до съдържанието на обектната база данни в Git хранилище.
 <code>git_object</code> в действителност е “parent” тип за няколко различни вида обекти, разположението в паметта за всеки от “child” типовете е същото като на <code>git_object</code>, така че може безопасно да се cast-ва до правилния такъв.
 В този случай, <code>git_object_type(commit)</code> ще върне <code>GIT_OBJ_COMMIT</code>, така че е възможно да се cast-не към <code>git_commit</code> указател.</p>
@@ -164,7 +164,7 @@ commit = repo.lookup(commit_id) # <b class="conum">(8)</b></code></pre>
 </div>
 <div class="paragraph">
 <p>Ruby кодът е чист и приятен, но понеже Libgit2 върши тежката работа, той също така ще работи и много бързо.
-Ако не сте привърженик на Ruby, показваме накратко и някои други bindings в секцията <a href="ch00/_libgit2_bindings">Други Bindings</a>.</p>
+Ако не сте привърженик на Ruby, показваме накратко и някои други bindings в секцията <a href="{{< relurl "book/bg/v2/ch00/_libgit2_bindings" >}}">Други Bindings</a>.</p>
 </div>
 <div class="sect3">
 <h3 id="_по_сложни_функционалности">По-сложни функционалности</h3>

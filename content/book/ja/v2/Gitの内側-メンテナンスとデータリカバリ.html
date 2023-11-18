@@ -124,7 +124,7 @@ fdf4fc3344e67ab068f836878b6c4951e3b15f3d first commit</code></pre>
 <p>大抵の場合、最も手っ取り早いのは、<code>git reflog</code> というツールを使う方法です。
 あなたが作業をしている間、HEADを変更する度に、HEADがどこを指しているかをGitは裏で記録しています。
 コミットをしたり、ブランチを変更したりする度に、reflogは更新されます。
-また、reflogは <code>git update-ref</code> コマンドによっても更新されます。refファイルに書かれたSHA-1ハッシュ値を直に編集せずに、このコマンドを使って編集すべき理由の1つがこれです（詳しくは <a href="ch00/r_git_refs">Gitの参照</a> で取り上げました）。
+また、reflogは <code>git update-ref</code> コマンドによっても更新されます。refファイルに書かれたSHA-1ハッシュ値を直に編集せずに、このコマンドを使って編集すべき理由の1つがこれです（詳しくは <a href="{{< relurl "book/ja/v2/ch00/r_git_refs" >}}">Gitの参照</a> で取り上げました）。
 <code>git reflog</code> を実行することで、ある時点で自分がどこにいたのかを知ることができます。</p>
 </div>
 <div class="listingblock">
@@ -307,7 +307,7 @@ dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
 </div>
 <div class="paragraph">
 <p>探していた大きなオブジェクトは、一番下の5MBのものです。
-そのオブジェクトが何のファイルなのかを知るには <a href="ch00/r_enforcing_commit_message_format">特定のコミットメッセージ書式の強制</a> で少し使用した <code>rev-list</code> コマンドを使用します。
+そのオブジェクトが何のファイルなのかを知るには <a href="{{< relurl "book/ja/v2/ch00/r_enforcing_commit_message_format" >}}">特定のコミットメッセージ書式の強制</a> で少し使用した <code>rev-list</code> コマンドを使用します。
 <code>--objects</code> を <code>rev-list</code> に渡すと、すべてのコミットのSHA-1ハッシュに加えて、すべてのブロブのSHA-1ハッシュと、そのブロブに関連付けられたファイルのパスを一覧表示します。
 これは、ブロブの名前を特定するのに使えます。</p>
 </div>
@@ -330,7 +330,7 @@ dadf725 oops - removed large tarball
 </div>
 <div class="paragraph">
 <p>Gitリポジトリからこのファイルを完全に削除するには、 <code>7b30847</code> の下流にあるすべてのコミットを修正しなければなりません。
-そのためには、 <a href="ch00/r_rewriting_history">歴史の書き換え</a> で使用した <code>filter-branch</code> を使用します。</p>
+そのためには、 <a href="{{< relurl "book/ja/v2/ch00/r_rewriting_history" >}}">歴史の書き換え</a> で使用した <code>filter-branch</code> を使用します。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -342,7 +342,7 @@ Ref 'refs/heads/master' was rewritten</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><code>--index-filter</code> オプションは <a href="ch00/r_rewriting_history">歴史の書き換え</a> で使用した <code>--tree-filter</code> オプションに似ていますが、ディスク上のチェックアウトされたファイルを変更するコマンドを渡すのではなく、コミット毎にステージングエリアまたはインデックスを変更する点が異なります。</p>
+<p><code>--index-filter</code> オプションは <a href="{{< relurl "book/ja/v2/ch00/r_rewriting_history" >}}">歴史の書き換え</a> で使用した <code>--tree-filter</code> オプションに似ていますが、ディスク上のチェックアウトされたファイルを変更するコマンドを渡すのではなく、コミット毎にステージングエリアまたはインデックスを変更する点が異なります。</p>
 </div>
 <div class="paragraph">
 <p>ここでは、あるファイルを <code>rm file</code> で削除するのではなく、 <code>git rm --cached</code> で削除する必要があります。つまり、ディスクではなくインデックスからファイルを削除しなければなりません。

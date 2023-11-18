@@ -99,7 +99,7 @@ b1ec324 first commit</code></pre>
 <p>それには、バンドルファイルにまとめたいコミット範囲をまず決めます。ネットワークを使った方法であれば転送すべき範囲を最小限に自動で絞り込んでくれますが、ここでは手動で絞りこまねばなりません。最初にバンドルファイルを作ったときのようにリポジトリ全体をまとめてもかまいませんが、差分（この場合は追加したコミット3つ）だけをまとめるほうがよいでしょう。</p>
 </div>
 <div class="paragraph">
-<p>そうするには、差分を割り出す必要があります。<a href="ch00/r_commit_ranges">コミットの範囲指定</a> で解説したとおり、コミット範囲を指定する方法はたくさんあります。手元の master ブランチにはあってクローン元のブランチにはないコミット3つを指定するには、<code>origin/master..master</code> や <code>master ^origin/master</code> などとするとよいでしょう。記述をテストするには、<code>log</code> コマンドを使います。</p>
+<p>そうするには、差分を割り出す必要があります。<a href="{{< relurl "book/ja/v2/ch00/r_commit_ranges" >}}">コミットの範囲指定</a> で解説したとおり、コミット範囲を指定する方法はたくさんあります。手元の master ブランチにはあってクローン元のブランチにはないコミット3つを指定するには、<code>origin/master..master</code> や <code>master ^origin/master</code> などとするとよいでしょう。記述をテストするには、<code>log</code> コマンドを使います。</p>
 </div>
 <div class="listingblock">
 <div class="content">

@@ -28,7 +28,7 @@ url: book/ja/v2/付録-C:-Gitのコマンド-メール
 <p><code>git apply</code> コマンドは、<code>git diff</code> コマンドまたはGNU diffコマンドで作成したパッチを適用します。ほんの少しの違いを除けば、これは`patch` コマンドが行うであろう処理と同様のものです。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_patches_from_email">メールで受け取ったパッチの適用</a> では、このコマンドの使い方と、それを行うであろう状況を例示しました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_patches_from_email" >}}">メールで受け取ったパッチの適用</a> では、このコマンドの使い方と、それを行うであろう状況を例示しました。</p>
 </div>
 </div>
 <div class="sect3">
@@ -37,13 +37,13 @@ url: book/ja/v2/付録-C:-Gitのコマンド-メール
 <p><code>git am</code> コマンドは、メールの受信トレイ（特にmboxフォーマットのもの）からパッチを適用するのに使用されます。これは、パッチをメールで受け取った上で、それを簡単にプロジェクトへ適用するのに役立ちます。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_git_am"><code>am</code> でのパッチの適用</a> では、<code>--resolved、, `-i</code> および <code>-3</code> オプションの使い方を含め、 <code>git am</code> コマンドの使い方とワークフローを取り上げました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_git_am" >}}"><code>am</code> でのパッチの適用</a> では、<code>--resolved、, `-i</code> および <code>-3</code> オプションの使い方を含め、 <code>git am</code> コマンドの使い方とワークフローを取り上げました。</p>
 </div>
 <div class="paragraph">
-<p><code>git am</code> に関連したワークフローを便利にするのに使用できるフックは数多くあります。それらのフックはすべて <a href="ch00/r_email_hooks">Eメールワークフローフック</a> で取り上げました。</p>
+<p><code>git am</code> に関連したワークフローを便利にするのに使用できるフックは数多くあります。それらのフックはすべて <a href="{{< relurl "book/ja/v2/ch00/r_email_hooks" >}}">Eメールワークフローフック</a> で取り上げました。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_email_notifications">メールでの通知</a> では、GitHubのプルリクエストの変更点をpatch形式にフォーマットしたものを、このコマンドを使用して適用しました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_email_notifications" >}}">メールでの通知</a> では、GitHubのプルリクエストの変更点をpatch形式にフォーマットしたものを、このコマンドを使用して適用しました。</p>
 </div>
 </div>
 <div class="sect3">
@@ -52,7 +52,7 @@ url: book/ja/v2/付録-C:-Gitのコマンド-メール
 <p><code>git format-patch</code> コマンドは、一連のパッチをmbox形式にフォーマットし、適切にフォーマットされた形式でメーリングリストへ送信できるようにします。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_project_over_email">メールを使った公開プロジェクトへの貢献</a> では、 <code>git format-patch</code> ツールを使用してプロジェクトへ貢献する例を見てきました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_project_over_email" >}}">メールを使った公開プロジェクトへの貢献</a> では、 <code>git format-patch</code> ツールを使用してプロジェクトへ貢献する例を見てきました。</p>
 </div>
 </div>
 <div class="sect3">
@@ -61,7 +61,7 @@ url: book/ja/v2/付録-C:-Gitのコマンド-メール
 <p><code>git imap-send</code> コマンドを使うと、<code>git format-patch</code> コマンドによって生成された mailbox ファイルをIMAP サーバのドラフトフォルダにアップロードしてくれます。</p>
 </div>
 <div class="paragraph">
-<p>プロジェクトへの貢献方法として、<code>git imap-send</code> を使ってパッチを送る例を <a href="ch00/r_project_over_email">メールを使った公開プロジェクトへの貢献</a> で紹介しています。</p>
+<p>プロジェクトへの貢献方法として、<code>git imap-send</code> を使ってパッチを送る例を <a href="{{< relurl "book/ja/v2/ch00/r_project_over_email" >}}">メールを使った公開プロジェクトへの貢献</a> で紹介しています。</p>
 </div>
 </div>
 <div class="sect3">
@@ -70,7 +70,7 @@ url: book/ja/v2/付録-C:-Gitのコマンド-メール
 <p><code>git send-email</code> コマンドは、<code>git format-patch</code> コマンドで生成したパッチをメールで送信する際に使用されます。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_project_over_email">メールを使った公開プロジェクトへの貢献</a> では、<code>git send-email</code> ツールを使用して、パッチを送信してプロジェクトへ貢献する例を見てきました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_project_over_email" >}}">メールを使った公開プロジェクトへの貢献</a> では、<code>git send-email</code> ツールを使用して、パッチを送信してプロジェクトへ貢献する例を見てきました。</p>
 </div>
 </div>
 <div class="sect3">
@@ -79,7 +79,7 @@ url: book/ja/v2/付録-C:-Gitのコマンド-メール
 <p><code>git request-pull</code> コマンドは、単に誰かへのメールの本文の例を生成するのに使用されます。公開サーバにブランチがあり、メールでパッチを送信することなしにその変更点を取り込んでもらう方法を誰かに知ってもらいたい場合、このコマンドを実行して、変更点を取り込んでもらいたい人にその出力を送ることができます。</p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/r_public_project">フォークされた公開プロジェクト</a> では、<code>git request-pull</code> を使用してプルメッセージを生成する実例を示しました。</p>
+<p><a href="{{< relurl "book/ja/v2/ch00/r_public_project" >}}">フォークされた公開プロジェクト</a> では、<code>git request-pull</code> を使用してプルメッセージを生成する実例を示しました。</p>
 </div>
 </div>
 <div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

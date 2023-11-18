@@ -25,7 +25,7 @@ title: Git - Git の設定
 <p></p>
 </div>
 <div class="paragraph">
-<p><a href="ch00/ch01-introduction">[ch01-introduction]</a> で手短にごらんいただいたように、<code>git config</code> コマンドで Gitの設定が行えます。
+<p><a href="{{< relurl "book/ja/v2/ch00/ch01-introduction" >}}">[ch01-introduction]</a> で手短にごらんいただいたように、<code>git config</code> コマンドで Gitの設定が行えます。
 最初にすることと言えば、名前とメールアドレスの設定でしょう。</p>
 </div>
 <div class="listingblock">
@@ -181,7 +181,7 @@ what happened
 <p></p>
 </div>
 <div class="paragraph">
-<p>署名入りの注釈付きタグ (<a href="ch00/r_signing">作業内容への署名</a> で取り上げました) を作る場合は、GPG 署名用の鍵を登録しておくと便利です。
+<p>署名入りの注釈付きタグ (<a href="{{< relurl "book/ja/v2/ch00/r_signing" >}}">作業内容への署名</a> で取り上げました) を作る場合は、GPG 署名用の鍵を登録しておくと便利です。
 鍵の ID を設定するには、このようにします。</p>
 </div>
 <div class="listingblock">
@@ -204,7 +204,7 @@ what happened
 <p></p>
 </div>
 <div class="paragraph">
-<p>プロジェクトごとの <code>.gitignore</code> ファイルでパターンを指定すると、<code>git add</code> したときに Git がそのファイルを無視してステージしないようになります。これについては <a href="ch00/r_ignoring">ファイルの無視</a> で説明しました。</p>
+<p>プロジェクトごとの <code>.gitignore</code> ファイルでパターンを指定すると、<code>git add</code> したときに Git がそのファイルを無視してステージしないようになります。これについては <a href="{{< relurl "book/ja/v2/ch00/r_ignoring" >}}">ファイルの無視</a> で説明しました。</p>
 </div>
 <div class="paragraph">
 <p>ですが、作業中のすべてのリポジトリで、ある特定のファイルを無視したい場合もあります。
@@ -412,7 +412,7 @@ $ git config --global diff.external extDiff</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/p4merge.png" >}}" alt="P4Merge.">
+<img src="{{< relurl "book/ja/v2/images/p4merge.png" >}}" alt="P4Merge.">
 </div>
 <div class="title">図 142. P4Merge.</div>
 </div>
@@ -632,7 +632,7 @@ receive フックを使えば、特定のユーザーだけ強制更新を無効
 </div>
 <div class="paragraph">
 <p>これは、プッシュによるブランチやタグの削除を一切拒否し、誰も削除できないようにします。
-リモートブランチを削除するには、サーバー上の ref ファイルを手で削除しなければなりません。ACL を使って、ユーザー単位でこれを制限することもできますが、その方法は <a href="ch00/r_an_example_git_enforced_policy">Git ポリシーの実施例</a> で扱います。</p>
+リモートブランチを削除するには、サーバー上の ref ファイルを手で削除しなければなりません。ACL を使って、ユーザー単位でこれを制限することもできますが、その方法は <a href="{{< relurl "book/ja/v2/ch00/r_an_example_git_enforced_policy" >}}">Git ポリシーの実施例</a> で扱います。</p>
 </div>
 </div>
 </div>

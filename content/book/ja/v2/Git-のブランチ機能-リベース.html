@@ -29,12 +29,12 @@ title: Git - リベース
 <div class="sect3">
 <h3 id="_リベースの基本">リベースの基本</h3>
 <div class="paragraph">
-<p>マージについての説明で使用した例を <a href="ch00/r_basic_merging">マージの基本</a> から振り返ってみましょう。
+<p>マージについての説明で使用した例を <a href="{{< relurl "book/ja/v2/ch00/r_basic_merging" >}}">マージの基本</a> から振り返ってみましょう。
 作業が二つに分岐しており、それぞれのブランチに対してコミットされていることがわかります。</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-1.png" >}}" alt="シンプルな、分岐した歴史">
+<img src="{{< relurl "book/ja/v2/images/basic-rebase-1.png" >}}" alt="シンプルな、分岐した歴史">
 </div>
 <div class="title">図 35. シンプルな、分岐した歴史</div>
 </div>
@@ -44,7 +44,7 @@ title: Git - リベース
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-2.png" >}}" alt="分岐した作業履歴をひとつに統合する">
+<img src="{{< relurl "book/ja/v2/images/basic-rebase-2.png" >}}" alt="分岐した作業履歴をひとつに統合する">
 </div>
 <div class="title">図 36. 分岐した作業履歴をひとつに統合する</div>
 </div>
@@ -70,7 +70,7 @@ Applying: added staged command</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-3.png" >}}" alt="`C4` の変更を `C3` にリベース">
+<img src="{{< relurl "book/ja/v2/images/basic-rebase-3.png" >}}" alt="`C4` の変更を `C3` にリベース">
 </div>
 <div class="title">図 37. <code>C4</code> の変更を <code>C3</code> にリベース</div>
 </div>
@@ -85,7 +85,7 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/basic-rebase-4.png" >}}" alt="master ブランチの Fast-forward">
+<img src="{{< relurl "book/ja/v2/images/basic-rebase-4.png" >}}" alt="master ブランチの Fast-forward">
 </div>
 <div class="title">図 38. master ブランチの Fast-forward</div>
 </div>
@@ -111,14 +111,14 @@ $ git merge experiment</code></pre>
 <h3 id="_さらに興味深いリベース">さらに興味深いリベース</h3>
 <div class="paragraph">
 <p>リベース先のブランチ以外でもそのリベースを再現することができます。
-たとえば <a href="ch00/rrbdiag_e">トピックブランチからさらにトピックブランチを作成した歴史</a> のような歴史を考えてみましょう。
+たとえば <a href="{{< relurl "book/ja/v2/ch00/rrbdiag_e" >}}">トピックブランチからさらにトピックブランチを作成した歴史</a> のような歴史を考えてみましょう。
 トピックブランチ (<code>server</code>) を作成してサーバー側の機能をプロジェクトに追加し、それをコミットしました。
 その後、そこからさらにクライアント側の変更用のブランチ (<code>client</code>) を切って数回コミットしました。
 最後に、server ブランチに戻ってさらに何度かコミットを行いました。</p>
 </div>
 <div id="rrbdiag_e" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-1.png" >}}" alt="トピックブランチからさらにトピックブランチを作成した歴史">
+<img src="{{< relurl "book/ja/v2/images/interesting-rebase-1.png" >}}" alt="トピックブランチからさらにトピックブランチを作成した歴史">
 </div>
 <div class="title">図 39. トピックブランチからさらにトピックブランチを作成した歴史</div>
 </div>
@@ -137,12 +137,12 @@ $ git merge experiment</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-2.png" >}}" alt="別のトピックブランチから派生したトピックブランチのリベース">
+<img src="{{< relurl "book/ja/v2/images/interesting-rebase-2.png" >}}" alt="別のトピックブランチから派生したトピックブランチのリベース">
 </div>
 <div class="title">図 40. 別のトピックブランチから派生したトピックブランチのリベース</div>
 </div>
 <div class="paragraph">
-<p>これで、<code>master</code> ブランチを fast-forward することができるようになりました (<a href="ch00/rrbdiag_g">master ブランチを fast-forward し、client ブランチの変更を含める</a> を参照ください)。</p>
+<p>これで、<code>master</code> ブランチを fast-forward することができるようになりました (<a href="{{< relurl "book/ja/v2/ch00/rrbdiag_g" >}}">master ブランチを fast-forward し、client ブランチの変更を含める</a> を参照ください)。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -152,7 +152,7 @@ $ git merge client</code></pre>
 </div>
 <div id="rrbdiag_g" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-3.png" >}}" alt="master ブランチを fast-forward し、client ブランチの変更を含める">
+<img src="{{< relurl "book/ja/v2/images/interesting-rebase-3.png" >}}" alt="master ブランチを fast-forward し、client ブランチの変更を含める">
 </div>
 <div class="title">図 41. master ブランチを fast-forward し、client ブランチの変更を含める</div>
 </div>
@@ -167,11 +167,11 @@ server ブランチの内容を <code>master</code> ブランチにリベース�
 </div>
 </div>
 <div class="paragraph">
-<p>これは、<code>server</code> での作業を <code>master</code> の作業に続け、結果は <a href="ch00/rrbdiag_h">server ブランチを master ブランチ上にリベースする</a> のようになります。</p>
+<p>これは、<code>server</code> での作業を <code>master</code> の作業に続け、結果は <a href="{{< relurl "book/ja/v2/ch00/rrbdiag_h" >}}">server ブランチを master ブランチ上にリベースする</a> のようになります。</p>
 </div>
 <div id="rrbdiag_h" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-4.png" >}}" alt="server ブランチを master ブランチ上にリベースする">
+<img src="{{< relurl "book/ja/v2/images/interesting-rebase-4.png" >}}" alt="server ブランチを master ブランチ上にリベースする">
 </div>
 <div class="title">図 42. server ブランチを master ブランチ上にリベースする</div>
 </div>
@@ -187,7 +187,7 @@ $ git merge server</code></pre>
 <div class="paragraph">
 <p>ここで <code>client</code> ブランチと <code>server</code> ブランチを削除します。
 すべての作業が取り込まれたので、これらのブランチはもはや不要だからです。
-これらの処理を済ませた結果、最終的な歴史は <a href="ch00/rrbdiag_i">最終的なコミット履歴</a> のようになりました。</p>
+これらの処理を済ませた結果、最終的な歴史は <a href="{{< relurl "book/ja/v2/ch00/rrbdiag_i" >}}">最終的なコミット履歴</a> のようになりました。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -197,7 +197,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="rrbdiag_i" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/interesting-rebase-5.png" >}}" alt="最終的なコミット履歴">
+<img src="{{< relurl "book/ja/v2/images/interesting-rebase-5.png" >}}" alt="最終的なコミット履歴">
 </div>
 <div class="title">図 43. 最終的なコミット履歴</div>
 </div>
@@ -231,7 +231,7 @@ $ git branch -d server</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-1.png" >}}" alt="リポジトリをクローンし、なんらかの作業をすませた状態">
+<img src="{{< relurl "book/ja/v2/images/perils-of-rebasing-1.png" >}}" alt="リポジトリをクローンし、なんらかの作業をすませた状態">
 </div>
 <div class="title">図 44. リポジトリをクローンし、なんらかの作業をすませた状態</div>
 </div>
@@ -241,7 +241,7 @@ $ git branch -d server</code></pre>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-2.png" >}}" alt="さらなるコミットを取得し、作業環境にマージした状態">
+<img src="{{< relurl "book/ja/v2/images/perils-of-rebasing-2.png" >}}" alt="さらなるコミットを取得し、作業環境にマージした状態">
 </div>
 <div class="title">図 45. さらなるコミットを取得し、作業環境にマージした状態</div>
 </div>
@@ -252,7 +252,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="r_pre_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-3.png" >}}" alt="誰かがリベースしたコミットをプッシュし、あなたの作業環境の元になっているコミットが破棄された">
+<img src="{{< relurl "book/ja/v2/images/perils-of-rebasing-3.png" >}}" alt="誰かがリベースしたコミットをプッシュし、あなたの作業環境の元になっているコミットが破棄された">
 </div>
 <div class="title">図 46. 誰かがリベースしたコミットをプッシュし、あなたの作業環境の元になっているコミットが破棄された</div>
 </div>
@@ -262,7 +262,7 @@ $ git branch -d server</code></pre>
 </div>
 <div id="r_merge_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-4.png" >}}" alt="同じ作業を再びマージして新たなマージコミットを作成する">
+<img src="{{< relurl "book/ja/v2/images/perils-of-rebasing-4.png" >}}" alt="同じ作業を再びマージして新たなマージコミットを作成する">
 </div>
 <div class="title">図 47. 同じ作業を再びマージして新たなマージコミットを作成する</div>
 </div>
@@ -287,7 +287,7 @@ $ git branch -d server</code></pre>
 Git は多くの場合、どれがあなたのコミットかを自動的に判断し、そのコミットを新しいブランチの先端に適用してくれます。</p>
 </div>
 <div class="paragraph">
-<p>たとえば先ほどの例で考えてみます。<a href="ch00/r_pre_merge_rebase_work">誰かがリベースしたコミットをプッシュし、あなたの作業環境の元になっているコミットが破棄された</a> の場面で、マージする代わりに <code>git rebase teamone/master</code> を実行すると、Git は次のように動きます。</p>
+<p>たとえば先ほどの例で考えてみます。<a href="{{< relurl "book/ja/v2/ch00/r_pre_merge_rebase_work" >}}">誰かがリベースしたコミットをプッシュし、あなたの作業環境の元になっているコミットが破棄された</a> の場面で、マージする代わりに <code>git rebase teamone/master</code> を実行すると、Git は次のように動きます。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -306,11 +306,11 @@ Git は多くの場合、どれがあなたのコミットかを自動的に判�
 </ul>
 </div>
 <div class="paragraph">
-<p>その結果は <a href="ch00/r_merge_rebase_work">同じ作業を再びマージして新たなマージコミットを作成する</a> の場合とは異なり、<a href="ch00/r_rebase_rebase_work">リベース後、強制的にプッシュした作業へのリベース</a> のようになります。</p>
+<p>その結果は <a href="{{< relurl "book/ja/v2/ch00/r_merge_rebase_work" >}}">同じ作業を再びマージして新たなマージコミットを作成する</a> の場合とは異なり、<a href="{{< relurl "book/ja/v2/ch00/r_rebase_rebase_work" >}}">リベース後、強制的にプッシュした作業へのリベース</a> のようになります。</p>
 </div>
 <div id="r_rebase_rebase_work" class="imageblock">
 <div class="content">
-<img src="{{< relurl "book/en/v2/images/perils-of-rebasing-5.png" >}}" alt="リベース後、強制的にプッシュした作業へのリベース">
+<img src="{{< relurl "book/ja/v2/images/perils-of-rebasing-5.png" >}}" alt="リベース後、強制的にプッシュした作業へのリベース">
 </div>
 <div class="title">図 48. リベース後、強制的にプッシュした作業へのリベース</div>
 </div>

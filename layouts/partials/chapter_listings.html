@@ -2,7 +2,7 @@
   {{ range $i, $chapter := index (.Scratch.Get "book") "chapters" }}
   {{ if (and (ge $i ($.Scratch.Get "first_chapter")) (le $i ($.Scratch.Get "last_chapter"))) }}
   <li class='chapter'>
-  <h2>{{ $chapter.cs_number }}. <a href="{{ relURL (index (index $chapter.sections 0) "url") }}">{{ $chapter.title }}</a></h2>
+  <h2>{{ $chapter.cs_number }}. <a href="{{ relURL (replace (index (index $chapter.sections 0) "url") "?" "%3F") }}">{{ $chapter.title }}</a></h2>
     <ol>
       {{ range $section := $chapter.sections }}
         <li>

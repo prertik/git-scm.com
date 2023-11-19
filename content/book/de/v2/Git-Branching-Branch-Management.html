@@ -20,7 +20,7 @@ title: Git - Branch-Management
 <h2 id="_branch_management">Branch-Management</h2>
 <div class="paragraph">
 <p>
-Nachdem Sie nun einige Branches erzeugt, zusammengeführt und gelöscht haben, lassen Sie uns jetzt einige Werkzeuge für das Branch-Management betrachten, die sich als sehr nützlich erweisen werden, wenn Sie erst einmal Branches benutzen.</p>
+Nachdem Sie nun einige Branches erzeugt, zusammengeführt und gelöscht haben, lassen Sie uns jetzt einige Werkzeuge für das Branch-Management betrachten, die sich als sehr nützlich erweisen werden, wenn Sie erst einmal ständig Branches benutzen.</p>
 </div>
 <div class="paragraph">
 <p>Der Befehl <code>git branch</code> kann noch mehr, als Branches zu erzeugen und zu löschen.
@@ -59,7 +59,7 @@ Um zu sehen, welche Branches schon mit dem Branch zusammengeführt wurden, auf d
 </div>
 </div>
 <div class="paragraph">
-<p>Da Sie den Branch <code>iss53</code> schon früher gemergt haben, sehen Sie ihn in dieser Liste.
+<p>Da Sie den Branch <code>iss53</code> schon früher gemergt haben, sehen Sie ihn in Ihrer Liste.
 Branches auf dieser Liste ohne vorangestelltes <code>*</code> können für gewöhnlich einfach mit der Anweisung <code>git branch -d</code> gelöscht werden; Sie haben deren Änderungen bereits zu einem anderen Branch hinzugefügt, sodass Sie nichts verlieren würden.</p>
 </div>
 <div class="paragraph">
@@ -83,7 +83,7 @@ If you are sure you want to delete it, run 'git branch -D testing'.</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Wenn Sie den Branch wirklich löschen und diese Bearbeitungen aufgeben wollen, können Sie dies mit der Option <code>-D</code> erzwingen, worauf git in seinem Output hinweist.</p>
+<p>Wenn Sie den Branch wirklich löschen und diese Bearbeitungen aufgeben wollen, können Sie dies mit der Option <code>-D</code> erzwingen, wie die hilfreiche Meldung darauf hinweist.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -185,7 +185,7 @@ Der fehlerhafte Branch ist ebenfalls auf dem Remote-Repository weiterhin vorhand
 <td class="content">
 <div class="paragraph">
 <p>Wenn Sie den Namen eines Branches wie master/main/mainline/default ändern, werden die Integrationen, Dienste, Hilfsprogramme und Build/Release-Skripte, die Ihr Repository verwendet, höchstwahrscheinlich nicht mehr funktionieren.
-Bevor Sie dies tun, sollten Sie dies gründlich mit Ihren Mitstreitern besprechen.
+Bevor Sie dies tun, sollten Sie dies gründlich mit Ihren Mitstreitern beraten.
 Stellen Sie außerdem sicher, dass Sie Ihr Repo gründlich durchsuchen und alle Verweise auf den alten Branchnamen in Ihrem Code und in Ihren Skripten aktualisieren.</p>
 </div>
 </td>
@@ -245,13 +245,13 @@ Andere Mitstreiter werden weiterhin den Branch <code>master</code> als Grundlage
 <p>Passen Sie Build- und Release-Skripte an.</p>
 </li>
 <li>
-<p>Richten sie Umleitungen auf Ihrem Repo-Host für Dinge wie den Standardbranch des Repos, Merge-Regeln und andere Dinge ein, die mit Branchnamen übereinstimmen.</p>
+<p>Leiten Sie die Einstellungen auf Ihrem Repo-Host für Dinge wie den Standardbranch des Repos, Zusammenführungsregeln und andere Dinge um, die mit den Branchnamen übereinstimmen.</p>
 </li>
 <li>
 <p>Aktualisieren Sie die Verweise auf den alten Branch in der Dokumentation.</p>
 </li>
 <li>
-<p>Schließen oder Mergen sie alle Pull-Requests, die auf den alten Branch zeigen.</p>
+<p>Schließen oder Mergen sie alle Pull-Anforderungen, die auf den alten Branch abzielen.</p>
 </li>
 </ul>
 </div>

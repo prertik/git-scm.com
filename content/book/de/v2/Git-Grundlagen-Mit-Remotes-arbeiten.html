@@ -19,7 +19,7 @@ title: Git - Mit Remotes arbeiten
 ---
 <h2 id="_remote_repos">Mit Remotes arbeiten</h2>
 <div class="paragraph">
-<p>Um an Git-Projekte mitarbeiten zu können, müssen Sie wissen, wie Sie Remote-Repositorys verwalten können.
+<p>Um an jedem Git-Projekt mitarbeiten zu können, müssen Sie wissen, wie Sie Ihre Remote-Repositorys verwalten können.
 Remote-Repositorys sind Versionen Ihres Projekts, die im Internet oder im Netzwerk irgendwo gehostet werden.
 Sie können mehrere einrichten, von denen jedes in der Regel entweder schreibgeschützt oder beschreibbar für Sie ist.
 Die Zusammenarbeit mit anderen erfordert die Verwaltung dieser Remote-Repositorys sowie das Pushing und Pulling von Daten zu und von den Repositorys, wenn Sie Ihre Arbeit teilen möchten.
@@ -65,7 +65,7 @@ origin</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Sie können zusätzlich auch <code>-v</code> angeben, das Ihnen die URLs anzeigt, die Git für den Kurznamen gespeichert hat, um beim Lesen und Schreiben auf diesen Remote zuzugreifen:</p>
+<p>Sie können zusätzlich auch <code>-v</code> angeben, das Ihnen die URLs anzeigt, die Git für den Kurznamen gespeichert hat, der beim Lesen und Schreiben auf diesem Remote verwendet werden soll:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -106,7 +106,7 @@ Möglicherweise haben wir zusätzlich die Erlaubnis, auf einen oder mehrere von 
 <h3 id="_hinzufügen_von_remote_repositorys">Hinzufügen von Remote-Repositorys</h3>
 <div class="paragraph">
 <p>Wir haben bereits erwähnt und einige Beispiele gezeigt, wie der Befehl <code>git clone</code> stillschweigend den Remote <code>origin</code> für Sie hinzufügt.
-Im Folgendem beschreiben wir, wie Sie einen neuen Remote hinzufügen können.
+So können Sie explizit einen neuen Remote hinzufügen.
 Um ein neues Remote-Git-Repository als Kurzname hinzuzufügen, auf das Sie leicht verweisen können, führen Sie <code>git remote add &lt;shortname&gt; &lt;url&gt;</code> aus:</p>
 </div>
 <div class="listingblock">
@@ -122,8 +122,8 @@ pb	https://github.com/paulboone/ticgit (push)</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Nun können Sie die Zeichenfolge <code>pb</code> auf der Kommandozeile anstelle der gesamten URL verwenden.
-Wenn Sie beispielsweise alle Informationen fetchen möchten, die Paul hat, die aber noch nicht in Ihrem Repository enthalten sind, können Sie <code>git fetch pb</code> ausführen:</p>
+<p>Jetzt können Sie die Zeichenfolge <code>pb</code> auf der Kommandozeile anstelle der gesamten URL verwenden.
+Wenn Sie beispielsweise alle Informationen abrufen möchten, die Paul hat, die aber noch nicht in Ihrem Repository enthalten sind, können Sie <code>git fetch pb</code> ausführen:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -153,19 +153,19 @@ Wir werden in <a href="{{< relurl "book/de/v2/ch00/ch03-git-branching" >}}">Git 
 </div>
 </div>
 <div class="paragraph">
-<p>Der Befehl geht an das Remote-Projekt und zieht (engl. pull) alle Daten von diesem Remote-Projekt, die Sie noch nicht haben.
+<p>Der Befehl geht an das Remote-Projekt und zieht (engl. pull) alle Daten von diesem Remote-Projekt runter, die Sie noch nicht haben.
 Danach sollten Sie Referenzen auf alle Branches von diesem Remote haben, die Sie jederzeit einbinden oder inspizieren können.</p>
 </div>
 <div class="paragraph">
 <p>Wenn Sie ein Repository klonen, fügt der Befehl dieses entfernte Repository automatisch unter dem Namen „origin“ hinzu.
-So holt <code>git fetch origin</code> alle Änderungen, die seit dem Klonen (oder dem letzten Abholen) auf diesen Server abgelegt (engl. pushed) wurden.
-Es ist jedoch wichtig zu beachten, dass der Befehl <code>git fetch</code> nur die Daten in Ihr lokales Repository herunterlädt – er merged sie nicht automatisch mit Ihrer Arbeit zusammen oder ändert das, woran Sie gerade arbeiten.
+So holt <code>git fetch origin</code> alle neuen Inhalte, die seit dem Klonen (oder dem letzten Abholen) auf diesen Server verschoben wurden.
+Es ist jedoch wichtig zu beachten, dass der Befehl <code>git fetch</code> nur die Daten in Ihr lokales Repository herunterlädt – er mischt (engl. merged) sie nicht automatisch mit Ihrer Arbeit zusammen oder ändert das, woran Sie gerade arbeiten.
 Sie müssen das Ganze manuell mit Ihrer Arbeit zusammenführen, wenn Sie fertig sind.</p>
 </div>
 <div class="paragraph">
 <p>Wenn Ihr aktueller Branch so eingerichtet ist, dass er einen entfernten Branch verfolgt (engl. tracking), können Sie den Befehl <code>git pull</code> verwenden, um diesen entfernten Branch automatisch zu holen und dann mit Ihrem aktuellen Branch zusammenzuführen (siehe den nächsten Abschnitt und <a href="{{< relurl "book/de/v2/ch00/ch03-git-branching" >}}">Git Branching</a> für weitere Informationen).
 Das könnte ein einfacherer oder komfortablerer Workflow für Sie sein. Standardmäßig richtet der Befehl <code>git clone</code> Ihren lokalen <code>master</code> Branch automatisch so ein, dass er den entfernten <code>master</code> Branch (oder wie auch immer der Standard-Branch genannt wird) auf dem Server versioniert von dem Sie ihn geklont haben.
-Wenn Sie <code>git pull</code> ausführen, werden normalerweise Daten von dem Server abgerufen, von dem Sie ursprünglich geklont haben. Anschliessend wird automatisch versucht diese Daten in ihren Code zu mergen.</p>
+Wenn Sie <code>git pull</code> ausführen, werden normalerweise Daten von dem Server abgerufen, von dem Sie ursprünglich geklont haben, und es wird automatisch versucht in den Code zu mergen, an dem Sie gerade arbeiten.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -194,9 +194,9 @@ Git wird Sie so lange warnen, bis Sie die Variable setzen.</p>
 <div class="sect3">
 <h3 id="_pushing_remotes">Zu Ihren Remotes Pushen</h3>
 <div class="paragraph">
-<p>Wenn Sie Ihr Projekt an einem Punkt haben, den Sie teilen möchten, können Sie es zum Upstream verschieben (engl. pushen).
-Der Befehl dafür lautet: <code>git push &lt;remote&gt; &lt;branch&gt;</code>.
-Wenn Sie Ihren <code>master</code> Branch auf Ihren <code>origin</code> Server verschieben möchten (Zur Erinnerung: das Klonen richtet im Regelfall diese beiden Namen automatisch für Sie ein), dann können Sie diesen Befehl auch nutzen, um alle Commits, die Sie durchgeführt haben, auf den Server zu übertragen:</p>
+<p>Wenn Sie Ihr Projekt an einem bestimmten Punkt haben, den Sie teilen möchten, müssen Sie es zum Upstream verschieben (engl. pushen).
+Der Befehl dafür ist einfach: <code>git push &lt;remote&gt; &lt;branch&gt;</code>.
+Wenn Sie Ihren <code>master</code> Branch auf Ihren <code>origin</code> Server verschieben möchten (nochmals, das Klonen richtet im Regelfall beide dieser Namen automatisch für Sie ein), dann können Sie diesen Befehl auch nutzen, um alle Commits, die Sie durchgeführt haben, auf den Server zu übertragen:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -214,7 +214,7 @@ Siehe Kapitel 3 <a href="{{< relurl "book/de/v2/ch00/ch03-git-branching" >}}">Gi
 <h3 id="_inspecting_remote">Inspizieren eines Remotes</h3>
 <div class="paragraph">
 <p>Wenn Sie mehr Informationen über einen bestimmten Remote sehen möchten, können Sie den Befehl <code>git remote show &lt;remote&gt;</code> verwenden.
-Wenn Sie diesen Befehl mit einem remote Kurznamen ausführen, wie z.B. <code>origin</code>, erhalten Sie bspw. folgende Meldung:</p>
+Wenn Sie diesen Befehl mit einem spezifischen Kurznamen ausführen, wie z.B. <code>origin</code>, erhalten Sie eine ähnliche Meldung:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -233,13 +233,13 @@ Wenn Sie diesen Befehl mit einem remote Kurznamen ausführen, wie z.B. <code>ori
 </div>
 </div>
 <div class="paragraph">
-<p>Er listet die URL für das Remote-Repository sowie die Informationen zu den Tracking-Branches auf.
-Der Befehl teilt Ihnen mit, dass, wenn Sie sich im Master-Zweig befinden und <code>git pull</code> ausführen, der <code>master</code> Branch des remotes nach dem abrufen (engl. fetched) automatisch mit dem lokalen Branch gemerged wird.
+<p>Er listet die URL für das Remote-Repository sowie die Informationen zu den Tracking-Branchen auf.
+Der Befehl teilt Ihnen hilfreich mit, dass, wenn Sie sich im Master-Zweig befinden und <code>git pull</code> ausführen, der <code>master</code> Branch des remotes nach dem abrufen (engl. fetched) automatisch mit dem lokalen Branch gemerged wird.
 Er listet auch alle Remote-Referenzen auf, die er abgerufen hat.</p>
 </div>
 <div class="paragraph">
-<p>Das ist nur ein einfaches Beispiel, auf das Sie möglicherweise treffen werden.
-Wenn Sie Git hingegen intensiver verwenden, können die <code>git remote show</code> Ausgabe wesentlich umfangreicher sein:</p>
+<p>Das ist nur ein einfaches Beispiel, auf das Sie vermutlich treffen werden.
+Wenn Sie Git hingegen intensiver verwenden, können Sie viel mehr Informationen aus <code>git remote show</code> herauslesen:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -267,7 +267,7 @@ Wenn Sie Git hingegen intensiver verwenden, können die <code>git remote show</c
 </div>
 <div class="paragraph">
 <p>Dieser Befehl zeigt an, zu welchem Zweig automatisch gepusht wird, wenn Sie <code>git push</code> ausführen, während Sie sich in bestimmten Branches befinden.
-Er zeigt Ihnen auch, welche entfernten Branches auf dem Server vorhanden sind, die Sie noch nicht haben, welche entfernten Branches Sie haben, die aber vom Server gelöscht wurden und die lokalen Branches, die automatisch mit Ihrem Remote-Tracking-Branch zusammengeführt (gemergt) werden können, wenn Sie <code>git pull</code> ausführen.</p>
+Er zeigt Ihnen auch, welche entfernten Branches auf dem Server sind, die Sie noch nicht haben, welche entfernten Branches Sie haben, die aber vom Server entfernt wurden und die lokalen Branches, die automatisch mit Ihrem Remote-Tracking-Branch zusammengeführt (gemergt) werden können, wenn Sie <code>git pull</code> ausführen.</p>
 </div>
 </div>
 <div class="sect3">
@@ -286,7 +286,7 @@ paul</code></pre>
 </div>
 <div class="paragraph">
 <p>Es ist zu beachten, dass dadurch auch alle Ihre Remote-Tracking-Branchnamen geändert werden.
-Was vorher unter <code>pb/master</code> referenziert wurde, ist jetzt unter <code>paul/master</code> zu finden.</p>
+Was früher mit <code>pb/master</code> angesprochen wurde, ist jetzt <code>paul/master</code>.</p>
 </div>
 <div class="paragraph">
 <p>Wenn Sie einen Remote aus irgendwelchen Gründen entfernen möchten – Sie haben den Server verschoben oder verwenden einen bestimmten Mirror nicht länger oder ein Beitragender ist nicht mehr dabei – dann können Sie entweder <code>git remote remove</code> oder <code>git remote rm</code> verwenden:</p>

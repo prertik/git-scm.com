@@ -15,18 +15,19 @@ book:
     previous: book/de/v2/Git-Grundlagen-Anzeigen-der-Commit-Historie
     next: book/de/v2/Git-Grundlagen-Mit-Remotes-arbeiten
 title: Git - Ungewollte Änderungen rückgängig machen
+url: book/de/v2/Git-Grundlagen-Ungewollte-Änderungen-rückgängig-machen
 
 ---
 <h2 id="_undoing">Ungewollte Änderungen rückgängig machen</h2>
 <div class="paragraph">
-<p>Es kommt sicherlich irgendwann der Zeitpunkt, an dem Sie eine Änderung rückgängig (engl. undo) machen wollen.
-Wir werden hier einige grundlegende Werkzeuge besprechen, mit denen sie genau das tun können.
-Seien Sie vorsichtig, man kann diese Aktionen nicht immer rückgängig machen.
-Das ist einer der wenigen Bereiche in Git, in denen Sie ihre Arbeit verlieren könnten, wenn Sie etwas falsch machen.</p>
+<p>Zu jeder Zeit können Sie eine Änderung rückgängig machen.
+Hier werden wir einige grundlegende Werkzeuge besprechen, die zum Widerrufen von gemachten Änderungen dienen.
+Seien Sie vorsichtig, denn man kann nicht immer alle diese Annullierungen rückgängig machen.
+Das ist einer der wenigen Bereiche in Git, in denen Sie etwas Arbeit verlieren könnten, wenn Sie etwas falsch machen.</p>
 </div>
 <div class="paragraph">
-<p>Eines der häufigsten Undos tritt auf, wenn Sie zu früh committen und möglicherweise vergessen haben, einige Dateien hinzuzufügen, oder wenn Sie Fehler in ihrer Commit-Nachricht haben.
-Wenn Sie den Commit erneut ausführen möchten, führen zusätzlichen Änderungen vor, die Sie vergessen haben, stellen diese bereit (engl. stage) und committen erneut mit der Option <code>--amend</code>:</p>
+<p>Eines der häufigsten Undos tritt auf, wenn Sie zu früh committen und möglicherweise vergessen haben, einige Dateien hinzuzufügen, oder wenn Sie Ihre Commit-Nachricht durcheinander bringen.
+Wenn Sie den Commit erneut ausführen möchten, nehmen Sie die zusätzlichen Änderungen vor, die Sie vergessen haben, stellen diese bereit (engl. stage) und committen diese erneut mit der Option <code>--amend</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -134,7 +135,7 @@ Changes not staged for commit:
 </div>
 <div class="paragraph">
 <p>Der Befehl klingt etwas merkwürdig, aber er funktioniert.
-Die Datei <code>CONTRIBUTING.md</code> ist modifiziert und wieder im Status unstaged überführt.</p>
+Die Datei <code>CONTRIBUTING.md</code> wurde modifiziert, aber erneut im Status unstaged.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -144,7 +145,7 @@ Die Datei <code>CONTRIBUTING.md</code> ist modifiziert und wieder im Status unst
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Es stimmt, dass <code>git reset</code> ein riskanter Befehl sein kann, besonders, wenn Sie das <code>--hard</code> Flag mitgeben.
+<p>Es ist wahr, dass <code>git reset</code> ein riskanter Befehl sein kann, besonders, wenn Sie das <code>--hard</code> Flag mitgeben.
 In dem oben beschriebenen Szenario wird die Datei in Ihrem Arbeitsverzeichnis jedoch nicht angetastet, so dass er relativ sicher ist.</p>
 </div>
 </td>
@@ -160,8 +161,8 @@ Wir werden viel ausführlicher darauf eingehen, was <code>reset</code> bewirkt u
 <h3 id="_änderung_in_einer_modifizierten_datei_zurücknehmen">Änderung in einer modifizierten Datei zurücknehmen</h3>
 <div class="paragraph">
 <p>Was ist, wenn Sie feststellen, dass Sie Ihre Änderungen an der Datei <code>CONTRIBUTING.md</code> nicht behalten wollen?
-Wie können Sie sie in den Ursprungszustand zurücksetzen, so wie sie beim letzten Commit ausgesehen hat (oder anfänglich geklont wurde, oder wie auch immer Sie sie in Ihr Arbeitsverzeichnis bekommen haben)?
-Glücklicherweise sagt Ihnen <code>git status</code>, wie Sie das machen können.
+Wie können Sie sie leicht wieder ändern – sie wieder so zurücksetzen, wie sie beim letzten Commit ausgesehen hat (oder anfänglich geklont wurde, oder wie auch immer Sie sie in Ihr Arbeitsverzeichnis bekommen haben)?
+Glücklicherweise sagt Ihnen <code>git status</code> auch, wie Sie das machen können.
 Im letzten Beispiel sieht die Unstaged-Area so aus:</p>
 </div>
 <div class="listingblock">
@@ -174,8 +175,8 @@ Im letzten Beispiel sieht die Unstaged-Area so aus:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Git erklärt Ihnen, wie Sie die von Ihnen vorgenommenen Änderungen verwerfen können.
-Lassen Sie es uns ausführen:</p>
+<p>Sie erklärt Ihnen ziemlich eindeutig, wie Sie die von Ihnen vorgenommenen Änderungen verwerfen können.
+Lassen Sie uns machen, was da steht:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -189,7 +190,7 @@ Changes to be committed:
 </div>
 </div>
 <div class="paragraph">
-<p>Wie Sie sehen, wurde die Änderungen rückgängig gemacht.</p>
+<p>Sie können erkennen, dass die Änderungen rückgängig gemacht wurden.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -199,8 +200,8 @@ Changes to be committed:
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Es ist sehr wichtig zu begreifen, dass <code>git checkout -- &lt;file&gt;</code> ein riskanter Befehl ist.
-Alle lokalen Änderungen, die Sie an dieser Datei vorgenommen haben, sind verloren – Git hat diese Datei einfach durch die zuletzt committete oder gestagte Version ersetzt.
+<p>Es ist sehr wichtig zu begreifen, dass <code>git checkout — &lt;file&gt;</code> ein riskanter Befehl ist.
+Alle lokalen Änderungen, die Sie an dieser Datei vorgenommen haben, sind verloren – Git hat diese Datei einfach durch die zuletzt committete oder gestagten Version ersetzt.
 Verwenden Sie diesen Befehl nur, wenn Sie sich absolut sicher sind, dass Sie diese nicht gespeicherten lokalen Änderungen nicht benötigen.</p>
 </div>
 </td>
@@ -213,21 +214,21 @@ Verwenden Sie diesen Befehl nur, wenn Sie sich absolut sicher sind, dass Sie die
 <div class="paragraph">
 <p>Denken Sie daran, dass alles, was in Git <em>committet</em> wird, fast immer wiederhergestellt werden kann.
 Sogar Commits, die auf gelöschten Branches lagen oder Commits, die mit einem <code>--amend</code> Commit überschrieben wurden, können wiederhergestellt werden (siehe Kapitel 10 <a href="{{< relurl "book/de/v2/ch00/_data_recovery" >}}">Daten-Rettung</a> für das Wiederherstellen der Daten).
-Wahrscheinlich werden Sie alles, was Sie verworfen und nie committet haben, nie wieder sehen.</p>
+Allerdings wird alles, was Sie verloren haben und das nie committet wurde, wahrscheinlich nie wieder gesehen werden.</p>
 </div>
 </div>
 <div class="sect3">
-<h3 id="undoing_git_restore">Änderungen mit git restore Rückgängig machen</h3>
+<h3 id="undoing_git_restore">Änderungen Rückgängigmachen mit git restore</h3>
 <div class="paragraph">
 <p>Git Version 2.23.0 führte einen neuen Befehl ein: <code>git restore</code>.
 Es ist im Grunde eine Alternative zu <code>git reset</code>, die wir gerade behandelt haben.
-Ab Git Version 2.23.0 verwendet Git für viele dieser Vorgänge <code>git restore</code> anstelle von <code>git reset</code>.</p>
+Ab Git Version 2.23.0 verwendet Git für viele Rückgängig-Vorgänge <code>git restore</code> anstelle von <code>git reset</code>.</p>
 </div>
 <div class="paragraph">
-<p>Lassen Sie uns unsere Schritte wiederholen und die Dinge mit <code>git restore</code> anstelle von <code>git reset</code> rückgängig machen.</p>
+<p>Lassen Sie uns unsere Schritte zurückverfolgen und die Dinge mit <code>git restore</code> anstelle von <code>git reset</code> rückgängig machen.</p>
 </div>
 <div class="sect4">
-<h4 id="_eine_datei_mit_git_restore_unstagen">Eine Datei mit git restore unstagen</h4>
+<h4 id="_unstagen_einer_staged_datei_mit_git_restore">Unstagen einer staged Datei mit git restore</h4>
 <div class="paragraph">
 <p>Die nächsten beiden Abschnitte zeigen, wie Sie an Änderungen in Ihrem Staging-Bereich und im Arbeitsverzeichnisses mit <code>git restore</code> arbeiten.
 Das Schöne daran ist, dass der Befehl, mit dem Sie den Status dieser beiden Bereiche bestimmen, Ihnen auch zeigt, wie Sie Änderungen an ihnen rückgängig machen können.
@@ -266,16 +267,16 @@ Changes not staged for commit:
 </div>
 </div>
 <div class="paragraph">
-<p>Die Datei <code>CONTRIBUTING.md</code> ist modifiziert und wieder im Status unstaged überführt.</p>
+<p>Die Datei <code>CONTRIBUTING.md</code> ist geändert aber wieder unstaged.</p>
 </div>
 </div>
 <div class="sect4">
-<h4 id="_eine_geänderte_datei_mit_git_restore_rückgängig_machen">Eine geänderte Datei mit git restore rückgängig machen</h4>
+<h4 id="_rückgängig_machen_einer_geänderten_datei_mit_git_restore">Rückgängig machen einer geänderten Datei mit git restore</h4>
 <div class="paragraph">
-<p>Was ist, wenn Sie feststellen, dass Sie Ihre Änderungen an der Datei <code>CONTRIBUTING.md</code> nicht beibehalten wollen?
-Wie können Sie sie in den Ursprungszustand zurücksetzen, so wie sie beim letzten Commit ausgesehen hat (oder anfänglich geklont wurde, oder wie auch immer Sie sie in Ihr Arbeitsverzeichnis bekommen haben)?
-Glücklicherweise sagt Ihnen <code>git status</code>, wie Sie das machen können.
-Im letzten Beispiel sieht die Unstaged-Area so aus:</p>
+<p>Was ist, wenn Sie feststellen, dass Sie Ihre Änderungen an der Datei <code>CONTRIBUTING.md</code> nicht beibehalten möchten?
+Wie können Sie sie einfach rückgängig machen — sprich, sie so zurücksetzen, wie sie aussah, als Sie sie zuletzt committet haben (oder ursprünglich geklont haben oder wie auch immer Sie es in Ihr Arbeitsverzeichnis aufgenommen haben)?
+Glücklicherweise sagt Ihnen <code>git status</code> wiederum, wie das geht.
+In der letzten Beispielausgabe sieht der unstaged Bereich folgendermaßen aus:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -286,8 +287,8 @@ Im letzten Beispiel sieht die Unstaged-Area so aus:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Git erklärt Ihnen, wie Sie die von Ihnen vorgenommenen Änderungen verwerfen können.
-Lassen Sie es uns ausführen:</p>
+<p>Es zeigt Ihnen ziemlich explizit, wie Sie die vorgenommenen Änderungen verwerfen können.
+Lassen Sie uns das tun:</p>
 </div>
 <div class="listingblock">
 <div class="content">

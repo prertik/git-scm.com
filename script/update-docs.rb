@@ -131,7 +131,8 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
       html = asciidoc.render
       html.gsub!(/linkgit:(\S+?)\[(\d+)\]/) do |line|
         x = /^linkgit:(\S+?)\[(\d+)\]/.match(line)
-        "<a href='{{< relurl \"docs/#{x[1]}/#{lang}\" >}}'>#{x[1]}[#{x[2]}]</a>"
+	relurl = "docs/#{x[1].gsub(/&#x2d;/, '-')}/#{lang}"
+        "<a href='{{< relurl \"#{relurl}\" >}}'>#{x[1]}[#{x[2]}]</a>"
       end
       # Handle Chinese "full stop" character
       html.gsub!(/(<a href="[^"]*)。(")/, "\\1\\2")
@@ -374,7 +375,8 @@ def index_doc(filter_tags, doc_list, get_content)
         html = asciidoc.render
         html.gsub!(/linkgit:(\S+?)\[(\d+)\]/) do |line|
           x = /^linkgit:(\S+?)\[(\d+)\]/.match(line)
-          "<a href='{{< relurl \"docs/#{x[1]}\" >}}'>#{x[1]}[#{x[2]}]</a>"
+	  relurl = "docs/#{x[1].gsub(/&#x2d;/, '-')}"
+          "<a href='{{< relurl \"#{relurl}\" >}}'>#{x[1]}[#{x[2]}]</a>"
         end
         # HTML anchor on hdlist1 (i.e. command options)
         html.gsub!(/<dt class="hdlist1">(.*?)<\/dt>/) do |_m|

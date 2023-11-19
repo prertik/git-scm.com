@@ -359,9 +359,9 @@ def index_doc(filter_tags, doc_list, get_content)
 
         asciidoc = make_asciidoc(content)
         asciidoc_sha = Digest::SHA1.hexdigest(asciidoc.source)
-        if !File.exists?("#{SITE_ROOT}/_generated-asciidoc/#{asciidoc_sha}")
-          FileUtils.mkdir_p("#{SITE_ROOT}/_generated-asciidoc")
-          File.open("#{SITE_ROOT}/_generated-asciidoc/#{asciidoc_sha}", "w") do |out|
+        if !File.exists?("#{SITE_ROOT}_generated-asciidoc/#{asciidoc_sha}")
+          FileUtils.mkdir_p("#{SITE_ROOT}_generated-asciidoc")
+          File.open("#{SITE_ROOT}_generated-asciidoc/#{asciidoc_sha}", "w") do |out|
             out.write(content)
           end
         end
@@ -463,8 +463,8 @@ def index_doc(filter_tags, doc_list, get_content)
             page_data["diff-cache"] = {} if !page_data["diff-cache"]
             cached_diff = page_data["diff-cache"]["#{pre_sha}..#{post_sha}"]
             if !cached_diff
-              pre_content = File.read("#{SITE_ROOT}/_generated-asciidoc/#{pre_sha}")
-              post_content = File.read("#{SITE_ROOT}/_generated-asciidoc/#{post_sha}")
+              pre_content = File.read("#{SITE_ROOT}_generated-asciidoc/#{pre_sha}")
+              post_content = File.read("#{SITE_ROOT}_generated-asciidoc/#{post_sha}")
               cached_diff = page_data["diff-cache"]["#{pre_sha}..#{post_sha}"] = diff(pre_content, post_content)
             end
             page_versions.unshift({

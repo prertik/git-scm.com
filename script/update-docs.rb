@@ -96,6 +96,8 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
       [new_content, name]
     end
 
+    check_paths = Set.new([])
+
     doc_files.each do |entry|
       full_path, sha = entry
       ids = Set.new([])
@@ -132,6 +134,8 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
       html.gsub!(/linkgit:(\S+?)\[(\d+)\]/) do |line|
         x = /^linkgit:(\S+?)\[(\d+)\]/.match(line)
         relurl = "docs/#{x[1].gsub(/&#x2d;/, '-')}/#{lang}"
+        # record path to check for broken links afterwards
+        check_paths.add(relurl)
         "<a href='{{< relurl \"#{relurl}\" >}}'>#{x[1]}[#{x[2]}]</a>"
       end
       # Handle Chinese "full stop" character
@@ -149,7 +153,19 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
         "<dt class=\"hdlist1\" id=\"#{anchor}\"> <a class=\"anchor\" href=\"##{anchor}\"></a>#{$1} </dt>"
       end
       # Make links relative
-      html.gsub!(/(<a href=['"])\/([^'"]*)/, '\1{{< relurl "\2" >}}')
+      html.gsub!(/(<a href=['"])\/([^'"]*)/) do |match|
+        before = $1
+        after = $2
+        # record path to check for broken links afterwards
+        path2 = before.sub(/#.*/, '') # rtrim `#<anchor>`
+        if path2.end_with?(lang)
+          check_paths.add($path2)
+        else
+          puts "warning: will not check path #{$path2} because it does not end in /#{lang}"
+        end
+
+        "#{before}{{< relurl \"#{after}\" >}}"
+      end
 
       # Write <docname>/<lang>.html
       front_matter = {
@@ -170,7 +186,22 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
 
       lang_data[lang] = asciidoc_sha
     end
+
+    # In some cases, translations are not complete. As a consequence, some
+    # translated manual pages may point to other translated manual pages that do
+    # not exist. In these cases, redirect to the English version.
+    check_paths.each do |path|
+      doc_path = "#{SITE_ROOT}content/#{path}.html"
+      if !File.exists?(doc_path)
+        front_matter = { "redirect_to" => "/#{path.sub(/\/[^\/]*$/, '')}" } # rtrim `/<lang>`
+        FileUtils.mkdir_p(File.dirname(doc_path))
+        File.open(doc_path, "w") do |out|
+          out.write("#{front_matter.to_yaml}\n---\n")
+        end
+      end
+    end
   end
+
   File.open(DATA_FILE, "w") do |out|
     YAML.dump(data, out)
   end

@@ -7,7 +7,7 @@
       {{ range $section := $chapter.sections }}
         <li>
           {{ $section.cs_number }}
-          <a href="{{ relURL $section.url }}"{{ if (eq $section.cs_number $.Params.book.section.cs_number) }} class="active"{{ end }}>{{ $section.title }}</a>
+          <a href="{{ relURL (replace $section.url "?" "%3F") }}"{{ if (eq $section.cs_number $.Params.book.section.cs_number) }} class="active"{{ end }}>{{ $section.title }}</a>
         </li>
       {{ end }}
     </ol>

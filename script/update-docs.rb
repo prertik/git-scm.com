@@ -118,7 +118,10 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
       content = get_content.call sha
       categories = {}
       expand_l10n(full_path, content, get_content_f, categories)
-      content.gsub!(/link:(?:technical\/)?(\S*?)\.html(\#\S*?)?\[(.*?)\]/m, "link:/docs/\\1/#{lang}\\2[\\3]")
+      content.gsub!(/link:(?:technical\/)?(\S*?)\.html(\#\S*?)?\[(.*?)\]/m) do |match|
+        check_paths.add("docs/#{$1}/#{lang}")
+        "link:/docs/#{$1}/#{lang}#{$2}[#{$3}]"
+      end
       asciidoc = make_asciidoc(content)
       asciidoc_sha = Digest::SHA1.hexdigest(asciidoc.source)
       if !File.exists?("#{SITE_ROOT}_generated-asciidoc/#{asciidoc_sha}")
@@ -157,11 +160,11 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
         before = $1
         after = $2
         # record path to check for broken links afterwards
-        path2 = before.sub(/#.*/, '') # rtrim `#<anchor>`
+        path2 = after.sub(/#.*/, '') # rtrim `#<anchor>`
         if path2.end_with?(lang)
-          check_paths.add($path2)
+          check_paths.add(path2)
         else
-          puts "warning: will not check path #{$path2} because it does not end in /#{lang}"
+          puts "warning: will not check path #{path2} because it does not end in /#{lang}"
         end
 
         "#{before}{{< relurl \"#{after}\" >}}"

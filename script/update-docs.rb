@@ -11,7 +11,7 @@ require 'diffy'
 require_relative "version"
 
 SITE_ROOT = File.join(File.expand_path(File.dirname(__FILE__)), '../')
-DATA_FILE = "#{SITE_ROOT}/data/docs.yml"
+DATA_FILE = "#{SITE_ROOT}data/docs.yml"
 
 def read_data
   if File.exists?(DATA_FILE)
@@ -345,7 +345,7 @@ def index_doc(filter_tags, doc_list, get_content)
         next if path == "Documentation/technical/scalar.txt"
         next if doc_limit && path !~ /#{doc_limit}/
 
-        doc_path = "#{SITE_ROOT}/content/docs/#{docname}"
+        doc_path = "#{SITE_ROOT}content/docs/#{docname}"
 
         puts "   build: #{docname}"
 

@@ -471,7 +471,7 @@ M foo.c</pre>
 <p>Este recurso visa acelerar as operações do git para os repositórios que possuem grandes diretórios de trabalho.</p>
 </div>
 <div class="paragraph">
-<p>Ele permite que o git trabalhe em conjunto com um monitor do sistema de arquivos (consulte <a href='{{< relurl "docs/git-fsmonitor--&#x2d;&#x2d;daemon/pt_BR" >}}'>git-fsmonitor--&#x2d;&#x2d;daemon[1]</a> e a seção "fsmonitor-watchman" do <a href='{{< relurl "docs/githooks/pt_BR" >}}'>githooks[5]</a>) que pode informá-lo sobre quais os arquivos foram alterados. Isso permite que o git evite ter que fazer um <em>lstat()</em> em todo arquivo para localizar quais os arquivos que foram alterados.</p>
+<p>Ele permite que o git trabalhe em conjunto com um monitor do sistema de arquivos (consulte <a href='{{< relurl "docs/git-fsmonitor----daemon/pt_BR" >}}'>git-fsmonitor--&#x2d;&#x2d;daemon[1]</a> e a seção "fsmonitor-watchman" do <a href='{{< relurl "docs/githooks/pt_BR" >}}'>githooks[5]</a>) que pode informá-lo sobre quais os arquivos foram alterados. Isso permite que o git evite ter que fazer um <em>lstat()</em> em todo arquivo para localizar quais os arquivos que foram alterados.</p>
 </div>
 <div class="paragraph">
 <p>Quando usado em conjunto com o cache não monitorado, pode melhorar ainda mais o desempenho, evitando o custo de varrer todo o diretório ativo à procura de novos arquivos.</p>

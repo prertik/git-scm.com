@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Redirecting&hellip;</title>
   <link rel="canonical" href="{{ relURL .Params.redirect_to }}">
-  <script>location="{{ relURL .Params.redirect_to }}"</script>
+  <script>location=`{{ relURL .Params.redirect_to }}${window.location.hash}`</script>
   <meta http-equiv="refresh" content="0; url={{ relURL .Params.redirect_to }}">
   <meta name="robots" content="noindex">
   <h1>Redirecting&hellip;</h1>

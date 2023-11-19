@@ -531,7 +531,7 @@ character as well. Fractional parts of a second will be ignored, for example
 <p>blob对象的内容是未经解释的字节序列。 在核心层没有编码转换。</p>
 </li>
 <li>
-<p>路径名以UTF-8规范化形式C编码，这适用于树对象、索引文件、参考名称，以及命令行参数、环境变量和配置文件（<code>.git/config</code>（见<a href='{{< relurl "docs/git-config[1]），linkgit:gitignore[5]，linkgit:gitattributes/zh_HANS-CN" >}}'>git-config[1]），linkgit:gitignore[5]，linkgit:gitattributes[5]</a> 和<a href='{{< relurl "docs/gitmodules/zh_HANS-CN" >}}'>gitmodules[5]</a>）中的路径名。</p>
+<p>路径名以UTF-8规范化形式C编码，这适用于树对象、索引文件、参考名称，以及命令行参数、环境变量和配置文件（<code>.git/config</code>（见<a href='{{< relurl "docs/git-config/zh_HANS-CN" >}}'>git-config[1]</a>），<a href='{{< relurl "docs/gitignore/zh_HANS-CN" >}}'>gitignore[5]</a>，<a href='{{< relurl "docs/gitattributes/zh_HANS-CN" >}}'>gitattributes[5]</a> 和<a href='{{< relurl "docs/gitmodules/zh_HANS-CN" >}}'>gitmodules[5]</a>）中的路径名。</p>
 <div class="paragraph">
 <p>请注意，Git 在核心层将路径名简单地视为非 NUL 字节的序列，没有路径名编码的转换（除了 Mac 和 Windows）。因此，即使在使用传统的扩展ASCII编码的平台和文件系统上，使用非ASCII的路径名大多也能工作。然而，在这种系统上创建的仓库在基于UTF-8的系统（如Linux、Mac、Windows）上将无法正常工作，反之亦然。 此外，许多基于Git的工具简单地认为路径名称是UTF-8，而不能正确显示其他编码。</p>
 </div>

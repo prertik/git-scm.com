@@ -102,7 +102,7 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
       lang = File.dirname(full_path)
       path = File.basename(full_path, ".txt")
 
-      doc_path = "#{SITE_ROOT}/content/docs/#{path}"
+      doc_path = "#{SITE_ROOT}content/docs/#{path}"
 
       puts "   build: #{path} for #{lang}"
 
@@ -119,9 +119,9 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
       content.gsub!(/link:(?:technical\/)?(\S*?)\.html(\#\S*?)?\[(.*?)\]/m, "link:/docs/\\1/#{lang}\\2[\\3]")
       asciidoc = make_asciidoc(content)
       asciidoc_sha = Digest::SHA1.hexdigest(asciidoc.source)
-      if !File.exists?("#{SITE_ROOT}/_generated-asciidoc/#{asciidoc_sha}")
-        FileUtils.mkdir_p("#{SITE_ROOT}/_generated-asciidoc")
-        File.open("#{SITE_ROOT}/_generated-asciidoc/#{asciidoc_sha}", "w") do |out|
+      if !File.exists?("#{SITE_ROOT}_generated-asciidoc/#{asciidoc_sha}")
+        FileUtils.mkdir_p("#{SITE_ROOT}_generated-asciidoc")
+        File.open("#{SITE_ROOT}_generated-asciidoc/#{asciidoc_sha}", "w") do |out|
           out.write(content)
         end
       end

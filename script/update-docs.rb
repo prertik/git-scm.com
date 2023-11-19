@@ -129,8 +129,8 @@ def index_l10n_doc(filter_tags, doc_list, get_content)
       next if !rerun && lang_data[lang] == asciidoc_sha
 
       html = asciidoc.render
-      html.gsub!(/linkgit:(\S+)\[(\d+)\]/) do |line|
-        x = /^linkgit:(\S+)\[(\d+)\]/.match(line)
+      html.gsub!(/linkgit:(\S+?)\[(\d+)\]/) do |line|
+        x = /^linkgit:(\S+?)\[(\d+)\]/.match(line)
         "<a href='{{< relurl \"docs/#{x[1]}/#{lang}\" >}}'>#{x[1]}[#{x[2]}]</a>"
       end
       # Handle Chinese "full stop" character
@@ -372,8 +372,8 @@ def index_doc(filter_tags, doc_list, get_content)
 
         # Generate HTML
         html = asciidoc.render
-        html.gsub!(/linkgit:(\S+)\[(\d+)\]/) do |line|
-          x = /^linkgit:(\S+)\[(\d+)\]/.match(line)
+        html.gsub!(/linkgit:(\S+?)\[(\d+)\]/) do |line|
+          x = /^linkgit:(\S+?)\[(\d+)\]/.match(line)
           "<a href='{{< relurl \"docs/#{x[1]}\" >}}'>#{x[1]}[#{x[2]}]</a>"
         end
         # HTML anchor on hdlist1 (i.e. command options)

@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-stripspace Documentation
 docname: git-stripspace
-version: 2.6.7
-latest-changes: 2.6.7
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-stripspace/index.html"
 
@@ -59,7 +59,7 @@ used by Git.</p>
 output will be produced.</p>
 </div>
 <div class="paragraph">
-<p><strong>NOTE</strong>: This is intended for cleaning metadata, prefer the <code>--whitespace=fix</code>
+<p><strong>NOTE</strong>: This is intended for cleaning metadata. Prefer the <code>--whitespace=fix</code>
 mode of <a href='{{< relurl "docs/git-apply" >}}'>git-apply[1]</a> for correcting whitespace of patches or files in
 the repository.</p>
 </div>
@@ -73,12 +73,12 @@ the repository.</p>
 <dt class="hdlist1" id="Documentation/git-stripspace.txt--s"> <a class="anchor" href="#Documentation/git-stripspace.txt--s"></a>-s </dt>
 <dt class="hdlist1" id="Documentation/git-stripspace.txt---strip-comments"> <a class="anchor" href="#Documentation/git-stripspace.txt---strip-comments"></a>--strip-comments </dt>
 <dd>
-<p>Skip and remove all lines starting with comment character (default <em>#</em>).</p>
+<p>Skip and remove all lines starting with a comment character (default <em>#</em>).</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-stripspace.txt--c"> <a class="anchor" href="#Documentation/git-stripspace.txt--c"></a>-c </dt>
 <dt class="hdlist1" id="Documentation/git-stripspace.txt---comment-lines"> <a class="anchor" href="#Documentation/git-stripspace.txt---comment-lines"></a>--comment-lines </dt>
 <dd>
-<p>Prepend comment character and blank to each line. Lines will automatically
+<p>Prepend the comment character and a blank space to each line. Lines will automatically
 be terminated with a newline. On empty lines, only the comment character
 will be prepended.</p>
 </dd>

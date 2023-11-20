@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-get-tar-commit-id Documentation
 docname: git-get-tar-commit-id
-version: 2.6.7
-latest-changes: 2.6.7
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-get-tar-commit-id/index.html"
 
@@ -36,7 +36,7 @@ and extract the commit ID stored in it.  It reads only the first
 of the tar archive very much.</p>
 </div>
 <div class="paragraph">
-<p>If no commit ID is found, <em>git get-tar-commit-id</em> quietly exists with a
+<p>If no commit ID is found, <em>git get-tar-commit-id</em> quietly exits with a
 return code of 1.  This can happen if the archive had not been created
 using <em>git archive</em> or if the first parameter of <em>git archive</em> had been
 a tree ID instead of a commit ID or tag.</p>

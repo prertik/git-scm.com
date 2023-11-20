@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - fetch-options Documentation
 docname: fetch-options
-version: 2.41.0
-latest-changes: 2.41.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/fetch-options/index.html"
 
@@ -69,7 +69,7 @@ the current repository has the same history as the source repository.</p>
 <dd>
 <p>By default when fetching from a shallow repository,
 <code>git fetch</code> refuses refs that require updating
-.git/shallow. This option updates .git/shallow and accept such
+.git/shallow. This option updates .git/shallow and accepts such
 refs.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/fetch-options.txt---negotiation-tipltcommitglobgt"> <a class="anchor" href="#Documentation/fetch-options.txt---negotiation-tipltcommitglobgt"></a>--negotiation-tip=&lt;commit|glob&gt; </dt>
@@ -131,7 +131,7 @@ file is never written.</p>
 <dt class="hdlist1" id="Documentation/fetch-options.txt--f"> <a class="anchor" href="#Documentation/fetch-options.txt--f"></a>-f </dt>
 <dt class="hdlist1" id="Documentation/fetch-options.txt---force"> <a class="anchor" href="#Documentation/fetch-options.txt---force"></a>--force </dt>
 <dd>
-<p>When <em>git fetch</em> is used with <code>&lt;src&gt;:&lt;dst&gt;</code> refspec it may
+<p>When <em>git fetch</em> is used with <code>&lt;src&gt;:&lt;dst&gt;</code> refspec, it may
 refuse to update the local branch as discussed
 in the <code>&lt;refspec&gt;</code> part below.
 This option overrides that check.</p>

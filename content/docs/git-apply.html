@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-apply Documentation
 docname: git-apply
-version: 2.40.0
-latest-changes: 2.40.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-apply/index.html"
 
@@ -40,8 +40,8 @@ aliases:
 <p>Reads the supplied diff output (i.e. "a patch") and applies it to files.
 When running from a subdirectory in a repository, patched paths
 outside the directory are ignored.
-With the <code>--index</code> option the patch is also applied to the index, and
-with the <code>--cached</code> option the patch is only applied to the index.
+With the <code>--index</code> option, the patch is also applied to the index, and
+with the <code>--cached</code> option, the patch is only applied to the index.
 Without these options, the command applies the patch only to files,
 and does not require them to be in a Git repository.</p>
 </div>
@@ -79,7 +79,7 @@ binary files, outputs two <code>-</code> instead of saying
 <dd>
 <p>Instead of applying the patch, output a condensed
 summary of information obtained from git diff extended
-headers, such as creations, renames and mode changes.
+headers, such as creations, renames, and mode changes.
 Turns off "apply".</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-apply.txt---check"> <a class="anchor" href="#Documentation/git-apply.txt---check"></a>--check </dt>
@@ -181,7 +181,7 @@ This provides good safety measures, but breaks down when
 applying a diff generated with <code>--unified=0</code>. To bypass these
 checks use <code>--unidiff-zero</code>.</p>
 <div class="paragraph">
-<p>Note, for the reasons stated above usage of context-free patches is
+<p>Note, for the reasons stated above, the usage of context-free patches is
 discouraged.</p>
 </div>
 </dd>
@@ -204,9 +204,9 @@ deletion part but not the addition part.</p>
 <dt class="hdlist1" id="Documentation/git-apply.txt---allow-binary-replacement"> <a class="anchor" href="#Documentation/git-apply.txt---allow-binary-replacement"></a>--allow-binary-replacement </dt>
 <dt class="hdlist1" id="Documentation/git-apply.txt---binary"> <a class="anchor" href="#Documentation/git-apply.txt---binary"></a>--binary </dt>
 <dd>
-<p>Historically we did not allow binary patch applied
+<p>Historically we did not allow binary patch application
 without an explicit permission from the user, and this
-flag was the way to do so.  Currently we always allow binary
+flag was the way to do so.  Currently, we always allow binary
 patch application, so this is a no-op.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-apply.txt---excludeltpath-patterngt"> <a class="anchor" href="#Documentation/git-apply.txt---excludeltpath-patterngt"></a>--exclude=&lt;path-pattern&gt; </dt>
@@ -331,7 +331,7 @@ has no effect when <code>--index</code> or <code>--cached</code> is in use.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-apply.txt---allow-empty"> <a class="anchor" href="#Documentation/git-apply.txt---allow-empty"></a>--allow-empty </dt>
 <dd>
-<p>Don&#8217;t return error for patches containing no diff. This includes
+<p>Don&#8217;t return an error for patches containing no diff. This includes
 empty patches and patches with commit text only.</p>
 </dd>
 </dl>
@@ -353,13 +353,13 @@ as what&#8217;s found there:</p>
 <p>When set to <em>change</em>, tells <em>git apply</em> to ignore changes in
 whitespace, in the same way as the <code>--ignore-space-change</code>
 option.
-When set to one of: no, none, never, false tells <em>git apply</em> to
+When set to one of: no, none, never, false, it tells <em>git apply</em> to
 respect all whitespace differences.
 See <a href='{{< relurl "docs/git-apply" >}}'>git-apply[1]</a>.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-apply.txt-applywhitespace"> <a class="anchor" href="#Documentation/git-apply.txt-applywhitespace"></a>apply.whitespace </dt>
 <dd>
-<p>Tells <em>git apply</em> how to handle whitespaces, in the same way
+<p>Tells <em>git apply</em> how to handle whitespace, in the same way
 as the <code>--whitespace</code> option. See <a href='{{< relurl "docs/git-apply" >}}'>git-apply[1]</a>.</p>
 </dd>
 </dl>

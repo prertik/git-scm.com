@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-bisect Documentation
 docname: git-bisect
-version: 2.42.0
-latest-changes: 2.42.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-bisect/index.html"
 
@@ -35,7 +35,7 @@ on the subcommand:</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>git bisect start [--term-{new,bad}=&lt;term&gt; --term-{old,good}=&lt;term&gt;]
+<pre>git bisect start [--term-(new|bad)=&lt;term-new&gt; --term-(old|good)=&lt;term-old&gt;]
 	  [--no-checkout] [--first-parent] [&lt;bad&gt; [&lt;good&gt;...]] [--] [&lt;paths&gt;...]
 git bisect (bad|new|&lt;term-new&gt;) [&lt;rev&gt;]
 git bisect (good|old|&lt;term-old&gt;) [&lt;rev&gt;...]
@@ -45,7 +45,7 @@ git bisect reset [&lt;commit&gt;]
 git bisect (visualize|view)
 git bisect replay &lt;logfile&gt;
 git bisect log
-git bisect run &lt;cmd&gt;...
+git bisect run &lt;cmd&gt; [&lt;arg&gt;...]
 git bisect help</pre>
 </div>
 </div>

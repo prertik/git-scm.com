@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-commit-tree Documentation
 docname: git-commit-tree
-version: 2.35.0
-latest-changes: 2.35.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-commit-tree/index.html"
 
@@ -226,7 +226,7 @@ mind.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><em>git commit</em> and <em>git commit-tree</em> issues
+<p><em>git commit</em> and <em>git commit-tree</em> issue
 a warning if the commit log message given to it does not look
 like a valid UTF-8 string, unless you explicitly say your
 project uses a legacy encoding.  The way to say this is to
@@ -239,7 +239,7 @@ have <code>i18n.commitEncoding</code> in <code>.git/config</code> file, like thi
 </div>
 <div class="paragraph">
 <p>Commit objects created with the above setting record the value
-of <code>i18n.commitEncoding</code> in its <code>encoding</code> header.  This is to
+of <code>i18n.commitEncoding</code> in their <code>encoding</code> header.  This is to
 help other people who look at them later.  Lack of this header
 implies that the commit log message is encoded in UTF-8.</p>
 </div>

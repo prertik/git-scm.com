@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - rev-list-options Documentation
 docname: rev-list-options
-version: 2.42.0
-latest-changes: 2.42.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/rev-list-options/index.html"
 
@@ -74,7 +74,7 @@ error to use this option unless <code>--walk-reflogs</code> is in use.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt---grepltpatterngt"> <a class="anchor" href="#Documentation/rev-list-options.txt---grepltpatterngt"></a>--grep=&lt;pattern&gt; </dt>
 <dd>
-<p>Limit the commits output to ones with log message that
+<p>Limit the commits output to ones with a log message that
 matches the specified pattern (regular expression).  With
 more than one <code>--grep=&lt;pattern&gt;</code>, commits whose message
 matches any of the given patterns are chosen (but see
@@ -91,7 +91,7 @@ instead of ones that match at least one.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt---invert-grep"> <a class="anchor" href="#Documentation/rev-list-options.txt---invert-grep"></a>--invert-grep </dt>
 <dd>
-<p>Limit the commits output to ones with log message that do not
+<p>Limit the commits output to ones with a log message that do not
 match the pattern specified with <code>--grep=&lt;pattern&gt;</code>.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt--i"> <a class="anchor" href="#Documentation/rev-list-options.txt--i"></a>-i </dt>
@@ -178,7 +178,11 @@ that arbitrary merges can be valid topic branch changes.</p>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt---not"> <a class="anchor" href="#Documentation/rev-list-options.txt---not"></a>--not </dt>
 <dd>
 <p>Reverses the meaning of the <em>^</em> prefix (or lack thereof)
-for all following revision specifiers, up to the next <code>--not</code>.</p>
+for all following revision specifiers, up to the next <code>--not</code>.
+When used on the command line before --stdin, the revisions passed
+through stdin will not be affected by it. Conversely, when passed
+via standard input, the revisions passed on the command line will
+not be affected by it.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt---all"> <a class="anchor" href="#Documentation/rev-list-options.txt---all"></a>--all </dt>
 <dd>
@@ -279,7 +283,9 @@ line.</p>
 them from standard input as well. This accepts commits and
 pseudo-options like <code>--all</code> and <code>--glob=</code>. When a <code>--</code> separator
 is seen, the following input is treated as paths and used to
-limit the result.</p>
+limit the result. Flags like <code>--not</code> which are read via standard input
+are only respected for arguments passed in the same way and will not
+influence any subsequent command line arguments.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt---cherry-mark"> <a class="anchor" href="#Documentation/rev-list-options.txt---cherry-mark"></a>--cherry-mark </dt>
 <dd>
@@ -1078,7 +1084,7 @@ object verbatim.</p>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt---no-expand-tabs"> <a class="anchor" href="#Documentation/rev-list-options.txt---no-expand-tabs"></a>--no-expand-tabs </dt>
 <dd>
 <p>Perform a tab expansion (replace each tab with enough spaces
-to fill to the next display column that is multiple of <em>&lt;n&gt;</em>)
+to fill to the next display column that is a multiple of <em>&lt;n&gt;</em>)
 in the log message before showing it in the output.
 <code>--expand-tabs</code> is a short-hand for <code>--expand-tabs=8</code>, and
 <code>--no-expand-tabs</code> is a short-hand for <code>--expand-tabs=0</code>,
@@ -1105,7 +1111,7 @@ environment overrides). See <a href='{{< relurl "docs/git-config" >}}'>git-confi
 <p>With an optional <em>&lt;ref&gt;</em> argument, use the ref to find the notes
 to display.  The ref can specify the full refname when it begins
 with <code>refs/notes/</code>; when it begins with <code>notes/</code>, <code>refs/</code> and otherwise
-<code>refs/notes/</code> is prefixed to form a full name of the ref.</p>
+<code>refs/notes/</code> is prefixed to form the full name of the ref.</p>
 </div>
 <div class="paragraph">
 <p>Multiple --notes options can be combined to control which notes are
@@ -1121,6 +1127,11 @@ resetting the list of notes refs from which notes are shown.
 Options are parsed in the order given on the command line, so e.g.
 "--notes --notes=foo --no-notes --notes=bar" will only show notes
 from "refs/notes/bar".</p>
+</dd>
+<dt class="hdlist1" id="Documentation/rev-list-options.txt---show-notes-by-default"> <a class="anchor" href="#Documentation/rev-list-options.txt---show-notes-by-default"></a>--show-notes-by-default </dt>
+<dd>
+<p>Show the default notes unless options for displaying specific
+notes are given.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt---show-notesltrefgt"> <a class="anchor" href="#Documentation/rev-list-options.txt---show-notesltrefgt"></a>--show-notes[=&lt;ref&gt;] </dt>
 <dt class="hdlist1" id="Documentation/rev-list-options.txt---no-standard-notes"> <a class="anchor" href="#Documentation/rev-list-options.txt---no-standard-notes"></a>--[no-]standard-notes </dt>

@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-status Documentation
 docname: git-status
-version: 2.40.0
-latest-changes: 2.40.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-status/index.html"
 
@@ -355,12 +355,23 @@ U           U    unmerged, both modified
 </div>
 </div>
 <div class="paragraph">
-<p>Submodules have more state and instead report
-		M    the submodule has a different HEAD than
-		     recorded in the index
-		m    the submodule has modified content
-		?    the submodule has untracked files
-since modified content or untracked files in a submodule cannot be added
+<p>Submodules have more state and instead report</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>M</em> = the submodule has a different HEAD than recorded in the index</p>
+</li>
+<li>
+<p><em>m</em> = the submodule has modified content</p>
+</li>
+<li>
+<p><em>?</em> = the submodule has untracked files</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This is since modified content or untracked files in a submodule cannot be added
 via <code>git add</code> in the superproject to prepare a commit.</p>
 </div>
 <div class="paragraph">

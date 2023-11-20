@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - pretty-options Documentation
 docname: pretty-options
-version: 2.33.2
-latest-changes: 2.33.2
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/pretty-options/index.html"
 
@@ -72,7 +72,7 @@ object verbatim.</p>
 <dt class="hdlist1" id="Documentation/pretty-options.txt---no-expand-tabs"> <a class="anchor" href="#Documentation/pretty-options.txt---no-expand-tabs"></a>--no-expand-tabs </dt>
 <dd>
 <p>Perform a tab expansion (replace each tab with enough spaces
-to fill to the next display column that is multiple of <em>&lt;n&gt;</em>)
+to fill to the next display column that is a multiple of <em>&lt;n&gt;</em>)
 in the log message before showing it in the output.
 <code>--expand-tabs</code> is a short-hand for <code>--expand-tabs=8</code>, and
 <code>--no-expand-tabs</code> is a short-hand for <code>--expand-tabs=0</code>,
@@ -99,7 +99,7 @@ environment overrides). See <a href='{{< relurl "docs/git-config" >}}'>git-confi
 <p>With an optional <em>&lt;ref&gt;</em> argument, use the ref to find the notes
 to display.  The ref can specify the full refname when it begins
 with <code>refs/notes/</code>; when it begins with <code>notes/</code>, <code>refs/</code> and otherwise
-<code>refs/notes/</code> is prefixed to form a full name of the ref.</p>
+<code>refs/notes/</code> is prefixed to form the full name of the ref.</p>
 </div>
 <div class="paragraph">
 <p>Multiple --notes options can be combined to control which notes are
@@ -115,6 +115,11 @@ resetting the list of notes refs from which notes are shown.
 Options are parsed in the order given on the command line, so e.g.
 "--notes --notes=foo --no-notes --notes=bar" will only show notes
 from "refs/notes/bar".</p>
+</dd>
+<dt class="hdlist1" id="Documentation/pretty-options.txt---show-notes-by-default"> <a class="anchor" href="#Documentation/pretty-options.txt---show-notes-by-default"></a>--show-notes-by-default </dt>
+<dd>
+<p>Show the default notes unless options for displaying specific
+notes are given.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/pretty-options.txt---show-notesltrefgt"> <a class="anchor" href="#Documentation/pretty-options.txt---show-notesltrefgt"></a>--show-notes[=&lt;ref&gt;] </dt>
 <dt class="hdlist1" id="Documentation/pretty-options.txt---no-standard-notes"> <a class="anchor" href="#Documentation/pretty-options.txt---no-standard-notes"></a>--[no-]standard-notes </dt>

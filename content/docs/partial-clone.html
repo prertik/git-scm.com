@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - partial-clone Documentation
 docname: partial-clone
-version: 2.38.0
-latest-changes: 2.38.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/partial-clone/index.html"
 
@@ -15,7 +15,7 @@ aliases:
 <div class="paragraph">
 <p>The "Partial Clone" feature is a performance optimization for Git that
 allows Git to function without having a complete copy of the repository.
-The goal of this work is to allow Git better handle extremely large
+The goal of this work is to allow Git to better handle extremely large
 repositories.</p>
 </div>
 <div class="paragraph">
@@ -363,7 +363,7 @@ needed.</p>
 <p>Dynamic object fetching currently uses the existing pack protocol V0
 which means that each object is requested via fetch-pack.  The server
 will send a full set of info/refs when the connection is established.
-If there are large number of refs, this may incur significant overhead.</p>
+If there are a large number of refs, this may incur significant overhead.</p>
 </li>
 </ul>
 </div>
@@ -378,7 +378,7 @@ If there are large number of refs, this may incur significant overhead.</p>
 <p>Improve the way to specify the order in which promisor remotes are
 tried.</p>
 <div class="paragraph">
-<p>For example this could allow to specify explicitly something like:
+<p>For example this could allow specifying explicitly something like:
 "When fetching from this remote, I want to use these promisor remotes
 in this order, though, when pushing or fetching to that remote, I want
 to use those promisor remotes in that order."</p>
@@ -457,7 +457,7 @@ for a dynamic object fetch), but we are not building on that.</p>
 <div class="paragraph">
 <p>[a] expensive-to-modify list of missing objects:  Earlier in the design of
     partial clone we discussed the need for a single list of missing objects.
-    This would essentially be a sorted linear list of OIDs that the were
+    This would essentially be a sorted linear list of OIDs that were
     omitted by the server during a clone or subsequent fetches.</p>
 </div>
 <div class="paragraph">

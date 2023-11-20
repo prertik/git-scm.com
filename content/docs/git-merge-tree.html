@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-merge-tree Documentation
 docname: git-merge-tree
-version: 2.41.0
-latest-changes: 2.41.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-merge-tree/index.html"
 
@@ -34,14 +34,14 @@ aliases:
 <p>This command has a modern <code>--write-tree</code> mode and a deprecated
 <code>--trivial-merge</code> mode.  With the exception of the
 <a href="#DEPMERGE">DEPRECATED DESCRIPTION</a> section at the end, the rest of
-this documentation describes modern <code>--write-tree</code> mode.</p>
+this documentation describes the modern <code>--write-tree</code> mode.</p>
 </div>
 <div class="paragraph">
 <p>Performs a merge, but does not make any new commits and does not read
 from or write to either the working tree or index.</p>
 </div>
 <div class="paragraph">
-<p>The performed merge will use the same feature as the "real"
+<p>The performed merge will use the same features as the "real"
 <a href='{{< relurl "docs/git-merge" >}}'>git-merge[1]</a>, including:</p>
 </div>
 <div class="ulist">
@@ -384,7 +384,7 @@ in the future).</p>
 the <a href="#CFI">Conflicted file info</a> list.  The information there is
 insufficient to do so.  For example: Rename/rename(1to2) conflicts (both
 sides renamed the same file differently) will result in three different
-file having higher order stages (but each only has one higher order
+files having higher order stages (but each only has one higher order
 stage), with no way (short of the <a href="#IM">Informational messages</a> section)
 to determine which three files are related.  File/directory conflicts
 also result in a file with exactly one higher order stage.
@@ -395,7 +395,7 @@ a file with exactly one higher order stage.  In all cases, the
 is not designed to be machine parseable.</p>
 </div>
 <div class="paragraph">
-<p>Do NOT assume that each paths from <a href="#CFI">Conflicted file info</a>, and
+<p>Do NOT assume that each path from <a href="#CFI">Conflicted file info</a>, and
 the logical conflicts in the <a href="#IM">Informational messages</a> have a
 one-to-one mapping, nor that there is a one-to-many mapping, nor a
 many-to-one mapping.  Many-to-many mappings exist, meaning that each

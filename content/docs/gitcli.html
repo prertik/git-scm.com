@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - gitcli Documentation
 docname: gitcli
-version: 2.36.0
-latest-changes: 2.36.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/gitcli/index.html"
 
@@ -44,10 +44,10 @@ arguments.  Here are the rules:</p>
 A subcommand may take dashed options (which may take their own
 arguments, e.g. "--max-parents 2") and arguments.  You SHOULD
 give dashed options first and then arguments.  Some commands may
-accept dashed options after you have already gave non-option
+accept dashed options after you have already given non-option
 arguments (which may make the command ambiguous), but you should
 not rely on it (because eventually we may find a way to fix
-these ambiguity by enforcing the "options then args" rule).</p>
+these ambiguities by enforcing the "options then args" rule).</p>
 </li>
 <li>
 <p>Revisions come first and then paths.
@@ -60,13 +60,13 @@ are paths.</p>
 they can be disambiguated by placing <code>--</code> between them.
 E.g. <code>git diff -- HEAD</code> is, "I have a file called HEAD in my work
 tree.  Please show changes between the version I staged in the index
-and what I have in the work tree for that file", not "show difference
+and what I have in the work tree for that file", not "show the difference
 between the HEAD commit and the work tree as a whole".  You can say
 <code>git diff HEAD --</code> to ask for the latter.</p>
 </li>
 <li>
 <p>Without disambiguating <code>--</code>, Git makes a reasonable guess, but errors
-out and asking you to disambiguate when ambiguous.  E.g. if you have a
+out and asks you to disambiguate when ambiguous.  E.g. if you have a
 file called HEAD in your work tree, <code>git diff HEAD</code> is ambiguous, and
 you have to say either <code>git diff HEAD --</code> or <code>git diff -- HEAD</code> to
 disambiguate.</p>

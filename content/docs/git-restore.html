@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-restore Documentation
 docname: git-restore
-version: 2.35.0
-latest-changes: 2.35.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-restore/index.html"
 
@@ -113,7 +113,9 @@ attached to a terminal, regardless of <code>--quiet</code>.</p>
 <dt class="hdlist1" id="Documentation/git-restore.txt---theirs"> <a class="anchor" href="#Documentation/git-restore.txt---theirs"></a>--theirs </dt>
 <dd>
 <p>When restoring files in the working tree from the index, use
-stage #2 (<em>ours</em>) or #3 (<em>theirs</em>) for unmerged paths.</p>
+stage #2 (<em>ours</em>) or #3 (<em>theirs</em>) for unmerged paths.
+This option cannot be used when checking out paths from a
+tree-ish (i.e. with the <code>--source</code> option).</p>
 <div class="paragraph">
 <p>Note that during <code>git rebase</code> and <code>git pull --rebase</code>, <em>ours</em> and
 <em>theirs</em> may appear swapped. See the explanation of the same options
@@ -124,7 +126,9 @@ in <a href='{{< relurl "docs/git-checkout" >}}'>git-checkout[1]</a> for details.
 <dt class="hdlist1" id="Documentation/git-restore.txt---merge"> <a class="anchor" href="#Documentation/git-restore.txt---merge"></a>--merge </dt>
 <dd>
 <p>When restoring files on the working tree from the index,
-recreate the conflicted merge in the unmerged paths.</p>
+recreate the conflicted merge in the unmerged paths.
+This option cannot be used when checking out paths from a
+tree-ish (i.e. with the <code>--source</code> option).</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-restore.txt---conflictltstylegt"> <a class="anchor" href="#Documentation/git-restore.txt---conflictltstylegt"></a>--conflict=&lt;style&gt; </dt>
 <dd>
@@ -142,7 +146,7 @@ specified. Unmerged paths on the working tree are left alone.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-restore.txt---ignore-skip-worktree-bits"> <a class="anchor" href="#Documentation/git-restore.txt---ignore-skip-worktree-bits"></a>--ignore-skip-worktree-bits </dt>
 <dd>
-<p>In sparse checkout mode, by default is to only update entries
+<p>In sparse checkout mode, the default is to only update entries
 matched by <code>&lt;pathspec&gt;</code> and sparse patterns in
 $GIT_DIR/info/sparse-checkout. This option ignores the sparse
 patterns and unconditionally restores any files in
@@ -266,7 +270,7 @@ the same as using <a href='{{< relurl "docs/git-reset" >}}'>git-reset[1]</a>)</p
 </div>
 </div>
 <div class="paragraph">
-<p>or you can restore both the index and the working tree (this the same
+<p>or you can restore both the index and the working tree (this is the same
 as using <a href='{{< relurl "docs/git-checkout" >}}'>git-checkout[1]</a>)</p>
 </div>
 <div class="listingblock">

@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - gitprotocol-capabilities Documentation
 docname: gitprotocol-capabilities
-version: 2.38.0
-latest-changes: 2.38.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/gitprotocol-capabilities/index.html"
 
@@ -60,7 +60,7 @@ did not say it supports.</p>
 </div>
 <div class="paragraph">
 <p>Server MUST diagnose and abort if capabilities it does not understand
-was sent.  Server MUST NOT ignore capabilities that client requested
+were sent.  Server MUST NOT ignore capabilities that client requested
 and server advertised.  As a consequence of these rules, server MUST
 NOT advertise capabilities it does not understand.</p>
 </div>
@@ -99,8 +99,8 @@ complete cut across the DAG, or the client has said "done".</p>
 <p>Without multi_ack, a client sends have lines in --date-order until
 the server has found a common base.  That means the client will send
 have lines that are already known by the server to be common, because
-they overlap in time with another branch that the server hasn&#8217;t found
-a common base on yet.</p>
+they overlap in time with another branch on which the server hasn&#8217;t found
+a common base yet.</p>
 </div>
 <div class="paragraph">
 <p>For example suppose the client has commits in caps that the server
@@ -136,7 +136,7 @@ interleaved with S-R-Q.</p>
 <h2 id="_multi_ack_detailed"><a class="anchor" href="#_multi_ack_detailed"></a>multi_ack_detailed</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This is an extension of multi_ack that permits client to better
+<p>This is an extension of multi_ack that permits the client to better
 understand the server&#8217;s in-memory state. See <a href='{{< relurl "docs/gitprotocol-pack" >}}'>gitprotocol-pack[5]</a>,
 section "Packfile Negotiation" for more information.</p>
 </div>
@@ -196,7 +196,7 @@ to disable the feature in a backwards-compatible manner.</p>
 <h2 id="_side_band_side_band_64k"><a class="anchor" href="#_side_band_side_band_64k"></a>side-band, side-band-64k</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This capability means that server can send, and client understand multiplexed
+<p>This capability means that the server can send, and the client can understand, multiplexed
 progress reports and error info interleaved with the packfile itself.</p>
 </div>
 <div class="paragraph">
@@ -233,8 +233,8 @@ same deal, you have up to 65519 bytes of data and 1 byte for the stream
 code.</p>
 </div>
 <div class="paragraph">
-<p>The client MUST send only maximum of one of "side-band" and "side-
-band-64k".  Server MUST diagnose it as an error if client requests
+<p>The client MUST send only one of "side-band" and "side-
+band-64k".  The server MUST diagnose it as an error if client requests
 both.</p>
 </div>
 </div>
@@ -243,7 +243,7 @@ both.</p>
 <h2 id="_ofs_delta"><a class="anchor" href="#_ofs_delta"></a>ofs-delta</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Server can send, and client understand PACKv2 with delta referring to
+<p>The server can send, and the client can understand, PACKv2 with delta referring to
 its base by position in pack rather than by an obj-id.  That is, they can
 send/read OBJ_OFS_DELTA (aka type 6) in a packfile.</p>
 </div>
@@ -353,7 +353,7 @@ the current shallow boundary, instead of the depth from remote refs.</p>
 <h2 id="_no_progress"><a class="anchor" href="#_no_progress"></a>no-progress</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The client was started with "git clone -q" or something, and doesn&#8217;t
+<p>The client was started with "git clone -q" or something similar, and doesn&#8217;t
 want that side band 2.  Basically the client just says "I do not
 wish to receive stream 2 on sideband, so do not send it to me, and if
 you did, I will drop it on the floor anyway".  However, the sideband
@@ -379,7 +379,7 @@ data, whether or not a server had advertised objects in the
 refs/tags/* namespace.</p>
 </div>
 <div class="paragraph">
-<p>Servers MUST pack the tags if their referrant is packed and the client
+<p>Servers MUST pack the tags if their referent is packed and the client
 has requested include-tags.</p>
 </div>
 <div class="paragraph">

@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - rerere Documentation
 docname: rerere
-version: 2.40.0
-latest-changes: 2.40.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/rerere/index.html"
 
@@ -90,7 +90,7 @@ what AB and AC wanted to do.</pre>
 </div>
 <div class="paragraph">
 <p>As branch AC2 refers to the same commit as AC, the above implies that
-this is also compatible what AB and AC2 wanted to do.</p>
+this is also compatible with what AB and AC2 wanted to do.</p>
 </div>
 <div class="paragraph">
 <p>By extension, this means that rerere should recognize that the above
@@ -111,7 +111,7 @@ C
 <div class="sect2">
 <h3 id="_sorting_hunks"><a class="anchor" href="#_sorting_hunks"></a>Sorting hunks</h3>
 <div class="paragraph">
-<p>As before, lets imagine that a common ancestor had a file with line A
+<p>As before, let&#8217;s imagine that a common ancestor had a file with line A
 its early part, and line X in its late part.  And then four branches
 are forked that do these things:</p>
 </div>
@@ -205,7 +205,7 @@ which they appear in the file, separated by a &lt;NUL&gt; character.</p>
 <p>Nested conflicts are handled very similarly to "simple" conflicts.
 Similar to simple conflicts, the conflict is first normalized by
 stripping the labels from conflict markers, stripping the common ancestor
-version, and the sorting the conflict hunks, both for the outer and the
+version, and sorting the conflict hunks, both for the outer and the
 inner conflict.  This is done recursively, so any number of nested
 conflicts can be handled.</p>
 </div>

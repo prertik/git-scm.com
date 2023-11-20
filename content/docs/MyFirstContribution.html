@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - MyFirstContribution Documentation
 docname: MyFirstContribution
-version: 2.42.0
-latest-changes: 2.42.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/MyFirstContribution/index.html"
 
@@ -221,11 +221,12 @@ in order to keep the declarations alphabetically sorted:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Be sure to <code>#include "builtin.h"</code> in your <code>psuh.c</code>.</p>
+<p>Be sure to <code>#include "builtin.h"</code> in your <code>psuh.c</code>. You&#8217;ll also need to
+<code>#include "gettext.h"</code> to use functions related to printing output text.</p>
 </div>
 <div class="paragraph">
-<p>Go ahead and add some throwaway printf to that function. This is a decent
-starting point as we can now add build rules and register the command.</p>
+<p>Go ahead and add some throwaway printf to the <code>cmd_psuh</code> function. This is a
+decent starting point as we can now add build rules and register the command.</p>
 </div>
 <div class="admonitionblock note">
 <table>

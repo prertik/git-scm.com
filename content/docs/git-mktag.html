@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-mktag Documentation
 docname: git-mktag
-version: 2.42.0
-latest-changes: 2.42.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-mktag/index.html"
 
@@ -30,7 +30,7 @@ aliases:
 <h2 id="_description"><a class="anchor" href="#_description"></a>DESCRIPTION</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Reads a tag contents on standard input and creates a tag object. The
+<p>Reads a tag&#8217;s contents on standard input and creates a tag object. The
 output is the new tag&#8217;s &lt;object&gt; identifier.</p>
 </div>
 <div class="paragraph">
@@ -49,7 +49,7 @@ git hash-object -t tag -w --stdin &lt;my-tag</pre>
 tag doesn&#8217;t pass a <a href='{{< relurl "docs/git-fsck" >}}'>git-fsck[1]</a> check.</p>
 </div>
 <div class="paragraph">
-<p>The "fsck" check done mktag is stricter than what <a href='{{< relurl "docs/git-fsck" >}}'>git-fsck[1]</a>
+<p>The "fsck" check done by mktag is stricter than what <a href='{{< relurl "docs/git-fsck" >}}'>git-fsck[1]</a>
 would run by default in that all <code>fsck.&lt;msg-id&gt;</code> messages are promoted
 from warnings to errors (so e.g. a missing "tagger" line is an error).</p>
 </div>
@@ -97,7 +97,7 @@ tagger &lt;tagger&gt;</pre>
 </div>
 <div class="paragraph">
 <p>followed by some <em>optional</em> free-form message (some tags created
-by older Git may not have <code>tagger</code> line).  The message, when it
+by older Git may not have a <code>tagger</code> line).  The message, when it
 exists, is separated by a blank line from the header.  The
 message part may contain a signature that Git itself doesn&#8217;t
 care about, but that can be verified with gpg.</p>

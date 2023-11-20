@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - pretty-formats Documentation
 docname: pretty-formats
-version: 2.40.0
-latest-changes: 2.40.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/pretty-formats/index.html"
 
@@ -212,7 +212,9 @@ The title was &gt;&gt;t4119: test autocomputing -p&lt;n&gt; for traditional diff
 </dd>
 <dt class="hdlist1" id="Documentation/pretty-formats.txt-emx00em"> <a class="anchor" href="#Documentation/pretty-formats.txt-emx00em"></a><em>%x00</em> </dt>
 <dd>
-<p>print a byte from a hex code</p>
+<p><em>%x</em> followed by two hexadecimal digits is replaced with a
+byte with the hexadecimal digits' value (we will call this
+"literal formatting code" in the rest of this document).</p>
 </dd>
 </dl>
 </div>
@@ -467,15 +469,54 @@ or <a href='{{< relurl "docs/git-blame" >}}'>git-blame[1]</a>)</p>
 <dd>
 <p>ref names without the " (", ")" wrapping.</p>
 </dd>
-<dt class="hdlist1" id="Documentation/pretty-formats.txt-emdescribeoptionsem"> <a class="anchor" href="#Documentation/pretty-formats.txt-emdescribeoptionsem"></a><em>%(describe[:options])</em> </dt>
+<dt class="hdlist1" id="Documentation/pretty-formats.txt-emdecorateltoptionsgtem"> <a class="anchor" href="#Documentation/pretty-formats.txt-emdecorateltoptionsgtem"></a><em>%(decorate[:&lt;options&gt;])</em> </dt>
 <dd>
-<p>human-readable name, like
-<a href='{{< relurl "docs/git-describe" >}}'>git-describe[1]</a>; empty string for
-undescribable commits.  The <code>describe</code> string
-may be followed by a colon and zero or more
-comma-separated options.  Descriptions can be
-inconsistent when tags are added or removed at
-the same time.</p>
+<p>ref names with custom decorations. The <code>decorate</code> string may be followed by a
+colon and zero or more comma-separated options. Option values may contain
+literal formatting codes. These must be used for commas (<code>%x2C</code>) and closing
+parentheses (<code>%x29</code>), due to their role in the option syntax.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>prefix=&lt;value&gt;</em>: Shown before the list of ref names.  Defaults to "&#160;<code>(</code>".</p>
+</li>
+<li>
+<p><em>suffix=&lt;value&gt;</em>: Shown after the list of ref names.  Defaults to "<code>)</code>".</p>
+</li>
+<li>
+<p><em>separator=&lt;value&gt;</em>: Shown between ref names.  Defaults to "<code>,</code>&#160;".</p>
+</li>
+<li>
+<p><em>pointer=&lt;value&gt;</em>: Shown between HEAD and the branch it points to, if any.
+Defaults to "&#160;<code>-&gt;</code>&#160;".</p>
+</li>
+<li>
+<p><em>tag=&lt;value&gt;</em>: Shown before tag names. Defaults to "<code>tag:</code>&#160;".</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For example, to produce decorations with no wrapping
+or tag annotations, and spaces as separators:</p>
+</div>
+<div class="paragraph">
+<p>+
+<code>%(decorate:prefix=,suffix=,tag=,separator= )</code></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1" id="Documentation/pretty-formats.txt-emdescribeltoptionsgtem"> <a class="anchor" href="#Documentation/pretty-formats.txt-emdescribeltoptionsgtem"></a><em>%(describe[:&lt;options&gt;])</em> </dt>
+<dd>
+<p>human-readable name, like <a href='{{< relurl "docs/git-describe" >}}'>git-describe[1]</a>; empty string for
+undescribable commits.  The <code>describe</code> string may be followed by a colon and
+zero or more comma-separated options.  Descriptions can be inconsistent when
+tags are added or removed at the same time.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -600,15 +641,12 @@ portion is shortened for human readability (so
 <dd>
 <p>reflog subject</p>
 </dd>
-<dt class="hdlist1" id="Documentation/pretty-formats.txt-emtrailersoptionsem"> <a class="anchor" href="#Documentation/pretty-formats.txt-emtrailersoptionsem"></a><em>%(trailers[:options])</em> </dt>
+<dt class="hdlist1" id="Documentation/pretty-formats.txt-emtrailersltoptionsgtem"> <a class="anchor" href="#Documentation/pretty-formats.txt-emtrailersltoptionsgtem"></a><em>%(trailers[:&lt;options&gt;])</em> </dt>
 <dd>
-<p>display the trailers of the body as
-interpreted by
-<a href='{{< relurl "docs/git-interpret-trailers" >}}'>git-interpret-trailers[1]</a>. The
-<code>trailers</code> string may be followed by a colon
-and zero or more comma-separated options.
-If any option is provided multiple times the
-last occurrence wins.</p>
+<p>display the trailers of the body as interpreted by
+<a href='{{< relurl "docs/git-interpret-trailers" >}}'>git-interpret-trailers[1]</a>. The <code>trailers</code> string may be followed by
+a colon and zero or more comma-separated options. If any option is provided
+multiple times, the last occurrence wins.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -656,9 +694,6 @@ as <em>separator=&lt;sep&gt;</em> above.</p>
 </div>
 </dd>
 </dl>
-</div>
-</li>
-</ul>
 </div>
 </li>
 </ul>

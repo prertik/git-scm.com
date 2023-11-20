@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-mergetool--lib Documentation
 docname: git-mergetool--lib
-version: 2.31.0
-latest-changes: 2.31.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-mergetool--lib/index.html"
 
@@ -53,26 +53,26 @@ to define the operation mode for the functions listed below.
 <dl>
 <dt class="hdlist1" id="Documentation/git-mergetool--lib.txt-getmergetool"> <a class="anchor" href="#Documentation/git-mergetool--lib.txt-getmergetool"></a>get_merge_tool </dt>
 <dd>
-<p>returns a merge tool. the return code is 1 if we returned a guessed
+<p>Returns a merge tool. The return code is 1 if we returned a guessed
 merge tool, else 0. <em>$GIT_MERGETOOL_GUI</em> may be set to <em>true</em> to
 search for the appropriate guitool.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-mergetool--lib.txt-getmergetoolcmd"> <a class="anchor" href="#Documentation/git-mergetool--lib.txt-getmergetoolcmd"></a>get_merge_tool_cmd </dt>
 <dd>
-<p>returns the custom command for a merge tool.</p>
+<p>Returns the custom command for a merge tool.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-mergetool--lib.txt-getmergetoolpath"> <a class="anchor" href="#Documentation/git-mergetool--lib.txt-getmergetoolpath"></a>get_merge_tool_path </dt>
 <dd>
-<p>returns the custom path for a merge tool.</p>
+<p>Returns the custom path for a merge tool.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-mergetool--lib.txt-initializemergetool"> <a class="anchor" href="#Documentation/git-mergetool--lib.txt-initializemergetool"></a>initialize_merge_tool </dt>
 <dd>
-<p>bring merge tool specific functions into scope so they can be used or
+<p>Brings merge tool specific functions into scope so they can be used or
 overridden.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-mergetool--lib.txt-runmergetool"> <a class="anchor" href="#Documentation/git-mergetool--lib.txt-runmergetool"></a>run_merge_tool </dt>
 <dd>
-<p>launches a merge tool given the tool name and a true/false
+<p>Launches a merge tool given the tool name and a true/false
 flag to indicate whether a merge base is present.
 <em>$MERGED</em>, <em>$LOCAL</em>, <em>$REMOTE</em>, and <em>$BASE</em> must be defined
 for use by the merge tool.</p>

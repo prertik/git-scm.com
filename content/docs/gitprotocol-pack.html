@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - gitprotocol-pack Documentation
 docname: gitprotocol-pack
-version: 2.38.0
-latest-changes: 2.38.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/gitprotocol-pack/index.html"
 
@@ -51,7 +51,7 @@ of data to send in order to fully update one or the other.</p>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The descriptions below build on the pkt-line format described in
-<a href='{{< relurl "docs/gitprotocol-common" >}}'>gitprotocol-common[5]</a>. When the grammar indicate <code>PKT-LINE(...)</code>, unless
+<a href='{{< relurl "docs/gitprotocol-common" >}}'>gitprotocol-common[5]</a>. When the grammar indicates <code>PKT-LINE(...)</code>, unless
 otherwise noted the usual pkt-line LF rules apply: the sender SHOULD
 include a LF, but the receiver MUST NOT complain if it is not present.</p>
 </div>
@@ -203,7 +203,7 @@ ssh user@example.com "git-upload-pack '/project.git'"</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>In a "user@host:path" format URI, its relative to the user&#8217;s home
+<p>In a "user@host:path" format URI, it&#8217;s relative to the user&#8217;s home
 directory, because the Git client will run:</p>
 </div>
 <div class="literalblock">
@@ -434,7 +434,7 @@ a positive depth, this step is skipped.</p>
 <div class="paragraph">
 <p>If the client has requested a positive depth, the server will compute
 the set of commits which are no deeper than the desired depth. The set
-of commits start at the client&#8217;s wants.</p>
+of commits starts at the client&#8217;s wants.</p>
 </div>
 <div class="paragraph">
 <p>The server writes <em>shallow</em> lines for each

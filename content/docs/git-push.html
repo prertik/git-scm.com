@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-push Documentation
 docname: git-push
-version: 2.42.1
-latest-changes: 2.42.1
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-push/index.html"
 
@@ -73,7 +73,7 @@ local one.</p>
 <dl>
 <dt class="hdlist1" id="Documentation/git-push.txt-ltrepositorygt"> <a class="anchor" href="#Documentation/git-push.txt-ltrepositorygt"></a>&lt;repository&gt; </dt>
 <dd>
-<p>The "remote" repository that is destination of a push
+<p>The "remote" repository that is the destination of a push
 operation.  This parameter can be either a URL
 (see the section <a href="#URLS">GIT URLS</a> below) or the name
 of a remote (see the section <a href="#REMOTES">REMOTES</a> below).</p>
@@ -548,9 +548,9 @@ Depending on the transport protocol, some of this information may be
 absent.</p>
 </div>
 <div class="paragraph">
-<p>Git supports ssh, git, http, and https protocols (in addition, ftp,
+<p>Git supports ssh, git, http, and https protocols (in addition, ftp
 and ftps can be used for fetching, but this is inefficient and
-deprecated; do not use it).</p>
+deprecated; do not use them).</p>
 </div>
 <div class="paragraph">
 <p>The native transport (i.e. git:// URL) does no authentication and
@@ -747,7 +747,7 @@ config file would appear like this:</p>
 </div>
 <div class="paragraph">
 <p>The <code>&lt;pushurl&gt;</code> is used for pushes only. It is optional and defaults
-to <code>&lt;URL&gt;</code>. Pushing to a remote affects all defined pushurls or to all
+to <code>&lt;URL&gt;</code>. Pushing to a remote affects all defined pushurls or all
 defined urls if no pushurls are defined. Fetch, however, will only
 fetch from the first defined url if multiple urls are defined.</p>
 </div>
@@ -764,7 +764,7 @@ following format:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>	URL: one of the above URL format
+<pre>	URL: one of the above URL formats
 	Push: &lt;refspec&gt;
 	Pull: &lt;refspec&gt;</pre>
 </div>
@@ -1260,7 +1260,7 @@ pushing to the same repository you would normally pull from
 <p><code>tracking</code> - This is a deprecated synonym for <code>upstream</code>.</p>
 </li>
 <li>
-<p><code>simple</code> - pushes the current branch with the same name on the remote.</p>
+<p><code>simple</code> - push the current branch with the same name on the remote.</p>
 <div class="paragraph">
 <p>If you are working on a centralized workflow (pushing to the same repository you
 pull from, which is typically <code>origin</code>), then you need to configure an upstream
@@ -1301,7 +1301,7 @@ new default).</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-push.txt-pushfollowTags"> <a class="anchor" href="#Documentation/git-push.txt-pushfollowTags"></a>push.followTags </dt>
 <dd>
-<p>If set to true enable <code>--follow-tags</code> option by default.  You
+<p>If set to true, enable <code>--follow-tags</code> option by default.  You
 may override this configuration at time of push by specifying
 <code>--no-follow-tags</code>.</p>
 </dd>

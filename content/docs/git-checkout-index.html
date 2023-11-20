@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-checkout-index Documentation
 docname: git-checkout-index
-version: 2.36.0
-latest-changes: 2.36.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-checkout-index/index.html"
 
@@ -35,7 +35,7 @@ aliases:
 <h2 id="_description"><a class="anchor" href="#_description"></a>DESCRIPTION</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Will copy all files listed from the index to the working directory
+<p>Copies all listed files from the index to the working directory
 (not overwriting existing files).</p>
 </div>
 </div>
@@ -82,12 +82,12 @@ including a trailing /)</p>
 <dt class="hdlist1" id="Documentation/git-checkout-index.txt---stageltnumbergtall"> <a class="anchor" href="#Documentation/git-checkout-index.txt---stageltnumbergtall"></a>--stage=&lt;number&gt;|all </dt>
 <dd>
 <p>Instead of checking out unmerged entries, copy out the
-files from named stage.  &lt;number&gt; must be between 1 and 3.
+files from the named stage.  &lt;number&gt; must be between 1 and 3.
 Note: --stage=all automatically implies --temp.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-checkout-index.txt---temp"> <a class="anchor" href="#Documentation/git-checkout-index.txt---temp"></a>--temp </dt>
 <dd>
-<p>Instead of copying the files to the working directory
+<p>Instead of copying the files to the working directory,
 write the content to temporary files.  The temporary name
 associations will be written to stdout.</p>
 </dd>
@@ -98,8 +98,8 @@ set.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-checkout-index.txt---stdin"> <a class="anchor" href="#Documentation/git-checkout-index.txt---stdin"></a>--stdin </dt>
 <dd>
-<p>Instead of taking list of paths from the command line,
-read list of paths from the standard input.  Paths are
+<p>Instead of taking a list of paths from the command line,
+read the list of paths from the standard input.  Paths are
 separated by LF (i.e. one path per line) by default.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-checkout-index.txt--z"> <a class="anchor" href="#Documentation/git-checkout-index.txt--z"></a>-z </dt>

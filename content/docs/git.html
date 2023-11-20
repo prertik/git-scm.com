@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git Documentation
 docname: git
-version: 2.42.1
-latest-changes: 2.42.1
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git/index.html"
 
@@ -132,9 +132,9 @@ in the environment. <code>&lt;envvar&gt;</code> may not contain an equals sign
 to avoid ambiguity with <code>&lt;name&gt;</code> containing one.</p>
 <div class="paragraph">
 <p>This is useful for cases where you want to pass transitory
-configuration options to git, but are doing so on OS&#8217;s where
-other processes might be able to read your cmdline
-(e.g. <code>/proc/self/cmdline</code>), but not your environ
+configuration options to git, but are doing so on operating systems
+where other processes might be able to read your command line
+(e.g. <code>/proc/self/cmdline</code>), but not your environment
 (e.g. <code>/proc/self/environ</code>). That behavior is the default on
 Linux, but may not be on your system.</p>
 </div>
@@ -598,7 +598,7 @@ ancillary user utilities.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git.txt-ahrefrelurldocsgit-whatchangedgit-whatchanged1a"> <a class="anchor" href="#Documentation/git.txt-ahrefrelurldocsgit-whatchangedgit-whatchanged1a"></a><a href='{{< relurl "docs/git-whatchanged" >}}'>git-whatchanged[1]</a> </dt>
 <dd>
-<p>Show logs with difference each commit introduces</p>
+<p>Show logs with differences each commit introduces</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git.txt-ahrefrelurldocsgitwebgitweb1a"> <a class="anchor" href="#Documentation/git.txt-ahrefrelurldocsgitwebgitweb1a"></a><a href='{{< relurl "docs/gitweb" >}}'>gitweb[1]</a> </dt>
 <dd>
@@ -1900,6 +1900,18 @@ point to as not worth saving). The default value is <code>1</code> (i.e.,
 be paranoid about detecting and aborting all operations). You
 should not normally need to set this to <code>0</code>, but it may be
 useful when trying to salvage data from a corrupted repository.</p>
+</dd>
+<dt class="hdlist1" id="Documentation/git.txt-codeGITCOMMITGRAPHPARANOIAcode"> <a class="anchor" href="#Documentation/git.txt-codeGITCOMMITGRAPHPARANOIAcode"></a><code>GIT_COMMIT_GRAPH_PARANOIA</code> </dt>
+<dd>
+<p>When loading a commit object from the commit-graph, Git performs an
+existence check on the object in the object database. This is done to
+avoid issues with stale commit-graphs that contain references to
+already-deleted commits, but comes with a performance penalty.</p>
+<div class="paragraph">
+<p>The default is "true", which enables the aforementioned behavior.
+Setting this to "false" disables the existence check. This can lead to
+a performance improvement at the cost of consistency.</p>
+</div>
 </dd>
 <dt class="hdlist1" id="Documentation/git.txt-codeGITALLOWPROTOCOLcode"> <a class="anchor" href="#Documentation/git.txt-codeGITALLOWPROTOCOLcode"></a><code>GIT_ALLOW_PROTOCOL</code> </dt>
 <dd>

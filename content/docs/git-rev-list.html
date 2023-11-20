@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-rev-list Documentation
 docname: git-rev-list
-version: 2.42.0
-latest-changes: 2.42.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-rev-list/index.html"
 
@@ -78,9 +78,9 @@ $ git rev-list A...B</pre>
 </div>
 </div>
 <div class="paragraph">
-<p><em>rev-list</em> is a very essential Git command, since it
+<p><em>rev-list</em> is an essential Git command, since it
 provides the ability to build and traverse commit ancestry graphs. For
-this reason, it has a lot of different options that enables it to be
+this reason, it has a lot of different options that enable it to be
 used by commands as different as <em>git bisect</em> and
 <em>git repack</em>.</p>
 </div>
@@ -158,7 +158,7 @@ error to use this option unless <code>--walk-reflogs</code> is in use.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-rev-list.txt---grepltpatterngt"> <a class="anchor" href="#Documentation/git-rev-list.txt---grepltpatterngt"></a>--grep=&lt;pattern&gt; </dt>
 <dd>
-<p>Limit the commits output to ones with log message that
+<p>Limit the commits output to ones with a log message that
 matches the specified pattern (regular expression).  With
 more than one <code>--grep=&lt;pattern&gt;</code>, commits whose message
 matches any of the given patterns are chosen (but see
@@ -171,7 +171,7 @@ instead of ones that match at least one.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-rev-list.txt---invert-grep"> <a class="anchor" href="#Documentation/git-rev-list.txt---invert-grep"></a>--invert-grep </dt>
 <dd>
-<p>Limit the commits output to ones with log message that do not
+<p>Limit the commits output to ones with a log message that do not
 match the pattern specified with <code>--grep=&lt;pattern&gt;</code>.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-rev-list.txt--i"> <a class="anchor" href="#Documentation/git-rev-list.txt--i"></a>-i </dt>
@@ -258,7 +258,11 @@ that arbitrary merges can be valid topic branch changes.</p>
 <dt class="hdlist1" id="Documentation/git-rev-list.txt---not"> <a class="anchor" href="#Documentation/git-rev-list.txt---not"></a>--not </dt>
 <dd>
 <p>Reverses the meaning of the <em>^</em> prefix (or lack thereof)
-for all following revision specifiers, up to the next <code>--not</code>.</p>
+for all following revision specifiers, up to the next <code>--not</code>.
+When used on the command line before --stdin, the revisions passed
+through stdin will not be affected by it. Conversely, when passed
+via standard input, the revisions passed on the command line will
+not be affected by it.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-rev-list.txt---all"> <a class="anchor" href="#Documentation/git-rev-list.txt---all"></a>--all </dt>
 <dd>
@@ -352,7 +356,9 @@ the bad input was not given.</p>
 them from standard input as well. This accepts commits and
 pseudo-options like <code>--all</code> and <code>--glob=</code>. When a <code>--</code> separator
 is seen, the following input is treated as paths and used to
-limit the result.</p>
+limit the result. Flags like <code>--not</code> which are read via standard input
+are only respected for arguments passed in the same way and will not
+influence any subsequent command line arguments.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-rev-list.txt---quiet"> <a class="anchor" href="#Documentation/git-rev-list.txt---quiet"></a>--quiet </dt>
 <dd>
@@ -1416,7 +1422,7 @@ object verbatim.</p>
 <dt class="hdlist1" id="Documentation/git-rev-list.txt---no-expand-tabs"> <a class="anchor" href="#Documentation/git-rev-list.txt---no-expand-tabs"></a>--no-expand-tabs </dt>
 <dd>
 <p>Perform a tab expansion (replace each tab with enough spaces
-to fill to the next display column that is multiple of <em>&lt;n&gt;</em>)
+to fill to the next display column that is a multiple of <em>&lt;n&gt;</em>)
 in the log message before showing it in the output.
 <code>--expand-tabs</code> is a short-hand for <code>--expand-tabs=8</code>, and
 <code>--no-expand-tabs</code> is a short-hand for <code>--expand-tabs=0</code>,
@@ -1826,7 +1832,9 @@ The title was &gt;&gt;t4119: test autocomputing -p&lt;n&gt; for traditional diff
 </dd>
 <dt class="hdlist1" id="Documentation/git-rev-list.txt-emx00em"> <a class="anchor" href="#Documentation/git-rev-list.txt-emx00em"></a><em>%x00</em> </dt>
 <dd>
-<p>print a byte from a hex code</p>
+<p><em>%x</em> followed by two hexadecimal digits is replaced with a
+byte with the hexadecimal digits' value (we will call this
+"literal formatting code" in the rest of this document).</p>
 </dd>
 </dl>
 </div>
@@ -2081,15 +2089,54 @@ or <a href='{{< relurl "docs/git-blame" >}}'>git-blame[1]</a>)</p>
 <dd>
 <p>ref names without the " (", ")" wrapping.</p>
 </dd>
-<dt class="hdlist1" id="Documentation/git-rev-list.txt-emdescribeoptionsem"> <a class="anchor" href="#Documentation/git-rev-list.txt-emdescribeoptionsem"></a><em>%(describe[:options])</em> </dt>
+<dt class="hdlist1" id="Documentation/git-rev-list.txt-emdecorateltoptionsgtem"> <a class="anchor" href="#Documentation/git-rev-list.txt-emdecorateltoptionsgtem"></a><em>%(decorate[:&lt;options&gt;])</em> </dt>
 <dd>
-<p>human-readable name, like
-<a href='{{< relurl "docs/git-describe" >}}'>git-describe[1]</a>; empty string for
-undescribable commits.  The <code>describe</code> string
-may be followed by a colon and zero or more
-comma-separated options.  Descriptions can be
-inconsistent when tags are added or removed at
-the same time.</p>
+<p>ref names with custom decorations. The <code>decorate</code> string may be followed by a
+colon and zero or more comma-separated options. Option values may contain
+literal formatting codes. These must be used for commas (<code>%x2C</code>) and closing
+parentheses (<code>%x29</code>), due to their role in the option syntax.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>prefix=&lt;value&gt;</em>: Shown before the list of ref names.  Defaults to "&#160;<code>(</code>".</p>
+</li>
+<li>
+<p><em>suffix=&lt;value&gt;</em>: Shown after the list of ref names.  Defaults to "<code>)</code>".</p>
+</li>
+<li>
+<p><em>separator=&lt;value&gt;</em>: Shown between ref names.  Defaults to "<code>,</code>&#160;".</p>
+</li>
+<li>
+<p><em>pointer=&lt;value&gt;</em>: Shown between HEAD and the branch it points to, if any.
+Defaults to "&#160;<code>-&gt;</code>&#160;".</p>
+</li>
+<li>
+<p><em>tag=&lt;value&gt;</em>: Shown before tag names. Defaults to "<code>tag:</code>&#160;".</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For example, to produce decorations with no wrapping
+or tag annotations, and spaces as separators:</p>
+</div>
+<div class="paragraph">
+<p>+
+<code>%(decorate:prefix=,suffix=,tag=,separator= )</code></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1" id="Documentation/git-rev-list.txt-emdescribeltoptionsgtem"> <a class="anchor" href="#Documentation/git-rev-list.txt-emdescribeltoptionsgtem"></a><em>%(describe[:&lt;options&gt;])</em> </dt>
+<dd>
+<p>human-readable name, like <a href='{{< relurl "docs/git-describe" >}}'>git-describe[1]</a>; empty string for
+undescribable commits.  The <code>describe</code> string may be followed by a colon and
+zero or more comma-separated options.  Descriptions can be inconsistent when
+tags are added or removed at the same time.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2210,15 +2257,12 @@ portion is shortened for human readability (so
 <dd>
 <p>reflog subject</p>
 </dd>
-<dt class="hdlist1" id="Documentation/git-rev-list.txt-emtrailersoptionsem"> <a class="anchor" href="#Documentation/git-rev-list.txt-emtrailersoptionsem"></a><em>%(trailers[:options])</em> </dt>
+<dt class="hdlist1" id="Documentation/git-rev-list.txt-emtrailersltoptionsgtem"> <a class="anchor" href="#Documentation/git-rev-list.txt-emtrailersltoptionsgtem"></a><em>%(trailers[:&lt;options&gt;])</em> </dt>
 <dd>
-<p>display the trailers of the body as
-interpreted by
-<a href='{{< relurl "docs/git-interpret-trailers" >}}'>git-interpret-trailers[1]</a>. The
-<code>trailers</code> string may be followed by a colon
-and zero or more comma-separated options.
-If any option is provided multiple times the
-last occurrence wins.</p>
+<p>display the trailers of the body as interpreted by
+<a href='{{< relurl "docs/git-interpret-trailers" >}}'>git-interpret-trailers[1]</a>. The <code>trailers</code> string may be followed by
+a colon and zero or more comma-separated options. If any option is provided
+multiple times, the last occurrence wins.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2266,9 +2310,6 @@ as <em>separator=&lt;sep&gt;</em> above.</p>
 </div>
 </dd>
 </dl>
-</div>
-</li>
-</ul>
 </div>
 </li>
 </ul>

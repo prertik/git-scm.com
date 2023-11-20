@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-check-ref-format Documentation
 docname: git-check-ref-format
-version: 2.23.0
-latest-changes: 2.23.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-check-ref-format/index.html"
 
@@ -76,7 +76,7 @@ an exception to this rule.</p>
 <li>
 <p>They cannot begin or end with a slash <code>/</code> or contain multiple
 consecutive slashes (see the <code>--normalize</code> option below for an
-exception to this rule)</p>
+exception to this rule).</p>
 </li>
 <li>
 <p>They cannot end with a dot <code>.</code>.</p>
@@ -129,7 +129,7 @@ The rule <code>git check-ref-format --branch $name</code> implements
 may be stricter than what <code>git check-ref-format refs/heads/$name</code>
 says (e.g. a dash may appear at the beginning of a ref component,
 but it is explicitly forbidden at the beginning of a branch name).
-When run with <code>--branch</code> option in a repository, the input is first
+When run with the <code>--branch</code> option in a repository, the input is first
 expanded for the &#8220;previous checkout syntax&#8221;
 <code>@{-n}</code>.  For example, <code>@{-1}</code> is a way to refer the last thing that
 was checked out using "git switch" or "git checkout" operation.

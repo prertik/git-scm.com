@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-revert Documentation
 docname: git-revert
-version: 2.39.0
-latest-changes: 2.39.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-revert/index.html"
 
@@ -222,6 +222,19 @@ changes. The revert only modifies the working tree and the
 index.</p>
 </dd>
 </dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_discussion"><a class="anchor" href="#_discussion"></a>DISCUSSION</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While git creates a basic commit message automatically, it is
+<em>strongly</em> recommended to explain why the original commit is being
+reverted.
+In addition, repeatedly reverting reverts will result in increasingly
+unwieldy subject lines, for example <em>Reapply "Reapply "&lt;original subject&gt;""</em>.
+Please consider rewording these to be shorter and more unique.</p>
 </div>
 </div>
 </div>

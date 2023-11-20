@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-pack-objects Documentation
 docname: git-pack-objects
-version: 2.37.0
-latest-changes: 2.37.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-pack-objects/index.html"
 
@@ -150,9 +150,7 @@ unreachable object whose mtime is newer than the <code>--cruft-expiration</code>
 <div class="paragraph">
 <p>Incompatible with <code>--unpack-unreachable</code>, <code>--keep-unreachable</code>,
 <code>--pack-loose-unreachable</code>, <code>--stdin-packs</code>, as well as any other
-options which imply <code>--revs</code>. Also incompatible with <code>--max-pack-size</code>;
-when this option is set, the maximum pack size is not inferred from
-<code>pack.packSizeLimit</code>.</p>
+options which imply <code>--revs</code>.</p>
 </div>
 </dd>
 <dt class="hdlist1" id="Documentation/git-pack-objects.txt---cruft-expirationltapproxidategt"> <a class="anchor" href="#Documentation/git-pack-objects.txt---cruft-expirationltapproxidategt"></a>--cruft-expiration=&lt;approxidate&gt; </dt>
@@ -360,8 +358,8 @@ nevertheless.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-pack-objects.txt---filterltfilter-specgt"> <a class="anchor" href="#Documentation/git-pack-objects.txt---filterltfilter-specgt"></a>--filter=&lt;filter-spec&gt; </dt>
 <dd>
-<p>Requires <code>--stdout</code>.  Omits certain objects (usually blobs) from
-the resulting packfile.  See <a href='{{< relurl "docs/git-rev-list" >}}'>git-rev-list[1]</a> for valid
+<p>Omits certain objects (usually blobs) from the resulting
+packfile.  See <a href='{{< relurl "docs/git-rev-list" >}}'>git-rev-list[1]</a> for valid
 <code>&lt;filter-spec&gt;</code> forms.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-pack-objects.txt---no-filter"> <a class="anchor" href="#Documentation/git-pack-objects.txt---no-filter"></a>--no-filter </dt>

@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-read-tree Documentation
 docname: git-read-tree
-version: 2.40.0
-latest-changes: 2.40.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-read-tree/index.html"
 
@@ -43,8 +43,8 @@ flag.  When used with <code>-m</code>, the <code>-u</code> flag causes it to als
 the files in the work tree with the result of the merge.</p>
 </div>
 <div class="paragraph">
-<p>Trivial merges are done by <em>git read-tree</em> itself.  Only conflicting paths
-will be in unmerged state when <em>git read-tree</em> returns.</p>
+<p>Only trivial merges are done by <em>git read-tree</em> itself.  Only conflicting paths
+will be in an unmerged state when <em>git read-tree</em> returns.</p>
 </div>
 </div>
 </div>
@@ -57,7 +57,7 @@ will be in unmerged state when <em>git read-tree</em> returns.</p>
 <dd>
 <p>Perform a merge, not just a read.  The command will
 refuse to run if your index file has unmerged entries,
-indicating that you have not finished previous merge you
+indicating that you have not finished a previous merge you
 started.</p>
 </dd>
 <dt class="hdlist1" id="Documentation/git-read-tree.txt---reset"> <a class="anchor" href="#Documentation/git-read-tree.txt---reset"></a>--reset </dt>

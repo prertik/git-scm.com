@@ -4,8 +4,8 @@ section: documentation
 subsection: manual
 title: Git - git-branch Documentation
 docname: git-branch
-version: 2.41.0
-latest-changes: 2.41.0
+version: 2.43.0
+latest-changes: 2.43.0
 aliases:
 - "/docs/git-branch/index.html"
 
@@ -399,7 +399,7 @@ order of the value. You may use the --sort=&lt;key&gt; option
 multiple times, in which case the last key becomes the primary
 key. The keys supported are the same as those in <code>git
 for-each-ref</code>. Sort order defaults to the value configured for the
-<code>branch.sort</code> variable if exists, or to sorting based on the
+<code>branch.sort</code> variable if it exists, or to sorting based on the
 full refname (including <code>refs/...</code> prefix). This lists
 detached HEAD (if present) first, then local branches and
 finally remote-tracking branches. See <a href='{{< relurl "docs/git-config" >}}'>git-config[1]</a>.</p>
@@ -474,7 +474,7 @@ See <a href='{{< relurl "docs/git-for-each-ref" >}}'>git-for-each-ref[1]</a> fie
 <dt class="hdlist1" id="Documentation/git-branch.txt-branchltnamegtremote"> <a class="anchor" href="#Documentation/git-branch.txt-branchltnamegtremote"></a>branch.&lt;name&gt;.remote </dt>
 <dd>
 <p>When on branch &lt;name&gt;, it tells <em>git fetch</em> and <em>git push</em>
-which remote to fetch from/push to.  The remote to push to
+which remote to fetch from or push to.  The remote to push to
 may be overridden with <code>remote.pushDefault</code> (for all branches).
 The remote to push to, for the current branch, may be further
 overridden by <code>branch.&lt;name&gt;.pushRemote</code>.  If no remote is
@@ -504,7 +504,7 @@ refspec to be marked for merging in FETCH_HEAD. The value is
 handled like the remote part of a refspec, and must match a
 ref which is fetched from the remote given by
 "branch.&lt;name&gt;.remote".
-The merge information is used by <em>git pull</em> (which at first calls
+The merge information is used by <em>git pull</em> (which first calls
 <em>git fetch</em>) to lookup the default branch for merging. Without
 this option, <em>git pull</em> defaults to merge the first refspec fetched.
 Specify multiple values to get an octopus merge.
@@ -545,7 +545,7 @@ for details).</p>
 <dd>
 <p>Branch description, can be edited with
 <code>git branch --edit-description</code>. Branch description is
-automatically added in the format-patch cover letter or
+automatically added to the format-patch cover letter or
 request-pull summary.</p>
 </dd>
 </dl>

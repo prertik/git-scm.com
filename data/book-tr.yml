@@ -12,7 +12,7 @@ chapters:
     url: book/tr/v2/Başlangıç-Git’in-Kısa-Tarihçesi
   - cs_number: '1.3'
     title: Git Nedir?
-    url: book/tr/v2/Başlangıç-Git-Nedir?
+    url: book/tr/v2/Başlangıç-Git-Nedir%3F
   - cs_number: '1.4'
     title: Komut Satırı
     url: book/tr/v2/Başlangıç-Komut-Satırı

@@ -380,7 +380,7 @@ Máme-li repozitář s prací ve dvou větvích pojmenovaných <code>ruby_client
 <p>Jde nejspíš o nejjednodušší pracovní postup, ale může vést k problémům v případě, že se použije pro větší nebo stabilnější projekty, u kterých chcete být při vkládání nových věcí opravdu opatrní.</p>
 </div>
 <div class="paragraph">
-<p>U důležitějších projektů asi budete chtít použít dvoufázový cyklus slučování<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_18" >}}" title="View footnote.">18</a>]</sup>.
+<p>U důležitějších projektů asi budete chtít použít dvoufázový cyklus slučování<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup>.
 V tomto scénáři máte dvě větve s dlouhou životností: hlavní větev <code>master</code> a větev <code>develop</code>. Určíte, že větev <code>master</code> bude aktualizována, pouze když je k dispozici velmi stabilní verze. Veškerý nový kód je integrován do větve <code>develop</code>.
 Obě tyto větve pravidelně odesíláte do veřejného repozitáře.
 Pokaždé, když máte novou tématickou větev nachystanou k začlenění (obrázek <a href="{{< relurl "book/cs/v2/ch00/merwf_c" >}}">Před začleněním tématické větve.</a>), začleníte ji do větve <code>develop</code> (obrázek <a href="{{< relurl "book/cs/v2/ch00/merwf_d" >}}">Po začlenění tématické větve.</a>), označíte vydání (tag) a poté posunete větev <code>master</code> rychle vpřed do místa, kde je nyní větev <code>develop</code> stabilní (obrázek <a href="{{< relurl "book/cs/v2/ch00/merwf_e" >}}">Po vydání nové verze projektu.</a>).</p>
@@ -451,7 +451,7 @@ Pokud vše funguje, můžete větev <code>master</code> posunout rychle vpřed a
 </div>
 <div class="paragraph">
 <p>
-Druhým způsobem, jak přesunout práci z jedné větve do druhé, je tzv. částečné převzetí (angl. cherry picking<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_19" >}}" title="View footnote.">19</a>]</sup>).
+Druhým způsobem, jak přesunout práci z jedné větve do druhé, je tzv. částečné převzetí (angl. cherry picking<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup>).
 Částečné převzetí lze v systému Git přirovnat k přeskládání jediného objektu revize.
 Vezme se záplata, která byla provedena v dané revizi, a zkusí se znovu aplikovat na větev, na níž se právě nacházíte.
 Využijete to v situaci, kdy tématická větev obsahuje několik revizí a chcete integrovat pouze jednu z nich, nebo když máte v tématické větvi jediný objekt revize a dáváte přednost použití <code>cherry-pick</code> před provedením <code>rebase</code>.
@@ -584,7 +584,7 @@ Pokud navíc zadáte do zprávy značky další instrukce k jejímu ověření, 
 <h3 id="_build_number">Vygenerování čísla sestavení</h3>
 <div class="paragraph">
 <p>
-Git nepoužívá pro jednotlivé revize monotónně rostoucí čísla jako „v123“ nebo něco podobného. Pokud chcete získat čitelnou podobu jména revize, můžete pro daný objekt revize spustit příkaz <code>git describe</code><sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_20" >}}" title="View footnote.">20</a>]</sup>.
+Git nepoužívá pro jednotlivé revize monotónně rostoucí čísla jako „v123“ nebo něco podobného. Pokud chcete získat čitelnou podobu jména revize, můžete pro daný objekt revize spustit příkaz <code>git describe</code><sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnotedef_20" title="View footnote.">20</a>]</sup>.
 Git vám vrátí název nejbližší značky, který doplní počtem revizí za touto značkou a částečnou hodnotou SHA-1 popisovaného objektu revize:</p>
 </div>
 <div class="listingblock">
@@ -610,7 +610,7 @@ Například jádro Linuxu nyní přešlo z 8 na 10 znaků SHA-1, aby byla zajiš
 <p>
 Nyní budete chtít sestavení vydat.
 Jednou z věcí, kterou budete chtít udělat, je vytvoření archivu nejnovějšího snímku vašeho kódu pro všechny nebohé duše, které Git nepoužívají.
-Příkaz pro vytvoření archivu zní <code>git archive</code><sup class="footnote">[<a id="_footnoteref_21" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_21" >}}" title="View footnote.">21</a>]</sup>:</p>
+Příkaz pro vytvoření archivu zní <code>git archive</code><sup class="footnote">[<a id="_footnoteref_21" class="footnote" href="#_footnotedef_21" title="View footnote.">21</a>]</sup>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -662,4 +662,18 @@ Tom Preston-Werner (4):
 <p>Výstupem příkazu je shrnutí všech revizí od v1.0.1 (seskupené podle autora), které můžete přes poštovní konferenci rozeslat.</p>
 </div>
 </div>
-<div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>
+<div id='footnotes'>
+<hr>
+<div class="footnote" id="_footnotedef_18">
+<a href="#_footnoteref_18">18</a>. two-phase merge cycle
+</div>
+<div class="footnote" id="_footnotedef_19">
+<a href="#_footnoteref_19">19</a>. Pozn. překl.: „Cherry picking“ je doslova něco jako „vyzobání třešniček“.
+</div>
+<div class="footnote" id="_footnotedef_20">
+<a href="#_footnoteref_20">20</a>. Pozn. překl.: Slovo <em>describe</em> znamená doslova <em>popiš</em> (rozkazovací způsob). Příkaz tedy vrací doslovně <em>popis objektu revize</em>.
+</div>
+<div class="footnote" id="_footnotedef_21">
+<a href="#_footnoteref_21">21</a>. Pozn. překl.: Při použití příkazu v systému Windows nelze pro vytvoření jména archivu použít obrat `git describe master`.tar.gz, protože zde nefunguje uzavření do opačných apostrofů. V unixových systémech fungují opačné apostrofy tak, že se nahradí výsledkem příkazu, který je v nich uzavřen. V tomto případě by se tedy vrátilo jméno objektu revize odvozené od nejbližší značky, ke kterému se přidá dvojice přípon <code>.tar.gz</code>. Ve Windows budeme muset uvést konkrétní jméno souboru.
+</div>
+</div><div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

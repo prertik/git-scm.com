@@ -748,7 +748,7 @@ $ git push myfork featureBv2</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Volba <code>--squash</code> (stlačit) zajistí převzetí všech změn ze začleňované větve a stlačí je do podoby jedné sady změn, která vede ke stejnému stavu repozitáře, jako kdyby se provedlo opravdové sloučení (merge), ale nevytvoří se při tom bod sloučení<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_16" >}}" title="View footnote.">16</a>]</sup> (merge commit).
+<p>Volba <code>--squash</code> (stlačit) zajistí převzetí všech změn ze začleňované větve a stlačí je do podoby jedné sady změn, která vede ke stejnému stavu repozitáře, jako kdyby se provedlo opravdové sloučení (merge), ale nevytvoří se při tom bod sloučení<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup> (merge commit).
 To znamená, že váš budoucí objekt revize bude mít jen jednoho rodiče a přitom vám umožní vnést všechny změny z jiné větve a poté provést další úpravy ještě před tím, než se nová revize zapíše.
 V případě základního procesu slučování (merge) může být užitečná i volba <code>--no-commit</code>, která oddálí vytvoření bodu sloučení.</p>
 </div>
@@ -766,7 +766,7 @@ V případě základního procesu slučování (merge) může být užitečná i
 <h3 id="_project_over_email">Veřejný projekt využívající elektronickou poštu</h3>
 <div class="paragraph">
 <p>Mnoho projektů si vytvořilo vlastní procedury pro přijímání záplat. Konkrétní pravidla si u každého projektu budete muset zjistit, protože budou odlišná.
-Protože existuje několik starších, větších projektů, kde se záplaty přijímají prostřednictvím vývojářské poštovní konference<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_17" >}}" title="View footnote.">17</a>]</sup>, projdeme si teď podobný příklad.</p>
+Protože existuje několik starších, větších projektů, kde se záplaty přijímají prostřednictvím vývojářské poštovní konference<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnotedef_17" title="View footnote.">17</a>]</sup>, projdeme si teď podobný příklad.</p>
 </div>
 <div class="paragraph">
 <p>Pracovní postup je podobný jako v předchozím případě. Pro každou sérii záplat, na níž pracujete, vytvoříte samostatnou tématickou větev.
@@ -931,4 +931,12 @@ V další části uvidíte, jak se pracuje na druhé straně — jak se spra
 Dozvíte se, jak být benevolentním diktátorem nebo integračním manažerem.</p>
 </div>
 </div>
-<div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>
+<div id='footnotes'>
+<hr>
+<div class="footnote" id="_footnotedef_16">
+<a href="#_footnoteref_16">16</a>. Pozn. překl.: Nezapíše se tedy revize. Jinými slovy, nevytvoří se žádný objekt revize. Změny budou promítnuté jen to pracovního stromu.
+</div>
+<div class="footnote" id="_footnotedef_17">
+<a href="#_footnoteref_17">17</a>. mailing list
+</div>
+</div><div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

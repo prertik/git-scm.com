@@ -22,7 +22,7 @@ url: book/cs/v2/Větve-v-systému-Git-Vzdálené-větve
 <div class="paragraph">
 <p>
 Vzdálené reference jsou odkazy (ukazatelé) ve vašich vzdálených repozitářích a zahrnují větve, značky (tag) a další.
-Seznam vzdálených referencí pro vzdálené větve a také další informace můžete získat explicitním příkazem <code>git ls-remote [vzdálený]</code> nebo <code>git remote show [vzdálený]</code> <sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_11" >}}" title="View footnote.">11</a>]</sup>.
+Seznam vzdálených referencí pro vzdálené větve a také další informace můžete získat explicitním příkazem <code>git ls-remote [vzdálený]</code> nebo <code>git remote show [vzdálený]</code> <sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup>.
 Nicméně, běžnější bývá využití vzdáleně sledovaných větví.</p>
 </div>
 <div class="paragraph">
@@ -85,7 +85,7 @@ Tento příkaz zjistí, který server je <code>origin</code> (v tomto případě
 <div class="title">Figure 32. <code>git fetch</code> aktualizuje reference do vzdáleného repozitáře</div>
 </div>
 <div class="paragraph">
-<p>Abychom si mohli ukázat, jak se pracuje s několika vzdálenými servery a jak vypadají vzdálené větve takových vzdálených projektů, předpokládejme, že máte ještě další interní server Git, který při vývoji používá pouze jeden z vašich sprint týmů<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_12" >}}" title="View footnote.">12</a>]</sup>.
+<p>Abychom si mohli ukázat, jak se pracuje s několika vzdálenými servery a jak vypadají vzdálené větve takových vzdálených projektů, předpokládejme, že máte ještě další interní server Git, který při vývoji používá pouze jeden z vašich sprint týmů<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup>.
 Tento server se nachází na <code>git.team1.ourcompany.com</code>.
 Můžete ho přidat jako novou vzdálenou referenci k projektu, na němž právě pracujete, spuštěním příkazu <code>git remote add</code> — jak jsme si ukázali v kapitole <a href="{{< relurl "book/cs/v2/ch00/_git_basics_chapter" >}}">Základy práce se systémem Git</a>.
 Pojmenujte tento vzdálený repozitář jako <code>teamone</code>, což bude zkrácený název pro celou URL adresu.</p>
@@ -321,4 +321,12 @@ To https://github.com/schacon/simplegit
 Gitový server data obecně po nějakou dobu uchovává — až do doby, kdy se spustí úklid (garbage collection). Takže pokud jste něco nechtěně smazali, dá se to obvykle snadno obnovit.</p>
 </div>
 </div>
-<div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>
+<div id='footnotes'>
+<hr>
+<div class="footnote" id="_footnotedef_11">
+<a href="#_footnoteref_11">11</a>. Pozn. překl.: V originále je příkaz zapsán jako <code>git remote show [remote]</code>, přičemž první „remote“ je název příkazu a druhé slovo „remote“ v závorkách je symbolické vyjádření, že se zde má uvést jméno „vzdáleného“…​ a teď čeho. Na jiných místech v knize se volněji pracuje s pojmy „server“ nebo „repozitář“ ve smyslu gitového serveru nebo repozitáře. V této kapitole bychom měli být přesnější, protože pojem „remote“ musíme navíc spojit s větvemi. Přesnější je použít spojení „vzdálený repozitář“, protože z hlediska Gitu není důležité, jakou podobu toto „úložiště dat“ má. Může to být „server“, ale může to být také „adresář na lokálním disku“. V anglicky mluvící komunitě si s tím hlavu nelámou a nazývají to prostě „remote“, přičemž mají současně na mysli „krátké jméno vzdáleného repozitáře“. Podle jejich vzoru proto ponechávám pro druhý výskyt tohoto slova v příkladu český překlad „vzdálený“.
+</div>
+<div class="footnote" id="_footnotedef_12">
+<a href="#_footnoteref_12">12</a>. Pozn. překl.: Pojem „sprint tým“ pochází z agilní vývojové metodologie <a href="https://cs.wikipedia.org/wiki/Scrum">Scrum</a>.
+</div>
+</div><div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

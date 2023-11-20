@@ -20,7 +20,7 @@ url: book/cs/v2/Základy-práce-se-systémem-Git-Zobrazení-historie-revizí
 ---
 <h2 id="_viewing_history">Zobrazení historie revizí</h2>
 <div class="paragraph">
-<p>Po vytvoření několika revizí<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_7" >}}" title="View footnote.">7</a>]</sup>, nebo pokud jste naklonovali repozitář s existující historií revizí, můžete chtít nahlédnout do historie projektu.
+<p>Po vytvoření několika revizí<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup>, nebo pokud jste naklonovali repozitář s existující historií revizí, můžete chtít nahlédnout do historie projektu.
 Nejzákladnějším a nejmocnějším nástrojem je v tomto případě příkaz <code>git log</code>.</p>
 </div>
 <div class="paragraph">
@@ -266,7 +266,7 @@ a11bef0 - Scott Chacon, 6 years ago : first commit</code></pre>
 <div class="paragraph">
 <p>Možná se ptáte, jaký je rozdíl mezi <em>autorem</em> a <em>autorem revize</em>.
 <em>Autor</em> (author) je osoba, která práci původně napsala, zatímco <em>autor revize</em> (committer) je osoba, která tuto práci naposled použila.
-Pokud tedy pošlete záplatu k projektu a někdo z užšího týmu <sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="{{< relurl "book/cs/v2/ch00/_footnotedef_8" >}}" title="View footnote.">8</a>]</sup> ji použije, získáte zásluhu oba — vy, jako autor, i daný člen týmu, jako autor revize.
+Pokud tedy pošlete záplatu k projektu a někdo z užšího týmu <sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup> ji použije, získáte zásluhu oba — vy, jako autor, i daný člen týmu, jako autor revize.
 Uvedený rozdíl si blíže vysvětlíme v kapitole <a href="{{< relurl "book/cs/v2/ch00/_distributed_git" >}}">Distribuovaný Git</a>.</p>
 </div>
 <div class="paragraph">
@@ -452,4 +452,12 @@ b0ad11e - pull: allow "git pull origin $something:$current_branch" into an unbor
 <p>Z téměř 40 tisíc revizí v historii zdrojového kódu Gitu zobrazí příkaz 6 záznamů, které odpovídají zadaným kritériím.</p>
 </div>
 </div>
-<div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>
+<div id='footnotes'>
+<hr>
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. Pozn. překl.: Znovu připomeňme, že slovem <em>revize</em> je přeložen anglický pojem <em>commit</em> (jako podstatné jméno). Při snaze o vytvoření přesnější představy používám dvouslovný pojem <em>objekt revize</em>, který má stejný význam. Uvažujte o něm jako o reprezentantovi výsledku příkazu <code>git commit</code>.
+</div>
+<div class="footnote" id="_footnotedef_8">
+<a href="#_footnoteref_8">8</a>. core member
+</div>
+</div><div id="nav"><a href="{{< previous-section >}}">prev</a> | <a href="{{< next-section >}}">next</a></div>

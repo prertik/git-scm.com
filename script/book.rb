@@ -280,7 +280,7 @@ class Section
     if path.nil? || path.empty?
       path = self.slug
     end
-    return @chapter.relative_url(path)
+    return @chapter.relative_url(path.gsub(/\?/, '%3F'))
   end
 
   def previous_section_url

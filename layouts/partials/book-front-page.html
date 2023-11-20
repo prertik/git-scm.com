@@ -40,7 +40,7 @@
           {{ if (ne .title "") }}
             <li>
               {{ .cs_number }}
-              <a href="{{ relURL (replace .url "?" "%3F") }}">{{ .title }}</a>
+              <a href="{{ relURL .url }}">{{ .title }}</a>
             </li>
           {{ end }}
         {{ end }}

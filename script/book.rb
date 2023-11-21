@@ -169,9 +169,13 @@ class Book
 	  # fall back to `git fetch`
 	  id_xref = '_git_fetch'
 	elsif id_xref == 'r_undoing' || id_xref == '_mengembalikan_ke_sebelumnya'
-	  id_xref = 'r_undoing'
+	  id_xref = '_undoing'
 	end
-        url = "book/en/v2/ch00/#{id_xref}"
+	if id_xref == '_git_notes'
+	  url = "docs/git-notes"
+	else
+          url = "book/en/v2/ch00/#{id_xref}"
+	end
       else
         url = "#{section.relative_url(nil)}##{id_xref}"
       end

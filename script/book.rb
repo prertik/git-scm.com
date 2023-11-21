@@ -99,7 +99,7 @@ class Book
         sections.append({
           "cs_number" => section.cs_number,
           "title" => section.title,
-          "url" => section.relative_url(nil)
+          "url" => section.relative_url(nil).gsub(/%3F/, '?')
         })
       end
       chapters.append({

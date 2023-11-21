@@ -158,7 +158,7 @@ class Book
       if section == 'redirect-to-en'
 	if id_xref == 'ch01-introduction'
 	  id_xref = 'ch01-getting-started'
-        elsif id_xref == 'ch02-git-basics'
+        elsif id_xref == 'ch02-git-basics' || id_xref == '_bab_dasar-dasar_git'
 	  id_xref = 'ch02-git-basics-chapter'
 	elsif id_xref == '_percabangan_git'
 	  id_xref = 'ch03-git-branching'

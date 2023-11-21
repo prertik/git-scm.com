@@ -12,7 +12,7 @@ chapters:
     url: book/sv/v2/Kom-igång-En-kort-historik-av-Git
   - cs_number: '1.3'
     title: Vad är Git?
-    url: book/sv/v2/Kom-igång-Vad-är-Git%3F
+    url: book/sv/v2/Kom-igång-Vad-är-Git?
   - cs_number: '1.4'
     title: Kommandoraden
     url: book/sv/v2/Kom-igång-Kommandoraden

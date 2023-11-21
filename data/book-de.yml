@@ -6,13 +6,13 @@ chapters:
   sections:
   - cs_number: '1.1'
     title: Was ist Versionsverwaltung?
-    url: book/de/v2/Erste-Schritte-Was-ist-Versionsverwaltung%3F
+    url: book/de/v2/Erste-Schritte-Was-ist-Versionsverwaltung?
   - cs_number: '1.2'
     title: Kurzer Überblick über die Historie von Git
     url: book/de/v2/Erste-Schritte-Kurzer-Überblick-über-die-Historie-von-Git
   - cs_number: '1.3'
     title: Was ist Git?
-    url: book/de/v2/Erste-Schritte-Was-ist-Git%3F
+    url: book/de/v2/Erste-Schritte-Was-ist-Git?
   - cs_number: '1.4'
     title: Die Kommandozeile
     url: book/de/v2/Erste-Schritte-Die-Kommandozeile

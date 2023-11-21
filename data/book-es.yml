@@ -24,7 +24,7 @@ chapters:
     url: book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez
   - cs_number: '1.7'
     title: "¿Cómo obtener ayuda?"
-    url: book/es/v2/Inicio---Sobre-el-Control-de-Versiones-¿Cómo-obtener-ayuda%3F
+    url: book/es/v2/Inicio---Sobre-el-Control-de-Versiones-¿Cómo-obtener-ayuda?
   - cs_number: '1.8'
     title: Resumen
     url: book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Resumen
@@ -60,7 +60,7 @@ chapters:
   sections:
   - cs_number: '3.1'
     title: "¿Qué es una rama?"
-    url: book/es/v2/Ramificaciones-en-Git-¿Qué-es-una-rama%3F
+    url: book/es/v2/Ramificaciones-en-Git-¿Qué-es-una-rama?
   - cs_number: '3.2'
     title: Procedimientos Básicos para Ramificar y Fusionar
     url: book/es/v2/Ramificaciones-en-Git-Procedimientos-Básicos-para-Ramificar-y-Fusionar

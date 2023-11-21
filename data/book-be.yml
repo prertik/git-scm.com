@@ -12,7 +12,7 @@ chapters:
     url: book/be/v2/Першыя-крокі-A-Short-History-of-Git
   - cs_number: '1.3'
     title: What is Git?
-    url: book/be/v2/Першыя-крокі-What-is-Git%3F
+    url: book/be/v2/Першыя-крокі-What-is-Git?
   - cs_number: '1.4'
     title: The Command Line
     url: book/be/v2/Першыя-крокі-The-Command-Line

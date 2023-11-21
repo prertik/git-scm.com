@@ -34,7 +34,7 @@
     {{ $section_count := .sections | len }}
     {{ if (ne $section_count 0) }}
     <li class='chapter'>
-    <h2>{{ .cs_number }}. <a href="{{ relURL (index (index .sections 0) "url") }}">{{ .title }}</a></h2>
+    <h2>{{ .cs_number }}. <a href="{{ relURL (replace (index (index .sections 0) "url") "?" "%3F") }}">{{ .title }}</a></h2>
       <ol>
         {{ range .sections }}
           {{ if (ne .title "") }}

@@ -253,7 +253,7 @@ class Section
       "next" => self.next_section_url
     }
     if @slug =~ /:|[^-A-Za-z0-9_]/
-      front_matter["url"] = self.relative_url(@slug)
+      front_matter["url"] = self.relative_url(@slug).gsub(/%3F/, '?')
     end
     return front_matter
   end

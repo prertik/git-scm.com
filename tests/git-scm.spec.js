@@ -2,7 +2,7 @@ const { test, expect, selectors } = require('@playwright/test')
 
 const url = process.env.PLAYWRIGHT_TEST_URL
   ? process.env.PLAYWRIGHT_TEST_URL.replace(/[^/]$/, '$&/')
-  : 'https://git-scm.com/'
+  : 'http://git-scm.com/'
 const isRailsApp = url === 'https://git-scm.com/'
 
 // Whenever a test fails, attach a screenshot to diagnose failures better

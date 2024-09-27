@@ -53,6 +53,9 @@
             img {
                 filter: brightness(.6) contrast(1.2);
             }
+            a {
+                color: #579cab;
+            }
         }
     }
 

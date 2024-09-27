@@ -65,7 +65,10 @@
                 @include box-shadow(none);
             }
         }
-    }
+        body#{$class}#documentation #main div.verseblock pre.content {
+            background-color: #bb9a60;
+        }
+}
 
     body#{$class} {
         --orange:                       #{$orange};

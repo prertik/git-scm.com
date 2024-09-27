@@ -19,9 +19,9 @@
         $link-color:              #579cab;
         $fixed-width-font-color:  #3c3632;
         $base-border-color:       #b3b2a7;
-        $callout-color:           #000000;
+        $callout-color:           #555555;
         $black-3:                 #cccccc;
-        $main-bg:                 #000000;
+        $main-bg:                 #444444;
 
         body#{$class}::before {
             background-image: url("/images/bg/body.jpg");
@@ -55,6 +55,14 @@
             }
             a {
                 color: #579cab;
+            }
+            a.subtle-button {
+                background-image: linear-gradient(#555555, #777777);
+                border-top: solid 1px #333333;
+                border-right: solid 1px #333333;
+                border-bottom: solid 1px #333333;
+                border-left: solid 1px #333333;
+                @include box-shadow(none);
             }
         }
     }

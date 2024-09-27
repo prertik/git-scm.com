@@ -68,6 +68,9 @@
                 border-left: solid 1px #333333;
                 @include box-shadow(none);
             }
+            #reference-version {
+                background-color: rgba(111, 110, 105, 0.33);
+            }
         }
         body#{$class}#documentation #main div.verseblock pre.content {
             background-color: #b7a78a;

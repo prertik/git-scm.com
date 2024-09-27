@@ -53,6 +53,10 @@
             img {
                 filter: brightness(.6) contrast(1.2);
             }
+            // let the logo shine slightly brighter
+            img[alt="Git"] {
+                filter: brightness(0.9) contrast(1.5);
+            }
             a {
                 color: #579cab;
             }
